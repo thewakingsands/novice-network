@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'sitename here',
+  title: '萌新手册',
   markdown: {
     anchor: {
       permalink: false
