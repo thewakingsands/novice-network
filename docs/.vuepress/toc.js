@@ -7,7 +7,7 @@ module.exports = {
         { title: '收费、试玩、福利', href: '#' },
         { title: '世界观和版本', href: '#' },
         { title: '创建角色', href: '#' },
-        { title: '战斗职业介绍', href: '#' }
+        { title: '职业和特职', href: '#' }
       ]
     },
     {
@@ -45,7 +45,23 @@ module.exports = {
       ]
     },
     {
-      title: '职业专题'
+      title: '职业专题',
+      children: [
+        { title: '骑士', href: '#', img: '/images/jobs/paladin.png' },
+        { title: '战士', href: '#', img: '/images/jobs/warrior.png' },
+        { title: '暗黑骑士', href: '#', img: '/images/jobs/darkknight.png' },
+        { title: '武僧', href: '#', img: '/images/jobs/monk.png' },
+        { title: '忍者', href: '#', img: '/images/jobs/ninja.png' },
+        { title: '武士', href: '#', img: '/images/jobs/samurai.png' },
+        { title: '吟游诗人', href: '#', img: '/images/jobs/bard.png' },
+        { title: '机工士', href: '#', img: '/images/jobs/machinist.png' },
+        { title: '黑魔法师', href: '#', img: '/images/jobs/blackmage.png' },
+        { title: '召唤师', href: '#', img: '/images/jobs/summoner.png' },
+        { title: '赤魔法师', href: '#', img: '/images/jobs/redmage.png' },
+        { title: '白魔法师', href: '#', img: '/images/jobs/whitemage.png' },
+        { title: '学者', href: '#', img: '/images/jobs/scholar.png' },
+        { title: '占星术士', href: '#', img: '/images/jobs/astrologian.png' }
+      ]
     },
     {
       title: '常用网站',

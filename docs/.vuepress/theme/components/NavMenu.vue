@@ -21,12 +21,14 @@
               :to="title2.href"
               class="item"
               :class="{
-                active: index2 === currentTitle2 && index1 === currentTitle1
+                active: index2 === currentTitle2 && index1 === currentTitle1,
+                'with-img': title2.img
               }"
               v-for="(title2, index2) in title1.children"
               :key="index2"
             >
-              {{ title2.title }}
+              <img v-if="title2.img" :src="$withBase(title2.img)" />
+              <span>{{ title2.title }}</span>
             </router-link>
             <a
               :href="title2.href"
@@ -82,6 +84,8 @@
       color #ddd
       &:hover
         color #fff
+        .expand-icon
+          color #fff
       i.icon
         float right
     .item
@@ -91,13 +95,21 @@
         display none
         overflow hidden
       .expand-icon
-        transition 300ms
+        color #999
+        transition transform 300ms
         transform rotate3d(0, 0, 1, -90deg)
       &.expand
         .menu
           display block
         .expand-icon
           transform rotate3d(0, 0, 1, 0)
+      .with-img
+        img
+          width 32px
+          height 32px
+          margin-right 4px
+        img, span
+          vertical-align middle
   .menus
     display flex
     flex-direction column
