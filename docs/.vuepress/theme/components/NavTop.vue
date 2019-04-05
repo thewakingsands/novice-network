@@ -3,12 +3,27 @@
     <div class="ui inverted menu">
       <router-link to="/" class="header item">{{ $site.title }}</router-link>
       <div class="right menu">
-        <a class="item" href="javascript:;" @click.prevent="scrollToTop"
-          ><i class="up angle icon"></i
-        ></a>
-        <a class="item" href="#"><i class="star outline icon"></i></a>
-        <a class="item" href="#"><i class="qrcode icon"></i></a>
+        <a class="item" href="javascript:;" @click.prevent="scrollToTop">
+          <i class="up angle icon"></i>
+        </a>
+        <a class="item" href="javascript:;">
+          <i class="star outline icon"></i>
+        </a>
+        <a
+          class="item"
+          href="javascript:;"
+          @mouseenter="showQr = true"
+          @mouseleave="showQr = false"
+        >
+          <i class="qrcode icon"></i>
+        </a>
       </div>
+    </div>
+    <div class="qr-container" v-if="showQr">
+      <div><img :src="dataUrl" /></div>
+      <p>
+        使用手机扫描二维码，即可在手机上阅读本文。如遇微信无法打开，请使用自带浏览器或谷歌浏览器。
+      </p>
     </div>
   </div>
 </template>
@@ -24,10 +39,28 @@
     .right.menu
       .icon
         margin-right 0
+  .qr-container
+    position fixed
+    top 40px
+    right 0
+    width 320px
+    background #fff
+    box-shadow 2px 2px 6px 0px grey
+    p
+      padding 10px
+      padding-top 0
 </style>
 
 <script>
+import QRCode from 'qrcode'
+
 export default {
+  data() {
+    return {
+      showQr: false,
+      dataUrl: ''
+    }
+  },
   methods: {
     scrollToTop() {
       try {
@@ -37,6 +70,22 @@ export default {
       } catch (e) {
         document.getElementById('scrolling-element').scrollTop = 0
       }
+    }
+  },
+  watch: {
+    showQr(val) {
+      if (!val) {
+        this.dataUrl = ''
+        return
+      }
+      QRCode.toDataURL(
+        location.origin + this.$withBase(this.$page.path),
+        { width: 320, margin: 2 },
+        (err, res) => {
+          if (err) return
+          this.dataUrl = res
+        }
+      )
     }
   }
 }
