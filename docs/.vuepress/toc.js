@@ -11,7 +11,7 @@ module.exports = {
       ]
     },
     {
-      title: '基础系统',
+      title: '游戏基础',
       children: [
         { title: '满级前核心玩法', href: '/basic/core.html' },
         { title: '任务系统', href: '/basic/quest.html' },
