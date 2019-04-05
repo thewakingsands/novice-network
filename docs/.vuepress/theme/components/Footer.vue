@@ -2,7 +2,9 @@
   <div class="footer-container">
     <div class="colored-footer">
       <div class="status-line">
-        <span>本页面最后编辑于 2020.20.20 20:20:20</span>
+        <span v-if="$page.lastUpdated">
+          本页面最后编辑于 {{ $page.lastUpdated }}
+        </span>
         <a href="#">修订历史</a>
         <a href="#">查看源码</a>
       </div>

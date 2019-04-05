@@ -1,7 +1,7 @@
 <template>
   <div class="nav-top">
     <div class="ui inverted menu">
-      <a href="#" class="header item">{{ $site.title }}</a>
+      <router-link to="/" class="header item">{{ $site.title }}</router-link>
       <div class="right menu">
         <a class="item" href="#"><i class="up angle icon"></i></a>
         <a class="item" href="#"><i class="star outline icon"></i></a>

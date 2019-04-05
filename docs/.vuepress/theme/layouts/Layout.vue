@@ -4,6 +4,7 @@
       <div class="content-outer full-height">
         <div class="content-inner full-height">
           <NavTop />
+          <Pager />
           <ContentContainer />
           <Pager />
           <Footer />

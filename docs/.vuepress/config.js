@@ -5,5 +5,5 @@ module.exports = {
       permalink: false
     }
   },
-  plugins: [require('./plugins/sidenav')]
+  plugins: [require('./plugins/sidenav'), '@vuepress/last-updated']
 }

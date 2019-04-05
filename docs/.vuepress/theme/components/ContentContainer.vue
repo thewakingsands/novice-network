@@ -12,8 +12,7 @@
   .content-container-inner
     max-width 1200px
     padding 0 20px
-    margin 0 auto
-    margin-top 1.5em
+    margin 1.5em auto
     font-size 18px
     p
       line-height 1.6

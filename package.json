@@ -7,6 +7,7 @@
     "dev": "vuepress dev docs"
   },
   "devDependencies": {
+    "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": "^12.0.0",
@@ -29,12 +30,16 @@
       "prettier",
       "plugin:vue/essential"
     ],
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": "error"
     }
   },
-  "eslintIgnore": ["!docs/.vuepress"],
+  "eslintIgnore": [
+    "!docs/.vuepress"
+  ],
   "prettier": {
     "semi": false,
     "singleQuote": true
