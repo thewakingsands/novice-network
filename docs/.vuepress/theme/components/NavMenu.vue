@@ -7,10 +7,7 @@
           v-for="(title1, index1) in toc"
           :key="index1"
           :class="{
-            expand:
-              index1 === currentTitle1
-                ? expandedTitles.indexOf(index1) < 0
-                : expandedTitles.indexOf(index1) >= 0
+            expand: expandedTitles.indexOf(index1) >= 0
           }"
         >
           <div class="title" @click.stop="toggleExpand(index1)">
@@ -147,6 +144,9 @@ export default {
       expandedTitles: []
     }
   },
+  mounted() {
+    this.expandedTitles = [this.currentTitle1]
+  },
   computed: {
     currentTitle1() {
       return this.toc.findIndex(
@@ -165,10 +165,21 @@ export default {
     toggleExpand(titleIndex) {
       var index = this.expandedTitles.indexOf(titleIndex)
       if (index >= 0) {
-        this.expandedTitles.splice(index)
+        this.expandedTitles.splice(index, 1)
       } else {
         this.expandedTitles.push(titleIndex)
       }
+    },
+    setExpand(titleIndex, value) {
+      var current = this.expandedTitles.indexOf(titleIndex) >= 0
+      if (current !== value) {
+        this.toggleExpand(titleIndex)
+      }
+    }
+  },
+  watch: {
+    currentTitle1(val, oldVal) {
+      this.setExpand(val, true)
     }
   }
 }
