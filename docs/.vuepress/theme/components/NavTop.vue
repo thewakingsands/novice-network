@@ -3,7 +3,9 @@
     <div class="ui inverted menu">
       <router-link to="/" class="header item">{{ $site.title }}</router-link>
       <div class="right menu">
-        <a class="item" href="#"><i class="up angle icon"></i></a>
+        <a class="item" href="javascript:;" @click.prevent="scrollToTop"
+          ><i class="up angle icon"></i
+        ></a>
         <a class="item" href="#"><i class="star outline icon"></i></a>
         <a class="item" href="#"><i class="qrcode icon"></i></a>
       </div>
@@ -23,3 +25,19 @@
       .icon
         margin-right 0
 </style>
+
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      try {
+        document
+          .getElementById('scrolling-element')
+          .scrollTo({ top: 0, behavior: 'smooth' })
+      } catch (e) {
+        document.getElementById('scrolling-element').scrollTop = 0
+      }
+    }
+  }
+}
+</script>

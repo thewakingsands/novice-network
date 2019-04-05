@@ -2,7 +2,7 @@
   <Root class="root-container">
     <div class="main-container full-height">
       <div class="content-outer full-height">
-        <div class="content-inner full-height">
+        <div class="content-inner full-height" id="scrolling-element">
           <NavTop />
           <Pager />
           <ContentContainer />
