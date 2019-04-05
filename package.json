@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.46",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": "^12.0.0",

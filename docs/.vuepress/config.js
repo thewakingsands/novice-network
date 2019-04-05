@@ -5,5 +5,9 @@ module.exports = {
       permalink: false
     }
   },
-  plugins: [require('./plugins/sidenav'), '@vuepress/last-updated']
+  plugins: [
+    require('./plugins/sidenav'),
+    '@vuepress/last-updated',
+    '@vuepress/nprogress'
+  ]
 }
