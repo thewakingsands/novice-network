@@ -1,0 +1,43 @@
+{
+  "name": "novice-network",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vuepress dev docs"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "prettier": "^1.16.4",
+    "vuepress": "^1.0.0-alpha.46"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "semantic-ui-css": "^2.4.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "prettier",
+      "plugin:vue/essential"
+    ],
+    "plugins": ["prettier"],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "eslintIgnore": ["!docs/.vuepress"],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "private": true
+}
