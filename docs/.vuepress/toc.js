@@ -47,13 +47,14 @@ module.exports = {
     {
       title: '职业专题',
       children: [
+        { title: '职业介绍', href: '/job/' },
         {
-          title: '骑士',
+          title: '骑士（剑术师）',
           href: '/job/paladin.html',
           img: '/images/jobs/paladin.png'
         },
         {
-          title: '战士',
+          title: '战士（斧术师）',
           href: '/job/warrior.html',
           img: '/images/jobs/warrior.png'
         },
@@ -62,9 +63,18 @@ module.exports = {
           href: '/job/darkknight.html',
           img: '/images/jobs/darkknight.png'
         },
-        { title: '武僧', href: '/job/monk.html', img: '/images/jobs/monk.png' },
         {
-          title: '忍者',
+          title: '武僧（格斗家）',
+          href: '/job/monk.html',
+          img: '/images/jobs/monk.png'
+        },
+        {
+          title: '龙骑士（枪术师）',
+          href: '/job/dragoon.html',
+          img: '/images/jobs/dragoon.png'
+        },
+        {
+          title: '忍者（双剑师）',
           href: '/job/ninja.html',
           img: '/images/jobs/ninja.png'
         },
@@ -74,7 +84,7 @@ module.exports = {
           img: '/images/jobs/samurai.png'
         },
         {
-          title: '吟游诗人',
+          title: '吟游诗人（弓箭手）',
           href: '/job/bard.html',
           img: '/images/jobs/bard.png'
         },
@@ -84,12 +94,12 @@ module.exports = {
           img: '/images/jobs/machinist.png'
         },
         {
-          title: '黑魔法师',
+          title: '黑魔法师（咒术师）',
           href: '/job/blackmage.html',
           img: '/images/jobs/blackmage.png'
         },
         {
-          title: '召唤师',
+          title: '召唤师（秘术师）',
           href: '/job/summoner.html',
           img: '/images/jobs/summoner.png'
         },
@@ -99,12 +109,12 @@ module.exports = {
           img: '/images/jobs/redmage.png'
         },
         {
-          title: '白魔法师',
+          title: '白魔法师（幻术师）',
           href: '/job/whitemage.html',
           img: '/images/jobs/whitemage.png'
         },
         {
-          title: '学者',
+          title: '学者（秘术师）',
           href: '/job/scholar.html',
           img: '/images/jobs/scholar.png'
         },
