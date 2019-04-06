@@ -17,6 +17,7 @@
 .collaspe-text
   .summary
     cursor pointer
+    font-size 18px
   .details
     margin-top 1em
     font-size 16px

@@ -4595,6 +4595,16 @@ markdown-it-emoji@^1.4.0:
   resolved "http://registry.npm.taobao.org/markdown-it-emoji/download/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
 
+markdown-it-ins@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/markdown-it-ins/download/markdown-it-ins-2.0.0.tgz#a5aa6a30f1e2f71e9497567cfdff40f1fde67483"
+  integrity sha1-papqMPHi9x6Ul1Z8/f9A8f3mdIM=
+
+markdown-it-mark@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/markdown-it-mark/download/markdown-it-mark-2.0.0.tgz#46a1aa947105aed8188978e0a016179e404f42c7"
+  integrity sha1-RqGqlHEFrtgYiXjgoBYXnkBPQsc=
+
 markdown-it-pangu@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/markdown-it-pangu/download/markdown-it-pangu-1.0.2.tgz#7f936e3fa05aefc9c40942ab53f8c5792ceb8f42"

@@ -39,6 +39,8 @@ module.exports = {
           }
         }
       })
+      md.use(require('markdown-it-ins'))
+      md.use(require('markdown-it-mark'))
       md.use(require('markdown-it-pangu'))
     }
   },
