@@ -4,7 +4,7 @@
       <div class="content-outer full-height">
         <div class="content-inner full-height" id="scrolling-element">
           <NavTop />
-          <Pager />
+          <Pager v-if="!$page.frontmatter.noTopPager" />
           <ContentContainer />
           <Pager />
           <Footer />
