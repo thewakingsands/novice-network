@@ -14,7 +14,7 @@
     padding 0 20px
     margin 1.5em auto
     font-size 18px
-    p
+    p, ul, ol
       line-height 1.6
     img
       max-width 100%
@@ -27,4 +27,6 @@
     strong
       font-weight normal
       color #d84315
+    s
+      color #888
 </style>
