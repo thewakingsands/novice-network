@@ -54,7 +54,7 @@ export default {
       for (var title1 of TOC.main) {
         flatTitles = flatTitles.concat(title1.children)
       }
-      var index = flatTitles.findIndex(u => u.href === this.$page.path)
+      var index = flatTitles.findIndex(u => u && u.href === this.$page.path)
       if (index >= 0) {
         var next = flatTitles[index + 1]
         var prev = flatTitles[index - 1]

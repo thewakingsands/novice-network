@@ -150,14 +150,15 @@ export default {
   computed: {
     currentTitle1() {
       return this.toc.findIndex(
-        t => t.children && t.children.find(u => u.href === this.$page.path)
+        t => t.children && t.children.find(u => u && u.href === this.$page.path)
       )
     },
     currentTitle2() {
       var title1 = this.toc[this.currentTitle1]
       return (
+        title1 &&
         title1.children &&
-        title1.children.findIndex(u => u.href === this.$page.path)
+        title1.children.findIndex(u => u && u.href === this.$page.path)
       )
     }
   },
