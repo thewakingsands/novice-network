@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "vuepress dev docs"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs && rimraf dist/_includes"
   },
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
@@ -23,6 +24,7 @@
     "markdown-it-mark": "^2.0.0",
     "markdown-it-pangu": "^1.0.2",
     "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
     "vuepress": "^1.0.0-alpha.46"
   },
   "dependencies": {

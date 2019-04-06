@@ -1,5 +1,6 @@
 module.exports = {
   title: '萌新手册',
+  dest: 'dist',
   markdown: {
     anchor: {
       permalink: false

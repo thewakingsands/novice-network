@@ -56,5 +56,11 @@
 
 ```bash
 yarn
+yarn build
+```
+
+### 开发
+
+```bash
 yarn dev
 ```
