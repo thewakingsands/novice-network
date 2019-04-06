@@ -14,6 +14,28 @@
 <IncludePage file="_includes/your_file_name.md" />
 ```
 
+#### 折叠
+
+```markdown
+::: collapse 折叠标题
+
+被折叠的内容
+
+:::
+```
+
+#### 卡片
+
+```markdown
+::: segment blue
+
+##### 卡片标题
+
+卡片内容
+
+:::
+```
+
 ## 开发者
 
 ### 编译
