@@ -5,8 +5,15 @@
         <span v-if="$page.lastUpdated">
           本页面最后编辑于 {{ $page.lastUpdated }}
         </span>
-        <a href="#">修订历史</a>
-        <a href="#">查看源码</a>
+        <a target="_blank" rel="noopener noreferer" :href="historyLink">
+          修订历史
+        </a>
+        <a target="_blank" rel="noopener noreferer" :href="editLink">
+          编辑内容
+        </a>
+        <a target="_blank" rel="noopener noreferer" :href="sourceLink">
+          查看源码
+        </a>
       </div>
       <div class="copyright-line copyright-self">
         <span>{{ $site.title }}</span>
@@ -49,3 +56,28 @@
     color #333333
     margin-bottom 10px
 </style>
+
+<script>
+export default {
+  computed: {
+    historyLink() {
+      return (
+        'https://github.com/WakingSands/novice-network/blame/master/docs/' +
+        this.$page.relativePath
+      )
+    },
+    editLink() {
+      return (
+        'https://github.com/WakingSands/novice-network/edit/master/docs/' +
+        this.$page.relativePath
+      )
+    },
+    sourceLink() {
+      return (
+        'https://raw.githubusercontent.com/WakingSands/novice-network/master/docs/' +
+        this.$page.relativePath
+      )
+    }
+  }
+}
+</script>
