@@ -23,7 +23,11 @@
         @click="showToc = !showToc"
         class="item page-title"
       >
-        <i class="caret icon" :class="{ right: !showToc, down: showToc }"></i>
+        <i
+          v-if="$page.headers"
+          class="caret icon"
+          :class="{ right: !showToc, down: showToc }"
+        ></i>
         {{ $page.title }}
       </a>
       <div class="right menu">
@@ -46,8 +50,15 @@
         使用手机扫描二维码，即可在手机上阅读本文。如遇微信无法打开，请使用自带浏览器或谷歌浏览器。
       </p>
     </div>
-    <div class="toc-container" v-if="showToc" @click.capture="handleClick">
-      <TOC class="toc" />
+    <div
+      class="toc-container"
+      v-if="showToc && $page.headers"
+      @click.capture="handleClick"
+    >
+      <div class="toc">
+        <a href="#" class="active"> {{ $page.title }} </a>
+        <TOC />
+      </div>
     </div>
   </div>
 </template>
