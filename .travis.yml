@@ -10,8 +10,6 @@ before_install:
 script:
   - yarn vuepress build --cache $HOME/vuepresscache
   - rm -rf dist/_includes
-before_deploy:
-  - chmod +x ci/deploy.sh
 deploy:
   provider: script
   skip_cleanup: true
