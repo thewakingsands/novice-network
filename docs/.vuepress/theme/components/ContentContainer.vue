@@ -12,6 +12,10 @@
   .content-container-inner
     max-width 1200px
     padding 0 20px
+    word-break break-all
+    @media screen and (max-width: 375px)
+      padding 0 10px
+      font-size 16px
     margin 1.5em auto
     font-size 18px
     p, ul, ol

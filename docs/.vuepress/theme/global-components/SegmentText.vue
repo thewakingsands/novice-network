@@ -6,7 +6,7 @@
 
 <style lang="stylus">
 .segment-text.ui.segment
-  font-size 18px
+  font-size 1em
   h4
     font-size 1.05em
   h5

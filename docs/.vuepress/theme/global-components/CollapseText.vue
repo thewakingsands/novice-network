@@ -14,13 +14,14 @@
 </template>
 
 <style lang="stylus">
-.collaspe-text
+.collaspe-text.ui.segment
+  font-size 1em
   .summary
     cursor pointer
-    font-size 18px
+    font-size 1em
   .details
     margin-top 1em
-    font-size 16px
+    font-size 0.95em
     line-height 1.75
 </style>
 

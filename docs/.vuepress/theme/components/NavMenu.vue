@@ -182,6 +182,9 @@ export default {
   watch: {
     currentTitle1(val, oldVal) {
       this.setExpand(val, true)
+    },
+    '$page.path'() {
+      this.showMenu = false
     }
   }
 }
