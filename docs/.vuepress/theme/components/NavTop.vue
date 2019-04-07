@@ -18,18 +18,16 @@
       >
         <i class="up angle icon"></i>
       </a>
-      <a
-        href="javascript:;"
-        @click="showToc = !showToc"
-        class="item page-title"
-      >
+      <a href="javascript:;" @click="headClicked" class="item page-title">
         <i
           v-if="$page.headers"
           class="caret icon"
           :class="{ right: !showToc, down: showToc }"
         ></i>
         <span class="hide-large">{{ $page.title }}</span>
-        <div class="hide-small">章节目录</div>
+        <div class="hide-small">
+          {{ $page.headers ? '章节目录' : $page.title }}
+        </div>
       </a>
       <div class="right menu">
         <a class="item icon-item" href="javascript:;">
@@ -141,6 +139,13 @@ export default {
   methods: {
     scrollToTop() {
       this.gotoId('')
+    },
+    headClicked() {
+      if (this.$page.headers) {
+        this.showToc = !this.showToc
+      } else {
+        this.gotoId('')
+      }
     },
     handleClick(event) {
       var element = event.target
