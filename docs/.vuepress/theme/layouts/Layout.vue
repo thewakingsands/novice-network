@@ -14,6 +14,7 @@
         <NavMenu v-model="showMenu" />
       </div>
     </div>
+    <PhotoSwipe ref="photoSwipe" />
   </Root>
 </template>
 
@@ -41,6 +42,7 @@ import NavTop from '../components/NavTop'
 import Footer from '../components/Footer'
 import Pager from '../components/Pager'
 import ContentContainer from '../components/ContentContainer'
+import PhotoSwipe from '../components/PhotoSwipe'
 
 export default {
   data() {
@@ -54,7 +56,18 @@ export default {
     ContentContainer,
     NavTop,
     Footer,
-    Pager
+    Pager,
+    PhotoSwipe
+  },
+  provide() {
+    return {
+      getPhotoSwipe: this.getPhotoSwipe
+    }
+  },
+  methods: {
+    getPhotoSwipe() {
+      return this.$refs.photoSwipe
+    }
   }
 }
 </script>

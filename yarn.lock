@@ -5481,6 +5481,11 @@ performance-now@^2.1.0:
   resolved "http://registry.npm.taobao.org/performance-now/download/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
+photoswipe@^4.1.3:
+  version "4.1.3"
+  resolved "http://registry.npm.taobao.org/photoswipe/download/photoswipe-4.1.3.tgz#59f49494eeb9ddab5888d03392926a19bc197550"
+  integrity sha1-WfSUlO653atYiNAzkpJqGbwZdVA=
+
 pify@^2.0.0:
   version "2.3.0"
   resolved "http://registry.npm.taobao.org/pify/download/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"

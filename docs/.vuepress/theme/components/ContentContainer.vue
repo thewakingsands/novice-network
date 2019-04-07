@@ -24,6 +24,7 @@
       line-height 1.6
     img
       max-width 100%
+      cursor zoom-in
     ins
       text-decoration none
       text-shadow 0px 0px 1px #FFEB3B, 0px 0px 5px #FFEB3B, 0px 0px 10px #FFEB3B
@@ -39,13 +40,23 @@
 
 <script>
 export default {
+  inject: ['getPhotoSwipe'],
   methods: {
     handleClick(event) {
       var element = event.target
-      while (element.tagName !== 'A') {
+      while (element) {
+        if (element.tagName === 'A') {
+          this.handleClickLink(element, event)
+          break
+        }
+        if (element.tagName === 'IMG') {
+          this.handleClickImg(element, event)
+          break
+        }
         element = element.parentElement
-        if (!element) return
       }
+    },
+    handleClickLink(element, event) {
       if (element.origin !== location.origin) return
       if (element.pathname !== location.pathname) return
       if (element.search !== location.search) return
@@ -73,6 +84,10 @@ export default {
       }
       event.preventDefault()
       event.stopPropagation()
+    },
+    handleClickImg(element, event) {
+      var imgSrc = element.src
+      this.getPhotoSwipe().openSingle(imgSrc)
     }
   }
 }
