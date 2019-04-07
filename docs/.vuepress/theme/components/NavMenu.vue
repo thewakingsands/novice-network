@@ -138,6 +138,12 @@
 import { TOC } from '@dynamic/toc'
 
 export default {
+  props: {
+    value: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       showMenu: false,
@@ -147,6 +153,7 @@ export default {
   },
   mounted() {
     this.expandedTitles = [this.currentTitle1]
+    this.showMenu = this.value
   },
   computed: {
     currentTitle1() {
@@ -185,6 +192,12 @@ export default {
     },
     '$page.path'() {
       this.showMenu = false
+    },
+    showMenu(value) {
+      this.$emit('input', value)
+    },
+    value(value) {
+      this.showMenu = value
     }
   }
 }

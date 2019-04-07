@@ -3,7 +3,7 @@
     <div class="main-container full-height">
       <div class="content-outer full-height">
         <div class="content-inner full-height" id="scrolling-element">
-          <NavTop />
+          <NavTop @barClicked="showMenu = !showMenu" />
           <Pager v-if="!$page.frontmatter.noTopPager" />
           <ContentContainer />
           <Pager />
@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="nav-menu">
-        <NavMenu />
+        <NavMenu v-model="showMenu" />
       </div>
     </div>
   </Root>
@@ -43,6 +43,11 @@ import Pager from '../components/Pager'
 import ContentContainer from '../components/ContentContainer'
 
 export default {
+  data() {
+    return {
+      showMenu: false
+    }
+  },
   components: {
     Root,
     NavMenu,
