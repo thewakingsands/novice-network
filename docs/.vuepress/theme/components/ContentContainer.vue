@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  inject: ['getPhotoSwipe'],
+  inject: ['getPhotoSwipe', 'gotoId'],
   methods: {
     handleClick(event) {
       var element = event.target
@@ -61,27 +61,11 @@ export default {
       if (element.pathname !== location.pathname) return
       if (element.search !== location.search) return
       var hash = element.hash
-      var scrollTop = 0
+      var id = ''
       if (hash) {
-        var id = decodeURIComponent(hash.slice(1))
-        var scrollToEl = document.getElementById(id)
-        if (!scrollToEl) {
-          scrollToEl = document.getElementsByName(id)
-          if (!scrollToEl) return
-          scrollToEl = scrollToEl[0]
-        }
-        scrollToEl.classList.add('scroll-focus')
-        setTimeout(() => {
-          scrollToEl && scrollToEl.classList.remove('scroll-focus')
-        }, 3000)
-        scrollTop = scrollToEl.offsetTop - 45
+        id = decodeURIComponent(hash.slice(1))
       }
-      var el = document.scrollingElement || window
-      try {
-        el.scrollTo({ top: scrollTop, behavior: 'smooth' })
-      } catch (e) {
-        el.scrollTop = scrollTop
-      }
+      this.gotoId(id)
       event.preventDefault()
       event.stopPropagation()
     },

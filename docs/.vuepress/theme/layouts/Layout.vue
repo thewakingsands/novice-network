@@ -2,7 +2,7 @@
   <Root class="root-container">
     <div class="main-container full-height">
       <div class="content-outer full-height">
-        <div class="content-inner full-height" id="scrolling-element">
+        <div class="content-inner full-height">
           <NavTop @barClicked="showMenu = !showMenu" />
           <Pager v-if="!$page.frontmatter.noTopPager" />
           <ContentContainer />
@@ -61,12 +61,35 @@ export default {
   },
   provide() {
     return {
-      getPhotoSwipe: this.getPhotoSwipe
+      getPhotoSwipe: this.getPhotoSwipe,
+      gotoId: this.gotoId
     }
   },
   methods: {
     getPhotoSwipe() {
       return this.$refs.photoSwipe
+    },
+    gotoId(id) {
+      var scrollTop = 0
+      if (id) {
+        var scrollToEl = document.getElementById(id)
+        if (!scrollToEl) {
+          scrollToEl = document.getElementsByName(id)
+          if (!scrollToEl) return
+          scrollToEl = scrollToEl[0]
+        }
+        scrollToEl.classList.add('scroll-focus')
+        setTimeout(() => {
+          scrollToEl && scrollToEl.classList.remove('scroll-focus')
+        }, 3000)
+        scrollTop = scrollToEl.offsetTop - 45
+      }
+      var el = document.scrollingElement || window
+      try {
+        el.scrollTo({ top: scrollTop, behavior: 'smooth' })
+      } catch (e) {
+        el.scrollTop = scrollTop
+      }
     }
   }
 }
