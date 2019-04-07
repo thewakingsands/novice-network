@@ -27,9 +27,11 @@
   order 2
   flex 1
   padding-top 40px
-.content-inner
-  overflow-y auto
-  -webkit-overflow-scrolling smooth
+  padding-left 280px
+  @media screen and (max-width: 1200px) and (min-width: 961px)
+    padding-left 250px
+  @media screen and (max-width: 960px)
+    padding-left 0
 </style>
 
 <script>

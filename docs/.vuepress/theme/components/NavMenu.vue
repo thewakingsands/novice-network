@@ -68,7 +68,7 @@
     margin-top 0
     flex 1
     overflow-y auto
-    -webkit-overflow-scrolling smooth
+    -webkit-overflow-scrolling touch
     min-width 15em
     font-size 18px
     @media screen and (max-width: 1200px) and (min-width: 961px)
@@ -108,11 +108,12 @@
         img, span
           vertical-align middle
   .menus
+    position fixed
+    z-index 90
     display flex
     flex-direction column
     height 100%
     @media screen and (max-width 960px)
-      position fixed
       transform translate3d(-100%, 0, 0)
       transition 300ms
       &.show

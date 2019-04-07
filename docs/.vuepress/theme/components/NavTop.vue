@@ -31,6 +31,7 @@
 <style lang="stylus">
 .nav-top
   position fixed
+  z-index 100
   top 0
   left 0
   width 100%
@@ -63,12 +64,11 @@ export default {
   },
   methods: {
     scrollToTop() {
+      var el = document.scrollingElement || window
       try {
-        document
-          .getElementById('scrolling-element')
-          .scrollTo({ top: 0, behavior: 'smooth' })
+        el.scrollTo({ top: 0, behavior: 'smooth' })
       } catch (e) {
-        document.getElementById('scrolling-element').scrollTop = 0
+        el.scrollTop = 0
       }
     }
   },
