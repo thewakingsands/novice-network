@@ -10,8 +10,12 @@ before_install:
 script:
   - yarn vuepress build --cache $HOME/vuepresscache
   - rm -rf dist/_includes
+  - mv dist $HOME/deploy
+before_deploy:
+  - chmod +x ci/deploy.sh
 deploy:
   provider: script
   skip_cleanup: true
-  on: master
-  script: bash -e ci/deploy.sh
+  on:
+    branch: master
+  script: ci/deploy.sh
