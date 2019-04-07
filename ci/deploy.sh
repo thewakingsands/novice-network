@@ -10,7 +10,7 @@ chmod 600 ci/deploy-key
 eval `ssh-agent -s`
 ssh-add ci/deploy-key
 
-DEPLOY_DIR=$HOME/deploy
+DEPLOY_DIR=dist
 EXEGIT="git -C $DEPLOY_DIR"
 
 $EXEGIT config user.name "bot"

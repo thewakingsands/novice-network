@@ -8,9 +8,8 @@ cache:
 before_install:
   - sed -i 's/registry.npm.taobao.org/registry.npmjs.org/g' yarn.lock
 script:
-  - yarn vuepress build --cache $HOME/vuepresscache
+  - yarn vuepress build docs --cache $HOME/vuepresscache
   - rm -rf dist/_includes
-  - mv dist $HOME/deploy
 before_deploy:
   - chmod +x ci/deploy.sh
 deploy:
