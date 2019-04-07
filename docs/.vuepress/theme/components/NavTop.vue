@@ -28,7 +28,8 @@
           class="caret icon"
           :class="{ right: !showToc, down: showToc }"
         ></i>
-        {{ $page.title }}
+        <span class="hide-large">{{ $page.title }}</span>
+        <div class="hide-small">章节目录</div>
       </a>
       <div class="right menu">
         <a class="item icon-item" href="javascript:;">
@@ -180,6 +181,9 @@ export default {
           this.dataUrl = res
         }
       )
+    },
+    $page() {
+      this.showToc = false
     }
   }
 }
