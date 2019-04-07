@@ -5,11 +5,15 @@ cache:
   yarn: true
   directories:
     - $HOME/vuepresscache
+before_install:
+  - sed -i 's/registry.npm.taobao.org/registry.npmjs.org/g' yarn.lock
 script:
   - yarn vuepress build --cache $HOME/vuepresscache
   - rm -rf dist/_includes
 deploy:
+  provider: script
   skip_cleanup: true
+  if: branch == master AND type == push
   script:
     - openssl aes-256-cbc -K $encrypted_74088940e92b_key -iv $encrypted_74088940e92b_iv -in ci/deploy-key.enc -out ci/deploy-key -d
     - chmod 700 ci
