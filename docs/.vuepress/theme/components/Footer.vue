@@ -3,22 +3,50 @@
     <div class="colored-footer">
       <div class="status-line">
         <span v-if="$page.lastUpdated">
-          本页面最后编辑于 {{ $page.lastUpdated }}
+          最后更新于 {{ $page.lastUpdated }} |
         </span>
         <a target="_blank" rel="noopener noreferer" :href="historyLink">
           修订历史
         </a>
+        |
         <a target="_blank" rel="noopener noreferer" :href="editLink">
           编辑内容
         </a>
+        |
         <a target="_blank" rel="noopener noreferer" :href="sourceLink">
           查看源码
         </a>
       </div>
       <div class="copyright-line copyright-self">
-        <span>{{ $site.title }}</span>
-        <router-link to="/">首页</router-link>
-        <a href="#">联系</a>
+        <router-link to="/">{{ $site.title }}</router-link>
+        is powered by
+        <a
+          href="https://vuepress.vuejs.org/"
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          VuePress
+        </a>
+        ,
+        <a
+          href="https://travis-ci.org/thewakingsands/novice-network"
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          Travis-CI
+        </a>
+        and
+        <a
+          href="https://github.com/thewakingsands/novice-network-pages/deployments"
+          rel="noopener noreferer"
+          target="_blank"
+        >
+          GitHub Pages
+        </a>
+        .
+        <router-link to="/about.html">
+          关于
+        </router-link>
       </div>
       <div class="copyright-line copyright-se">
         This site is not affiliated with Square Enix. FINAL FANTASY is a
@@ -27,6 +55,9 @@
       <div class="copyright-line copyright-se">
         Associated materials are copyright of FINAL FANTASY XIV © 2010 - 2019
         SQUARE ENIX CO., LTD. All Rights Reserved.
+        <router-link to="/takedown.html">
+          Reporting Copyright Infringement
+        </router-link>
       </div>
     </div>
   </div>
