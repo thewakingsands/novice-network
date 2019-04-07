@@ -56,7 +56,7 @@
       @click.capture="handleClick"
     >
       <div class="toc">
-        <a href="#" class="active"> {{ $page.title }} </a>
+        <a href="#"> {{ $page.title }} </a>
         <TOC />
       </div>
     </div>

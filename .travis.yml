@@ -5,8 +5,6 @@ cache:
   yarn: true
   directories:
     - $HOME/vuepresscache
-before_install:
-  - sed -i 's/registry.npm.taobao.org/registry.npmjs.org/g' yarn.lock
 script:
   - yarn vuepress build docs --cache $HOME/vuepresscache
   - rm -rf dist/_includes
