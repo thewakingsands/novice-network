@@ -1,7 +1,11 @@
 <template>
   <div class="nav-top">
     <div class="ui inverted menu">
-      <a href="javascript:;" class="item" @click.prevent="$emit('barClicked')">
+      <a
+        href="javascript:;"
+        class="item bar-button"
+        @click.prevent="$emit('barClicked')"
+      >
         <i class="bars icon"></i>
       </a>
       <router-link to="/" class="header item">{{ $site.title }}</router-link>
@@ -42,6 +46,9 @@
     border-radius 0
     .item > .icon
       margin-right 0
+    @media screen and (min-width 961px)
+      .bar-button
+        display none
   .qr-container
     position fixed
     top 40px
