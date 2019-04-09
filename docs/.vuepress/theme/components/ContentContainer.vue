@@ -1,7 +1,7 @@
 <template>
   <div class="content-container">
     <div class="content-container-inner" @click.capture="handleClick">
-      <Content />
+      <Content v-for="key in slotKeys" :key="key" :slot-key="key" />
     </div>
   </div>
 </template>
@@ -36,11 +36,20 @@
       color #d84315
     s
       color #888
+    p:last-child
+      margin-bottom 1em
+    h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child
+      margin-bottom 1rem
 </style>
 
 <script>
 export default {
   inject: ['getPhotoSwipe', 'gotoId'],
+  data() {
+    return {
+      slotKeys: ['default']
+    }
+  },
   methods: {
     handleClick(event) {
       var element = event.target
@@ -72,7 +81,22 @@ export default {
     handleClickImg(element, event) {
       var imgSrc = element.src
       this.getPhotoSwipe().openSingle(imgSrc)
+    },
+    updateSlotKeys() {
+      if (this.$page && this.$page.frontmatter && this.$page.frontmatter.slots) {
+        this.slotKeys = this.$page.frontmatter.slots
+      } else {
+        this.slotKeys =  ['default']
+      }
     }
+  },
+  watch: {
+    $page() {
+      this.updateSlotKeys()
+    }
+  },
+  created() {
+    this.updateSlotKeys()
   }
 }
 </script>
