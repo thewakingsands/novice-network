@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<style lang="stylus">
+.included-page
+  > .content > p:last-child
+    margin-bottom 1em
+</style>
+
 <script>
 import { getAsyncComponent } from '@app/util'
 import Vue from 'vue'
