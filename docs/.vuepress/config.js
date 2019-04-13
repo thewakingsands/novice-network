@@ -67,6 +67,8 @@ module.exports = {
       md.use(require('markdown-it-ins'))
       md.use(require('markdown-it-mark'))
       md.use(require('markdown-it-footnote'))
+      md.use(require('markdown-it-imsize'))
+      md.use(require('markdown-it-cjk-breaks'))
 
       md.use(require('markdown-it-div'), {
         marker: ';'
