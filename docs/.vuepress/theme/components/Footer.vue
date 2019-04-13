@@ -2,19 +2,17 @@
   <div class="footer-container">
     <div class="colored-footer">
       <div class="status-line">
-        <span v-if="$page.lastUpdated">
-          最后更新于 {{ $page.lastUpdated }} |
-        </span>
+        <span v-if="$page.lastUpdated"> {{ $page.lastUpdated }} | </span>
         <a target="_blank" rel="noopener noreferer" :href="historyLink">
-          修订历史
+          历史
         </a>
         |
         <a target="_blank" rel="noopener noreferer" :href="editLink">
-          编辑内容
+          编辑
         </a>
         |
         <a target="_blank" rel="noopener noreferer" :href="sourceLink">
-          查看源码
+          源码
         </a>
       </div>
       <div class="copyright-line copyright-self">
@@ -33,7 +31,7 @@
           rel="noopener noreferer"
           target="_blank"
         >
-          Travis-CI
+          Travis CI
         </a>
         and
         <a
@@ -51,8 +49,7 @@
       <div class="copyright-line copyright-se">
         This site is not affiliated with Square Enix. FINAL FANTASY is a
         registered trademark of Square Enix Holdings Co., Ltd.
-      </div>
-      <div class="copyright-line copyright-se">
+        <br />
         Associated materials are copyright of FINAL FANTASY XIV © 2010 - 2019
         SQUARE ENIX CO., LTD. All Rights Reserved.
         <router-link to="/takedown.html">
@@ -77,12 +74,12 @@
     padding-bottom 20px
     text-align center
   .copyright-self
-    margin-bottom 0.5em
-  .copyright-se
-    @media screen and (max-width: 480px)
-      text-align left
+    margin-bottom 1em
   .copyright-line
     color #666
+  .copyright-se
+    text-align left
+    color #999
   .status-line
     color #333333
     margin-bottom 10px
@@ -93,19 +90,19 @@ export default {
   computed: {
     historyLink() {
       return (
-        'https://github.com/WakingSands/novice-network/blame/master/docs/' +
+        'https://github.com/thewakingsands/novice-network/blame/master/docs/' +
         this.$page.relativePath
       )
     },
     editLink() {
       return (
-        'https://github.com/WakingSands/novice-network/edit/master/docs/' +
+        'https://github.com/thewakingsands/novice-network/edit/master/docs/' +
         this.$page.relativePath
       )
     },
     sourceLink() {
       return (
-        'https://raw.githubusercontent.com/WakingSands/novice-network/master/docs/' +
+        'https://raw.githubusercontent.com/thewakingsands/novice-network/master/docs/' +
         this.$page.relativePath
       )
     }
