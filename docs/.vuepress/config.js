@@ -50,7 +50,14 @@ module.exports = {
 
           if (tokens[idx].nesting === 1) {
             // opening tag
-            return '<JobCard name="' + md.utils.escapeHtml(m[1]) + '">'
+            var c = m[1].split(' ')
+            return (
+              '<JobCard name="' +
+              md.utils.escapeHtml(c[0]) +
+              '" className="' +
+              c[1] +
+              '">'
+            )
           } else {
             // closing tag
             return '</JobCard>\n'

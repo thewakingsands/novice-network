@@ -1,9 +1,9 @@
 <template>
   <div class="job-card">
-    <div class="ui card">
+    <div class="ui card" :class="className">
       <div class="content">
         <img
-          :src="$withBase('/images/jobs/' + name + '.png')"
+          :src="$withBase('/images/jobs/singlecolor/' + name + '.png')"
           class="no-zoom right floated tiny ui image"
         />
         <slot />
@@ -31,12 +31,27 @@
     width 100%
     p
       line-height 1.35
+    &.dps, &.tank, &.healer
+      .header
+        color rgba(255, 255, 255, 0.9)
+      .meta
+        color rgba(255, 255, 255, 0.8)
+    > .ui.bottom.attached.button
+      background rgba(255, 255, 255, 0.3)
+      color #fff
+    &.dps
+      background linear-gradient(45deg, #3f2c2c 0%,#653434 100%)
+    &.tank
+      background linear-gradient(45deg, #21375e 0%,#354393 100%)
+    &.healer
+      background linear-gradient(45deg, #263425 0%,#3b6627 100%)
 </style>
 
 <script>
 export default {
   props: {
-    name: String
+    name: String,
+    className: String
   }
 }
 </script>

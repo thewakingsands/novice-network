@@ -27,7 +27,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 
 <IconHeader img="/images/jobs/melee.png">近战物理进攻职业</IconHeader>
 
-:::job monk
+:::job monk dps
 
 武僧(格斗家) {.header}
 
@@ -36,7 +36,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job dragoon
+:::job dragoon dps
 
 龙骑士(枪术师) {.header}
 
@@ -45,7 +45,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job ninja
+:::job ninja dps
 忍者(双剑师) {.header}
 
 2.4新增的职业，raid铁饭碗 {.meta}
@@ -53,7 +53,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job samurai
+:::job samurai dps
 武士 {.header}
 
 4.0新增的新职业，纷乱雪月花 {.meta}
@@ -63,7 +63,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 
 <IconHeader img="/images/jobs/ranged.png">远程物理进攻职业</IconHeader>
 
-:::job bard
+:::job bard dps
 吟游诗人(弓箭手) {.header}
 
 艾欧泽亚唯一指定爱抖露 {.meta}
@@ -71,7 +71,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job machinist
+:::job machinist dps
 机工士 {.header}
 
 使用火枪的科技职业 {.meta}
@@ -81,15 +81,15 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 
 <IconHeader img="/images/jobs/magic.png">远程魔法进攻职业</IconHeader>
 
-:::job blackmage
+:::job blackmage dps
 黑魔法师(咒术师) {.header}
 
-~~吾名乃惠惠是爆裂魔法的使用者~~ {.meta}
+吾名乃惠惠是爆裂魔法的使用者 {.meta}
 
 <!-- end -->
 :::
 
-:::job summoner
+:::job summoner dps
 召唤师(秘术师) {.header}
 
 我是我召唤兽的召唤兽 {.meta}
@@ -97,7 +97,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job redmage
+:::job redmage dps
 赤魔法师 {.header}
 
 会复活的黑魔替代 {.meta}
@@ -107,15 +107,15 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 
 <IconHeader img="/images/jobs/tank.png">防护职业(T/坦克)</IconHeader>
 
-:::job paladin
+:::job paladin tank
 骑士(剑术师) {.header}
 
-~~圣光将赐予我力量~~ {.meta}
+圣光将赐予我力量 {.meta}
 
 <!-- end -->
 :::
 
-:::job warrior
+:::job warrior tank
 战士(斧术师) {.header}
 
 我TM锯爆 {.meta}
@@ -123,7 +123,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job darkknight
+:::job darkknight tank
 暗黑骑士 {.header}
 
 5.0预定主角 {.meta}
@@ -133,7 +133,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 
 <IconHeader img="/images/jobs/healer.png">治疗职业(H/N/奶)</IconHeader>
 
-:::job whitemage
+:::job whitemage healer
 白魔法师 {.header}
 
 可以奶人的投石机 {.meta}
@@ -141,7 +141,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job scholar
+:::job scholar healer
 学者(秘术师) {.header}
 
 会召唤小仙女的魔炎法师 {.meta}
@@ -149,7 +149,7 @@ DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和�
 <!-- end -->
 :::
 
-:::job astrologian
+:::job astrologian healer
 占星术士 {.header}
 
 太阳神抽卡师 {.meta}
