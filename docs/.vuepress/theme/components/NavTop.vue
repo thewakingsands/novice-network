@@ -179,7 +179,9 @@ export default {
         return
       }
       QRCode.toDataURL(
-        location.origin + this.$withBase(this.$page.path),
+        location.origin +
+          this.$withBase(this.$page.path) +
+          '?utm_source=self&utm_medium=qrcode',
         { width: 320, margin: 2 },
         (err, res) => {
           if (err) return
