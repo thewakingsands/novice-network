@@ -8,12 +8,13 @@
 <style lang="stylus">
 .icon-header
   > img
-    width 32px
-    height 32px
+    width 2.5em
+    height 2.5em
   > img, > span
     vertical-align middle
   > span
-    font-size 20px
+    font-size 1.5em
+    font-weight bold
 </style>
 
 <script>

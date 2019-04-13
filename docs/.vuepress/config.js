@@ -40,9 +40,31 @@ module.exports = {
           }
         }
       })
+      md.use(require('markdown-it-container'), 'job', {
+        validate: function(params) {
+          return params.trim().match(/^job\s+(.*)$/)
+        },
+
+        render: function(tokens, idx) {
+          var m = tokens[idx].info.trim().match(/^job\s+(.*)$/)
+
+          if (tokens[idx].nesting === 1) {
+            // opening tag
+            return '<JobCard name="' + md.utils.escapeHtml(m[1]) + '">'
+          } else {
+            // closing tag
+            return '</JobCard>\n'
+          }
+        }
+      })
       md.use(require('markdown-it-ins'))
       md.use(require('markdown-it-mark'))
       md.use(require('markdown-it-footnote'))
+
+      md.use(require('markdown-it-div'), {
+        marker: ';'
+      })
+      md.use(require('markdown-it-attrs'))
 
       md.use(require('markdown-it-pangu'))
     }

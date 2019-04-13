@@ -13,7 +13,7 @@ FF14在2.4版本中，追加了忍者；在3.0版本中，追加了暗黑骑士�
 
 ## 分工介绍
 
-FF14的职业分工与其他MMORPG很相似，都是坦克(T)+治疗(H/N)+输出(D/DPS)分工的制度。一般的4人副本中，采取1T1奶2DPS的小队组合；而高难度副本中，采用8人小队组合，需要2T、2奶和4个DPS。
+FF14的职业分工与其他MMORPG很相似，都是<img class="no-zoom" :src="$withBase('/images/jobs/tank.png')" height="20">坦克(T)+<img class="no-zoom" :src="$withBase('/images/jobs/healer.png')" height="20">治疗(H/N)+<img class="no-zoom" :src="$withBase('/images/jobs/dps.png')" height="20">输出(D/DPS)分工的制度。一般的4人副本中，采取1T1奶2DPS的小队组合；而高难度副本中，采用8人小队组合，需要2T、2奶和4个DPS。
 
 默认分配中，4个DPS为2近战，2远程。虽然也有3近战+1物远的菜刀队组合，但是综合输出高于2近2远的情况并不多见。
 
@@ -25,89 +25,134 @@ FF14的职业分工与其他MMORPG很相似，都是坦克(T)+治疗(H/N)+输出
 
 DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和正确打出输出循环是所有DPS的基本功。在4.0中，DPS被划分为 <img class="no-zoom" :src="$withBase('/images/jobs/melee.png')" height="20"> 近战物理、<img class="no-zoom" :src="$withBase('/images/jobs/ranged.png')" height="20"> 远程物理和 <img class="no-zoom" :src="$withBase('/images/jobs/magic.png')" height="20"> 远程魔法3种类型。
 
-<IconHeader img="/images/jobs/melee.png">近战物理</IconHeader>
+<IconHeader img="/images/jobs/melee.png">近战物理进攻职业</IconHeader>
 
-<IconHeader img="/images/jobs/ranged.png">远程物理</IconHeader>
+:::job monk
 
-<IconHeader img="/images/jobs/magic.png">远程魔法</IconHeader>
+武僧(格斗家) {.header}
 
+4.0的主角，存在感好弱 {.meta}
 
-* [坦克](#坦克)
-* [治疗](#治疗)
-* [近战输出](#近战输出)
-* [远程物理输出](#远程物理输出)
-* [远程魔法输出](#远程物理输出)
-
-### 坦克
-
-::: collapse 骑士（剑术师）
-
-<IncludePage file="job/paladin.md" slotKey="summary" />
-
-[骑士专题（练级手法、满级手法）](/job/paladin.md)
-
+<!-- end -->
 :::
 
-::: collapse 战士（斧术师）
+:::job dragoon
 
+龙骑士(枪术师) {.header}
+
+3.0的主角，LB躺尸 {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 暗黑骑士（3.0 职业，初始不可选）
+:::job ninja
+忍者(双剑师) {.header}
 
+2.4新增的职业，raid铁饭碗 {.meta}
+
+<!-- end -->
 :::
 
-### 治疗
+:::job samurai
+武士 {.header}
 
-::: collapse 白魔法师（幻术师）
+4.0新增的新职业，纷乱雪月花 {.meta}
 
+<!-- end -->
 :::
 
-::: collapse 学者（秘术师 30 级后可选）
+<IconHeader img="/images/jobs/ranged.png">远程物理进攻职业</IconHeader>
 
+:::job bard
+吟游诗人(弓箭手) {.header}
+
+艾欧泽亚唯一指定爱抖露 {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 占星术士（3.0 职业，初始不可选）
+:::job machinist
+机工士 {.header}
 
+使用火枪的科技职业 {.meta}
+
+<!-- end -->
 :::
 
-### 近战输出
+<IconHeader img="/images/jobs/magic.png">远程魔法进攻职业</IconHeader>
 
-::: collapse 武僧（格斗家）
+:::job blackmage
+黑魔法师(咒术师) {.header}
 
+~~吾名乃惠惠是爆裂魔法的使用者~~ {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 龙骑士（枪术师）
+:::job summoner
+召唤师(秘术师) {.header}
 
+我是我召唤兽的召唤兽 {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 忍者（双剑师，2.4 职业，初始不可选）
+:::job redmage
+赤魔法师 {.header}
 
+会复活的黑魔替代 {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 武士（4.0 职业，初始不可选）
+<IconHeader img="/images/jobs/tank.png">防护职业(T/坦克)</IconHeader>
 
+:::job paladin
+骑士(剑术师) {.header}
+
+~~圣光将赐予我力量~~ {.meta}
+
+<!-- end -->
 :::
 
-### 远程物理输出
+:::job warrior
+战士(斧术师) {.header}
 
-::: collapse 吟游诗人（弓箭手）
+我TM锯爆 {.meta}
 
+<!-- end -->
 :::
 
-::: collapse 机工士（3.0 职业，初始不可选）
+:::job darkknight
+暗黑骑士 {.header}
 
+5.0预定主角 {.meta}
+
+<!-- end -->
 :::
 
-### 远程魔法输出
+<IconHeader img="/images/jobs/healer.png">治疗职业(H/N/奶)</IconHeader>
 
-::: collapse 黑魔法师（咒术师）
+:::job whitemage
+白魔法师 {.header}
 
+可以奶人的投石机 {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 召唤师（秘术师）
+:::job scholar
+学者(秘术师) {.header}
 
+会召唤小仙女的魔炎法师 {.meta}
+
+<!-- end -->
 :::
 
-::: collapse 赤魔法师（4.0 职业，初始不可选）
+:::job astrologian
+占星术士 {.header}
 
+太阳神抽卡师 {.meta}
+
+<!-- end -->
 :::
