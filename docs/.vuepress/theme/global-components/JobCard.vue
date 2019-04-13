@@ -20,9 +20,11 @@
 .job-card
   margin-bottom 1em
   font-size 16px
-  @media screen and (min-width: 768px)
+  @media screen and (max-width: 320px)
+    font-size 15px
+  @media screen and (min-width: 1000px)
     font-size 18px
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: 795px)
     width 48%
     margin-right 4px
     display inline-block
@@ -30,20 +32,23 @@
   .card
     width 100%
     p
-      line-height 1.35
+      line-height 1.3
+      font-size 0.95em
     &.dps, &.tank, &.healer
       .header
         color rgba(255, 255, 255, 0.9)
       ul, p
-        font-size 0.95em
-        line-height 1.3
         color rgba(255, 255, 255, 0.85)
     ul
+      clear both
+      font-size 0.9em
       margin-bottom 0
       margin-top 0
       padding-left 0
       li
         list-style none
+        display inline-block
+        width 49%
     > .ui.bottom.attached.button
       background rgba(255, 255, 255, 0.2)
       color #fff
