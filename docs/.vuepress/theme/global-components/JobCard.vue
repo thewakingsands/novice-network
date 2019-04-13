@@ -26,7 +26,7 @@
     width 48%
     margin-right 4px
     display inline-block
-    max-width 380px
+    max-width 360px
   .card
     width 100%
     p
@@ -45,8 +45,12 @@
       li
         list-style none
     > .ui.bottom.attached.button
-      background rgba(255, 255, 255, 0.3)
+      background rgba(255, 255, 255, 0.2)
       color #fff
+      &:hover
+        background rgba(255, 255, 255, 0.15)
+      &:active
+        background rgba(255, 255, 255, 0.1)
     &.dps
       background linear-gradient(45deg, #3f2c2c 0%,#653434 100%)
     &.tank
