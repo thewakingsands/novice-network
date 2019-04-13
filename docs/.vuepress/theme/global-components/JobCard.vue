@@ -20,9 +20,9 @@
 .job-card
   margin-bottom 1em
   font-size 16px
-  @media screen and (min-width: 720px)
+  @media screen and (min-width: 768px)
     font-size 18px
-  @media screen and (min-width: 720px)
+  @media screen and (min-width: 768px)
     width 48%
     margin-right 4px
     display inline-block
