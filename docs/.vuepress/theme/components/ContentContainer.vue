@@ -25,6 +25,8 @@
     img
       max-width 100%
       cursor zoom-in
+      &.no-zoom
+        cursor auto
     ins
       text-decoration none
       text-shadow 0px 0px 1px #FFEB3B, 0px 0px 5px #FFEB3B, 0px 0px 10px #FFEB3B
@@ -79,14 +81,19 @@ export default {
       event.stopPropagation()
     },
     handleClickImg(element, event) {
+      if (element.classList.contains('no-zoom')) return
       var imgSrc = element.src
       this.getPhotoSwipe().openSingle(imgSrc)
     },
     updateSlotKeys() {
-      if (this.$page && this.$page.frontmatter && this.$page.frontmatter.slots) {
+      if (
+        this.$page &&
+        this.$page.frontmatter &&
+        this.$page.frontmatter.slots
+      ) {
         this.slotKeys = this.$page.frontmatter.slots
       } else {
-        this.slotKeys =  ['default']
+        this.slotKeys = ['default']
       }
     }
   },

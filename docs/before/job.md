@@ -21,6 +21,17 @@ FF14的职业分工与其他MMORPG很相似，都是坦克(T)+治疗(H/N)+输出
 
 下面的简要介绍，我尽量提供主攻随机日常周常的休闲玩家和主攻8人RAID级副本的挑战玩家两种视角的见解，职业具体技能和介绍可以参考左侧“职业专题”导航。
 
+<IconHeader img="/images/jobs/dps.png">进攻职业 (DPS)</IconHeader>
+
+DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和正确打出输出循环是所有DPS的基本功。在4.0中，DPS被划分为 <img class="no-zoom" :src="$withBase('/images/jobs/melee.png')" height="20"> 近战物理、<img class="no-zoom" :src="$withBase('/images/jobs/ranged.png')" height="20"> 远程物理和 <img class="no-zoom" :src="$withBase('/images/jobs/magic.png')" height="20"> 远程魔法3种类型。
+
+<IconHeader img="/images/jobs/melee.png">近战物理</IconHeader>
+
+<IconHeader img="/images/jobs/ranged.png">远程物理</IconHeader>
+
+<IconHeader img="/images/jobs/magic.png">远程魔法</IconHeader>
+
+
 * [坦克](#坦克)
 * [治疗](#治疗)
 * [近战输出](#近战输出)
