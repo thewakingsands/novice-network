@@ -52,11 +52,14 @@
       &:active
         background rgba(255, 255, 255, 0.1)
     &.dps
-      background linear-gradient(45deg, #3f2c2c 0%,#653434 100%)
+      background linear-gradient(45deg, #3f2c2c 0%, #653434 100%)
+      box-shadow 0px 1px 3px 0px #3f2c2c, 0px 0px 0px 1px #653434
     &.tank
-      background linear-gradient(45deg, #21375e 0%,#354393 100%)
+      background linear-gradient(45deg, #21375e 0%, #354393 100%)
+      box-shadow 0px 1px 3px 0px #21375e, 0px 0px 0px 1px #354393
     &.healer
-      background linear-gradient(45deg, #263425 0%,#3b6627 100%)
+      background linear-gradient(45deg, #263425 0%, #3b6627 100%)
+      box-shadow 0px 1px 3px 0px #263425, 0px 0px 0px 1px #3b6627
 </style>
 
 <script>
