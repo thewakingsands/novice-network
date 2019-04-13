@@ -34,8 +34,16 @@
     &.dps, &.tank, &.healer
       .header
         color rgba(255, 255, 255, 0.9)
-      .meta
-        color rgba(255, 255, 255, 0.8)
+      ul, p
+        font-size 0.95em
+        line-height 1.3
+        color rgba(255, 255, 255, 0.85)
+    ul
+      margin-bottom 0
+      margin-top 0
+      padding-left 0
+      li
+        list-style none
     > .ui.bottom.attached.button
       background rgba(255, 255, 255, 0.3)
       color #fff
