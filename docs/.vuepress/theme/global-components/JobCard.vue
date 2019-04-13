@@ -31,6 +31,9 @@
     max-width 360px
   .card
     width 100%
+    border 1px solid #8d7852
+    &:hover
+      border 1px solid #fff0a4
     p
       line-height 1.3
       font-size 0.95em
