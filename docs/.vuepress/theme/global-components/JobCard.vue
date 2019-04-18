@@ -17,18 +17,27 @@
 </template>
 
 <style lang="stylus">
+.jobs-container
+  display flex
+  flex-wrap wrap
+  justify-content space-around
+  margin-bottom 2em
 .job-card
-  margin-bottom 1em
-  font-size 16px
+  margin-bottom 2em
+  font-size 15px
+  width 100%
   @media screen and (max-width: 320px)
-    font-size 15px
+    font-size 14px
   @media screen and (min-width: 1000px)
-    font-size 18px
+    font-size 16px
   @media screen and (min-width: 795px)
     width 48%
     margin-right 4px
     display inline-block
-    max-width 360px
+    max-width 380px
+  @media screen and (max-width: 1469px)
+    font-size 18px
+    max-width 420px
   .card
     width 100%
     border 1px solid #8d7852
