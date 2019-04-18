@@ -20,14 +20,12 @@
 .jobs-container
   display flex
   flex-wrap wrap
-  justify-content space-around
   margin-bottom 2em
+  justify-content space-around
 .job-card
   margin-bottom 2em
   font-size 15px
   width 100%
-  @media screen and (max-width: 320px)
-    font-size 14px
   @media screen and (min-width: 1000px)
     font-size 16px
   @media screen and (min-width: 795px)
@@ -36,7 +34,6 @@
     display inline-block
     max-width 380px
   @media screen and (max-width: 1469px)
-    font-size 18px
     max-width 420px
   .card
     width 100%
@@ -54,6 +51,8 @@
     ul
       clear both
       font-size 0.9em
+      @media screen and (max-width: 320px)
+        font-size 12px
       margin-bottom 0
       margin-top 0
       padding-left 0
