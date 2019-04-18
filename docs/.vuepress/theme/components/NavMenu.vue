@@ -24,7 +24,8 @@
               v-for="(title2, index2) in title1.children"
               :key="index2"
             >
-              <img v-if="title2.img" :src="$withBase(title2.img)" />
+              <img v-if="title2.img && loadImage" :src="$withBase(title2.img)" />
+              <img v-if="title2.img && !loadImage" class="img-placeholder" src="data:," />
               <span>{{ title2.title }}</span>
             </router-link>
             <a
@@ -101,6 +102,8 @@
         .expand-icon
           transform rotate3d(0, 0, 1, 0)
       .with-img
+        .img-placeholder
+          opacity 0
         img
           width 32px
           height 32px
@@ -148,12 +151,14 @@ export default {
     return {
       showMenu: false,
       toc: TOC.main,
-      expandedTitles: []
+      expandedTitles: [],
+      loadImage: false
     }
   },
   mounted() {
     this.expandedTitles = [this.currentTitle1]
     this.showMenu = this.value
+    this.loadImage = true
   },
   computed: {
     currentTitle1() {
