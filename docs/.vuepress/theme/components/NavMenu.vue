@@ -26,6 +26,7 @@
             >
               <img v-if="title2.img && loadImage" :src="$withBase(title2.img)" />
               <img v-if="title2.img && !loadImage" class="img-placeholder" src="data:," />
+              <link v-if="title2.img && !loadImage" rel="preload" :href="$withBase(title2.img)" as="image">
               <span>{{ title2.title }}</span>
             </router-link>
             <a
