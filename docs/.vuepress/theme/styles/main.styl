@@ -20,10 +20,12 @@
 
 .guide
   margin-bottom 1em
-  &.cols2
+  &.cols2, &.cols3
     display flex
     justify-content center
     align-items center
+    &.top-align
+      align-items flex-start
     flex-wrap wrap
     img
       border-radius 8px
@@ -31,13 +33,16 @@
       margin 0 1em
     .col.grow
       flex 1
-      flex-basis 370px
     .col.figcap
       display flex
       flex-direction column
       text-align center
       > p:first-child
         margin-bottom 0.2em
+  &.cols2 .col.grow
+    flex-basis 370px
+  &.cols3 .col.grow
+    flex-basis 250px
 
 .center
   display flex
