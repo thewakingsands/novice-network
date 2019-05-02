@@ -389,7 +389,7 @@ Xボタン（PlayStation®4版：□ボタン）を押して「ホットバー�
 
 ;;;.guide .cols2
 ;;;.guide .col
-![](https://img.finalfantasyxiv.com/lds/uiguide/jp/40/9d02017340df642cfd7bbba9231dc6223717c4.jpg)
+![](./know.assets/9d02017340df642cfd7bbba9231dc6223717c4.jpg)
 ;;;
 
 ;;;.guide .col .grow
@@ -491,7 +491,7 @@ R2ボタンを押したままL2ボタンを押す
 
 ;;;.guide .cols2
 ;;;.guide .col
-![](./know.assets/9d02017340df642cfd7bbba9231dc6223717c4-1556798764075.jpg)
+![](./know.assets/9d02017340df642cfd7bbba9231dc6223717c4.jpg)
 ;;;
 
 ;;;.guide .col .grow
