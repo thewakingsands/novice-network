@@ -23,6 +23,19 @@ module.exports = {
       ]
     },
     {
+      title: '界面指南',
+      children: [
+        { title: '基础指南', href: '/ui/how.html' },
+        { title: '掌握UI', href: '/ui/know.html' },
+        { title: '常见问题', href: '/ui/faq.html' },
+        { title: '装备和道具', href: '/ui/equipment.html' },
+        { title: '买入卖出', href: '/ui/item.html' },
+        { title: '玩家交流', href: '/ui/communication.html' },
+        { title: '神典石', href: '/ui/currency.html' },
+        { title: '战斗界面', href: '/ui/battle.html' }
+      ]
+    },
+    {
       title: '练级路上',
       children: [
         { title: '练级指南', href: '/upgrade/guide.html' },
