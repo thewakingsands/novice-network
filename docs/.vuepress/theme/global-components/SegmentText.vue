@@ -11,6 +11,8 @@
     font-size 1.05em
   h5
     font-size 1.02em
+  :last-child
+    margin-bottom 0
 </style>
 
 <script>

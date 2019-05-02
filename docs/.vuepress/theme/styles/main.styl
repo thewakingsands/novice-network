@@ -18,3 +18,26 @@
 ::-webkit-scrollbar-thumb:window-inactive
 	background rgba(255, 255, 255, 0.8)
 
+.guide
+  table
+    td
+      border 1px solid #999
+      padding 4px
+    border-collapse collapse
+  &.cols2
+    display flex
+    justify-content center
+    flex-wrap wrap
+    img
+      border-radius 8px
+    .col
+      margin 0 1em
+    .col.grow
+      flex 1
+      flex-basis 370px
+    .col.figcap
+      display flex
+      flex-direction column
+      text-align center
+      > p:first-child
+        margin-bottom 0.2em
