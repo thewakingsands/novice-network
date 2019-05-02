@@ -1,18 +1,14 @@
-# UI Guide Overview
+# UI 指南 - 前言
 
-## Preface
+## 前言
 
-This guide will  cover the basics of UI elements including how they are used, how to  change their settings, as well as frequently asked questions regarding  them. We encourage anyone having trouble with the UI to refer to this  guide for a possible solution to their problem.
+本 UI 指南将教你怎么使用游戏的界面、如何修改设置，并回答一些关于 UI 的常见问题。如果你对调整 UI 有什么问题，都可以先来看看这个指南，说不定就能解决你的问题。
 
-### For Beginners
+### 新手起步
 
-For players new to the game, we recommend  reviewing the table of contents to select a topic you wish to learn more  about. A search function is also available for those who know  specifically what they wish to check.
+如果你是刚开始玩《最终幻想14》的新玩家，你可以先看看侧边栏的目录有没有比较感兴趣的内容。
 
-1. Enter a term to search.
-2. Find a topic and review its contents.
-3. Try out what you've learned!
-
-Though repositioning and resizing elements of  the UI may seem intimidating, even minor adjustments can make all the  difference in how you experience the game. Try starting with something  small and work your way up to bigger changes.
+虽然重新调整 UI 看起来有些吓人，但是即使是很小的调整也会让你体验游戏的方式有所不同。试着先从小的调整开始，朝着更大的方向进行。
 
 ### Getting Started
 
@@ -91,7 +87,7 @@ They can also be acccessed via keyboard shortcuts.
 
 :::segment grey
 
-本文翻译自 UI Guide 主题站，原文链接：[UI Guide Overview](https://na.finalfantasyxiv.com/uiguide/how/) <br>
+本文翻译自 UI Guide 主题站，原文链接：[UI Guide Overview](https://na.finalfantasyxiv.com/uiguide/how/)，部分内容根据国服情况有所调整。<br>
 © 2010 - 2019 [SQUARE ENIX](https://na.square-enix.com/us/home) CO., LTD. All Rights Reserved.
 
 :::
