@@ -9,6 +9,11 @@
 <style lang="stylus">
 .content-container
   width 100%
+  table
+    td
+      border 1px solid #999
+      padding 4px
+    border-collapse collapse
   .content-container-inner
     max-width 1200px
     padding 0 20px

@@ -16,12 +16,12 @@ For players new to the game, we recommend  reviewing the table of contents to se
 
 ;;;.guide .cols2
 ;;;.guide .col .figcap
-![](./baisc.assets/ae2b67f5c2b7e20bed76fa367ae35eacad082d.jpg)
+![](./how.assets/ae2b67f5c2b7e20bed76fa367ae35eacad082d.jpg)
 
 For Mouse Users
 ;;;
 ;;;.guide .col .figcap
-![](./baisc.assets/3cca8032b9a960c39a0981d7c630eca71f154d.jpg)
+![](./how.assets/3cca8032b9a960c39a0981d7c630eca71f154d.jpg)
 
 For Gamepad Users
 ;;;
@@ -37,13 +37,13 @@ The two primary menus used to make changes  to the UI are Character Configuratio
 
 ;;;.guide .col
 
-![](./baisc.assets/f61370355b8801c26798590ba1ba3245f1d801.jpg)
+![](./how.assets/f61370355b8801c26798590ba1ba3245f1d801.jpg)
 
 ;;;
 
 ;;;.guide .col
 
-![](./baisc.assets/c34011e1336e567c921fd4b50b29193916c383.jpg)
+![](./how.assets/c34011e1336e567c921fd4b50b29193916c383.jpg)
 
 ;;;
 
@@ -55,7 +55,7 @@ The two primary menus used to make changes  to the UI are Character Configuratio
 
 ;;;.guide .col
 
-![](./baisc.assets/a8f73b981a9dcdfb4f1ac88938bfc9db1fd6f9.jpg)
+![](./how.assets/a8f73b981a9dcdfb4f1ac88938bfc9db1fd6f9.jpg)
 
 ;;;
 
