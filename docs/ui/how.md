@@ -2,36 +2,36 @@
 
 ## 前言
 
-本 UI 指南将教你怎么使用游戏的界面、如何修改设置，并回答一些关于 UI 的常见问题。如果你对调整 UI 有什么问题，都可以先来看看这个指南，说不定就能解决你的问题。
+《最终幻想14》的 UI 界面可以根据玩家的使用习惯自由定制。这个 UI 指南会你怎么使用游戏的界面、如何修改设置，并回答一些关于 UI 的常见问题。如果你对调整 UI 有什么问题，都可以先来看看这个指南，说不定就能解决你的问题。
 
 ### 新手起步
 
-如果你是刚开始玩《最终幻想14》的新玩家，你可以先看看侧边栏的目录有没有比较感兴趣的内容。
+如果你是刚开始玩《最终幻想14》的新玩家，你可以先看看侧边栏的目录有没有比较感兴趣的内容。<!--如果有想要了解的内容，也可以尝试用关键字搜索，在游戏里不断尝试吧！-->
 
 虽然重新调整 UI 看起来有些吓人，但是即使是很小的调整也会让你体验游戏的方式有所不同。试着先从小的调整开始，朝着更大的方向进行。
 
-### Getting Started
+### 从哪开始进行游戏设置？
 
-For players new to the game, we recommend  reviewing the table of contents to select a topic you wish to learn more  about. A search function is also available for those who know  specifically what they wish to check.
+可以从快捷指令的系统菜单中打开游戏中的设置。
 
 ;;;.guide .cols2
 ;;;.guide .col .figcap
 ![](./how.assets/ae2b67f5c2b7e20bed76fa367ae35eacad082d.jpg)
 
-For Mouse Users
+键盘鼠标模式
 ;;;
 ;;;.guide .col .figcap
 ![](./how.assets/3cca8032b9a960c39a0981d7c630eca71f154d.jpg)
 
-For Gamepad Users
+手柄操作模式模式
 ;;;
 ;;;
 
-## The Configuration Menus
+## 设置菜单
 
-### Where Customization Begins
+### 游戏中的各种设置
 
-The two primary menus used to make changes  to the UI are Character Configuration and System Configuration. They can  be accessed at any time, so don't hesitate to open them up and test out  their various settings.
+最终幻想14中可以对游戏系统、画面、操作等各个方面进行各种设置。和角色有关的设置在“角色设置”中，和系统相关的设定则是在“角色设置”里。这些设置可以随时更改，所以放轻松，大胆去尝试吧。
 
 ;;;.guide .cols2
 
@@ -49,7 +49,7 @@ The two primary menus used to make changes  to the UI are Character Configuratio
 
 ;;;
 
-### Accessing the Menus
+### 设置菜单
 
 ;;;.guide .cols2
 
@@ -61,18 +61,20 @@ The two primary menus used to make changes  to the UI are Character Configuratio
 
 ;;;.guide .col .grow
 
-Both menus can be accessed by left-clicking on the System icon found at the bottom right of the screen.
+角色设置和系统设置都在快捷菜单的系统菜单里。
 
-They can also be acccessed via keyboard shortcuts.
+点击系统菜单，就能找到这两个设置了。
 
-* Character Configuration: K
-* System Configuration: Ctrl+K
+当然你也可以直接使用快捷键打开这两个菜单：
+
+* 角色设置：K
+* 系统设置：Ctrl+K
 
 ;;;
 
 ;;;
 
-### Menu Contents
+### 具体可以设置的内容
 
 ;;;.guide
 
