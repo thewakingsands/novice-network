@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ja" class="jp">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>UI（ユーザーインターフェース）ガイド | FINAL FANTASY XIV, The Lodestone</title>
+<meta name="description" content="FINAL FANTASY XIVでは、プレイヤーの好みやゲームの慣れ具合にあわせて、UI（ユーザーインターフェイス）の操作や表示を自由に変更することができます。UIに関する操作や設定方法はこちらをご覧ください。">
+
+<link rel="start" href="https://jp.finalfantasyxiv.com/uiguide/">
+<link rel="canonical" href="https://jp.finalfantasyxiv.com/uiguide/how/" />
+
+
+<meta property="fb:app_id" content="1400886233468625">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="UI（ユーザーインターフェース）ガイド | FINAL FANTASY XIV, The Lodestone">
+<meta property="og:url" content="https://jp.finalfantasyxiv.com/uiguide/">
+<meta property="og:description" content="FINAL FANTASY XIVでは、プレイヤーの好みやゲームの慣れ具合にあわせて、UI（ユーザーインターフェイス）の操作や表示を自由に変更することができます。UIに関する操作や設定方法はこちらをご覧ください。">
+<meta property="og:site_name" content="UI（ユーザーインターフェース）ガイド | FINAL FANTASY XIV, The Lodestone">
+<meta property="og:image"  content="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/ogp.png?e2f8a7c7">
+<meta name="twitter:card" content="summary_large_image">
+
+
+	<meta name="twitter:site" content="@ff_xiv_jp">
+
+
+<link href="https://img.finalfantasyxiv.com/lds/promo/h/N/k_EUKKRaO9fedynvdvBeNcgDr0.css" rel="stylesheet">
+<link href="https://img.finalfantasyxiv.com/lds/promo/h/t/UY4einbC985_ui_4os2oRlQjOY.css" rel="stylesheet">
+<link href="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/css/uiguide.css?ec56b8ab" rel="stylesheet">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KK989P');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43364669-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43364669-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-43364669-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-43364669-4');
+</script>
+
+
+
+
+</head>
+<body>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KK989P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	
+		js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=1400886233468625";
+	
+
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="brand brand--relative"><div class="brand__section">
+	<div class="brand__logo">
+		
+			<a href="https://www.jp.square-enix.com/" target="_blank">
+		
+		<img src="https://img.finalfantasyxiv.com/lds/promo/h/L/cxcD5kjeM52JRVwrrzIF4dZNe0.png" width="130" height="14" alt="SQUARE ENIX"></a>
+	</div>
+	<div class="l__cross_menu">
+		<a href="javascript:void(null)" class="ffxiv_pr_cross_menu_button_jp"></a>
+		<script>
+			var ffxiv_pr_cross_menu = {
+				uri_js: '/cross_menu/uri.js'
+			};
+		</script>
+	</div>
+
+
+	<div class="brand__lang dropdown_trigger_box">
+		<a href="javascript:void(0);" class="brand__lang__btn brand__lang__jp dropdown_trigger">
+		
+			日本語
+		
+		</a>
+		<ul class="brand__lang__select js__lang dropdown" style="opacity: 0; display: none;">
+			<li><a href="javascript:void(0);" data-subdomain="jp" class="brand__lang__jp">日本語</a></li>
+			<li><a href="javascript:void(0);" data-subdomain="na" class="brand__lang__na">English</a></li>
+			<li><a href="javascript:void(0);" data-subdomain="eu" class="brand__lang__eu">English</a></li>
+			<li><a href="javascript:void(0);" data-subdomain="fr" class="brand__lang__fr">Français</a></li>
+			<li><a href="javascript:void(0);" data-subdomain="de" class="brand__lang__de">Deutsch</a></li>
+		</ul>
+	</div>
+
+
+</div></div>
+
+
+<header class="uig-header">
+	
+		<img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/bg_header_02.jpg?298f40eb" width="1280" height="240" class="header__bg">
+		<a href="/uiguide/" class="uig-header__top_link"></a>
+	
+
+	<p class="uig-header__update">Last Update:&nbsp;2019/06/28</p>
+	<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/8e/df704e9c3edc3880e8eb37c704740cc0c4d2ef.png" width="960" height="240">
+
+	<div class="uig-header__link">
+		<a href="/lodestone/" class="uig-ldst_link">
+			
+				<img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/bt_lodestone.png?925ac459" width="304" height="94" class="header__ldst_link">
+			
+		</a>
+		<ul class="uig-social">
+			<li class="fb">
+				<div class="fb-like" data-href="https://jp.finalfantasyxiv.com/uiguide/" data-width="120" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+			</li>
+			<li class="tw">
+				<a href="https://twitter.com/share" class="twitter-share-button"
+					data-url="https://jp.finalfantasyxiv.com/uiguide/"
+					data-text="UI（ユーザーインターフェース）ガイド | FINAL FANTASY XIV, The Lodestone"
+					data-lang="ja"
+					
+					
+					
+					
+				data-count="none">tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</li>
+		</ul>
+	</div>
+</header>
+
+<div class="uig-breadcrumb__wrapper">
+<div class="uig-breadcrumb">
+	<div class="uig-breadcrumb__bar">
+		<div class="uig-breadcrumb__inner">
+			<ul class="uig-breadcrumb__list">
+				<li><a href="/uiguide/">UIガイド</a></li>
+				
+					<li>UIガイドの使い方</li>
+				
+				
+				
+				
+			</ul>
+			<dl class="uig-device_mode">
+				<dt>操作モード</dt>
+				<dd><a href="#" title="マウス操作" class="on js__device_mode__keyboard js__tooltip"><img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/dev/op_keyboard.png?29cb17e6" width="48" height="48"></a></dd>
+				<dd><a href="#" title="ゲームパッド（コントローラー）操作" class="js__device_mode__gamepad js__tooltip"><img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/dev/op_gamepad.png?875e6101" width="48" height="48"></a></dd>
+			</dl>
+		</div>
+
+		<a href="#" class="uig-navi__btn">
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/icon/ic_menu.png?3ae44554" width="40" height="40">
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/icon/ic_menu__close.png?7bfe062d" width="40" height="40" class="btn_close">
+		</a>
+	</div>
+	<nav class="uig-navi">
+		<div class="uig-navi__search js__search">
+			<form action="/uiguide/search/">
+				<input type="text" name="q" placeholder="キーワードで探す" class="js__search__input" autocomplete="off">
+				<button type="submit" class="uig-navi__search__submit"><img src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/img/icon/ic_search.png?8ffbbe08" width="14" height="14"></button>
+			</form>
+			<div class="uig-search__tag">
+				<p>人気のワード</p>
+				<ul class="clearfix">
+					
+						<li><a href="/uiguide/search/?q=%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3">アクション</a></li>
+					
+						<li><a href="/uiguide/search/?q=HUD">HUD</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%9B%E3%83%83%E3%83%88%E3%83%90%E3%83%BC">ホットバー</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A3%E3%82%B0">コンフィグ</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AF%E3%83%AD%E3%82%B9%E3%83%9B%E3%83%83%E3%83%88%E3%83%90%E3%83%BC">クロスホットバー</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E6%93%8D%E4%BD%9C%E3%83%A2%E3%83%BC%E3%83%89">操作モード</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88">マーケット</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%81%E3%83%A3%E3%83%83%E3%83%88">チャット</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A3%E3%82%B0">キャラクターコンフィグ</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A3%E3%82%B0">システムコンフィグ</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB">ビギナーチャンネル</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%81%95%E3%81%84%E3%81%8D%E3%82%87%E3%81%86%E8%A3%85%E5%82%99">さいきょう装備</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AE%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88">ギアセット</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E8%A9%A6%E7%9D%80">試着</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%83%AC%E3%83%99%E3%83%AB">アイテムレベル</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%A2%E3%83%A9%E3%82%AC%E3%83%B3%E3%83%88%E3%83%BC%E3%83%A0%E3%82%B9%E3%83%88%E3%83%BC%E3%83%B3">アラガントームストーン</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E6%9F%93%E8%89%B2">染色</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AB%E3%83%A9%E3%83%A9%E3%83%B3%E3%83%88">カララント</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E6%AD%A6%E5%85%B7%E6%8A%95%E5%BD%B1">武具投影</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%9F%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%A5%E3%83%97%E3%83%AA%E3%82%BA%E3%83%A0">ミラージュプリズム</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88">クエスト</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3">アイコン</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%90%E3%83%88%E3%83%AB">バトル</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88">ターゲット</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88">ネームプレート</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AB%E3%83%A1%E3%83%A9">カメラ</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E6%AD%A9%E8%A1%8C%E3%83%A2%E3%83%BC%E3%83%89">歩行モード</a></li>
+					
+						<li><a href="/uiguide/search/?q=%E3%82%AB%E3%83%83%E3%83%88%E3%82%B7%E3%83%BC%E3%83%B3">カットシーン</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="uig-navi__wrapper"><div>
+			<a href="/uiguide/" class="uig-navi__top">トップページ</a>
+			<ul class="uig-navi__category">
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						on active
+						
+					"
+					  data-new_dt=""
+					  data-update_dt="2019-06-28T18:00:00+09:00"
+					>UIガイドの使い方<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/how/#category-how_start" data-target="#category-how_start" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>UIガイドはじめました</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/how/#entry-ui" data-target="#entry-ui" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T07:00:00+09:00" data-update_dt="">Q: UIガイドはどうやって使うの？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/how/#entry-ui_config" data-target="#entry-ui_config" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T09:00:00+09:00" data-update_dt="">Q: ゲーム内での設定はどこからやるの？</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/how/#category-how_what" data-target="#category-how_what" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>コンフィグ</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/how/#entry-config_open" data-target="#entry-config_open" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T10:00:00+09:00" data-update_dt="">Q: コンフィグってどこから開くの？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/how/#entry-config_how_to" data-target="#entry-config_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T10:10:10+09:00" data-update_dt="2019-06-28T18:00:00+09:00">Q: 各コンフィグでは何ができるの？</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+							
+						
+					"
+					  data-new_dt=""
+					  data-update_dt="2019-06-11T17:00:00+09:00"
+					>UIについて知っておこう<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/know/#category-know-hud" data-target="#category-know-hud" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>HUD</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hud-name" data-target="#entry-hud-name" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T10:10:11+09:00" data-update_dt="">Q: HUDの名前や使い方がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hud-layout" data-target="#entry-hud-layout" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T10:10:12+09:00" data-update_dt="2019-06-11T17:00:00+09:00">Q: HUDのレイアウトはどこで変更するの？</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/know/#category-know-action" data-target="#category-know-action" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>アクション</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-action_how_to" data-target="#entry-action_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:00+09:00" data-update_dt="">Q: アクションの使い方がわかりません</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/know/#category-know-hb" data-target="#category-know-hb" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>ホットバー</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hotbar_registration" data-target="#entry-hotbar_registration" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:01+09:00" data-update_dt="">Q: ホットバーの登録方法がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hotbar_pad_registration" data-target="#entry-hotbar_pad_registration" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:02+09:00" data-update_dt="">Q: コントローラーだけでホットバーの登録はできますか？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hotbar_icon_num" data-target="#entry-hotbar_icon_num" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:03+09:00" data-update_dt="">Q: ホットバーに登録したアイコンの下にある数字はなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hotbar_shortcut" data-target="#entry-hotbar_shortcut" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:04+09:00" data-update_dt="">Q: ショートカットキーを自分の使いやすいものに変更したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-hotbar_hidden_blank" data-target="#entry-hotbar_hidden_blank" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:05+09:00" data-update_dt="">Q: 空のスロット枠を消したい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/know/#category-know-xhb" data-target="#category-know-xhb" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>XHB（クロスホットバー）</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-xhb_how_to" data-target="#entry-xhb_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:06+09:00" data-update_dt="">Q: XHB（クロスホットバー）の使い方がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-xhb_change" data-target="#entry-xhb_change" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:07+09:00" data-update_dt="">Q: XHB（クロスホットバー）を切替えたい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/know/#entry-xhb_hold" data-target="#entry-xhb_hold" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T11:01:08+09:00" data-update_dt="">Q: ホールド操作拡張設定ってなんですか？</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+					"
+					  data-new_dt="2019-06-11T17:00:00+09:00"
+					  data-update_dt=""
+					>よくある質問<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#category-faq_switch" data-target="#category-faq_switch" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>操作モードの切り替え</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-control_mouse_keyboard" data-target="#entry-control_mouse_keyboard" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:28:55+09:00" data-update_dt="">Q: マウスとキーボードで操作したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-control_gamepad" data-target="#entry-control_gamepad" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:29:19+09:00" data-update_dt="">Q: ゲームパッド（コントローラー）で操作したい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#category-faq_display" data-target="#category-faq_display" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>画面の見方</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-control_type_layout" data-target="#entry-control_type_layout" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:29:43+09:00" data-update_dt="">Q: ゲーム画面の見方がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-interface_npc_icon" data-target="#entry-interface_npc_icon" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-02-19T17:00:00+09:00" data-update_dt="">Q: クエストアイコンの違いってなに？</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#category-faq_interface" data-target="#category-faq_interface" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>周辺機器</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-interface_ps4" data-target="#entry-interface_ps4" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:30:28+09:00" data-update_dt="">Q: PlayStation®4で、マウスやキーボードは使えるの？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-interface_pad_display" data-target="#entry-interface_pad_display" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:32:58+09:00" data-update_dt="">Q: ゲームパッドのボタン表示設定はどれを選べばいいの？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-interface_pad_mouse" data-target="#entry-interface_pad_mouse" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:33:55+09:00" data-update_dt="">Q: ゲームパッド（コントローラー）だけでマウス操作がしたい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#category-faq_other" data-target="#category-faq_other" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>その他</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-setting_walking" data-target="#entry-setting_walking" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-06-11T17:00:00+09:00" data-update_dt="">Q: 突然、歩行モードになってしまった</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-setting_cs_skip" data-target="#entry-setting_cs_skip" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-06-11T17:00:00+09:00" data-update_dt="">Q: 一度見たカットシーンをスキップしたい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/faq/#entry-setting_cs_repeat" data-target="#entry-setting_cs_repeat" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-06-11T17:00:00+09:00" data-update_dt="">Q: 一度見たカットシーンを見返したい</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+					"
+					  data-new_dt="2019-01-08T17:00:00+09:00"
+					  data-update_dt=""
+					>装備品／所持品<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment-my" data-target="#category-equipment-my" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>マイキャラクター</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-character_headgear_visibility" data-target="#entry-character_headgear_visibility" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:54:03+09:00" data-update_dt="">Q: 頭装備や武器のグラフィックを非表示にしたい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment-chest" data-target="#category-equipment-chest" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>アーマリーチェスト</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_where_is" data-target="#entry-equipment_where_is" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:54:27+09:00" data-update_dt="">Q: 装備が所持品の中に見当たらないのですが…</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_box_open" data-target="#entry-equipment_box_open" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:55:06+09:00" data-update_dt="">Q: アーマリーチェストはどこから開くんですか？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_how_to" data-target="#entry-equipment_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:55:36+09:00" data-update_dt="">Q: 武器や防具を装備する方法がわかりません</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment-saikyo" data-target="#category-equipment-saikyo" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>さいきょう装備</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_best" data-target="#entry-equipment_best" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:56:12+09:00" data-update_dt="">Q: 今持ってる装備で、一番オススメのものを教えてほしい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment-gearset" data-target="#category-equipment-gearset" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>ギアセット</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_set" data-target="#entry-equipment_set" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:56:27+09:00" data-update_dt="">Q: 今着ている装備を保存して、一瞬で着替えたい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment-compare" data-target="#category-equipment-compare" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>装備品の強さ比較</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_compare" data-target="#entry-equipment_compare" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:57:16+09:00" data-update_dt="">Q: 装備品の強さを比較したい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment-try" data-target="#category-equipment-try" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>装備品の試着</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-equipment_test" data-target="#entry-equipment_test" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:57:53+09:00" data-update_dt="">Q: 装備品の試着はできますか？</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment_il" data-target="#category-equipment_il" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>アイテムレベル（IL）</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-il_how" data-target="#entry-il_how" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="">Q: アイテムレベル（IL）ってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-il_average" data-target="#entry-il_average" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="">Q: 平均アイテムレベルってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-il_average_up" data-target="#entry-il_average_up" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="">Q: アイテムレベルはどうやってあげるの？</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment_dye" data-target="#category-equipment_dye" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>装備品の染色</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-dye_about" data-target="#entry-dye_about" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 装備品の色を変更したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-dye_dye" data-target="#entry-dye_dye" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: カララントってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-dye_how" data-target="#entry-dye_how" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 装備品の染色方法がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-dye_revert" data-target="#entry-dye_revert" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 染色した装備を元の色に戻したい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#category-equipment_glamours" data-target="#category-equipment_glamours" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>武具投影</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-glamours_about" data-target="#entry-glamours_about" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 装備品の見た目を変更したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-glamours_prism" data-target="#entry-glamours_prism" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: ミラージュプリズムってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-glamours_how" data-target="#entry-glamours_how" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 武具投影のやり方がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-glamours_dispel" data-target="#entry-glamours_dispel" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 武具投影を解除したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/equipment/#entry-glamours_transparent" data-target="#entry-glamours_transparent" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-01-08T17:00:00+09:00" data-update_dt="">Q: 装備品の見た目を透明にしたい</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+					"
+					  data-new_dt=""
+					  data-update_dt=""
+					>アイテムの取引<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/item/#category-item-market" data-target="#category-item-market" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>マーケット</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/item/#entry-market_where_is" data-target="#entry-market_where_is" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T13:31:21+09:00" data-update_dt="">Q: マーケットはどこにあるんですか？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/item/#entry-market_how_to" data-target="#entry-market_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T13:32:02+09:00" data-update_dt="">Q: マーケットボードの使い方が分かりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/item/#entry-market_search" data-target="#entry-market_search" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T13:32:42+09:00" data-update_dt="">Q: アイテムが多すぎて、探したいアイテムが見つけられません</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/item/#category-item-history" data-target="#category-item-history" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>取引履歴</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/item/#entry-market_price" data-target="#entry-market_price" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T13:33:17+09:00" data-update_dt="">Q: 欲しいアイテムがどの位の価格で取引されているか知りたい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/item/#category-item-want" data-target="#category-item-want" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>「欲しい」リスト</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/item/#entry-market_favorite" data-target="#entry-market_favorite" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T13:33:34+09:00" data-update_dt="">Q: マーケットでよく調べるアイテムをすぐに検索できるようにしたい</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+					"
+					  data-new_dt="2019-02-19T17:00:00+09:00"
+					  data-update_dt="2019-02-19T17:00:00+09:00"
+					>コミュニケーション<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#category-chat_np" data-target="#category-chat_np" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>ネームプレート</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_np_def" data-target="#entry-chat_np_def" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-02-19T17:00:00+09:00" data-update_dt="">Q: NPCとプレイヤーキャラクターの区別がつきません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_np_color" data-target="#entry-chat_np_color" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-02-19T17:00:00+09:00" data-update_dt="">Q: 他プレイヤーキャラクターのネームプレートの色の違いってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_np_config" data-target="#entry-chat_np_config" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-02-19T17:00:00+09:00" data-update_dt="">Q: キャラクターのネームプレートの色を変更したい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#category-communication-chat" data-target="#category-communication-chat" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>チャット</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_type" data-target="#entry-chat_type" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:03:45+09:00" data-update_dt="2019-02-19T17:00:00+09:00">Q: ゲーム内でできるチャットの種類を教えてください</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_how_to" data-target="#entry-chat_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:04:21+09:00" data-update_dt="">Q: チャットのやり方がわかりません</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_directmode" data-target="#entry-chat_directmode" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:04:42+09:00" data-update_dt="">Q: ダイレクトチャットモードってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_to_public" data-target="#entry-chat_to_public" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:05:26+09:00" data-update_dt="">Q: 相手を選ばず、みんなに発言したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_to_private" data-target="#entry-chat_to_private" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:05:47+09:00" data-update_dt="2019-01-08T17:00:00+09:00">Q: 特定の相手と2人で話したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_to_party" data-target="#entry-chat_to_party" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:06:05+09:00" data-update_dt="">Q: パーティメンバーと話したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_to_fc" data-target="#entry-chat_to_fc" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:06:22+09:00" data-update_dt="">Q: フリーカンパニーメンバーと話したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_to_ls" data-target="#entry-chat_to_ls" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:06:53+09:00" data-update_dt="">Q: リンクシェルメンバーと話したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_to_alliance" data-target="#entry-chat_to_alliance" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:07:17+09:00" data-update_dt="">Q: アライアンスメンバーと話したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_display_size" data-target="#entry-chat_display_size" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:07:37+09:00" data-update_dt="">Q: チャットの文字が読みづらいので大きさを変更したい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-chat_display_color" data-target="#entry-chat_display_color" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T14:07:52+09:00" data-update_dt="">Q: 各LSのチャットが区別しづらいので、見やすくしたい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#category-faq_beginner" data-target="#category-faq_beginner" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>ビギナーチャンネル</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-beginner_how_to" data-target="#entry-beginner_how_to" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:34:19+09:00" data-update_dt="">Q: ビギナーチャンネルってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/communication/#entry-beginner_join" data-target="#entry-beginner_join" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-09-13T12:34:48+09:00" data-update_dt="">Q: ビギナーチャンネルにはどうやったら入れるの？</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+					"
+					  data-new_dt=""
+					  data-update_dt="2019-06-28T18:00:00+09:00"
+					>アラガントームストーン<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/currency/#category-currency_ats" data-target="#category-currency_ats" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>アラガントームストーン</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/currency/#entry-ats_how" data-target="#entry-ats_how" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="">Q: アラガントームストーンってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/currency/#entry-ats_exchange" data-target="#entry-ats_exchange" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="2019-06-28T18:00:00+09:00">Q: アラガントームストーンはどこで交換できるの？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/currency/#entry-ats_number" data-target="#entry-ats_number" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="">Q: 今持っているアラガントームストーンの数が知りたい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/currency/#entry-ats_weekylimits" data-target="#entry-ats_weekylimits" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2018-11-20T17:00:00+09:00" data-update_dt="">Q: 週制限ってなに？</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+					<li><a href="#" class="js__navi_category uig-sys-new_or_update_mark_container
+						
+					"
+					  data-new_dt="2019-04-23T17:00:00+09:00"
+					  data-update_dt=""
+					>バトル<span></span></a>
+						<dl class="uig-navi__detail">
+							
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#category-battle_target" data-target="#category-battle_target" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>ターゲット</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#entry-battle_bnpc_percent" data-target="#entry-battle_bnpc_percent" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-04-23T17:00:00+09:00" data-update_dt="">Q: ターゲットの残りHPをパーセントで表示したい</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#category-battle_np" data-target="#category-battle_np" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>ネームプレート</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#entry-battle_np_bar" data-target="#entry-battle_np_bar" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-04-23T17:00:00+09:00" data-update_dt="">Q: 敵ネームプレートの色の違いってなに？</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#entry-battle_np_icon" data-target="#entry-battle_np_icon" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-04-23T17:00:00+09:00" data-update_dt="">Q: 敵に表示されるアイコンの違いってなに？</a></dd>
+								
+							
+								<dt><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#category-battle_camera" data-target="#category-battle_camera" class="uig-navi__category_link uig-sys-new_or_update_mark_container"
+								  data-new_dt=""
+								  data-update_dt=""
+								>カメラ</a></dt>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#entry-battle_camera_speed" data-target="#entry-battle_camera_speed" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-04-23T17:00:00+09:00" data-update_dt="">Q: カメラの回転速度を早くしたい</a></dd>
+								
+									<dd><a href="https://jp.finalfantasyxiv.com/uiguide/battle/#entry-battle_camera_tilt" data-target="#entry-battle_camera_tilt" class="uig-navi__entry_link uig-sys-new_or_update_mark_container" data-new_dt="2019-04-23T17:00:00+09:00" data-update_dt="">Q: カメラの角度が低すぎて、ギミックが見えにくい</a></dd>
+								
+							
+						</dl>
+					</li>
+				
+			</ul>
+			<dl class="uig-navi__site_links">
+				<dt>関連サイト</dt>
+				<dd><a href="/lodestone/playguide/">ゲームプレイガイド</a></dd>
+				<dd><a href="/lodestone/">The Lodestone</a></dd>
+			</dl>
+		</div></div>
+	</nav>
+</div>
+</div>
+
+
+<div class="uig-main"><div class="uig-detail">
+	<h1 class="uig-title uig-sys-new_or_update_mark_container"
+		 data-new_dt=""
+		 data-update_dt="2019-06-28T18:00:00+09:00"
+	>UIガイドの使い方
+		<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+		<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+	</h1>
+	
+		<div class="uig-anchor_point" id="category-how_start">
+			<h2 class="uig-title--category uig-sys-new_or_update_mark_container"
+				 data-new_dt=""
+				 data-update_dt=""
+			>UIガイドはじめました
+				<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+				<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+			</h2>
+			<div class="uig-box__800"><p class="uig-text__m">FFXIVのUIは、プレイヤーの好みや慣れ具合にあわせて、操作方法や表示を自由にカスタマイズできます。<br />UIガイドでは、UIの基本機能の使い方から表示や操作に関する設定の方法、お問い合わせの多い質問などをFAQ形式でご紹介しています。UI関連のお困りごとは、「UIガイド」でぜひ検索してみてください。</p></div>
+			
+				<div class="uig-anchor_point uig-sys-new_or_update_mark_container" id="entry-ui" data-new_dt="2018-09-13T07:00:00+09:00" data-update_dt="">
+					<h3 class="uig-title--2">Q: UIガイドはどうやって使うの？
+						<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+						<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+					</h3>
+					<div class="uig-box__760">
+	<p class="uig-text__m">ゲームを始めたばかりの方やこれから始める方は、トップページの質問リストを順に読み進め、気になる項目を見つけるところから始めましょう。調べたいことが決まっている方は、キーワード検索でお目当て質問と答えを見つけ、ゲーム内でどんどん試していきましょう！</p>
+	<div class="uig-view__keyboard">
+	<div class="uig-column">
+		<div class="uig-column--3colmun--bg">
+			<p>① 検索窓に調べたいキーワードを入力！</p>
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/2d/edee5bee1df803c6845249f6663eccc8ea3d9e.jpg" class="uig-img">
+		</div>
+		<div class="uig-column--3colmun--bg">
+			<p>② 詳細ページで解決方法を確認！</p>
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/eb/181f7f531feeb3a64d15c3aa3660c55bd05e33.jpg" class="uig-img">
+		</div>
+		<div class="uig-column--3colmun--bg">
+			<p>③ ゲーム内で解決方法を実行し解決！</p>
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/af/68f530280285ac24349a380e886124824284c5.jpg" class="uig-img">
+		</div>
+	</div>
+	<p class="uig-text__m">HUDレイアウトやホットバーは、自分の好みの位置や大きさに調整して操作設定しておくことで、より使いやすくなります。最初は少し敷居が高く感じるかもしれませんが、興味のある所から少しずつ設定していきましょう。</p>
+	</div>
+
+	<div class="uig-view__gamepad">
+	<div class="uig-column">
+		<div class="uig-column--3colmun--bg">
+			<p>① 検索窓に調べたいキーワードを入力！</p>
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/2d/edee5bee1df803c6845249f6663eccc8ea3d9e.jpg" class="uig-img">
+		</div>
+		<div class="uig-column--3colmun--bg">
+			<p>② 詳細ページで解決方法を確認！</p>
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/eb/181f7f531feeb3a64d15c3aa3660c55bd05e33.jpg" class="uig-img">
+		</div>
+		<div class="uig-column--3colmun--bg">
+			<p>③ ゲーム内で解決方法を実行し解決！</p>
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/60/591cc6e5e0365fb6b8a8d5c00a5c29304ad056.jpg" class="uig-img">
+		</div>
+	</div>
+	<p class="uig-text__m">HUDレイアウトやホットバーは、自分の好みの位置や大きさに調整して操作設定しておくことで、より使いやすくなります。最初は少し敷居が高く感じるかもしれませんが、興味のある所から少しずつ設定していきましょう。</p>
+	</div>
+</div>
+				</div>
+			
+				<div class="uig-anchor_point uig-sys-new_or_update_mark_container" id="entry-ui_config" data-new_dt="2018-09-13T09:00:00+09:00" data-update_dt="">
+					<h3 class="uig-title--2">Q: ゲーム内での設定はどこからやるの？
+						<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+						<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+					</h3>
+					<div class="uig-box__760 uig-space--7">
+	<p class="uig-text__m-m20">ゲーム内での設定は、メインコマンドにあるシステムメニューから行います。</p>
+
+	<div class="uig-column">
+		<div class="uig-column--50">
+			<p class="uig-layout__center"><img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/95/307768aa9c267b0e18e505a9ae166de2903e68.jpg" class="uig-img uig-space--2">マウス操作モード</p>
+		</div>
+		<div class="uig-column--50">
+			<p class="uig-layout__center"><img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/6c/efe9c5896f38a3382946653b132b5816223911.jpg" class="uig-img uig-space--2">ゲームパッド（コントローラー）操作モード</p>
+		</div>
+	</div>
+</div>
+				</div>
+			
+		</div>
+	
+		<div class="uig-anchor_point" id="category-how_what">
+			<h2 class="uig-title--category uig-sys-new_or_update_mark_container"
+				 data-new_dt=""
+				 data-update_dt=""
+			>コンフィグ
+				<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+				<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+			</h2>
+			<div class="uig-box__800">
+<div class="uig-view__keyboard">
+	<h3 class="uig-title--1">ゲーム内のさまざまな設定を行う場所</h3>
+	<p class="uig-text__m-m20">ファイナルファンタジーXIVでは、ゲーム内のさまざまな設定のことを「コンフィグ」と呼んでいます。 キャラクターに関する設定は「キャラクターコンフィグ」、システムに関する設定は「システムコンフィグ」から行えます。コンフィグの設定はいつでも変更できるので、気軽に試してみましょう。</p>
+	<div class="uig-column">
+		<div class="uig-column--50">
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/b3/a28f0bad32f86074ab603d3bcca32943d6180c.jpg" class="uig-img">
+		</div>
+		<div class="uig-column--50">
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/a2/046e4d62a3349fdf0e9ccfa6f722e52c3b40e4.jpg" class="uig-img">
+		</div>
+	</div>
+</div>
+<div class="uig-view__gamepad">
+	<h3 class="uig-title--1">ゲーム内のさまざまな設定を行う場所</h3>
+	<p class="uig-text__m-m20">ファイナルファンタジーXIVでは、ゲーム内のさまざまな設定のことを「コンフィグ」と呼んでいます。 キャラクターに関する設定は「キャラクターコンフィグ」、システムに関する設定は「システムコンフィグ」から行えます。コンフィグの設定はいつでも変更できるので、気軽に試してみましょう。</p>
+	<div class="uig-column">
+		<div class="uig-column--50">
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/93/60ccf59efb105b408977e75683be11aef1ef3d.jpg" class="uig-img">
+		</div>
+		<div class="uig-column--50">
+			<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/b1/7fe1876993c5cbe499104aadb1fa6c292cfc6f.jpg" class="uig-img">
+		</div>
+	</div>
+</div>
+</div>
+			
+				<div class="uig-anchor_point uig-sys-new_or_update_mark_container" id="entry-config_open" data-new_dt="2018-09-13T10:00:00+09:00" data-update_dt="">
+					<h3 class="uig-title--2">Q: コンフィグってどこから開くの？
+						<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+						<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+					</h3>
+					<div class="uig-box__760">
+	<div class="uig-view__keyboard">
+		<div class="uig-column">
+			<div class="uig-column--50">
+				<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/3f/b790db383016e1fd4c5d06225d94240d9b3544.jpg" class="uig-img uig-space--2">
+			</div>
+			<div class="uig-column--50">
+				<p class="uig-text__m-m20">キャラクターコンフィグ、システムコンフィグは、メインコマンドのシステムメニューにあります。<br /><br />システムメニューのアイコンをクリックし、設定したいコンフィグを選びましょう。
+				<p class="uig-text__m-m20">Tips:<br />ショートカットキーなら直接コンフィグ画面が開けます。<br>
+				キャラクターコンフィグ：U<br />システムコンフィグ：Ctrl+U
+			</div>
+		</div>
+	</div>
+
+	<div class="uig-view__gamepad">
+		<div class="uig-column">
+			<div class="uig-column--50">
+				<img src="https://img.finalfantasyxiv.com/lds/uiguide/jp/01/853e4811907230d3d8f11f27b3e4d47137bafc.jpg" class="uig-img uig-space--2">
+			</div>
+			<div class="uig-column--50">
+				<p class="uig-text__m-m20">キャラクターコンフィグ、システムコンフィグは、メインコマンドのシステムメニューにあります。<br /><br />メインコマンドは、STARTボタン（PlayStation®4版：OPTIONSボタン）を入力すれば開くので、システムメニューから設定したいコンフィグを選びましょう。</p>
+			</div>
+		</div>
+	</div>
+</div>
+				</div>
+			
+				<div class="uig-anchor_point uig-sys-new_or_update_mark_container" id="entry-config_how_to" data-new_dt="2018-09-13T10:10:10+09:00" data-update_dt="2019-06-28T18:00:00+09:00">
+					<h3 class="uig-title--2">Q: 各コンフィグでは何ができるの？
+						<span class="uig-sys-new_mark uig-new__text hide">&nbsp;[NEW]</span>
+						<span class="uig-sys-update_mark uig-update__text hide">&nbsp;[Updated]</span>
+					</h3>
+					<div class="uig-box__760">
+	<div class="uig-table">
+		<table class="uig-table--normal">
+			<tr>
+				<th width="30%">キャラクターコンフィグ</th>
+				<td width="70%">
+					<strong>キャラクターに関する設定が行えます</strong><br>
+					操作モードの切替、操作設定、アイテム設定、ユーザーインターフェース設定、ネームプレート編集、ホットバー設定、チャットログ設定
+				</td>
+			</tr>
+			<tr>
+				<th width="30%">システムコンフィグ</th>
+				<td width="70%">
+					<strong>ゲーム全体のシステムに関する設定が行えます</strong><br>
+					ディスプレイ設定、サウンド設定、グラフィック設定、マウス設定、ゲームパッド設定、カラーテーマ設定、その他の設定、アクセシビリティ設定（Windows版のみ）
+				</td>
+			</tr>
+		</table>
+	</div>
+<p class="uig-text__m-m20 uig-layout__right">→コンフィグに関するその他の質問は<a href="/uiguide/search/?q=コンフィグ" class="uig-color__link">こちら</p>
+</div>
+
+				</div>
+			
+		</div>
+	
+</div></div>
+
+<footer class="l__footer l__footer__ja">
+	<div class="page-top">
+		<span class="page-top__btn"></span>
+	</div>
+	<div class="l__footer__inner">
+		<div class="l__footer__logo"><img src="https://img.finalfantasyxiv.com/lds/promo/h/L/EbtcXqPUGzsVYdi23FpUR25oH4.png" width="320" height="32" alt=""></div>
+		<p class="l__footer__officiel">Official Informations</p>
+		<ul class="l__footer__sns">
+			<li><a href="https://www.facebook.com/finalfantasyxivjp" target="_blank" class="l__footer__sns--link">
+				<i class="xiv-lds xiv-lds-facebook xiv-lds-3x"></i>
+				<span>Facebook</span>
+			</a></li>
+			<li class="l__footer__sns--twitter">
+				<a href="https://twitter.com/ff_xiv_jp" target="_blank"><i class="xiv-lds xiv-lds-twitter xiv-lds-3x"></i>Twitter</a> / <a href="https://twitter.com/FFXIV_NEWS_JP" target="_blank">News</a>
+			</li>
+			<li><a href="http://www.youtube.com/finalfantasyxiv" target="_blank" class="l__footer__sns--link">
+				<i class="xiv-lds xiv-lds-youtube xiv-lds-3x"></i>
+				<span>Official Channel</span>
+			</a></li>
+			<li><a href="https://www.instagram.com/ffxiv/" target="_blank" class="l__footer__sns--link">
+				<i class="xiv-lds xiv-lds-instagram xiv-lds-3x"></i>
+				<span>Instagram</span>
+			</a></li>
+			<li><a href="https://www.twitch.tv/finalfantasyxiv" target="_blank" class="l__footer__sns--link">
+				<i class="xiv-lds xiv-lds-twitch xiv-lds-3x"></i>
+				<span>Twitch</span>
+			</a></li>
+		</ul>
+
+		<ul class="l__footer__link-list">
+			<li><a href="https://www.jp.square-enix.com/cero/" target="_blank">レーティング制度について</a></li>
+			<li><a href="https://www.jp.square-enix.com/caution.html" target="_blank" class="caution">著作権について</a></li>
+			<li><a href="https://www.jp.square-enix.com/privacy/" target="_blank">プライバシーポリシー</a></li>
+			<li><a href="https://support.jp.square-enix.com/?n=5" target="_blank">サポートセンター</a></li>
+			<li class="link_license" id="link_license"><a href="/lodestone/help/license/" onclick="window.open('/lodestone/help/license/','ライセンス','width=684,height=700,scrollbars=yes,resizable=no') ; return false ;">
+			ライセンス</a></li>
+			<li><a href="https://support.jp.square-enix.com/rule.php?id=5381&la=0" target="_blank">ルール＆ポリシー</a></li>
+		</ul>
+	</div>
+
+	<div class="l__footer__legal-area"><div class="l__footer__legal-area__inner clearfix">
+		<div class="l__footer__legal-area__box">
+			<ul class="l__footer__legal-area__bnr-list">
+				<li><img src="https://img.finalfantasyxiv.com/lds/promo/h/x/YU4IfoUAu2u9K2rsc9tctkqjVA.png" width="33" height="39" alt="CERO"></li>
+				<li><img src="https://img.finalfantasyxiv.com/lds/promo/h/u/WbP7-gW3eZL2HyGYGrvLqorznk.svg" width="37" height="39" alt="PlayStation"></li>
+				<li><img src="https://img.finalfantasyxiv.com/lds/promo/h/W/yBAnSiXwKsWFR_e285d93si7Vw.svg" width="89" height="19" alt="PlayStation®4"></li>
+				<li><img src="https://img.finalfantasyxiv.com/lds/promo/h/D/hJ9ethuBczGsSeWu_pdRWuj4mM.png" width="102" height="39" alt="Windows® PC"></li>
+				<li><img src="https://img.finalfantasyxiv.com/lds/promo/h/v/hyXqlwktN4v0EssRTzkbMf_7OQ.png" width="30" height="39" alt="Mac"></li>
+				<li class="last"><img src="https://img.finalfantasyxiv.com/lds/promo/h/U/15QxPO___EcPlhMI9ydNRRxEY8.png" width="90" height="39" alt="Steam"></li>
+			</ul>
+			<p class="l__footer__legal-area__text">"<i class="ps"></i>","Playstation" and "<i class="ps4"></i>" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.<br />Mac is a trademark of Apple Inc.<br />©2019 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+		</div>
+		<div class="l__footer__legal-area__box">
+			<p class="l__footer__legal-area__copyright">
+                &copy; 2010 - <script>document.write(new Date().getFullYear())</script> <a href="http://www.jp.square-enix.com/" target="_blank">SQUARE ENIX</a> CO., LTD. All Rights Reserved.<br>
+                LOGO ILLUSTRATION: © 2010, 2014, 2016, 2018 YOSHITAKA AMANO
+			</p>
+		</div>
+	</div></div>
+</footer>
+
+
+
+
+
+
+<script src="https://img.finalfantasyxiv.com/lds/promo/h/i/2ur_0e4qXk_NwNv0bGjrUHThCM.js"></script>
+<script src="https://img.finalfantasyxiv.com/lds/promo/h/v/dlh86lor9AmD2_x-glGFLWHpIU.js"></script>
+<script src="https://img.finalfantasyxiv.com/lds/promo/h/m/75vHmAILsCdT3SqJMBsMYt02bE.js"></script>
+<script src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/js/js.cookie.min.js?3cc6060e"></script>
+<script src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/js/iscroll.min.js?ce620941"></script>
+<script src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/js/url-search-params.js?9a04a13a"></script>
+<script src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/js/micro_template.js?63a59aba"></script>
+<script src="https://img.finalfantasyxiv.com/lds/promo/h/g/uQNBgvCaabd4gw5kMpaT-psp1Q.js"></script>
+<script src="https://img.finalfantasyxiv.com/lds/promo/h/U/DJ1pTcMfcfaiVkbOxvdKRoleQk.js"></script>
+<script src="https://img.finalfantasyxiv.com/lds/uiguide/pc/global/js/uiguide.js?fc380ae0"></script>
+<script src="https://img.finalfantasyxiv.com/lds/promo/h/X/7yuJmtwiaemmoYfkkoZkj4JduI.js"></script>
+
+
+	<script id="tagjs" type="text/javascript">
+	  (function () {
+	    var tagjs = document.createElement("script");
+	    var s = document.getElementsByTagName("script")[0];
+	    tagjs.async = true;
+	    tagjs.src = "//s.yjtag.jp/tag.js#site=JbOEqsl";
+	    s.parentNode.insertBefore(tagjs, s);
+	  }());
+	</script>
+	<noscript>
+	  <iframe src="//b.yjtag.jp/iframe?c=JbOEqsl" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+	</noscript>
+
+
+</body>
+</html>
+
