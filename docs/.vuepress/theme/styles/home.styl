@@ -1,0 +1,90 @@
+@import "./colors.styl"
+
+.home-page .content.default 
+  display flex
+  flex-wrap wrap
+
+.mnheader
+  width 100%
+  display flex
+  position relative
+  align-items center
+  h1
+    flex auto
+    font-size 0
+  .desc
+    padding-left 30px
+    font-size .8em
+    color #666
+
+.mntab
+  flex 1 1 0
+  min-width 30%
+  margin 2px
+  background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #e6ee9c
+  background-size 6px 6px
+  border-radius 4px
+  border 1px solid #aeea00
+  overflow hidden
+  h2
+    padding 5px 20px
+    margin 0
+    background rgba(51, 105, 30, 0.6)
+    color white
+  ul
+    list-style none
+    padding 0
+    margin 0
+  li 
+    a
+      display block
+      color #33691e
+      font-size 1.2em
+      padding 5px 20px
+      &::hover
+        background rgba(131, 197, 57, 0.6)
+        transition all .3s
+
+.included-page~*
+  display none
+
+@media screen and (max-width 960px)
+  /*小屏幕*/
+  .mnheader
+    flex-wrap wrap
+    &::after
+      content ''  /* 这里有个图标，开desc的，toggle class show */
+      width 20px
+      height 20px
+      background gray
+      border-radius 100%
+      position absolute
+      right 0
+      top -10px
+    h1
+      width 100%
+      text-align center
+    .desc
+      position absolute
+      opacity 0
+      padding 5px
+      background #efefef
+      border 2px solid #ccc
+      border-radius 4px
+      transition all .5s
+      opacity 0
+      transform translateY(-80px)
+      &.show
+        opacity 1
+        transform translateY(0)
+  
+  .mntab
+    min-width 40%
+    h2
+      font-size 1em
+    li 
+      a
+        font-size 1em
+        padding 5px 10px
+  
+
