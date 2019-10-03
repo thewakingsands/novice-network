@@ -86,9 +86,8 @@
         min-width: 30%;
         margin: 2px;
         padding: 5px 0;
-        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px,
-#e6ee9c;
-background-size: 6px 6px;
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #e6ee9c;
+        background-size: 6px 6px;
         border-radius: 4px;
         border: 1px solid #aeea00;
     }
