@@ -1,6 +1,5 @@
-<div class="content default">
 <div class=mnheader>
-    <h1>《新大陆见闻录》<img src="/title.png" alt="新大陆见闻录" /></h1>
+    <h1>《新大陆见闻录》<img src="/images/title.png" alt="新大陆见闻录" /></h1>
     <div class="desc">
         <p>由于《最终幻想14》游戏内容繁多，新人上手也不够友好，新人经常面临迷茫。
             鉴于此，本站，即 **《新大陆见闻录》** 希望能给刚进入《最终幻想14》国服的玩家提供入门级别的攻略指引，帮助新玩家更好地游玩这个游戏。</p>
@@ -12,7 +11,7 @@
     <h2>入坑准备</h2>
     <ul>
         <li><a href="before/pay.html">收费及入坑福利</a></li>
-        <li><a href="before/world.html">世界观与版本</a></li>
+        <li><a href="before/world.html">世界观与游戏版本</a></li>
         <li><a href="before/char.html">选服捏人</a></li>
         <li><a href="before/job.html">职业选择</a></li>
     </ul>
@@ -29,12 +28,39 @@
 <div class="mntab mn-sys">
     <h2>游戏系统</h2>
     <ul>
-        <li><a href="before/pay.html">推荐任务</a></li>
-        <li><a href="before/world.html">装备指南</a></li>
-        <li><a href="before/char.html">地图移动与飞行</a></li>
-        <li><a href="before/job.html"></a></li>
+        <li><a href="basic/quest.html">推荐任务</a></li>
+        <li><a href="basic/equip.html">装备品级提升与幻化</a></li>
+        <li><a href="basic/map.html">地图移动与飞行</a></li>
+        <li><a href="#">货币系统</a></li>
     </ul>
 </div>
+<div class="mntab mn-battle">
+    <h2>战斗玩法</h2>
+    <ul>
+        <li><a href="#">休闲战斗</a></li>
+        <li><a href="#">副本挑战</a></li>
+        <li><a href="#">PVP排位与战场</a></li>
+        <li><a href="#">发光武器</a></li>
+        <li><a href="#">青魔法师</a></li>
+    </ul>
+</div>
+<div class="mntab mn-play">
+    <h2>日常休闲</h2>
+    <ul>
+        <li><a href="#">每日/每周任务</a></li>
+        <li><a href="#">剧情任务</a></li>
+        <li><a href="#">金碟游乐场</a></li>
+        <li><a href="#">自娱自乐</a></li>
+        <li><a href="#">社交活动</a></li>
+    </ul>
+</div>
+<div class="mntab mn-play">
+    <h2>生产采集</h2>
+    <ul>
+        <li><a href="#">能工巧匠</a></li>
+        <li><a href="#">大地使者</a></li>
+        <li><a href="#">挥杆降龙</a></li>
+    </ul>
 </div>
 
 <style>
@@ -56,7 +82,7 @@
         color: #666;
     }
     .mntab{
-        flex: auto;
+        flex: 1 1 0;
         margin: 0 2px;
         padding: 5px 0;
         background: #f0f4c3;
@@ -81,6 +107,9 @@
         background: #aeea00;
         transition: all .3s;
     }
+    .included-page~*{
+        display: none;
+    }
     @media screen and (max-width: 960px){
         /*小屏幕*/
         .mnheader{
@@ -89,6 +118,12 @@
         .mnheader h1{
             width: 100%;
             text-align: center;
+        }
+        .content.default{
+            flex-direction: column;
+        }
+        .mntab{
+            margin: 2px 0;
         }
     }
 </style>
