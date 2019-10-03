@@ -3,7 +3,7 @@ module.exports = {
     {
       title: '艾欧泽亚初探',
       children: [
-        { title: '前言', href: '/' },
+        { title: '卷首', href: '/' },
         { title: '收费、试玩、福利', href: '/before/pay.html' },
         { title: '世界观和版本', href: '/before/world.html' },
         { title: '创建角色', href: '/before/char.html' },
