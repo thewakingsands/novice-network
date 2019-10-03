@@ -1,6 +1,6 @@
 404 Page Not Found 噗！
 [回卷首噗](./)
-<!-- 炸了嘿嘿
+
 <style>
     body{
         background: #eee;
@@ -36,4 +36,3 @@ function addClass() {
     b.className += a; 
 }
 </script>
--->
