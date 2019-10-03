@@ -7,6 +7,8 @@
 </template>
 
 <style lang="stylus">
+body
+  background #efefef
 .content-container
   width 100%
   table
