@@ -2,7 +2,7 @@
 title: 新大陆见闻录
 noTopPager: true
 ---
-<IncludePage file="_includes/index.html" />
+<IncludePage file="_includes/index.md" />
 
 # 《新大陆见闻录》卷首
 
@@ -30,6 +30,6 @@ noTopPager: true
 
 由 [阿布evo](https://bbs.nga.cn/nuke.php?func=ucp&uid=12402549) 大佬创作的 [艾欧泽亚萌新手册](https://bbs.nga.cn/read.php?tid=15174128) 内容详实可靠、细节丰富，实属精良之作。但受限于 NGA 的帖子机制，部分内容在移动端上查看压力较大，内容检索也不甚方便。
 
-鉴于此，《新大陆见闻录》则直接以独立站的方式呈现萌新手册的内容，控制单页内容规模，并使用良好的网页布局，确保在各种大小的屏幕上都能方便使用。
+鉴于此，《新大陆见闻录》则直接以独立站的方式呈现萌新手册的内容，控制单页内容规模，并使用良好的网页布局，确保在各种大小的屏幕上都能方便使用。咩。
 
 :::
