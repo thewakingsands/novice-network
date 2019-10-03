@@ -1,6 +1,6 @@
 <div class="content default">
 <div class=mnheader>
-    <h1>《新大陆见闻录》</h1>
+    <h1>《新大陆见闻录》<img src="/title.png" alt="新大陆见闻录" /></h1>
     <div class="desc">
         <p>由于《最终幻想14》游戏内容繁多，新人上手也不够友好，新人经常面临迷茫。
             鉴于此，本站，即 **《新大陆见闻录》** 希望能给刚进入《最终幻想14》国服的玩家提供入门级别的攻略指引，帮助新玩家更好地游玩这个游戏。</p>
@@ -48,7 +48,12 @@
         position: relative;
     }
     .mnheader h1{
-        flex: auto
+        flex: auto;
+        font-size: 0;
+    }
+    .mnheader .desc{
+        font-size: .8em;
+        color: #666;
     }
     .mntab{
         flex: auto;
@@ -83,6 +88,7 @@
         }
         .mnheader h1{
             width: 100%;
+            text-align: center;
         }
     }
 </style>

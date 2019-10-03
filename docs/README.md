@@ -2,7 +2,7 @@
 title: 新大陆见闻录
 noTopPager: true
 ---
-<IncludePage file="index.html" />
+<IncludePage file="_includes/index.html" />
 
 # 《新大陆见闻录》卷首
 
