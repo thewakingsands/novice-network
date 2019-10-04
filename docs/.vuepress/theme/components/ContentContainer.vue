@@ -42,7 +42,7 @@ body
       background-color #dcedc8
     strong
       font-weight normal
-      color #d84315
+      color #ff5e00
     s
       color #888
     p:last-child

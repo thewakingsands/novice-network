@@ -4,9 +4,9 @@ module.exports = {
       title: '艾欧泽亚初探',
       children: [
         { title: '卷首', href: '/' },
-        { title: '收费、试玩、福利', href: '/before/pay.html' },
-        { title: '世界观和版本', href: '/before/world.html' },
-        { title: '创建角色', href: '/before/char.html' },
+        { title: '试玩、计费、福利', href: '/before/pay.html' },
+        { title: '世界观与游戏版本', href: '/before/world.html' },
+        { title: '下载、选服、捏人', href: '/before/char.html' },
         { title: '职业和特职', href: '/before/job.html' }
       ]
     },

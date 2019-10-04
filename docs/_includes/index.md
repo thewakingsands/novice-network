@@ -10,9 +10,9 @@
 <div class="mntab mn-before">
     <h2>入坑准备</h2>
     <ul>
-        <li><a href="before/pay.html">收费及入坑福利</a></li>
+        <li><a href="before/pay.html">试玩/计费/入坑福利</a></li>
         <li><a href="before/world.html">世界观与游戏版本</a></li>
-        <li><a href="before/char.html">选服捏人</a></li>
+        <li><a href="before/char.html">下载选服与捏人</a></li>
         <li><a href="before/job.html">职业选择</a></li>
     </ul>
 </div>
@@ -57,8 +57,12 @@
 <div class="mntab mn-play">
     <h2>生产采集</h2>
     <ul>
-        <li><a href="#">能工巧匠</a></li>
-        <li><a href="#">大地使者</a></li>
-        <li><a href="#">挥杆降龙</a></li>
+        <li><a href="#">能工巧匠（制作）</a></li>
+        <li><a href="#">大地使者（采集）</a></li>
+    </ul>
+    <h2>其他</h2>
+    <ul>
+        <li><a href="#">周边衍生</a></li>
+        <li><a href="/basic/international.html">国际服专题</a></li>
     </ul>
 </div>
