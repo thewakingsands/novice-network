@@ -1,11 +1,7 @@
 <template>
   <span title="点击在最终幻想XIV中文维基上查看详情">
     <a :href="wikiLink" target="_blank">
-      <img
-        src="https://huiji-public.huijistatic.com/ff14/uploads/2/21/061411.png"
-        alt="任务"
-        class="no-zoom"
-      />{{ name }}</a
+      <img :src="icon" alt="任务" class="no-zoom" />{{ name }}</a
     >
   </span>
 </template>
@@ -15,11 +11,24 @@ img
   cursor pointer!important
 </style>
 <script>
+const images = {
+  main: '/images/icons/061412.png',
+  side: '/images/icons/061411.png',
+  plus: '/images/icons/061419.png'
+}
+
 export default {
   props: {
-    name: String
+    name: String,
+    type: {
+      type: String,
+      default: 'side'
+    }
   },
   computed: {
+    icon() {
+      return images[this.type]
+    },
     wikiLink() {
       return (
         'https://ff14.huijiwiki.com/wiki/' +

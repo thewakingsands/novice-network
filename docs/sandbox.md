@@ -1,3 +1,6 @@
 <ZhaoDai/>
 
-青魔法师特职任务<Quest name="青出于蓝" />，可以开启青魔法的学习
+<Quest name="青出于蓝" type="plus" />
+<Quest name="青出于蓝" type="main" />
+<Quest name="青出于蓝" type="side" />
+
