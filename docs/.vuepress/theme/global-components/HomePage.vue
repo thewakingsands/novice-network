@@ -32,19 +32,28 @@
     <div class="mntab mn-guide">
       <h2>新人指南</h2>
       <ul>
-        <li><a href="basic/core.html">新人必知</a></li>
+        <li><a href="basic/core.html">新人必知</a> <a href="basic/core.html">直升/回归</a></li>
         <li><a href="basic/battle.html">战斗基础</a></li>
         <li><a href="basic/#">练级指南</a></li>
         <li><a href="basic/config.html">常用设置</a></li>
       </ul>
     </div>
     <div class="mntab mn-sys">
-      <h2>游戏系统</h2>
+      <h2>常见问题</h2>
       <ul>
         <li><a href="basic/quest.html">推荐任务</a></li>
-        <li><a href="basic/equip.html">装备品级提升与幻化</a></li>
+        <li><a href="basic/equip.html">装备与幻化</a></li>
         <li><a href="basic/map.html">地图移动与飞行</a></li>
+        <li><a href="ui/how.html">界面指南</a></li>
+      </ul>
+    </div>
+    <div class="mntab mn-sys">
+      <h2>进阶内容</h2>
+      <ul>
+        <li><a href="#">黑话缩略语词典</a></li>
+        <li><a href="#">副本攻略</a></li>
         <li><a href="#">货币系统</a></li>
+        <li><a href="#">毕业装</a></li>
       </ul>
     </div>
     <div class="mntab mn-battle">
@@ -54,7 +63,7 @@
         <li><a href="#">副本挑战</a></li>
         <li><a href="#">PVP排位与战场</a></li>
         <li><a href="#">发光武器</a></li>
-        <li><a href="#">青魔法师</a></li>
+        <li><a href="#">深层迷宫</a></li>
       </ul>
     </div>
     <div class="mntab mn-play">
@@ -63,7 +72,7 @@
         <li><a href="#">每日/每周任务</a></li>
         <li><a href="#">剧情任务</a></li>
         <li><a href="#">金碟游乐场</a></li>
-        <li><a href="#">自娱自乐</a></li>
+        <li><a href="#">青魔法师</a></li>
         <li><a href="#">社交活动</a></li>
       </ul>
     </div>
@@ -102,7 +111,7 @@
 
 .mntab
   flex 1 1 0
-  min-width 30%
+  min-width 20%
   margin 2px
   background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #e6ee9c
   background-size 6px 6px
