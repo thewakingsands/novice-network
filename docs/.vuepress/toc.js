@@ -26,6 +26,7 @@ module.exports = {
     {
       title: '游戏系统',
       children: [
+        { title: '雇员系统', href: '#' },
         { title: '货币系统', href: '#' },
         { title: '大国防联军', href: '#' },
         { title: '宏', href: '#' },
