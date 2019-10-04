@@ -4,10 +4,12 @@
       <div class="content-outer full-height">
         <div class="content-inner full-height">
           <NavTop @barClicked="showMenu = !showMenu" />
-          <Pager v-if="!$page.frontmatter.noTopPager" />
-          <ContentContainer />
-          <Pager />
-          <Footer />
+          <slot>
+            <Pager v-if="!$page.frontmatter.noTopPager" />
+            <ContentContainer />
+            <Pager />
+            <Footer />
+          </slot>
         </div>
       </div>
       <div class="nav-menu">

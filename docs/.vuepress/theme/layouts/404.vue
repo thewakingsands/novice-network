@@ -1,38 +1,106 @@
-404 Page Not Found 噗！
-[回卷首噗](./)
+<template>
+  <Root :class="bgClass">
+    <div class="dialog">
+      <div class="message">
+        <h2 style="text-align: center;">404 噗！</h2>
+        <p>这个页面找不到了噗！可能是被吃掉了噗！请回卷首看看噗！</p>
+        <p style="text-align: right; font-size: 0.9em;">
+          HTTP 404 - Page Not Found
+        </p>
+      </div>
+      <div class="buttons"><router-link to="/">回卷首噗</router-link></div>
+    </div>
+  </Root>
+</template>
 
-<!--<style>
-   body{
-        background: #eee;
-        color: white;
-        font-size: 10em;
-        font-weight: 700;
-    }
-    a{
-        font-size: 4em;
-    } 
-    .bg1{
-        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/404_1.jpg');
-        background-size: 6px 6px, cover;
-    }
-    .bg2{
-        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/404_2.jpg');
-        background-size: 6px 6px, cover;
-    }
-    .bg3{
-        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/404_3.jpg');
-        background-size: 6px 6px, cover;
-    }
-    .bg4{
-        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/404_4.jpg');
-        background-size: 6px 6px, cover;
-    }
-</style>
-<script>
-function addClass() { 
-    var b = document.getElementsByTagName("body")[0]; 
-    var a = Math.ceil(Math.random() * 4)
-    a ="bg" + a
-    b.className += a; 
+<style scoped>
+.dialog {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.27);
+  width: 80%;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  color: #fff;
+  border-radius: 8px;
 }
-</script> -->
+.message {
+  padding: 10px;
+}
+.buttons {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.buttons:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.buttons a {
+  display: block;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg1 {
+  background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.2) 2px,
+        rgba(255, 255, 255, 0.1) 3px
+      )
+      3px 3px,
+    url('/images/404_1.jpg');
+  background-size: 6px 6px, cover;
+}
+.bg2 {
+  background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.2) 2px,
+        rgba(255, 255, 255, 0.1) 3px
+      )
+      3px 3px,
+    url('/images/404_2.jpg');
+  background-size: 6px 6px, cover;
+}
+.bg3 {
+  background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.2) 2px,
+        rgba(255, 255, 255, 0.1) 3px
+      )
+      3px 3px,
+    url('/images/404_3.jpg');
+  background-size: 6px 6px, cover;
+}
+.bg4 {
+  background: radial-gradient(
+        circle at center,
+        rgba(255, 255, 255, 0.2) 2px,
+        rgba(255, 255, 255, 0.1) 3px
+      )
+      3px 3px,
+    url('/images/404_4.jpg');
+  background-size: 6px 6px, cover;
+}
+</style>
+
+<script>
+import Root from './Root.vue'
+
+export default {
+  components: {
+    Root
+  },
+  computed: {
+    bgClass() {
+      return `background bg${Math.floor(Math.random() * 4) + 1}`
+    }
+  }
+}
+</script>
