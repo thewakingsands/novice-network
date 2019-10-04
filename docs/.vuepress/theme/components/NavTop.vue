@@ -81,12 +81,6 @@
       padding 0 12px
       > .icon
         margin-right 0
-    @media screen and (min-width 961px)
-      .hide-large
-        display none
-    @media screen and (max-width 960px)
-      .hide-small
-        display none
   .qr-container
     position fixed
     top 40px

@@ -13,7 +13,7 @@ module.exports = {
     {
       title: '游戏基础',
       children: [
-        { title: '满级前核心玩法', href: '/basic/core.html' },
+        { title: '新人必知', href: '/basic/core.html' },
         { title: '任务系统', href: '/basic/quest.html' },
         { title: '装备、装等', href: '/basic/equip.html' },
         { title: '地图、移动', href: '/basic/map.html' },

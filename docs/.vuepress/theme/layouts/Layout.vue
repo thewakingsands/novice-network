@@ -35,6 +35,12 @@
     padding-left 250px
   @media screen and (max-width: 960px)
     padding-left 0
+@media screen and (min-width 961px)
+  .hide-large
+    display none
+@media screen and (max-width 960px)
+  .hide-small
+    display none
 </style>
 
 <script>

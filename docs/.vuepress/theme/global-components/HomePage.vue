@@ -15,15 +15,14 @@
           ，鼠标悬浮即可显示当前页面二维码，扫码即可在手机上打开当前页面。
         </p>
         <p>
-          你可以通过<mark>左侧侧边栏</mark>（电脑）或
-          <mark>左下角绿色按钮</mark>（手机）查看本站的目录。
+          你可以通过<mark class="hide-small">左侧侧边栏</mark><mark class="hide-large">左下角绿色按钮</mark>查看本站的目录。
         </p>
       </div>
     </div>
     <div class="mntab mn-before">
       <h2>入坑准备</h2>
       <ul>
-        <li><a href="before/pay.html">试玩/计费/入坑福利</a></li>
+        <li><a href="before/pay.html">收费方式及福利</a></li>
         <li><a href="before/world.html">世界观与游戏版本</a></li>
         <li><a href="before/char.html">下载选服与捏人</a></li>
         <li><a href="before/job.html">职业选择</a></li>
@@ -32,13 +31,13 @@
     <div class="mntab mn-guide">
       <h2>新人指南</h2>
       <ul>
-        <li><a href="basic/core.html">新人必知</a> <a href="basic/core.html">直升/回归</a></li>
+        <li><a href="basic/core.html">新人必知</a></li>
         <li><a href="basic/battle.html">战斗基础</a></li>
         <li><a href="basic/#">练级指南</a></li>
         <li><a href="basic/config.html">常用设置</a></li>
       </ul>
     </div>
-    <div class="mntab mn-sys">
+    <div class="mntab mn-qna">
       <h2>常见问题</h2>
       <ul>
         <li><a href="basic/quest.html">推荐任务</a></li>
@@ -76,7 +75,7 @@
         <li><a href="#">社交活动</a></li>
       </ul>
     </div>
-    <div class="mntab mn-play">
+    <div class="mntab mn-etc">
       <h2>生产采集</h2>
       <ul>
         <li><a href="#">能工巧匠（制作）</a></li>
