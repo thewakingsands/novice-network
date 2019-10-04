@@ -80,6 +80,11 @@ module.exports = {
           img: '/images/jobs/darkknight.png'
         },
         {
+          title: '绝枪战士',
+          href: '/job/gunbreaker.html',
+          img: '/images/jobs/gunbreaker.png'
+        },
+        {
           title: '武僧（格斗家）',
           href: '/job/monk.html',
           img: '/images/jobs/monk.png'
@@ -108,6 +113,11 @@ module.exports = {
           title: '机工士',
           href: '/job/machinist.html',
           img: '/images/jobs/machinist.png'
+        },
+        {
+          title: '舞者',
+          href: '/job/dancer.html',
+          img: '/images/jobs/dancer.png'
         },
         {
           title: '黑魔法师（咒术师）',
