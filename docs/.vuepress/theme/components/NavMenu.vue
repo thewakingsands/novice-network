@@ -72,6 +72,7 @@
     overflow-y auto
     -webkit-overflow-scrolling touch
     min-width 15em
+    padding-bottom 5em
     font-size 18px
     @media screen and (max-width: 1200px) and (min-width: 961px)
       font-size 16px
