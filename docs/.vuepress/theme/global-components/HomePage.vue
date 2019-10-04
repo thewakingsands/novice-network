@@ -2,7 +2,7 @@
   <div class="home-container">
     <div class="mnheader">
       <h1 title="新大陆见闻录">
-        《新大陆见闻录》<img src="/images/title.png" alt="新大陆见闻录" />
+        《新大陆见闻录》<img src="/images/title.png" alt="新大陆见闻录" class="no-zoom" />
       </h1>
       <div class="desc">
         <p>

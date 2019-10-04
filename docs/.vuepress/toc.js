@@ -7,7 +7,7 @@ module.exports = {
         { title: '试玩、计费、福利', href: '/before/pay.html' },
         { title: '世界观与游戏版本', href: '/before/world.html' },
         { title: '下载、选服、捏人', href: '/before/char.html' },
-        { title: '职业和特职', href: '/before/job.html' }
+        { title: '职业选择', href: '/before/job.html' }
       ]
     },
     {
