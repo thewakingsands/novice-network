@@ -97,10 +97,13 @@ export default {
   components: {
     Root
   },
-  computed: {
-    bgClass() {
-      return `background bg${Math.floor(Math.random() * 4) + 1}`
+  data() {
+    return {
+      bgClass: 'background'
     }
+  },
+  mounted() {
+    this.bgClass = `background bg${Math.floor(Math.random() * 4) + 1}`
   }
 }
 </script>
