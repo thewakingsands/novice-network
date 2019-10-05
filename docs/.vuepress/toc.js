@@ -19,8 +19,7 @@ module.exports = {
         { title: '地图、移动', href: '/basic/map.html' },
         { title: '战斗基础', href: '/basic/battle.html' },
         { title: '练级指南', href: '/upgrade/guide.html' },
-        { title: '装等提升和毕业', href: '/upgrade/bis.html' },
-        { title: '直升、回归', href: '/basic/reborn.html' }
+        { title: '装等提升和毕业', href: '/upgrade/bis.html' }
       ]
     },
     {

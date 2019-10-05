@@ -47,7 +47,7 @@
     <div class="mntab mn-qna">
       <h2>常见问题</h2>
       <ul>
-        <li><router-link to="basic/quest.html">推荐任务</router-link></li>
+        <li><router-link to="basic/quest.html#重要任务">重要支线</router-link></li>
         <li><router-link to="basic/equip.html">装备与幻化</router-link></li>
         <li><router-link to="basic/map.html">地图移动与飞行</router-link></li>
         <li><router-link to="ui/how.html">界面指南</router-link></li>
