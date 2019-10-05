@@ -42,15 +42,12 @@ FF14作为FF系列的正统续作，以优秀的**单机剧情**为主要卖点�
 ;;;
 
 ;;;.guide .col 
-<div class="mntab mn-guide">
-  <h2>新人常见问题</h2>
-  <ul>
-    <li><a href="/basic/map.html">地图怎么看？</a></li>
-    <li><a href="/basic/equip.html">装备怎么搞？</a></li>
-    <li><a href="/basic/battle.html">打怪手感差？</a></li>
-    <li><a href="/upgrade/guide.html">怎么升级快？</a></li>
-  </ul>
-</div>
+### 新人常见问题
+* [界面看不懂？](/ui/know.html)
+* [地图怎么看？](/basic/map.html)
+* [装备怎么搞？](/basic/equip.html)
+* [打怪手感差？](/basic/battle.html)
+* [怎么升级快？](/upgrade/guide.html)
 ;;;
 ;;;
 
@@ -60,9 +57,13 @@ FF14作为FF系列的正统续作，以优秀的**单机剧情**为主要卖点�
 ;;;
 
 ;;;.guide .col .grow
+
 游戏自带的新手指南详细完备，图文并茂，非常方便，并且会随着你的游戏进程而解锁更多内容。
 
 如果你能好好利用这份游戏自带教学，可以解决你在游戏中遇到的绝大多数问题哦！
+
+※ 可能有的时候太详细了，显得有点啰嗦，但是认真看绝对是值得的！
+
 ;;;
 ;;;
 
