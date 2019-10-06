@@ -8,9 +8,6 @@
       >
         <i class="bars icon"></i>
       </a>
-      <router-link class="item icon-item hide-small" to="/">
-        <i class="home angle icon"></i>
-      </router-link>
       <a
         class="item icon-item hide-small"
         href="javascript:;"
@@ -30,9 +27,9 @@
         </div>
       </a>
       <div class="right menu">
-        <a class="item icon-item" href="javascript:;">
-          <i class="star outline icon"></i>
-        </a>
+        <router-link class="item icon-item" to="/">
+          <i class="home angle icon"></i>
+        </router-link>
         <a
           class="item icon-item hide-small"
           href="javascript:;"

@@ -2,58 +2,53 @@
   <div class="footer-container">
     <div class="colored-footer">
       <div class="status-line">
-        <span v-if="$page.lastUpdated"> {{ $page.lastUpdated }} | </span>
         <a target="_blank" rel="noopener noreferer" :href="historyLink">
-          历史
+          修订历史
         </a>
         |
         <a target="_blank" rel="noopener noreferer" :href="editLink">
-          编辑
+          编辑本页
         </a>
         |
-        <a target="_blank" rel="noopener noreferer" :href="sourceLink">
-          源码
+        <a target="_blank" rel="noopener noreferer" :href="feedbackLink">
+          反馈问题
         </a>
+        |
+        <router-link to="/about.html">
+          关于&amp;捐赠
+        </router-link>
       </div>
       <div class="copyright-line copyright-self">
-        <router-link to="/">{{ $site.title }}</router-link>
-        is powered by
         <a
-          href="https://vuepress.vuejs.org/"
+          href="https://github.com/thewakingsands/novice-network-pages/deployments"
           rel="noopener noreferer"
           target="_blank"
+          class="hide-small"
         >
-          VuePress
+          <img src="https://img.shields.io/badge/GitHub-Pages-green" />
         </a>
-        ,
         <a
           href="https://travis-ci.org/thewakingsands/novice-network"
           rel="noopener noreferer"
           target="_blank"
         >
-          Travis CI
+          <img
+            src="https://travis-ci.org/thewakingsands/novice-network.svg?branch=master"
+          />
         </a>
-        and
         <a
-          href="https://github.com/thewakingsands/novice-network-pages/deployments"
+          href="https://vuepress.vuejs.org/"
           rel="noopener noreferer"
           target="_blank"
         >
-          GitHub Pages
+          <img src="https://img.shields.io/badge/generator-VuePress-46b683" />
         </a>
-        .
-        <router-link to="/about.html">
-          关于
-        </router-link>
       </div>
       <div class="copyright-line copyright-se">
-        This site is not affiliated with Square Enix. FINAL FANTASY is a
-        registered trademark of Square Enix Holdings Co., Ltd.
-        <br />
-        Associated materials are copyright of FINAL FANTASY XIV © 2010 - 2019
-        SQUARE ENIX CO., LTD. All Rights Reserved.
+        FINAL FANTASY XIV © 2010 - 2019 SQUARE ENIX CO., LTD. All Rights
+        Reserved.
         <router-link to="/takedown.html">
-          Reporting Copyright Infringement
+          Reporting Copyright Infringement(版权投诉)
         </router-link>
       </div>
     </div>
@@ -75,6 +70,9 @@
     text-align center
   .copyright-self
     margin-bottom 1em
+    img
+      vertical-align middle
+      margin 0 0.25em
   .copyright-line
     color #666
   .copyright-se
@@ -103,6 +101,12 @@ export default {
     sourceLink() {
       return (
         'https://raw.githubusercontent.com/thewakingsands/novice-network/master/docs/' +
+        this.$page.relativePath
+      )
+    },
+    feedbackLink() {
+      return (
+        'https://i.duotai.net/forms/zxjg2/wh956yns?url=' +
         this.$page.relativePath
       )
     }
