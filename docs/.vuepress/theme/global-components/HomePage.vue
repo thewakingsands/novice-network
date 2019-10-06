@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <div class="mnheader">
+    <div class="mnheader" @click.prevent="toggle">
       <h1 title="新大陆见闻录">
         《新大陆见闻录》<img
           :src="$withBase('/images/title.png')"
@@ -8,7 +8,7 @@
           class="no-zoom"
         />
       </h1>
-      <div class="desc">
+      <div class="desc" :class="{ show: showHeader }">
         <p>
           由于《最终幻想14》游戏内容繁多，新人上手也不够友好，新人经常面临不知道做什么好的迷茫。<br />
           本站<strong>《新大陆见闻录》</strong>希望能给刚进入《最终幻想14》国服的玩家提供入门级别的攻略指引，帮助新玩家更好地游玩这个游戏。
@@ -41,13 +41,17 @@
         <li><router-link to="basic/core.html">新人必知</router-link></li>
         <li><router-link to="basic/battle.html">战斗基础</router-link></li>
         <li><router-link to="basic/levelup.html">练级指南</router-link></li>
-        <li><router-link to="basic/config.html">常用设置及热键</router-link></li>
+        <li>
+          <router-link to="basic/config.html">常用设置及热键</router-link>
+        </li>
       </ul>
     </div>
     <div class="mntab mn-qna">
       <h2>常见问题</h2>
       <ul>
-        <li><router-link to="basic/quest.html#重要任务">重要支线</router-link></li>
+        <li>
+          <router-link to="basic/quest.html#重要任务">重要支线</router-link>
+        </li>
         <li><router-link to="basic/equip.html">装备相关</router-link></li>
         <li><router-link to="basic/map.html">地图移动与飞行</router-link></li>
         <li><router-link to="ui/how.html">界面指南</router-link></li>
@@ -148,12 +152,15 @@
 @media screen and (max-width 960px)
   /*小屏幕*/
   .mnheader
+    cursor pointer
+    -webkit-tap-highlight-color transparent
     flex-wrap wrap
     &::after
-      content ''  /* 这里有个图标，开desc的，toggle class show */
+      content ''
       width 20px
       height 20px
-      background gray
+      background gray url('/images/details.svg') center no-repeat
+      background-size 70%
       border-radius 100%
       position absolute
       right 0
@@ -171,6 +178,7 @@
       transition all .5s
       opacity 0
       transform translateY(-80px)
+      top 0
       &.show
         opacity 1
         transform translateY(0)
@@ -184,3 +192,16 @@
         font-size 1em
         padding 5px 10px
 </style>
+
+<script>
+export default {
+  data() {
+    return { showHeader: false }
+  },
+  methods: {
+    toggle() {
+      this.showHeader = !this.showHeader
+    }
+  }
+}
+</script>
