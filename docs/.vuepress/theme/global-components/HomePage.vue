@@ -40,7 +40,7 @@
       <ul>
         <li><router-link to="basic/core.html">新人必知</router-link></li>
         <li><router-link to="basic/battle.html">战斗基础</router-link></li>
-        <li><router-link to="basic/#">练级指南</router-link></li>
+        <li><router-link to="basic/levelup.html">练级指南</router-link></li>
         <li><router-link to="basic/config.html">常用设置</router-link></li>
       </ul>
     </div>
