@@ -73,6 +73,9 @@ export default {
       gotoId: this.gotoId
     }
   },
+  mounted() {
+    import('@thewakingsands/kit-tooltip').then(x => x.initTooltip())
+  },
   methods: {
     getPhotoSwipe() {
       return this.$refs.photoSwipe

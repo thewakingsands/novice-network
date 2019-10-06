@@ -33,11 +33,13 @@
     "vuepress": "^1.0.0-alpha.46"
   },
   "dependencies": {
+    "@thewakingsands/kit-tooltip": "^0.2.1",
     "cheerio": "^1.0.0-rc.3",
     "diff": "^4.0.1",
     "glob": "^7.1.4",
     "got": "^9.6.0",
     "intersection-observer": "^0.5.1",
+    "isomorphic-fetch": "^2.2.1",
     "mkdirp": "^0.5.1",
     "normalize.css": "^8.0.1",
     "photoswipe": "^4.1.3",
