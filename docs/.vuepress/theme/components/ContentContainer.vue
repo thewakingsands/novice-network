@@ -49,6 +49,14 @@ body
       margin-bottom 1em
     h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child
       margin-bottom 1rem
+    code
+      display inline-block
+      vertical-align text-top
+      padding 0 5px
+      font-size 0.8em
+      border 1px solid #ddd
+      border-radius 3px
+      background #fcfcfc
 </style>
 
 <script>
