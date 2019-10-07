@@ -19,14 +19,14 @@ module.exports = {
         { title: '地图、移动', href: '/basic/map.html' },
         { title: '战斗基础', href: '/basic/battle.html' },
         { title: '练级指南', href: '/basic/levelup.html' },
-        { title: '装等提升和毕业', href: '/upgrade/bis.html' }
+        { title: '装等提升和毕业', href: '/basic/bis.html' }
       ]
     },
     {
       title: '游戏系统',
       children: [
         { title: '雇员系统', href: '#' },
-        { title: '货币系统', href: '#' },
+        { title: '货币系统', href: '/advanced/currency.html' },
         { title: '大国防联军', href: '#' },
         { title: '宏', href: '#' },
         { title: '常用设置及热键', href: '/basic/config.html' }

@@ -62,14 +62,14 @@
       <ul>
         <li><router-link to="#">黑话缩略语词典</router-link></li>
         <li><router-link to="#">副本攻略</router-link></li>
-        <li><router-link to="#">货币系统</router-link></li>
-        <li><router-link to="#">毕业装</router-link></li>
+        <li><router-link to="advanced/currency.html">货币系统</router-link></li>
+        <li><router-link to="basic/bis.html">毕业装</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-battle">
       <h2>战斗玩法</h2>
       <ul>
-        <li><router-link to="#">休闲战斗</router-link></li>
+        <li><router-link to="topic/battle.html">休闲战斗</router-link></li>
         <li><router-link to="#">副本挑战</router-link></li>
         <li><router-link to="#">PVP排位与战场</router-link></li>
         <li><router-link to="#">发光武器</router-link></li>
@@ -79,11 +79,11 @@
     <div class="mntab mn-play">
       <h2>日常休闲</h2>
       <ul>
-        <li><router-link to="#">每日/每周任务</router-link></li>
-        <li><router-link to="#">剧情任务</router-link></li>
+        <li><router-link to="topic/daily.html">每日/每周任务</router-link></li>
+        <li><router-link to="topic/story.html">剧情任务</router-link></li>
         <li><router-link to="#">金碟游乐场</router-link></li>
         <li><router-link to="#">青魔法师</router-link></li>
-        <li><router-link to="#">社交活动</router-link></li>
+        <li><router-link to="topic/relax.html">休闲活动</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-etc">

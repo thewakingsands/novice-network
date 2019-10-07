@@ -14,7 +14,9 @@ body
   table
     td
       border 1px solid #999
-      padding 4px
+      padding 8px 10px
+      &:last-child
+        width 70%
     border-collapse collapse
   .content-container-inner
     max-width 1200px
