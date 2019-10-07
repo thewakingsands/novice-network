@@ -71,7 +71,7 @@
       <ul>
         <li><router-link to="topic/battle.html">休闲战斗</router-link></li>
         <li><router-link to="topic/raid.html">挑战副本</router-link></li>
-        <li><router-link to="topic/pvp.html">PVP排位与战场</router-link></li>
+        <li><router-link to="topic/pvp.html">PVP</router-link></li>
         <li><router-link to="topic/shine.html">发光武器</router-link></li>
         <li><router-link to="topic/dd.html">深层迷宫</router-link></li>
       </ul>
@@ -126,24 +126,22 @@
   min-width 20%
   margin 2px
   border-radius 4px
-  border 1px solid #fbf3db
-  background-position 3px 3px, bottom right
-  background-repeat repeat, no-repeat
+  border 1px solid #b58e2b
   overflow hidden
   &.mn-before
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-chocobo.png')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-chocobo.png') bottom right no-repeat, #fbf3db
     background-size 6px 6px, 84px 120px
   &.mn-guide
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-spriggan.png')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-spriggan.png') bottom right no-repeat, #fbf3db
     background-size 6px 6px, 107px 118px
   &.mn-qna
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-moogle.png')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-moogle.png') bottom right no-repeat, #fbf3db
     background-size 6px 6px, 102px 121px
   &.mn-sys
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-otter.png')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-otter.png') bottom right no-repeat, #fbf3db
     background-size 6px 6px, 126px 110px
   &.mn-battle
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #de5741, url('/images/bg/bg1.jpg')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg1.jpg') bottom right no-repeat, #de5741
     background-size 6px 6px, 217px 208px
     h2 
       background rgba(125,38,24,0.3)
@@ -153,7 +151,7 @@
         &:hover
          background rgba(0,0,0,0.1)
   &.mn-play
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #2f357e, url('/images/bg/bg2.jpg')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg2.jpg') bottom right no-repeat, #2f357e
     background-size 6px 6px, 154px 201px
     h2 
       background rgba(22,23,58,0.3)
@@ -163,7 +161,7 @@
         &:hover
          background rgba(0,0,0,0.1)
   &.mn-etc
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #5d8d48, url('/images/bg/bg3.jpg')
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg3.jpg') bottom right no-repeat, #5d8d48
     background-size 6px 6px, 236px 213px
     h2 
       background rgba(20,51,18,0.3)
@@ -188,7 +186,7 @@
       font-size 1.2em
       padding 5px 20px
       &:hover
-        background rgba(251, 188, 20, 0.6)
+        background rgba(199, 167, 50, 0.3)
         transition all .3s
 
 @media screen and (max-width 960px)
@@ -227,6 +225,13 @@
 
   .mntab
     min-width 40%
+    &.mn-before
+      background-size 6px 6px, (84px/2) (120px/2)
+    &.mn-battle
+      background-size 6px 6px, 95%
+      background-position 3px 3px, 300% 100%
+    &.mn-play
+      background-size 6px 6px, 70%
     h2
       font-size 1em
     li
