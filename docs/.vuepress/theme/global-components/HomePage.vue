@@ -130,10 +130,10 @@
   overflow hidden
   &.mn-before
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-chocobo.png') bottom right no-repeat, #fbf3db
-    background-size 6px 6px, 84px 120px
+    background-size 6px 6px, 107px 118px
   &.mn-guide
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-spriggan.png') bottom right no-repeat, #fbf3db
-    background-size 6px 6px, 107px 118px
+    background-size 6px 6px, 84px 120px
   &.mn-qna
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-moogle.png') bottom right no-repeat, #fbf3db
     background-size 6px 6px, 102px 121px
@@ -226,12 +226,19 @@
   .mntab
     min-width 40%
     &.mn-before
-      background-size 6px 6px, (84px/2) (120px/2)
+      background-size 6px 6px, (107px*2/3) (118px*2/3)
+    &.mn-guide
+      background-size 6px 6px, (84px*2/3) (120px*2/3)
+    &.mn-qna
+      background-size 6px 6px, (102px*2/3) (121px*2/3)
+    &.mn-sys
+      background-size 6px 6px, (126px*2/3) (110px*2/3)
     &.mn-battle
       background-size 6px 6px, 95%
       background-position 3px 3px, 300% 100%
     &.mn-play
       background-size 6px 6px, 70%
+      background-position 3px 3px, 140% 100%
     h2
       font-size 1em
     li
