@@ -125,15 +125,57 @@
   flex 1 1 0
   min-width 20%
   margin 2px
-  background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #e6ee9c
-  background-size 6px 6px
   border-radius 4px
-  border 1px solid #aeea00
+  border 1px solid #fbf3db
+  background-position 3px 3px, bottom right
+  background-repeat repeat, no-repeat
   overflow hidden
+  &.mn-before
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-chocobo.png')
+    background-size 6px 6px, 84px 120px
+  &.mn-guide
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-spriggan.png')
+    background-size 6px 6px, 107px 118px
+  &.mn-qna
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-moogle.png')
+    background-size 6px 6px, 102px 121px
+  &.mn-sys
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #fbf3db, url('/images/bg/bg-otter.png')
+    background-size 6px 6px, 126px 110px
+  &.mn-battle
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #de5741, url('/images/bg/bg1.jpg')
+    background-size 6px 6px, 217px 208px
+    h2 
+      background rgba(125,38,24,0.3)
+    li
+      a
+        color white
+        &:hover
+         background rgba(0,0,0,0.1)
+  &.mn-play
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #2f357e, url('/images/bg/bg2.jpg')
+    background-size 6px 6px, 154px 201px
+    h2 
+      background rgba(22,23,58,0.3)
+    li
+      a
+        color white
+        &:hover
+         background rgba(0,0,0,0.1)
+  &.mn-etc
+    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, #5d8d48, url('/images/bg/bg3.jpg')
+    background-size 6px 6px, 236px 213px
+    h2 
+      background rgba(20,51,18,0.3)
+    li
+      a
+        color white
+        &:hover
+         background rgba(0,0,0,0.1)
   h2
     padding 5px 20px
     margin 0
-    background rgba(51, 105, 30, 0.6)
+    background rgba(149, 96, 26, 0.60)
     color white
   ul
     list-style none
@@ -142,11 +184,11 @@
   li
     a
       display block
-      color #33691e
+      color #5a411f
       font-size 1.2em
       padding 5px 20px
       &:hover
-        background rgba(131, 197, 57, 0.6)
+        background rgba(251, 188, 20, 0.6)
         transition all .3s
 
 @media screen and (max-width 960px)
