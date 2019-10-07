@@ -23,13 +23,14 @@ module.exports = {
       ]
     },
     {
-      title: '游戏系统',
+      title: '进阶指南',
       children: [
-        { title: '雇员系统', href: '#' },
+        { title: '雇员系统', href: '/advanced/retainer.html' },
         { title: '货币系统', href: '/advanced/currency.html' },
-        { title: '大国防联军', href: '#' },
-        { title: '宏', href: '#' },
-        { title: '常用设置及热键', href: '/basic/config.html' }
+        { title: '大国防联军', href: '/advanced/grandCompany.html' },
+        { title: '宏指南', href: '/advanced/macro.html' },
+        { title: '常用设置及热键', href: '/basic/config.html' },
+        { title: '黑话缩略语词典', href: '/advanced/glossary.html' }
       ]
     },
     {
@@ -48,11 +49,12 @@ module.exports = {
     {
       title: '玩法指引',
       children: [
-        { title: '每日/每周内容', href: '/topic/daily.html' },
+        { title: '每日/每周任务', href: '/topic/daily.html' },
         { title: '剧情内容', href: '/topic/story.html' },
-        { title: '休闲内容', href: '/topic/relax.html' },
-        { title: '生产采集', href: '/topic/craft.html' },
+        { title: '休闲活动', href: '/topic/relax.html' },
+        { title: '金碟游乐场', href: '/topic/goldsaucer.html' },
         { title: '休闲战斗', href: '/topic/battle.html' },
+        { title: '生产采集', href: '/topic/craft.html' },
         { title: '挑战副本', href: '/topic/raid.html' },
         { title: '发光武器', href: '/topic/shine.html' },
         { title: 'PVP', href: '/topic/pvp.html' },
@@ -132,6 +134,11 @@ module.exports = {
           title: '赤魔法师',
           href: '/job/redmage.html',
           img: '/images/jobs/redmage.png'
+        },
+        {
+          title: '青魔法师',
+          href: '/job/bluemage.html',
+          img: '/images/jobs/bluemage.png'
         },
         {
           title: '白魔法师（幻术师）',

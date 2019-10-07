@@ -60,8 +60,8 @@
     <div class="mntab mn-sys">
       <h2>进阶内容</h2>
       <ul>
-        <li><router-link to="#">黑话缩略语词典</router-link></li>
-        <li><router-link to="#">副本攻略</router-link></li>
+        <li><router-link to="advanced/glossary.html">黑话缩略语词典</router-link></li>
+        <li><router-link to="advanced/dungeonGuide.html">副本攻略</router-link></li>
         <li><router-link to="advanced/currency.html">货币系统</router-link></li>
         <li><router-link to="basic/bis.html">毕业装</router-link></li>
       </ul>
@@ -70,10 +70,10 @@
       <h2>战斗玩法</h2>
       <ul>
         <li><router-link to="topic/battle.html">休闲战斗</router-link></li>
-        <li><router-link to="#">副本挑战</router-link></li>
-        <li><router-link to="#">PVP排位与战场</router-link></li>
-        <li><router-link to="#">发光武器</router-link></li>
-        <li><router-link to="#">深层迷宫</router-link></li>
+        <li><router-link to="topic/raid.html">挑战副本</router-link></li>
+        <li><router-link to="topic/pvp.html">PVP排位与战场</router-link></li>
+        <li><router-link to="topic/shine.html">发光武器</router-link></li>
+        <li><router-link to="topic/dd.html">深层迷宫</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-play">
@@ -81,8 +81,8 @@
       <ul>
         <li><router-link to="topic/daily.html">每日/每周任务</router-link></li>
         <li><router-link to="topic/story.html">剧情任务</router-link></li>
-        <li><router-link to="#">金碟游乐场</router-link></li>
-        <li><router-link to="#">青魔法师</router-link></li>
+        <li><router-link to="topic/goldsaucer.html">金碟游乐场</router-link></li>
+        <li><router-link to="job/bluemage.html">青魔法师</router-link></li>
         <li><router-link to="topic/relax.html">休闲活动</router-link></li>
       </ul>
     </div>
@@ -94,7 +94,7 @@
       </ul>
       <h2>其他</h2>
       <ul>
-        <li><router-link to="#">周边衍生</router-link></li>
+        <li><router-link to="topic/other.html">周边衍生</router-link></li>
         <li>
           <router-link to="/basic/international.html">国际服专题</router-link>
         </li>
