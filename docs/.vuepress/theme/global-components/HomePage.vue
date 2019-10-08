@@ -39,7 +39,7 @@
       <h2>新人指南</h2>
       <ul>
         <li><router-link to="basic/core.html">新人必知</router-link></li>
-        <li><router-link to="basic/battle.html">战斗基础</router-link></li>
+        <li><router-link to="basic/battle.html">战斗基础与副本</router-link></li>
         <li><router-link to="basic/levelup.html">练级指南</router-link></li>
         <li>
           <router-link to="basic/config.html">常用设置及热键</router-link>
@@ -63,7 +63,7 @@
         <li><router-link to="advanced/glossary.html">黑话缩略语词典</router-link></li>
         <li><router-link to="advanced/dungeonGuide.html">副本攻略</router-link></li>
         <li><router-link to="advanced/currency.html">货币系统</router-link></li>
-        <li><router-link to="basic/bis.html">毕业装</router-link></li>
+        <li><router-link to="basic/bis.html">毕业装备</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-battle">

@@ -31,6 +31,8 @@ body
       background #fff59d
     p, ul, ol
       line-height 1.6
+    ul
+      padding-left 1.5em
     img
       max-width 100%
       cursor zoom-in

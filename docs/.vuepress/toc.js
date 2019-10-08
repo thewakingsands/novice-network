@@ -17,7 +17,7 @@ module.exports = {
         { title: '任务系统', href: '/basic/quest.html' },
         { title: '装备、装等', href: '/basic/equip.html' },
         { title: '地图、移动', href: '/basic/map.html' },
-        { title: '战斗基础', href: '/basic/battle.html' },
+        { title: '战斗基础及副本', href: '/basic/battle.html' },
         { title: '练级指南', href: '/basic/levelup.html' },
         { title: '装等提升和毕业', href: '/basic/bis.html' }
       ]
