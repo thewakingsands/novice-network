@@ -56,7 +56,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_1.jpg');
+    url('/images/404_1.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
 .bg2 {
@@ -66,7 +66,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_2.jpg');
+    url('/images/404_2.jpg')  50% 100%;
   background-size: 6px 6px, cover;
 }
 .bg3 {
@@ -76,7 +76,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_3.jpg');
+    url('/images/404_3.jpg')  50% 100%;
   background-size: 6px 6px, cover;
 }
 .bg4 {
@@ -86,7 +86,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_4.jpg');
+    url('/images/404_4.jpg')  50% 100%;
   background-size: 6px 6px, cover;
 }
 </style>

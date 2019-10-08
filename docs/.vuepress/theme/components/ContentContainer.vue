@@ -15,6 +15,7 @@ body
     td
       border 1px solid #999
       padding 8px 10px
+      line-height 1.25em
       &:last-child
         width 70%
     border-collapse collapse
