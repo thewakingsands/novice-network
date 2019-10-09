@@ -8,13 +8,9 @@
       >
         <i class="bars icon"></i>
       </a>
-      <a
-        class="item icon-item hide-small"
-        href="javascript:;"
-        @click.prevent="scrollToTop"
-      >
-        <i class="up angle icon"></i>
-      </a>
+      <router-link class="item icon-item" to="/">
+        <i class="home angle icon"></i>
+      </router-link>
       <a href="javascript:;" @click="headClicked" class="item page-title">
         <i
           v-if="$page.headers"
@@ -27,9 +23,13 @@
         </div>
       </a>
       <div class="right menu">
-        <router-link class="item icon-item" to="/">
-          <i class="home angle icon"></i>
-        </router-link>
+        <a
+          class="item icon-item hide-small"
+          href="javascript:;"
+          @click.prevent="scrollToTop"
+        >
+          <i class="up angle icon"></i>
+        </a>
         <a
           class="item icon-item hide-small"
           href="javascript:;"
