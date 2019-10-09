@@ -160,12 +160,14 @@ module.exports = {
     {
       title: '常用网站',
       externalChildren: [
+        { title: '国服官网', href: 'http://ff.sdo.com' },
         {
-          title: 'NGA FF14 板块',
+          title: 'NGA 玩家社区(FF14板)',
           href: 'https://bbs.nga.cn/thread.php?fid=-362960'
         },
-        { title: 'FF14 中文维基', href: 'https://ff14.huijiwiki.com' },
-        { title: '素素攻略站', href: 'https://www.ffxiv.cn/' }
+        { title: '最终幻想XIV中文维基', href: 'https://ff14.huijiwiki.com' },
+        { title: '素素攻略站', href: 'https://www.ffxiv.cn/' },
+        { title: '水晶驿站', href: 'https://riesa.gitee.io/crystal/' }
       ]
     }
   ]
