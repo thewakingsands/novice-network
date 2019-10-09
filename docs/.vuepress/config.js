@@ -10,7 +10,7 @@ module.exports = {
     },
     extendMarkdown: md => {
       md.renderer.rules.table_open = function() {
-        return '<div class="md-table"><table class="ui compact striped unstackable table">'
+        return '<div class="md-table"><table class="ui compact grey striped unstackable table">'
       }
       md.renderer.rules.table_close = function() {
         return '</table></div>'
