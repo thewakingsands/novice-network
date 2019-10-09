@@ -84,6 +84,7 @@ module.exports = {
   plugins: [
     require('./plugins/sidenav'),
     '@vuepress/last-updated',
-    '@vuepress/nprogress'
+    '@vuepress/nprogress',
+    'vuepress-plugin-clean-urls'
   ]
 }
