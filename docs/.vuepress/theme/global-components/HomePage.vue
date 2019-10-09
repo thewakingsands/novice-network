@@ -1,14 +1,19 @@
 <template>
   <div class="home-container">
-    <div class="mnheader" @click.prevent="toggle">
-      <h1 title="新大陆见闻录">
+    <div class="mnheader">
+      <h1 title="新大陆见闻录" class="clickable" @click.prevent="toggle">
         《新大陆见闻录》<img
           :src="$withBase('/images/title.png')"
           alt="新大陆见闻录"
           class="no-zoom"
         />
+        <span class="view-details"></span>
       </h1>
-      <div class="desc" :class="{ show: showHeader }">
+      <div
+        class="desc clickable"
+        @click.prevent="toggle"
+        :class="{ show: showHeader }"
+      >
         <p>
           由于《最终幻想14》游戏内容繁多，新人上手也不够友好，新人经常面临不知道做什么好的迷茫。<br />
           本站<strong>《新大陆见闻录》</strong>希望能给刚进入《最终幻想14》国服的玩家提供入门级别的攻略指引，帮助新玩家更好地游玩这个游戏。
@@ -39,7 +44,9 @@
       <h2>新人指南</h2>
       <ul>
         <li><router-link to="basic/core.html">新人必知</router-link></li>
-        <li><router-link to="basic/battle.html">战斗基础与副本</router-link></li>
+        <li>
+          <router-link to="basic/battle.html">战斗基础与副本</router-link>
+        </li>
         <li><router-link to="basic/levelup.html">练级指南</router-link></li>
         <li>
           <router-link to="basic/config.html">常用设置及热键</router-link>
@@ -60,8 +67,12 @@
     <div class="mntab mn-sys">
       <h2>进阶内容</h2>
       <ul>
-        <li><router-link to="advanced/glossary.html">黑话缩略语词典</router-link></li>
-        <li><router-link to="advanced/dungeonGuide.html">副本攻略</router-link></li>
+        <li>
+          <router-link to="advanced/glossary.html">黑话缩略语词典</router-link>
+        </li>
+        <li>
+          <router-link to="advanced/dungeonGuide.html">副本攻略</router-link>
+        </li>
         <li><router-link to="advanced/currency.html">货币系统</router-link></li>
         <li><router-link to="basic/bis.html">毕业装备</router-link></li>
       </ul>
@@ -81,7 +92,9 @@
       <ul>
         <li><router-link to="topic/daily.html">每日/每周任务</router-link></li>
         <li><router-link to="topic/story.html">剧情任务</router-link></li>
-        <li><router-link to="topic/goldsaucer.html">金碟游乐场</router-link></li>
+        <li>
+          <router-link to="topic/goldsaucer.html">金碟游乐场</router-link>
+        </li>
         <li><router-link to="job/bluemage.html">青魔法师</router-link></li>
         <li><router-link to="topic/relax.html">休闲活动</router-link></li>
       </ul>
@@ -107,7 +120,8 @@
 .home-container
   display flex
   flex-wrap wrap
-
+.clickable
+  cursor pointer
 .mnheader
   width 100%
   display flex
@@ -143,7 +157,7 @@
   &.mn-battle
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg1.jpg') bottom right no-repeat, #de5741
     background-size 6px 6px, 217px 208px
-    h2 
+    h2
       background rgba(125,38,24,0.3)
     li
       a
@@ -153,7 +167,7 @@
   &.mn-play
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg2.jpg') bottom right no-repeat, #2f357e
     background-size 6px 6px, 154px 201px
-    h2 
+    h2
       background rgba(22,23,58,0.3)
     li
       a
@@ -163,7 +177,7 @@
   &.mn-etc
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg3.jpg') bottom right no-repeat, #5d8d48
     background-size 6px 6px, 236px 213px
-    h2 
+    h2
       background rgba(20,51,18,0.3)
     li
       a
@@ -192,11 +206,9 @@
 @media screen and (max-width 960px)
   /*小屏幕*/
   .mnheader
-    cursor pointer
     -webkit-tap-highlight-color transparent
     flex-wrap wrap
-    &::after
-      content ''
+    .view-details
       width 20px
       height 20px
       background gray url('/images/details.svg') center no-repeat
@@ -207,6 +219,7 @@
       top -10px
     h1
       width 100%
+      cursor pointer
       text-align center
     .desc
       position absolute
@@ -217,10 +230,12 @@
       border-radius 4px
       transition all .5s
       opacity 0
+      z-index -1
       transform translateY(-80px)
       top 0
       &.show
         opacity 1
+        z-index 1
         transform translateY(0)
 
   .mntab
