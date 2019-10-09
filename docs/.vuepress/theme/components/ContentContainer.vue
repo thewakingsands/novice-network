@@ -8,7 +8,7 @@
 
 <style lang="stylus">
 body
-  background #efefef
+  background repeating-linear-gradient(0deg, #f8f8f8, #f8f8f8 1px, white 1px, white 2px)
 .content-container
   width 100%
   table
