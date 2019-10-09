@@ -1,14 +1,19 @@
 <template>
   <div class="home-container">
-    <div class="mnheader" @click.prevent="toggle">
-      <h1 title="新大陆见闻录">
+    <div class="mnheader">
+      <h1 title="新大陆见闻录" class="clickable" @click.prevent="toggle">
         《新大陆见闻录》<img
           :src="$withBase('/images/title.png')"
           alt="新大陆见闻录"
           class="no-zoom"
         />
+        <span class="view-details"></span>
       </h1>
-      <div class="desc" :class="{ show: showHeader }">
+      <div
+        class="desc clickable"
+        @click.prevent="toggle"
+        :class="{ show: showHeader }"
+      >
         <p>
           由于《最终幻想14》游戏内容繁多，新人上手也不够友好，新人经常面临不知道做什么好的迷茫。<br />
           本站<strong>《新大陆见闻录》</strong>希望能给刚进入《最终幻想14》国服的玩家提供入门级别的攻略指引，帮助新玩家更好地游玩这个游戏。
@@ -27,22 +32,24 @@
     <div class="mntab mn-before">
       <h2>入坑准备</h2>
       <ul>
-        <li><router-link to="before/pay.html">收费方式及福利</router-link></li>
+        <li><router-link to="before/pay.htm">收费方式及福利</router-link></li>
         <li>
-          <router-link to="before/world.html">世界观与游戏版本</router-link>
+          <router-link to="before/world.htm">世界观与游戏版本</router-link>
         </li>
-        <li><router-link to="before/char.html">下载选服与捏人</router-link></li>
-        <li><router-link to="before/job.html">职业选择</router-link></li>
+        <li><router-link to="before/char.htm">下载选服与捏人</router-link></li>
+        <li><router-link to="before/job.htm">职业选择</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-guide">
       <h2>新人指南</h2>
       <ul>
-        <li><router-link to="basic/core.html">新人必知</router-link></li>
-        <li><router-link to="basic/battle.html">战斗基础与副本</router-link></li>
-        <li><router-link to="basic/levelup.html">练级指南</router-link></li>
+        <li><router-link to="basic/core.htm">新人必知</router-link></li>
         <li>
-          <router-link to="basic/config.html">常用设置及热键</router-link>
+          <router-link to="basic/battle.htm">战斗基础与副本</router-link>
+        </li>
+        <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
+        <li>
+          <router-link to="basic/config.htm">常用设置及热键</router-link>
         </li>
       </ul>
     </div>
@@ -50,53 +57,59 @@
       <h2>常见问题</h2>
       <ul>
         <li>
-          <router-link to="basic/quest.html#重要任务">重要支线</router-link>
+          <router-link to="basic/quest#重要任务.htm">重要支线</router-link>
         </li>
-        <li><router-link to="basic/equip.html">装备相关</router-link></li>
-        <li><router-link to="basic/map.html">地图移动与飞行</router-link></li>
-        <li><router-link to="ui/how.html">界面指南</router-link></li>
+        <li><router-link to="basic/equip.htm">装备相关</router-link></li>
+        <li><router-link to="basic/map.htm">地图移动与飞行</router-link></li>
+        <li><router-link to="ui/how.htm">界面指南</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-sys">
       <h2>进阶内容</h2>
       <ul>
-        <li><router-link to="advanced/glossary.html">黑话缩略语词典</router-link></li>
-        <li><router-link to="advanced/dungeonGuide.html">副本攻略</router-link></li>
-        <li><router-link to="advanced/currency.html">货币系统</router-link></li>
-        <li><router-link to="basic/bis.html">毕业装备</router-link></li>
+        <li>
+          <router-link to="advanced/glossary.htm">黑话缩略语词典</router-link>
+        </li>
+        <li>
+          <router-link to="advanced/dungeonGuide.htm">副本攻略</router-link>
+        </li>
+        <li><router-link to="advanced/currency.htm">货币系统</router-link></li>
+        <li><router-link to="basic/bis.htm">毕业装备</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-battle">
       <h2>战斗玩法</h2>
       <ul>
-        <li><router-link to="topic/battle.html">休闲战斗</router-link></li>
-        <li><router-link to="topic/raid.html">挑战副本</router-link></li>
-        <li><router-link to="topic/pvp.html">PVP</router-link></li>
-        <li><router-link to="topic/shine.html">发光武器</router-link></li>
-        <li><router-link to="topic/dd.html">深层迷宫</router-link></li>
+        <li><router-link to="topic/battle.htm">休闲战斗</router-link></li>
+        <li><router-link to="topic/raid.htm">挑战副本</router-link></li>
+        <li><router-link to="topic/pvp.htm">PVP</router-link></li>
+        <li><router-link to="topic/shine.htm">发光武器</router-link></li>
+        <li><router-link to="topic/dd.htm">深层迷宫</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-play">
       <h2>日常休闲</h2>
       <ul>
-        <li><router-link to="topic/daily.html">每日/每周任务</router-link></li>
-        <li><router-link to="topic/story.html">剧情任务</router-link></li>
-        <li><router-link to="topic/goldsaucer.html">金碟游乐场</router-link></li>
-        <li><router-link to="job/bluemage.html">青魔法师</router-link></li>
-        <li><router-link to="topic/relax.html">休闲活动</router-link></li>
+        <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
+        <li><router-link to="topic/story.htm">剧情任务</router-link></li>
+        <li>
+          <router-link to="topic/goldsaucer.htm">金碟游乐场</router-link>
+        </li>
+        <li><router-link to="job/bluemage.htm">青魔法师</router-link></li>
+        <li><router-link to="topic/relax.htm">休闲活动</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-etc">
       <h2>生产采集</h2>
       <ul>
-        <li><router-link to="#">能工巧匠（制作）</router-link></li>
-        <li><router-link to="#">大地使者（采集）</router-link></li>
+        <li><router-link to="#.htm">能工巧匠（制作）</router-link></li>
+        <li><router-link to="#.htm">大地使者（采集）</router-link></li>
       </ul>
       <h2>其他</h2>
       <ul>
-        <li><router-link to="topic/other.html">周边衍生</router-link></li>
+        <li><router-link to="topic/other.htm">周边衍生</router-link></li>
         <li>
-          <router-link to="/basic/international.html">国际服专题</router-link>
+          <router-link to="/basic/international.htm">国际服专题</router-link>
         </li>
       </ul>
     </div>
@@ -107,7 +120,6 @@
 .home-container
   display flex
   flex-wrap wrap
-
 .mnheader
   width 100%
   display flex
@@ -143,7 +155,7 @@
   &.mn-battle
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg1.jpg') bottom right no-repeat, #de5741
     background-size 6px 6px, 217px 208px
-    h2 
+    h2
       background rgba(125,38,24,0.3)
     li
       a
@@ -153,7 +165,7 @@
   &.mn-play
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg2.jpg') bottom right no-repeat, #2f357e
     background-size 6px 6px, 154px 201px
-    h2 
+    h2
       background rgba(22,23,58,0.3)
     li
       a
@@ -163,7 +175,7 @@
   &.mn-etc
     background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg3.jpg') bottom right no-repeat, #5d8d48
     background-size 6px 6px, 236px 213px
-    h2 
+    h2
       background rgba(20,51,18,0.3)
     li
       a
@@ -191,12 +203,12 @@
 
 @media screen and (max-width 960px)
   /*小屏幕*/
-  .mnheader
+  .clickable
     cursor pointer
+  .mnheader
     -webkit-tap-highlight-color transparent
     flex-wrap wrap
-    &::after
-      content ''
+    .view-details
       width 20px
       height 20px
       background gray url('/images/details.svg') center no-repeat
@@ -207,6 +219,7 @@
       top -10px
     h1
       width 100%
+      cursor pointer
       text-align center
     .desc
       position absolute
@@ -217,10 +230,12 @@
       border-radius 4px
       transition all .5s
       opacity 0
+      z-index -1
       transform translateY(-80px)
       top 0
       &.show
         opacity 1
+        z-index 1
         transform translateY(0)
 
   .mntab

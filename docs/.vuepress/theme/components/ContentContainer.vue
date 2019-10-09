@@ -11,14 +11,6 @@ body
   background repeating-linear-gradient(0deg, #f8f8f8, #f8f8f8 1px, white 1px, white 2px)
 .content-container
   width 100%
-  table
-    td
-      border 1px solid #999
-      padding 8px 10px
-      line-height 1.25em
-      &:last-child
-        width 70%
-    border-collapse collapse
   .content-container-inner
     max-width 1200px
     padding 0 20px
@@ -28,6 +20,9 @@ body
       font-size 16px
     margin 1.5em auto
     font-size 18px
+    table
+      line-height 1.4em
+      font-size 0.95em
     .scroll-focus
       background #fff59d
     p, ul, ol
@@ -39,7 +34,7 @@ body
       cursor zoom-in
       &.no-zoom
         cursor auto
-      &.sm-icon 
+      &.sm-icon
         vertical-align text-bottom
     ins
       text-decoration none

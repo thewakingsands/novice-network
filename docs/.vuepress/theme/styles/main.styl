@@ -48,3 +48,17 @@
   display flex
   justify-content center
   align-items center
+
+@media screen and (max-width 425px)
+  .md-table::before
+    content '※ 左右滑动以浏览完整表格'
+    font-size 0.9em
+    color #888
+  .md-table
+    font-size 0.9em
+    width 100%
+    overflow-x auto
+    table.ui.table
+      width 200%
+      td
+        max-width 75vw
