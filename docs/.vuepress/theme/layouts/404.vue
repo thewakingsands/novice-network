@@ -3,7 +3,7 @@
     <div class="dialog">
       <div class="message">
         <h2 style="text-align: center;">404 噗！</h2>
-        <p>这个页面找不到了噗！可能是被吃掉了噗！请回卷首看看噗！</p>
+        <p>这个页面找不到了噗！可能是还没有肝完噗！请回卷首看看噗！</p>
         <p style="text-align: right; font-size: 0.9em;">
           HTTP 404 - Page Not Found
         </p>
@@ -66,7 +66,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_2.jpg')  50% 100%;
+    url('/images/404_2.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
 .bg3 {
@@ -76,7 +76,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_3.jpg')  50% 100%;
+    url('/images/404_3.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
 .bg4 {
@@ -86,7 +86,7 @@
         rgba(255, 255, 255, 0.1) 3px
       )
       3px 3px,
-    url('/images/404_4.jpg')  50% 100%;
+    url('/images/404_4.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
 </style>

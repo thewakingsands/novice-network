@@ -120,8 +120,6 @@
 .home-container
   display flex
   flex-wrap wrap
-.clickable
-  cursor pointer
 .mnheader
   width 100%
   display flex
@@ -205,6 +203,8 @@
 
 @media screen and (max-width 960px)
   /*小屏幕*/
+  .clickable
+    cursor pointer
   .mnheader
     -webkit-tap-highlight-color transparent
     flex-wrap wrap
