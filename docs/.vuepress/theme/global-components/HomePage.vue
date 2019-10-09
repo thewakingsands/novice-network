@@ -32,24 +32,24 @@
     <div class="mntab mn-before">
       <h2>入坑准备</h2>
       <ul>
-        <li><router-link to="before/pay">收费方式及福利</router-link></li>
+        <li><router-link to="before/pay.htm">收费方式及福利</router-link></li>
         <li>
-          <router-link to="before/world">世界观与游戏版本</router-link>
+          <router-link to="before/world.htm">世界观与游戏版本</router-link>
         </li>
-        <li><router-link to="before/char">下载选服与捏人</router-link></li>
-        <li><router-link to="before/job">职业选择</router-link></li>
+        <li><router-link to="before/char.htm">下载选服与捏人</router-link></li>
+        <li><router-link to="before/job.htm">职业选择</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-guide">
       <h2>新人指南</h2>
       <ul>
-        <li><router-link to="basic/core">新人必知</router-link></li>
+        <li><router-link to="basic/core.htm">新人必知</router-link></li>
         <li>
-          <router-link to="basic/battle">战斗基础与副本</router-link>
+          <router-link to="basic/battle.htm">战斗基础与副本</router-link>
         </li>
-        <li><router-link to="basic/levelup">练级指南</router-link></li>
+        <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
         <li>
-          <router-link to="basic/config">常用设置及热键</router-link>
+          <router-link to="basic/config.htm">常用设置及热键</router-link>
         </li>
       </ul>
     </div>
@@ -57,59 +57,59 @@
       <h2>常见问题</h2>
       <ul>
         <li>
-          <router-link to="basic/quest#重要任务">重要支线</router-link>
+          <router-link to="basic/quest#重要任务.htm">重要支线</router-link>
         </li>
-        <li><router-link to="basic/equip">装备相关</router-link></li>
-        <li><router-link to="basic/map">地图移动与飞行</router-link></li>
-        <li><router-link to="ui/how">界面指南</router-link></li>
+        <li><router-link to="basic/equip.htm">装备相关</router-link></li>
+        <li><router-link to="basic/map.htm">地图移动与飞行</router-link></li>
+        <li><router-link to="ui/how.htm">界面指南</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-sys">
       <h2>进阶内容</h2>
       <ul>
         <li>
-          <router-link to="advanced/glossary">黑话缩略语词典</router-link>
+          <router-link to="advanced/glossary.htm">黑话缩略语词典</router-link>
         </li>
         <li>
-          <router-link to="advanced/dungeonGuide">副本攻略</router-link>
+          <router-link to="advanced/dungeonGuide.htm">副本攻略</router-link>
         </li>
-        <li><router-link to="advanced/currency">货币系统</router-link></li>
-        <li><router-link to="basic/bis">毕业装备</router-link></li>
+        <li><router-link to="advanced/currency.htm">货币系统</router-link></li>
+        <li><router-link to="basic/bis.htm">毕业装备</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-battle">
       <h2>战斗玩法</h2>
       <ul>
-        <li><router-link to="topic/battle">休闲战斗</router-link></li>
-        <li><router-link to="topic/raid">挑战副本</router-link></li>
-        <li><router-link to="topic/pvp">PVP</router-link></li>
-        <li><router-link to="topic/shine">发光武器</router-link></li>
-        <li><router-link to="topic/dd">深层迷宫</router-link></li>
+        <li><router-link to="topic/battle.htm">休闲战斗</router-link></li>
+        <li><router-link to="topic/raid.htm">挑战副本</router-link></li>
+        <li><router-link to="topic/pvp.htm">PVP</router-link></li>
+        <li><router-link to="topic/shine.htm">发光武器</router-link></li>
+        <li><router-link to="topic/dd.htm">深层迷宫</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-play">
       <h2>日常休闲</h2>
       <ul>
-        <li><router-link to="topic/daily">每日/每周任务</router-link></li>
-        <li><router-link to="topic/story">剧情任务</router-link></li>
+        <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
+        <li><router-link to="topic/story.htm">剧情任务</router-link></li>
         <li>
-          <router-link to="topic/goldsaucer">金碟游乐场</router-link>
+          <router-link to="topic/goldsaucer.htm">金碟游乐场</router-link>
         </li>
-        <li><router-link to="job/bluemage">青魔法师</router-link></li>
-        <li><router-link to="topic/relax">休闲活动</router-link></li>
+        <li><router-link to="job/bluemage.htm">青魔法师</router-link></li>
+        <li><router-link to="topic/relax.htm">休闲活动</router-link></li>
       </ul>
     </div>
     <div class="mntab mn-etc">
       <h2>生产采集</h2>
       <ul>
-        <li><router-link to="#">能工巧匠（制作）</router-link></li>
-        <li><router-link to="#">大地使者（采集）</router-link></li>
+        <li><router-link to="#.htm">能工巧匠（制作）</router-link></li>
+        <li><router-link to="#.htm">大地使者（采集）</router-link></li>
       </ul>
       <h2>其他</h2>
       <ul>
-        <li><router-link to="topic/other">周边衍生</router-link></li>
+        <li><router-link to="topic/other.htm">周边衍生</router-link></li>
         <li>
-          <router-link to="/basic/international">国际服专题</router-link>
+          <router-link to="/basic/international.htm">国际服专题</router-link>
         </li>
       </ul>
     </div>

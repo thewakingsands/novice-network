@@ -85,6 +85,11 @@ module.exports = {
     require('./plugins/sidenav'),
     '@vuepress/last-updated',
     '@vuepress/nprogress',
-    'vuepress-plugin-clean-urls'
+    [
+      'vuepress-plugin-clean-urls',
+      {
+        normalSuffix: '.htm'
+      }
+    ]
   ]
 }
