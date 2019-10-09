@@ -11,14 +11,6 @@ body
   background #efefef
 .content-container
   width 100%
-  table
-    td
-      border 1px solid #999
-      padding 8px 10px
-      line-height 1.25em
-      &:last-child
-        width 70%
-    border-collapse collapse
   .content-container-inner
     max-width 1200px
     padding 0 20px
@@ -39,7 +31,7 @@ body
       cursor zoom-in
       &.no-zoom
         cursor auto
-      &.sm-icon 
+      &.sm-icon
         vertical-align text-bottom
     ins
       text-decoration none

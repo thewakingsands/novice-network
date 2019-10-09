@@ -9,6 +9,12 @@ module.exports = {
       permalink: false
     },
     extendMarkdown: md => {
+      md.renderer.rules.table_open = function() {
+        return '<div class="md-table"><table class="ui compact striped unstackable table">'
+      }
+      md.renderer.rules.table_close = function() {
+        return '</table></div>'
+      }
       md.use(require('markdown-it-container'), 'collapse', {
         validate: function(params) {
           return params.trim().match(/^collapse\s+(.*)$/)
