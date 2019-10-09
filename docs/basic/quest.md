@@ -22,7 +22,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 如果发现任务图标变成<img src="/images/icons/071013.png" class="no-zoom sm-icon" />，这通常是玩家角色不满足任务要求所致，右键任务NPC可以查看具体原因。
 
-如果你迷路、跑丢了，不知道该去哪，请参考[地图与移动](/basic/map.html)章节。
+如果你迷路、跑丢了，不知道该去哪，请参考[地图与移动](/basic/map.md)章节。
 
 有些任务需要对**指定地点**使用情感动作/道具，或者在**指定地点**等待。需要右键选中“指定地点”，并对着它使用情感动作/道具。
 
@@ -74,7 +74,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记]()。
 * 36级：<quest name="浪漫的寻宝猎人" type="plus" />，开放[挖宝]()。
 
-下面2个任务与外观有关，详细了解投影系统可以看[这里](/basic/equip.html#装备染色、投影)。
+下面2个任务与外观有关，详细了解投影系统可以看[这里](/basic/equip.md#装备染色、投影)。
 
 * 主线15级：<quest name="天才美容师的过激绝技" type="plus" />，解锁洗剪吹功能，可在旅馆花2000金币改变发型、染发及面妆。
 * 主线15级：<quest name="色彩斑斓的世界" type="plus" />、<quest name="华丽的投影世界" type="plus" />，解锁染色及投影功能。
@@ -101,7 +101,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 ::: collapse 赠送宠物、情感动作、服装的支线
 
-邮递员、调查员系列支线，以及部分副本、发光武器任务也会赠送宠物、情感动作、服装等等，下面不再单独列出，具体可以查看[剧情任务](/topic/story.html)、[发光武器](/topic/shine.html)章节。
+邮递员、调查员系列支线，以及部分副本、发光武器任务也会赠送宠物、情感动作、服装等等，下面不再单独列出，具体可以查看[剧情任务](/topic/story.md)、[发光武器](/topic/shine.md)章节。
 
 往年节日活动赠送的宠物、坐骑只能在次年之后于商城购买，下面也不再列出。
 

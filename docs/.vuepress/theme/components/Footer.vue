@@ -14,7 +14,7 @@
           反馈问题
         </a>
         |
-        <router-link to="/about.html">
+        <router-link to="/about">
           关于&amp;捐赠
         </router-link>
       </div>
@@ -47,7 +47,7 @@
       <div class="copyright-line copyright-se">
         FINAL FANTASY XIV © 2010 - 2019 SQUARE ENIX CO., LTD. All Rights
         Reserved.
-        <router-link to="/takedown.html">
+        <router-link to="/takedown">
           Reporting Copyright Infringement(版权投诉)
         </router-link>
       </div>
