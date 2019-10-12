@@ -65,10 +65,6 @@ module.exports = {
         {
           href: '/basic/map.htm',
           title: '地图移动与飞行'
-        },
-        {
-          href: '/ui/how.htm',
-          title: '界面指南'
         }
       ]
     },
@@ -154,6 +150,19 @@ module.exports = {
           href: '/',
           title: '大地使者（采集）'
         }
+      ]
+    },
+    {
+      title: '界面指南',
+      children: [
+        { title: '基础指南', href: '/ui/how.htm' },
+        { title: '掌握UI', href: '/ui/know.htm' },
+        { title: '常见问题', href: '/ui/faq.htm' },
+        { title: '装备和道具', href: '/ui/equipment.htm' },
+        { title: '买入卖出', href: '/ui/item.htm' },
+        { title: '玩家交流', href: '/ui/communication.htm' },
+        { title: '神典石', href: '/ui/currency.htm' },
+        { title: '战斗界面', href: '/ui/battle.htm' }
       ]
     },
     {
