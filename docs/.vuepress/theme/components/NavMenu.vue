@@ -10,7 +10,11 @@
             expand: expandedTitles.indexOf(index1) >= 0
           }"
         >
-          <div class="title" @click.stop="toggleExpand(index1)">
+          <div
+            class="title"
+            @click.stop="toggleExpand(index1)"
+            v-if="title1.title"
+          >
             {{ title1.title }} <i class="caret down icon expand-icon"></i>
           </div>
           <div class="menu">
@@ -24,9 +28,21 @@
               v-for="(title2, index2) in title1.children"
               :key="index2"
             >
-              <img v-if="title2.img && loadImage" :src="$withBase(title2.img)" />
-              <img v-if="title2.img && !loadImage" class="img-placeholder" src="data:," />
-              <link v-if="title2.img && !loadImage" rel="preload" :href="$withBase(title2.img)" as="image">
+              <img
+                v-if="title2.img && loadImage"
+                :src="$withBase(title2.img)"
+              />
+              <img
+                v-if="title2.img && !loadImage"
+                class="img-placeholder"
+                src="data:,"
+              />
+              <link
+                v-if="title2.img && !loadImage"
+                rel="preload"
+                :href="$withBase(title2.img)"
+                as="image"
+              />
               <span>{{ title2.title }}</span>
             </router-link>
             <a

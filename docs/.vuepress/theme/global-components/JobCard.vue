@@ -8,7 +8,7 @@
         />
         <slot />
       </div>
-      <div class="ui bottom attached button">
+      <div class="ui bottom attached button" @click="details">
         <i class="angle right icon"></i>
         <span>查看详情</span>
       </div>
@@ -83,6 +83,11 @@ export default {
   props: {
     name: String,
     className: String
+  },
+  methods: {
+    details() {
+      alert('还在填坑中')
+    }
   }
 }
 </script>

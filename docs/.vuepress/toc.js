@@ -1,64 +1,167 @@
 module.exports = {
   main: [
     {
-      title: '艾欧泽亚初探',
+      title: '',
       children: [
-        { title: '卷首', href: '/' },
-        { title: '试玩、计费、福利', href: '/before/pay.htm' },
-        { title: '世界观与游戏版本', href: '/before/world.htm' },
-        { title: '下载、选服、捏人', href: '/before/char.htm' },
-        { title: '职业选择', href: '/before/job.htm' }
+        {
+          href: '/',
+          title: '首页'
+        }
       ]
     },
     {
-      title: '游戏基础',
+      title: '入坑准备',
       children: [
-        { title: '新人必知', href: '/basic/core.htm' },
-        { title: '任务系统', href: '/basic/quest.htm' },
-        { title: '装备、装等', href: '/basic/equip.htm' },
-        { title: '地图、移动', href: '/basic/map.htm' },
-        { title: '战斗基础及副本', href: '/basic/battle.htm' },
-        { title: '练级指南', href: '/basic/levelup.htm' },
-        { title: '装等提升和毕业', href: '/basic/bis.htm' }
+        {
+          href: '/before/pay.htm',
+          title: '收费方式及福利'
+        },
+        {
+          href: '/before/world.htm',
+          title: '世界观与游戏版本'
+        },
+        {
+          href: '/before/char.htm',
+          title: '下载选服与捏人'
+        },
+        {
+          href: '/before/job.htm',
+          title: '职业选择'
+        }
       ]
     },
     {
-      title: '进阶指南',
+      title: '新人指南',
       children: [
-        { title: '雇员系统', href: '/advanced/retainer.htm' },
-        { title: '货币系统', href: '/advanced/currency.htm' },
-        { title: '大国防联军', href: '/advanced/grandCompany.htm' },
-        { title: '宏指南', href: '/advanced/macro.htm' },
-        { title: '常用设置及热键', href: '/basic/config.htm' },
-        { title: '黑话缩略语词典', href: '/advanced/glossary.htm' }
+        {
+          href: '/basic/core.htm',
+          title: '新人必知'
+        },
+        {
+          href: '/basic/battle.htm',
+          title: '战斗基础与副本'
+        },
+        {
+          href: '/basic/levelup.htm',
+          title: '练级指南'
+        },
+        {
+          href: '/basic/config.htm',
+          title: '常用设置及热键'
+        }
       ]
     },
     {
-      title: '界面指南',
+      title: '常见问题',
       children: [
-        { title: '基础指南', href: '/ui/how.htm' },
-        { title: '掌握UI', href: '/ui/know.htm' },
-        { title: '常见问题', href: '/ui/faq.htm' },
-        { title: '装备和道具', href: '/ui/equipment.htm' },
-        { title: '买入卖出', href: '/ui/item.htm' },
-        { title: '玩家交流', href: '/ui/communication.htm' },
-        { title: '神典石', href: '/ui/currency.htm' },
-        { title: '战斗界面', href: '/ui/battle.htm' }
+        {
+          href: '/basic/quest#%E9%87%8D%E8%A6%81%E4%BB%BB%E5%8A%A1.htm',
+          title: '重要支线'
+        },
+        {
+          href: '/basic/equip.htm',
+          title: '装备相关'
+        },
+        {
+          href: '/basic/map.htm',
+          title: '地图移动与飞行'
+        },
+        {
+          href: '/ui/how.htm',
+          title: '界面指南'
+        }
       ]
     },
     {
-      title: '玩法指引',
+      title: '进阶内容',
       children: [
-        { title: '每日/每周任务', href: '/topic/daily.htm' },
-        { title: '剧情内容', href: '/topic/story.htm' },
-        { title: '休闲活动', href: '/topic/relax.htm' },
-        { title: '金碟游乐场', href: '/topic/goldsaucer.htm' },
-        { title: '休闲战斗', href: '/topic/battle.htm' },
-        { title: '生产采集', href: '/topic/craft.htm' },
-        { title: '挑战副本', href: '/topic/raid.htm' },
-        { title: '发光武器', href: '/topic/shine.htm' },
-        { title: 'PVP', href: '/topic/pvp.htm' },
-        { title: '深层迷宫（死宫天宫）', href: '/topic/dd.htm' }
+        {
+          href: '/advanced/glossary.htm',
+          title: '黑话缩略语词典'
+        },
+        {
+          href: '/advanced/dungeonGuide.htm',
+          title: '副本攻略'
+        },
+        {
+          href: '/advanced/currency.htm',
+          title: '货币系统'
+        },
+        {
+          href: '/basic/bis.htm',
+          title: '毕业装备'
+        }
+      ]
+    },
+    {
+      title: '战斗玩法',
+      children: [
+        {
+          href: '/topic/battle.htm',
+          title: '休闲战斗'
+        },
+        {
+          href: '/topic/raid.htm',
+          title: '挑战副本'
+        },
+        {
+          href: '/topic/pvp.htm',
+          title: 'PVP'
+        },
+        {
+          href: '/topic/shine.htm',
+          title: '发光武器'
+        },
+        {
+          href: '/topic/dd.htm',
+          title: '深层迷宫'
+        }
+      ]
+    },
+    {
+      title: '日常休闲',
+      children: [
+        {
+          href: '/topic/daily.htm',
+          title: '每日/每周任务'
+        },
+        {
+          href: '/topic/story.htm',
+          title: '剧情任务'
+        },
+        {
+          href: '/topic/goldsaucer.htm',
+          title: '金碟游乐场'
+        },
+        {
+          href: '/job/bluemage.htm',
+          title: '青魔法师'
+        },
+        {
+          href: '/topic/relax.htm',
+          title: '休闲活动'
+        }
+      ]
+    },
+    {
+      title: '生产采集',
+      children: [
+        // {
+        //   href: '/',
+        //   title: '能工巧匠（制作）'
+        // },
+        // {
+        //   href: '/',
+        //   title: '大地使者（采集）'
+        // },
+        {
+          href: '/topic/other.htm',
+          title: '周边衍生'
+        },
+        {
+          href: '/basic/international.htm',
+          title: '国际服专题'
+        }
       ]
     },
     {
