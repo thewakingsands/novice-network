@@ -100,6 +100,15 @@
       width 100%
       max-width 480px
       padding-bottom 0.5em
+      max-height 460px
+      max-height 65vh
+      overflow auto
+      -webkit-overflow-scrolling touch
+      &::-webkit-scrollbar-track
+        -webkit-box-shadow inset 0 0 6px rgba(255, 255, 255, 0.3)
+      &::-webkit-scrollbar-thumb
+        background rgba(255, 255, 255)
+        -webkit-box-shadow inset 0 0 6px rgba(255, 255, 255, 0.5)
       ul
         margin 0
         padding 0
