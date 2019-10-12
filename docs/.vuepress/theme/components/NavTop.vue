@@ -107,7 +107,7 @@
       &::-webkit-scrollbar-track
         -webkit-box-shadow inset 0 0 6px rgba(255, 255, 255, 0.3)
       &::-webkit-scrollbar-thumb
-        background rgba(255, 255, 255)
+        background rgba(255, 255, 255, 0.5)
         -webkit-box-shadow inset 0 0 6px rgba(255, 255, 255, 0.5)
       ul
         margin 0
