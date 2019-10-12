@@ -110,7 +110,7 @@
 封闭圣塔黎铎拉纳大灯塔掉落装备
 ;;;
 ;;;.guide .col .figcap
-<img src="./raid.assets/Ivalice_gear2.jpg" width="350px" />
+<img src="./raid.assets/Ivalice_gear3.jpg" width="350px" />
 
 乐欲之所瓯博讷修道院掉落装备
 ;;;
