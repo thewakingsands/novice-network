@@ -23,6 +23,10 @@ export default {
     type: {
       type: String,
       default: 'side'
+    },
+    search: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {
@@ -30,12 +34,19 @@ export default {
       return images[this.type]
     },
     wikiLink() {
-      return (
-        'https://ff14.huijiwiki.com/wiki/' +
-        encodeURIComponent('任务') +
-        ':' +
-        encodeURIComponent(this.name)
-      )
+      if (this.search) {
+        return (
+          'https://ff14.huijiwiki.com/index.php?title=QuestSearch&name=' +
+          encodeURIComponent(this.name)
+        )
+      } else {
+        return (
+          'https://ff14.huijiwiki.com/wiki/' +
+          encodeURIComponent('任务') +
+          ':' +
+          encodeURIComponent(this.name)
+        )
+      }
     }
   }
 }
