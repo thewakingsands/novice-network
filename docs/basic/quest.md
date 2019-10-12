@@ -59,16 +59,16 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 对于新人来说，下列任务会开放各种游戏功能，务必及时完成（直升包不包含这些任务，因此直升玩家也要去做）：
 
-* 主线10级：<quest name="挑战理符" type="plus" />、<quest name="行会特令" type="plus" />，完成对应主城9级主线任务之后，在出生城冒险者行会接取。只有完成挑战理符任务之后，才能开放其他地区的理符。
+* 主线10级：<quest name="挑战理符" type="plus" />、<quest name="行会特令" search type="plus" />，完成对应主城9级主线任务之后，在出生城冒险者行会接取。只有完成挑战理符任务之后，才能开放其他地区的理符。
 * 主线15级：<quest name="遗失的挑战笔记" type="plus" />，解锁每周挑战笔记，完成笔记上的项目可以获得大量经验、金钱、以及金碟币。
-* 主线17级：<quest name="雇员大探险" type="plus" />，任意主城冒险者行会接取，完成后开放雇员探险功能。[雇员系统详解](#)。
+* 主线17级：<quest name="雇员大探险" search type="plus" />，任意主城冒险者行会接取，完成后开放雇员探险功能。[雇员系统详解](#)。
 * 主线19级：<quest name="情感培育之力" type="plus" />，把精炼度满的装备转化为魔晶石。[魔晶石系统](https://ff14.huijiwiki.com/wiki/%E9%AD%94%E6%99%B6%E7%9F%B3)。
   * <quest name="情感凝聚之力" type="plus" />，合成魔晶石。
 * 主线20级：<quest name="我的专属陆行鸟" type="plus" />，完成20级主线任务<quest name="前行之路" type="main"/>并加入大国防联军后接取，完成任务可获得坐骑专属陆行鸟（在获得专属陆行鸟之前，商城购买的坐骑也无法使用）。
   * 任意职业30级：<quest name="可靠的搭档" type="plus" />，解锁专属陆行鸟辅助战斗，在黑衣森林南部林区恬静路营地接取。
   * 52级：<quest name="我心飞翔" type="plus" />，解锁专属陆行鸟飞行，需要完成前面的任务。
 * 任意职业30级：解锁特职，务必及时完成30级职业任务，并获得灵魂水晶转为特职。
-* 30级：<quest name="狱中斗狼" type="plus" />、<quest name="法外纷争" type="plus" />，开放PVP竞技场和战场。
+* 30级：<quest name="狱中斗狼" search type="plus" />、<quest name="法外纷争" search type="plus" />，开放PVP竞技场和战场。
 
 ### 特殊功能相关
 * 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记]()。
