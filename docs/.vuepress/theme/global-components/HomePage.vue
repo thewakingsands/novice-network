@@ -57,7 +57,7 @@
       <h2>常见问题</h2>
       <ul>
         <li>
-          <router-link to="basic/quest#重要任务.htm">重要支线</router-link>
+          <router-link to="basic/quest.htm">重要支线</router-link>
         </li>
         <li><router-link to="basic/equip.htm">装备相关</router-link></li>
         <li><router-link to="basic/map.htm">地图移动与飞行</router-link></li>

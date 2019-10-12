@@ -55,7 +55,7 @@ module.exports = {
       title: '常见问题',
       children: [
         {
-          href: '/basic/quest#%E9%87%8D%E8%A6%81%E4%BB%BB%E5%8A%A1.htm',
+          href: '/basic/quest.htm',
           title: '重要支线'
         },
         {
