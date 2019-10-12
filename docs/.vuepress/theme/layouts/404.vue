@@ -3,7 +3,9 @@
     <div class="dialog">
       <div class="message">
         <h2 style="text-align: center;">404 噗！</h2>
-        <p>这个页面找不到了噗！可能是还没有肝完噗！请回卷首看看噗！</p>
+        <p>
+          这个页面找不到了噗！<br />可能是还没有填完坑，编辑们正在疯狂赶工噗！<br />请先回卷首看看噗！
+        </p>
         <p style="text-align: right; font-size: 0.9em;">
           HTTP 404 - Page Not Found
         </p>

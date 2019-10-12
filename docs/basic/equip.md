@@ -6,7 +6,7 @@
 
 ;;;.guide .cols2
 ;;;.guide .col
-![]()<!--HQ属性对比图-->
+![](./equip.assets/hq.jpg)
 ;;;
 
 ;;;.guide .col .grow
@@ -43,7 +43,7 @@ FF14的装备图标有多种颜色，但是这些图标颜色与装备的强度�
 
 ;;;.guide .cols2
 ;;;.guide .col
-![]() <!--缺张图-->
+![](./equip.assets/ilv.jpg)
 ;;;
 
 ;;;.guide .col .grow

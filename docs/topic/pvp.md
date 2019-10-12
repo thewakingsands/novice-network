@@ -158,7 +158,7 @@ FF14的进攻节奏受技能GCD限制，因此在战场里没有集火是很难�
 
 **战场一切为了赢！请杜绝挂机、强退等消极行为！**如果遇到消极对战的玩家，可以通过[这里](https://bbs.nga.cn/read.php?tid=17758819)介绍的方式进行举报。
 
-[战场常见黑话参见这里](/advanced/glossary.md#PVP 用语)
+[战场常见黑话参见这里](/advanced/glossary.md#PVP用语)
 :::
 
 [官方战场介绍](http://act.ff.sdo.com/project/160810event/page4.html)。

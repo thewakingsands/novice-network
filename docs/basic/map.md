@@ -48,7 +48,7 @@ FF14的任务经常带有日式游戏特有的恶意，部分任务点在屋里(
 
 ;;;.guide .cols2
 ;;;.guide .col
-![]() <!--小水晶图-->
+![](./map.assets/aethernetshard.jpg)
 ;;;
 
 ;;;.guide .col .grow
@@ -60,7 +60,7 @@ FF14的任务经常带有日式游戏特有的恶意，部分任务点在屋里(
 
 ;;;.guide .cols2
 ;;;.guide .col
-![]() <!--大水晶图-->
+![](./map.assets/aether.jpg)
 ;;;
 
 ;;;.guide .col .grow
@@ -113,7 +113,7 @@ FF14的任务经常带有日式游戏特有的恶意，部分任务点在屋里(
 
 ;;;.guide .cols2
 ;;;.guide .col
-![]() <!--少个图--> 
+![](./map.assets/sea.jpg)
 ;;;
 
 ;;;.guide .col .grow
