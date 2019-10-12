@@ -8,13 +8,13 @@
 
 FF14的任务经常带有日式游戏特有的恶意，部分任务点在屋里(楼上或地下)，山顶、水沟里，而楼梯、坡道也许并不在圈内。不要过于依赖地图，仔细观察地形。
 
-::: collapse 地图详解
+::: collapse 如何阅读地图
 
 ![](./map.assets/map.jpg)
 
 ![](./map.assets/map_wild.jpg)
 
-[萌新防迷路指南](https://img.nga.178.com/attachments/mon_201809/08/-8renrQ5-ejuqZ16T3cSm8-2am.jpg)
+扩展阅读：[萌新防迷路指南 by 延夏 千霄霄](https://img.nga.178.com/attachments/mon_201809/08/-8renrQ5-ejuqZ16T3cSm8-2am.jpg)
 :::
 
 在聊天栏中输入 `<pos> `就可以在聊天中发送自己的坐标，点击别人发送的坐标就会自动弹出地图（并有一个小旗子标志）。如果你的地图上已经有了小旗子标志，可以输入 `<flag>` 发送小旗子的坐标。
