@@ -46,12 +46,12 @@ FF14的PVP属性与技能与PVE系统完全独立，就算是相同名字的技�
 
 ;;;.guide .cols2
 ;;;.guide .col .figcap
-![](./pvp.assets/pvp_gear.jpg)
+<img src="./pvp.assets/pvp_gear.jpg" width="350"/>
 
 狼印战绩兑换外观
 ;;;
 ;;;.guide .col .figcap
-![](./pvp.assets/pvp_mount.jpg)
+<img src="./pvp.assets/pvp_mount.jpg" width="350"/>
 
 PVP成就坐骑
 ;;;
