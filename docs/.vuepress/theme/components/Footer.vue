@@ -14,9 +14,10 @@
           反馈问题
         </a>
         |
-        <router-link to="/about">
-          关于&amp;捐赠
-        </router-link>
+        <router-link to="/about"> 关于&amp;捐赠 </router-link>
+        <br />
+        本站正在填坑中，可能出现大量内容不全/链接缺失等现象，敬请谅解~如有兴趣加入我们请戳
+        <router-link to="/about">关于</router-link>
       </div>
       <div class="copyright-line copyright-self">
         <a
