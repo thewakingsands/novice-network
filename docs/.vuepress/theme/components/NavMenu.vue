@@ -7,7 +7,7 @@
           v-for="(title1, index1) in toc"
           :key="index1"
           :class="{
-            expand: expandedTitles.indexOf(index1) >= 0
+            expand: expandedTitles.indexOf(index1) >= 0 || !title1.title
           }"
         >
           <div
