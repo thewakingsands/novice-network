@@ -1,6 +1,7 @@
 <template>
   <div class="content-container">
     <div class="content-container-inner" @click.capture="handleClick">
+      <slot></slot>
       <Content v-for="key in slotKeys" :key="key" :slot-key="key" />
     </div>
   </div>

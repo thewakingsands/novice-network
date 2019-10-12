@@ -5,9 +5,12 @@
         <div class="content-inner full-height">
           <NavTop @barClicked="showMenu = !showMenu" />
           <slot>
-            <Pager v-if="!$page.frontmatter.noTopPager" />
-            <ContentContainer />
-            <Pager />
+            <Duty v-if="$page.frontmatter.instance" />
+            <div v-else>
+              <Pager v-if="!$page.frontmatter.noTopPager" />
+              <ContentContainer />
+              <Pager />
+            </div>
             <Footer />
           </slot>
         </div>
@@ -45,6 +48,7 @@
 
 <script>
 import Root from './Root.vue'
+import Duty from './Duty.vue'
 import NavMenu from '../components/NavMenu'
 import NavTop from '../components/NavTop'
 import Footer from '../components/Footer'
@@ -65,7 +69,8 @@ export default {
     NavTop,
     Footer,
     Pager,
-    PhotoSwipe
+    PhotoSwipe,
+    Duty
   },
   provide() {
     return {
