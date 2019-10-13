@@ -102,8 +102,8 @@
     <div class="mntab mn-etc">
       <h2>生产采集</h2>
       <ul>
-        <li><router-link to="#.htm">能工巧匠（制作）</router-link></li>
-        <li><router-link to="#.htm">大地使者（采集）</router-link></li>
+        <li><router-link to="/topic/craft.htm">能工巧匠（制作）</router-link></li>
+        <li><router-link to="/topic/gather.htm">大地使者（采集）</router-link></li>
       </ul>
       <h2>其他</h2>
       <ul>

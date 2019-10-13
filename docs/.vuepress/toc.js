@@ -143,11 +143,11 @@ module.exports = {
       title: '生产采集',
       children: [
         {
-          href: '/',
+          href: '/topic/craft.thm',
           title: '能工巧匠（制作）'
         },
         {
-          href: '/',
+          href: '/topic/gather.thm',
           title: '大地使者（采集）'
         }
       ]
