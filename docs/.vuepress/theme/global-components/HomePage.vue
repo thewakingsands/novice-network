@@ -34,7 +34,7 @@
       <ul>
         <li><router-link to="before/pay.htm">收费方式及福利</router-link></li>
         <li>
-          <router-link to="before/world.htm">世界观与游戏版本</router-link>
+          <router-link to="before/world.htm">游戏背景介绍</router-link>
         </li>
         <li><router-link to="before/char.htm">下载选服与捏人</router-link></li>
         <li><router-link to="before/job.htm">职业选择</router-link></li>

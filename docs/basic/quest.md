@@ -87,7 +87,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 10级：<quest name="薰衣草苗圃的繁花屋" type="plus" />，沙都住宅区开放。
 * 61级：<quest name="白银乡之梦" type="plus" />，白银乡住宅区开放。
 
-[住宅区与房屋介绍]()。
+<!--[住宅区与房屋介绍]()。-->
 
 ### 金碟游乐场相关任务：
 
@@ -96,7 +96,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
     * 30级： <quest name="培育陆行鸟的秘诀" type="plus" />，开放陆行鸟配种。
   * 15级： <quest name="时尚品鉴" type="plus" /> <quest name="多玛方城战入门之旅" type="plus" />，开放金碟游乐场的市场品鉴和多玛方城战（麻将）。
 
-[金碟游乐场介绍]()。
+[金碟游乐场介绍](/topic/goldsaucer.md)。
 :::
 
 ::: collapse 赠送宠物、情感动作、服装的支线

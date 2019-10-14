@@ -18,7 +18,7 @@ module.exports = {
         },
         {
           href: '/before/world.htm',
-          title: '世界观与游戏版本'
+          title: '游戏背景介绍'
         },
         {
           href: '/before/char.htm',

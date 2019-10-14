@@ -25,9 +25,9 @@
 
 ### 系统buff
 
-* 新服奖励 - 部分服务器的 69 级以下的职业有 +100% 的经验值加成。
-* 兵装转换奖励 - 当前职业不是你拥有的职业里等级最高时，获得 +50% 的经验值加成（70级以下为100%）。
-* 休息奖励 - 在休息区停留或下线可以累积休息经验值（经验值右下方出现小月亮标记），获得经验时消耗休息经验值并获取 +50% 的经验加成
+* 新服奖励：部分服务器的 69 级以下的职业有 +100% 的经验值加成（目前莫古力区潮风亭；白银乡；神拳痕；白金幻象；龙巢神殿这几个服务器有该奖励）。
+* 兵装转换奖励：当前职业不是你拥有的职业里等级最高时，获得 +50% 的经验值加成（70级以下为100%）。
+* 休息奖励：在休息区停留或下线可以累积休息经验值（经验值右下方出现小月亮标记），获得经验时消耗休息经验值并获取 +50% 的经验加成
 
 ### 道具
 
@@ -39,7 +39,7 @@
 
 ### 其他
 
-* <img src="/images/buffs/016513.png" class="no-zoom sm-icon" /><img src="/images/buffs/016514.png" class="no-zoom sm-icon" /><img src="/images/buffs/016515.png" class="no-zoom sm-icon" />讨伐经验值提高：部队特效，分为I、II、III级，分别提升5%、10%和15%的战斗经验（另外有专门的生产、采集、搭档用部队特效），会被<Item name="军用战斗指南" />效果覆盖。
+* <img src="/images/buffs/016513.png" class="no-zoom sm-icon" /><img src="/images/buffs/016538.png" class="no-zoom sm-icon" /><img src="/images/buffs/016553.png" class="no-zoom sm-icon" />讨伐经验值提高：部队特效，分为I、II、III级，分别提升5%、10%和15%的战斗经验（另外有专门的生产、采集、搭档用部队特效），会被<Item name="军用战斗指南" />效果覆盖。
 * <img src="/images/buffs/016225.png" class="no-zoom sm-icon" /><img src="/images/buffs/016226.png" class="no-zoom sm-icon" />危命经验值提高：击倒Fate中出现的特殊怪物，可以获得这个专属buff（加成量有所不同）。
 * <img src="/images/buffs/016222.png" class="no-zoom sm-icon" />经验值加成：指导者和新人或回归者组队时，新人/回归者获得的经验会增加。20级以内有效。
 
