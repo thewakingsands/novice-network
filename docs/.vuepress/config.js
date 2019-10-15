@@ -89,12 +89,24 @@ module.exports = {
   },
   plugins: [
     require('./plugins/sidenav'),
+    [
+      require('./plugins/baidu-tongji'),
+      {
+        id: 'b44d6a97b8c0954e3eec6d17285e83a8'
+      }
+    ],
     '@vuepress/last-updated',
     '@vuepress/nprogress',
     [
       'vuepress-plugin-clean-urls',
       {
         normalSuffix: '.htm'
+      }
+    ],
+    [
+      'minimal-analytics',
+      {
+        ga: 'UA-140050718-1'
       }
     ]
   ]

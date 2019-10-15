@@ -8051,6 +8051,11 @@ vuepress-plugin-container@^2.0.0:
   dependencies:
     markdown-it-container "^2.0.0"
 
+vuepress-plugin-minimal-analytics@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-minimal-analytics/-/vuepress-plugin-minimal-analytics-0.1.4.tgz#c6bcfc33330c65c669111df625b63a3b585fc254"
+  integrity sha512-f+Y4FYiafmxrhwQjaMeu6CFZo0BrKetMpF3X/wLMK7Sp5n7dWk0s8pBowgY82jgWZmn63PjYeaX+MTJhCqnmRg==
+
 vuepress@^1.0.0-alpha.46:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.1.0.tgz#ca0d787d93188b2fd05820a650d7e3643c9e7675"
