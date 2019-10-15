@@ -92,7 +92,7 @@ module.exports = {
     [
       require('./plugins/baidu-tongji'),
       {
-        id: 'b44d6a97b8c0954e3eec6d17285e83a8'
+        id: '215a46d31e2c4aaa8e1cdd94fcfe8aa4'
       }
     ],
     '@vuepress/last-updated',
