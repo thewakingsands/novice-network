@@ -2,8 +2,7 @@
   <div class="ui violet segment ucontainer">
     <div class="img">
       <img
-        height="60"
-        src="https://i.loli.net/2019/10/15/nQpFPR478yosaSf.gif"
+        src="/images/bg/hint.png"
       />
     </div>
     <div class="text">
@@ -18,14 +17,16 @@
   align-items center
   width 75%
   min-width 400px
-  margin 0 auto
+  margin 30px auto
   .img
+    position absolute
     width 15%
     min-width 70px
     text-align center
   .text
     flex 1
     text-align center
+    margin-left 5em
     font-size 1.3em
     line-height 1.5
 </style>
