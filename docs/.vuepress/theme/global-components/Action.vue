@@ -71,7 +71,6 @@ export default {
       if (this.job) {
         return jobList[this.job]
       }
-      console.log(this.$page.frontmatter)
       if (
         this.$page &&
         this.$page.frontmatter &&
