@@ -67,5 +67,5 @@ OT或需要换T时，需要先使用**挑衅**，让自己的仇恨变为当前�
 
 ## 满级手法
 
-<UnderConstruction />
+* [5.0战士攻略](https://bbs.nga.cn/read.php?tid=18769330)
 

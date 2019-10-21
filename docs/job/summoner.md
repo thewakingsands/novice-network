@@ -53,4 +53,4 @@
 
 ## 满级手法
 
-<UnderConstruction />
+* [5.0召唤攻略](https://bbs.nga.cn/read.php?tid=17633131)
