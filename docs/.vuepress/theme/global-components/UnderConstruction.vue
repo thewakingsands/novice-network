@@ -1,9 +1,7 @@
 <template>
   <div class="ui violet segment ucontainer">
     <div class="img">
-      <img
-        src="/images/bg/hint.png"
-      />
+      <img src="/images/bg/hint.png" />
     </div>
     <div class="text">
       此处内容仍在施工中，将会在近日有大量内容更新，敬请期待~

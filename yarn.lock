@@ -694,19 +694,19 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@thewakingsands/kit-common@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.npm.taobao.org/@thewakingsands/kit-common/download/@thewakingsands/kit-common-0.2.0.tgz#26d4d34ce19331fa01ec8e47b8978cbb16d9c648"
-  integrity sha1-JtTTTOGTMfoB7I5HuJeMuxbZxkg=
+"@thewakingsands/kit-common@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@thewakingsands/kit-common/-/kit-common-0.3.0.tgz#9b96b66e36cbe8f73fb8a0963c831484dbee8859"
+  integrity sha512-C4en3K7HnnbV2nSob2OjKygoAxmLr0wg4srOShUmvSvYOPDwdHHcEHi0MAE4GHMS+BEdtlQnhbVsn8+0EMF5Mw==
   dependencies:
     preact "^8.4.2"
 
-"@thewakingsands/kit-tooltip@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npm.taobao.org/@thewakingsands/kit-tooltip/download/@thewakingsands/kit-tooltip-0.2.1.tgz#da158df57289edb1c38a2b88d96ff44e58e77bee"
-  integrity sha1-2hWN9XKJ7bHDiiuI2W/0Tljne+4=
+"@thewakingsands/kit-tooltip@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@thewakingsands/kit-tooltip/-/kit-tooltip-0.3.0.tgz#f9e8f6a257c728c1c79468bba2205823add766e9"
+  integrity sha512-Ds042jwNkNdI/DRL4guvK0Voong8du3oWYR+e2BP4MQuvR7G8jfewbH+SCMNyTt0t76WcT5pES7cCHbDXw7PyQ==
   dependencies:
-    "@thewakingsands/kit-common" "^0.2.0"
+    "@thewakingsands/kit-common" "^0.3.0"
     preact "^8.4.2"
 
 "@types/events@*":
