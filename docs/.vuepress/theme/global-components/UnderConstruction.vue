@@ -14,7 +14,7 @@
   display flex
   align-items center
   width 75%
-  min-width 400px
+  min-width 25em
   margin 30px auto
   .img
     position absolute

@@ -45,7 +45,8 @@ body
       background-color #dcedc8
     strong
       font-weight normal
-      color #ff5e00
+      color #00b5ad
+      text-text-decoration underline dotted
     s
       color #888
     p:last-child
