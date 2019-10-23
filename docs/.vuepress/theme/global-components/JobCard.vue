@@ -11,7 +11,7 @@
       <div class="ui bottom attached button" @click="details">
         <i class="angle right icon"></i>
         <span v-if="hasPage">查看详情</span>
-        <span v-else>(细节攻略还在填坑中))</span>
+        <span v-else>(细节攻略还在填坑中)</span>
       </div>
     </div>
   </div>
