@@ -10,7 +10,8 @@
       </div>
       <div class="ui bottom attached button" @click="details">
         <i class="angle right icon"></i>
-        <span>查看详情</span>
+        <span v-if="hasPage">查看详情</span>
+        <span v-else>(细节攻略还在填坑中))</span>
       </div>
     </div>
   </div>
@@ -86,7 +87,21 @@ export default {
   },
   methods: {
     details() {
-      alert('还在填坑中')
+      if (this.hasPage) {
+        this.$router.push(`/job/${this.name}.htm`)
+      } else {
+        alert('还在填坑中')
+      }
+    }
+  },
+  computed: {
+    hasPage() {
+      if (this.$site && this.$site.pages) {
+        return !!this.$site.pages.find(i => {
+          return i.relativePath === `job/${this.name}.md`
+        })
+      }
+      return false
     }
   }
 }
