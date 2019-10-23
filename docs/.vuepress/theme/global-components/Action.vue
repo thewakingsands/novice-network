@@ -3,6 +3,7 @@
     :data-ck-action-id="id"
     :data-ck-action-name="name"
     :data-ck-action-job-id="jobId"
+    class="action"
   >
     <slot>{{ name }}</slot>
   </strong>

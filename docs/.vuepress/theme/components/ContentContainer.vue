@@ -45,8 +45,10 @@ body
       background-color #dcedc8
     strong
       font-weight normal
-      color #00b5ad
-      text-text-decoration underline dotted
+      color #ff5e00
+      &.action
+        color #00b5ad
+        text-decoration underline dotted
     s
       color #888
     p:last-child
