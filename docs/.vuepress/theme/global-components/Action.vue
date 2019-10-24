@@ -1,15 +1,46 @@
 <template>
-  <strong
-    :data-ck-action-id="id"
-    :data-ck-action-name="name"
-    :data-ck-action-job-id="jobId"
-    class="action"
-  >
+  <strong :data-ck-action-id="actionId || id" class="action">
+    <div class="action-container">
+      <div class="cover"></div>
+      <img
+        :src="iconUrl || 'about:blank'"
+        class="no-zoom"
+        :class="{ hide: !iconUrl }"
+      />
+    </div>
     <slot>{{ name }}</slot>
   </strong>
 </template>
 
+<style lang="stylus" scoped>
+img
+  vertical-align middle
+  width 1em
+  height 1em
+  margin-bottom .2em
+  cursor pointer!important
+  &.hide
+    visibility hidden
+.action-container
+  display inline-block
+  position relative
+.cover
+  width 100%
+  height 100%
+  position absolute
+  top 0
+  left 0
+  border-radius 15%
+  pointer-events none
+  background radial-gradient(circle at 50% -430%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0) 65%)
+  box-shadow inset 0px 4px 4px 2px rgba(255,255,255,0.3), inset 0px -2px 4px 2px rgba(255,255,255,0.1)
+</style>
+
 <script>
+import 'isomorphic-fetch'
+
+let count = 0
+
 const jobList = {
   冒险者: 0,
   剑术师: 1,
@@ -65,7 +96,42 @@ export default {
     }
   },
   data: function() {
-    return {}
+    return {
+      actionId: null,
+      iconUrl: null
+    }
+  },
+  mounted() {
+    count++
+    setTimeout(() => this.updateId(), count * 50)
+    // this.updateId()
+  },
+  methods: {
+    async updateId() {
+      if (this.id) {
+        this.actionId = this.id
+        const json = await (await fetch(
+          `https://cafemaker.wakingsands.com/Action/${this.actionId}?columns=Icon`
+        )).json()
+        this.iconUrl = 'https://cafemaker.wakingsands.com' + json.Icon
+        count--
+        return
+      }
+
+      let url = `https://cafemaker.wakingsands.com/search?indexes=Action&string=${this.name}&filters=IsPvP=0,ClassJobLevel%3E0`
+      if (this.jobId) {
+        url = url + ',ClassJobTargetID=' + this.jobId
+      }
+
+      const res = await fetch(url)
+      const json = await res.json()
+      if (json.Results && json.Results[0]) {
+        this.actionId = json.Results[0].ID
+        this.iconUrl =
+          'https://cafemaker.wakingsands.com' + json.Results[0].Icon
+      }
+      count--
+    }
   },
   computed: {
     jobId() {
