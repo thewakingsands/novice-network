@@ -701,10 +701,10 @@
   dependencies:
     preact "^8.4.2"
 
-"@thewakingsands/kit-tooltip@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@thewakingsands/kit-tooltip/-/kit-tooltip-0.3.1.tgz#351f89748eee807403f30c63fd714b1219fa0402"
-  integrity sha512-8LAs/Lg47eRPdWzsGn9PYylLol70ypYN/gvxczFGuTyzy0oXHX5kMep8zS2EGqUGbJ959WdETp6dKhZ+t4o5sQ==
+"@thewakingsands/kit-tooltip@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@thewakingsands/kit-tooltip/-/kit-tooltip-0.3.2.tgz#090cd0d7858eb068a32ca7c4f1036352c75caaf7"
+  integrity sha512-YzCIbxsfFfFa8coiKdJOm/A1swjGvdKBWnDQVq7TJQAzjLlxYV2JQt6gFia4ysngwQatkNmQPrTf7RzqoSIIbA==
   dependencies:
     "@thewakingsands/kit-common" "^0.3.0"
     preact "^8.4.2"
