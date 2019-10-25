@@ -13,16 +13,18 @@ FF14随着版本更新追加了忍者、暗黑骑士、占星术士、机工士�
 
 ## 战斗职能
 
-FF14的职业分工与其他MMORPG很相似，都是<img class="no-zoom" :src="$withBase('/images/jobs/tank.png')" height="20">坦克(T)+<img class="no-zoom" :src="$withBase('/images/jobs/healer.png')" height="20">治疗(H/N)+<img class="no-zoom" :src="$withBase('/images/jobs/dps.png')" height="20">输出(D/DPS)分工的制度。一般的4人副本中，采取1T1奶2DPS的轻锐小队；而高难度副本中，采用8人满编小队组合，需要2T、2奶和4个DPS。
+FF14的职业分工与其他MMORPG很相似，都是<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/tank.png')" height="20">坦克(T)+<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/healer.png')" height="20">治疗(H/N)+<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/dps.png')" height="20">输出(D/DPS)分工的制度。一般的4人副本中，采取1T1奶2DPS的轻锐小队；而高难度副本中，采用8人满编小队组合，需要2T、2奶和4个DPS。
 
 ::: segment orange
 ### 职业操作难度、强弱与队伍需求
 
 FF14在设计的时候非常注重职业平衡，这种平衡包括了操作、难度和职业特性。操作简单的职业输出相对较低，没有团辅能力的职业输出就会较高，并不存在简单粗暴无脑打得高的职业。在目前版本（5.08），输出以黑魔、武僧、龙骑 > 武士、忍者 > 召唤、机工、诗人 > 赤魔、舞者（在不同层次的玩家中，输出排行会发生变化，比如顶级黑魔玩家的输出可以与顶级武僧媲美，但中上级别的黑魔就打不到同级别武僧的输出了）。
 
-通常小队分配中，不能出现相同的职业，习惯上4个DPS需要有至少1名近战(方便在副本中安排站位和走位)。
+通常小队分配中，不能出现相同的职业，习惯上4个DPS需要有至少1名，最多2名近战，以便在副本中安排站位和走位。同时，队伍中拥有不同职能的玩家，可以为全队增加一定的主属性，所以目前的标准配置均是不重复的2T2奶2近战1物远1法系。
 
 在挑战大型困难副本时，基本不存在哪个职业完全失业的情况，更重要的参考是玩家的学习能力、反应能力、副本经验，对职业的理解与操作。所以在选择职业时，要以自己的能力和喜好为主。
+
+从玩家分布来说，T奶玩家相对较少，而DPS玩家较多；绝大多数随机副本和招募都是DPS等T奶，部分招募会等近战，如果你希望自己好进本，也推荐T奶或近战DPS职业。
 
 :::
 
