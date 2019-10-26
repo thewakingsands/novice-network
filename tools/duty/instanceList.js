@@ -2,7 +2,7 @@ const fs = require('fs')
 const csv = fs.readFileSync('ContentFinderCondition_chs.csv').toString()
 
 const lines = csv.split('\n')
-const data = []
+let data = []
 
 const partySizeList = [null, null, 4, 8, 24]
 
@@ -38,6 +38,7 @@ for (const line of lines) {
   if (!name) continue
   if (instanceType !== '1') continue
   if (!types[typeId]) continue
+  if (name.match(/^活动/)) continue
 
   data.push({
     index: parseInt(index),
@@ -52,6 +53,10 @@ for (const line of lines) {
     banner: parseInt(banner)
   })
 }
+
+const temp = data.splice(0, 13)
+temp.sort((a, b) => a.level - b.level)
+data = [...temp, ...data]
 
 const result = []
 result.push('/* eslint-disable */')
