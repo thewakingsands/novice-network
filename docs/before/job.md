@@ -35,7 +35,7 @@ FF14在设计的时候非常注重职业平衡，这种平衡包括了操作、�
 
 <IconHeader img="/images/jobs/dps.png">进攻职业 (DPS)</IconHeader>
 
-DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和正确打出输出循环是所有DPS的基本功。在4.0中，DPS被划分为 <img class="no-zoom" :src="$withBase('/images/jobs/melee.png')" height="20"> 近战物理、<img class="no-zoom" :src="$withBase('/images/jobs/ranged.png')" height="20"> 远程物理和 <img class="no-zoom" :src="$withBase('/images/jobs/magic.png')" height="20"> 远程魔法3种类型。
+DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和正确打出输出循环是所有DPS的基本功。在4.0中，DPS被划分为 <img class="no-zoom sm-icon" :src="$withBase('/images/jobs/melee.png')" height="20"> 近战物理、<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/ranged.png')" height="20"> 远程物理和 <img class="no-zoom sm-icon" :src="$withBase('/images/jobs/magic.png')" height="20"> 远程魔法3种类型。
 
 <IconHeader img="/images/jobs/melee.png">近战物理进攻职业</IconHeader>
 
