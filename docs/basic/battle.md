@@ -106,7 +106,7 @@ DOT全称随时间伤害（Damage over time），比如上面樱花怒放中，�
 
 ;;;.guide .col .grow
 
-极限技（Limit Break），俗称LB，在技能-共通技能中，是只有组成小队才能使用的特殊技能。默认极限技能量槽是1~3格（根据小队人数和副本难度变化），默认情况下，会出现在屏幕左上角，小队列表上方。不同的职能使用极限技会有不同的效果：
+<Action name="极限技" />（Limit Break），俗称LB，在技能-共通技能中，是只有组成小队才能使用的特殊技能。默认极限技能量槽是1~3格（根据小队人数和副本难度变化），默认情况下，会出现在屏幕左上角，小队列表上方。不同的职能使用极限技会有不同的效果：
 
 * <img class="no-zoom" :src="$withBase('/images/jobs/tank.png')" height="20">T极限技：全队减伤20%(一段)、40%(二段)、90%(三段)
 * <img class="no-zoom" :src="$withBase('/images/jobs/melee.png')" height="20">近战极限技：近战范围单体目标大伤害。

@@ -48,19 +48,14 @@ module.exports = {
         {
           href: '/basic/config.htm',
           title: '常用设置及热键'
-        }
-      ]
-    },
-    {
-      title: '常见问题',
-      children: [
+        },
         {
           href: '/basic/quest.htm',
-          title: '重要支线'
+          title: '任务分类及重要支线'
         },
         {
           href: '/basic/equip.htm',
-          title: '装备相关'
+          title: '装备介绍'
         },
         {
           href: '/basic/map.htm',
@@ -76,7 +71,7 @@ module.exports = {
           title: '黑话缩略语词典'
         },
         {
-          href: '/advanced/dungeonGuide.htm',
+          href: '/duty/',
           title: '副本攻略'
         },
         {
@@ -115,7 +110,7 @@ module.exports = {
       ]
     },
     {
-      title: '日常休闲',
+      title: '休闲玩法及日常',
       children: [
         {
           href: '/topic/daily.htm',
