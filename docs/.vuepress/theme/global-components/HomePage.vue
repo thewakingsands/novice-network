@@ -71,7 +71,7 @@
           <router-link to="advanced/glossary.htm">黑话缩略语词典</router-link>
         </li>
         <li>
-          <router-link to="advanced/dungeonGuide.htm">副本攻略</router-link>
+          <router-link to="/duty/">副本攻略</router-link>
         </li>
         <li><router-link to="advanced/currency.htm">货币系统</router-link></li>
         <li><router-link to="basic/bis.htm">毕业装备</router-link></li>
