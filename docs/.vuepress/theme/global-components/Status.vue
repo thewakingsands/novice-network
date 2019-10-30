@@ -22,13 +22,18 @@ img
 
 <script>
 import 'isomorphic-fetch'
+import { getIconUrl } from '../utils/iconUrl'
 
 let count = 0
 
 export default {
   props: {
     name: String,
-    id: Number
+    id: Number,
+    stack: {
+      type: Number,
+      default: 0
+    }
   },
   data: function() {
     return {
@@ -43,9 +48,9 @@ export default {
   methods: {
     async updateId() {
       const json = await (await fetch(
-        `https://cafemaker.wakingsands.com/Status/${this.id}?columns=Icon,Name,MaxStacks,CanDispel,Description`
+        `https://cafemaker.wakingsands.com/Status/${this.id}?columns=IconID,Name,MaxStacks,CanDispel,Description`
       )).json()
-      this.iconUrl = 'https://cafemaker.wakingsands.com' + json.Icon
+      this.iconUrl = getIconUrl(json.IconID + this.stack)
       this.description = json.Description
     }
   },
