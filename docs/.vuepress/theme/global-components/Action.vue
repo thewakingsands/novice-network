@@ -17,6 +17,7 @@ img
   vertical-align middle
   width 1em
   height 1em
+  margin-left .2em
   margin-bottom .2em
   cursor pointer!important
   &.hide
@@ -114,7 +115,6 @@ export default {
           `https://cafemaker.wakingsands.com/Action/${this.actionId}?columns=Icon`
         )).json()
         this.iconUrl = 'https://cafemaker.wakingsands.com' + json.Icon
-        count--
         return
       }
 
@@ -130,8 +130,10 @@ export default {
         this.iconUrl =
           'https://cafemaker.wakingsands.com' + json.Results[0].Icon
       }
-      count--
     }
+  },
+  beforeDestroy() {
+    count--
   },
   computed: {
     jobId() {
