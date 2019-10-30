@@ -52,7 +52,8 @@
 @media screen and (max-width 425px)
   .md-table::before
     content '※ 左右滑动以浏览完整表格'
-    position absolute
+    position sticky
+    left 0
     font-size 0.9em
     color #888
   .md-table
@@ -61,7 +62,6 @@
     overflow-x auto
     position relative
     table.ui.table
-      width 200%
-      margin-top 1.5em
+      width 150%
       td
         max-width 75vw

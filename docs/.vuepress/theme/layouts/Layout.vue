@@ -34,6 +34,7 @@
   flex 1
   padding-top 40px
   padding-left 280px
+  width 100%
   @media screen and (max-width: 1200px) and (min-width: 961px)
     padding-left 250px
   @media screen and (max-width: 960px)
