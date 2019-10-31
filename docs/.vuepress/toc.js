@@ -64,7 +64,7 @@ module.exports = {
       ]
     },
     {
-      title: '进阶内容',
+      title: '进阶指南',
       children: [
         {
           href: '/advanced/glossary.htm',
@@ -135,7 +135,7 @@ module.exports = {
       ]
     },
     {
-      title: '生产采集',
+      title: '特殊系统',
       children: [
         {
           href: '/topic/craft.htm',
@@ -144,7 +144,11 @@ module.exports = {
         {
           href: '/topic/gather.htm',
           title: '大地使者（采集）'
-        }
+        },
+        {
+          href: '/advanced/grandCompany.htm',
+          title: '大国防联军'
+        },
       ]
     },
     {
