@@ -1,5 +1,5 @@
 const fs = require('fs')
-const csv = fs.readFileSync('ContentFinderCondition_chs.csv').toString()
+const csv = fs.readFileSync('ContentFinderCondition.csv').toString()
 
 const lines = csv.split('\n')
 let data = []
@@ -16,29 +16,24 @@ const types = [
 ]
 
 for (const line of lines) {
-  const [
-    index, // strId, //territoryType,
-    ,
-    ,
-    instanceType, // instanceContentId,
-    ,
-    partyTypeId,
-    level,
-    maxLevel,
-    ilvMin,
-    ilvMax,
-    underSized, // joinInProgress, //highend,
-    ,
-    ,
-    name,
-    typeId,
-    banner
-  ] = line.split(',')
+  const cols = line.split(',')
+  const index = cols.shift()
+  const instanceType = cols[2]
+  const partyTypeId = cols[9]
+  const level = cols[15]
+  const maxLevel = cols[16]
+  const ilvMin = cols[17]
+  const ilvMax = cols[18]
+  const underSized = cols[19]
+  const name = cols[34]
+  const typeId = cols[35]
+  const banner = cols[39]
+  const sortKey = cols[38]
 
   if (!name) continue
   if (instanceType !== '1') continue
   if (!types[typeId]) continue
-  if (name.match(/^活动/)) continue
+  if (name.match(/^"活动/)) continue
 
   data.push({
     index: parseInt(index),
@@ -47,16 +42,22 @@ for (const line of lines) {
     maxLevel: parseInt(maxLevel),
     ilvMax: parseInt(ilvMax),
     ilvMin: parseInt(ilvMin),
-    underSized: underSized === 'TRUE',
-    name,
+    underSized: underSized.toLowerCase() === 'true',
+    name: JSON.parse(name),
     type: types[typeId],
-    banner: parseInt(banner)
+    typeId: parseInt(typeId),
+    banner: parseInt(banner),
+    sort: parseInt(sortKey)
   })
 }
 
-const temp = data.splice(0, 13)
-temp.sort((a, b) => a.level - b.level)
-data = [...temp, ...data]
+data = data.sort((a, b) => {
+  if (a.typeId === b.typeId) {
+    return a.sort - b.sort
+  } else {
+    return a.typeId - b.typeId
+  }
+})
 
 const result = []
 result.push('/* eslint-disable */')
