@@ -33,7 +33,7 @@ for (const line of lines) {
   if (!name) continue
   if (instanceType !== '1') continue
   if (!types[typeId]) continue
-  if (name.match(/^活动/)) continue
+  if (name.match(/^"活动/)) continue
 
   data.push({
     index: parseInt(index),
