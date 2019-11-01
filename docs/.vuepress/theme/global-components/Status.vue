@@ -12,8 +12,7 @@
 <style lang="stylus" scoped>
 img
   vertical-align middle
-  width 0.75em
-  height 1em
+  height 1.5em
   margin-left .2em
   cursor pointer!important
   &.hide
