@@ -142,7 +142,7 @@ FF14的装备图标有多种颜色，但是这些图标颜色与装备的强度�
     <thead>
       <tr>
         <th></th>
-        <th>直接投影</th>
+        <th style="17em">直接投影</th>
         <th style="23em">投影台 + 投影模板</th></tr>
     </thead>
     <tbody>

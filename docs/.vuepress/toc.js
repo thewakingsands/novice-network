@@ -135,7 +135,7 @@ module.exports = {
       ]
     },
     {
-      title: '特殊系统',
+      title: '其他玩法系统',
       children: [
         {
           href: '/topic/craft.htm',

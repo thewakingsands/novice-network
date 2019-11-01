@@ -40,7 +40,7 @@
 ### 其他
 
 * <img src="/images/buffs/016513.png" class="no-zoom sm-icon" /><img src="/images/buffs/016538.png" class="no-zoom sm-icon" /><img src="/images/buffs/016563.png" class="no-zoom sm-icon" />讨伐经验值提高：部队特效，分为I、II、III级，分别提升5%、10%和15%的战斗经验（另外有专门的生产、采集、搭档用部队特效），会被<Item name="军用战斗指南" />效果覆盖。
-* <img src="/images/buffs/016225.png" class="no-zoom sm-icon" /><img src="/images/buffs/016226.png" class="no-zoom sm-icon" />危命经验值提高：击倒Fate中出现的特殊怪物，可以获得这个专属buff（加成量有所不同）。
+* <img src="/images/buffs/016225.png" class="no-zoom sm-icon" /><img src="/images/buffs/016226.png" class="no-zoom sm-icon" />危命经验值提高：击倒Fate中出现的特殊怪物（**迷失少女**和**迷失者**），可以获得专属buff（加成量有所不同），加成下次在本地图内fate任务成功时获取的经验。
 * <img src="/images/buffs/016222.png" class="no-zoom sm-icon" />经验值加成：指导者和新人或回归者组队时，新人/回归者获得的经验会增加。20级以内有效。
 
 :::
