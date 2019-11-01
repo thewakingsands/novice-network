@@ -11,7 +11,7 @@
 死宫武器
 ;;;
 ;;;.guide .col .figcap
-<img src="./raid.assets/ddwp1.png" width="350px" />
+<img src="./shine.assets/ddwp1.jpg" width="350px" />
 
 天宫武器
 ;;;
