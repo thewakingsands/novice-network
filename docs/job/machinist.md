@@ -63,4 +63,17 @@
 
 满级的机工核心思路应该是保证<Action name="钻头" />和<Action name="空气锚" />不空转，在爆发或者需要对齐团辅时不浪费<Action name="虹吸弹" />和<Action name="弹射" />的层数。满级的机工有许多小细节需要注意，才能达到最大火力。
 
+;;;.guide .cols2
+;;;.guide .col
+<img src="./machinist.assets/flow.png" width="350px" />
+简明一图流攻略
+;;;
+
+;;;.guide .col .grow
+
 * [5.x机工士 简明入门攻略](https://bbs.nga.cn/read.php?tid=17795742)
+
+;;;
+;;;
+
+

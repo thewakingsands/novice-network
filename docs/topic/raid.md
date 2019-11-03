@@ -95,7 +95,7 @@
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./raid.assets/Ivalice.jpg" width="350px" />
+<img src="./raid.assets/Ivalice.jpg" width="250px" />
 ;;;
 
 ;;;.guide .col .grow
