@@ -43,7 +43,7 @@
 
 ### 群体AOE
 
-根据怪的数量不同，你至少需要保持<Status :id="101" name="双掌打" />（然后<Action name="四面脚" />可以帮你续buff），然后可能会需要维持<Status :id="98" name="双龙脚" />（怪多就不用）。然后按照体势使用<Action name="破坏神冲" />→<Action name="四面脚" />→<Action name="地烈劲" />循环，要注意，破坏神冲和四面脚都是自身周围AOE，地烈劲则是正面扇形AOE。
+根据怪的数量不同，你至少需要保持<Status :id="101" name="双掌打" />（然后<Action name="四面脚" />可以帮你续buff），然后可能会需要维持<Status :id="98" name="双龙脚" />（怪多就不用）。然后按照体势使用<Action name="破坏神冲" />→<Action name="四面脚" />→<Action name="地烈劲" />循环，要注意，破坏神冲和四面脚都是自身周围AOE，地烈劲则是正面扇形AOE（5.1改为自身周围AOE）。
 
 另外武僧的<Action name="苍气炮" />和<Action name="万象斗气圈" />也是AOE技能，苍气炮是自身周围AOE，而<Action name="万象斗气圈" />需要在<Status :id="797" name="斗气V" />的状态下才能使用，是一个直线AOE。
 
