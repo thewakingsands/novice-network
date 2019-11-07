@@ -21,7 +21,7 @@
 
 武士最基础的连击是由6个技能组成的3套连击：<Action name="刃风" />→<Action name="阵风" />→<Action name="月光" />；<Action name="刃风" />→<Action name="士风" />→<Action name="花车" />；<Action name="刃风" />→<Action name="雪风" />。分别可以获得武士的三种==闪==：雪月花。同时，<Status :id="1298" name="阵风" />可以提升自身的伤害，<Status :id="1299" name="士风" />可以提升自己的技速。
 
-所以一个最常见的起手，50级就可以打了：先打<Action name="花车" />连（获得<Status :id="1299" name="士风" />），再打<Action name="月光" />连，打出<Status :id="1298" name="阵风" />之后使用<Action name="居合术" />（这个时候你已经持有花闪了，所以居合术已经变成了<Action name="彼岸花" />，然后打<Action name="月光" />。<Action name="明镜止水" />→<Action name="雪风" />→<Action name="花车" />→<Action name="纷乱雪月花" />。
+所以一个最常见的起手，50级就可以打了：先打<Action name="花车" />连（获得<Status :id="1299" name="士风" />），再打<Action name="月光" />连，打出<Status :id="1298" name="阵风" />之后使用<Action name="居合术" />（这个时候你已经持有花闪了，所以居合术已经变成了<Action name="彼岸花" />），然后打<Action name="月光" />。<Action name="明镜止水" />→<Action name="雪风" />→<Action name="花车" />→<Action name="纷乱雪月花" />。
 
 武士的<Action name="明镜止水" />可以无视连击使用战技，直到时间结束或使用过3次居合术以外的战技，所以上面的开场循环里，明镜止水还剩最后一次技能机会，通常会在雪月花之后跟一个<Action name="雪风" />（因为我们需要打正常的月光及花车连保持buff）。
 
