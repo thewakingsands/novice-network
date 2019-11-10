@@ -48,7 +48,7 @@ slots: ['header', 'summary', 'default']
 
 ### 对多怪拉怪/输出
 
-在群拉的时候则使用<Action name="全蚀斩" />(6)→<Action name="卓越斩" />(40)的连击，以及<Action name="厄运流转" />(50)和<Action name="悔罪" />(80)。
+在群拉的时候则使用<Action name="全蚀斩" />(6)→<Action name="卓越斩" />(40)的连击，以及<Action name="厄运流转" />、<Action name="神圣流转" />和<Action name="悔罪" />(80)。骑士的最强AOE爆发就是<Action name="安魂祈祷" />→<Action name="神圣流转" />x n（满级后悔罪收尾），需要注意的是，骑士在78级习得安魂祈祷效果提高特性之前，魔法技能需要咏唱读条，而骑士在读条的时候是不能格挡的，注意在读条时的减伤选择（满级之后就没有这个问题了）。
 
 骑士在只有2只怪的时候，可以参考前面的单拉手法，对A怪打<Action name="先锋剑" />→<Action name="暴乱" />剑，切换到B怪打<Action name="战女神之怒" />/<Action name="王权剑" />→<Action name="先锋剑" />→<Action name="暴乱剑" />，再切换回A怪这样交替进行。
 

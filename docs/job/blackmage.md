@@ -25,7 +25,7 @@
 
 星极火与灵极冰俗称火阶段与冰阶段，使用火123可以为自己叠加火buff，使用冰123可以为自己叠加冰buff。在火阶段，火系魔法蓝耗会增加，威力也会增大，叠到最高级火buff的时候，冰系技能咏唱时间会缩短，反之亦然。++黑魔的所有循环都建立在保持星极火或灵极冰buff的基础上++，因此保持这两个buff非常重要。
 
-在低级的时候，玩家需要通过<Action name="星灵移位" />来转换冰火状态，在34级和40级分别掌握<Action name="爆炎" >火2</Action>和<Action name="冰封" >冰3</Action>之后，玩家就可以通过这两个技能在冰火状态间自由转换。
+在低级的时候，玩家需要通过<Action name="星灵移位" />来转换冰火状态，在34级和40级分别掌握<Action name="爆炎" >火3</Action>和<Action name="冰封" >冰3</Action>之后，玩家就可以通过这两个技能在冰火状态间自由转换。
 
 在56级习得<Action name="天语" />之后，需要通过保持星极火和灵极冰的状态来维持天语状态，天语本身可以提升黑魔的伤害，同时<Action name="冰澈" />、<Action name="炽炎" />、<Action name="绝望" />、<Action name="灵极魂" />都只有在天语状态下才能够使用。而且天语状态每维持30s，就可以获得一次使用<Action name="秽浊" />或<Action name="异言" />的机会，因此说天语是黑魔的命根子也不为过。
 
@@ -33,21 +33,27 @@
 
 在低等级时，黑魔使用<Action name="火炎" >火1</Action>把蓝打空，然后用星灵位移进入冰状态，一边打<Action name="冰结" >冰1</Action>一边等回蓝（中间插入闪雷），蓝回满了再用星灵位移转到火状态。
 
-习得<Action name="冰封" >冰3</Action>和<Action name="爆炎" >火2</Action>之后，黑魔就可以打出最基础的冰火循环： <Action name="冰封" >冰3</Action> → 雷 → <Action name="爆炎" >火2</Action> → <Action name="火炎" >火1</Action> x n到空蓝 → <Action name="冰封" >冰3</Action> → 雷/<Action name="冰结" >冰1</Action>到满蓝 → <Action name="爆炎" >火2</Action>……以此类推。
+习得<Action name="冰封" >冰3</Action>和<Action name="爆炎" >火3</Action>之后，黑魔就可以打出最基础的冰火循环： <Action name="冰封" >冰3</Action> → 雷 → <Action name="爆炎" >火3</Action> → <Action name="火炎" >火1</Action> x n到空蓝 → <Action name="冰封" >冰3</Action> → 雷/<Action name="冰结" >冰1</Action>到满蓝 → <Action name="爆炎" >火3</Action>……以此类推。
 
-56~60级分别习得<Action name="天语" />、<Action name="炽炎" >火4</Action><Action name="冰澈" >冰4</Action>之后，黑魔完整的输出体系就建立起来了：<Action name="冰封" >冰3</Action> → 天语 → 雷 → <Action name="冰澈" >冰4</Action> → <Action name="爆炎" >火2</Action> → <Action name="炽炎" >火4</Action> x 3 → <Action name="火炎" >火1</Action> → <Action name="炽炎" >火4</Action> x3 → <Action name="绝望" />（未习得绝望时可以使用<Action name="核爆" />）→ <Action name="冰封" >冰3</Action> → 雷 → 火循环…因为火4并不能维系火状态的存在，因此需要在3个火4中间穿插1个<Action name="火炎" >火1</Action>来保证火状态的存续（这也是黑魔玩家俗称的4441444）。72级之前使用核爆会使自己空蓝，需要通过<Action name="魔泉" />回蓝使用<Action name="冰封" >冰3</Action>，如果魔泉CD没转好，可以考虑不使用这个技能（但无论如何避免使用<Action name="星灵位移" />进行状态转换）。
+56~60级分别习得<Action name="天语" />、<Action name="炽炎" >火4</Action><Action name="冰澈" >冰4</Action>之后，黑魔完整的输出体系就建立起来了：<Action name="冰封" >冰3</Action> → 天语 → 雷 → <Action name="冰澈" >冰4</Action> → <Action name="爆炎" >火3</Action> → <Action name="炽炎" >火4</Action> x 3 → <Action name="火炎" >火1</Action> → <Action name="炽炎" >火4</Action> x3 → <Action name="绝望" />（未习得绝望时可以使用<Action name="核爆" />）→ <Action name="冰封" >冰3</Action> → 雷 → 火循环…因为火4并不能维系火状态的存在，因此需要在3个火4中间穿插1个<Action name="火炎" >火1</Action>来保证火状态的存续（这也是黑魔玩家俗称的4441444）。72级之前使用核爆会使自己空蓝，需要通过<Action name="魔泉" />回蓝使用<Action name="冰封" >冰3</Action>，如果魔泉CD没转好，可以考虑不使用这个技能（但无论如何避免使用<Action name="星灵位移" />进行状态转换）。
 
-使用冰3进入冰阶段之后，黑魔需要在回蓝的冰阶段里打一次<Action name="冰澈" >冰4</Action>获得灵极心，灵极心可以让火状态中的火魔法蓝耗恢复正常，一根灵极心能抵消一次施法，剩下的时间应该还够打一次雷，或者干脆挂机1秒直接读<Action name="爆炎" >火2</Action>回到火状态。
+使用冰3进入冰阶段之后，黑魔需要在回蓝的冰阶段里打一次<Action name="冰澈" >冰4</Action>获得灵极心，灵极心可以让火状态中的火魔法蓝耗恢复正常，一根灵极心能抵消一次施法，剩下的时间应该还够打一次雷，或者干脆挂机1秒直接读<Action name="爆炎" >火3</Action>回到火状态。
 
-在黑魔的单体循环中，会发生<Action name="爆炎" >火2</Action>或雷自动亮起的情况，这是黑魔职业特性火苗和雷云，分别由<Action name="火炎" >火1</Action>和雷dot概率触发，另外也可以由<Action name="激情咏唱" />强制触发。在练级阶段，这两个触发都是好了就放即可，满级时对触发的处理请参考满级攻略。
+在黑魔的单体循环中，会发生<Action name="爆炎" >火3</Action>或雷自动亮起的情况，这是黑魔职业特性火苗和雷云，分别由<Action name="火炎" >火1</Action>和雷dot概率触发，另外也可以由<Action name="激情咏唱" />强制触发。在练级阶段，这两个触发都是好了就放即可，满级时对触发的处理请参考满级攻略。
 
 ### 群体AOE
 
 黑魔的AOE包括<Action name="烈炎" >火2</Action>，<Action name="冰冻" >冰2</Action>，<Action name="玄冰" />，<Action name="震雷" />/<Action name="霹雷" />，<Action name="核爆" />和<Action name="秽浊" />。
 
-和单体循环接近的是先上雷DOT，然后使用<Action name="爆炎" >火2</Action>和<Action name="冰封" >冰3</Action>切换冰火状态，只是把<Action name="火炎" >火1</Action>、<Action name="炽炎" >火4</Action>、<Action name="冰结" >冰1</Action>全部换成<Action name="烈炎" >火2</Action>和<Action name="冰冻" >冰2</Action>（玄冰并不常用）。
+49级之前的黑魔，AOE循环以<Action name="震雷" />开始，然后<Action name="烈炎" >火2</Action>泄蓝，<Action name="冰冻" >冰2</Action>回蓝。有<Action name="爆炎" >火3</Action>和<Action name="冰封" >冰3</Action>之前，用<Action name="星灵位移" />转换冰火状态（之后和单体循环一样，把它收起来吧）。习得<Action name="冰封" >冰3</Action>之后，回蓝速度会比较快，基本上打个<Action name="震雷" />蓝就满了，也就不需要冰技能填充，直接一个<Action name="爆炎" >火3</Action>回去输出了。
 
-火阶段最后以<Action name="核爆" />收尾，通常会利用灵极心的特性、<Action name="魔泉" />乃至回蓝药达成连续核爆的效果。在冰阶段补雷DOT和填充<Action name="秽浊" />。
+50级之后习得<Action name="核爆" />，火阶段以核爆收尾，然后一般会用<Action name="魔泉" />回蓝再放一个核爆，然后使用<Action name="星灵位移" />转到冰状态。
+
+56级习得<Action name="天语" />之后，AOE循环同样以<Action name="天语" />开始，在冰阶段需要打<Action name="冰澈" >冰4</Action>拿灵极心。
+
+68级史诗级增强灵极心和玄冰之后，AOE阶段输出基本成型：<Action name="冰封" >冰3</Action>→<Action name="天语" />→<Action name="霹雷" />→<Action name="玄冰" />→<Action name="爆炎" >火3</Action>→<Action name="核爆" />→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="星灵位移" />→<Action name="霹雷" />（回到冰循环）
+
+黑魔AOE循环基本上是建立在天语的框架内，利用灵极心的特性、<Action name="魔泉" />乃至回蓝药达成连续核爆的效果（最高可以打出4连核爆）。在冰阶段补<Action name="霹雷" />，打<Action name="玄冰" />获取灵极心，并填充<Action name="秽浊" />。
 
 ### 功能性技能
 
