@@ -27,11 +27,11 @@
 
 忍者在30~45级之间逐渐学会<Action name="天之印">天</Action><Action name="地之印">地</Action><Action name="人之印">人</Action>3种印，配合<Action name="忍术" />需要4个键位（…实际上手速不够的人可能会需要更多键位emmm），在结印→忍术这个过程中，不能使用任何其他技能，否则忍术就会变成<Action :id="2272">通灵术·小兔兔</Action>。按照习得顺序来说，35级之前只有<Action name="天之印" />，使用<Action name="天之印">天</Action>→<Action name="忍术" />放出<Action name="风魔手里剑" />即可（保证忍术CD不断）。接下来习得<Action name="地之印" />，<Action name="天之印">天</Action>→<Action name="地之印">地</Action>→<Action name="忍术" />的<Action name="雷遁之术" />是忍者的主要单体输出忍术之一。
 
-最后45级习得<Action name="人之印" />之后，结印瞬间就复杂了起来（并不），按照习得印的顺序可以记为<Action name="天之印">天</Action>(1)<Action name="地之印">地</Action>(2)<Action name="人之印">人</Action>(3)，那么123是<Action name="水遁之术" />，321是<Action name="风遁之术" />，21是<Action name="冰遁之术" />(具体出现什么忍术其实是以最后一个印来判定的，详细内容可以仔细阅读技能说明)
+最后45级习得<Action name="人之印" />之后，结印瞬间就复杂了起来（并不），按照习得印的顺序可以记为<Action name="天之印">天</Action>(1)<Action name="地之印">地</Action>(2)<Action name="人之印">人</Action>(3)，那么123是<Action name="水遁之术" />，321是<Action name="风遁之术" />，23是<Action name="冰遁之术" />(具体出现什么忍术其实是以最后一个印来判定的，详细内容可以仔细阅读技能说明)
 
 从45级开始，忍者循环初见端倪：开怪前结<Action name="风遁之术">风遁</Action>并全程保持（54级之前需要重新结风遁，54级之后使用<Action :id="3563" name="强甲破点突" />续<Status :id="500" name="风遁之术" />），然后<Action name="影牙" />→<Action name="旋风刃" />→………<Status :id="500" name="风遁之术" />不断、<Status :id="508" name="影牙" />不断，忍术好了就放。
 
-忍者还有2个与忍术有关的技能：<Action name="生杀予夺" />可以重置忍术CD，并且为下一次忍术威力增加30%，76级之后更是能将火遁与冰盾分别升级为<Action name="劫火灭却之术" />和<Action name="冰晶乱流之术" />（冰晶是目前忍者单发威力最高的技能）。<Action name="天地人" />机制比较复杂，新人可以简单地理解为，在对单体输出的时候，使用<Action name="天地人" />→<Action name="人之印">人</Action>→<Action name="忍术" />→<Action name="地之印">地</Action>→<Action name="忍术" />→<Action name="天之印">天</Action>→<Action name="忍术" />就可以了（使用这些技能的时候不能移动，否则<Status :id="1186" name="天地人" />会立刻解除）这样实际上会按顺序放出<Action name="风魔手里剑" />→<Action name="雷遁之术" />→<Action name="水遁之术" />，之后则应该使用<Action name="攻其不备" />或<Action name="命水" />把<Status :id="507" name="水遁之术" />打掉（满级循环中也会根据实际情况改变忍术使用顺序，具体操作请看满级攻略）。
+忍者还有2个与忍术有关的技能：<Action name="生杀予夺" />可以重置忍术CD，并且为下一次忍术威力增加30%，76级之后更是能将火遁与冰盾分别升级为<Action name="劫火灭却之术" />和<Action name="冰晶乱流之术" />（冰晶是目前忍者单发威力最高的技能）。<Action name="天地人" />机制比较复杂，新人可以简单地理解为，在对单体输出的时候，使用<Action name="天地人" />→<Action name="天之印">天</Action>→<Action name="忍术" />→<Action name="地之印">地</Action>→<Action name="忍术" />→<Action name="人之印">人</Action>→<Action name="忍术" />就可以了（使用这些技能的时候不能移动，否则<Status :id="1186" name="天地人" />会立刻解除）这样实际上会按顺序放出<Action name="风魔手里剑" />→<Action name="雷遁之术" />→<Action name="水遁之术" />，之后则应该使用<Action name="攻其不备" />或<Action name="命水" />把<Status :id="507" name="水遁之术" />打掉（满级循环中也会根据实际情况改变忍术使用顺序，具体操作请看满级攻略）。
 
 随着版本更新，<Action name="梦幻三段" /> → <Action name="断绝" />是一套能力技连击，用来插入在普通GCD技能之间（增加操作量）。
 
