@@ -40,7 +40,7 @@
 ### 其他
 
 * <img src="/images/buffs/016513.png" class="no-zoom sm-icon" /><img src="/images/buffs/016538.png" class="no-zoom sm-icon" /><img src="/images/buffs/016563.png" class="no-zoom sm-icon" />讨伐经验值提高：部队特效，分为I、II、III级，分别提升5%、10%和15%的战斗经验（另外有专门的生产、采集、搭档用部队特效），会被<Item name="军用战斗指南" />效果覆盖。
-* <img src="/images/buffs/016225.png" class="no-zoom sm-icon" /><img src="/images/buffs/016226.png" class="no-zoom sm-icon" />危命经验值提高：击倒Fate中出现的特殊怪物（**迷失少女**和**迷失者**），可以获得专属buff（加成量有所不同），加成下次在本地图内fate任务成功时获取的经验。
+* <img src="/images/buffs/016225.png" class="no-zoom sm-icon" /><img src="/images/buffs/016226.png" class="no-zoom sm-icon" />危命经验值提高：击倒Fate中出现的特殊怪物（**迷失少女**和**迷失者**），可以获得专属buff（50%或300%），加成下次在本地图内fate任务成功时获取的经验。
 * <img src="/images/buffs/016222.png" class="no-zoom sm-icon" />经验值加成：指导者和新人或回归者组队时，新人/回归者获得的经验会增加。20级以内有效。
 
 :::
@@ -58,43 +58,27 @@
     <tbody>
       <tr>
         <td>
-          <a href="/basic/battle.html#随机副本" class="">每日随机</a>
+          <a href="/basic/battle.htm#随机副本" class="">每日随机</a>
           <br>★★★★★</td>
         <td>Lv10~Lv79</td>
         <td>包括随机行会令、练级、高随甚至 PVP 随机，无论哪一种都会给玩家海量经验。如果游戏时间不充裕又想快速练级，那么每日随机副本就是必须完成的功课。
-          <br>按 U 打开副本搜索器，第一页就是每日随机列表。每日随机顾名思义，每天只能完成一次，第二次开始就不会获得奖励了。如果不够把每一种都打遍，那么随机任务：练级就是你唯一的选择。
+          <br>按<doce>U</code>打开副本搜索器，第一页就是每日随机列表。每日随机顾名思义，每天只能完成一次，第二次开始就不会获得奖励了。如果不够把每一种都打遍，那么随机任务：练级就是你唯一的选择。
           <br>※ 每日随机奖励的
           <strong>刷新时间是每天 23 点</strong>，以副本任务最后一个 BOSS 倒下的时间为准。</td></tr>
       <tr>
         <td>
-          <a href="/topic/daily.html#蛮族日常" class="">蛮族日常</a>
-          <br>★★★★☆</td>
-        <td>Lv50~Lv59(3.X)
-          <br>Lv60~Lv69(4.X)</td>
-        <td>50 级以后的蛮族日常为职业等级锁定，也就是说，玩家用 50 级的职业接了任务，那么该任务的任务怪都是 50 级，而且只能用该职业完成任务。
-          <br>而日常所给的经验也是按照玩家等级的固定百分比计算，是比较轻松划算的练级方式（而且提升蛮族友好度可以开放商店新货，可以购买到各种坐骑、宠物，一举两得）。
-          <br>※ 蛮族日常奖励的
-          <strong>刷新时间是每天 23 点</strong>，以接取任务的时间为准。</td></tr>
-      <tr>
-        <td>支线任务
-          <br>★★★☆☆</td>
-        <td>Lv1~Lv79</td>
-        <td>无所事事的玩家（排本时) 和强迫症患者通常会优先使用这种方式练级，部分支线任务还会赠送与其等级相近的装备 / 首饰。如果想要做支线任务的话，推荐优先做与自己等级接近的任务。
-          <br>当然也可以用更高级的职业打怪，然后换低等级的职业交任务。但是如果任务要求等级高于你当前职业等级，你就无法交任务了。</td></tr>
-      <tr>
-        <td>
-          <a href="/basic/battle.html#关于副本" class="">副本</a>
+          <a href="/basic/battle.htm#关于副本" class="">副本</a>
           <br>★★★★☆</td>
         <td>Lv15~Lv79</td>
         <td>排与自己等级最为接近的副本，一次打下来都可以获得大量经验，在 40 级之后这些经验尤为突出。很多玩家会选择一边排本一边做支线任务 / 打 Fate。</td></tr>
       <tr>
         <td>
-          <a href="/advanced/grandCompany.html" class="">冒险者小队</a>
+          <a href="/advanced/grandCompany.htm" class="">冒险者小队</a>
           <br>★★★★☆</td>
         <td>Lv16~Lv60</td>
         <td>加入大国防联军之后，升级到一定军衔就可以开启冒险者小队功能。优点是排本不用等，可以吃各种经验加成 buff，而且经验给的也很多。缺点是冒险者小队的开启和养成需要一定的时间去弄，如果你已经有了成型的冒险者小队，那么推荐指数为五颗星。</td></tr>
       <tr>
-        <td>临危受命（FATE）
+        <td><a href="/advanced/fate.htm">临危受命</a>（FATE）
           <br>★★★★☆</td>
         <td>Lv1~Lv79</td>
         <td>地图中出现的临危受命任务，一共有 5 种 Fate 类型：<img src="/images/icons/060501.png" class="no-zoom sm-icon">讨伐小怪、<img src="/images/icons/060502.png" class="no-zoom sm-icon">讨伐 BOSS、<img src="/images/icons/060503.png" class="no-zoom sm-icon">收集上交材料、<img src="/images/icons/060504.png" class="no-zoom sm-icon">护送 NPC 和<img src="/images/icons/060505.png" class="no-zoom sm-icon">防御特定物品。<br>
@@ -104,21 +88,38 @@
           </td></tr>
       <tr>
         <td>
-          <a href="/topic/battle.html#狩猎" class="">狩猎</a>
+          <a href="/topic/battle.htm#狩猎" class="">狩猎</a>
           <br>★★★★☆</td>
         <td>Lv50~Lv79</td>
         <td>50 级和 60 级后分别开放的伊修加德及黄金港狩猎，有每日更新的通缉令。击杀规定数量的怪就可以获得额外经验奖励，这些奖励通常不菲，但是找怪也会消耗不少精力。
           <br>并不推荐无法飞行地图和对怪物分布不熟悉的玩家，当然你也可以接了通缉令，在做任务路上看到了就打掉（通缉令上记载的狩猎怪头顶会有标志）。</td></tr>
+                <tr>
+        <td>支线任务
+          <br>★★★☆☆</td>
+        <td>Lv1~Lv79</td>
+        <td>无所事事的玩家（排本时) 和强迫症患者通常会优先使用这种方式练级，部分支线任务还会赠送与其等级相近的装备 / 首饰。如果想要做支线任务的话，推荐优先做与自己等级接近的任务。
+          <br>当然也可以用更高级的职业打怪，然后换低等级的职业交任务。但是如果任务要求等级高于你当前职业等级，你就无法交任务了。
+          <br>5.0地图的支线任务全部是等级同步的，任务经验会随着玩家当前职业等级浮动，做起来更轻松啦！</td></tr>
       <tr>
         <td>
-          <a href="/basic/quest.html#理符任务" class="">理符</a>
+          <a href="/topic/daily.htm#蛮族日常" class="">蛮族日常</a>
+          <br>★★★★☆</td>
+        <td>Lv50~Lv59(3.X)
+          <br>Lv60~Lv69(4.X)</td>
+        <td>50 级以后的蛮族日常为职业等级锁定，也就是说，玩家用 50 级的职业接了任务，那么该任务的任务怪都是 50 级，而且只能用该职业完成任务。
+          <br>而日常所给的经验也是按照玩家等级的固定百分比计算，是比较轻松划算的练级方式（而且提升蛮族友好度可以开放商店新货，可以购买到各种坐骑、宠物，一举两得）。
+          <br>※ 蛮族日常奖励的
+          <strong>刷新时间是每天 23 点</strong>，以接取任务的时间为准。</td></tr>
+      <tr>
+        <td>
+          <a href="/basic/quest.htm#理符任务" class="">理符</a>
           <br>★★☆☆☆</td>
         <td>Lv1~Lv59</td>
         <td>在各个主城消耗理符接到的特殊任务，完成任务后可以获得各种各样的道具。通常会推荐生产和采集玩家采用这种方式练级，战斗职业使用理符练级效率相对不如其他方法。
-          <br>理符限额上限是 100 个，每 12 小时更新 3 个，可以按 J 在下方 “受理限额” 处查看。</td></tr>
+          <br>理符限额上限是 100 个，每 12 小时更新 3 个，可以按<doce>J</doce>在下方 “受理限额” 处查看。</td></tr>
       <tr>
         <td>
-          <a href="/topic/dd.html" class="">深层迷宫</a>
+          <a href="/topic/dd.htm" class="">深层迷宫</a>
           <br>★☆☆☆☆</td>
         <td>Lv1~Lv59 (死宫)
           <br>Lv61~Lv69 (天宫)</td>
@@ -129,9 +130,8 @@
         <td>讨伐笔记
           <br>★★★☆☆</td>
         <td>Lv1~Lv49</td>
-        <td>按
-          <code>H</code>可以打开讨伐笔记，可以理解为某种通缉令。击杀笔记中的怪物就可以获得额外经验。对于不足 15 级而缺乏练级手段的新职业来说，是比较推荐的首选。
-          <br>讨伐笔记中有一部分怪需要在副本中完成，另外在大国防联军中，如果想要升职，就要完成军队讨伐笔记才行。</td></tr>
+        <td>按<code>H</code>可以打开讨伐笔记，可以理解为某种通缉令。击杀笔记中的怪物就可以获得额外经验。对于不足 15 级而缺乏练级手段的新职业来说，是比较推荐的首选。
+          <br>讨伐笔记中有一部分怪需要在副本中完成，另外在<a href="/advanced/grandCompany.htm">大国防联军</a>中，如果想要升职，就要完成军队讨伐笔记才行。</td></tr>
     </tbody>
   </table>
 </div>

@@ -149,6 +149,10 @@ module.exports = {
           href: '/advanced/grandCompany.htm',
           title: '大国防联军'
         },
+        {
+          href: '/advanced/fate.htm',
+          title: '临危受命（FATE）'
+        },
       ]
     },
     {
