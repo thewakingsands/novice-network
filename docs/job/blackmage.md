@@ -51,7 +51,7 @@
 
 56级习得<Action name="天语" />之后，AOE循环同样以<Action name="天语" />开始，在冰阶段需要打<Action name="冰澈" >冰4</Action>拿灵极心。
 
-68级史诗级增强灵极心和玄冰之后，AOE阶段输出基本成型：<Action name="冰封" >冰3</Action>→<Action name="天语" />→<Action name="霹雷" />→<Action name="玄冰" />→<Action name="爆炎" >火3</Action>→<Action name="核爆" />→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="星灵位移" />→<Action name="霹雷" />（回到冰循环）
+68级史诗级增强灵极心和玄冰之后，AOE阶段输出基本成型：<Action name="玄冰" />→<Action name="天语" />→<Action name="霹雷" />→<Action name="玄冰" />→<Action name="爆炎" >火3</Action>→<Action name="核爆" />→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="星灵位移" />（72之后可以直接用<Action name="玄冰" />转状态）→<Action name="霹雷" />（回到冰循环）
 
 黑魔AOE循环基本上是建立在天语的框架内，利用灵极心的特性、<Action name="魔泉" />乃至回蓝药达成连续核爆的效果（最高可以打出4连核爆）。在冰阶段补<Action name="霹雷" />，打<Action name="玄冰" />获取灵极心，并填充<Action name="秽浊" />。
 

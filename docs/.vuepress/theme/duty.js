@@ -210,6 +210,10 @@ module.exports = [
 {"index":592,"partySize":8,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":375,"underSized":true,"name":"欧米茄零式时空狭缝 阿尔法幻境2","type":"大型任务","typeId":5,"banner":112317,"sort":92},
 {"index":593,"partySize":8,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":380,"underSized":true,"name":"欧米茄零式时空狭缝 阿尔法幻境3","type":"大型任务","typeId":5,"banner":112318,"sort":93},
 {"index":594,"partySize":8,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":380,"underSized":true,"name":"欧米茄零式时空狭缝 阿尔法幻境4","type":"大型任务","typeId":5,"banner":112319,"sort":94},
+{"index":653,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章1","type":"大型任务","typeId":5,"banner":112350,"sort":95},
+{"index":684,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章2","type":"大型任务","typeId":5,"banner":112352,"sort":96},
+{"index":682,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章3","type":"大型任务","typeId":5,"banner":112354,"sort":97},
+{"index":689,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章4","type":"大型任务","typeId":5,"banner":112356,"sort":98},
 {"index":280,"partySize":8,"level":70,"maxLevel":70,"ilvMax":345,"ilvMin":0,"underSized":false,"name":"巴哈姆特绝境战","type":"大型任务","typeId":5,"banner":112261,"sort":1001},
 {"index":539,"partySize":8,"level":70,"maxLevel":70,"ilvMax":375,"ilvMin":0,"underSized":false,"name":"究极神兵绝境战","type":"大型任务","typeId":5,"banner":112296,"sort":1002}
 ]
