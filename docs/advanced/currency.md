@@ -18,7 +18,7 @@
 已经过气（无法使用）的过往版本的神典石，可以在摩杜纳奥里亚娜(摩杜纳 X: 22.7, Y: 6.7)兑换为诗学神典石。
 
 ### 魔典神典石
-<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td><strong>亚拉戈魔典神典石</strong><br>俗称<strong>魔典</strong><br><br>总上限2000点</td><td><ul><li>兑换80级所用的武器、装备（品级440）</ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E9%AD%94%E5%85%B8%E7%A5%9E%E5%85%B8%E7%9F%B3">魔典可兑换物品详细列表</a></td><td>艾马克<br>游末邦（树梢层） X:10.2 , Y:11.8</td><td>参加80级副本、挖宝、狩猎等战斗活动获得，70~80级以下的副本队伍中若有初次参加副本的队员，完成任务后全队每人可以获得额外的魔典奖励（需要参与者本人使用80级职业并且开启魔典神典石兑换）。</td></tr></table></div>
+<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td><strong>亚拉戈魔典神典石</strong><br>俗称<strong>魔典</strong><br><br>总上限2000点</td><td><ul><li>兑换80级所用的武器、装备（品级440）</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E9%AD%94%E5%85%B8%E7%A5%9E%E5%85%B8%E7%9F%B3">魔典可兑换物品详细列表</a></td><td>艾马克<br>游末邦（树梢层） X:10.2 , Y:11.8</td><td>参加80级副本、挖宝、狩猎等战斗活动获得，70~80级以下的副本队伍中若有初次参加副本的队员，完成任务后全队每人可以获得额外的魔典奖励（需要参与者本人使用80级职业并且开启魔典神典石兑换）。</td></tr></table></div>
 
 通过副本搜索器参加任务时，搜索器右边的任务详情“报酬”一栏会注明完成该副本所赠与的亚拉戈神典石数量。随机任务的报酬则是在副本原本赠与的点数基础之上，再额外赠与的报酬。
 
