@@ -10,7 +10,7 @@ export default ({ router }) => {
     window._hmt = window._hmt || []
     ;(function() {
       var hm = document.createElement('script')
-      hm.src = 'https://hm.baidu.com/hm.js?b44d6a97b8c0954e3eec6d17285e83a8'
+      hm.src = 'https://hm.baidu.com/hm.js?' + HM_ID
       var s = document.getElementsByTagName('script')[0]
       s.parentNode.insertBefore(hm, s)
     })()
