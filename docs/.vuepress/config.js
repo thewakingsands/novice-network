@@ -9,11 +9,11 @@ module.exports = {
       permalink: false
     },
     extendMarkdown: md => {
-      const defaultRender = md.renderer.rules.image;      
-      md.renderer.rules.image = function (tokens, idx, options, env, self) {
+      const defaultRender = md.renderer.rules.image
+      md.renderer.rules.image = function(tokens, idx, options, env, self) {
         tokens[idx].attrPush(['loading', 'lazy'])
 
-        return defaultRender(tokens, idx, options, env, self);
+        return defaultRender(tokens, idx, options, env, self)
       }
       md.renderer.rules.table_open = function() {
         return '<div class="md-table"><table class="ui compact grey striped unstackable table">'
