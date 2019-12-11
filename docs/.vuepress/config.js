@@ -95,6 +95,7 @@ module.exports = {
   },
   plugins: [
     require('./plugins/sidenav'),
+    require('./plugins/my-sw'),
     [
       require('./plugins/baidu-tongji'),
       {
