@@ -108,7 +108,7 @@ export default {
     handleClickImg(element, event) {
       if (element.classList.contains('no-zoom')) return
       var imgSrc = element.src
-      this.getPhotoSwipe().openSingle(imgSrc)
+      this.getPhotoSwipe().openSingle(imgSrc, element)
     },
     updateSlotKeys() {
       if (

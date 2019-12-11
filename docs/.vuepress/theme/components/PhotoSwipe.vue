@@ -86,26 +86,33 @@ export default {
     }
   },
   methods: {
-    openSingle(url) {
+    openSingle(url, element) {
       if (this.instance) {
         try {
           this.instance.destroy()
         } catch (e) {}
       }
-      var img = new Image(url)
-      img.src = url
-      img.removeAttribute('width')
-      img.removeAttribute('height')
-      var width = img.naturalWidth || img.width
-      var height = img.naturalHeight || img.height
+      var width = 1024
+      var height = 1024
+      if (element && element.naturalWidth) {
+        width = element.naturalWidth
+        height = element.naturalHeight
+      } else {
+        var img = new Image(url)
+        img.src = url
+        img.removeAttribute('width')
+        img.removeAttribute('height')
+        width = img.naturalWidth || img.width
+        height = img.naturalHeight || img.height
+      }
       var instance = new PhotoSwipe(
         this.$refs.container,
         PhotoSwipeUIDefault,
         [
           {
             src: url,
-            w: width || 1000,
-            h: height || 1000
+            w: width * 2 || 1000,
+            h: height * 2 || 1000
           }
         ],
         {
