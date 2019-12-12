@@ -10,7 +10,7 @@ FF14里有一些任务是每天、每周刷新的，通常它们能够帮你练�
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./raid.assets/seacher.jpg" width="350px" />
+<img src="./daily.assets/seacher.jpg" width="350px" />
 ;;;
 
 ;;;.guide .col .grow
