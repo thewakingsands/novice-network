@@ -75,9 +75,9 @@
         <td><a href="/advanced/fate.htm">临危受命</a>（FATE）
           <br>★★★★☆</td>
         <td>Lv1~Lv79</td>
-        <td>地图中出现的临危受命任务，一共有 5 种 Fate 类型：<img src="/images/icons/060501.png" class="no-zoom sm-icon">讨伐小怪、<img src="/images/icons/060502.png" class="no-zoom sm-icon">讨伐 BOSS、<img src="/images/icons/060503.png" class="no-zoom sm-icon">收集上交材料、<img src="/images/icons/060504.png" class="no-zoom sm-icon">护送 NPC 和<img src="/images/icons/060505.png" class="no-zoom sm-icon">防御特定物品。<br>
-        根据玩家的贡献度，FATE 结束之后会给玩家金银铜牌的评价和对应的经验、金钱及军票，就算 FATE 失败也能够获得 (但是比成功少了很多)。<br>
-        在 60 级之后的地图中，还会出现经验增加 FATE，参加这种 fate 可以获得额外的经验。<br>
+        <td>地图中出现的临危受命任务，<img src="/images/icons/060502.png" class="no-zoom sm-icon">等5种，只要靠近FATE范围就会自动加入。<br>
+        FATE 结束之后，会根据玩家的贡献度，给玩家金银铜牌的评价和对应的经验、金钱及军票，就算 FATE 失败也能够获得 (但是比成功少了很多)。<br>
+        在 60 级之后的地图中，还会出现经验增加 FATE，参加这种 FATE 可以获得额外的经验。<br>
         在 70 级的地图中，更是追加了 FATE 达成度设计，地图 FATE 达成度满之后，可以使用 FATE 代币交换到特殊的装备，以及版本初期颇为高价的原材料，推荐玩家在跑主线的过程中，积极参与 Fate 攻略。
           </td></tr>
       <tr>
