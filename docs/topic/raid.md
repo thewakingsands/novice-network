@@ -28,7 +28,8 @@
 
 ### 零式Raid：伊甸
 
-<!--我还没玩到呢-->
+伊甸被怀疑是令第一世界发生光之泛滥的罪魁祸首，为了让光之泛滥的大地恢复生机，在水晶都接任务<quest name="起始的“乐园”" type="plus" />，让琳带着我们一同前往虚无大地，探寻真相。
+
 
 ### 24人副本：尼尔——寄叶异闻 暗黑天启
 
@@ -189,12 +190,12 @@
 
 ;;;.guide .cols2
 ;;;.guide .col .figcap
-![](./raid.assets/voidark.jpg)
+<img src="./raid.assets/voidark.jpg" width="350px" />
 
 魔航船虚无方舟
 ;;;
 ;;;.guide .col .figcap
-![](./raid.assets/Mhach.png)
+<img src="./raid.assets/Mhach.png" width="350px" />
 
 禁忌城邦玛哈
 ;;;

@@ -13,7 +13,7 @@
 * 50~60级：每日随机+死宫+副本+3.0蛮族日常
 * 60~70级：每日随机+副本+天宫+4.0蛮族日常+4.0狩猎
 * 70~80级：每日随机+副本+5.0狩猎+FATE
-[死宫、天宫介绍](/topic/dd.md)；[蛮族日常介绍](/topic/daily.md#蛮族日常)；[狩猎介绍](/topic/battle.md#狩猎)；[FATE介绍](/advanced/fate.htm)
+[死宫、天宫介绍](/topic/dd.md)；[蛮族日常介绍](/topic/daily.md#蛮族日常)；[狩猎介绍](/topic/battle.md#狩猎)；[FATE介绍](/advanced/fate.md)
 :::
 
 ::: segment blue 
