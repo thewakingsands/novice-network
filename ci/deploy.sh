@@ -11,8 +11,10 @@ eval `ssh-agent -s`
 ssh-add ci/deploy-key
 
 DEPLOY_DIR=dist
-EXEGIT="git -C $DEPLOY_DIR"
 
+find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="">/d' {} \;
+
+EXEGIT="git -C $DEPLOY_DIR"
 $EXEGIT config user.name "bot"
 $EXEGIT config user.email "root@localhost"
 $EXEGIT init
