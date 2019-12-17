@@ -41,6 +41,7 @@ img
 import 'isomorphic-fetch'
 
 let count = 0
+let cache = {}
 
 const jobList = {
   冒险者: 0,
@@ -99,13 +100,28 @@ export default {
   data: function() {
     return {
       actionId: null,
-      iconUrl: null
+      iconUrl: null,
+      timer: null
     }
   },
   mounted() {
-    count++
-    setTimeout(() => this.updateId(), count * 50)
-    // this.updateId()
+    let useCache = cache[this.id] || cache[`${this.jobId}${this.name}`]
+    if (useCache) {
+      ;[this.actionId, this.iconUrl] = useCache
+    } else {
+      count++
+      this.timer = setTimeout(async () => {
+        count--
+        this.timer = null
+        useCache = cache[this.id] || cache[`${this.jobId}${this.name}`]
+        if (useCache) {
+          ;[this.actionId, this.iconUrl] = useCache
+        } else {
+          await this.updateId()
+          this.saveCache()
+        }
+      }, count * 100)
+    }
   },
   methods: {
     async updateId() {
@@ -130,10 +146,21 @@ export default {
         this.iconUrl =
           'https://cafemaker.wakingsands.com' + json.Results[0].Icon
       }
+    },
+    saveCache() {
+      if (this.id) {
+        cache[this.id] = [this.actionId, this.iconUrl]
+      } else {
+        cache[`${this.jobId}${this.name}`] = [this.actionId, this.iconUrl]
+      }
     }
   },
   beforeDestroy() {
-    count--
+    if (this.timer) {
+      clearTimeout(this.timer)
+      this.timer = null
+      count--
+    }
   },
   computed: {
     jobId() {
