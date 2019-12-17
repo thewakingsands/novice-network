@@ -1,4 +1,5 @@
 ---
+title: 骑士
 slots: ['header', 'summary', 'default']
 ---
 ::: slot header
