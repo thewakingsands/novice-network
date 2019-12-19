@@ -23,12 +23,19 @@ self.addEventListener('fetch', function(event) {
   try {
     url.host = cdnUrl.host
     url.protocol = cdnUrl.protocol
-    url.port = cdnUrl.port
+    url.port = cdnUrl.port || 443
+
     var newReq = new Request(url, {
       ...request,
       mode: 'cors'
     })
-    event.respondWith(fetch(newReq))
+
+    event.respondWith(
+      fetch(newReq).catch(function(e) {
+        console.error('sw error', e)
+        return fetch(request)
+      })
+    )
   } catch (e) {
     console.error('sw error', e)
     event.respondWith(fetch(request))
