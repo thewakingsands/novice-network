@@ -31,11 +31,11 @@
 
 ### 对单体输出
 
-在低等级时，黑魔使用<Action name="火炎" >火1</Action>把蓝打空，然后用星灵位移进入冰状态，一边打<Action name="冰结" >冰1</Action>一边等回蓝（中间插入闪雷），蓝回满了再用星灵位移转到火状态。
+在低等级时，黑魔使用<Action name="火炎" >火1</Action>把蓝打空，然后用星灵移位进入冰状态，一边打<Action name="冰结" >冰1</Action>一边等回蓝（中间插入闪雷），蓝回满了再用星灵移位转到火状态。
 
 习得<Action name="冰封" >冰3</Action>和<Action name="爆炎" >火3</Action>之后，黑魔就可以打出最基础的冰火循环： <Action name="冰封" >冰3</Action> → 雷 → <Action name="爆炎" >火3</Action> → <Action name="火炎" >火1</Action> x n到空蓝 → <Action name="冰封" >冰3</Action> → 雷/<Action name="冰结" >冰1</Action>到满蓝 → <Action name="爆炎" >火3</Action>……以此类推。
 
-56~60级分别习得<Action name="天语" />、<Action name="炽炎" >火4</Action><Action name="冰澈" >冰4</Action>之后，黑魔完整的输出体系就建立起来了：<Action name="冰封" >冰3</Action> → 天语 → 雷 → <Action name="冰澈" >冰4</Action> → <Action name="爆炎" >火3</Action> → <Action name="炽炎" >火4</Action> x 3 → <Action name="火炎" >火1</Action> → <Action name="炽炎" >火4</Action> x3 → <Action name="绝望" />（未习得绝望时可以使用<Action name="核爆" />）→ <Action name="冰封" >冰3</Action> → 雷 → 火循环…因为火4并不能维系火状态的存在，因此需要在3个火4中间穿插1个<Action name="火炎" >火1</Action>来保证火状态的存续（这也是黑魔玩家俗称的4441444）。72级之前使用核爆会使自己空蓝，需要通过<Action name="魔泉" />回蓝使用<Action name="冰封" >冰3</Action>，如果魔泉CD没转好，可以考虑不使用这个技能（但无论如何避免使用<Action name="星灵位移" />进行状态转换）。
+56~60级分别习得<Action name="天语" />、<Action name="炽炎" >火4</Action><Action name="冰澈" >冰4</Action>之后，黑魔完整的输出体系就建立起来了：<Action name="冰封" >冰3</Action> → 天语 → 雷 → <Action name="冰澈" >冰4</Action> → <Action name="爆炎" >火3</Action> → <Action name="炽炎" >火4</Action> x 3 → <Action name="火炎" >火1</Action> → <Action name="炽炎" >火4</Action> x3 → <Action name="绝望" />（未习得绝望时可以使用<Action name="核爆" />）→ <Action name="冰封" >冰3</Action> → 雷 → 火循环…因为火4并不能维系火状态的存在，因此需要在3个火4中间穿插1个<Action name="火炎" >火1</Action>来保证火状态的存续（这也是黑魔玩家俗称的4441444）。72级之前使用核爆会使自己空蓝，需要通过<Action name="魔泉" />回蓝使用<Action name="冰封" >冰3</Action>，如果魔泉CD没转好，可以考虑不使用这个技能（但无论如何避免使用<Action name="星灵移位" />进行状态转换）。
 
 使用冰3进入冰阶段之后，黑魔需要在回蓝的冰阶段里打一次<Action name="冰澈" >冰4</Action>获得灵极心，灵极心可以让火状态中的火魔法蓝耗恢复正常，一根灵极心能抵消一次施法，剩下的时间应该还够打一次雷，或者干脆挂机1秒直接读<Action name="爆炎" >火3</Action>回到火状态。
 
@@ -45,13 +45,15 @@
 
 黑魔的AOE包括<Action name="烈炎" >火2</Action>，<Action name="冰冻" >冰2</Action>，<Action name="玄冰" />，<Action name="震雷" />/<Action name="霹雷" />，<Action name="核爆" />和<Action name="秽浊" />。
 
-49级之前的黑魔，AOE循环以<Action name="震雷" />开始，然后<Action name="烈炎" >火2</Action>泄蓝，<Action name="冰冻" >冰2</Action>回蓝。有<Action name="爆炎" >火3</Action>和<Action name="冰封" >冰3</Action>之前，用<Action name="星灵位移" />转换冰火状态（之后和单体循环一样，把它收起来吧）。习得<Action name="冰封" >冰3</Action>之后，回蓝速度会比较快，基本上打个<Action name="震雷" />蓝就满了，也就不需要冰技能填充，直接一个<Action name="爆炎" >火3</Action>回去输出了。
+35级之前的黑魔，AOE循环以<Action name="震雷" />开始，然后<Action name="烈炎" >火2</Action>泄蓝，<Action name="冰冻" >冰2</Action>回蓝。
 
-50级之后习得<Action name="核爆" />，火阶段以核爆收尾，然后一般会用<Action name="魔泉" />回蓝再放一个核爆，然后使用<Action name="星灵位移" />转到冰状态。
+由于当前版本黑魔AOE技能威力设计问题，35之后可以放弃<Action name="烈炎" >火2</Action>，直接用<Action name="震雷" />和<Action name="玄冰" />进行AOE输出。
 
-56级习得<Action name="天语" />之后，AOE循环同样以<Action name="天语" />开始，在冰阶段需要打<Action name="冰澈" >冰4</Action>拿灵极心。
+50级之后习得<Action name="核爆" />，即刻好了之后打一个<Action name="爆炎" >火3</Action>，然后<Action name="即刻咏唱" >即刻</Action><Action name="核爆" />收尾，然后一般会用<Action name="魔泉" />回蓝再放一个核爆，然后使用<Action name="星灵移位" />转到冰状态。
 
-68级史诗级增强灵极心和玄冰之后，AOE阶段输出基本成型：<Action name="玄冰" />→<Action name="天语" />→<Action name="霹雷" />→<Action name="玄冰" />→<Action name="爆炎" >火3</Action>→<Action name="核爆" />→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="星灵位移" />（72之后可以直接用<Action name="玄冰" />转状态）→<Action name="霹雷" />（回到冰循环）
+56级习得<Action name="天语" />之后，AOE循环和单体一样以<Action name="天语" />开始。
+
+68级史诗级增强灵极心和玄冰之后，AOE阶段输出基本成型：<Action name="玄冰" />→<Action name="天语" />→<Action name="霹雷" />→<Action name="玄冰" />→<Action name="爆炎" >火3</Action>→<Action name="核爆" />→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="星灵移位" />（72之后可以直接用<Action name="玄冰" />转状态）→<Action name="霹雷" />（回到冰循环）
 
 黑魔AOE循环基本上是建立在天语的框架内，利用灵极心的特性、<Action name="魔泉" />乃至回蓝药达成连续核爆的效果（最高可以打出4连核爆）。在冰阶段补<Action name="霹雷" />，打<Action name="玄冰" />获取灵极心，并填充<Action name="秽浊" />。
 
@@ -59,7 +61,7 @@
 
 黑魔的Buff除了上面提到的<Action name="天语" />，还有万恶之源<Action name="黑魔纹" />，以及<Action name="激情咏唱" />。黑魔纹和激情咏唱通常用于开场爆发中，黑魔纹可以全面加速15%，激情咏唱则会强制触发火苗和雷云。 
 
-为了让黑魔方便应对副本机制，黑魔还拥有<Action name="以太步" />和<Action name="魔纹步" />两个特殊位移技能，以太步可以让玩家移动到目标玩家身边，而魔纹步可以让玩家返回黑魔纹中央（有黑魔纹时才可以使用），配合<Action name="三连咏唱" />技能，可以说现在的黑魔完全有足够强大的机动力应对副本的各种机制。然而这需要玩家对副本的高度熟练，才能在适当的场合正确使用技能（而不至于到了危机的时刻无技能可用），这也是为什么黑魔拥有最简单的技能循环，却是最难掌握的职业之一。
+为了让黑魔方便应对副本机制，黑魔还拥有<Action name="以太步" />和<Action name="魔纹步" />两个特殊移位技能，以太步可以让玩家移动到目标玩家身边，而魔纹步可以让玩家返回黑魔纹中央（有黑魔纹时才可以使用），配合<Action name="三连咏唱" />技能，可以说现在的黑魔完全有足够强大的机动力应对副本的各种机制。然而这需要玩家对副本的高度熟练，才能在适当的场合正确使用技能（而不至于到了危机的时刻无技能可用），这也是为什么黑魔拥有最简单的技能循环，却是最难掌握的职业之一。
 
 最后黑魔还拥有一个平常只有T才能享受到的高规格减伤<Action name="魔罩" />，可以抵消自身血量30%的伤害，但这个技能并不意味着允许你做团队毒瘤硬吃大伤害而辛苦治疗，它应该是一个在紧急时刻才会被用到的技能。
 
