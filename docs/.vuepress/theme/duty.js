@@ -214,6 +214,10 @@ module.exports = [
 {"index":684,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章2","type":"大型任务","typeId":5,"banner":112352,"sort":96},
 {"index":682,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章3","type":"大型任务","typeId":5,"banner":112354,"sort":97},
 {"index":689,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":425,"underSized":false,"name":"伊甸希望乐园 觉醒之章4","type":"大型任务","typeId":5,"banner":112356,"sort":98},
+{"index":654,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":440,"underSized":false,"name":"伊甸零式希望乐园 觉醒之章1","type":"大型任务","typeId":5,"banner":112351,"sort":99},
+{"index":685,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":445,"underSized":false,"name":"伊甸零式希望乐园 觉醒之章2","type":"大型任务","typeId":5,"banner":112353,"sort":100},
+{"index":683,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":450,"underSized":false,"name":"伊甸零式希望乐园 觉醒之章3","type":"大型任务","typeId":5,"banner":112355,"sort":101},
+{"index":690,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":450,"underSized":false,"name":"伊甸零式希望乐园 觉醒之章4","type":"大型任务","typeId":5,"banner":112357,"sort":102},
 {"index":280,"partySize":8,"level":70,"maxLevel":70,"ilvMax":345,"ilvMin":0,"underSized":false,"name":"巴哈姆特绝境战","type":"大型任务","typeId":5,"banner":112261,"sort":1001},
 {"index":539,"partySize":8,"level":70,"maxLevel":70,"ilvMax":375,"ilvMin":0,"underSized":false,"name":"究极神兵绝境战","type":"大型任务","typeId":5,"banner":112296,"sort":1002}
 ]
