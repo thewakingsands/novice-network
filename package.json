@@ -5,7 +5,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs && rimraf dist/_includes"
+    "build": "vuepress build docs && rimraf dist/_includes",
+    "build:searchindex": "node tools/search-index/generate.js"
   },
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
@@ -37,7 +38,7 @@
     "@thewakingsands/kit-tooltip": "0.3.2",
     "cheerio": "^1.0.0-rc.3",
     "diff": "^4.0.1",
-    "glob": "^7.1.4",
+    "glob": "^7.1.6",
     "got": "^9.6.0",
     "intersection-observer": "^0.5.1",
     "isomorphic-fetch": "^2.2.1",
