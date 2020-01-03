@@ -46,7 +46,7 @@
         </a>
       </div>
       <div class="copyright-line copyright-se">
-        FINAL FANTASY XIV © 2010 - 2019 SQUARE ENIX CO., LTD. All Rights
+        FINAL FANTASY XIV © 2010 - 2020 SQUARE ENIX CO., LTD. All Rights
         Reserved.
         <router-link to="/takedown">
           Reporting Copyright Infringement(版权投诉)
