@@ -7,6 +7,7 @@
           <slot>
             <Duty v-if="$page.frontmatter.instance" />
             <div v-else>
+              <WhatsNew />
               <Pager v-if="!$page.frontmatter.noTopPager" />
               <ContentContainer />
               <Pager />
@@ -51,6 +52,7 @@
 import Root from './Root.vue'
 import Duty from './Duty.vue'
 import NavMenu from '../components/NavMenu'
+import WhatsNew from '../components/WhatsNew'
 import NavTop from '../components/NavTop'
 import Footer from '../components/Footer'
 import Pager from '../components/Pager'
@@ -71,7 +73,8 @@ export default {
     Footer,
     Pager,
     PhotoSwipe,
-    Duty
+    Duty,
+    WhatsNew
   },
   provide() {
     return {

@@ -37,7 +37,7 @@ body
         cursor auto
       &.sm-icon
         vertical-align text-bottom
-    .guide.col 
+    .guide.col
       img~p
         color #999
         font-size .8em

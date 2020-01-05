@@ -152,7 +152,7 @@ module.exports = {
         {
           href: '/advanced/fate.htm',
           title: '临危受命（FATE）'
-        },
+        }
       ]
     },
     {

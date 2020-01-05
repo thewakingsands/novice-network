@@ -11,6 +11,9 @@
       <router-link class="item icon-item" to="/">
         <i class="home angle icon"></i>
       </router-link>
+      <router-link class="item icon-item" to="/search.htm">
+        <i class="search icon"></i>
+      </router-link>
       <a href="javascript:;" @click="headClicked" class="item page-title">
         <i
           v-if="$page.headers"
