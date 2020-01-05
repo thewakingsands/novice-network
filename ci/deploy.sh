@@ -23,3 +23,7 @@ $EXEGIT add -A
 $EXEGIT commit -m "Auto deploy by Travis CI"
 
 $EXEGIT push -f origin master
+
+curl -o- -L https://yarnpkg.com/install.sh | bash
+yarn
+INDEX_SERVER=https://novice-network-search.wakingsands.com yarn deploy:searchindex

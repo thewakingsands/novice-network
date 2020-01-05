@@ -34,7 +34,7 @@ console.log(
   } items) of index to server ...`
 )
 
-fetch('http://localhost:3002/index', {
+fetch(`${process.env.INDEX_SERVER}/index`, {
   method: 'PUT',
   body: JSON.stringify(indices),
   headers: {

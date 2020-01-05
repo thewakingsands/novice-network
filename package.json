@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs && rimraf dist/_includes",
-    "build:searchindex": "node tools/search-index/generate.js"
+    "deploy:searchindex": "node tools/search-index/generate.js"
   },
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
