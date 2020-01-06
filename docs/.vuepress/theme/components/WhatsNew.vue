@@ -37,6 +37,9 @@ export default {
     dismiss() {
       this.shouldShow = false
       localStorage.whatsNew = WHATS_NEW_ID
+      window.ma && window.ma.trackEvent('WhatsNew', 'dismiss', WHATS_NEW_ID)
+      window._hmt &&
+        window._hmt.push(['_trackEvent', 'WhatsNew', 'dismiss', WHATS_NEW_ID])
     }
   },
   mounted() {
