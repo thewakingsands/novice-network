@@ -139,6 +139,8 @@
       transition 300ms
       &.show
         transform translate3d(0, 0, 0)
+    .ui.menu::after
+      height 80px
   .toggle-button
     display none
     button
