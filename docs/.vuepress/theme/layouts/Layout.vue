@@ -6,6 +6,10 @@
           <NavTop @barClicked="showMenu = !showMenu" />
           <slot>
             <Duty v-if="$page.frontmatter.instance" />
+            <WebFrame
+              v-else-if="$page.frontmatter.webframe"
+              :src="$page.frontmatter.webframe"
+            />
             <div v-else>
               <WhatsNew />
               <Pager v-if="!$page.frontmatter.noTopPager" />
@@ -51,6 +55,7 @@
 <script>
 import Root from './Root.vue'
 import Duty from './Duty.vue'
+import WebFrame from './WebFrame.vue'
 import NavMenu from '../components/NavMenu'
 import WhatsNew from '../components/WhatsNew'
 import NavTop from '../components/NavTop'
@@ -74,6 +79,7 @@ export default {
     Pager,
     PhotoSwipe,
     Duty,
+    WebFrame,
     WhatsNew
   },
   provide() {
