@@ -67,7 +67,8 @@
     }
   },
   "eslintIgnore": [
-    "!docs/.vuepress"
+    "!docs/.vuepress",
+    "docs/.vuepress/public"
   ],
   "prettier": {
     "semi": false,
