@@ -24,6 +24,9 @@ $EXEGIT commit -m "Auto deploy by Travis CI"
 
 $EXEGIT push -f origin master
 
+$EXEGIT remote add coding git@e.coding.net:ffcafe/novice-network-pages.git
+$EXEGIT push -f coding master
+
 curl -o- -L https://yarnpkg.com/install.sh | bash
 yarn
 INDEX_SERVER=https://novice-network-search.wakingsands.com yarn deploy:searchindex
