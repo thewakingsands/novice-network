@@ -15,6 +15,7 @@
 .container
   max-width 1200px
   margin 0 auto
+  padding 10px
   padding-top 20px
 .segment
   display flex
