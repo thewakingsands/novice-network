@@ -315,7 +315,7 @@ FATE的难度会随着地图上当前的玩家数量，上次刷新该FATE时的
         <td>Lv.69 白色的大脸 —— 涛尔・马乌恩坦</td>
         <td>基拉巴尼亚湖区 23,25</td>
         <td>
-          <item name="九宫幻卡：弗巴德" />，成就<strong>洪巴巴杀手</strong>。</td></tr>
+          <item name="九宫幻卡：弗巴德" />，成就<strong>山崩</strong>。</td></tr>
       <tr>
         <td>Lv.70 九尾妖狐玉藻御前</td>
         <td>延夏各处</td>
