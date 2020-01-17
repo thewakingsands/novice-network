@@ -4,6 +4,8 @@ openssl aes-256-cbc -K $encrypted_74088940e92b_key -iv $encrypted_74088940e92b_i
 ### Warning: environment variables will exposed to build logs after this line ###
 set -x
 
+export GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+
 chmod 700 ci
 chmod 600 ci/deploy-key
 
