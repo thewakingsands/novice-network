@@ -1,0 +1,262 @@
+html{
+	font-size: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 100%;
+	
+}
+
+.site-title{
+    margin: 0 auto;
+    position: relative;
+    height: auto;
+}
+
+#site-title-content{
+    width: 47%;
+    margin: auto;
+    padding: 2.4rem 0 2.4rem 0;
+}
+
+
+#site-title-content:hover{
+    cursor: pointer;
+}
+
+#site-title-img{
+    margin: auto;
+}
+
+.site-menu{
+    width: 100%;
+    height: 3rem;
+    background: #CCC2A8;
+}
+
+.site-menu-area{
+    margin: auto auto;
+    width: 87%;
+    height: 100%;
+
+}
+
+.site-menu-item{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: #CCC2A8;
+    color: #57432F;
+}
+
+.site-menu-item:hover{
+    background: #57432F;
+    color: #CCC2A8;
+    cursor: pointer;
+}
+
+.site-menu-item-name{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.gap{
+    border-left: #DBD1B9 solid 0.06rem;
+    border-right: #C1B097 solid 0.06rem;
+    height: 60%;
+    float: right;
+    margin: 0.67rem 0;
+    width: 0;
+}
+
+
+.site-menu-item:hover .gap{
+    display: none;
+}
+
+.site-wrapper {
+    margin: 0 auto;
+    position: relative;
+    background-color: #E6E1D4;
+}
+
+.site-content{
+	padding: 0rem -0px 10rem -0px;
+
+}
+
+@media screen and (min-width: 64em) {
+	.site-container {
+	    padding: 0 20%;
+	}
+
+    .site-menu-area{
+        width: 60%;
+    }
+
+    .guide-thumbnail{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 10em) and (max-width: 64em){
+	.site-content{
+		padding: 0px -0px;
+		padding: 0rem -0px;
+	}
+
+	.site-container{
+		padding: 0 15%;
+	}
+
+	.page-content{
+	    width: 100%;
+	    float: none;
+	    padding: 0;
+	}
+}
+
+.site-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.guide-thumbnail{
+    margin-bottom: 0rem;
+}
+
+.img-thumbnail{
+
+}
+
+.site-content h1, .site-content h2, .site-content h3,  .site-content h5, .site-content h6 {
+    color: #333333;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+    display: block;
+}
+
+div{
+	display: block;
+}
+
+h1, h2, h3, h5, h6 {
+    clear: both;
+    font-weight: 700;
+    margin: 1em 0;
+    line-height: 1.3;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: "黑体";
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.guide-content>li{
+	list-style:none; 
+	text-shadow: 0 1px 1px #777;
+}
+
+h1{
+	color: #333333;
+	font-size: 26px;
+    font-size: 2.6em;
+
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+
+    text-shadow: 0 2px 6px #222;
+}
+
+h1, h2, h3, h5, h6 {
+    clear: both;
+    font-weight: 500;
+    margin: 1em 0;
+    line-height: 1.3;
+}
+
+p, li, a{
+    line-height: 1.5rem;
+}
+
+hr{
+    border-left: none;
+    border-right: none;
+    border-top:#D1C2AA solid;
+    border-bottom:#EFE9E1 solid;
+    height: 0rem;
+}
+
+
+.paragraph-title{
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+    margin: 3rem 0 2rem 0;
+}
+
+.title-hr{
+    
+    border-top: #DBD1B9 solid 0.06rem;
+    border-bottom: #C1B097 solid 0.06rem;
+    height: 0;
+    float: right;
+    margin: 1.2rem 0;
+    width: 100%;
+}
+
+.paragraph-title-content{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.paragraph-title-img{
+    height: 2.5rem;
+}
+
+.site-content h4{
+    color: white;
+    border-radius: .4rem;
+    background: #CCC2A8;
+    width:fit-content;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    padding: 0.25rem 0.6rem;
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin: 1.5rem 0;
+}
+
+.no-style-a, .no-style-a:visited, .no-style-a:link, .no-style-a:active{
+   text-decoration: none;
+   line-height: 1rem!important;
+}
