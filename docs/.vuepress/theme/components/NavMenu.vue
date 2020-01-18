@@ -158,7 +158,7 @@
 </style>
 
 <script>
-import { TOC } from '@dynamic/toc'
+import { TOC } from '../toc'
 
 export default {
   props: {

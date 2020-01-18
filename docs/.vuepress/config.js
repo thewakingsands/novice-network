@@ -93,7 +93,6 @@ module.exports = {
     }
   },
   plugins: [
-    require('./plugins/sidenav'),
     require('./plugins/my-sw'),
     require('./plugins/global-scripts'),
     '@vuepress/last-updated',
