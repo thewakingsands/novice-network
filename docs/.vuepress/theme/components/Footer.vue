@@ -16,15 +16,6 @@
         |
         <router-link to="/about"> 关于&amp;捐赠 </router-link>
       </div>
-      <div class="copyright-line copyright-self">
-        <a
-          href="https://github.com/thewakingsands/novice-network-pages/deployments"
-          rel="noopener noreferer"
-          target="_blank"
-          class="hide-small"
-        >
-          <img src="https://img.shields.io/badge/GitHub-Pages-green" />
-        </a>
         <a
           href="https://travis-ci.org/thewakingsands/novice-network"
           rel="noopener noreferer"
