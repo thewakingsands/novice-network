@@ -96,12 +96,6 @@ module.exports = {
     require('./plugins/sidenav'),
     require('./plugins/my-sw'),
     require('./plugins/global-scripts'),
-    [
-      require('./plugins/baidu-tongji'),
-      {
-        id: '215a46d31e2c4aaa8e1cdd94fcfe8aa4'
-      }
-    ],
     '@vuepress/last-updated',
     '@vuepress/nprogress',
     [
@@ -110,10 +104,17 @@ module.exports = {
         normalSuffix: '.htm'
       }
     ],
+    require('./plugins/page-timer'),
     [
       'minimal-analytics',
       {
         ga: 'UA-140050718-1'
+      }
+    ],
+    [
+      require('./plugins/baidu-tongji'),
+      {
+        id: '215a46d31e2c4aaa8e1cdd94fcfe8aa4'
       }
     ]
   ]
