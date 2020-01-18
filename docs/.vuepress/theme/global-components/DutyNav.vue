@@ -190,6 +190,9 @@ export default {
     dutyUrl(index) {
       const relativePath = `duty/${index}.md`
       const page = this.$site.pages.find(x => x.relativePath === relativePath)
+      if (page && page.frontmatter && page.frontmatter.underConstruction) {
+        return false
+      }
       return page && page.path
     }
   }

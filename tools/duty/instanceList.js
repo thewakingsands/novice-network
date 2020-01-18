@@ -67,3 +67,19 @@ result.push(data.map(x => JSON.stringify(x)).join(',\n'))
 result.push(']')
 
 fs.writeFileSync('../../docs/.vuepress/theme/duty.js', result.join('\n'))
+
+for (const item of data) {
+  const filename = `../../docs/duty/${item.index}.md`
+  if (!fs.existsSync(filename)) {
+    fs.writeFileSync(
+      filename,
+      `---
+underConstruction: true
+---
+<!-- 攻略完成后请移除本行及以上内容 -->
+# ${item.name}
+
+<UnderConstruction />`
+    )
+  }
+}
