@@ -1,5 +1,4 @@
 export default () => {
-  // Google analytics integration
   if (
     process.env.NODE_ENV === 'production' &&
     typeof navigator !== 'undefined' &&
