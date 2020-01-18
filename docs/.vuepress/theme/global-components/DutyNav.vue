@@ -129,13 +129,18 @@ export default {
               filter: x =>
                 x.type === '大型任务' &&
                 x.partySize === 8 &&
-                x.name.match(/[1234]$/) &&
+                x.name.match(/[12345]$/) &&
                 !x.name.match(/零式/),
               selected: false
             },
             {
               title: '零式 Raid',
               filter: x => x.type === '大型任务' && x.name.match(/零式/),
+              selected: false
+            },
+            {
+              title: '绝境战',
+              filter: x => x.type === '大型任务' && x.name.match(/绝境战/),
               selected: false
             },
             {
