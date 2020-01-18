@@ -16,6 +16,9 @@
         |
         <router-link to="/about"> 关于&amp;捐赠 </router-link>
       </div>
+      <div class="status-line">
+        《新大陆见闻录》是<a href="https://ffcafe.org/" target="_blank">肥肥咖啡</a>的一个子项目，欢迎<a href="https://ffcafe.org/join-us/">加入我们</a>！
+      </div>
         <a
           href="https://travis-ci.org/thewakingsands/novice-network"
           rel="noopener noreferer"
