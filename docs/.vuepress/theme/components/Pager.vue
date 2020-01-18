@@ -50,6 +50,14 @@ export default {
   },
   methods: {
     updatePager() {
+      this.prev = {
+        title: '',
+        href: ''
+      }
+      this.next = {
+        title: '',
+        href: ''
+      }
       var flatTitles = []
       for (var title1 of TOC.main) {
         flatTitles = flatTitles.concat(title1.children)
