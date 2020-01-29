@@ -6,6 +6,9 @@ export default {
       if (getVueComponent(to.name)) {
         return next()
       }
+      if (typeof location === 'undefined') {
+        return next()
+      }
 
       try {
         await new Promise((resolve, reject) => {
