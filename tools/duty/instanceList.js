@@ -15,6 +15,8 @@ const types = [
   '大型任务'
 ]
 
+types[28] = '绝境战'
+
 for (const line of lines) {
   const cols = line.split(',')
   const index = cols.shift()

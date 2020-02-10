@@ -140,7 +140,7 @@ export default {
             },
             {
               title: '绝境战',
-              filter: x => x.type === '大型任务' && x.name.match(/绝境战/),
+              filter: x => x.type === '绝境战',
               selected: false
             },
             {
