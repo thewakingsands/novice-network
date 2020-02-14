@@ -113,7 +113,7 @@ export default {
               filter: x =>
                 x.type === '讨伐歼灭战' &&
                 !x.name.match(
-                  /梦幻|歼殛|诗魂|上位|幽夜|歼殛|幻想|传奇|破坏|绝境/
+                  /梦幻|歼殛|诗魂|上位|幽夜|歼殛|幻想|传奇|破坏|绝境|孤念/
                 ),
               selected: false
             },
@@ -121,7 +121,9 @@ export default {
               title: '极神',
               filter: x =>
                 x.type === '讨伐歼灭战' &&
-                x.name.match(/梦幻|歼殛|诗魂|上位|幽夜|歼殛|幻想|传奇|破坏/),
+                x.name.match(
+                  /梦幻|歼殛|诗魂|上位|幽夜|歼殛|幻想|传奇|破坏|孤念/
+                ),
               selected: false
             },
             {
