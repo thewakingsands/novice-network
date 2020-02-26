@@ -91,8 +91,8 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 ### 住宅区开放任务：
 
 * 5级：<quest name="海雾村的碧海屋" type="plus" />，海都住宅区开放。
-* 5级：<quest name="高脚孤丘的奢华屋" type="plus" />，森都住宅区开放。
-* 10级：<quest name="薰衣草苗圃的繁花屋" type="plus" />，沙都住宅区开放。
+* 5级：<quest name="高脚孤丘的奢华屋" type="plus" />，沙都住宅区开放。
+* 10级：<quest name="薰衣草苗圃的繁花屋" type="plus" />，森都住宅区开放。
 * 61级：<quest name="白银乡之梦" type="plus" />，白银乡住宅区开放。
 
 <!--[住宅区与房屋介绍]()。-->
