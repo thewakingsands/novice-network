@@ -64,7 +64,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 主线17级：<quest name="雇员大探险" search type="plus" />，任意主城冒险者行会接取，完成后开放雇员探险功能。[雇员系统详解](#)。
 * 主线19级：<quest name="情感培育之力" type="plus" />，把精炼度满的装备转化为魔晶石。[魔晶石系统](https://ff14.huijiwiki.com/wiki/%E9%AD%94%E6%99%B6%E7%9F%B3)。
   * <quest name="情感凝聚之力" type="plus" />，合成魔晶石。
-* 主线20级：<quest name="我的专属陆行鸟" search type="plus" />，完成20级主线任务<quest name="前行之路" type="main"/>并加入大国防联军后接取，完成任务可获得坐骑专属陆行鸟（在获得专属陆行鸟之前，商城购买的坐骑也无法使用）。
+* 主线20级：<quest name="我的专属陆行鸟" search type="plus" />，完成20级主线任务<quest name="前行之路" search type="main"/>并加入大国防联军后接取，完成任务可获得坐骑专属陆行鸟（在获得专属陆行鸟之前，商城购买的坐骑也无法使用）。
   * 任意职业30级：<quest name="可靠的搭档" type="plus" />，解锁专属陆行鸟辅助战斗，在黑衣森林南部林区恬静路营地接取。
   * 52级：<quest name="我心飞翔" type="plus" />，解锁专属陆行鸟飞行，需要完成前面的任务。
 * 任意职业30级：解锁特职，务必及时完成30级职业任务，并获得灵魂水晶转为特职。
