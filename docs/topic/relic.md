@@ -14,6 +14,7 @@
 
 
 <p><Quest name="传说中的武器工匠" type="plus" /> <span style="color:silver;">奈德里克·艾恩哈特(沙之家 X:6.2 , Y:5.1)</span></p>
+
 **NOTE：这个任务只用做一次**
 
 需要完成2.0主线![](http://img.ngacn.cc/attachments/mon_201710/14/-b17t5Q2h-4o44K1Sk-k.png)超越幻想，究极神兵才能开启该任务线。
@@ -25,6 +26,7 @@
 
 
 ![](https://img.nga.178.com/attachments/mon_201712/06/-b17t5Q5-ga8oK1Sk-k.png) ==Lv.50 复苏的上古武器== <span style="color:silver;">盖罗尔特 黑衣森林北部林区(X:30.3 , Y:20.2)</span>
+
 **NOTE：只有2.0职业，即骑士、战士、武僧、龙骑、黑魔、白魔、诗人、召唤、学者、忍者可以接这个任务**
 
 ++完成本步骤需要++：2块3型魔晶石，75诗学。购买原型武器。
@@ -129,6 +131,7 @@
 
 
 <p><Quest name="黄道文书" type="plus" /> <span style="color:silver;">加尔赞 黑衣森林北部林区(X:29.6 , Y:19.7)</span></p>
+
 **NOTE：古武最大门槛，请修身养肝戒骄戒躁**
 
 ++完成本步骤需要++：900诗学，27理符限额。耐心，好肝。
