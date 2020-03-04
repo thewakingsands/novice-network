@@ -47,4 +47,4 @@
 
 这里有个视频，里面有所有职业的所有古武及魂武的360度全景展示，你们可以看到这些武器究竟有多闪——[视频点我跳转](https://www.bilibili.com/video/av11286019/)。
 
-而具体获得这些武器的攻略，请看[肝武流程攻略](https://bbs.nga.cn/read.php?tid=13014248)和[优雷卡攻略](https://bbs.nga.cn/read.php?tid=14590826)。
+而具体获得这些武器的攻略，请看[古武攻略](./relic.md)、[魂武攻略](./anima.md)和[优雷卡攻略](https://bbs.nga.cn/read.php?tid=14590826)。
