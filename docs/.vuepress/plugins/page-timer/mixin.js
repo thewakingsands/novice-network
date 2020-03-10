@@ -11,17 +11,25 @@ export default {
       }
 
       try {
-        await new Promise((resolve, reject) => {
-          const timer = setTimeout(
+        new Promise(function (resolve, reject) {
+          var timer = setTimeout(
             () => reject(new Error(`Get component ${to.name} timeout`)),
             2500
           )
           getAsyncComponent(to.name)().then(() => {
             clearTimeout(timer)
             resolve()
-          })
+          }).catch(reject)
         })
-        next()
+        .then(next)
+        .catch(function (e) {
+          console.error(e)
+          if (from.name) {
+            location.href = to.fullPath
+          } else {
+            next()
+          }
+        })
       } catch (e) {
         console.error(e)
         if (from.name) {
