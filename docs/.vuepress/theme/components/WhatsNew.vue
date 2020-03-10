@@ -31,7 +31,7 @@ const WHATS_NEW_ID = 'search-inside'
 export default {
   data() {
     return {
-      shouldShow: true
+      shouldShow: false
     }
   },
   methods: {
@@ -44,9 +44,9 @@ export default {
     }
   },
   mounted() {
-    if (localStorage && localStorage.whatsNew === WHATS_NEW_ID) {
-      this.shouldShow = false
-    }
+    // if (localStorage && localStorage.whatsNew === WHATS_NEW_ID) {
+    //   this.shouldShow = false
+    // }
   }
 }
 </script>
