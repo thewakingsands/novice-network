@@ -68,12 +68,13 @@
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./machinist.assets/flow.png" width="350px" />
+
 简明一图流攻略
 ;;;
 
 ;;;.guide .col .grow
 
-* [5.x机工士 简明入门攻略](https://bbs.nga.cn/read.php?tid=17795742)
+* [跨界枪鸣 5.x 机工士 大型攻略指南 (持续更新)](https://bbs.nga.cn/read.php?tid=19544623)
 
 ;;;
 ;;;
