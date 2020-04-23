@@ -78,7 +78,7 @@ export default {
         buff: 'e05c',
         e05d: 'e05d',
         e05e: 'e05e',
-        'job-specific-quest': 'e05f',
+        e05f: 'e05f',
         'number-0': 'e060',
         'number-1': 'e061',
         'number-2': 'e062',
