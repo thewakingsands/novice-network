@@ -57,7 +57,7 @@ export default {
         e043: 'e043',
         e044: 'e044',
         crystal: 'e048',
-        e049: 'e049',
+        gil: 'e049',
         circle: 'e04a',
         square: 'e04b',
         cross: 'e04c',
