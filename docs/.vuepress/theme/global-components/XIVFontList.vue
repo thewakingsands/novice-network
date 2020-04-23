@@ -1,0 +1,201 @@
+<template>
+  <table class="ui selectable compact grey striped unstackable table">
+    <thead>
+      <tr>
+        <th>符号</th>
+        <th>码点</th>
+        <th>名称</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(char, font) in icons" :key="char">
+        <td>{{ getChar(char) }}</td>
+        <td>{{ char }}</td>
+        <td :class="{ secondary: font === char }">{{ font }}</td>
+      </tr>
+    </tbody>
+  </table>
+</template>
+
+<style lang="stylus" scoped>
+.secondary
+  color #999
+</style>
+
+<script>
+export default {
+  data() {
+    return {
+      icons: {
+        'ime-hira-full': 'e020', // あ
+        'ime-kata-full': 'e021', // ア
+        'ime-en': 'e022', // A
+        'ime-kata-half': 'e023', // _ｱ
+        'ime-en-jp': 'e024', // _A
+        'ime-kr': 'e025', // 가
+        'ime-zhong': 'e026', // 中
+        'ime-en-zh': 'e027', // 英
+        'min-en': 'e028', // m (分钟)
+        'min-zh': 'e209', // 分
+        'left-lenticular': 'e02a', // 【
+        'right-lenticular': 'e02b', // 】
+        alarm: 'e031', // 时钟符号
+        e032: 'e032',
+        ilv: 'e033', // 物品品级
+        garden: 'e034', // 房屋园艺
+        interact: 'e035', // 房屋交互
+        e039: 'e039',
+        elv: 'e03a', // 元素等级
+        e03b: 'e03b',
+        hq: 'e03c', // 优质
+        collectables: 'e03d', // 收藏品
+        e03e: 'e03e',
+        dot: 'e03f', // 小数点？
+        'auto-translate-left': 'e040', // 定型文左
+        'auto-translate-right': 'e041', // 定型文右
+        e042: 'e042',
+        forbidden: 'e043',
+        e044: 'e044',
+        e048: 'e048',
+        e049: 'e049',
+        circle: 'e04a',
+        square: 'e04b',
+        cross: 'e04c',
+        triangle: 'e04d',
+        plus: 'e04e',
+        mouse: 'e050',
+        'mouse-left-button': 'e051',
+        'mouse-right-button': 'e052',
+        'mouse-middle-button': 'e053',
+        'mouse-scroll-whell': 'e054',
+        'mouse-button-1': 'e055',
+        'mouse-button-2': 'e056',
+        'mouse-button-3': 'e057',
+        'mouse-button-4': 'e058',
+        'mouse-button-5': 'e059',
+        e05a: 'e05a',
+        debuff: 'e05b',
+        buff: 'e05c',
+        e05d: 'e05d',
+        e05e: 'e05e',
+        e05f: 'e05f',
+        'number-0': 'e060',
+        'number-1': 'e061',
+        'number-2': 'e062',
+        'number-3': 'e063',
+        'number-4': 'e064',
+        'number-5': 'e065',
+        'number-6': 'e066',
+        'number-7': 'e067',
+        'number-8': 'e068',
+        'number-9': 'e069',
+        lv: 'e06a',
+        st: 'e06b',
+        nv: 'e06c',
+        am: 'e06d',
+        pm: 'e06e',
+        'interact-left': 'e06f',
+        'question-mark': 'e070',
+        'char-a': 'e071',
+        'char-b': 'e072',
+        'char-c': 'e073',
+        'char-d': 'e074',
+        'char-e': 'e075',
+        'char-f': 'e076',
+        'char-g': 'e077',
+        'char-h': 'e078',
+        'char-i': 'e079',
+        'char-j': 'e07a',
+        'char-k': 'e07b',
+        'char-l': 'e07c',
+        'char-m': 'e07d',
+        'char-n': 'e07e',
+        'char-o': 'e07f',
+        'char-p': 'e080',
+        'char-q': 'e081',
+        'char-r': 'e082',
+        'char-s': 'e083',
+        'char-t': 'e084',
+        'char-u': 'e085',
+        'char-v': 'e086',
+        'char-w': 'e087',
+        'char-x': 'e088',
+        'char-y': 'e089',
+        'char-z': 'e08a',
+        'square-0': 'e08f',
+        'square-1': 'e090',
+        'square-2': 'e091',
+        'square-3': 'e092',
+        'square-4': 'e093',
+        'square-5': 'e094',
+        'square-6': 'e095',
+        'square-7': 'e096',
+        'square-8': 'e097',
+        'square-9': 'e098',
+        'square-10': 'e099',
+        'square-11': 'e09a',
+        'square-12': 'e09b',
+        'square-13': 'e09c',
+        'square-14': 'e09d',
+        'square-15': 'e09e',
+        'square-16': 'e09f',
+        'square-17': 'e0a0',
+        'square-18': 'e0a1',
+        'square-19': 'e0a2',
+        'square-20': 'e0a3',
+        'square-21': 'e0a4',
+        'square-22': 'e0a5',
+        'square-23': 'e0a6',
+        'square-24': 'e0a7',
+        'square-25': 'e0a8',
+        'square-26': 'e0a9',
+        'square-27': 'e0aa',
+        'square-28': 'e0ab',
+        'square-29': 'e0ac',
+        'square-30': 'e0ad',
+        'square-31': 'e0ae',
+        'square-plus': 'e0af',
+        'square-e': 'e0b0',
+        'round-1': 'e0b1',
+        'round-2': 'e0b2',
+        'round-3': 'e0b3',
+        'round-4': 'e0b4',
+        'round-5': 'e0b5',
+        'round-6': 'e0b6',
+        'round-7': 'e0b7',
+        'round-8': 'e0b8',
+        'round-9': 'e0b9',
+        e0ba: 'e0ba',
+        link: 'e0bb',
+        sync: 'e0bc',
+        'sync-invert': 'e0bd',
+        'arrow-down-invert': 'e0be',
+        'bar-star': 'e0c0',
+        'bar-1': 'e0c1',
+        'bar-2': 'e0c2',
+        'bar-3': 'e0c3',
+        'bar-4': 'e0c4',
+        'bar-5': 'e0c5',
+        'bar-6': 'e0c6',
+        'bar-lt': 'e0d0',
+        'bar-st': 'e0d1',
+        'bar-et': 'e0d2',
+        'bar-oz': 'e0d3',
+        'bar-sz': 'e0d4',
+        'bar-ez': 'e0d5',
+        'bar-hl': 'e0d6',
+        'bar-hs': 'e0d7',
+        'bar-he': 'e0d8',
+        'bar-ben': 'e0d9',
+        'bar-fu': 'e0da',
+        'bar-ai': 'e0db'
+      }
+    }
+  },
+  methods: {
+    getChar(char) {
+      return String.fromCodePoint(parseInt(char, 16))
+    }
+  }
+}
+</script>
