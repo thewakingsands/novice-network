@@ -89,9 +89,9 @@ export default {
         'number-7': 'e067',
         'number-8': 'e068',
         'number-9': 'e069',
-        lv: 'e06a',
-        st: 'e06b',
-        nv: 'e06c',
+        lv: 'e06a', // Level
+        st: 'e06b', // Stufe(de)
+        nv: 'e06c', // Niveau
         am: 'e06d',
         pm: 'e06e',
         'interact-left': 'e06f',
@@ -180,12 +180,12 @@ export default {
         'bar-lt': 'e0d0',
         'bar-st': 'e0d1',
         'bar-et': 'e0d2',
-        'bar-oz': 'e0d3',
-        'bar-sz': 'e0d4',
-        'bar-ez': 'e0d5',
-        'bar-hl': 'e0d6',
-        'bar-hs': 'e0d7',
-        'bar-he': 'e0d8',
+        'bar-oz': 'e0d3', // Ortszeit /de
+        'bar-sz': 'e0d4', // Serverzeit / de
+        'bar-ez': 'e0d5', // Heure du serveur / de
+        'bar-hl': 'e0d6', // Heure locale / fr
+        'bar-hs': 'e0d7', // Heure du serveur / fr
+        'bar-he': 'e0d8', // Heure éorzéenne / fr
         'bar-ben': 'e0d9',
         'bar-fu': 'e0da',
         'bar-ai': 'e0db'
