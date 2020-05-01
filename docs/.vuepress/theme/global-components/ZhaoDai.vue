@@ -3,7 +3,7 @@
 </template>
 
 <script>
-const codeList = ['019w-e5xe-rodk-7344', '018t-uj1a-hr7j-5318']
+const codeList = ['019w-e5xe-rodk-7344', '018g-0ey9-373r-43s8']
 
 export default {
   data() {
