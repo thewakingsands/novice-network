@@ -10,3 +10,9 @@
 @import '../styles/main.styl'
 @import '../styles/home.styl'
 </style>
+
+<script>
+import '@thewakingsands/axis-font-icons'
+
+export default {}
+</script>

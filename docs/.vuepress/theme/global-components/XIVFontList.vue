@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(font, char) in icons" :key="font">
+      <tr v-for="(font, char) in icons" :key="char">
         <td>{{ getChar(char) }}</td>
         <td>{{ char }}</td>
         <td
@@ -38,7 +38,7 @@
 </style>
 
 <script>
-import icons from '../fonts/FFXIV_Lodestone_SSF.json'
+import icons from '@thewakingsands/axis-font-icons/characters.json'
 
 export default {
   data() {

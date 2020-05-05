@@ -35,6 +35,7 @@
     "vuepress-plugin-minimal-analytics": "^0.1.4"
   },
   "dependencies": {
+    "@thewakingsands/axis-font-icons": "^0.2.1",
     "@thewakingsands/kit-tooltip": "0.3.2",
     "cheerio": "^1.0.0-rc.3",
     "diff": "^4.0.1",

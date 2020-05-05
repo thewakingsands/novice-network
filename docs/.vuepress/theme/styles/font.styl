@@ -3,16 +3,3 @@
   src url('../fonts/FFXIV_Lodestone_SSF.ttf') format('truetype'),
       url('../fonts/FFXIV_Lodestone_SSF.woff') format('woff')
   unicode-range U+E020-E0DB
-
-icons = json('../fonts/FFXIV_Lodestone_SSF.json', { hash: true })
-
-i.xiv
-  &::before
-    font-family 'FFXIV'
-    font-style normal
-
-for char, cls in icons
-  i.xiv.{cls[0]}::before
-    content '\' + char
-  i.xiv.{char}::before
-    content '\' + char

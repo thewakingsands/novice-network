@@ -901,6 +901,11 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@thewakingsands/axis-font-icons@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@thewakingsands/axis-font-icons/-/axis-font-icons-0.2.1.tgz#e70b4cf3dbe552b30e6fec172f8766175080d49a"
+  integrity sha512-4YxWPOFu2LxBaBgJTgRQKmYs7qgCPEScWKDCTIrwd+1Zt09zM0IdYlpE8u7JthuOsKrBRJOac3VUgw509rC7WA==
+
 "@thewakingsands/kit-common@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@thewakingsands/kit-common/-/kit-common-0.3.0.tgz#9b96b66e36cbe8f73fb8a0963c831484dbee8859"
