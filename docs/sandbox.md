@@ -7,7 +7,7 @@
 
 <span class="eorzea-map-trigger show-as-link show-with-icon" data-map-name="伊修加德基础层" data-map-id="218" data-map-x="9.74" data-map-y="11.57">伊修加德基础层 X:9.7, Y:11.6</span>
 
-<Pos name="伊修加德基础层" :x="9.74" :y="11.57"></Pos>
+<Pos name="伊修加德基础层" :x="9.74" :y="11.57" />
 
 <BuffSearch />
 
