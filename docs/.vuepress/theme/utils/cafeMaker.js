@@ -23,34 +23,40 @@ export const searchStatus = createDebounce(
   30
 )
 
-async function combineSearchItem(argList) {
-  // argList: [[name1], [name2]]
+// argList: [[name1], [name2]]
+function combineSearchItem(argList) {
+  const body = buildItemSearchBody(argList.map(x => x[0]))
 
-  // FIXME: use elasticsearch api to query items
-  const url = buildItemSearchUrl(argList.map(x => x[0]))
-  const json = await (await fetch(url)).json()
-
-  if (!json.Results) {
-    console.warn('failed to search items', json)
-    return []
-  }
-
-  return json.Results
+  return fireSearch(body)
 }
 
 function filterSearchByName(results, name) {
   return results.find(r => r.Name === name)
 }
 
-function buildItemSearchUrl(names) {
-  const namesStr = encodeURIComponent(names.join('|'))
-  return `https://cafemaker.wakingsands.com/search?indexes=Item&string_algo=query_string&string_column=Name_chs&columns=Name,ID,Icon&string=${namesStr}`
+function buildItemSearchBody(names) {
+  return {
+    indexes: 'item',
+    columns: 'ID,Name,Icon',
+    body: {
+      query: {
+        bool: {
+          should: [names.map(name => ({ match_phrase: { Name_chs: name } }))]
+        }
+      },
+      from: 0,
+      size: 100
+    }
+  }
 }
 
 // args: [[name, id, jobId], ...]
-async function combineSearchAction(argList) {
+function combineSearchAction(argList) {
   const body = buildActionSearchBody(argList)
+  return fireSearch(body)
+}
 
+async function fireSearch(body) {
   const resp = await fetch('https://cafemaker.wakingsands.com/search', {
     body: JSON.stringify(body),
     method: 'POST',
