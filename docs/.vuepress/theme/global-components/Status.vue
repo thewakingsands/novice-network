@@ -22,6 +22,7 @@ img
 <script>
 import 'isomorphic-fetch'
 import { getIconUrl } from '../utils/iconUrl'
+import { searchStatus } from '../utils/cafeMaker'
 
 let count = 0
 
@@ -46,9 +47,7 @@ export default {
   },
   methods: {
     async updateId() {
-      const json = await (await fetch(
-        `https://cafemaker.wakingsands.com/Status/${this.id}?columns=IconID,Name,MaxStacks,CanDispel,Description`
-      )).json()
+      const json = await searchStatus(this.id)
       this.iconUrl = getIconUrl(json.IconID + this.stack)
       this.description = json.Description
     }
