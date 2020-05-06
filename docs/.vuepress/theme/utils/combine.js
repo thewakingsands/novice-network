@@ -1,5 +1,4 @@
-// TODO: 按参数进行缓存
-export function createDebounce(worker, timeout, maxBatchSize = 20) {
+export function createDebounce(worker, filter, timeout, maxBatchSize = 20) {
   let timer = null
   let cachedArgList = []
   let cachedPromises = []
@@ -13,8 +12,8 @@ export function createDebounce(worker, timeout, maxBatchSize = 20) {
 
     try {
       const results = await worker(myArgList)
-      for (let i = 0; i < results.length; i++) {
-        const result = results[i]
+      for (let i = 0; i < myArgList.length; i++) {
+        const result = filter(results, ...myArgList[i])
         myPromises[i][0](result)
       }
     } catch (e) {

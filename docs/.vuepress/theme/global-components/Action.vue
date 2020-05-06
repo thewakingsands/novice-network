@@ -109,7 +109,7 @@ export default {
     async updateId() {
       const result = await searchAction(this.name, this.id, this.jobId)
       if (result) {
-        this.actionId = result.id
+        this.actionId = result.ID
         this.iconUrl = 'https://cafemaker.wakingsands.com' + result.Icon
       } else {
         console.warn('failed to get result for', this.name, this.id, this.jobId)

@@ -2,11 +2,26 @@ import 'isomorphic-fetch'
 import { createDebounce } from './combine'
 
 // need: { Icon }, args: name
-export const searchItem = createDebounce(combineSearchItem, 300, 20)
+export const searchItem = createDebounce(
+  combineSearchItem,
+  filterSearchByName,
+  300,
+  20
+)
 // need: { ID, Icon }, args: name, id, jobId
-export const searchAction = createDebounce(combineSearchAction, 300, 20)
+export const searchAction = createDebounce(
+  combineSearchAction,
+  filterSearchAction,
+  300,
+  20
+)
 // need: { IconID,Name,MaxStacks,CanDispel,Description } , args: id
-export const searchStatus = createDebounce(combineSearchStatus, 300, 30)
+export const searchStatus = createDebounce(
+  combineSearchStatus,
+  filterSearchById,
+  300,
+  30
+)
 
 async function combineSearchItem(argList) {
   // argList: [[name1], [name2]]
@@ -20,12 +35,11 @@ async function combineSearchItem(argList) {
     return []
   }
 
-  const resultByName = {}
-  for (const result of json.Results) {
-    resultByName[result.Name] = result
-  }
+  return json.Results
+}
 
-  return argList.map(args => resultByName[args[0]])
+function filterSearchByName(results, name) {
+  return results.find(r => r.Name === name)
 }
 
 function buildItemSearchUrl(names) {
@@ -50,28 +64,17 @@ async function combineSearchAction(argList) {
     return []
   }
 
-  const resultById = {}
+  return json.Results
+}
 
-  const result = []
-
-  for (const result of json.Results) {
-    resultById[result.ID] = result
+function filterSearchAction(results, name, id, jobId) {
+  if (id) {
+    return results.find(r => r.ID === id)
+  } else {
+    return results.find(
+      x => x.Name === name && (jobId ? x.ClassJobTargetID === jobId : true)
+    )
   }
-
-  for (const args of argList) {
-    const [name, id, jobId] = args
-    if (id) {
-      result.push(resultById[id])
-    } else {
-      result.push(
-        json.Results.find(
-          x => x.Name === name && (jobId ? x.ClassJobTargetID === jobId : true)
-        )
-      )
-    }
-  }
-
-  return result
 }
 
 function buildActionSearchTerm([name, id, jobId]) {
@@ -100,7 +103,7 @@ function buildActionSearchTerm([name, id, jobId]) {
 function buildActionSearchBody(argList) {
   return {
     indexes: 'action',
-    columns: 'ID,Name,Icon',
+    columns: 'ID,Name,Icon,ClassJobTargetID',
     body: {
       query: {
         bool: {
@@ -129,4 +132,8 @@ async function combineSearchStatus(argList) {
   }
 
   return argList.map(([id]) => resultsById[id])
+}
+
+function filterSearchById(results, id) {
+  return results.find(x => x.ID === id)
 }
