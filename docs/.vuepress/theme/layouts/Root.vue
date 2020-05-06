@@ -13,6 +13,7 @@
 
 <script>
 import '@thewakingsands/axis-font-icons'
+import '../utils/mapLoader'
 
 export default {}
 </script>
