@@ -90,7 +90,20 @@ function buildActionSearchTerm([name, id, jobId]) {
       bool: {
         must: [
           { match_phrase: { Name_chs: name } },
-          { term: { IsPlayerAction: 1 } },
+          {
+            bool: {
+              should: [
+                {
+                  range: {
+                    ClassJobLevel: {
+                      gt: 0
+                    }
+                  }
+                },
+                { term: { IsPlayerAction: 1 } }
+              ]
+            }
+          },
           { term: { IsPvP: 0 } },
           ...(jobId ? [{ term: { ClassJobTargetID: jobId } }] : [])
         ]
