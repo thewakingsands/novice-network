@@ -1,4 +1,4 @@
 #!/bin/bash
 set -eo pipefail
-wget -O ContentFinderCondition.csv https://raw.githubusercontent.com/thewakingsands/ffxiv-datamining-cn/master/ContentFinderCondition.csv
+wget -O ContentFinderCondition.csv https://cdn.jsdelivr.net/gh/thewakingsands/ffxiv-datamining-cn@master/ContentFinderCondition.csv
 node instanceList.js

@@ -222,5 +222,6 @@ module.exports = [
 {"index":683,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":450,"underSized":false,"name":"伊甸零式希望乐园 觉醒之章3","type":"大型任务","typeId":5,"banner":112355,"sort":114},
 {"index":690,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":450,"underSized":false,"name":"伊甸零式希望乐园 觉醒之章4","type":"大型任务","typeId":5,"banner":112357,"sort":115},
 {"index":280,"partySize":8,"level":70,"maxLevel":70,"ilvMax":345,"ilvMin":0,"underSized":false,"name":"巴哈姆特绝境战","type":"绝境战","typeId":28,"banner":112261,"sort":1001},
-{"index":539,"partySize":8,"level":70,"maxLevel":70,"ilvMax":375,"ilvMin":0,"underSized":false,"name":"究极神兵绝境战","type":"绝境战","typeId":28,"banner":112296,"sort":1002}
+{"index":539,"partySize":8,"level":70,"maxLevel":70,"ilvMax":375,"ilvMin":0,"underSized":false,"name":"究极神兵绝境战","type":"绝境战","typeId":28,"banner":112296,"sort":1002},
+{"index":694,"partySize":8,"level":80,"maxLevel":80,"ilvMax":0,"ilvMin":0,"underSized":false,"name":"亚历山大绝境战","type":"绝境战","typeId":28,"banner":112374,"sort":1003}
 ]
