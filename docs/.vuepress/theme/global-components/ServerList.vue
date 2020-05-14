@@ -193,7 +193,7 @@ export default {
   },
   async serverPrefetch() {
     const resp = await fetch(
-      'https://act1.ff.sdo.com/FF14DataApi/Servers20200512/api/index.php?act=getServers'
+      'http://act1.ff.sdo.com/FF14DataApi/Servers20200512/api/index.php?act=getServers'
     )
     const json = await resp.json()
     this.handleData(json)
