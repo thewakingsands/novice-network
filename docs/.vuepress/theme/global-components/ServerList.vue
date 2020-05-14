@@ -180,7 +180,6 @@
 </style>
 
 <script>
-import 'isomorphic-fetch'
 import * as dcCache from '../memcache/dc'
 
 export default {
@@ -190,13 +189,6 @@ export default {
       isLoading: true,
       isError: false
     }
-  },
-  async serverPrefetch() {
-    const resp = await fetch(
-      'http://act1.ff.sdo.com/FF14DataApi/Servers20200512/api/index.php?act=getServers'
-    )
-    const json = await resp.json()
-    this.handleData(json)
   },
   methods: {
     handleData(json) {
