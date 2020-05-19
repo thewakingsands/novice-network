@@ -1,0 +1,84 @@
+.erozea-map-outer
+  color white
+  visibility hidden
+  position fixed
+  height 500px
+  width 500px
+  top 0
+  left 0
+  z-index 120
+  user-select none
+  -webkit-user-select none
+
+.eorzea-map-inner
+  width 100%
+  height 100%
+
+.eorzea-map-loading
+  position fixed
+  top 50%
+  left 50%
+  width 300px
+  height 80px
+  margin-left -150px
+  margin-top -40px
+  background #262626
+  color #ccc
+  display flex
+  justify-content space-evenly
+  align-items center
+  border 1px solid #b9a465
+  border-radius 5px
+  box-shadow 3px 3px 8px rgba(0, 0, 0, 0.3)
+  .ff14-loading
+    margin 10px
+
+.eorzea-map-loading-text
+  flex 1
+  margin 10px
+  text-align center
+
+.eorzea-map-move-handler
+  position absolute
+  top 0
+  left 24px
+  width 100%
+  width calc( 100% - 24px )
+  height 24px
+  z-index 2001
+  cursor move
+
+.eorzea-map-resize-handler
+  background url(../images/resizeHandler.png) no-repeat top left
+  cursor se-resize
+  position absolute
+  bottom -6px
+  right -6px
+  width 24px
+  height 24px
+  z-index 2001
+
+.eorzea-map-fixed-window .eorzea-map-move-handler,
+.eorzea-map-fixed-window .eorzea-map-resize-handler
+  display none
+
+.eorzea-map-close-button
+  position absolute
+  top -8px
+  right -8px
+  color transparent
+  z-index 2002
+  line-height 24px
+  font-size 12px
+  cursor pointer
+  background url(../images/buttonClose.png) no-repeat top left
+  width 36px
+  height 36px
+  &:hover
+    background-position-x -36px
+  &:active
+    background-position-x -72px
+
+.eorzea-map-pos
+  &.leaflet-control
+    padding-right 20px

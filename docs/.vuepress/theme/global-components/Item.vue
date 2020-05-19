@@ -32,6 +32,7 @@ img
 </style>
 <script>
 import 'isomorphic-fetch'
+import { searchItem } from '../utils/cafeMaker'
 
 const cache = {}
 
@@ -48,22 +49,12 @@ export default {
       icon: '/images/icons/060051.png'
     }
   },
-  serverPrefetch() {
-    return this.setItemIcon()
-  },
   mounted() {
     this.setItemIcon()
   },
   methods: {
-    async searchItem(name) {
-      const json = await (await fetch(
-        'https://cafemaker.wakingsands.com/search?indexes=Item&limit=1&string=' +
-          encodeURIComponent(name)
-      )).json()
-      return json.Results && json.Results[0]
-    },
     async getItemIcon(name) {
-      const item = await this.searchItem(name)
+      const item = await searchItem(name)
       if (!item || !item.Icon) {
         return '/images/icons/060051.png'
       }

@@ -39,9 +39,7 @@ img
 
 <script>
 import 'isomorphic-fetch'
-
-let count = 0
-let cache = {}
+import { searchAction } from '../utils/cafeMaker'
 
 const jobList = {
   冒险者: 0,
@@ -105,61 +103,17 @@ export default {
     }
   },
   mounted() {
-    let useCache = cache[this.id] || cache[`${this.jobId}${this.name}`]
-    if (useCache) {
-      ;[this.actionId, this.iconUrl] = useCache
-    } else {
-      count++
-      this.timer = setTimeout(async () => {
-        count--
-        this.timer = null
-        useCache = cache[this.id] || cache[`${this.jobId}${this.name}`]
-        if (useCache) {
-          ;[this.actionId, this.iconUrl] = useCache
-        } else {
-          await this.updateId()
-          this.saveCache()
-        }
-      }, count * 100)
-    }
+    this.updateId()
   },
   methods: {
     async updateId() {
-      if (this.id) {
-        this.actionId = this.id
-        const json = await (await fetch(
-          `https://cafemaker.wakingsands.com/Action/${this.actionId}?columns=Icon`
-        )).json()
-        this.iconUrl = 'https://cafemaker.wakingsands.com' + json.Icon
-        return
-      }
-
-      let url = `https://cafemaker.wakingsands.com/search?indexes=Action&string=${this.name}&filters=IsPvP=0,ClassJobLevel%3E0`
-      if (this.jobId) {
-        url = url + ',ClassJobTargetID=' + this.jobId
-      }
-
-      const res = await fetch(url)
-      const json = await res.json()
-      if (json.Results && json.Results[0]) {
-        this.actionId = json.Results[0].ID
-        this.iconUrl =
-          'https://cafemaker.wakingsands.com' + json.Results[0].Icon
-      }
-    },
-    saveCache() {
-      if (this.id) {
-        cache[this.id] = [this.actionId, this.iconUrl]
+      const result = await searchAction(this.name, this.id, this.jobId)
+      if (result) {
+        this.actionId = result.ID
+        this.iconUrl = 'https://cafemaker.wakingsands.com' + result.Icon
       } else {
-        cache[`${this.jobId}${this.name}`] = [this.actionId, this.iconUrl]
+        console.warn('failed to get result for', this.name, this.id, this.jobId)
       }
-    }
-  },
-  beforeDestroy() {
-    if (this.timer) {
-      clearTimeout(this.timer)
-      this.timer = null
-      count--
     }
   },
   computed: {
