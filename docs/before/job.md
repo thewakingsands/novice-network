@@ -15,7 +15,7 @@ FF14随着版本更新追加了忍者、暗黑骑士、占星术士、机工士�
 
 ## 战斗职能
 
-FF14的职业分工与其他MMORPG很相似，都是<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/tank.png')" height="20">坦克(T)+<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/healer.png')" height="20">治疗(H/N)+<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/dps.png')" height="20">输出(D/DPS)分工的制度。一般的4人副本中，采取1T1奶2DPS的轻锐小队；而高难度副本中，采用8人满编小队组合，需要2T、2奶和4个DPS。
+FF14的职业分工与其他MMORPG很相似，都是<Role name="tank" />坦克(T)+<Role name="healer" />治疗(H/N)+<Role name="dps" />输出(D/DPS)分工的制度。一般的4人副本中，采取1T1奶2DPS的轻锐小队；而高难度副本中，采用8人满编小队组合，需要2T、2奶和4个DPS。
 
 ::: segment orange
 ### 职业操作难度、强弱与队伍需求
@@ -38,7 +38,7 @@ FF14在设计的时候非常注重职业平衡，这种平衡包括了操作、�
 
 <IconHeader img="/images/jobs/dps.png">进攻职业 (DPS)</IconHeader>
 
-DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和不浪费GCD正确打出输出循环是所有DPS的基本功。在5.0中，DPS被划分为 <img class="no-zoom sm-icon" :src="$withBase('/images/jobs/melee.png')" height="20"> 近战物理、<img class="no-zoom sm-icon" :src="$withBase('/images/jobs/ranged.png')" height="20"> 远程物理和 <img class="no-zoom sm-icon" :src="$withBase('/images/jobs/magic.png')" height="20"> 远程魔法3种类型。
+DPS就是在副本中攻击BOSS的主力，躲开技能、处理各种机制和不浪费GCD正确打出输出循环是所有DPS的基本功。在5.0中，DPS被划分为 <Role name="melee" /> 近战物理、<Role name="ranged" /> 远程物理和 <Role name="magic" /> 远程魔法3种类型。
 
 <IconHeader img="/images/jobs/melee.png">近战物理进攻职业</IconHeader>
 
