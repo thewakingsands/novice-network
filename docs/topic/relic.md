@@ -22,7 +22,7 @@
 
 ## 古武+1 —— 复苏的上古武器
 
-<quest name="复苏的上古武器" type="plus" /> <span style="color:silver;">盖罗尔特 黑衣森林北部林区(X:30.3 , Y:20.2)</span>
+<quest name="复苏的上古武器" type="plus" /> <span style="color:silver;">盖罗尔特 <Pos name="黑衣森林北部林区" :x="30.3" :y="20.2" /></span>
 
 **NOTE：只有2.0职业，即骑士、战士、武僧、龙骑、黑魔、白魔、诗人、召唤、学者、忍者可以接这个任务**
 
@@ -102,7 +102,7 @@
 
 ::: segment blue 
 ++要点：++
-- 如果你没有打过真三神的话，需要前往沙之家(X:6.9 , Y:6.1)找敏菲利亚接任务<Quest name="蛮神的真正力量" plus />，然后按顺序完成任务即可。
+- 如果你没有打过真三神的话，<Pos name="需要前往沙之家" :x="6.9" :y="6.1" />找敏菲利亚接任务<Quest name="蛮神的真正力量" plus />，然后按顺序完成任务即可。
 - 换淬火油的时候，记得顺手换3个<Item name="萨维奈灵药" />。
 - 如果任务中途不小心把古武半成品弄丢了，可以在老头旁边找==胖乎乎的莫古力==，他会帮你捡回来(理论上…我只是看了一下任务文本，并没有真的尝试过弄丢它)。
 :::
@@ -115,7 +115,7 @@
 ## 古武+1.5 —— 寻找英雄的武器
 
 
-<p><Quest name="寻找英雄的武器" type="plus" /> <span style="color:silver;">盖罗尔特 黑衣森林北部林区(X:30.3 , Y:20.2)</span></p>
+<p><Quest name="寻找英雄的武器" type="plus" /> <span style="color:silver;">盖罗尔特 <Pos name="黑衣森林北部林区" :x="30.3" :y="20.2" /></span></p>
 
 > ++完成本步骤需要++：传送费若干
 
@@ -131,7 +131,7 @@
 
 ## 古武+2 —— 黄道文书
 
-<Quest name="黄道文书" type="plus" /> <span style="color:silver;">加尔赞 黑衣森林北部林区(X:29.6 , Y:19.7)</span>
+<Quest name="黄道文书" type="plus" /> <span style="color:silver;">加尔赞 <Pos name="黑衣森林北部林区" :x="29.6" :y="19.7" /></span>
 
 **NOTE：古武最大门槛，请修身养肝戒骄戒躁**
 

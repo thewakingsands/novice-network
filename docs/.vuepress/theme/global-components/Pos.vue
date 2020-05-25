@@ -1,13 +1,14 @@
 <template>
   <span
     class="eorzea-map-trigger"
-    :data-map-name="name"
+    :data-map-name="sub ? name + ',' + sub : name"
     :data-map-id="id"
     :data-map-x="x"
     :data-map-y="y"
   >
     <i class="xiv link"></i>
-    {{ name }}
+    <span>{{ name }}</span
+    ><span v-if="sub">[{{ sub }}]</span>
     <span v-if="x && y"> (X: {{ x }}, Y: {{ y }})</span>
   </span>
 </template>
@@ -19,7 +20,7 @@
   &:hover
     background #e3f2fd
 i.xiv.link
-  vertical-align text-top
+  vertical-align text-bottom
   color #ffa042
 </style>
 
@@ -27,6 +28,10 @@ i.xiv.link
 export default {
   props: {
     name: String,
+    sub: {
+      type: String,
+      required: false
+    },
     x: {
       type: Number,
       required: false

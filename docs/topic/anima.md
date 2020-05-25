@@ -14,16 +14,16 @@
 ## 前置任务
 
 
-<p><Quest name="其名元灵武器" type="plus" /> <span style="color:silver;">罗薇娜 田园郡(X:5.7 , Y:5.6)</span></p>
+<p><Quest name="其名元灵武器" type="plus" /> <span style="color:silver;">罗薇娜 <Pos name="田园郡" :x="5.7" :y="5.6" /></span></p>
 
-**NOTE：只有3.0职业，即骑士、战士、暗骑、武僧、龙骑、黑魔、白魔、诗人、召唤、学者、忍者、机工、占星可以接这个任务。**
+<strong>NOTE：只有3.0职业，即骑士、战士、暗骑、武僧、龙骑、黑魔、白魔、诗人、召唤、学者、忍者、机工、占星可以接这个任务。</strong>
 
 需要完成3.0主线<Quest name="苍穹之禁城" type="main" />才能开启该任务线。
 
 ## 元灵武器+0 —— 创造新武器(IL170)
 
 
-<p><Quest name="创造新武器" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="创造新武器" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：一把古武+6，或一些传送费。
 
@@ -32,13 +32,13 @@
 
 - 把任意一把古武+6(本我)交给她，就能换到两块水晶。
 - 参加3.0地区的FATE，有几率掉落水晶，每种水晶1块，一共拿到6块水晶，交给辛冬妮。
- **打FATE掉落水晶不限职业，只要接了这个任务并参加对应地图FATE就有几率掉水晶。**
+ <strong>打FATE掉落水晶不限职业，只要接了这个任务并参加对应地图FATE就有几率掉水晶。</strong>
 
 从辛冬妮那拿到两块水晶之后，回去交给臭屁小鬼，就可以获得魂武基础版(IL170)。
 
 ## 元灵武器+0.5 —— 英雄的轨迹(IL200)
 
-<p><Quest name="英雄的轨迹" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="英雄的轨迹" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：等招募。
 
@@ -52,7 +52,7 @@
 ## 新元灵武器 —— 闪耀的元灵武器(IL210)
 
 
-<p><Quest name="闪耀的元灵武器" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="闪耀的元灵武器" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：~~计算器已损坏。计算失败，计算失败。~~
 
@@ -82,34 +82,34 @@
   <tr>
     <td rowspan=9><span style="text-align:center;">附<br>魔<br>橡<br>胶</span></td>
     <td rowspan=7><span style="text-align:center;">神<br>秘<br>骨<br>片<br>x10</span></td>
-    <td>白钢刀币 ×3<br>**蜥蜴人族友好度3.友好以上，接48级日常任务可获得。**</td>
+    <td>白钢刀币 ×3<br><strong>蜥蜴人族友好度3.友好以上，接48级日常任务可获得。</strong></td>
     <td>蜥蜴人杂用商人</td>
-    <td>南萨纳兰 X:23.3 , Y:14.2</td>
+    <td><Pos name="南萨纳兰" :x="23.3" :y="14.2" /></td>
   </tr>
   <tr>
-    <td>白骨币 ×6<br>**瓦努族日常任务可获得。**</td>
+    <td>白骨币 ×6<br><strong>瓦努族日常任务可获得。</strong></td>
     <td>商人鲁纳瓦努</td>
-    <td>阿巴拉提亚云海 X:7.0 , Y:14.3</td>
+    <td><Pos name="阿巴拉提亚云海" :x="7.0" :y="14.3" /></td>
   </tr>
   <tr>
-    <td>高精度戈耳狄螺栓 ×3<br>**完成亚历山大机神城 启动之章1可获得。**</td>
+    <td>高精度戈耳狄螺栓 ×3<br><strong>完成亚历山大机神城 启动之章1可获得。</strong></td>
     <td>赛维娜</td>
-    <td>田园郡 X:5.7 , Y:5.4</td>
+    <td><Pos name="田园郡" :x="5.7" :y="5.4" /></td>
   </tr>
   <tr>
-    <td>伪黑铜币 ×6<br>**骨颌族日常任务可获得。**</td>
+    <td>伪黑铜币 ×6<br><strong>骨颌族日常任务可获得。</strong></td>
     <td>做买卖</td>
-    <td>龙堡参天高地 X:23.7 , Y:19.1</td>
+    <td><Pos name="龙堡参天高地" :x="23.7" :y="19.1" /></td>
   </tr>
   <tr>
-    <td>精雕库啵果币 ×18<br>**莫古力族日常任务可获得(1次3个)。**</td>
+    <td>精雕库啵果币 ×18<br><strong>莫古力族日常任务可获得(1次3个)。</strong></td>
     <td>贪吃的莫古姆力</td>
-    <td>翻云雾海 X:16.0 , Y:28.5</td>
+    <td><Pos name="翻云雾海" :x="16.0" :y="28.5" /></td>
   </tr>
   <tr>
     <td>亚拉戈诗学神典石 ×150</td>
     <td>奥里亚娜<br>希丝梅娜</td>
-    <td>摩杜纳：摩杜纳 X:22.7 , Y:6.7<br>龙堡：田园郡 X:5.8 , Y:5.3</td>
+    <td>摩杜纳：<Pos name="摩杜纳" :x="22.7" :y="6.7" /><br>龙堡：<Pos name="田园郡" :x="5.8" :y="5.3" /></td>
   </tr>
   <tr>
     <td>同盟徽章 ×300</td>
@@ -141,34 +141,34 @@
   <tr>
     <td rowspan=10><span style="text-align:center;">亚<br>拉<br>戈<br>上<br>级<br>硬<br>化<br>药</span></td>
     <td rowspan=7><span style="text-align:center;">神<br>秘<br>贝<br>壳<br>x10</span></td>
-    <td>虹贝壳币 ×3<br>**鱼人族友好度3.友好以上，接48级日常任务可获得。**</td>
+    <td>虹贝壳币 ×3<br><strong>鱼人族友好度3.友好以上，接48级日常任务可获得。</strong></td>
     <td>鱼人杂用商人</td>
-    <td>西拉诺西亚 X:17.0 , Y:22.4</td>
+    <td><Pos name="西拉诺西亚" :x="17.0" :y="22.4" /></td>
   </tr>
   <tr>
-    <td>白骨币 ×6<br>**瓦努族日常任务可获得。**</td>
+    <td>白骨币 ×6<br><strong>瓦努族日常任务可获得。</strong></td>
     <td>商人鲁纳瓦努</td>
-    <td>阿巴拉提亚云海 X:7.0 , Y:14.3</td>
+    <td><Pos name="阿巴拉提亚云海" :x="7.0" :y="14.3" /></td>
   </tr>
   <tr>
-    <td>高精度戈耳狄透镜 ×3<br>**完成亚历山大机神城 启动之章2可获得。**</td>
+    <td>高精度戈耳狄透镜 ×3<br><strong>完成亚历山大机神城 启动之章2可获得。</strong></td>
     <td>赛维娜</td>
-    <td>田园郡 X:5.7 , Y:5.4</td>
+    <td><Pos name="田园郡" :x="5.7" :y="5.4" /></td>
   </tr>
   <tr>
-    <td>伪黑铜币 ×6<br>**骨颌族日常任务可获得。**</td>
+    <td>伪黑铜币 ×6<br><strong>骨颌族日常任务可获得。</strong></td>
     <td>做买卖</td>
-    <td>龙堡参天高地 X:23.7 , Y:19.1</td>
+    <td><Pos name="龙堡参天高地" :x="23.7" :y="19.1" /></td>
   </tr>
   <tr>
-    <td>精雕库啵果币 ×18<br>**莫古力族日常任务可获得(1次3个)。**</td>
+    <td>精雕库啵果币 ×18<br><strong>莫古力族日常任务可获得(1次3个)。</strong></td>
     <td>贪吃的莫古姆力</td>
-    <td>翻云雾海 X:16.0 , Y:28.5</td>
+    <td><Pos name="翻云雾海" :x="16.0" :y="28.5" /></td>
   </tr>
   <tr>
     <td>亚拉戈诗学神典石 ×150</td>
     <td>奥里亚娜<br>希丝梅娜</td>
-    <td>摩杜纳：摩杜纳 X:22.7 , Y:6.7<br>龙堡：田园郡 X:5.8 , Y:5.3</td>
+    <td>摩杜纳：<Pos name="摩杜纳" :x="22.7" :y="6.7" /><br>龙堡：<Pos name="田园郡" :x="5.8" :y="5.3" /></td>
   </tr>
   <tr>
     <td>陈旧的飞龙革地图(G7)<br>陈旧的巨龙革地图(G8)  (较小几率)</td>
@@ -200,34 +200,34 @@
   <tr>
     <td rowspan=9><span style="text-align:center;">亚<br>拉<br>戈<br>上<br>级<br>魔<br>触<br>媒</span></td>
     <td rowspan=7><span style="text-align:center;">神<br>秘<br>种<br>子<br>x10</span></td>
-    <td>金叶币 ×3<br>**妖精族友好度3.友好以上，接48级日常任务可获得。**</td>
+    <td>金叶币 ×3<br><strong>妖精族友好度3.友好以上，接48级日常任务可获得。</strong></td>
     <td>妖精杂用商人</td>
-    <td>黑衣森林东部林区<br>X:22.4 , Y:26.4</td>
+    <td><Pos name="黑衣森林东部林区" :x="22.4" :y="26.4" /></td>
   </tr>
   <tr>
-    <td>白骨币 ×6<br>**瓦努族日常任务可获得。**</td>
+    <td>白骨币 ×6<br><strong>瓦努族日常任务可获得。</strong></td>
     <td>商人鲁纳瓦努</td>
-    <td>阿巴拉提亚云海 X:7.0 , Y:14.3</td>
+    <td><Pos name="阿巴拉提亚云海" :x="7.0" :y="14.3" /></td>
   </tr>
   <tr>
-    <td>高精度戈耳狄长杆 ×3<br>**完成亚历山大机神城 启动之章4可获得。**</td>
+    <td>高精度戈耳狄长杆 ×3<br><strong>完成亚历山大机神城 启动之章4可获得。</strong></td>
     <td>赛维娜</td>
-    <td>田园郡 X:5.7 , Y:5.4</td>
+    <td><Pos name="田园郡" :x="5.7" :y="5.4" /></td>
   </tr>
   <tr>
-    <td>伪黑铜币 ×6<br>**骨颌族日常任务可获得。**</td>
+    <td>伪黑铜币 ×6<br><strong>骨颌族日常任务可获得。</strong></td>
     <td>做买卖</td>
-    <td>龙堡参天高地 X:23.7 , Y:19.1</td>
+    <td><Pos name="龙堡参天高地" :x="23.7" :y="19.1" /></td>
   </tr>
   <tr>
-    <td>精雕库啵果币 ×18<br>**莫古力族日常任务可获得(1次3个)。**</td>
+    <td>精雕库啵果币 ×18<br><strong>莫古力族日常任务可获得(1次3个)。</strong></td>
     <td>贪吃的莫古姆力</td>
-    <td>翻云雾海 X:16.0 , Y:28.5</td>
+    <td><Pos name="翻云雾海" :x="16.0" :y="28.5" /></td>
   </tr>
   <tr>
     <td>亚拉戈诗学神典石 ×150</td>
     <td>奥里亚娜<br>希丝梅娜</td>
-    <td>摩杜纳：摩杜纳 X:22.7 , Y:6.7<br>龙堡：田园郡 X:5.8 , Y:5.3</td>
+    <td>摩杜纳：<Pos name="摩杜纳" :x="22.7" :y="6.7" /><br>龙堡：<Pos name="田园郡" :x="5.8" :y="5.3" /></td>
   </tr>
   <tr>
     <td>同盟徽章 ×300</td>
@@ -259,34 +259,34 @@
   <tr>
     <td rowspan=10><span style="text-align:center;">神<br>圣<br>水</span></td>
     <td rowspan=7><span style="text-align:center;">神<br>秘<br>原<br>石<br>x10</span></td>
-    <td>钴铁锤币 ×3<br>**地灵族友好度3.友好以上，接48级日常任务可获得。**</td>
+    <td>钴铁锤币 ×3<br><strong>地灵族友好度3.友好以上，接48级日常任务可获得。</strong></td>
     <td>地灵杂用商人</td>
-    <td>拉诺西亚外地 X:21.6 , Y:17.8</td>
+    <td><Pos name="拉诺西亚外地" :x="21.6" :y="17.8" /></td>
   </tr>
   <tr>
-    <td>白骨币 ×6<br>**瓦努族日常任务可获得。**</td>
+    <td>白骨币 ×6<br><strong>瓦努族日常任务可获得。</strong></td>
     <td>商人鲁纳瓦努</td>
-    <td>阿巴拉提亚云海 X:7.0 , Y:14.3</td>
+    <td><Pos name="阿巴拉提亚云海" :x="7.0" :y="14.3" /></td>
   </tr>
   <tr>
-    <td>高精度戈耳狄弹簧 ×3<br>**完成亚历山大机神城 启动之章3可获得。**</td>
+    <td>高精度戈耳狄弹簧 ×3<br><strong>完成亚历山大机神城 启动之章3可获得。</strong></td>
     <td>赛维娜</td>
-    <td>田园郡 X:5.7 , Y:5.4</td>
+    <td><Pos name="田园郡" :x="5.7" :y="5.4" /></td>
   </tr>
   <tr>
-    <td>伪黑铜币 ×6<br>**骨颌族日常任务可获得。**</td>
+    <td>伪黑铜币 ×6<br><strong>骨颌族日常任务可获得。</strong></td>
     <td>做买卖</td>
-    <td>龙堡参天高地 X:23.7 , Y:19.1</td>
+    <td><Pos name="龙堡参天高地" :x="23.7" :y="19.1" /></td>
   </tr>
   <tr>
-    <td>精雕库啵果币 ×18<br>**莫古力族日常任务可获得(1次3个)。**</td>
+    <td>精雕库啵果币 ×18<br><strong>莫古力族日常任务可获得(1次3个)。</strong></td>
     <td>贪吃的莫古姆力</td>
-    <td>翻云雾海 X:16.0 , Y:28.5</td>
+    <td><Pos name="翻云雾海" :x="16.0" :y="28.5" /></td>
   </tr>
   <tr>
     <td>亚拉戈诗学神典石 ×150</td>
     <td>奥里亚娜<br>希丝梅娜</td>
-    <td>摩杜纳：摩杜纳 X:22.7 , Y:6.7<br>龙堡：田园郡 X:5.8 , Y:5.3</td>
+    <td>摩杜纳：<Pos name="摩杜纳" :x="22.7" :y="6.7" /><br>龙堡：<Pos name="田园郡" :x="5.8" :y="5.3" /></td>
   </tr>
   <tr>
     <td>陈旧的巨龙革地图(G8)</td>
@@ -313,7 +313,7 @@
 ## 元灵武器·超导 —— 人造元灵的声音(IL230)
 
 
-<p><Quest name="人造元灵的声音" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="人造元灵的声音" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：5周或1750诗学(或更快/更少诗学)。
 
@@ -326,7 +326,7 @@
 ## 百炼成钢的元灵武器 —— 培育人造元灵(IL240)
 
 
-<p><Quest name="培育人造元灵" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="培育人造元灵" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 
 > ++完成本步骤需要++：6000诗学(硬灵性岩)。水晶砂所需材料计算失败。
@@ -424,7 +424,7 @@
   <tr>
     <td>月长石</td>
     <td>月长石 x5</td>
-    <td>鸟人蛮族日常获得<br>4000军票(***需要军衔在协尉以上**)</td>
+    <td>鸟人蛮族日常获得<br>4000军票(<strong>*需要军衔在协尉以上</strong>)</td>
   </tr>
   <tr>
     <td rowspan=3>蛮神1</td>
@@ -473,7 +473,7 @@
   <tr>
     <td rowspan=4>神秘素材</td>
     <td>神秘骨片 x1</td>
-    <td rowspan=4>参见魂武上一阶段<br>**不推荐使用这种方式兑换，除非有过量神秘素材盈余。<br>有诗学盈余推荐使用高位附魔墨水+萨维奈灵药的组合兑换**</td>
+    <td rowspan=4>参见魂武上一阶段<br><strong>不推荐使用这种方式兑换，除非有过量神秘素材盈余。<br>有诗学盈余推荐使用高位附魔墨水+萨维奈灵药的组合兑换</strong></td>
   </tr>
   <tr>
     <td>神秘贝壳 x1</td>
@@ -494,7 +494,7 @@
 ## 元灵武器·灵慧 —— 人造元灵的未来(IL260)
 
 
-<p><Quest name="人造元灵的未来" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="人造元灵的未来" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：2000诗学或2周。
 
@@ -514,7 +514,7 @@
 
 ## 人造元灵终绽放(IL270)
 
-<p><Quest name="人造元灵终绽放" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="人造元灵终绽放" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：刷刷刷，1500诗学或60000军票(或混合)。
 
@@ -522,7 +522,7 @@
 
 这里需要两个步骤同时进行，一个是刷光，另一个是制造<Item name="新生魂石" />。
 
-制造新生魂石需要在身后的加工系统(魔大陆阿济兹拉 X:7.0 , Y:11.4)接任务<quest name="制造新生魂石" />，然后收集15个<Item name="神秘结晶" />交给它就可以了。神秘结晶可以使用100诗学、4000军票(**需要军衔在协尉以上**)获得，也可以通过G6、G8挖宝获得。
+制造新生魂石需要在身后的加工系统(<Pos name="魔大陆阿济兹拉" :x="7.0" :y="11.4" />)接任务<quest name="制造新生魂石" />，然后收集15个<Item name="神秘结晶" />交给它就可以了。神秘结晶可以使用100诗学、4000军票(<strong>需要军衔在协尉以上</strong>)获得，也可以通过G6、G8挖宝获得。
 
 ::: segment blue
 
@@ -588,7 +588,7 @@
 ## 元灵武器·灵光 —— 人造元灵搭档(IL275)
 
 
-<p><Quest name="人造元灵搭档" type="plus" />  <span style="color:silver;">阿尔达希尔 魔大陆阿济兹拉(X:7.5 , Y:11.5)</span></p>
+<p><Quest name="人造元灵搭档" type="plus" />  <span style="color:silver;">阿尔达希尔 <Pos name="魔大陆阿济兹拉" :x="7.5" :y="11.5" /></span></p>
 
 > ++完成本步骤需要++：500诗学，一辆黑车。
 
