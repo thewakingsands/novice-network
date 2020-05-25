@@ -84,9 +84,9 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 副本开放任务请查看副本攻略，特殊战斗内容（如青魔、死宫、天宫、PVP等）开放请查看对应主题文章，以下是其他战斗相关功能：
 
-* 60级，<quest name="一二三，木头人" type="plus" />，开放60级副本特化木桩战斗。战斗入口在指路的好心冒险者（龙堡内陆低地 X:18.4, Y:10.9）。
-  * 70级，<quest name="木人修行" type="plus" />，开放70级副本特化木桩战斗。战斗入口在满身伤痕的壮汉（基拉巴尼亚边区 X:30.1, Y:11.3）。
-  * 80级，<quest name="实力测试训练场" type="plus" />，开放80级副本特化木桩战斗。战斗入口在态度温和的退役士兵（珂露西亚岛 X:23.8, Y:37.8）。
+* 60级，<quest name="一二三，木头人" type="plus" />，开放60级副本特化木桩战斗。战斗入口在指路的好心冒险者<Pos name="龙堡内陆低地" :x="18.4" :y="10.9" />。
+  * 70级，<quest name="木人修行" type="plus" />，开放70级副本特化木桩战斗。战斗入口在满身伤痕的壮汉<Pos name="基拉巴尼亚边区" :x="30.1" :y="11.3" />。
+  * 80级，<quest name="实力测试训练场" type="plus" />，开放80级副本特化木桩战斗。战斗入口在态度温和的退役士兵<Pos name="珂露西亚岛" :x="23.8" :y="37.8" />。
 
 ### 住宅区开放任务：
 
@@ -118,7 +118,8 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 22级，<quest name="酒馆的一员" />  → <quest name="遗迹调查前线" /> ，送<item name="沙蚤虫虫" />。
 * 47级，<quest name="黄沙之光" />  → <quest name="尸念之情" /> ，送<item name="幼小仙人掌" />。
 * 70级，<quest name="王在顶点沉睡" type="plus" /> 怪物猎人联动活动， 送<item name="艾露猫" />，[官网活动页面](http://act.ff.sdo.com/project/20181113MHW/index.html)。
-* 70级，完成<quest name="昏暗森林的守护者" type="plus" />和<quest name="双胞胎与双元灵" type="plus" />两个风脉任务之后继续做到头，会出现新任务<quest name="隆卡的守护者们" />，送<item name="隆卡的水蛇？" />。
+* <i class="xiv quest-sync"></i>70级，完成<quest name="昏暗森林的守护者" type="plus" />和<quest name="双胞胎与双元灵" type="plus" />两个风脉任务之后继续做到头，会出现新任务<quest name="隆卡的守护者们" />，送<item name="隆卡的水蛇？" />。
+* <i class="xiv quest-sync"></i>70级，完成<quest name="寻寻觅觅" type="plus" />及其后续任务<quest name="海狸的呼唤" /> → <quest name="全军覆没" />，可解锁兑换NPC，用<item name="缇坦妮雅的羽毛" />兑换<item name="大河狸" />。
 
 ### 情感动作赠送支线
 
@@ -126,7 +127,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 14级，<quest name="为谁而舞" />，送绅士之舞。
 * 14级，<quest name="舞女的梦想舞台" />，送宫廷之舞。
 * 36级，<quest name="冬日的活动" />，送投掷/投雪球。
-* 70级，<quest name="矮人族的不良青年" type="plus" /> → <quest name="啦哩吼！！" />，送啦哩吼。
+* <i class="xiv quest-sync"></i>70级，<quest name="矮人族的不良青年" type="plus" /> → <quest name="啦哩吼！！" />，送啦哩吼。
 
 ### 特殊装备赠送支线
 
