@@ -122,21 +122,21 @@ Buff类技能主要分为三类：耐久Buff、制作加工Buff和其他。
 | 60 - 70 级 | 重建伊修加德<br>[鲶鱼精蛮族](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E9%B2%B6%E5%A4%A7%E7%A5%AD%E6%89%A7%E8%A1%8C%E5%A7%94%E5%91%98%E4%BC%9A)<br>[老主顾](https://ff14.huijiwiki.com/wiki/%E8%80%81%E4%B8%BB%E9%A1%BE%E4%BA%A4%E6%98%93)<br>理符<br>[军队筹备](/advanced/grandCompany.md) |
 | 70 - 80 级 | 重建伊修加德<br>[中庸工艺馆](https://ff14.huijiwiki.com/wiki/%E4%B8%AD%E5%BA%B8%E5%B7%A5%E8%89%BA%E9%A6%86%E4%BA%A4%E6%98%93)<br>[老主顾](https://ff14.huijiwiki.com/wiki/%E8%80%81%E4%B8%BB%E9%A1%BE%E4%BA%A4%E6%98%93)<br>理符<br>[军队筹备](/advanced/grandCompany.md) |
 
-50级后的职业任务会给关键技能，并且提供大量经验，十分必要及时完成。另外在70级之后，以<quest name="中庸工艺馆" />替代了原本的职业任务系统，同样推荐及时完成。
+50级后的职业任务会给关键技能，并且提供大量经验，十分必要及时完成。另外在70级之后，以<quest name="中庸工艺馆" type="plus" />替代了原本的职业任务系统，同样推荐及时完成。
 
 所有的理符、筹备任务上交HQ（<i class="xiv hq"></i>）成品都会获得翻倍奖励。军队筹备每天凌晨4天更新。
 
 ::: collapse 特殊内容开启任务
 
-- 重建伊修加德需要先完成3.0主线任务<quest name="绝命怒嚎" type="main"/>之后，在<pos name="伊修加德基础层" />接任务<quest name="仰望天穹之街" type="plus" />之后开启。
-- 莫古力蛮族需要完成55级主线<quest name="狩猎邪龙" type="main" />及支线<quest name="目标入团" type="plus" />及其后续十几个任务之后开启，达到誓约声望后可购买坐骑<item name="孢云棉花糖种子" />。
-- 鲶鱼精蛮族需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
-- 老主顾需要在50级后，从伊修加德接支线任务<quest name="一流工匠的新工作" type="plus" />后，再根据主线进度各自开启。
- - <quest name="打开新世界的大门" type="plus" />→<quest name="熙洛·阿里亚珀的老主顾" type="plus" />。
- - <quest name="红莲之狂潮" type="main" />+<quest name="熙洛·阿里亚珀的老主顾" type="plus" />+<quest name="阿答儿金部的继承者" />→<quest name="亚德基拉的老主顾" type="plus" />。
- - <quest name="英雄归来" type="main" />+<quest name="生意兴隆" />→<quest name="梅·娜格的老主顾" type="plus" />。
- - <quest name="梅·娜格的老主顾" type="plus" />+<quest name="紫水宫的异变" type="plus" />及其后续支线→<quest name="红的老主顾" type="plus" />。
- - <quest name="迈向未来" type="main" />+<quest name="诚信为本——莫雯卓越商会" />→<quest name="凯·希尔的老主顾" type="plus" />。
+* 重建伊修加德需要先完成3.0主线任务<quest name="绝命怒嚎" type="main"/>之后，在<pos name="伊修加德基础层" />接任务<quest name="仰望天穹之街" type="plus" />之后开启。
+* 莫古力蛮族需要完成55级主线<quest name="狩猎邪龙" type="main" />及支线<quest name="目标入团" type="plus" />及其后续十几个任务之后开启，达到誓约声望后可购买坐骑<item name="孢云棉花糖种子" />。
+* 鲶鱼精蛮族需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
+* 老主顾需要在50级后，从伊修加德接支线任务<quest name="一流工匠的新工作" type="plus" />后，再根据主线进度各自开启。
+  - <quest name="打开新世界的大门" type="plus" />→<quest name="熙洛·阿里亚珀的老主顾" type="plus" />。
+  - <quest name="红莲之狂潮" type="main" />+<quest name="熙洛·阿里亚珀的老主顾" type="plus" />+<quest name="阿答儿金部的继承者" />→<quest name="亚德基拉的老主顾" type="plus" />。
+  - <quest name="英雄归来" type="main" />+<quest name="生意兴隆" />→<quest name="梅·娜格的老主顾" type="plus" />。
+  - <quest name="梅·娜格的老主顾" type="plus" />+<quest name="紫水宫的异变" type="plus" />及其后续支线→<quest name="红的老主顾" type="plus" />。
+  - <quest name="迈向未来" type="main" />+<quest name="诚信为本——莫雯卓越商会" />→<quest name="凯·希尔的老主顾" type="plus" />。
 
  :::
 
@@ -153,6 +153,7 @@ Buff类技能主要分为三类：耐久Buff、制作加工Buff和其他。
 
 - [5.1生产模拟器](http://ffxiv.tk/crafter/#/simulator) [备用地址](http://ffxiv.cf/crafter)：中文目前可用的5.1版本生产模拟器。
 - [5.1版本生产从零开始升级全攻略](https://bbs.nga.cn/read.php?tid=20106197)（写攻略的人负责挣钱，抄攻略的人负责花钱）。
+
 <!--
 :::segment grey
 
