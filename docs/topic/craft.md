@@ -154,10 +154,8 @@ Buff类技能主要分为三类：耐久Buff、制作加工Buff和其他。
 - [5.1生产模拟器](http://ffxiv.tk/crafter/#/simulator) [备用地址](http://ffxiv.cf/crafter)：中文目前可用的5.1版本生产模拟器。
 - [5.1版本生产从零开始升级全攻略](https://bbs.nga.cn/read.php?tid=20106197)（写攻略的人负责挣钱，抄攻略的人负责花钱）。
 
-<!--
 :::segment grey
 
-本文部分内容来自，原文链接：[5.1版本生产从零开始升级全攻略](https://bbs.nga.cn/read.php?tid=20106197/)，部分内容根据国服情况有所调整。
+本文部分内容来自红玉海 Suomi，原文链接：[5.1版本生产从零开始升级全攻略](https://bbs.nga.cn/read.php?tid=20106197/)，部分内容根据国服情况有所调整。
 
 :::
--->
