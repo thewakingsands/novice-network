@@ -1167,6 +1167,21 @@
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.3.1.tgz#eee95c9c79a316a64ab046696a90a2ee1db35c34"
   integrity sha512-iOIvMWUTPHrGxjDprFoGTcuI8Y8/6e6JjLO4mO6qe6qVqR1yCQ8cJzVYXIizjEHUFYJ04uZ3jF9gBV8npS+3ZQ==
 
+"@vuepress/shared-utils@^1.2.0":
+  version "1.5.0"
+  resolved "https://registry.npm.taobao.org/@vuepress/shared-utils/download/@vuepress/shared-utils-1.5.0.tgz#b8e1f6058199e03447630394f2ab66c6749ad0e3"
+  integrity sha1-uOH2BYGZ4DRHYwOU8qtmxnSa0OM=
+  dependencies:
+    chalk "^2.3.2"
+    diacritics "^1.3.0"
+    escape-html "^1.0.3"
+    fs-extra "^7.0.1"
+    globby "^9.2.0"
+    gray-matter "^4.0.1"
+    hash-sum "^1.0.2"
+    semver "^6.0.0"
+    upath "^1.1.0"
+
 "@vuepress/shared-utils@^1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.3.1.tgz#930038dfadf28f39147e6cb781e9930259995a7e"
@@ -8610,6 +8625,13 @@ vuepress-plugin-container@^2.0.2:
   integrity sha512-Df5KoIDMYiFg45GTfFw2hIiLGSsjhms4f3ppl2UIBf5nWMxi2lfifcoo8MooMSfxboxRZjoDccqQfu0fypaKrQ==
   dependencies:
     markdown-it-container "^2.0.0"
+
+vuepress-plugin-dehydrate@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-dehydrate/download/vuepress-plugin-dehydrate-1.1.4.tgz#4447d95ed78e370ad68f480f33f8ec59e37423c6"
+  integrity sha1-REfZXteONwrWj0gPM/jsWeN0I8Y=
+  dependencies:
+    "@vuepress/shared-utils" "^1.2.0"
 
 vuepress-plugin-minimal-analytics@^0.1.4:
   version "0.1.4"
