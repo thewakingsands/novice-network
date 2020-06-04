@@ -115,6 +115,13 @@ module.exports = {
       {
         id: '215a46d31e2c4aaa8e1cdd94fcfe8aa4'
       }
+    ],
+    [
+      'vuepress-plugin-dehydrate',
+      {
+        // disable SSR
+        noSSR: '404.html'
+      }
     ]
   ]
 }
