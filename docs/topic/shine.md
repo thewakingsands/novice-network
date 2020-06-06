@@ -30,6 +30,7 @@
 ::: collapse 蛮神发光武器检索索引
 * 2.0蛮神：[风神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%97%8B%E9%A3%8E&kind=1)、[火神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%8B%B1%E7%81%AB&kind=1&rarity=3)、[土神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%8E%9A%E5%9C%9F&kind=1)、[水神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%B8%8A%E6%B0%B4&kind=1)、[冰神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%86%B0%E7%A5%9E%E9%92%BB%E7%9F%B3)、[雷神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%83%8A%E9%9B%B7)、[莫古](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E8%B4%A4%E7%8E%8B%E8%8E%AB%E5%8F%A4&kind=1)
 * 3.0蛮神：[武神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%81%83%E6%AD%A6&kind=1)、[云神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%97%A0%E5%B0%BD%E4%BA%91%E7%A5%9E)、[骑神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%9C%86%E6%A1%8C&kind=1)、[邪龙](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E9%82%AA%E9%BE%99%E6%80%A8%E5%BD%B1)、[魔神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%94%9F%E5%91%BD)、[女神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%A5%9E%E5%9C%A3%E5%A5%B3%E7%A5%9E)、鬼神（暂无）。
+* 4.0蛮神：神龙
 :::
 
 
