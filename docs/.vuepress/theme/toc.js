@@ -101,7 +101,11 @@ export const TOC = {
         },
         {
           href: '/topic/shine.htm',
-          title: '发光武器'
+          title: '发光武器',
+          children: [
+            { href: '/topic/relic.htm', title: '古武'},
+            {href: '/topic/anima.htm', title: '魂武'}
+          ]
         },
         {
           href: '/topic/dd.htm',

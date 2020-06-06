@@ -18,43 +18,59 @@
             {{ title1.title }} <i class="caret down icon expand-icon"></i>
           </div>
           <div class="menu">
-            <router-link
-              :to="title2.href"
-              class="item"
-              :class="{
-                active: index2 === currentTitle2 && index1 === currentTitle1,
-                'with-img': title2.img
-              }"
+            <template
               v-for="(title2, index2) in title1.children"
-              :key="index2"
             >
-              <img
-                v-if="title2.img && loadImage"
-                :src="$withBase(title2.img)"
-              />
-              <img
-                v-if="title2.img && !loadImage"
-                class="img-placeholder"
-                src="data:,"
-              />
-              <link
-                v-if="title2.img && !loadImage"
-                rel="preload"
-                :href="$withBase(title2.img)"
-                as="image"
-              />
-              <span>{{ title2.title }}</span>
-            </router-link>
-            <a
-              :href="title2.href"
-              class="item"
-              v-for="(title2, index2) in title1.externalChildren"
-              :key="index2"
-              target="_blank"
-              rel="noopenner noreferer"
-            >
-              {{ title2.title }}
-            </a>
+              <router-link
+                :to="title2.href"
+                class="item"
+                :class="{
+                  active: index2 === currentTitle2 && index1 === currentTitle1,
+                  'with-img': title2.img,
+                  hassub: title2.children
+                }"
+              >
+                <img
+                  v-if="title2.img && loadImage"
+                  :src="$withBase(title2.img)"
+                />
+                <img
+                  v-if="title2.img && !loadImage"
+                  class="img-placeholder"
+                  src="data:,"
+                />
+                <link
+                  v-if="title2.img && !loadImage"
+                  rel="preload"
+                  :href="$withBase(title2.img)"
+                  as="image"
+                />
+                <span>{{ title2.title }}</span>
+              </router-link>
+              <div 
+                v-if="title2.children"
+                class="submenu"
+              >
+                <router-link
+                  :to="title3.href"
+                  class="item"
+                  v-for="(title3, index3) in title2.children"
+                  :key="index3"
+                >
+                <span>{{ title3.title }}</span>
+                </router-link>
+              </div>
+              <a
+                :href="title2.href"
+                class="item"
+                v-for="(title2, index2) in title1.externalChildren"
+                :key="index2"
+                target="_blank"
+                rel="noopenner noreferer"
+              >
+                {{ title2.title }}
+              </a>
+            </template>
           </div>
         </div>
       </div>
@@ -105,18 +121,32 @@
       i.icon
         float right
     .item
+      &.hassub
+        &::after
+          content ""
+          position absolute 
+          right 2em
       &.active
         background-color #666 !important
+        +.submenu
+          display block !important
       .menu
-        display none
+        max-height 0
+        transition 500ms
         overflow hidden
+        .submenu
+          display none
+          padding 0.2em 1em
+          overflow hidden
+          background-color #4a4b4c
+          background-image linear-gradient(#333, #4a4b4c 5px )
       .expand-icon
         color #999
         transition transform 300ms
         transform rotate3d(0, 0, 1, -90deg)
       &.expand
         .menu
-          display block
+          max-height 800px
         .expand-icon
           transform rotate3d(0, 0, 1, 0)
       .with-img
