@@ -70,7 +70,7 @@ NOTE：恒冰之地只有武器强化，没有装备相关内容。
 
 由于现在优雷卡武器副属性完全不重要（除非需要在同步条件下挑战70级的副本内容），因此不刷光也没有问题。
 
-另外记录过50种文理技能之后，可以使用<item name="涌火水晶" /> x 40 兑换[元素装备](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%85%83%E7%B4%A0&itemlevel_max=380&kind=3&rarity=3)（iLv380），这套装备可以在丰水之地升级为发光的元素装备。
+另外记录过50种文理技能之后，可以在调查队的工匠处<Pos name="优雷卡涌火之地" :x="15.4" :y="23.8" />使用<item name="涌火水晶" /> x 40 兑换[元素防具](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%85%83%E7%B4%A0&itemlevel_max=380&kind=3&rarity=3)（iLv380），这套防具可以在丰水之地升级为发光的元素防具。
 
 ### 丰水之地
 
