@@ -106,6 +106,10 @@ export const TOC = {
         {
           href: '/topic/dd.htm',
           title: '深层迷宫'
+        },
+        {
+          href: '/topic/eureka.htm',
+          title: '禁地优雷卡'
         }
       ]
     },
