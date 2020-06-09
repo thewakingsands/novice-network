@@ -16,6 +16,11 @@ body
     max-width 1200px
     padding 0 20px
     word-break break-all
+    blockquote
+      border-left 0.4em solid #d9dde0
+      margin 1em 0
+      padding 1em 1em 1px
+      background rgba(217, 221, 224, 0.25)
     @media screen and (max-width: 375px)
       padding 0 10px
       font-size 16px
