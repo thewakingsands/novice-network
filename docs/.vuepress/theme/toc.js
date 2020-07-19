@@ -101,7 +101,32 @@ export const TOC = {
         },
         {
           href: '/topic/shine.htm',
-          title: '发光武器'
+          title: '发光武器',
+          folder: 'shine'
+        },
+        {
+          href: '/topic/shine.htm',
+          title: '概览',
+          belongsTo: 'shine',
+          indent: 1
+        },
+        {
+          href: '/topic/relic.htm',
+          title: '上古、黄道武器(古武)',
+          belongsTo: 'shine',
+          indent: 1
+        },
+        {
+          href: '/topic/anima.htm',
+          title: '元灵武器(魂武)',
+          belongsTo: 'shine',
+          indent: 1
+        },
+        {
+          href: '/topic/eureka-weapon.htm',
+          title: '禁地兵装(优武)',
+          belongsTo: 'shine',
+          indent: 1
         },
         {
           href: '/topic/dd.htm',
@@ -109,7 +134,44 @@ export const TOC = {
         },
         {
           href: '/topic/eureka.htm',
-          title: '禁地优雷卡'
+          title: '禁地优雷卡',
+          folder: 'eureka'
+        },
+        {
+          href: '/topic/eureka.htm',
+          title: '基本情报',
+          belongsTo: 'eureka',
+          indent: 1
+        },
+        {
+          href: '/topic/eureka/anemos.htm',
+          title: '常风之地',
+          belongsTo: 'eureka',
+          indent: 1
+        },
+        {
+          href: '/topic/eureka/pagos.htm',
+          title: '恒冰之地',
+          belongsTo: 'eureka',
+          indent: 1
+        },
+        {
+          href: '/topic/eureka/pyros.htm',
+          title: '涌火之地',
+          belongsTo: 'eureka',
+          indent: 1
+        },
+        {
+          href: '/topic/eureka/hydatos.htm',
+          title: '丰水之地',
+          belongsTo: 'eureka',
+          indent: 1
+        },
+        {
+          href: '/topic/eureka-weapon.htm',
+          title: '优雷卡武器',
+          belongsTo: 'eureka',
+          indent: 1
         }
       ]
     },

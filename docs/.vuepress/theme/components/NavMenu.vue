@@ -22,8 +22,11 @@
               :to="title2.href"
               class="item"
               :class="{
-                active: index2 === currentTitle2 && index1 === currentTitle1,
-                'with-img': title2.img
+                active: isActive(index1, index2),
+                'with-img': title2.img,
+                'indent-1': title2.indent === 1,
+                'has-children': title2.folder,
+                visible: isVisible(index1, index2)
               }"
               v-for="(title2, index2) in title1.children"
               :key="index2"
@@ -71,7 +74,7 @@
 </template>
 
 <style lang="stylus">
-.nav-container
+#app .nav-container
   height 100%
   padding-top 40px
   .menu
@@ -82,7 +85,7 @@
     .item
       flex 1
       justify-content center
-  .menu-list
+  .ui.vertical.menu.menu-list
     margin-top 0
     flex 1
     overflow-y auto
@@ -105,8 +108,28 @@
       i.icon
         float right
     .item
+      &.active.has-children
+        padding-bottom 12px
+        &::after
+          content ' '
+          display block
+          height 5px
+          width 100%
+          position absolute
+          left 0
+          bottom 0
+          background-image linear-gradient(#333, #4a4b4c 5px)
       &.active
-        background-color #666 !important
+        background-color #666
+      &.indent-1
+        background-color #4a4b4c
+        border-left 1em solid transparent
+        display none
+        &.visible
+          display block
+        &.active
+          background-color lighten(#4a4b4c, 7%)
+          border-left-color transparent
       .menu
         display none
         overflow hidden
@@ -209,6 +232,32 @@ export default {
       if (current !== value) {
         this.toggleExpand(titleIndex)
       }
+    },
+    isActive(index1, index2) {
+      if (index1 !== this.currentTitle1) return false
+      const page = this.toc[index1] && this.toc[index1].children[index2]
+      const currentPage =
+        this.toc[index1] && this.toc[index1].children[this.currentTitle2]
+      if (!page) return false
+      if (!currentPage) return false
+      if (page.href === this.$page.path) return true
+      if (page.folder && page.folder === currentPage.belongsTo) return true
+      return false
+    },
+    isVisible(index1, index2) {
+      if (index1 !== this.currentTitle1) return false
+      const page = this.toc[index1] && this.toc[index1].children[index2]
+      if (!page.belongsTo) return true
+      const currentPage =
+        this.toc[index1] && this.toc[index1].children[this.currentTitle2]
+      if (!page) return false
+      if (!currentPage) return false
+      if (
+        page.belongsTo === currentPage.belongsTo ||
+        page.belongsTo === currentPage.folder
+      )
+        return true
+      return false
     }
   },
   watch: {

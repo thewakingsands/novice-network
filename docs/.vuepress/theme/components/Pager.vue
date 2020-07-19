@@ -60,7 +60,9 @@ export default {
       }
       var flatTitles = []
       for (var title1 of TOC.main) {
-        flatTitles = flatTitles.concat(title1.children)
+        flatTitles = flatTitles.concat(
+          title1.children && title1.children.filter(x => !x.belongsTo)
+        )
       }
       var index = flatTitles.findIndex(u => u && u.href === this.$page.path)
       if (index >= 0) {
