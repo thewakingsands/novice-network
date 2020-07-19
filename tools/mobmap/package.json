@@ -1,0 +1,9 @@
+{
+  "name": "mobmap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "bsd-3-clause",
+  "dependencies": {
+    "density-clustering": "^1.3.0"
+  }
+}
