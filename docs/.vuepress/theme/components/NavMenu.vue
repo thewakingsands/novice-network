@@ -118,7 +118,8 @@
           position absolute
           left 0
           bottom 0
-          background-image linear-gradient(#333, #4a4b4c 5px)
+          z-index 1
+          background-image linear-gradient(rgb(40, 40, 41,0.2), rgba(40, 40, 41,0.5) 5px)
       &.active
         background-color #666
       &.indent-1

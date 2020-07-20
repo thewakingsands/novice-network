@@ -205,11 +205,31 @@ export const TOC = {
       children: [
         {
           href: '/topic/craft.htm',
-          title: '能工巧匠（制作）'
+          title: '能工巧匠（制作）',
+          folder: 'craft'
+        },
+        {
+          href: '/topic/craft-action.htm',
+          title: '技能介绍',
+          belongsTo: 'craft',
+          indent: 1
+        },
+        {
+          href: '/topic/craft-levelup.htm',
+          title: '练级指南',
+          belongsTo: 'craft',
+          indent: 1
         },
         {
           href: '/topic/gather.htm',
-          title: '大地使者（采集）'
+          title: '大地使者（采集）',
+          folder: 'gather'
+        },
+        {
+          href: '/topic/gather-levelup.htm',
+          title: '练级指南',
+          belongsTo: 'gather',
+          indent: 1
         },
         {
           href: '/advanced/grandCompany.htm',
