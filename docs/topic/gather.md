@@ -193,7 +193,7 @@
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./gather.assets/Reduction.png" width="350px" />
+<img src="./gather.assets/reduction.png" width="350px" />
 ;;;
 
 ;;;.guide .col .grow
