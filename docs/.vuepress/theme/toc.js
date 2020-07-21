@@ -209,6 +209,12 @@ export const TOC = {
           folder: 'craft'
         },
         {
+          href: '/topic/craft.htm',
+          title: '概览',
+          belongsTo: 'craft',
+          indent: 1
+        },
+        {
           href: '/topic/craft-action.htm',
           title: '技能介绍',
           belongsTo: 'craft',
@@ -226,8 +232,20 @@ export const TOC = {
           folder: 'gather'
         },
         {
+          href: '/topic/gather.htm',
+          title: '概览',
+          belongsTo: 'gather',
+          indent: 1
+        },
+        {
           href: '/topic/gather-levelup.htm',
           title: '练级指南',
+          belongsTo: 'gather',
+          indent: 1
+        },
+        {
+          href: '/topic/fisher.htm',
+          title: '钓鱼指南',
           belongsTo: 'gather',
           indent: 1
         },

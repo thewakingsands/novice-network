@@ -1,4 +1,5 @@
 # 能工巧匠
+<FloatTOC />
 
 能工巧匠是FF14中对所有生产职业的统称，FF14的生产有其独特的玩法，需要在有限的耐久（回合）内，消耗制作力使用技能，来推进制作的进展和品质，如何权衡制作力的消耗，以及获得进度、品质的效率，是各位能工巧匠们钻研的主要课题。
 
@@ -14,7 +15,7 @@
 
 玩家在任意战斗职业10级之后，就可以在3个主城学习生产职业了：海都有<img src="/images/jobs/blacksmith.png" class="no-zoom sm-icon" width="24"/>锻铁匠、<img src="/images/jobs/armorer.png" class="no-zoom sm-icon" width="24"/>铸甲匠、<img src="/images/jobs/culinarian.png" class="no-zoom sm-icon" width="24"/>烹调师行会；森都有<img src="/images/jobs/carpenter.png" class="no-zoom sm-icon" width="24"/>刻木匠、<img src="/images/jobs/leatherworker.png" class="no-zoom sm-icon" width="24"/>制革匠行会；沙都有<img src="/images/jobs/goldsmith.png" class="no-zoom sm-icon" width="24"/>雕金匠、<img src="/images/jobs/weaver.png" class="no-zoom sm-icon" width="24"/>裁衣匠、<img src="/images/jobs/alchemist.png" class="no-zoom sm-icon" width="24"/>炼金术士行会。跟各个行会的接待人员对话，获得职业主手并装备之后，就可以切换成对应职业的工匠了。
 
-工匠有自己的专属属性：作业精度、加工精度及制作力。工匠的装备可以为工匠提供这些属性（1级新人可以先去商会回购一下自己出生时的种族套装凑合穿一下，裸奔毕竟不文明）。
+工匠有自己的专属属性：作业精度、加工精度及制作力（CP）。工匠的装备可以为工匠提供这些属性（1级新人可以先去商会回购一下自己出生时的种族套装凑合穿一下，裸奔毕竟不文明）。
 
 准备好装备及主手之后，就可以通过==制作笔记==（默认快捷键`N`）选择配方，并进入制作状态。
 
@@ -34,7 +35,9 @@
 ;;;
 ;;;
 
-同前面所述，玩家需要在有限的耐久（回合）内，消耗制作力使用技能，来推进制作的进展和品质。把进展推倒100%就可以获得物品，而提升品质则可以提升物品的HQ概率，高品质的装备才能卖出高价钱，而NQ的物品的价值则非常有限。~~而根据吉田概率学，只有100%品质才能获得HQ。~~
+同前面所述，玩家需要在有限的**耐久**（回合）内，消耗**制作力**使用技能，来推进制作的**进展**和**品质**。把进展推倒100%就可以获得物品，而提升品质则可以提升物品的HQ概率，高品质的装备才能卖出高价钱，而NQ的物品的价值则非常有限。~~而根据吉田概率学，只有100%品质才能获得HQ。~~
+
+游戏中会技能的下一步预测，也可以使用[生产模拟器](#参考工具)进行模拟，推荐有事没事多玩玩模拟器。
 
 > - [工匠技能说明](/topic/craft-action.md)
 > - 工艺学指南（绝赞约稿中）
@@ -108,5 +111,6 @@
 
 ## 参考工具
 
-- [5.1生产模拟器](http://ffxiv.tk/crafter/#/simulator) [备用地址](http://ffxiv.cf/crafter)：中文目前可用的5.1版本生产模拟器。
-- [5.1版本生产从零开始升级全攻略](https://bbs.nga.cn/read.php?tid=20106197)（写攻略的人负责挣钱，抄攻略的人负责花钱）。
+- [生产模拟器](http://ffxiv.tk/crafter/#/simulator) / [备用地址](http://ffxiv.cf/crafter)
+- [配方计算器](http://5p.nbb.ffxiv.cn/#/cal)
+- [Teamcraft](https://ffxivteamcraft.com/search)（需要科学上网）
