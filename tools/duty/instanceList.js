@@ -1,7 +1,7 @@
 const fs = require('fs')
 const csv = fs.readFileSync('ContentFinderCondition.csv').toString()
 
-const lines = csv.split('\n')
+const lines = csv.replace(/\r\n/g, '\n').split('\n')
 let data = []
 
 const partySizeList = [null, null, 4, 8, 24]
@@ -27,10 +27,10 @@ for (const line of lines) {
   const ilvMin = cols[17]
   const ilvMax = cols[18]
   const underSized = cols[19]
-  const name = cols[34]
-  const typeId = cols[35]
-  const banner = cols[39]
-  const sortKey = cols[38]
+  const name = cols[35]
+  const typeId = cols[36]
+  const banner = cols[40]
+  const sortKey = cols[39]
 
   if (!name) continue
   if (instanceType !== '1') continue
