@@ -72,6 +72,9 @@ body
       border 1px solid #ddd
       border-radius 3px
       background #fcfcfc
+    .local-time-chs, .eorzea-time-chs
+      color #39393c
+      padding 0 2px
 </style>
 
 <script>

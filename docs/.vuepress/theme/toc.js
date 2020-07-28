@@ -250,6 +250,12 @@ export const TOC = {
           indent: 1
         },
         {
+          href: '/topic/ocean-fishing.htm',
+          title: '海钓手册',
+          belongsTo: 'gather',
+          indent: 1
+        },
+        {
           href: '/advanced/grandCompany.htm',
           title: '大国防联军'
         },

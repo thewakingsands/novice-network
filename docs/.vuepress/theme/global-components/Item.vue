@@ -6,6 +6,7 @@
         <img :src="icon" alt="物品" class="no-zoom" />
       </div>
       <span>{{ name }}</span>
+      <i v-if="hq" class="xiv hq"></i>
     </a>
   </span>
 </template>
@@ -42,7 +43,8 @@ export default {
     type: {
       type: String,
       default: 'side'
-    }
+    },
+    hq: Boolean
   },
   data: function() {
     return {
