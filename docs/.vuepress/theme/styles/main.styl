@@ -35,12 +35,24 @@ body, h1, h2, h3, h4, h5, #app .ui.menu
         border-radius 0
     .col
       margin 0 1em
+      &:first-child
+        margin-left 0 !important
+      &:last-child
+        margin-right 0 !important 
+    &.comp
+      .col
+        margin 0 0.5em
+      td
+        padding 0.2em 0.5em
+        white-space nowrap
     .col.grow
       flex 1
     .col.figcap
       display flex
       flex-direction column
       text-align center
+      img 
+        margin 0 auto
       > p:first-child
         margin-bottom 0.2em
   &.cols2 .col.grow

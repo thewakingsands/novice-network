@@ -1,40 +1,45 @@
 <template>
-  <strong :data-ck-action-id="actionId || id" class="action">
+  <strong :data-ck-action-id="actionId || id" class="action" v-bind:class="cls">
     <div class="action-container">
-      <div class="cover"></div>
       <img
         :src="iconUrl || 'about:blank'"
         class="no-zoom"
         :class="{ hide: !iconUrl }"
       />
     </div>
-    <slot>{{ name }}</slot>
+    <slot v-if="!noname">{{ name }}</slot>
   </strong>
 </template>
 
 <style lang="stylus" scoped>
+.cap .action-container
+  margin-left -1em
+  margin-bottom -0.1em
+  vertical-align bottom
 img
-  vertical-align middle
+  vertical-align bottom
   width 1em
   height 1em
-  margin-left .2em
-  margin-bottom .2em
   cursor pointer!important
   &.hide
     visibility hidden
 .action-container
+  margin-left .2em
+  margin-bottom .2em
   display inline-block
   position relative
-.cover
-  width 100%
-  height 100%
-  position absolute
-  top 0
-  left 0
-  border-radius 15%
-  pointer-events none
-  background radial-gradient(circle at 50% -430%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0) 65%)
-  box-shadow inset 0px 4px 4px 2px rgba(255,255,255,0.3), inset 0px -2px 4px 2px rgba(255,255,255,0.1)
+  line-height 1em
+  &:before
+    content ''
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+    border-radius 15%
+    pointer-events none
+    background radial-gradient(circle at 50% -430%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0) 65%)
+    box-shadow inset 0px 4px 4px 2px rgba(255,255,255,0.3), inset 0px -2px 4px 2px rgba(255,255,255,0.1)
 </style>
 
 <script>
@@ -93,7 +98,9 @@ export default {
     job: {
       type: String,
       default: ''
-    }
+    },
+    noname: Boolean,
+    cls: String
   },
   data: function() {
     return {

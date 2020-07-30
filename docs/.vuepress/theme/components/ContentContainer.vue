@@ -57,7 +57,6 @@ body
       color #ff5e00
       &.action
         color #00b5ad
-        text-decoration underline dotted
     s
       color #888
     p:last-child
