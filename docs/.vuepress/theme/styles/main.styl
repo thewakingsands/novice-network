@@ -35,10 +35,6 @@ body, h1, h2, h3, h4, h5, #app .ui.menu
         border-radius 0
     .col
       margin 0 1em
-      &:first-child
-        margin-left 0 !important
-      &:last-child
-        margin-right 0 !important 
     &.comp
       .col
         margin 0 0.5em
@@ -65,7 +61,15 @@ body, h1, h2, h3, h4, h5, #app .ui.menu
   justify-content center
   align-items center
 
-@media screen and (max-width 425px)
+@media screen and (min-width 425px) /* 电脑 */
+  .guide
+    &.cols2, &.cols3
+      .col:first-child
+        margin-left 0 !important
+      .col:last-child
+        margin-right 0 !important 
+
+@media screen and (max-width 425px) /* 手机 */
   .md-table::before
     content '※ 左右滑动以浏览完整表格'
     position sticky

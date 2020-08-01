@@ -71,6 +71,35 @@ export const TOC = {
           title: '黑话缩略语词典'
         },
         {
+          href: '/advanced/macro-intro.htm',
+          title: '宏指南',
+          folder: 'macro'
+        },
+/*        {
+          href: '/advanced/macro-intro.htm',
+          title: '概览',
+          belongsTo: 'macro',
+          indent: 1
+        },
+        {
+          href: '/advanced/macrology-1.htm',
+          title: '宏学上 宏基础',
+          belongsTo: 'macro',
+          indent: 1
+        },
+        {
+          href: '/advanced/macrology-2.htm',
+          title: '宏学中 宏进阶',
+          belongsTo: 'macro',
+          indent: 1
+        },
+        {
+          href: '/advanced/macrology-3.htm',
+          title: '宏学下 宏拾遗',
+          belongsTo: 'macro',
+          indent: 1
+        },
+*/        {
           href: '/duty/',
           title: '副本攻略'
         },
@@ -188,7 +217,62 @@ export const TOC = {
         },
         {
           href: '/topic/goldsaucer.htm',
-          title: '金碟游乐场'
+          title: '金碟游乐场',
+          folder: 'goldsaucer',
+        },
+        {
+          href: '/topic/goldsaucer.htm',
+          title: '概览',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-gate.htm',
+          title: '机遇临门',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-minigame.htm',
+          title: '迷你小游戏',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-cactpot.htm',
+          title: '仙人彩',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-fashion.htm',
+          title: '时尚品鉴',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/triple-triad.htm',
+          title: '九宫幻卡',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-race.htm',
+          title: '陆行鸟竞赛',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-mahjong.htm',
+          title: '多玛方城战',
+          belongsTo: 'goldsaucer',
+          indent: 1
+        },
+        {
+          href: '/topic/gs-minion.htm',
+          title: '萌宠之王',
+          belongsTo: 'goldsaucer',
+          indent: 1
         },
         {
           href: '/job/bluemage.htm',
