@@ -71,7 +71,10 @@ body
       border 1px solid #ddd
       border-radius 3px
       background #fcfcfc
+    pre
+      white-space pre-wrap
       max-width 100%
+      max-height 16em
       overflow auto
     .local-time-chs, .eorzea-time-chs
       color #39393c

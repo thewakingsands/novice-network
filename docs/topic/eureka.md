@@ -1,10 +1,8 @@
 # 禁地优雷卡
-
+<FloatTOC /> 
 ::: segment red
 **本篇攻略仅介绍优雷卡的游戏内容，发光武器、装备的制作攻略请查看[这个页面](./eureka-weapon.md)**
 :::
-
-<FloatTOC /> 
 
 优雷卡是4.x时期的特殊探索内容，需要完成70级主线<Quest name="红莲的解放者" type="main" />之后才能开启。玩家进入优雷卡之后会拥有专属的<i class="xiv elv"></i>元素等级以及元素属性，按照篇章进行分别是常风之地（<i class="xiv elv"></i>1-20）-恒冰之地（<i class="xiv elv"></i>21-35）-涌火之地（<i class="xiv elv"></i>36-50）-丰水之地（<i class="xiv elv"></i>51-60）。
 

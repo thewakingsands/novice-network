@@ -75,7 +75,7 @@ export const TOC = {
           title: '宏指南',
           folder: 'macro'
         },
-/*        {
+        {
           href: '/advanced/macro-intro.htm',
           title: '概览',
           belongsTo: 'macro',
@@ -99,7 +99,7 @@ export const TOC = {
           belongsTo: 'macro',
           indent: 1
         },
-*/        {
+        {
           href: '/duty/',
           title: '副本攻略'
         },
