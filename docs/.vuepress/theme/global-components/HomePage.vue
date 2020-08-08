@@ -80,7 +80,7 @@
     <div class="mntab mn-battle">
       <h2>战斗玩法</h2>
       <ul>
-        <li><router-link to="topic/battle.htm">休闲战斗</router-link></li>
+        <li><router-link to="topic/battle.htm">休闲赚钱</router-link></li>
         <li><router-link to="topic/raid.htm">挑战副本</router-link></li>
         <li><router-link to="topic/pvp.htm">PVP</router-link></li>
         <li><router-link to="topic/shine.htm">发光武器</router-link></li>

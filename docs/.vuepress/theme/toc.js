@@ -118,7 +118,11 @@ export const TOC = {
       children: [
         {
           href: '/topic/battle.htm',
-          title: '休闲战斗'
+          title: '休闲赚钱'
+        },
+        {
+          href: '/topic/hunt.htm',
+          title: '怪物狩猎'
         },
         {
           href: '/topic/raid.htm',
