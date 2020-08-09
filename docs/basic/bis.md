@@ -55,6 +55,8 @@ FF14的“毕业装”通常保质期是2个小版本，大约半年，在新的
 
 ::: segment blue
 其他部分副本有拾取CD限制，当前版本是普通零式共鸣篇，即玩家每周只能roll取1件掉落装备零件（无论需求还是贪婪），取得掉落装备零件后就计为无CD，本周内不可以再次roll点（但是不影响他人掉落或roll取）。
+
+任务搜索器右下角有 **已获得奖励**<img src="./bis.assets/reward1.png" class="no-zoom sm-icon" style="width:2em;" />（普通难度） 或 **已获得奖励**<img src="./bis.assets/reward2.png" class="no-zoom sm-icon" style="width:2em;" />（高难度） 的标记时，表示这个副本已经没有CD了。
 :::
 
 ### 装备获取列表

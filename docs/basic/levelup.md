@@ -46,7 +46,7 @@
 :::
 
 ## 练级方式一览 & 对比
-<!--需要补图-->
+
 <div class="md-table">
   <table class="ui compact grey striped unstackable table" style="min-width: 38em;">
     <thead>
@@ -58,7 +58,7 @@
     <tbody>
       <tr>
         <td>
-          <a href="/basic/battle.htm#随机副本" class="">每日随机</a>
+          <a href="/basic/battle.htm#随机副本" ><img src="/images/icons/061807.png" class="no-zoom sm-icon"><br>每日随机</a>
           <br>★★★★★</td>
         <td>Lv10~Lv79</td>
         <td>包括随机行会令、练级、高随甚至 PVP 随机，无论哪一种都会给玩家海量经验。如果游戏时间不充裕又想快速练级，那么每日随机副本就是必须完成的功课。
@@ -75,10 +75,9 @@
         <td><a href="/advanced/fate.htm">临危受命</a>（FATE）
           <br>★★★★☆</td>
         <td>Lv1~Lv79</td>
-        <td>地图中出现的临危受命任务，<img src="/images/icons/060502.png" class="no-zoom sm-icon">等5种，只要靠近FATE范围就会自动加入。<br>
-        FATE 结束之后，会根据玩家的贡献度，给玩家金银铜牌的评价和对应的经验、金钱及军票，就算 FATE 失败也能够获得 (但是比成功少了很多)。<br>
-        在 60 级之后的地图中，还会出现经验增加 FATE，参加这种 FATE 可以获得额外的经验。<br>
-        在 70 级的地图中，更是追加了 FATE 达成度设计，地图 FATE 达成度满之后，可以使用 FATE 代币交换到特殊的装备，以及版本初期颇为高价的原材料，推荐玩家在跑主线的过程中，积极参与 Fate 攻略。
+        <td>地图中出现的<img src="/images/icons/060502.png" class="no-zoom sm-icon">临危受命任务，只要靠近FATE范围就会自动加入。<br>
+        FATE 结束之后，会根据玩家的贡献度，给玩家金银铜牌的评价和对应的经验、金钱及军票/双色宝石奖励，就算 FATE 失败也能够获得 (但是比成功少了很多)。<br>
+        更多信息可以前往<a href="/advanced/fate.htm">临危受命</a>查看。
           </td></tr>
       <tr>
         <td>
@@ -88,7 +87,7 @@
         <td>加入大国防联军之后，升级到一定军衔就可以开启冒险者小队功能。优点是排本不用等，可以吃各种经验加成 buff，而且经验给的也很多。缺点是冒险者小队的开启和养成需要一定的时间去弄，如果你已经有了成型的冒险者小队，那么推荐指数为五颗星。</td></tr>
       <tr>
         <td>
-          <a href="/topic/battle.htm#狩猎" class="">狩猎</a>
+          <a href="/topic/hunt.htm" class="">狩猎</a>
           <br>★★★★☆</td>
         <td>Lv50~Lv79</td>
         <td>50 级之后会随主线大版本进度开放各地区的狩猎，有每日更新的通缉令。击杀规定数量的怪就可以获得额外经验奖励，这些奖励通常不菲，但是找怪也会消耗不少精力。

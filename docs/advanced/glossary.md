@@ -304,8 +304,8 @@
 * 翻白：占领敌方据点使其处于中立状态，但并不继续占领将其据为己有。
 * 摸点：CF中右键点击石柱读条占领的行为。
 * 打野：小部队脱离大部队打击敌方落单人员并偷点翻点的行为。
-* A怪：指进入了斗志昂扬状态的玩家，连续击杀4人未死即可获得斗志昂扬buff，此时该玩家伤害提升20%，LB增长速度为原来的1.25倍。A怪标志：<img src="/images/icons/061474.png" class="no-zoom sm-icon" /><img src="/images/icons/061476.png" class="no-zoom sm-icon" /><img src="/images/icons/061478.png" class="no-zoom sm-icon" />
-* S怪：指进入了战意高涨状态的玩家，连续击杀8人未死即可获得战意高涨buff，此时该玩家伤害提升40%，LB增长速度为原来的1.5倍。S怪标志：<img src="/images/icons/061475.png" class="no-zoom sm-icon" /><img src="/images/icons/061477.png" class="no-zoom sm-icon" /><img src="/images/icons/061479.png" class="no-zoom sm-icon" />
+* A怪：原指战场中进入了<Status :id="653" name="斗志昂扬" />状态的玩家，该设定现已移除。
+* S怪：原指战场中进入了<Status :id="654" name="战意高涨" />	状态的玩家，该设定现已移除。
 * 二段跳：利用平台的缓冲防止从高处落下暴毙的行为。
 * 保送：第二名和第三名打的热火朝天，第一名坐山观虎斗等分跳嬴得情况。**保送是极端恶劣的行为，无论任何情况请不要保送！**
 * 送外卖、有快递：落单的人被敌方或我方抓到，常发生于偷家失败

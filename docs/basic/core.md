@@ -24,7 +24,7 @@ FF14作为FF系列的正统续作，以优秀的**单机剧情**为主要卖点�
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./core.assets/w9OfL6p.png" alt="New Game+ 界面" style="width: 350px;"/>
+<img src="./core.assets/new-game.jpg" alt="New Game+ 界面" style="width: 350px;"/>
 ;;;
 
 ;;;.guide .col .grow
@@ -64,7 +64,7 @@ FF14作为FF系列的正统续作，以优秀的**单机剧情**为主要卖点�
 
 ;;;.guide .cols2
 ;;;.guide .col
-![](./core.assets/150142.png)<!--图要换-->
+![](./core.assets/150142.png)
 ;;;
 
 ;;;.guide .col .grow

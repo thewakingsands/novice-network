@@ -45,19 +45,49 @@
 
 ### 零式Raid：伊甸
 
+;;;.guide .cols2
+;;;.guide .col
+<img src="./raid.assets/Eden.jpg" style="width: 350px;"/>
+
+伊甸官方概念图
+;;;
+
+;;;.guide .col .grow
+
 伊甸被怀疑是令第一世界发生光之泛滥的罪魁祸首，为了让光之泛滥的大地恢复生机，在水晶都接任务<quest name="起始的“乐园”" type="plus" />，让琳带着我们一同前往虚无大地，探寻真相。
 
 零式伊甸在完成普通伊甸剧情任务之后，于卢利<Pos name="安穆·艾兰" :x="26.8" :y="16.4" />对话开放。
 
 伊甸目前分为觉醒之章和共鸣之章，零式觉醒（E1s~E4s）掉落470装备，零式共鸣（E5s~E8s）掉落500装备。
 
+伊甸英雄榜（以当时的服务器和名字为记录）：[觉醒篇](https://actff1.web.sdo.com/20180525HeroList/index200305.html)，[共鸣篇](https://actff1.web.sdo.com/20180525HeroList/index200729.html)
+
+[伊甸攻略](/duty/)。
+
+;;;
+;;;
+
 ### 24人副本：尼尔——寄叶异闻 暗黑天启
 
-与尼尔联动的作品，剧本由尼尔的监督横尾太郎参与合作，双方开发组合作制作出极具特色的副本。[官网特设站](http://act.ff.sdo.com/project/190920shadowbringers/yorha/index.html)。
+;;;.guide .cols2
+;;;.guide .col
+<img src="./raid.assets/YoRHa.jpg" style="width: 350px;"/>
+
+5.1版本标题图
+;;;
+
+;;;.guide .col .grow
+与尼尔联动的作品，剧本由尼尔的监督横尾太郎参与合作，双方开发组合作制作出极具特色的副本。[官网特设站](http://act.ff.sdo.com/project/190920shadowbringers/yorha/index.html)查看更多资料。
 
 完成5.0主线<quest name="暗影之逆焰" type="main" />后，同时完成珂露西亚岛古姆拉村的<quest name="古姆拉村的传闻" type="plus" />系列任务，就会开放尼尔联动系列任务<quest name="古姆拉村的事件" type="plus" />。
 
-第一弹为复制工厂废墟，2P和9S以及各种机械生物齐齐登场，副本会掉落尼尔世界中的2B服饰箱，非常受欢迎。
+系列副本第一弹为复制工厂废墟，2P和9S以及各种机械生物齐齐登场，副本会掉落2B同款外观<item name="物资货箱：二号B型防具" />，另外还有辅助机宠物，掉落装备则是根据2P和9S的服装设计的。
+
+<img src="./raid.assets/YoRHa-1.jpg" style="width: 350px;"/>
+
+[尼尔攻略](/duty/)。
+;;;
+;;;
 
 ## 红莲狂潮（4.0）挑战副本
 

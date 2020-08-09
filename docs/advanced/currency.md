@@ -1,8 +1,16 @@
 ## 常用货币系统
 
-这个游戏里除了金币，还有其他一些常用货币。按`Ctrl+C`或点击屏幕下方的金币图标，可以打开货币一览窗口，窗口中会显示玩家所解锁的所有货币及持有数量。
+按`Ctrl+C`或点击屏幕下方的金币图标，可以打开货币一览窗口，窗口中会显示玩家所解锁的所有货币及持有数量。
 
 关于完整详细的货币获取及消费指南，请参考[这个帖子](https://bbs.nga.cn/read.php?tid=15299927)，下面就简单介绍一下玩家最常用到的货币。
+
+## 金币
+
+金币是艾欧泽亚的主要通货，完成游戏中的各项活动都可以获得金币。
+
+只要每天排随机任务，就可以满足大部分玩家的日常开销（如传送费、修理费）。另外[雇员](/advanced/retainer.md)也可以通过探险帮玩家带回不定额的收益。
+
+大部分满级玩家会通过[挖宝](/topic/battle.md)挣钱，但是如果想要更进一步发家致富，就只能参与[生产](/topic/craft.md)、[采集](/topic/gather.md)等其他玩法，与其他玩家进行各种交易了。
 
 ## 战斗通货——亚拉戈神典石
 
@@ -13,12 +21,12 @@
 ### 诗学神典石、幻想神典石
 
 当前版本常用的神典石如下(各个兑换点均需要完成对应版本主线才会开放，60级对应田园郡，70级对应神拳痕，80级对应游末邦，未完成对应等级主线，则对应兑换点不开放)：
-<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td rowspan="3"><strong>亚拉戈诗学神典石</strong><br>俗称<strong>诗学</strong><br><br>总上限2000点</td><td><ul><li>兑换50级所用的武器、装备(最高装等120，可在北森升级为130)</li><li>乐谱、宠物、古武魂武材料</li><li>兑换50级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E8%AF%97%E5%AD%A6%E7%A5%9E%E5%85%B8%E7%9F%B3">诗学可兑换物品详细列表</a></td><td>奥里亚娜<br><Pos name="摩杜纳" :x="22.7" :y="6.7" /></td><td rowspan="3">参加50级、60、70级副本、挖宝、狩猎等战斗活动获得，70级以下的副本队伍中若有初次参加副本的队员，完成任务后全队每人可以获得额外的诗学奖励。</td></tr><tr><td><ul><li>兑换60级所用的武器、装备(最高装等260，可在田园升级为270)</li> <li>兑换60级工匠制作装备所需材料、古武魂武材料</li> <li>用于兑换60级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E8%AF%97%E5%AD%A6%E7%A5%9E%E5%85%B8%E7%9F%B3">诗学可兑换物品详细列表</a></td><td>希丝梅娜<br><Pos name="田园郡" :x="5.8" :y="5.3" /></td></tr><tr><td><ul><li>兑换70级所用的武器、装备(最高装等390，可在神拳痕升级为400)</li> <li>兑换70级工匠制作装备所需材料</li> <li>用于兑换70级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E8%AF%97%E5%AD%A6%E7%A5%9E%E5%85%B8%E7%9F%B3">诗学可兑换物品详细列表</a></td><td>艾恩娜<br><Pos name="神拳痕" :x="13.8" :y="11.6" /></td></tr><tr><td><strong>亚拉戈幻想神典石</strong><br>俗称<strong>幻想</strong><br><br>总上限2000点</td><td><ul><li>兑换80级所用的武器、装备（最高460，可升级为470）</li><li>兑换80级工匠制作装备所需材料</li> <li>用于兑换80级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E5%B9%BB%E6%83%B3%E7%A5%9E%E5%85%B8%E7%9F%B3">幻想可兑换物品详细列表</a></td><td>艾马克<br><Pos name="游末邦" sub="树梢层" :x="10.2" :y="11.8" /></td><td>参加80级副本、挖宝、狩猎等战斗活动获得，70~80级以下的副本队伍中若有初次参加副本的队员，完成任务后全队每人可以获得额外的幻想奖励（需要参与者本人使用80级职业并且开启幻想神典石兑换）。</td></tr></table></div>
+<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td rowspan="3"><img src="/images/icons/065023.png" class="no-zoom sm-icon"><br><strong>亚拉戈诗学神典石</strong><br>俗称<strong>诗学</strong><br><br>总上限2000点</td><td><ul><li>兑换50级所用的武器、装备(最高装等120，可在北森升级为130)</li><li>乐谱、宠物、古武魂武材料</li><li>兑换50级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E8%AF%97%E5%AD%A6%E7%A5%9E%E5%85%B8%E7%9F%B3">诗学可兑换物品详细列表</a></td><td>奥里亚娜<br><Pos name="摩杜纳" :x="22.7" :y="6.7" /></td><td rowspan="3">参加50级、60、70级副本、挖宝、狩猎等战斗活动获得，70级以下的副本队伍中若有初次参加副本的队员，完成任务后全队每人可以获得额外的诗学奖励。</td></tr><tr><td><ul><li>兑换60级所用的武器、装备(最高装等260，可在田园升级为270)</li> <li>兑换60级工匠制作装备所需材料、古武魂武材料</li> <li>用于兑换60级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E8%AF%97%E5%AD%A6%E7%A5%9E%E5%85%B8%E7%9F%B3">诗学可兑换物品详细列表</a></td><td>希丝梅娜<br><Pos name="田园郡" :x="5.8" :y="5.3" /></td></tr><tr><td><ul><li>兑换70级所用的武器、装备(最高装等390，可在神拳痕升级为400)</li> <li>兑换70级工匠制作装备所需材料</li> <li>用于兑换70级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E8%AF%97%E5%AD%A6%E7%A5%9E%E5%85%B8%E7%9F%B3">诗学可兑换物品详细列表</a></td><td>艾恩娜<br><Pos name="神拳痕" :x="13.8" :y="11.6" /></td></tr><tr><td><img src="/images/icons/065067.png" class="no-zoom sm-icon"><br><strong>亚拉戈幻想神典石</strong><br>俗称<strong>幻想</strong><br><br>总上限2000点</td><td><ul><li>兑换80级所用的武器、装备（最高460，可升级为470）</li><li>兑换80级工匠制作装备所需材料</li> <li>用于兑换80级武器所需的票据和石板</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E5%B9%BB%E6%83%B3%E7%A5%9E%E5%85%B8%E7%9F%B3">幻想可兑换物品详细列表</a></td><td>艾马克<br><Pos name="游末邦" sub="树梢层" :x="10.2" :y="11.8" /></td><td>参加80级副本、挖宝、狩猎等战斗活动获得，70~80级以下的副本队伍中若有初次参加副本的队员，完成任务后全队每人可以获得额外的幻想奖励（需要参与者本人使用80级职业并且开启幻想神典石兑换）。</td></tr></table></div>
 
 已经过气（无法使用）的过往版本的神典石，可以在摩杜纳奥里亚娜<Pos name="摩杜纳" :x="22.7" :y="6.7" />兑换为诗学或幻想神典石。
 
 ### 奇谭神典石
-<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td><strong>亚拉戈奇谭神典石</strong><br>俗称<strong>奇谭</strong><br><br>周获取上限450<br>总上限2000点</td><td><ul><li>兑换80级所用的武器、装备（品级490，可升级到500）</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E5%A5%87%E8%B0%AD%E7%A5%9E%E5%85%B8%E7%9F%B3">奇谭可兑换物品详细列表</a></td><td>艾马克<br><Pos name="游末邦" sub="树梢层" :x="10.2" :y="11.8" /></td><td>参加80级副本、挖宝、狩猎等战斗活动获得，参加80级的每日随机任务会奖励额外的奇谭点数。</td></tr></table></div>
+<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td><img src="/images/icons/065075.png" class="no-zoom sm-icon"><br><strong>亚拉戈奇谭神典石</strong><br>俗称<strong>奇谭</strong><br><br>周获取上限450<br>总上限2000点</td><td><ul><li>兑换80级所用的武器、装备（品级490，可升级到500）</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E5%A5%87%E8%B0%AD%E7%A5%9E%E5%85%B8%E7%9F%B3">奇谭可兑换物品详细列表</a></td><td>艾马克<br><Pos name="游末邦" sub="树梢层" :x="10.2" :y="11.8" /></td><td>参加80级副本、挖宝、狩猎等战斗活动获得，参加80级的每日随机任务会奖励额外的奇谭点数。</td></tr></table></div>
 
 通过副本搜索器参加任务时，搜索器右边的任务详情“报酬”一栏会注明完成该副本所赠与的亚拉戈神典石数量。随机任务的报酬则是在副本原本赠与的点数基础之上，再额外赠与的报酬。
 
@@ -30,19 +38,15 @@
 
 ## 同盟徽章 & 兵团徽章 & 怪物狩猎的战利品
 
-同盟徽章、兵团徽章和怪物狩猎的战利品是通过[狩猎活动](/topic/battle.md#狩猎)获得的专属货币，另外[青魔法师](/job/bluemage.md)可以通过假面狂欢获得同盟徽章。
+同盟徽章、兵团徽章和怪物狩猎的战利品是通过[狩猎活动](/topic/hunt.md)获得的专属货币，另外[青魔法师](/job/bluemage.md)可以通过假面狂欢获得同盟徽章。
 
-同盟徽章可用于兑换2.0地图坐骑加速道具，宠物，50级木桩 （需要在住宅区庭院里摆放使用），<item name="传送网使用券" />（免费传送券），装备等等，具体兑换列表可以看[这里](https://ff14.huijiwiki.com/wiki/%E5%90%8C%E7%9B%9F%E5%BE%BD%E7%AB%A0).
-
-兵团徽章可以兑换3.0、4.0地图地面加速道具，宠物，60、70级校服、木人，其他装备等等，具体兑换列表可以看[这里](https://ff14.huijiwiki.com/wiki/%E5%85%B5%E5%9B%A2%E5%BE%BD%E7%AB%A0)。
-
-怪物狩猎的战利品可以兑换7、8型战斗魔晶石，以及80级木人等等，具体兑换列表可以看[这里](https://ff14.huijiwiki.com/wiki/%E6%80%AA%E7%89%A9%E7%8B%A9%E7%8C%8E%E7%9A%84%E6%88%98%E5%88%A9%E5%93%81)。
+这三种货币被统称为狩猎点，可以兑换各种坐骑、宠物、庭具、装备、升级材料、魔晶石等等。
 
 ## 狼印战绩
 
 狼印战绩是PVP的专属货币，通过参与PVP内容获得。
 
-其他相关请参见[PVP介绍](/topic/pvp.md)。
+关于PVP请参见[PVP介绍](/topic/pvp.md)。
 
 ## 金碟币
 

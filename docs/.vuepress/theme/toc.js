@@ -38,6 +38,14 @@ export const TOC = {
           title: '新人必知'
         },
         {
+          href: '/basic/item.htm',
+          title: '道具与背包'
+        },
+        {
+          href: '/basic/equip.htm',
+          title: '装备介绍'
+        },
+        {
           href: '/basic/battle.htm',
           title: '战斗基础与副本'
         },
@@ -52,10 +60,6 @@ export const TOC = {
         {
           href: '/basic/quest.htm',
           title: '任务分类及重要支线'
-        },
-        {
-          href: '/basic/equip.htm',
-          title: '装备介绍'
         },
         {
           href: '/basic/map.htm',
@@ -342,6 +346,10 @@ export const TOC = {
           title: '海钓手册',
           belongsTo: 'gather',
           indent: 1
+        },
+        {
+          href: '/advanced/retainer.htm',
+          title: '雇员系统'
         },
         {
           href: '/advanced/grandCompany.htm',
