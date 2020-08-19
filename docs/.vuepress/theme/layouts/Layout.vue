@@ -17,8 +17,8 @@
               <Pager />
             </div>
             <div class="yaofan">
-              <div class="yaofan-bg">
-                <div class="yaofan-bg-inner">
+              <div class="yaofan-inner">
+                <div class="yaofan-bg">
                   <p>
                     为平衡建站成本，本站《新大陆见闻录》在此处设有广告。<br />
                     如果你愿意取消对本站的广告屏蔽，这将是对我们莫大的支持。<br />
@@ -27,15 +27,11 @@
                     来支持我们。
                   </p>
                 </div>
-              </div>
-              <div class="yaofan-inner">
                 <ins
-                  class="adsbygoogle"
+                  class="adsbygoogle yaofan-ad"
                   style="display:block"
                   data-ad-client="ca-pub-8304225030161579"
                   data-ad-slot="3871755301"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"
                 ></ins>
               </div>
             </div>
@@ -73,32 +69,32 @@
 @media screen and (max-width 960px)
   .hide-small
     display none
+
+.yaofan-ad, .yaofan-bg
+  width 728px
+  height 90px
+  @media screen and (max-width 960px)
+    width 300px
+    height 100px
 .yaofan
   width 100%
   margin-top 16px
-  min-height 90px
-  position relative
+  display flex
+  justify-content center
+  .yaofan-inner
+    position relative
   .yaofan-bg
     position absolute
-    top 0
-    left 0
-    width 100%
-    height 90px
+    background #efefef
+    color #888
+    border 4px dashed #ccc
     display flex
     justify-content center
-    .yaofan-bg-inner
-      background #efefef
-      width 50%
-      min-width 500px
-      height 100%
-      display flex
-      justify-content center
-      align-items center
-      color #888
-      @media screen and (max-width 960px)
-        width 100%
-        max-width 500px
-      border 4px dashed #ccc
+    align-items center
+    padding 4px
+    @media screen and (max-width 960px)
+      font-size 0.9em
+      border 2px dashed #ccc
 </style>
 
 <script>
