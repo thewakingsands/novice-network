@@ -83,6 +83,7 @@
   justify-content center
   .yaofan-inner
     position relative
+    overflow hidden
   .yaofan-bg
     position absolute
     background #efefef
