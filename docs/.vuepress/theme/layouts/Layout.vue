@@ -70,7 +70,7 @@
   .hide-small
     display none
 
-.yaofan-ad, .yaofan-bg
+.yaofan-ad, .yaofan-bg, .yaofan-inner
   width 728px
   height 90px
   @media screen and (max-width 960px)
@@ -83,7 +83,6 @@
   justify-content center
   .yaofan-inner
     position relative
-    overflow hidden
   .yaofan-bg
     position absolute
     background #efefef
