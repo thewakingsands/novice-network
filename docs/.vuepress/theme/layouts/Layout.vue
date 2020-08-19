@@ -144,7 +144,7 @@ export default {
       this.showAd = true
     })
   },
-  unmounted() {
+  beforeDestroy() {
     if (this.$beforeHook) {
       this.$beforeHook()
     }
