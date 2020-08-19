@@ -16,7 +16,7 @@
               <ContentContainer />
               <Pager />
             </div>
-            <div class="yaofan">
+            <div class="yaofan" v-if="showAd">
               <div class="yaofan-inner">
                 <div class="yaofan-bg">
                   <p>
@@ -112,7 +112,8 @@ import PhotoSwipe from '../components/PhotoSwipe'
 export default {
   data() {
     return {
-      showMenu: false
+      showMenu: false,
+      showAd: true
     }
   },
   components: {
@@ -135,11 +136,20 @@ export default {
   },
   mounted() {
     import('@thewakingsands/kit-tooltip').then(x => x.initTooltip())
-    try {
-      // eslint-disable-next-line no-undef
-      ;(adsbygoogle = window.adsbygoogle || []).push({})
-    } catch (e) {
-      console.warn('ads error', e)
+    this.$beforeHook = this.$router.beforeEach((to, from, next) => {
+      this.showAd = false
+      next()
+    })
+    this.$afterHook = this.$router.afterEach((to, from) => {
+      this.showAd = true
+    })
+  },
+  unmounted() {
+    if (this.$beforeHook) {
+      this.$beforeHook()
+    }
+    if (this.$afterHook) {
+      this.$afterHook()
     }
   },
   methods: {
@@ -166,6 +176,20 @@ export default {
         el.scrollTo({ top: scrollTop, behavior: 'smooth' })
       } catch (e) {
         el.scrollTop = scrollTop
+      }
+    }
+  },
+  watch: {
+    showAd(val) {
+      if (val) {
+        setTimeout(() => {
+          try {
+            // eslint-disable-next-line no-undef
+            ;(adsbygoogle = window.adsbygoogle || []).push({})
+          } catch (e) {
+            console.warn('ads error', e)
+          }
+        }, 200)
       }
     }
   }

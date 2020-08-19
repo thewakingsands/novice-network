@@ -5,12 +5,6 @@ export default {
     this.$router.beforeEach(async (to, from, next) => {
       clearTimeout(timer)
       next()
-      try {
-        // eslint-disable-next-line no-undef
-        ;(adsbygoogle = window.adsbygoogle || []).push({})
-      } catch (e) {
-        console.warn('ads error', e)
-      }
       if (typeof location === 'undefined') {
         return
       }
