@@ -113,7 +113,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      showAd: true
+      showAd: false
     }
   },
   components: {
@@ -143,6 +143,7 @@ export default {
     this.$afterHook = this.$router.afterEach((to, from) => {
       this.showAd = true
     })
+    this.showAd = true
   },
   beforeDestroy() {
     if (this.$beforeHook) {
