@@ -139,6 +139,12 @@ export default {
   },
   mounted() {
     import('@thewakingsands/kit-tooltip').then(x => x.initTooltip())
+    try {
+      // eslint-disable-next-line no-undef
+      ;(adsbygoogle = window.adsbygoogle || []).push({})
+    } catch (e) {
+      console.warn('ads error', e)
+    }
   },
   methods: {
     getPhotoSwipe() {
