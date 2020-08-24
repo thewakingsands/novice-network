@@ -55,6 +55,9 @@
           下一页
         </a>
       </div>
+      <div class="ui segment segment-text orange">
+        没有找到想要的结果？<a href="https://i.duotai.net/forms/zxjg2/wh956yns?url=search">点击这里</a>告诉我们。
+      </div>
     </div>
   </div>
 </template>
@@ -131,7 +134,7 @@ export default {
         this.total = json.total
         this.pages = Math.ceil(json.total / json.pageSize)
         this.message = ''
-        if (this.results.length < 1) this.message = '没有找到结果。'
+        if (this.results.length < 1) this.message = '没有找到结果。\n\n可换用简短的词语尝试，或点击页面下方反馈问题链接联系我们。'
 
         window.ma &&
           window.ma.trackEvent('SiteSearch', 'search', `${pn}`, query.length)

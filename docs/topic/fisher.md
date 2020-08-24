@@ -233,4 +233,4 @@ PS 捕鱼人是对GP要求最高的，平时常备大量<item name="轻型强心
 - [饥饿的猫](https://cn.ff14angler.com/)：完整的钓场、鱼饵、时间、杆型等信息；天气信息有误差，有少量鱼饵错误。
 - [Fish Tracker](http://fish.senriakane.com/)：鱼王、鱼皇时钟（包括有特殊条件的普通鱼）。有极少量鱼饵错误。
 - [Garland钓鱼时钟](http://www.garlandtools.org/ffxivfisher/)（英文）
-- [Teamcraft](https://ffxivteamcraft.com/search)：按鱼检索信息。
+- [Teamcraft](https://ffxivteamcraft.com/search)（需要科学上网）：按鱼或渔场检索信息，有完整的钓场、鱼饵、时间、上钩率等信息。部分鱼数据量较少，可以配合饿猫查看。
