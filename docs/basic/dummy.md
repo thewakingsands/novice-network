@@ -121,7 +121,7 @@ FF14同样在野外放置了大量木桩，方便玩家随时探访：
 
 ;;;.guide .cols3
 ;;;.guide .col .figcap
-<img src="./battle.assets/dummy4_1.jpgyarn" width="350px" />
+<img src="./battle.assets/dummy4_1.jpg" width="350px" />
 
 天营门<Pos name="基拉巴尼亚湖区" :x="10.5" :y="20.6" />
 ;;;
