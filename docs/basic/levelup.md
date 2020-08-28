@@ -58,7 +58,7 @@
     <tbody>
       <tr>
         <td>
-          <a href="/basic/battle.htm#随机副本" ><img src="/images/icons/061807.png" class="no-zoom sm-icon"><br>每日随机</a>
+          <a href="/basic/dungeon.htm#随机副本" ><img src="/images/icons/061807.png" class="no-zoom sm-icon"><br>每日随机</a>
           <br>★★★★★</td>
         <td>Lv10~Lv79</td>
         <td>包括随机行会令、练级、高随甚至 PVP 随机，无论哪一种都会给玩家海量经验。如果游戏时间不充裕又想快速练级，那么每日随机副本就是必须完成的功课。
@@ -66,7 +66,7 @@
           <br>※ 每日随机奖励的 <strong>刷新时间是每天 23 点</strong>，以副本任务最后一个 BOSS 倒下的时间为准。</td></tr>
       <tr>
         <td>
-          <a href="/basic/battle.htm#关于副本" class="">副本</a>
+          <a href="/basic/dungeon.htm#关于副本" class="">副本</a>
           <br>★★★★☆</td>
         <td>Lv15~Lv79</td>
         <td>排与自己等级最为接近的副本，一次打下来都可以获得大量经验，在 40 级之后这些经验尤为突出。很多玩家会选择一边排本一边做支线任务 / 打 FATE。

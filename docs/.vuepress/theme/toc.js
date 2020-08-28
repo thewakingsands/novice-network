@@ -47,7 +47,32 @@ export const TOC = {
         },
         {
           href: '/basic/battle.htm',
-          title: '战斗基础与副本'
+          title: '战斗与副本',
+          folder: 'battle'
+        },
+        {
+          href: '/basic/battle.htm',
+          title: '概览',
+          belongsTo: 'battle',
+          indent: 1
+        },
+        {
+          href: '/basic/battle-mech.htm',
+          title: '战斗机制',
+          belongsTo: 'battle',
+          indent: 1
+        },
+        {
+          href: '/basic/dungeon.htm',
+          title: '副本介绍',
+          belongsTo: 'battle',
+          indent: 1
+        },
+        {
+          href: '/basic/dummy.htm',
+          title: '木桩&木人',
+          belongsTo: 'battle',
+          indent: 1
         },
         {
           href: '/basic/levelup.htm',

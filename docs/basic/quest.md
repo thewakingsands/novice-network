@@ -88,7 +88,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
   * 70级，<quest name="木人修行" type="plus" />，开放70级副本特化木桩战斗。战斗入口在满身伤痕的壮汉<Pos name="基拉巴尼亚边区" :x="30.1" :y="11.3" />。
   * 80级，<quest name="实力测试训练场" type="plus" />，开放80级副本特化木桩战斗。战斗入口在态度温和的退役士兵<Pos name="珂露西亚岛" :x="23.8" :y="37.8" />。
 
-### 住宅区开放任务：
+### 住宅区开放任务
 
 * 5级：<quest name="海雾村的碧海屋" type="plus" />，海都住宅区开放。
 * 5级：<quest name="高脚孤丘的奢华屋" type="plus" />，沙都住宅区开放。
