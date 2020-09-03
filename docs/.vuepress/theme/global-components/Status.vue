@@ -1,5 +1,5 @@
 <template>
-  <strong class="status" :title="description">
+  <strong class="status" :title="description" :class="dispel ? 'dispel' : '' ">
     <img
       :src="iconUrl || 'about:blank'"
       class="no-zoom"
@@ -10,9 +10,19 @@
 </template>
 
 <style lang="stylus" scoped>
+.status.dispel:before {
+  content ''
+  width 20px
+  height 3px
+  background #dfedff
+  position absolute
+  margin-left 0.3em
+  margin-left calc(0.25em+1px)
+  border-radius 2px
+  box-shadow 0 0 1px 1px #65c6ff
+}
 img
   vertical-align middle
-  height 1.5em
   margin-left .2em
   cursor pointer!important
   &.hide
@@ -30,6 +40,7 @@ export default {
   props: {
     name: String,
     id: Number,
+    dispel: Boolean,
     stack: {
       type: Number,
       default: 0
