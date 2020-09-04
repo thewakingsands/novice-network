@@ -13,7 +13,7 @@
 .status.dispel:before {
   content ''
   width 20px
-  height 3px
+  height 2px
   background #dfedff
   position absolute
   margin-left 0.3em
