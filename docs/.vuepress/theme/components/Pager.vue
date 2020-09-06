@@ -10,6 +10,11 @@
         <i class="caret right icon"></i> {{ next.title }}
       </router-link>
     </div>
+    <div class="back right" v-else>
+      <a href="javascript:history.back();">
+        <span>◀ 返回</span>
+      </a>
+    </div>
     <div class="clear"></div>
   </div>
 </template>
@@ -27,6 +32,13 @@
     float right
   .clear
     clear both
+  .back
+    background #efefef
+    border-radius 10px
+    padding 3px 8px
+    margin-right 0.5em
+    a
+      color #888
 </style>
 
 <script>
