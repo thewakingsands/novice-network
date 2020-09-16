@@ -6,6 +6,27 @@
 
 玩家的技能被分为战技/魔法、能力两大类。战技/魔法被称为GCD技能，一旦使用，其他所有GCD技能会一起进入CD（按键变暗，并有旋转变亮特效），CD时间就是技能描述上的==复唱时间==（通常是2.5s，但是会随着玩家的技能速度/咏唱速度提升而降低）。而能力技又被称为oGCD技能，当玩家使用一个不需要咏唱的GCD技能之后，会有一个CD的时间无法使用其他GCD技能，但是此时却可以使用能力技。
 
+;;;
+;;;
+
+;;;.guide .cols3
+;;;.guide .col .figcap
+<img src="./battle.assets/gcd-1.png" width="350px" />
+
+GCD介绍
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/gcd-2.png" width="350px" />
+
+常见GCD问题
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/gcd-3.png" width="350px" />
+
+GCD注意事项<br>图片概念来自[the Balance Discord](https://discord.gg/thebalanceffxiv)
+;;;
+;;;
+
 FF14的技能体系，就是通过GCD技能构建基础循环，然后插入各种能力技，提升总体伤害。
 
 > * [了解自己职业的基础循环](/job/)
