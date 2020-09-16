@@ -1,6 +1,6 @@
 export default () => {
   if (
-    process.env.NODE_ENV === 'production' &&
+    (process.env.NODE_ENV === 'production' || localStorage.debugSw === '1') &&
     typeof navigator !== 'undefined' &&
     'serviceWorker' in navigator
   ) {

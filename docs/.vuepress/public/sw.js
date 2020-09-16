@@ -31,7 +31,14 @@ self.addEventListener('fetch', function(event) {
     })
 
     event.respondWith(
-      fetch(newReq).catch(function(e) {
+      fetch(newReq).then(function (res) {
+        if (res.redirected) {
+          // redirected response cannot used for a request whose redirect mode is not follow
+          return fetch(request)
+        }
+
+        return res
+      }).catch(function(e) {
         console.error('sw error', e)
         return fetch(request)
       })
