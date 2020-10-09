@@ -2,7 +2,7 @@
 
 ## MMORPG通用词汇
 ::: segment orange
-**索引**：MMORPG、DOT、HOT、跳、AOE、CD、GCD、o-GCD、滑步、SS、T、坦克、肉、奶、N、H、DPS、输出、仇恨、MT、主坦、ST、副坦、OT、换T、换坦、副本、Buff、Debuff、ADD、110、BiS
+**索引**：MMORPG、DOT、HOT、跳、AOE、CD、GCD、o-GCD、滑步、SS、T、坦克、肉、奶、N、H、DPS、输出、仇恨、MT、主坦、ST、副坦、OT、换T、换坦、副本、Raid、、Buff、Debuff、ADD、110、BiS
 :::
 ::: collapse 查看详情
 ### MMORPG通用词汇
@@ -24,6 +24,8 @@
 * OT：不应承担仇恨的玩家被迫变成引怪角色的情况；在国际服中则是ST的意思。
 * 换T、换坦：MT和ST互换位置的一系列操作。
 * 副本：就是所谓的迷宫或讨伐战。允许不同队伍玩家分别进入同一个位置，击杀同一个BOSS，而彼此之间互不影响。
+* Raid：在MMORPG游戏中，Raid指最高难度的副本，通常会有更复杂的战斗机制，对玩家也有更高的要求，同时会掉落更高级的武器、装备，或有特殊纪念意义的物品等等。
+ 由于网络游戏需要经常更新，随着版本更新，原本是最高难度的副本也会变得不那么困难，但玩家仍然会称其为Raid，需要注意语境。在FF14中，通常会把零式和绝本称为[Raid](/topic/raid.md)。
 * Buff：增益效果，FF14中的Buff图标尖角向上。
 * Debuff：负面效果，FF14中的Debuff图标尖角向下<br />另外在FF14中，上方有一条蓝色横线的Debuff可以驱散(关于驱散请参看后文)<img src="./glossary.assets/buffs.png" class="no-zoom sm-icon" />
 * 110：指在一定范围内往复巡逻的怪。
