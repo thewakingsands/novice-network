@@ -83,7 +83,7 @@ FF14同样在野外放置了大量木桩，方便玩家随时探访：
 ;;;.guide .col .figcap
 <img src="./battle.assets/dummy2_3.png" width="350px" />
 
-尾羽集落<Pos name="龙堡苍天高地" :x="32.7" :y="24.7" />
+尾羽集落<Pos name="龙堡参天高地" :x="32.7" :y="24.7" />
 ;;;
 ;;;.guide .col .figcap
 <img src="./battle.assets/dummy2_4.png" width="350px" />
