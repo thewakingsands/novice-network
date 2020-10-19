@@ -2,7 +2,7 @@
 
 ## MMORPG通用词汇
 ::: segment orange
-**索引**：MMORPG、DOT、HOT、跳、AOE、CD、GCD、o-GCD、滑步、SS、T、坦克、肉、奶、N、H、DPS、输出、仇恨、MT、主坦、ST、副坦、OT、换T、换坦、副本、Raid、、Buff、Debuff、ADD、110、BiS
+**索引**：MMORPG、DOT、HOT、跳、AOE、CD、GCD、o-GCD、滑步、SS、T、坦克、肉、奶、N、H、DPS、输出、仇恨、MT、主坦、ST、副坦、OT、换T、换坦、副本、Raid、Buff、Debuff、ADD、110、BiS
 :::
 ::: collapse 查看详情
 ### MMORPG通用词汇
