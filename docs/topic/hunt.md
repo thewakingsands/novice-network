@@ -24,7 +24,7 @@
 
 每个地图有2只B怪，一旦被击杀就会极速刷新，所以玩家接到通缉令后随时去打都行。当玩家接近B怪时，屏幕中会出现==从XX方传来了通缉令中恶名精英的气息！== 的提示文字。
 
-B怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[B怪分布地图](http://syhunters.com/nuofulanteb)（可在页面顶端目录“B级图鉴及点位相关”切换地图）。
+B怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[B怪分布地图](http://syhunters.com/norvrandt-b)（可在页面顶端目录“B级图鉴及点位相关”切换地图）。
 
 ### A怪
 
@@ -45,7 +45,7 @@ S怪通常体型更大，而且从较远处就能看到，如果新人难以判�
 ::: collapse S怪触发方式
 S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，并不一定准确。
 
-- [S级恶名精英图鉴及触发方式](http://syhunters.com/lnxy)：可在右上方菜单中切换地图
+- [S级恶名精英图鉴及触发方式](http://syhunters.com/three-mains-and-mor-dhona-s)：可在上方菜单中切换查看其他地区S怪信息。
 - [S怪触发指南——重生之境到暗影之逆焰](https://bbs.nga.cn/read.php?tid=22499393)
 :::
 
