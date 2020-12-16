@@ -78,11 +78,11 @@ X:10.2 Y:11.8
 
 |  |  地点  |  开放条件  |
 |--|--------|-----------|
-|![](./currency.assets/bdd3d22c2729808be419baa1c9e6b7251c6c4b.jpg)| <Pos name="利姆萨·罗敏萨下层甲板" :x="9.0" :y="11.1" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
-|![](./currency.assets/b0e5becdb7f2cb8bb1ad321505b946ca1048be.jpg)| <Pos name="乌尔达哈现世回廊" :x="9.1" :y="8.3" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
-|![](./currency.assets/df72ffcf6942008d962f728fc3a4a4aa348b28.jpg)| <Pos name="格里达尼亚新街" :x="11.9 Y:12.3" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
-|![](./currency.assets/31301ac27a8b850a18618f1cdcf6f4bf1858fc.jpg)| <Pos name="伊修加德基础层" :x="10.5" :y="11.8" /> | 完成主线任务<quest name="苍穹之禁城" type="main" /> |
-|![](./currency.assets/b272d6c2eda51f498f99ebd6b19262be1dccde.jpg)| <Pos name="黄金港" :x="12.2" :y="0.8" /> | 完成主线任务<quest name="红莲之狂潮" type="main" /> |
+|![](./currency.assets/bdd3d22c2729808be419baa1c9e6b7251c6c4b.png)| <Pos name="利姆萨·罗敏萨下层甲板" :x="9.0" :y="11.1" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
+|![](./currency.assets/b0e5becdb7f2cb8bb1ad321505b946ca1048be.png)| <Pos name="乌尔达哈现世回廊" :x="9.1" :y="8.3" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
+|![](./currency.assets/df72ffcf6942008d962f728fc3a4a4aa348b28.png)| <Pos name="格里达尼亚新街" :x="11.9" :y="12.3" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
+|![](./currency.assets/31301ac27a8b850a18618f1cdcf6f4bf1858fc.png)| <Pos name="伊修加德基础层" :x="10.5" :y="11.8" /> | 完成主线任务<quest name="苍穹之禁城" type="main" /> |
+|![](./currency.assets/b272d6c2eda51f498f99ebd6b19262be1dccde.png)| <Pos name="黄金港" :x="12.2" :y="0.8" /> | 完成主线任务<quest name="红莲之狂潮" type="main" /> |
 
 **※如果找不到NPC的话，应该就是没有完成对应任务。打开任务日志确认吧！**
 
