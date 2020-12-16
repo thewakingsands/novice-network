@@ -13,6 +13,9 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 有<img src="/images/icons/061412.png" class="no-zoom sm-icon" />标记的就是主线任务，在屏幕左上角还有主线任务的提示，如果不小心跟丢了任务，可以点击主线提示打开任务介绍。
 
 主线任务提示同时会提醒现在可以完成的重要任务，请务必记得完成。
+
+**注意：**<quest name="我的专属陆行鸟" search type="plus" />（20级）和<quest name="古代亚拉戈文明的遗产" />（50级）及其后续任务，现在作为主线的强制前置任务，需要留意完成。
+
 ;;;
 ;;;
 
@@ -66,7 +69,6 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
   * <quest name="情感凝聚之力" type="plus" />，合成魔晶石。
 * 主线20级：<quest name="我的专属陆行鸟" search type="plus" />，完成20级主线任务<quest name="前行之路" search type="main"/>并加入大国防联军后接取，完成任务可获得坐骑专属陆行鸟（在获得专属陆行鸟之前，商城购买的坐骑也无法使用）。
   * 任意职业30级：<quest name="可靠的搭档" type="plus" />，解锁专属陆行鸟辅助战斗，在黑衣森林南部林区恬静路营地接取。
-  * 52级：<quest name="我心飞翔" type="plus" />，解锁专属陆行鸟飞行，需要完成前面的任务。
 * 任意职业30级：解锁特职，务必及时完成30级职业任务，并获得灵魂水晶转为特职。
 * 30级：<quest name="狱中斗狼" search type="plus" />、<quest name="法外纷争" search type="plus" />，开放PVP竞技场和战场。
 

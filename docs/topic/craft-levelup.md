@@ -17,7 +17,7 @@
 | 41 - 50 级 | 重建伊修加德<br>理符<br>[军队筹备](/advanced/grandCompany.md) |  <action name="长期俭约" job="裁衣匠" />可以大幅减轻耐久的需求，对半成品尤其好用，成品也可以更轻松地推满品质。 | 
 | 51 - 60 级 | 重建伊修加德<br>[莫古力蛮族](https://ff14.huijiwiki.com/wiki/%E8%8E%AB%E5%8F%A4%E5%8A%9B%E4%BF%AE%E5%A4%8D%E5%9B%A2)<br>[老主顾](https://ff14.huijiwiki.com/wiki/%E8%80%81%E4%B8%BB%E9%A1%BE%E4%BA%A4%E6%98%93)<br>理符<br>[军队筹备](/advanced/grandCompany.md) |   <action name="比尔格的祝福" job="裁衣匠" />，工匠职业的核心技能，一口气捅爆品质条的罪魁祸首。<br>自此如何高效堆叠<Status :id="251" name="内静" />成为了非常重要的课题。 |
 | 61 - 70 级 | 重建伊修加德<br>[鲶鱼精蛮族](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E9%B2%B6%E5%A4%A7%E7%A5%AD%E6%89%A7%E8%A1%8C%E5%A7%94%E5%91%98%E4%BC%9A)<br>[老主顾](https://ff14.huijiwiki.com/wiki/%E8%80%81%E4%B8%BB%E9%A1%BE%E4%BA%A4%E6%98%93)<br>理符<br>[军队筹备](/advanced/grandCompany.md) | <action name="掌握" job="裁衣匠" />、<action name="俭约加工" job="裁衣匠" />、<action name="闲静" job="裁衣匠" />，3个非常优秀的技能，多快好省叠内静。 |
-| 71 - 80 级 | 重建伊修加德<br>[中庸工艺馆](https://ff14.huijiwiki.com/wiki/%E4%B8%AD%E5%BA%B8%E5%B7%A5%E8%89%BA%E9%A6%86%E4%BA%A4%E6%98%93)<br>[老主顾](https://ff14.huijiwiki.com/wiki/%E8%80%81%E4%B8%BB%E9%A1%BE%E4%BA%A4%E6%98%93)<br>理符<br>[军队筹备](/advanced/grandCompany.md) | <action name="坯料加工" job="裁衣匠" />、<action name="坯料制作" job="裁衣匠" />、<action name="精密制作" job="裁衣匠" />，粗暴的推进度、品质技能。 |
+| 71 - 80 级 | 重建伊修加德<br>[中庸工艺馆](https://ff14.huijiwiki.com/wiki/%E4%B8%AD%E5%BA%B8%E5%B7%A5%E8%89%BA%E9%A6%86%E4%BA%A4%E6%98%93)<br>[矮人蛮族](https://ff14.huijiwiki.com/wiki/%E6%B2%83%E8%8C%A8%E4%B9%8B%E9%94%A4)<br>[老主顾](https://ff14.huijiwiki.com/wiki/%E8%80%81%E4%B8%BB%E9%A1%BE%E4%BA%A4%E6%98%93)<br>理符<br>[军队筹备](/advanced/grandCompany.md) | <action name="坯料加工" job="裁衣匠" />、<action name="坯料制作" job="裁衣匠" />、<action name="精密制作" job="裁衣匠" />，粗暴的推进度、品质技能。 |
 
 50级后的职业任务会给关键技能，并且提供大量经验，有必要及时完成。另外在70级之后，在<Pos name="水晶都" :x="10" :y="8.5" />以<quest name="中庸工艺馆" type="plus" />替代了原本的职业任务系统，同样推荐及时完成。
 
@@ -41,7 +41,7 @@
 
 在生产过程中，只要推进品质，就可以获得经验加成（无论成品是否为<i class="xiv hq"></i>），上限是300%。
 
-- <item name="军用工程学指南" />、<item name="军用工程学指南第二卷" />、<item name="商用工程学指南" />、<item name="改订版工程学指南" />：军用指南用军票换，商用指南用红票换，这4本书同一时间只能存在1本，后吃的会覆盖先吃的。
+- <item name="军用工程学指南" />、<item name="军用工程学指南第二卷" />、<item name="商用工程学指南" />、<item name="改订版工程学指南" />：军用指南用军票换，商用指南用红票换，这4本书同一时间只能存在1本，后吃的会覆盖先吃的（并且有对应的等级限制）。
 - ++部队BUFF++: 5%-15%，冒险者小队获取的<item name="军用工程学指南第三卷" />为20%；
 - ++休息奖励++：在休息区停留或下线可以累积休息经验值（经验值右下方出现小月亮标记），获得经验时消耗休息经验值并获取 +50% 的经验加成。
 - ++任意食物++：几乎所有食物都可以提供3%的经验加成，可以在食物的介绍中看到。

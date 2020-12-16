@@ -53,11 +53,9 @@
 
 玩家50级之后，可以在<pos name="伊修加德基础层" :x="10.2" :y="10.5" />接任务<quest name="一流工匠的新工作" type="plus" />开启收藏品（<i class="xiv collectables"></i>）功能，然后完成后续任务<quest name="打开新世界的大门" type="plus" />就可以开启罗薇娜商会。之后在神拳、水晶都也都有对应的商会开启任务。
 
-玩家可以使用<action name="收藏品制作" job="裁衣匠" />技能打开<Status :id="903" name="收藏品制作" />状态，根据商会提供的列表进行制作。向商会提交收藏品可以获得大量经验和专用的工匠票据，票据可用于兑换秘籍、魔晶石等等道具。具体兑换列表可查看[巧手黄票](https://ff14.huijiwiki.com/wiki/%E5%B7%A7%E6%89%8B%E9%BB%84%E7%A5%A8)，[巧手白票](https://ff14.huijiwiki.com/wiki/%E5%B7%A7%E6%89%8B%E7%99%BD%E7%A5%A8)。（黄票推荐最优先兑换各个级别的秘籍，秘籍可以解锁各个等级的特殊配方）。
+玩家可以在制作手册的其他分类中找到收藏品分类，向商会提交收藏品可以获得大量经验和专用的工匠票据，票据可用于兑换秘籍、魔晶石等等道具。具体兑换列表可查看[巧手黄票](https://ff14.huijiwiki.com/wiki/%E5%B7%A7%E6%89%8B%E9%BB%84%E7%A5%A8)，[巧手白票](https://ff14.huijiwiki.com/wiki/%E5%B7%A7%E6%89%8B%E7%99%BD%E7%A5%A8)。（黄票推荐最优先兑换各个级别的秘籍，秘籍可以解锁各个等级的特殊配方）。
 
 制作收藏品<i class="xiv collectables"></i>和制作高品质<i class="xiv hq"></i>的方法类似，只不过制作时的品质会折算为收藏价值，商会的奖励则是根据物品的收藏价值进行折换。通常不需要将品质推到最高就可以获得第一档的收益，制作难度相对较低。
-
-商会收藏列表于每日<i class="xiv local-time-chs"></i>4:00更新，每名玩家每日的收藏列表都不相同，可以在任务情报菜单中查看具体列表及奖励信息，带星收藏品奖励为通常的1.2倍。
 
 ### 重建伊修加德
 
@@ -92,6 +90,7 @@
 - <quest name="英雄归来" type="main" />+<quest name="生意兴隆" />→<quest name="梅·娜格的老主顾" type="plus" />。
 - <quest name="梅·娜格的老主顾" type="plus" />+<quest name="紫水宫的异变" type="plus" />及其后续支线→<quest name="红的老主顾" type="plus" />。
 - <quest name="迈向未来" type="main" />+<quest name="诚信为本——莫雯卓越商会" />→<quest name="凯·希尔的老主顾" type="plus" />。
+- <quest name="打开新世界的大门" type="plus" />+<quest name="缔造新篇龙诗之翼" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="艾尔·图的老主顾" type="plus" />
 :::
 
 向各位老主顾提交指定收藏品可以获得工票和经验，另外随着与老主顾好感度的提升，还可以为老主顾换装（仅限部分主顾）。非常适合练级，以及大量获取工票。

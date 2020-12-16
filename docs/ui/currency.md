@@ -25,10 +25,10 @@
 根据你想要的等级，前往正确的地方吧。
 
 
-;;;.guide .cols3 .top-align
+;;;.guide .cols2 .top-align
 ;;;.col .grow
 **交换50级的装备！**
-![](./currency.assets/8a1f467dbae8b917037787e6392490674d4e51.jpg)
+![](./currency.assets/4577939e4c5ec903cb835940545acb79c364ba.jpg)
 **奥里亚娜**
 摩杜纳
 X:22.7 Y:6.6
@@ -37,23 +37,54 @@ X:22.7 Y:6.6
 ;;;
 ;;;.col .grow
 **交换60级的装备！**
-![](./currency.assets/435cb67627198614e6cdb43de0bcdd95ec733f.jpg)
+![](./currency.assets/a95800aaaffc55fc85e509155ac9707b8ee831.jpg)
 **希丝梅娜**
 田园郡 
 X:5.7 Y:5.2
 **所需道具**
 亚拉戈神典石:诗学
 ;;;
+;;;
+
+;;;.guide .cols2 .top-align
 ;;;.col .grow
 **交换70级的装备！**
-![](./currency.assets/3db38c7dc777e0d2c2a75a5932b9c6f88d38a5.jpg)
+![](./currency.assets/cd0e0c20055b3b3e29f56854c4bcc216e43f40.jpg)
 **艾恩娜**
 神拳痕
 X:13.9 Y:11.6
 **所需道具**
 亚拉戈神典石:诗学
 ;;;
+;;;.col .grow
+**交换80级的装备！**
+![](./currency.assets/44d491112871306c69fb36b623c2c91ebede4b.jpg)
+**艾马克**
+游末邦
+X:10.2 Y:11.8
+**所需道具**
+亚拉戈神典石:幻想
+亚拉戈神典石:奇谭
 ;;;
+;;;
+
+#### 在综合贸易店兑换
+另外，也可以在罗薇娜商会的综合贸易店交换道具。综合贸易店的商人“罗薇娜商会的商人”头顶会有很明显的口袋标记，一定要记得活用！
+※综合贸易店的商人需要完成对应的主线任务才会开放。
+
+#### 各个城市的综合贸易店
+
+![](./currency.assets/969ce470392bb9d0599379bfaf8a505bc78773.jpg)
+
+|  |  地点  |  开放条件  |
+|--|--------|-----------|
+|![](./currency.assets/bdd3d22c2729808be419baa1c9e6b7251c6c4b.jpg)| <Pos name="利姆萨·罗敏萨下层甲板" :x="9.0" :y="11.1" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
+|![](./currency.assets/b0e5becdb7f2cb8bb1ad321505b946ca1048be.jpg)| <Pos name="乌尔达哈现世回廊" :x="9.1" :y="8.3" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
+|![](./currency.assets/df72ffcf6942008d962f728fc3a4a4aa348b28.jpg)| <Pos name="格里达尼亚新街" :x="11.9 Y:12.3" /> | 完成主线任务<quest name="超越幻想，究极神兵" type="main" /> |
+|![](./currency.assets/31301ac27a8b850a18618f1cdcf6f4bf1858fc.jpg)| <Pos name="伊修加德基础层" :x="10.5" :y="11.8" /> | 完成主线任务<quest name="苍穹之禁城" type="main" /> |
+|![](./currency.assets/b272d6c2eda51f498f99ebd6b19262be1dccde.jpg)| <Pos name="黄金港" :x="12.2" :y="0.8" /> | 完成主线任务<quest name="红莲之狂潮" type="main" /> |
+
+**※如果找不到NPC的话，应该就是没有完成对应任务。打开任务日志确认吧！**
 
 ### Q: 想知道现在持有多少亚拉戈神典石
 
