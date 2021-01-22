@@ -141,9 +141,9 @@ export default {
       next()
     })
     this.$afterHook = this.$router.afterEach((to, from) => {
-      this.showAd = true
+      this.showAd = false
     })
-    this.showAd = true
+    this.showAd = false
   },
   beforeDestroy() {
     if (this.$beforeHook) {
@@ -186,7 +186,7 @@ export default {
         setTimeout(() => {
           try {
             // eslint-disable-next-line no-undef
-            ;(adsbygoogle = window.adsbygoogle || []).push({})
+            // ;(adsbygoogle = window.adsbygoogle || []).push({})
           } catch (e) {
             console.warn('ads error', e)
           }
