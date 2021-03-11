@@ -11,7 +11,7 @@ self.addEventListener('fetch', function(event) {
 
   var request = event.request.clone()
   var url = new URL(request.url)
-  var cdnUrl = new URL('https://ff14-org-cdn.i-cassell-you.com')
+  var cdnUrl = new URL('https://ff14-org.xivcdn.com')
 
   if (url.origin !== self.origin && url.origin !== cdnUrl.origin) {
     return
