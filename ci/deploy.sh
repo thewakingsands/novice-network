@@ -14,7 +14,7 @@ ssh-add ci/deploy-key
 
 DEPLOY_DIR=dist
 
-find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="">/d' {} \;
+find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="最终幻想14超实用萌新手册，为最终幻想14国服玩家提供涵盖广泛、清晰易懂的基础攻略指引。">/d' {} \;
 
 EXEGIT="git -C $DEPLOY_DIR"
 $EXEGIT config user.name "bot"
