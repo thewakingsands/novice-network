@@ -51,9 +51,9 @@
 
 忍者AOE技能是<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />，忍术方面有<Action name="火遁之术" />（<Action name="人之印">人</Action>→<Action name="天之印">天</Action>）和<Action name="土遁之术" />（<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>），<Action name="生杀予夺">生杀</Action>可以强化火遁，变为<Action name="劫火灭却之术" />。另外消耗忍气可以使用<Action name="通灵之术·大虾蟆" />。
 
-一套标准的AOE用<Action name="天地人" />顺序是<Action name="天地人" />→<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>。这样实际上会按顺序放出<Action name="风魔手里剑" />→<Action name="火遁之术" />→<Action name="土遁之术" />。76级习得<Action name="命水" />之后则应该以水遁结束（即天→地→人），用命水换50忍气打大虾蟆。
+一套标准的AOE用<Action name="天地人" />顺序是<Action name="天地人" />→<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>。这样实际上会按顺序放出<Action name="风魔手里剑" />→<Action name="火遁之术" />→<Action name="土遁之术" />。72级习得<Action name="命水" />之后则应该以水遁结束（即天→地→人），用命水换50忍气打大虾蟆。
 
-二者综合起来就是忍者的AOE体系：用<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />打循环，早期没学会生杀和天地人的时候，优先放<Action name="土遁之术" />。习得<Action name="生杀予夺">生杀</Action>之后可以<Action name="土遁之术" />→<Action name="生杀予夺">生杀</Action>→<Action name="火遁之术" />火遁</Action>/<Action name="劫火灭却之术" />；习得<Action name="天地人" />之后，则是先放两个火遁（<Action name="火遁之术" />火遁</Action>→<Action name="生杀予夺">生杀</Action>→<Action name="劫火灭却之术" />），然后利用天地人AOE循环放土遁（75级之后则应该先放土遁→劫火灭却→天地人→命水）。
+二者综合起来就是忍者的AOE体系：用<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />打循环，早期没学会生杀和天地人的时候，优先放<Action name="土遁之术" />。习得<Action name="生杀予夺">生杀</Action>之后可以<Action name="土遁之术" />→<Action name="生杀予夺">生杀</Action>→<Action name="火遁之术" />火遁</Action>/<Action name="劫火灭却之术" />；习得<Action name="天地人" />之后，则是先放两个火遁（<Action name="火遁之术" />火遁</Action>→<Action name="生杀予夺">生杀</Action>→<Action name="劫火灭却之术" />），然后利用天地人AOE循环放土遁（76级之后则应该先放土遁→劫火灭却→天地人→命水）。
 
 当只有2个小怪的时候，可以放<Action name="通灵之术·大虾蟆" />，但不需要打<Action name="八卦无刃杀" />连，使用对单体的<Action name="旋风刃" />连即可。
 
