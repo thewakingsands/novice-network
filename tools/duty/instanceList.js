@@ -27,10 +27,10 @@ for (const line of lines) {
   const ilvMin = cols[17]
   const ilvMax = cols[18]
   const underSized = cols[20]
-  const name = cols[36]
-  const typeId = cols[37]
-  const banner = cols[41]
-  const sortKey = cols[40]
+  const name = cols[37]
+  const typeId = cols[38]
+  const banner = cols[42]
+  const sortKey = cols[41]
 
   if (!name) continue
   if (instanceType !== '1') continue
