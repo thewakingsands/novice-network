@@ -57,7 +57,7 @@ FF14的副本机制较为复杂， 不乏有机制杀的现象。如果是初次
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./battle.assets/seacher.jpg" width="350px" />
+<img src="./battle.assets/seacher.jpg" width="350px" /><!--图片要更新-->
 ;;;
 
 ;;;.guide .col .grow

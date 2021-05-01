@@ -59,8 +59,9 @@ FF14游戏的宏被设计为弱功能的指令系统，缺少编程中的基础�
 另外也可以利用宏命令来制作菜单折叠，具体做法可以参考[《宏学》中篇 宏进阶](/advanced/macrology-2.md)。
 
 虽然宏本身不能执行循环和判断命令，但是配合游戏机制，它可以达成一定的状态机效果，也有玩家将其玩成了“另一种游戏”：
-- [宏五子棋](https://www.bilibili.com/video/av37468982)
+- [宏五子棋](https://www.bilibili.com/video/BV1vt411Q7jN)
 - [宏劲舞团](https://www.bilibili.com/video/BV1vz411e7Hh)
+- [宏贪吃蛇](https://www.bilibili.com/video/BV1UB4y1P79k)
 
 ::: segment orange
 
