@@ -14,25 +14,36 @@
 
 ## 狩猎怪
 
-狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](http://www.ffxivhuntspath.com/home/)进行规划：[3.0版](http://www.ffxivhuntspath.com/hw/)、[4.0版](http://www.ffxivhuntspath.com/sb/)，[5.0版](http://www.ffxivhuntspath.com/shb/)。
+狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](https://www.ffxivhuntpaths.com/home/)进行规划：[3.0版](https://www.ffxivhuntpaths.com/hw/)、[4.0版](https://www.ffxivhuntpaths.com/sb/)，[5.0版](https://www.ffxivhuntpaths.com/shb/)（右上角可切换中文）。也可以直接使用[狩猎地图](https://ffxivhunt.com/hunt_daily_shb.php)（英文）调查。
 
 另外一种被称为恶名精英，分为A、B、S三种，会按一定规则刷新在地图中。
 
 ### B怪
 
-名字前带有<img src="/images/icons/061704.png" class="no-zoom sm-icon">标记的满级怪就是B怪，需要接取恶名精英通缉令（每类等级一张，周二16:00刷新），击杀后可以获取对应奖励。**推荐完成**
+名字前带有<img src="/images/icons/061704.png" class="no-zoom sm-icon">标记的满级怪就是B怪，需要接取恶名精英通缉令（50/60/70/80各一张，周二16:00刷新），击杀后可以获取对应奖励。**推荐完成**
 
 每个地图有2只B怪，一旦被击杀就会极速刷新，所以玩家接到通缉令后随时去打都行。当玩家接近B怪时，屏幕中会出现==从XX方传来了通缉令中恶名精英的气息！== 的提示文字。
 
-B怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[B怪分布地图](http://syhunters.com/norvrandt-b)（可在页面顶端目录“B级图鉴及点位相关”切换地图）。
+B怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[狩猎地图](https://ffxivhuntcn.com/#/map/index)、[恶名精英点位图册](https://www.sythehunt.xyz/mapbook)。
 
 ### A怪
 
 名字前带有<img src="/images/icons/061710.png" class="no-zoom sm-icon">标记的满级怪有可能是A怪，只要击杀这些怪就可以获得奖励。
 
+A怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[[狩猎地图](https://ffxivhuntcn.com/#/map/index)、[恶名精英点位图册](https://www.sythehunt.xyz/mapbook)。
+
 A怪每4~6小时刷新，50级和60级的A怪通常在发现后自行喊话、组人、击杀，70、80级的A怪相对强度较高，奖励也更丰厚，因此国服各个服务器大都组织了“班车”，让更多人可以参与到狩猎中。
 
 由于班车的组织者通常为玩家，也有可能因为个人矛盾等情况调整时间，班车表不一定是准确的，因此建议咨询本服的狩猎玩家具体的发车时间。班车是国服经过长时间逐渐形成的玩家规则，建议在参与前提前了解其规则。
+
+::: collapse 国服班车表
+
+排名不分先后，请关注各班车表更新时间，结合本服实际情况确认
+* [FF14国区狩猎网站班车表](http://ffxivhunt.cn/)
+* [国服自助狩猎信息站班车表](https://ffxivhuntcn.com/#/train/index)
+* [DSRKafuU班车表](https://tools.dsrkafuu.su/game/ffxiv)
+
+:::
 
 ### S怪
 
@@ -45,7 +56,7 @@ S怪通常体型更大，而且从较远处就能看到，如果新人难以判�
 ::: collapse S怪触发方式
 S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，并不一定准确。
 
-- [S级恶名精英图鉴及触发方式](http://syhunters.com/three-mains-and-mor-dhona-s)：可在上方菜单中切换查看其他地区S怪信息。
+- [S级恶名精英图鉴及触发方式](https://www.sythehunt.xyz/post/S%E6%80%AA%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6%E4%B8%80%E8%A7%88)
 - [S怪触发指南——重生之境到暗影之逆焰](https://bbs.nga.cn/read.php?tid=22499393)
 :::
 
@@ -81,4 +92,5 @@ S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，
 ## 参考网站
 
 * [susu狩猎热点图](https://hunt.ffxiv.xin/)
-* [狩猎路径规划工具](http://www.ffxivhuntspath.com/home/)（用于普通通缉令）
+* [神意非酋的狩猎手册](https://www.sythehunt.xyz/)
+* [狩猎路径规划工具](https://www.ffxivhuntpaths.com/home/)（用于普通通缉令）

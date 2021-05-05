@@ -8,17 +8,7 @@
 
 两部片子都做的非常棒，B站上也有了熟肉视频。这部分内容与游戏内容本身无关，但是还是推荐大家去看一看。
 
-最终幻想14的衰落与重生，从玩家角度看的FF14 1.0的历史，包含1.0游戏画面和当时的一些公开视频资料。目前为止一共9集，每集大约20分钟。
-
-* [1. 一个世界的诞生](https://www.bilibili.com/video/av9846085/)
-* [2. 一个世界的苏醒](https://www.bilibili.com/video/av9882222/)
-* [3. 一个世界的危机](https://www.bilibili.com/video/av9917500/)
-* [4. 一个英雄的崛起](https://www.bilibili.com/video/av9945494/)
-* [5. 一个时代的终焉](https://www.bilibili.com/video/av9972637/)
-* [6. 一个国度的重生](https://www.bilibili.com/video/av11374538/)
-* [7. 一个国度的觉醒](https://www.bilibili.com/video/av24594723/)
-* [8. 一个错误的承诺](https://www.bilibili.com/video/av33450409/)
-* [9. 繁荣](https://www.bilibili.com/video/av65318082)
+[最终幻想14的衰落与重生](https://space.bilibili.com/143319/channel/detail?cid=16368)，从玩家角度看的FF14 1.0的历史，每集大约20分钟，包含1.0游戏画面和当时的一些公开视频资料。这位作者还制作了其他的1.0版本的场景探索影片[一境之谜](https://space.bilibili.com/143319/channel/detail?cid=88167&ctype=0)
 
 最终幻想14的死亡与新生，Youtube纪录片团队noclip;在看过上面那些纪录片(也有可能是同时策划的…)之后，决定前往东京，SE总部亲自采访SE对于这段历史的看法。一共3集，分别是50分钟，36分钟和26分钟
 
