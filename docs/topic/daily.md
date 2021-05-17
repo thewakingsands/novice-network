@@ -123,6 +123,30 @@ FF14里有一些任务是每天、每周刷新的，通常它们能够帮你练�
 ;;;
 ;;;
 
+## 积分商城日常、周常
+
+可通过完成游戏内日常、周常获取[积分商城](https://actff1.web.sdo.com/20180707jifen/index.html#/home)的积分。  
+
+::: collapse 指定任务和对应积分
+
+**周常**  
+
+* <Quest name="不明飞行物" type="plus" /> 10000
+
+* <Quest name="大魔法师的祝福" type="plus" /> 15000
+
+* <Quest name="登峰造极的蛮神" type="plus" /> 5000
+
+* <Quest name="安费莉丝的委托" type="plus" /> 15000  
+
+**日常**
+
+* <Quest name="安格莱特的委托" type="plus" /> 5000
+
+:::
+
+具体积分方式及积分计算方法可参见[官方页面](https://actff1.web.sdo.com/20180707jifen/index.html#/earn)
+
 ## 其他日常、周常
 
 其他涉及到刷新时间的的信息可以从==任务情报==→==任务情报==中查询。
