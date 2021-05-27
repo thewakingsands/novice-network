@@ -191,6 +191,12 @@ export const TOC = {
           indent: 1
         },
         {
+          href: '/topic/resistance.htm',
+          title: '义军武器(女王之刃)',
+          belongsTo: 'shine',
+          indent: 1
+        },
+        {
           href: '/topic/dd.htm',
           title: '深层迷宫'
         },

@@ -92,126 +92,33 @@
 
 玩家50级之后，可以在<pos name="伊修加德基础层" :x="10.2" :y="10.5" />接任务<quest name="一流工匠的新工作" type="plus" />开启收藏品（<i class="xiv collectables"></i>）功能，然后完成后续任务<quest name="打开新世界的大门" type="plus" />就可以开启罗薇娜商会。之后在神拳、水晶都也都有对应的商会开启任务。
 
-使用<action name="收藏品采集" />技能打开<Status :id="805" name="收藏品采集" />后，就可以将一部分道具采集为收藏品了，收藏品除了可以用于递交商会、老主顾等场合，还可以用于精选获得非常特殊的道具。
+仅有部分道具可以采集收藏品，这些收藏品也仅能用于罗薇娜商会、老主顾或灵砂精选。
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./gather.assets/collection.png" width="350px" />
+<img src="./gather.assets/collection.jpg" width="350px" />
 ;;;
 
 ;;;.guide .col .grow
 
-有收藏buff的时候点选可以收藏的资源，就会出现左边的窗口：
+打开收藏品采集界面之后，会出现收藏品价值和相关技能。使用提纯技类能和<action name="收藏品采集" />会消耗耐久，耐久为0则采集结束。
 
-- 稀有度：评价这个收藏品的收藏价值，NPC回收收藏品时的评价标准，也是根据这个值来判断的。
-- 负荷：使用甄选技能提升稀有度的同时，负荷也会上升，负荷一旦超过上限，资源的获得率就会急速下降(不太可能采的到了)
+每次使用提纯类技能会提升相应的收藏价值（显示在技能下方），所有提纯类技能都有概率触发<Status :id="2418" name="洞察" />，触发洞察后，<action name="大胆提纯" />和<action name="慎重提纯" />的最低提升价值提升到与<action name="提纯" />一致。同时提纯类技能会有一定概率触发收藏价值提升（触发时收藏价值的数字后会有一个感叹号）。
 
-当甄选完毕，点“收藏品采集”就可以获得对应稀有度的收藏品(同时会消耗一次采集次数)，而点击“返回”就可以退回到普通采集的界面。
+使用<action name="慎重提纯" />时，会有一定概率不消耗耐久。使用<action name="集中检查" />可以提升下次提纯时的价值。
+
+无论用于何种目的的收藏品采集，目标价值均为满价值（1000）。手法参考：<action name="集中检查" /> → <action name="慎重提纯" />（记录是否触发价值提升） → <action name="集中检查" /> → <action name="慎重提纯" />（记录是否触发价值提升） → （若2次都触发价值提升）<action name="收藏品采集" />/（若仅触发1次价值提升）<action name="慎重提纯" /> → <action name="收藏品采集" />/（若没有触发价值提升）<action name="提纯" /> → <action name="收藏品采集" />
 
 ;;;
 ;;;
 
-采集收藏品时，通常用MA（慎重甄别）来表示“基础值”，若使用一次慎重甄别时提升的价值低于100，则不建议采集这个收藏品，或通过装备、料理提升自身的鉴别力。MA的上限为115，也是目前满级手法中默认的MA值。
-
-未满级，GP不足800的玩家可移步[练级指南](/topic/gather-levelup.md)查看。
+钓鱼玩家需要使用<action name="收藏品采集" />技能打开<Status :id="805" name="收藏品采集" />，然后使用<action name="耐心" />钓HQ鱼。具体钓法请参见[钓鱼指南](/topic/fisher.md)。
 
 ### 精选
 
 玩家在摩杜纳接任务<quest name="生命、精选，另一个答案" type="plus" />之后，就可以获得<action name="精选" />技能。在收藏品上右键，或在技能菜单中直接使用精选，就可以精选指定物品。
 
-;;;.guide .cols2
-;;;.guide .col
-<img src="./gather.assets/reduction.png" width="350px" />
-;;;
-
-;;;.guide .col .grow
-
-精选窗口如图所示，精选时主要看最下方的精选纯度。对于鱼类来说，只要是HQ鱼，就一定是8/8纯度。对于其他资源来说，收藏价值在451-500之间为5，501-525之间为6，526-550之间为7，551以上是8。
-
-一般来说只要5/8就会出灵砂，7/8以上就可以出HQ灵砂。除此以外，纯度对于个数和概率的影响，到目前为止都没有什么研究…通常认为纯度越高，精选出灵砂的概率就越高。
-
-另外精选基本上属于满级制作中才会接触到的内容，在练级过程中基本可以忽视。
-
-[灵砂获取一览](https://ff14.huijiwiki.com/wiki/%E6%94%B6%E8%97%8F%E5%93%81#.E7.B2.BE.E9.80.89)
-
-;;;
-;;;
-
-::: collapse 精选用收藏品甄选手法（基础GP 800，目标收藏价值490）
-
-使用第一行技能后，按当时收藏价值判断接下来使用的技能。
-
-<div class="md-table">
-  <table class="ui compact grey striped unstackable table" style="min-width: 50em;text-align: center;">
-    <tbody>
-      <tr>
-        <td style="width: 4em; border-right: 1px solid #ccc;">技能</td>
-        <td colspan="8"><action name="聚精会神" />→<action name="大胆甄别" />→<action name="聚精会神" />→<action name="大胆甄别" />（若GP不足800可以去掉若干个聚精会神，但需要该采集点至少采集次数+2）</td>
-      </tr>
-      <tr>
-        <td style="border-right: 1px solid #ccc;">价值确认</td>
-        <td colspan="3">≥283</td>
-        <td colspan="5" style="border-left: 1px solid #ccc;">&lt;283</td>
-      </tr>
-      <tr style="background: rgba(0, 0, 50, 0.02)">
-        <td style="border-right: 1px solid #ccc;">技能</td>
-        <td colspan="3"><action name="聚精会神" />→<action name="大胆甄别" /></td>
-        <td colspan="5" style="border-left: 1px solid #ccc;"><action name="大胆甄别" /></td>
-      </tr>
-      <tr style="background: #fff">
-        <td style="border-right: 1px solid #ccc;">价值确认</td>
-        <td style="width: 4em">&gt;490</td>
-        <td style="border-left: 1px solid #ccc;">433-490</td>
-        <td style="border-left: 1px solid #ccc;">&lt;433</td>
-        <td style="border-left: 1px solid #ccc;">≥375</td>
-        <td colspan="2" style="border-left: 1px solid #ccc;">341-375</td>
-        <td colspan="2" style="border-left: 1px solid #ccc;">&lt;341</td></tr>
-      <tr>
-        <td style="border-right: 1px solid #ccc;">技能</td>
-        <td>采集</td>
-        <td style="border-left: 1px solid #ccc;"><action name="聚精会神" />→<action name="严选" />→采集</td>
-        <td style="border-left: 1px solid #ccc;"><action name="极度警戒" />→<action name="慎重甄别" />→采集</td>
-        <td style="border-left: 1px solid #ccc;"><action name="聚精会神" />→<action name="极度警戒" />→<action name="慎重甄别" />→采集</td>
-        <td colspan="2" style="border-left: 1px solid #ccc;"><action name="聚精会神" />→<action name="极度警戒" />→<action name="大胆甄别" /></td>
-        <td colspan="2" style="border-left: 1px solid #ccc;"><action name="审美眼" />→<action name="极度警戒" />→<action name="慎重甄别" /></td>
-      </tr>
-      <tr>
-        <td style="border-right: 1px solid #ccc;">价值确认</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td style="border-left: 1px solid #ccc;"></td>
-        <td style="border-left: 1px solid #ccc; width: 4.1em;">≥490</td>
-        <td style="border-left: 1px solid #ccc;">&lt;490</td>
-        <td style="border-left: 1px solid #ccc; width: 4.1em;">≥490</td>
-        <td style="border-left: 1px solid #ccc;">&lt;490</td></tr>
-      <tr style="background: rgba(0, 0, 50, 0.02)">
-        <td style="border-right: 1px solid #ccc;">技能</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td style="border-left: 1px solid #ccc;"></td>
-        <td style="border-left: 1px solid #ccc;">采集</td>
-        <td style="border-left: 1px solid #ccc;"><action name="严选" />→采集</td>
-        <td style="border-left: 1px solid #ccc;">采集</td>
-        <td style="border-left: 1px solid #ccc;"><action name="严选" />→采集</td></tr>
-    </tbody>
-  </table>
-</div>
-<!-- |  |  |  | 聚精会神 大胆甄别 聚精会神 大胆甄别 |  |  |  |  |
-| -- | -- | -- | -- | -- | -- | -- | -- |
-| >=283 |  |  | <283 |  |  |  |  |
-| 聚精会神 大胆甄别 |  |  | 大胆 |  |  |  |  |
-| >490 | 433-490 | <433 | >=375 |  | 341-375 |  | <341 |
-| yep | 聚精会神 严选 | 极度警戒 慎重甄别 | 聚精会神 极度警戒 慎重甄别 | 聚精会神 极度警戒 大胆甄别 |  | 审美眼 极度警戒 慎重甄别 |  |
-|  |  |  |  | >=490 | <490 | >=490 | <490 |
-|  |  |  |  | yep | 严选 yep | yep | 严选 yep |-->
-
-
-NOTE：490是精选灵砂保底纯度5/8冲6/8的线，如果只是需要黄/白票，或保底5/8纯度，可以将目标设为445~450。比如目标450，单次慎重115，那么第一次确认线则为277，接下来的确认线（按表格方向从左到右）依次是450，393，335，278（最后一档几乎不可能出现）。
-
-缺乏GP时可以以<action name="大胆甄别" /> x 3消耗，如果有采集次数加成可以再追加<action name="严选" />。
-:::
+精选收藏品主要用于获取灵砂（满级制作中的一种必备素材），收藏价值越高，可以获得灵砂的概率和个数就越高。
 
 ## 采集游戏内容
 
@@ -223,20 +130,10 @@ NOTE：490是精选灵砂保底纯度5/8冲6/8的线，如果只是需要黄/白
 
 玩家可以按上面的说明采集商会指定的收藏品，可以获得大量经验和专用的采集票据，票据可用于兑换秘籍、魔晶石等等道具。具体兑换列表可查看[大地黄票](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E5%9C%B0%E9%BB%84%E7%A5%A8)，[大地白票](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E5%9C%B0%E7%99%BD%E7%A5%A8)。（黄票推荐最优先兑换各个级别的传承录，传承录可以解锁各个地区的特殊采集）。
 
-商会收藏列表于每日<i class="xiv local-time-chs"></i>4:00更新，每名玩家每日的收藏列表都不相同，可以在任务情报菜单中查看具体列表及奖励信息，带星收藏品奖励为通常的1.2倍。
-
-::: collapse 商会用收藏品手法
-
-<action name="审美眼" />→<action name="直觉甄别II" />→<action name="聚精会神" />（<action name="审美眼" />）→<action name="直觉甄别II" />→<action name="聚精会神" />（<action name="审美眼" />）→<action name="慎重甄别" />
-
-每次使用直觉甄别II之后，若身上有<Status :id="757" name="审美眼" />buff，则使用聚精会神，否则使用审美眼。
-:::
 
 ### 重建伊修加德&空岛
 
 完成主线任务<quest name="绝命怒嚎" type="main"/>之后，在<pos name="伊修加德基础层" :x="9.7" :y="11.6" />接任务<quest name="仰望天穹之街" type="plus" />，就可以开启伊修加德重建。
-
-5.2版本的采集职业只能挖相应制作配方的复兴用材料。5.21版本会开放采集职业参与重建伊修加德。
 
 ;;;.guide .cols2
 ;;;.guide .col
@@ -247,14 +144,14 @@ NOTE：490是精选灵砂保底纯度5/8冲6/8的线，如果只是需要黄/白
 
 ;;;.guide .col .grow
 
-5.21开始需要10级以上的采集职业，从苍天街申请前往云海群岛（空岛）。在空岛上采集素材，带出来提交给NPC鉴定，就可以获得相应的积分和振兴票，并用振兴票兑换外观、动作、坐骑、宠物等等道具。具体奖励兑换列表可以查看[天穹街振兴票](https://ff14.huijiwiki.com/wiki/%E5%A4%A9%E7%A9%B9%E8%A1%97%E6%8C%AF%E5%85%B4%E7%A5%A8)。
+10级以上的采集职业，可以从<pos name="天穹街" :x="10.8" :y="14.0" />奥瓦埃尔处申请前往云海群岛（空岛）。在空岛上采集素材，带出来提交给<pos name="天穹街" :x="10.8" :y="14.0" />弗洛帕桑鉴定，就可以获得相应的积分和振兴票，并用振兴票兑换外观、动作、坐骑、宠物等等道具。具体奖励兑换列表可以查看[天穹街振兴票](https://ff14.huijiwiki.com/wiki/%E5%A4%A9%E7%A9%B9%E8%A1%97%E6%8C%AF%E5%85%B4%E7%A5%A8)。
 
 在空岛采集时，矿工和园艺工可以积累LB槽，并释放特殊的采集专属LB技能，打掉岛上的怪物之后也可以掉落采集素材。出岛鉴定时以10个材料为一个计数单位向下取整（即如果你采集了99个，则视为90个，如果你采集了6个，则视为0）。
 
-;;;
-;;;
+在空岛采集的物品，经过检验之后，可以用作天穹街的重建资材制作素材，也可以出售。
 
-重建伊修加德会随版本更新新的建设阶段，并触发名为“联合重建工程”的特殊事件，在事件中提供足量的材料，就可以推进伊修加德的建设，并根据玩家的贡献结算奖励。
+;;;
+;;;
 
 * [重建伊修加德官方介绍页面](https://actff1.web.sdo.com/project/200103ishgardian/index.html)
 
@@ -269,20 +166,12 @@ NOTE：490是精选灵砂保底纯度5/8冲6/8的线，如果只是需要黄/白
 - <quest name="英雄归来" type="main" />+<quest name="生意兴隆" />→<quest name="梅·娜格的老主顾" type="plus" />。
 - <quest name="梅·娜格的老主顾" type="plus" />+<quest name="紫水宫的异变" type="plus" />及其后续支线→<quest name="红的老主顾" type="plus" />。
 - <quest name="迈向未来" type="main" />+<quest name="诚信为本——莫雯卓越商会" />→<quest name="凯·希尔的老主顾" type="plus" />。
+- <quest name="打开新世界的大门" type="plus" />+<quest name="缔造新篇龙诗之翼" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="艾尔·图的老主顾" type="plus" />。
 :::
 
 向各位老主顾提交指定收藏品可以获得工票和经验，另外随着与老主顾好感度的提升，还可以为老主顾换装（仅限部分主顾）。非常适合练级，以及大量获取工票。
 
 每周向老主顾上交的收藏品数量为单人6件，总和12件（与生产提交数合计）。当周的收藏品列表可以在任务情报菜单中查询，每周二<i class="xiv local-time-chs"></i>16:00更新。
-
-::: collapse 老主顾用收藏品手法
-
-<action name="直觉甄别II" />→<action name="聚精会神" />→<action name="慎重甄别" />→<action name="直觉甄别II" />→<action name="聚精会神" />（<action name="审美眼" />）→<action name="极度警戒" />→<action name="慎重甄别" />
-
-第二次使用直觉甄别II之后，若身上有<Status :id="757" name="审美眼" />buff，则使用聚精会神，否则使用审美眼。
-
-这个手法的优点是可以稳定获得上限550价值的收藏品，缺点是效率非常低，可以参考上面的其他手法更快获得过线收藏品。
-:::
 
 ### 蛮族
 

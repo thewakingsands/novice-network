@@ -7,6 +7,8 @@
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./daily.assets/seacher.jpg" width="350px" />
+
+任务右侧的职能图标表示当前的稀缺职能，使用这个职能排本可以获得额外的奖励。奖励内容显示在右侧报酬奖励的第二行。
 ;;;
 
 ;;;.guide .col .grow
