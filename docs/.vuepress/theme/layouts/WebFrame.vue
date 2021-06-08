@@ -1,41 +1,23 @@
 <template>
-  <div>
-    <iframe
-      ref="iframe"
-      :style="{ height: iframeHeight }"
-      :src="src"
-      noborder
-      @load="frameload"
-    ></iframe>
+  <div class="webframe-container">
+    <iframe ref="iframe" :src="src" noborder></iframe>
   </div>
 </template>
 
 <style lang="stylus" scoped>
+.webframe-container
+  height 100%
+  width 100%
 iframe
   width 100%
+  height 100%
   border none
 </style>
 
 <script>
 export default {
-  data() {
-    return {
-      iframeHeight: 200
-    }
-  },
   props: {
     src: String
-  },
-  mounted() {},
-  methods: {
-    frameload() {
-      const iframe = this.$refs.iframe
-      console.log('iframe loaded!', iframe)
-      const height = iframe.contentWindow.document.body.getBoundingClientRect()
-        .height
-      console.log('height', height)
-      this.iframeHeight = Math.round(height) + 1 + 'px'
-    }
   }
 }
 </script>

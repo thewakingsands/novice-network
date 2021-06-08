@@ -1,7 +1,10 @@
 <template>
   <Root class="root-container" :class="$page.frontmatter.className">
     <div class="main-container full-height">
-      <div class="content-outer full-height">
+      <div
+        class="content-outer full-height"
+        :class="{ fullscreen: !!$page.frontmatter.webframe }"
+      >
         <div class="content-inner full-height">
           <NavTop @barClicked="showMenu = !showMenu" />
           <slot>
@@ -16,7 +19,7 @@
               <ContentContainer />
               <Pager />
             </div>
-            <div class="yaofan" v-if="showAd">
+            <div class="yaofan" v-if="showAd && !$page.frontmatter.webframe">
               <div class="yaofan-inner">
                 <div class="yaofan-bg">
                   <p>
@@ -35,7 +38,7 @@
                 ></ins>
               </div>
             </div>
-            <Footer />
+            <Footer v-if="!$page.frontmatter.webframe" />
           </slot>
         </div>
       </div>
@@ -63,6 +66,12 @@
     padding-left 250px
   @media screen and (max-width: 960px)
     padding-left 0
+  &.fullscreen
+    padding-left 260px
+    @media screen and (max-width: 1200px) and (min-width: 961px)
+      padding-left 240px
+    @media screen and (max-width: 960px)
+      padding-left 0
 @media screen and (min-width 961px)
   .hide-large
     display none
