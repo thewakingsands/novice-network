@@ -106,7 +106,7 @@ FF14同样在野外放置了大量木桩，方便玩家随时探访：
 ;;;.guide .col .figcap
 <img src="./battle.assets/dummy3_2.png" width="350px" />
 
-茨菇村<Pos name="延夏" :x="31.2" :y="16.7" />
+茨菰村<Pos name="延夏" :x="31.2" :y="16.7" />
 ;;;
 ;;;.guide .col .figcap
 <img src="./battle.assets/dummy3_3.png" width="350px" />
@@ -141,7 +141,7 @@ FF14同样在野外放置了大量木桩，方便玩家随时探访：
 
 <img src="./battle.assets/dummy5.png" width="350px" />
 
-鳍人謿池<Pos name="黑风海" :x="32.0" :y="19.2" />
+鳍人潮池<Pos name="黑风海" :x="32.0" :y="19.2" />
 
 ## PVP木桩
 
