@@ -197,6 +197,15 @@ export const TOC = {
           indent: 1
         },
         {
+          href: '/job/bluemage.htm',
+          title: '青魔法师'
+        }
+      ]
+    },
+    {
+      title: '特殊战斗区域',
+      children: [
+        {
           href: '/topic/dd.htm',
           title: '深层迷宫'
         },
@@ -240,6 +249,10 @@ export const TOC = {
           title: '优雷卡武器',
           belongsTo: 'eureka',
           indent: 1
+        },
+        {
+          href: '/topic/bozjan.htm',
+          title: '南方博兹雅战线'
         }
       ]
     },
@@ -312,10 +325,6 @@ export const TOC = {
           title: '萌宠之王',
           belongsTo: 'goldsaucer',
           indent: 1
-        },
-        {
-          href: '/job/bluemage.htm',
-          title: '青魔法师'
         },
         {
           href: '/topic/relax.htm',
