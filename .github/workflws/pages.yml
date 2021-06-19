@@ -1,0 +1,49 @@
+name: 网站更新流程
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 签出仓库
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+      - name: 安装 Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - uses: c-hive/gha-yarn-cache@v2
+      - name: 缓存 yarn
+        uses: actions/cache@v2
+        with:
+          path: ~/vuepresscache
+          key: vuepress-${{ hashFiles('yarn.lock') }}
+      - name: 安装依赖
+        run: yarn --frozen-lockfile
+      - name: 构建网站
+        run: yarn vuepress build docs --cache $HOME/vuepresscache && rm -rf dist/_includes
+      - name: 上传构建结果
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: |
+            dist
+            !dist/_includes
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 下载构建结果
+        uses: actions/download-artifact@v2
+      - name: 导出部署密钥
+        run: echo "$DEPLOY_KEY" > ci/deploy-key
+        env:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+      - name: 运行部署脚本
+        run: |
+          chmod +x ./ci/deploy.sh
+          ./ci/deploy.sh
+        env:
+          UPDATE_KEY: ${{ secrets.UPDATE_KEY }}

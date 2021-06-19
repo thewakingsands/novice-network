@@ -1,6 +1,4 @@
 #!/bin/bash -e
-openssl aes-256-cbc -K $encrypted_74088940e92b_key -iv $encrypted_74088940e92b_iv -in ci/deploy-key.enc -out ci/deploy-key -d
-
 ### Warning: environment variables will exposed to build logs after this line ###
 set -x
 
@@ -26,8 +24,8 @@ $EXEGIT commit -m "Auto deploy by Travis CI"
 
 $EXEGIT push -f origin master
 
-$EXEGIT remote add coding git@e.coding.net:ffcafe/novice-network-pages.git
-$EXEGIT push -f coding master
+# $EXEGIT remote add coding git@e.coding.net:ffcafe/novice-network-pages.git
+# $EXEGIT push -f coding master
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
 yarn
