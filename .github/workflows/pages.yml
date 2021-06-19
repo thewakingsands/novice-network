@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "10.x"
       - uses: c-hive/gha-yarn-cache@v2
-      - name: 缓存 yarn
+      - name: 缓存 VuePress
         uses: actions/cache@v2
         with:
           path: ~/vuepresscache
@@ -34,7 +34,12 @@ jobs:
             !dist/_includes
   deploy:
     runs-on: ubuntu-latest
+    needs: build
     steps:
+      - name: 签出仓库
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
       - name: 下载构建结果
         uses: actions/download-artifact@v2
       - name: 导出部署密钥
