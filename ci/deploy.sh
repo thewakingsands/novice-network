@@ -14,6 +14,7 @@ DEPLOY_DIR=dist
 
 find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="最终幻想14超实用萌新手册，为最终幻想14国服玩家提供涵盖广泛、清晰易懂的基础攻略指引。">/d' {} \;
 
+git config --global init.defaultBranch master
 EXEGIT="git -C $DEPLOY_DIR"
 $EXEGIT init
 $EXEGIT remote add origin git@github.com:thewakingsands/novice-network-pages.git
