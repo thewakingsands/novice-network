@@ -1,4 +1,4 @@
-name: 网站更新
+name: Updates
 on:
   push:
     branches:
