@@ -1,4 +1,4 @@
-name: 网站更新流程
+name: 网站更新
 on:
   push:
     branches:
@@ -15,7 +15,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - uses: c-hive/gha-yarn-cache@v2
+      - name: 缓存 Yarn
+        uses: c-hive/gha-yarn-cache@v2
       - name: 缓存 VuePress
         uses: actions/cache@v2
         with:
@@ -25,23 +26,6 @@ jobs:
         run: yarn --frozen-lockfile
       - name: 构建网站
         run: yarn vuepress build docs --cache $HOME/vuepresscache && rm -rf dist/_includes
-      - name: 上传构建结果
-        uses: actions/upload-artifact@v2
-        with:
-          name: site
-          path: |
-            dist
-            !dist/_includes
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: 签出仓库
-        uses: actions/checkout@v2.3.1
-        with:
-          persist-credentials: false
-      - name: 下载构建结果
-        uses: actions/download-artifact@v2
       - name: 导出部署密钥
         run: echo "$DEPLOY_KEY" > ci/deploy-key
         env:
