@@ -15,11 +15,11 @@ DEPLOY_DIR=dist
 find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="最终幻想14超实用萌新手册，为最终幻想14国服玩家提供涵盖广泛、清晰易懂的基础攻略指引。">/d' {} \;
 
 EXEGIT="git -C $DEPLOY_DIR"
-$EXEGIT config user.name "bot"
-$EXEGIT config user.email "root@localhost"
 $EXEGIT init
 $EXEGIT remote add origin git@github.com:thewakingsands/novice-network-pages.git
 $EXEGIT add -A
+$EXEGIT config user.name "bot"
+$EXEGIT config user.email "root@localhost"
 $EXEGIT commit -m "Auto deploy by Travis CI"
 
 $EXEGIT push -f origin master
