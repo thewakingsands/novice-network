@@ -36,3 +36,7 @@ jobs:
           ./ci/deploy.sh
         env:
           UPDATE_KEY: ${{ secrets.UPDATE_KEY }}
+      - name: 触发网站更新
+        run: curl -XPOST $GITPAGES_UPDATE_URL
+        env:
+          GITPAGES_UPDATE_URL: ${{ secrets.GITPAGES_UPDATE_URL }}
