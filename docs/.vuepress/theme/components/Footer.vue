@@ -20,12 +20,13 @@
         《新大陆见闻录》是<a href="https://ffcafe.org/" target="_blank">肥肥咖啡</a>的一个子项目，欢迎<a href="https://ffcafe.org/join-us/">加入我们</a>！
       </div>
         <a
-          href="https://travis-ci.org/thewakingsands/novice-network"
+          href="https://github.com/thewakingsands/novice-network/actions/workflows/pages.yml"
           rel="noopener noreferer"
           target="_blank"
         >
           <img
-            src="https://travis-ci.org/thewakingsands/novice-network.svg?branch=master"
+            src="https://github.com/thewakingsands/novice-network/actions/workflows/pages.yml/badge.svg"
+            referrerpolicy="no-referrer"
           />
         </a>
         <a
@@ -33,7 +34,7 @@
           rel="noopener noreferer"
           target="_blank"
         >
-          <img src="https://img.shields.io/badge/generator-VuePress-46b683" />
+          <img src="https://img.shields.io/badge/generator-VuePress-46b683" referrerpolicy="no-referrer"/>
         </a>
       </div>
       <div class="copyright-line copyright-se">

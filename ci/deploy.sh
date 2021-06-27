@@ -1,6 +1,4 @@
 #!/bin/bash -e
-openssl aes-256-cbc -K $encrypted_74088940e92b_key -iv $encrypted_74088940e92b_iv -in ci/deploy-key.enc -out ci/deploy-key -d
-
 ### Warning: environment variables will exposed to build logs after this line ###
 set -x
 
@@ -16,18 +14,19 @@ DEPLOY_DIR=dist
 
 find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="最终幻想14超实用萌新手册，为最终幻想14国服玩家提供涵盖广泛、清晰易懂的基础攻略指引。">/d' {} \;
 
+git config --global init.defaultBranch master
 EXEGIT="git -C $DEPLOY_DIR"
-$EXEGIT config user.name "bot"
-$EXEGIT config user.email "root@localhost"
 $EXEGIT init
 $EXEGIT remote add origin git@github.com:thewakingsands/novice-network-pages.git
 $EXEGIT add -A
+$EXEGIT config user.name "bot"
+$EXEGIT config user.email "root@localhost"
 $EXEGIT commit -m "Auto deploy by Travis CI"
 
 $EXEGIT push -f origin master
 
-$EXEGIT remote add coding git@e.coding.net:ffcafe/novice-network-pages.git
-$EXEGIT push -f coding master
+# $EXEGIT remote add coding git@e.coding.net:ffcafe/novice-network-pages.git
+# $EXEGIT push -f coding master
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
 yarn
