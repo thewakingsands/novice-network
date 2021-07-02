@@ -22,9 +22,9 @@
 
 部分技能仅能在副本内习得，玩家最好能准备一些最基本的技能进入副本（很多技能仍然需要在副本内学习，此时可以随便找个能打的技能用就行了，早期能学到的技能威力基本都是一样的）：
 
-- 群体类技能：<action name="寒冰咆哮" /> + <action name="超振动" />（对等级高于自己的怪无效），<action name="陆行鸟陨石" />（野外带鸟专用）
+- 群体类技能：<action name="寒冰咆哮" /> + <action name="超振动" />（对等级高于自己的怪无效）
 - 单体类技能：<action name="锋利菜刀" />（近战）/<action name="深渊贯穿" />/<action name="音爆"/>（远程）/<action name="苦闷之歌" />（DOT）
-- BUFF类技能：<action name="破防" />、<action name="怒发冲冠" />、<action name="口笛" />、<action name="以太复制" />
+- BUFF类技能：<action name="以太复制" />（优先度最高）、<action name="破防" />、<action name="怒发冲冠" />、<action name="口笛" />
 - 功能性技能：<action name="捕食" />、<action name="魔法锤" />、<action name="强力守护" />、<action name="超硬化" />
 - 恢复类技能：<action name="白风" />（挑战高难度副本时的治疗青魔需要其他治疗技能，但在早期该技能就足够了）
 
