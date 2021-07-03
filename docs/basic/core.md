@@ -10,7 +10,7 @@
 
 FF14严格禁止任何形式的代打、代练、买金卖金（RMT）、脚本、外挂，并且禁止辱骂、人身攻击、消极游戏（对他人造成影响）、破坏游戏秩序等行为。
 
-处罚方式从警告到永久冻结账号（永封）都是有可能的，千万不要以身试法！[官方微博](https://www.weibo.com/u/7316752765)每周都会发布最新一期的封号榜单，如果你遇到了上述行为，可以通过[正式渠道](https://bbs.nga.cn/read.php?tid=17758819)进行举报（[账号处罚细则](https://ff.web.sdo.com/web8/index.html#/newstab/newscont/268832)）。
+处罚方式从警告到永久冻结账号（永封）都是有可能的，千万不要以身试法！[官方微博](https://www.weibo.com/u/7316752765)每周都会发布最新一期的封号榜单，如果你遇到了上述行为，可以通过[正式渠道](https://actff1.web.sdo.com/project/20210621ffviolation/index.html#/index)进行举报（[举报平台使用说明](https://actff1.web.sdo.com/project/20210621ffviolation/index.html#/qa)）。
 :::
 ::: segment orange
 ## 账号保护
