@@ -79,7 +79,7 @@ FF14国服提供点卡和月卡两种收费模式(国际服仅有月卡)，但�
 
 各种游戏时间的消耗优先级：月卡 > 试玩账号赠送的免费时长 > 点卡。
 
-以后充值足够点卡/月卡的玩家可以在[陆行鸟礼物站](http://ff.pay.sdo.com/DepositActivity/index.htm)领取对应的充值奖励，另外在前面说的[萌新招待站](http://act.ff.sdo.com/20190315Zhaodai/index.html#/bnot)也有对应的充值奖励。
+以后充值足够点卡/月卡的玩家可以在[陆行鸟礼物站](http://ffpay.sdo.com/DepositActivity/index.htm)领取对应的充值奖励，另外在前面说的[萌新招待站](http://act.ff.sdo.com/20190315Zhaodai/index.html#/bnot)也有对应的充值奖励。
 
 ::: collapse 关于商城
 
