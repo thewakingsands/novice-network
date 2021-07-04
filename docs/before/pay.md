@@ -73,7 +73,7 @@ PS：当你满足招待者要求后，也可以将自己的招待码发给给新
 
 ## 收费方式和充值奖励
 
-充值和道具商城都在官方网站上——[FF14国服官网](https://adsrff.web.sdo.com/)，游戏内并没有任何购买入口。购买充值、福利领取请认准以 **.sdo.com** 结尾的地址（如 **[qu.sdo.com](https://qu.sdo.com/)** **[pay.sdo.com](https://pay.sdo.com/)**)。
+充值和道具商城都在官方网站上——[FF14国服官网](https://ff.web.sdo.com)，游戏内并没有任何购买入口。购买充值、福利领取请认准以 **.sdo.com** 结尾的地址（如 **[qu.sdo.com](https://qu.sdo.com/)** **[pay.sdo.com](https://pay.sdo.com/)**)。
 
 FF14国服提供点卡和月卡两种收费模式(国际服仅有月卡)，但是不分点卡服或月卡服。点卡为6毛/小时，月卡为88/月(支付宝还能再打98折)。
 
