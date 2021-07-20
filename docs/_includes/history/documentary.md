@@ -8,10 +8,6 @@
 
 两部片子都做的非常棒，B站上也有了熟肉视频。这部分内容与游戏内容本身无关，但是还是推荐大家去看一看。
 
-[最终幻想14的衰落与重生](https://space.bilibili.com/143319/channel/detail?cid=16368)，从玩家角度看的FF14 1.0的历史，每集大约20分钟，包含1.0游戏画面和当时的一些公开视频资料。这位作者还制作了其他的1.0版本的场景探索影片[一境之谜](https://space.bilibili.com/143319/channel/detail?cid=88167&ctype=0)
+[《最终幻想14的衰落与重生》](https://space.bilibili.com/143319/channel/detail?cid=16368)：从玩家角度看的FF14 1.0的历史，每集大约20分钟，包含1.0游戏画面和当时的一些公开视频资料。这位作者还制作了其他的1.0版本的场景探索影片[一境之谜](https://space.bilibili.com/143319/channel/detail?cid=88167)
 
-最终幻想14的死亡与新生，Youtube纪录片团队noclip;在看过上面那些纪录片(也有可能是同时策划的…)之后，决定前往东京，SE总部亲自采访SE对于这段历史的看法。一共3集，分别是50分钟，36分钟和26分钟
-
-* [1. 壹点零](http://www.bilibili.com/video/av11577400/)
-* [2. 重写历史](http://www.bilibili.com/video/av11658059/)
-* [3. 新世界](http://www.bilibili.com/video/av11709145/)
+[《最终幻想14的死亡与新生》](https://space.bilibili.com/2114393/channel/detail?cid=131503)，Youtube纪录片团队noclip;在看过上面那些纪录片(也有可能是同时策划的…)之后，决定前往东京，SE总部亲自采访SE对于这段历史的看法。一共3集，分别是50分钟，36分钟和26分钟。
