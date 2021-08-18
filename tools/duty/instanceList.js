@@ -17,20 +17,27 @@ const types = [
 
 types[28] = '绝境战'
 
+const ids = lines[0].split(',')
+const title = lines[1].split(',')
+const map = new Map()
+for (let i = 0; i < ids.length; i++) {
+  map.set(title[i], parseInt(ids[i]))
+}
+
 for (const line of lines) {
   const cols = line.split(',')
   const index = cols.shift()
-  const instanceType = cols[2]
-  const partyTypeId = cols[9]
-  const level = cols[15]
-  const maxLevel = cols[16]
-  const ilvMin = cols[17]
-  const ilvMax = cols[18]
-  const underSized = cols[20]
-  const name = cols[37]
-  const typeId = cols[38]
-  const banner = cols[42]
-  const sortKey = cols[41]
+  const instanceType = cols[map.get('ContentLinkType')]
+  const partyTypeId = cols[map.get('ContentMemberType')]
+  const level = cols[map.get('ClassJobLevel{Required}')]
+  const maxLevel = cols[map.get('ClassJobLevel{Sync}')]
+  const ilvMin = cols[map.get('ItemLevel{Required}')]
+  const ilvMax = cols[map.get('ItemLevel{Sync}')]
+  const underSized = cols[map.get('AllowUndersized')]
+  const name = cols[map.get('Name')]
+  const typeId = cols[map.get('ContentType')]
+  const banner = cols[map.get('Image')]
+  const sortKey = cols[map.get('SortKey')]
 
   if (!name) continue
   if (instanceType !== '1') continue
