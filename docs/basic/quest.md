@@ -126,7 +126,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 ### 情感动作赠送支线
 
 * 14级，<quest name="快乐的律动之舞" />，送踢踏舞。
-* 14级，<quest name="为谁而舞" />，送绅士之舞。
+* 14级，<quest name="为谁而舞" />，送丰饶之舞。
 * 14级，<quest name="舞女的梦想舞台" />，送宫廷之舞。
 * 36级，<quest name="冬日的活动" />，送投掷/投雪球。
 * <i class="xiv quest-sync"></i>70级，<quest name="矮人族的不良青年" type="plus" /> → <quest name="啦哩吼！！" />，送啦哩吼。

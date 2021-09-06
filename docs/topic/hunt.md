@@ -14,7 +14,7 @@
 
 ## 狩猎怪
 
-狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](https://www.ffxivhuntpaths.com/home/)进行规划：[3.0版](https://www.ffxivhuntpaths.com/hw/)、[4.0版](https://www.ffxivhuntpaths.com/sb/)，[5.0版](https://www.ffxivhuntpaths.com/shb/)（右上角可切换中文）。也可以直接使用[狩猎地图](https://ffxivhunt.com/hunt_daily_shb.php)（英文）调查。
+狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](http://ff14huntpath.c4cdn.com/home/)进行规划：[3.0版](https://www.ffxivhuntpaths.com/hw/)、[4.0版](https://www.ffxivhuntpaths.com/sb/)，[5.0版](https://www.ffxivhuntpaths.com/shb/)（右上角可切换中文）。也可以直接使用[狩猎地图](https://ffxivhunt.com/hunt_daily_shb.php)（英文）调查。
 
 另外一种被称为恶名精英，分为A、B、S三种，会按一定规则刷新在地图中。
 
@@ -93,4 +93,4 @@ S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，
 
 * [susu狩猎热点图](https://hunt.ffxiv.xin/)
 * [神意非酋的狩猎手册](https://www.sythehunt.xyz/)
-* [狩猎路径规划工具](https://www.ffxivhuntpaths.com/home/)（用于普通通缉令）
+* [狩猎路径规划工具](http://ff14huntpath.c4cdn.com/home/)（用于普通通缉令）
