@@ -27,17 +27,17 @@
 ;;;.guide .col .figcap
 <img src="./shine.assets/Tsukuyomi.jpg" width="350px" />
 
-月读命幽夜武器
+月读命幽夜武器¹
 ;;;
 ;;;.guide .col .figcap
 <img src="./shine.assets/demon.jpg" width="350px" />
 
-无限鬼神武器
+无限鬼神武器¹
 ;;;
 ;;;.guide .col .figcap
 <img src="./shine.assets/baihu.jpg" width="350px" />
 
-白虎武器
+白虎武器²
 ;;;
 ;;;
 
@@ -63,17 +63,17 @@
 ;;;.guide .col .figcap
 <img src="./shine.assets/awl.jpg" width="350px" />
 
-60级发光武器，真元灵武器·灵光
+60级发光武器，真元灵武器·灵光¹
 ;;;
 ;;;.guide .col .figcap
 <img src="./shine.assets/ewp.jpg" width="350px" />
 
-70级禁地兵装，优雷卡武器·涌火
+70级禁地兵装，优雷卡武器·涌火¹
 ;;;
 ;;;.guide .col .figcap
 <img src="./shine.assets/rwr.jpg" width="350px" />
 
-80级义军武器·回忆
+80级义军武器·回忆¹
 ;;;
 ;;;
 
@@ -94,17 +94,17 @@
 ;;;.guide .col .figcap
 <img src="./shine.assets/ucob.jpg" width="350px" />
 
-绝巴哈武器
+绝巴哈武器¹
 ;;;
 ;;;.guide .col .figcap
 <img src="./shine.assets/uwu.jpg" width="350px" />
 
-绝神兵武器
+绝神兵武器¹
 ;;;
 ;;;.guide .col .figcap
 <img src="./shine.assets/tea.jpg" width="350px" />
 
-绝亚历山大武器
+绝亚历山大武器¹
 ;;;
 ;;;
 
@@ -115,3 +115,10 @@
 对于拥有这些武器的玩家来说，这些武器不仅仅是一把发光的武器，同时也代表着玩家在超高难度战斗中拥有着不俗的实力，以及它背后所蕴含的一段段或美好或苦涩的回忆。其他玩家看到这些武器，经常也会对它们的持有者有更高的要求和期待。
 
 如果你想要接受挑战，尝试获得这把武器的话，可以[点击这里](/topic/raid.md)查看参与挑战副本的方法和顺序。
+
+:::segment grey
+
+[1].图片内容来自NGA 冰色之舞，原文链接：[人偶兵装](https://bbs.nga.cn/read.php?tid=20459393&pid=398487531)。<br>
+[2].图片内容来自Twitter [コニー@光のブロガー](https://twitter.com/connietarte/status/1402754883606835203)。
+
+:::
