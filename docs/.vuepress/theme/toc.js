@@ -472,6 +472,11 @@ export const TOC = {
           img: '/images/jobs/samurai.png'
         },
         {
+          title: '钐镰客',
+          href: '/job/reaper.htm',
+          img: '/images/jobs/reaper.png'
+        },
+        {
           title: '吟游诗人（弓箭手）',
           href: '/job/bard.htm',
           img: '/images/jobs/bard.png'
@@ -520,6 +525,11 @@ export const TOC = {
           title: '占星术士',
           href: '/job/astrologian.htm',
           img: '/images/jobs/astrologian.png'
+        },
+        {
+          title: '贤者',
+          href: '/job/sage.htm',
+          img: '/images/jobs/sage.png'
         }
       ]
     },
