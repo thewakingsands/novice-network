@@ -37,7 +37,7 @@
 ;;;.guide .col .figcap
 <img src="./shine.assets/baihu.jpg" width="350px" />
 
-白虎武器²
+白虎武器¹
 ;;;
 ;;;
 
@@ -118,7 +118,6 @@
 
 :::segment grey
 
-[1].图片内容来自NGA 冰色之舞，原文链接：[人偶兵装](https://bbs.nga.cn/read.php?tid=20459393&pid=398487531)。<br>
-[2].图片内容来自Twitter [コニー@光のブロガー](https://twitter.com/connietarte/status/1402754883606835203)。
+[1].图片内容来自NGA 冰色之舞，原文链接：[人偶兵装](https://bbs.nga.cn/read.php?tid=20459393&pid=398487531)。
 
 :::
