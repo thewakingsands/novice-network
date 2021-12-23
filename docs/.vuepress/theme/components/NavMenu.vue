@@ -269,6 +269,7 @@ export default {
     this.expandedTitles = [this.currentTitle1]
     this.showMenu = this.value
     this.loadImage = true
+    this.window = window
   },
   computed: {
     currentTitle1() {
