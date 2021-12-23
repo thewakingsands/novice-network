@@ -74,10 +74,10 @@
       padding-left 0
 @media screen and (min-width 961px)
   .hide-large
-    display none
+    display none !important
 @media screen and (max-width 960px)
   .hide-small
-    display none
+    display none !important
 
 .yaofan-ad, .yaofan-bg, .yaofan-inner
   width 728px

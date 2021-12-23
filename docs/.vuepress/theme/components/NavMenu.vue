@@ -64,12 +64,29 @@
     </div>
     <div class="toggle-button" :class="{ 'menu-show': showMenu }">
       <button
-        class="ui large green circular icon button"
+        class="ui large circular icon button"
         @click.prevent="showMenu = !showMenu"
       >
-        <i class="icon chevron right"></i>
+        <i class="icon plus"></i>
       </button>
     </div>
+    <router-link class="ui large circular icon button hide-large" to="/search.htm">
+        <i class="search icon"></i>
+    </router-link>
+    <a
+       class="ui large circular icon button totop hide-large"
+       href="javascript:;"
+       @click.prevent="scrollToTop"
+     >
+       <i class="double up angle icon"></i>
+    </a>
+    <a 
+      class="ui large circular icon button copy hide-large" 
+      @click="copyUrl" 
+      :data-clipboard-text="url"
+    >
+      <i class="share icon"></i>
+    </a>
   </div>
 </template>
 
@@ -161,30 +178,75 @@
     @media screen and (max-width 960px)
       transform translate3d(-100%, 0, 0)
       transition 300ms
+      &::before
+        content: ''
+        display block
+        position fixed
+        background rgba(0,0,0,0) 
+        transition all 300ms
       &.show
         transform translate3d(0, 0, 0)
+        &::before
+          top 0
+          bottom 0
+          left 0
+          right -500px
+          background rgba(0,0,0,0.4)
     .ui.menu::after
       height 80px
   .toggle-button
     display none
     button
       margin 0
+      background linear-gradient(106deg, rgba(61,78,153,1) 0%, rgba(53,132,173,1) 50%, rgba(204,122,42,1) 100%)
+      box-shadow 1px 3px 5px 0px rgba(34,36,38,0.3)
+      color white
+      font-size 1.2em
     @media screen and (max-width 960px)
       display block
       position fixed
       z-index 500
-      bottom 5px
-      left 5px
-      transform translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg)
+      bottom 20px
+      right 20px
       transition 300ms
       &.menu-show
-        transform translate3d(270px, 0, 0) rotate3d(0, 0, 1, 180deg)
+        &::after
+          color rgba(255,255,255,1)
+        button
+          animation gradient 5s ease-in-out infinite
+          background-size 400% 400%
+          transform rotateZ(45deg)
+          box-shadow 0px 0px 5px 2px #dfb24ec2
+        &~a.icon.button
+          transform translate(0, -120px)
+          &.totop
+            transform translate(0, -180px)
+          &.copy
+            transform translate(0, -60px)   
+  &>a.icon.button
+    display block
+    position fixed
+    right 21px
+    bottom 21px
+    margin 0
+    z-index 100
+    background white
+    transition all 300ms
+@keyframes gradient
+	0% 
+		background-position: 0% 50%;
+	50% 
+		background-position: 100% 50%;
+	100% 
+		background-position: 0% 50%;
 </style>
 
 <script>
 import { TOC } from '../toc'
+import Clipboard from 'clipboard' 
 
 export default {
+  inject: ['gotoId'],
   props: {
     value: {
       type: Boolean,
@@ -196,8 +258,12 @@ export default {
       showMenu: false,
       toc: TOC.main,
       expandedTitles: [],
-      loadImage: false
+      loadImage: false,
+      url: ''
     }
+  },
+  created() {
+    this.url = window.location.href
   },
   mounted() {
     this.expandedTitles = [this.currentTitle1]
@@ -220,6 +286,9 @@ export default {
     }
   },
   methods: {
+    scrollToTop() {
+      this.gotoId('')
+    },
     toggleExpand(titleIndex) {
       var index = this.expandedTitles.indexOf(titleIndex)
       if (index >= 0) {
@@ -259,6 +328,18 @@ export default {
       )
         return true
       return false
+    },
+    copyUrl(){
+      let _this = this;
+      let clipboard = new Clipboard(".copy"); 
+      clipboard.on("success", e => {
+        //console.log('复制成功'); 不想调Message但是不会写了…总之现在不明所以
+        clipboard.destroy();
+      });
+      clipboard.on("error", e => {
+        //console.log('复制失败');
+        clipboard.destroy();
+      });
     }
   },
   watch: {

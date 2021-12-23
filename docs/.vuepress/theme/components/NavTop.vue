@@ -11,14 +11,14 @@
       <router-link class="item icon-item" to="/">
         <i class="home angle icon"></i>
       </router-link>
-      <router-link class="item icon-item" to="/search.htm">
+      <router-link class="item icon-item hide-small" to="/search.htm">
         <i class="search icon"></i>
       </router-link>
       <a href="javascript:;" @click="headClicked" class="item page-title">
         <i
           v-if="$page.headers"
-          class="caret icon"
-          :class="{ right: !showToc, down: showToc }"
+          class="icon caret square down"
+          :class="{ outline: !showToc }"
         ></i>
         <span class="hide-large">{{ $page.title }}</span>
         <div class="hide-small">
@@ -31,7 +31,7 @@
           href="javascript:;"
           @click.prevent="scrollToTop"
         >
-          <i class="up angle icon"></i>
+          <i class="double up angle icon"></i>
         </a>
         <a
           class="item icon-item hide-small"

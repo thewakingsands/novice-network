@@ -543,6 +543,7 @@ export const TOC = {
         },
         { title: '最终幻想XIV中文维基', href: 'https://ff14.huijiwiki.com' },
         { title: '素素攻略站', href: 'https://www.ffxiv.cn/' },
+        { title: '加兰德数据库(中文版)', href: 'https://ffxiv.cyanclay.xyz/db/' },
         { title: '水晶驿站', href: 'https://riesa.gitee.io/crystal/' }
       ]
     }
