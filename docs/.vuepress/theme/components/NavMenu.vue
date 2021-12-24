@@ -262,14 +262,11 @@ export default {
       url: ''
     }
   },
-  created() {
-    this.url = window.location.href
-  },
   mounted() {
     this.expandedTitles = [this.currentTitle1]
     this.showMenu = this.value
     this.loadImage = true
-    this.window = window
+    this.theUrl()
   },
   computed: {
     currentTitle1() {
@@ -329,6 +326,9 @@ export default {
       )
         return true
       return false
+    },
+    theUrl(){
+      this.url=location.href
     },
     copyUrl(){
       let _this = this;
