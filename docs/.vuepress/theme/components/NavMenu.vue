@@ -85,7 +85,7 @@
       @click="copyUrl" 
       :data-clipboard-text="url"
     >
-      <i class="share icon"></i>
+      <i class="share square icon"></i>
     </a>
   </div>
 </template>
@@ -213,8 +213,8 @@
         &::after
           color rgba(255,255,255,1)
         button
-          animation gradient 5s ease-in-out infinite
-          background-size 400% 400%
+          animation gradient 8s ease-in-out infinite
+          background-size 800% 800%
           transform rotateZ(45deg)
           box-shadow 0px 0px 5px 2px #dfb24ec2
         &~a.icon.button
@@ -333,12 +333,12 @@ export default {
     copyUrl(){
       let _this = this;
       let clipboard = new Clipboard(".copy"); 
-      clipboard.on("success", e => {
-        //console.log('复制成功'); 不想调Message但是不会写了…总之现在不明所以
+      clipboard.on("success", e => { // 复制成功
+        alert('网址已复制到剪贴板，快去分享给你的小伙伴吧！')
         clipboard.destroy();
       });
       clipboard.on("error", e => {
-        //console.log('复制失败');
+        alert('啊哦，我好像无法复制网址。\n麻烦你手工复制一下网址，再发送给小伙伴吧！')
         clipboard.destroy();
       });
     }
