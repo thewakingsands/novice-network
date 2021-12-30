@@ -46,7 +46,7 @@
                 :href="$withBase(title2.img)"
                 as="image"
               />
-              <span>{{ title2.title }}</span>
+              <span>{{ title2.title }}</span> <i v-if="title2.folder" class="chevron circle right icon expand-icon"></i>
             </router-link>
             <a
               :href="title2.href"
@@ -56,7 +56,7 @@
               target="_blank"
               rel="noopenner noreferer"
             >
-              {{ title2.title }}
+              {{ title2.title }} 
             </a>
           </div>
         </div>
@@ -85,7 +85,7 @@
       @click="copyUrl" 
       :data-clipboard-text="url"
     >
-      <i class="share icon"></i>
+      <i class="share square icon"></i>
     </a>
   </div>
 </template>
@@ -125,9 +125,14 @@
       i.icon
         float right
     .item
-      &.active.has-children
-        padding-bottom 12px
-        &::after
+      &.has-children
+        i 
+          margin-right 0.4em
+        &.active
+          padding-bottom 12px
+          i 
+            transform rotate3d(0, 0, 1, 90deg)
+        &.active::after
           content ' '
           display block
           height 5px
@@ -201,20 +206,20 @@
       background linear-gradient(106deg, rgba(61,78,153,1) 0%, rgba(53,132,173,1) 50%, rgba(204,122,42,1) 100%)
       box-shadow 1px 3px 5px 0px rgba(34,36,38,0.3)
       color white
-      font-size 1.2em
+      font-size 20px
     @media screen and (max-width 960px)
       display block
       position fixed
       z-index 500
       bottom 20px
-      right 20px
+      right 16px
       transition 300ms
       &.menu-show
         &::after
           color rgba(255,255,255,1)
         button
-          animation gradient 5s ease-in-out infinite
-          background-size 400% 400%
+          animation gradient 8s ease-in-out infinite
+          background-size 800% 800%
           transform rotateZ(45deg)
           box-shadow 0px 0px 5px 2px #dfb24ec2
         &~a.icon.button
@@ -227,7 +232,7 @@
     display block
     position fixed
     right 21px
-    bottom 21px
+    bottom 30px
     margin 0
     z-index 100
     background white
@@ -262,13 +267,11 @@ export default {
       url: ''
     }
   },
-  created() {
-    this.url = window.location.href
-  },
   mounted() {
     this.expandedTitles = [this.currentTitle1]
     this.showMenu = this.value
     this.loadImage = true
+    this.theUrl()
   },
   computed: {
     currentTitle1() {
@@ -329,15 +332,18 @@ export default {
         return true
       return false
     },
+    theUrl(){
+      this.url=location.href
+    },
     copyUrl(){
       let _this = this;
       let clipboard = new Clipboard(".copy"); 
-      clipboard.on("success", e => {
-        //console.log('复制成功'); 不想调Message但是不会写了…总之现在不明所以
+      clipboard.on("success", e => { // 复制成功
+        alert('网址已复制到剪贴板，快去分享给你的小伙伴吧！')
         clipboard.destroy();
       });
       clipboard.on("error", e => {
-        //console.log('复制失败');
+        alert('啊哦，我好像无法复制网址。\n麻烦你手工复制一下网址，再发送给小伙伴吧！')
         clipboard.destroy();
       });
     }
