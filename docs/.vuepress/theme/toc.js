@@ -336,6 +336,9 @@ export const TOC = {
       title: '其他玩法系统',
       children: [
         {
+          href: '/topic/social.htm',
+          title: '社群与社交'
+        },{
           href: '/topic/craft.htm',
           title: '能工巧匠（制作）',
           folder: 'craft'

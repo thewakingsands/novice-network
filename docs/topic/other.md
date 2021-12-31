@@ -27,6 +27,15 @@
 * [官方网站阅读（日语）](https://magazine.jp.square-enix.com/mangaup/original/saki_ff/)
 * [玩家汉化版](https://www.bilibili.com/read/readlist/rl366750)
 
+### 最终幻想 XIV 私立艾欧泽亚学园
+
+官方干掉同人之作，游戏NPC成为了学校的老师和同学，在这所不可思议的学园中发生的故事！
+
+登场角色均为游戏内重要NPC，有一定剧透成分，介意者勿点。
+
+* [官方APP阅读（日语）](https://magazine.jp.square-enix.com/mangaup/)
+* [玩家汉化版](http://manhua.dmzj.com/zzjxssslaozyxy/)
+
 ## 光之老爹
 
 光之老爹是一位日本的FF玩家在自己的博客上所做的系列连载，讲的是自己~~为了获得招募好友送的双塔尼亚而~~安利老爹来玩FF14，隐藏自己的真实身份在游戏里和老爹一起游戏，在击破双塔尼亚后向老爹公布自己真实身份的壮大孝亲行动(原话…)。

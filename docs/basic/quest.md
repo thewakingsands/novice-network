@@ -77,8 +77,8 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 30级：<quest name="狱中斗狼" search type="plus" />、<quest name="法外纷争" search type="plus" />，开放PVP竞技场和战场。
 
 ### 特殊功能相关
-* 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记]()。
-* 36级：<quest name="浪漫的寻宝猎人" type="plus" />，开放[挖宝]()。
+* 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记](/topic/relax.md#探索笔记)。
+* 36级：<quest name="浪漫的寻宝猎人" type="plus" />，开放[挖宝](/topic/battle.md#挖宝)。
 
 下面2个任务与外观有关，详细了解投影系统可以看[这里](/basic/equip.md#装备染色、投影)。
 
@@ -101,7 +101,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 10级：<quest name="薰衣草苗圃的繁花屋" type="plus" />，森都住宅区开放。
 * 61级：<quest name="白银乡之梦" type="plus" />，白银乡住宅区开放。
 
-<!--[住宅区与房屋介绍]()。-->
+[住宅区与房屋介绍](/topic/social.md#住宅区与房屋)。
 
 ### 金碟游乐场相关任务：
 
