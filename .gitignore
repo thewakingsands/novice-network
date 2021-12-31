@@ -3,3 +3,4 @@ yarn-error.log
 /dist
 /ci/deploy-key
 /job/job.md
+package-lock.json
