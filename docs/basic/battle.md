@@ -6,9 +6,9 @@
 
 ;;;.guide .cols2
 ;;;.guide .col
-![](./battle.assets/gcd.gif) 
+<img src="./battle.assets/gcd.gif" />
 
-GCD技能和能力技示意 ~~非正确循环，按键顺序请勿参考~~
+GCD技能和能力技示意<br/> ~~非正确循环，按键顺序请勿参考~~
 ;;;
 
 ;;;.guide .col .grow

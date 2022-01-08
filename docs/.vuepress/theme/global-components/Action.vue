@@ -115,6 +115,9 @@ export default {
   methods: {
     async updateId() {
       const result = await searchAction(this.name, this.id, this.jobId)
+      if (this.name == '冲刺'){ // 没图标
+        result.Icon = '/i/000000/000104.png'
+      }
       if (result) {
         this.actionId = result.ID
         this.iconUrl = 'https://cafemaker.wakingsands.com' + result.Icon
