@@ -64,7 +64,7 @@ module.exports = [
 {"index":536,"partySize":4,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":330,"underSized":true,"name":"风水灵庙岩燕庙","type":"迷宫挑战","typeId":2,"banner":112283,"sort":69},
 {"index":585,"partySize":4,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":340,"underSized":true,"name":"死亡大地终末焦土","type":"迷宫挑战","typeId":2,"banner":112311,"sort":70},
 {"index":584,"partySize":4,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":340,"underSized":true,"name":"污染庭园圣茉夏娜植物园","type":"迷宫挑战","typeId":2,"banner":112310,"sort":71},
-{"index":611,"partySize":4,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":360,"underSized":true,"name":"国境战线基姆利特暗区","type":"迷宫挑战","typeId":2,"banner":112333,"sort":72},
+{"index":611,"partySize":4,"level":70,"maxLevel":70,"ilvMax":0,"ilvMin":360,"underSized":true,"name":"国境防线基姆利特暗区","type":"迷宫挑战","typeId":2,"banner":112333,"sort":72},
 {"index":676,"partySize":4,"level":71,"maxLevel":72,"ilvMax":0,"ilvMin":370,"underSized":false,"name":"遇袭集落水滩村","type":"迷宫挑战","typeId":2,"banner":112342,"sort":73},
 {"index":649,"partySize":4,"level":73,"maxLevel":74,"ilvMax":0,"ilvMin":375,"underSized":false,"name":"水妖幻园多恩美格禁园","type":"迷宫挑战","typeId":2,"banner":112343,"sort":74},
 {"index":651,"partySize":4,"level":75,"maxLevel":76,"ilvMax":0,"ilvMin":380,"underSized":false,"name":"文明古迹奇坦那神影洞","type":"迷宫挑战","typeId":2,"banner":112344,"sort":75},
