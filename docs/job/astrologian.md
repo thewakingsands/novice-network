@@ -67,12 +67,11 @@
 
 ### 奥秘卡
 
-占星转职时就是30级，获得了~~荷官~~抽卡能力，使用<Action name="抽卡" />就可以获得奥秘卡（之后习得<Action name="袖内抽卡" />可以连抽三张），根据获得的卡牌不同，可以使用<Action name="奥秘卡废弃" />、<Action name="出卡" />、<Action name="重抽" />和<Action name="小奥秘卡" />四个技能，在习得<Action name="小奥秘卡" />之后应该让<Action name="奥秘卡废弃" />离开技能栏，你的所有卡都可以转化成输出，没必要废弃。<Action name="出卡" />就是把卡发给目标队友（没有目标则默认发给自己），<Action name="重抽" />顾名思义就是重新抽一张，<Action name="小奥秘卡" />则是将其转换为小奥秘卡（好像废话）。
+占星转职时就是30级，获得了~~荷官~~抽卡能力，使用<Action name="抽卡" />就可以获得奥秘卡（之后习得<Action name="袖内抽卡" />可以抽到未拥有的标识的卡），根据获得的卡牌不同，可以使用<Action name="奥秘卡废弃" />、<Action name="出卡" />、<Action name="重抽" />和<Action name="小奥秘卡" />四个技能，在习得<Action name="小奥秘卡" />之后应该让<Action name="奥秘卡废弃" />离开技能栏，你的所有卡都可以转化成输出，没必要废弃。<Action name="出卡" />就是把卡发给目标队友（没有目标则默认发给自己），<Action name="重抽" />顾名思义就是重新抽一张，<Action name="小奥秘卡" />则是将其转换为小奥秘卡（好像废话）。
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./astrologian.assets/hud1.png" width="350" />
-
+<img src="./astrologian.assets/hud1.png" width="350" /><br/>
 <img src="./astrologian.assets/hud2.png" width="350" />
 ;;;
 
@@ -80,7 +79,7 @@
 
 占星的卡牌可以加强远程或近战的技能威力，同时每张卡牌有自己的“日”、“月”、“星”标识，这些不需要死记硬背，职业量谱上会有所体现：卡牌边框是蓝色的可以加强近战，边框是紫色的可以加强远程；日月星标识则会显示在卡牌上方。为了凑齐日月星标识，遇到不合适的牌，可以使用<Action name="重抽" />或<Action name="小奥秘卡" />来处理。
 
-但是你需要清楚知道哪些职业是近战，哪些是远程，并记得他们的职业图标：[职业介绍](/before/job.md#职业介绍)。当然<Role name="tank" />T是近战，而<Role name="healer" />治疗是远程，原则上卡牌是不会给T奶的，但是如果你队伍中的近战水平非常差，差到连T都打不过，那就还不如把近战卡发给T。
+但是你需要清楚知道哪些职业是<Role name="melee" />近战，哪些是<Role name="ranged" /><Role name="magic" />远程，并记得他们的职业图标：[职业介绍](/before/job.md#职业介绍)。当然<Role name="tank" />T是近战，而<Role name="healer" />治疗是远程，原则上卡牌是不会给T奶的，但是如果你队伍中的近战水平非常差，差到连T都打不过，那就还不如把近战卡发给T。
 
 ;;;
 ;;;
