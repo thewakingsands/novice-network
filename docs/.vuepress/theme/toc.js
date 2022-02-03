@@ -516,8 +516,8 @@ export const TOC = {
         },
         {
           title: '白魔法师（幻术师）',
-          href: '/job/whitemage.htm',
-          img: '/images/jobs/whitemage.png'
+          href: '/job/vvhit3mage.htm',
+          img: '/images/jobs/vvhit3mage.png'
         },
         {
           title: '学者（秘术师）',

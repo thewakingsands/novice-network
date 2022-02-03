@@ -246,7 +246,7 @@ T在副本中负责拉住怪，保护其他队友，掌控副本节奏，带领�
 治疗职业故名思义就是奶妈，负责给掉血的T 和DPS 提供抬血服务。奶妈需要认得很多buff图标，针对不同的buff采取不同的处理措施。在某些场合，奶妈必须及时驱散负面buff，否则轻则团队掉血降DPS，重则直接灭团。
 
 ;;;.jobs-container
-:::job whitemage healer
+:::job vvhit3mage healer
 白魔法师 {.header}
 
 传统概念的治疗，掉血加血，奶的高打得更高。
