@@ -6,12 +6,17 @@
 
 ## 开启狩猎
 
+以下任务地点请点击任务名称查看。
+
 - 50级并满足一定[军衔](/advanced/grandCompany.md)后，可以接任务<quest name="维持治安的怪物狩猎" type="plus" search/>打开狩猎功能。
 开启狩猎功能后，就可以在大国防联军的告示板上获得==通缉令==，击杀通缉令上指定的怪物即可获得奖励。
-- 53~60级依次完成<quest name="伊修加德的初级怪物狩猎" type="plus" />、<quest name="伊修加德的中级怪物狩猎" type="plus" />、<quest name="伊修加德的高级怪物狩猎" type="plus" />、<quest name="伊修加德的恶名精英" type="plus" />可以开启3.0版本的怪物狩猎，等级分布从53~60。通缉令在<Pos name="伊修加德基础层" :x="12" :y="11" />接取。
-- 61~70级依次完成<quest name="初级雄兵怪物狩猎" type="plus" />、<quest name="中级雄兵怪物狩猎" type="plus" />、<quest name="高级雄兵怪物狩猎" type="plus" />、<quest name="雄兵恶名精英狩猎" type="plus" />可以开启4.0版本的怪物狩猎，等级分布从61~70。通缉令在<Pos name="神拳痕" :x="13.2" :y="11.7" />或<Pos name="黄金港" :x="10.6" :y="10.4" />接取。
-- 71~80级依次完成<quest name="狂热兵团的初级怪物狩猎" type="plus" />、<quest name="狂热兵团的中级怪物狩猎" type="plus" />、<quest name="狂热兵团的高级怪物狩猎" type="plus" />、<quest name="狂热兵团的恶名精英狩猎" type="plus" />，可以开启5.0版本的怪物狩猎，等级分布从71~80。通缉令在<pos name="水晶都" :x="9.5" :y="9.45" />或<pos name="游末邦" :x="11.14" :y="10.84" sub="树干层" />接取。
-
+- 53~60级依次完成<quest name="伊修加德的初级怪物狩猎" type="plus" />、<quest name="伊修加德的中级怪物狩猎" type="plus" />、<quest name="伊修加德的高级怪物狩猎" type="plus" />、<quest name="伊修加德的恶名精英" type="plus" />可以开启3.0版本的怪物狩猎，等级分布从53~60。
+  - 通缉令在<Pos name="伊修加德基础层" :x="12" :y="11" />接取。
+- 61~70级依次完成<quest name="初级雄兵怪物狩猎" type="plus" />、<quest name="中级雄兵怪物狩猎" type="plus" />、<quest name="高级雄兵怪物狩猎" type="plus" />、<quest name="雄兵恶名精英狩猎" type="plus" />可以开启4.0版本的怪物狩猎，等级分布从61~70。
+  - 通缉令在<Pos name="神拳痕" :x="13.2" :y="11.7" />或<Pos name="黄金港" :x="10.6" :y="10.4" />接取。
+- 71~80级依次完成<quest name="狂热兵团的初级怪物狩猎" type="plus" />、<quest name="狂热兵团的中级怪物狩猎" type="plus" />、<quest name="狂热兵团的高级怪物狩猎" type="plus" />、<quest name="狂热兵团的恶名精英狩猎" type="plus" />，可以开启5.0版本的怪物狩猎，等级分布从71~80。
+  - 通缉令在<pos name="水晶都" :x="9.5" :y="9.45" />或<pos name="游末邦" :x="11.14" :y="10.84" sub="树干层" />接取。
+ 
 ## 狩猎怪
 
 狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](http://ff14huntpath.c4cdn.com/home/)进行规划：[3.0版](https://www.ffxivhuntpaths.com/hw/)、[4.0版](https://www.ffxivhuntpaths.com/sb/)，[5.0版](https://www.ffxivhuntpaths.com/shb/)（右上角可切换中文）。也可以直接使用[狩猎地图](https://ffxivhunt.com/hunt_daily_shb.php)（英文）调查。
