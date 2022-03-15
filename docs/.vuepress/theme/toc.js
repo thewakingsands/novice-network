@@ -17,10 +17,6 @@ export const TOC = {
           title: '收费方式及福利'
         },
         {
-          href: '/before/world.htm',
-          title: '游戏背景介绍'
-        },
-        {
           href: '/before/char.htm',
           title: '下载选服与捏人'
         },
@@ -34,8 +30,16 @@ export const TOC = {
       title: '新人指南',
       children: [
         {
+          href: '/before/world.htm',
+          title: '游戏背景介绍'
+        },
+        {
           href: '/basic/core.htm',
           title: '新人必知'
+        },
+        {
+          href: '/basic/map.htm',
+          title: '地图移动与飞行'
         },
         {
           href: '/basic/item.htm',
@@ -44,6 +48,10 @@ export const TOC = {
         {
           href: '/basic/equip.htm',
           title: '装备介绍'
+        },
+        {
+          href: 'basic/communication.htm',
+          title: '玩家交流'
         },
         {
           href: '/basic/battle.htm',
@@ -85,10 +93,6 @@ export const TOC = {
         {
           href: '/basic/quest.htm',
           title: '任务分类及重要支线'
-        },
-        {
-          href: '/basic/map.htm',
-          title: '地图移动与飞行'
         }
       ]
     },
@@ -134,7 +138,7 @@ export const TOC = {
         },
         {
           href: '/advanced/currency.htm',
-          title: '货币系统'
+          title: '货币系统（神典石）'
         },
         {
           href: '/basic/bis.htm',
@@ -146,8 +150,12 @@ export const TOC = {
       title: '战斗玩法',
       children: [
         {
+          href: '/job/bluemage.htm',
+          title: '青魔法师'
+        },
+        {
           href: '/topic/battle.htm',
-          title: '休闲赚钱'
+          title: '休闲赚钱挖宝'
         },
         {
           href: '/topic/hunt.htm',
@@ -195,10 +203,6 @@ export const TOC = {
           title: '义军武器(女王之刃)',
           belongsTo: 'shine',
           indent: 1
-        },
-        {
-          href: '/job/bluemage.htm',
-          title: '青魔法师'
         }
       ]
     },

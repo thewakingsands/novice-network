@@ -93,6 +93,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 60级，<quest name="一二三，木头人" type="plus" />，开放60级副本特化木桩战斗。战斗入口在指路的好心冒险者<Pos name="龙堡内陆低地" :x="18.4" :y="10.9" />。
   * 70级，<quest name="木人修行" type="plus" />，开放70级副本特化木桩战斗。战斗入口在满身伤痕的壮汉<Pos name="基拉巴尼亚边区" :x="30.1" :y="11.3" />。
   * 80级，<quest name="实力测试训练场" type="plus" />，开放80级副本特化木桩战斗。战斗入口在态度温和的退役士兵<Pos name="珂露西亚岛" :x="23.8" :y="37.8" />。
+  * 90级，<quest name="修炼技艺的训练场" type="plus" />，开放90级副本特化木桩战斗。战斗入口在目光敏锐的星战士<Pos name="萨维奈岛" :x="29.8" :y="17.2" />。
 
 关于木桩的介绍可以[参看本文](/basic/dummy.md)。
 
@@ -102,6 +103,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 5级：<quest name="高脚孤丘的奢华屋" type="plus" />，沙都住宅区开放。
 * 10级：<quest name="薰衣草苗圃的繁花屋" type="plus" />，森都住宅区开放。
 * 61级：<quest name="白银乡之梦" type="plus" />，白银乡住宅区开放。
+* 60级：<quest name="开放的穹顶皓天" type="plus" />，穹顶皓天住宅区开放。
 
 [住宅区与房屋介绍](/topic/social.md#住宅区与房屋)。
 

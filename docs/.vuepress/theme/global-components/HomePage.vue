@@ -29,43 +29,91 @@
         </p>
       </div>
     </div>
-    <div class="mntab mn-before">
+    <div class="tab-container">
+    <div class="mntab">
       <h2>入坑准备</h2>
       <ul>
-        <li><router-link to="before/pay.htm">收费方式及福利</router-link></li>
-        <li>
-          <router-link to="before/world.htm">游戏背景介绍</router-link>
-        </li>
+        <li><router-link to="before/pay.htm">收费方式与福利介绍</router-link></li>
         <li><router-link to="before/char.htm">下载选服与捏人</router-link></li>
         <li><router-link to="before/job.htm">职业选择</router-link></li>
       </ul>
     </div>
-    <div class="mntab mn-guide">
-      <h2>新人指南</h2>
+    <div class="mntab">
+      <h2>新人基础指南</h2>
       <ul>
-        <li><router-link to="basic/core.htm">新人必知</router-link></li>
         <li>
-          <router-link to="basic/battle.htm">战斗基础与副本</router-link>
+          <router-link to="before/world.htm">游戏背景介绍</router-link>
         </li>
-        <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
+        <li><router-link to="basic/core.htm">新人必知必会游戏核心</router-link></li>
+        <li><router-link to="basic/map.htm">地图、移动与飞行</router-link></li>
+        <li><router-link to="basic/equip.htm">认识装备</router-link></li>
+        <li><router-link to="basic/communication.htm">玩家交流</router-link></li>
+        <li>
+          <router-link to="basic/battle.htm">战斗基础</router-link>
+        </li>
+        <li><router-link to="ui/how.htm">界面指南</router-link></li>
+        
         <li>
           <router-link to="basic/config.htm">常用设置及热键</router-link>
         </li>
       </ul>
     </div>
-    <div class="mntab mn-qna">
-      <h2>常见问题</h2>
+    <div class="mntab">
+      <h2>进阶指南</h2>
       <ul>
         <li>
           <router-link to="basic/quest.htm">重要支线</router-link>
         </li>
-        <li><router-link to="basic/equip.htm">装备相关</router-link></li>
-        <li><router-link to="basic/map.htm">地图移动与飞行</router-link></li>
-        <li><router-link to="ui/how.htm">界面指南</router-link></li>
+        <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
+        <li>
+          <router-link to="basic/battle-mech.htm">战斗机制详解</router-link>
+        </li>
+        <li>
+        <router-link to="basic/dummy.htm">木桩木人介绍</router-link>
+        </li>
+        <li>
+          <router-link to="basic/dungeon.htm">副本介绍</router-link>
+        </li>
+        <li><router-link to="topic/social.htm">社群与社交</router-link></li>
+        <li><router-link to="advanced/currency.htm">货币系统（神典石）</router-link></li>
+        <li><router-link to="basic/bis.htm">毕业装备</router-link></li>
+        
       </ul>
     </div>
-    <div class="mntab mn-sys">
-      <h2>进阶内容</h2>
+    <div class="mntab">
+      <h2>日常休闲</h2>
+      <ul>
+        <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
+        <li><router-link to="topic/battle.htm">休闲赚钱与挖宝</router-link></li>
+        <li><router-link to="topic/story.htm">剧情任务</router-link></li>
+        <li>
+          <router-link to="topic/goldsaucer.htm">金碟游乐场</router-link>
+        </li>
+        <li><router-link to="topic/relax.htm">休闲活动</router-link></li>
+      </ul>
+    </div>
+    <div class="mntab">
+      <h2>其他游戏系统</h2>
+      <ul>
+        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
+        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
+        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
+      </ul>
+    </div>
+    
+    <div class="mntab">
+      <h2>战斗玩法</h2>
+      <ul>
+        <li><router-link to="job/bluemage.htm">青魔法师</router-link></li>
+        <li><router-link to="topic/hunt.htm">怪物狩猎</router-link></li>
+        <li><router-link to="topic/raid.htm">PVE 挑战副本</router-link></li>
+        <li><router-link to="topic/pvp.htm">PVP 玩家对战</router-link></li>
+        <li><router-link to="topic/dd.htm">Roguelike 深层迷宫</router-link></li>
+        <li><router-link to="topic/shine.htm">制作成长型发光武器</router-link></li>
+      </ul>
+    </div>
+    <div class="mntab">
+      <h2>常用工具</h2>
       <ul>
         <li>
           <router-link to="advanced/glossary.htm">黑话缩略语词典</router-link>
@@ -73,53 +121,51 @@
         <li>
           <router-link to="/duty/">副本攻略</router-link>
         </li>
-        <li><router-link to="advanced/currency.htm">货币系统</router-link></li>
-        <li><router-link to="basic/bis.htm">毕业装备</router-link></li>
+        <li><router-link to="advanced/macro-intro.htm">宏指南</router-link></li>
+        
       </ul>
     </div>
-    <div class="mntab mn-battle">
-      <h2>战斗玩法</h2>
-      <ul>
-        <li><router-link to="topic/battle.htm">休闲赚钱</router-link></li>
-        <li><router-link to="topic/raid.htm">挑战副本</router-link></li>
-        <li><router-link to="topic/pvp.htm">PVP</router-link></li>
-        <li><router-link to="topic/shine.htm">发光武器</router-link></li>
-        <li><router-link to="topic/dd.htm">深层迷宫</router-link></li>
-      </ul>
-    </div>
-    <div class="mntab mn-play">
-      <h2>日常休闲</h2>
-      <ul>
-        <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
-        <li><router-link to="topic/story.htm">剧情任务</router-link></li>
-        <li>
-          <router-link to="topic/goldsaucer.htm">金碟游乐场</router-link>
-        </li>
-        <li><router-link to="job/bluemage.htm">青魔法师</router-link></li>
-        <li><router-link to="topic/relax.htm">休闲活动</router-link></li>
-      </ul>
-    </div>
-    <div class="mntab mn-etc">
+    <div class="mntab">
       <h2>生产采集</h2>
       <ul>
-        <li><router-link to="/topic/craft.htm">能工巧匠（制作）</router-link></li>
-        <li><router-link to="/topic/gather.htm">大地使者（采集）</router-link></li>
+        <li><router-link to="topic/craft.htm">能工巧匠（制作）</router-link></li>
+        <li><router-link to="topic/gather.htm">大地使者（采集）</router-link></li>
+        <li><router-link to="topic/fisher.htm">钓鱼指南</router-link></li>
       </ul>
+    </div>
+    <div class="mntab">
       <h2>其他</h2>
       <ul>
-        <li><router-link to="topic/other.htm">周边衍生</router-link></li>
+        <li><router-link to="topic/other.htm">周边衍生作品</router-link></li>
         <li>
           <router-link to="/basic/international.htm">国际服专题</router-link>
         </li>
       </ul>
     </div>
+    <div class="mntab">
+      <h2>常用网站</h2>
+      <ul>
+        <li><a href="https://ff.web.sdo.com/web8/index.html#/home" target="_blank">最终幻想14国服官网</a></li>
+        <li><a href="https://bbs.nga.cn/thread.php?fid=-362960" target="_blank">NGA玩家社区FF14版</a></li>
+        <li><a href="https://ff14.huijiwiki.com/" target="_blank">FF14中文维基</a></li>
+      </ul>
+    </div>
+  </div>
   </div>
 </template>
 
 <style lang="stylus" scoped>
-.home-container
+$c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
+.tab-container
   display flex
-  flex-wrap wrap
+  align-content flex-start
+  flex-flow column wrap
+  height 834px
+  &:before, &:after
+    content ""
+    flex-basis 100%
+    width 0
+    order 2
 .mnheader
   width 100%
   display flex
@@ -135,72 +181,56 @@
 
 .mntab
   flex 1 1 0
-  min-width 20%
-  margin 2px
-  border-radius 4px
-  border 1px solid #b58e2b
-  overflow hidden
-  &.mn-before
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-chocobo.png') bottom right no-repeat, #fbf3db
-    background-size 6px 6px, 107px 118px
-  &.mn-guide
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-spriggan.png') bottom right no-repeat, #fbf3db
-    background-size 6px 6px, 84px 120px
-  &.mn-qna
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-moogle.png') bottom right no-repeat, #fbf3db
-    background-size 6px 6px, 102px 121px
-  &.mn-sys
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg-otter.png') bottom right no-repeat, #fbf3db
-    background-size 6px 6px, 126px 110px
-  &.mn-battle
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg1.jpg') bottom right no-repeat, #de5741
-    background-size 6px 6px, 217px 208px
-    h2
-      background rgba(125,38,24,0.3)
-    li
-      a
-        color white
-        &:hover
-         background rgba(0,0,0,0.1)
-  &.mn-play
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg2.jpg') bottom right no-repeat, #2f357e
-    background-size 6px 6px, 154px 201px
-    h2
-      background rgba(22,23,58,0.3)
-    li
-      a
-        color white
-        &:hover
-         background rgba(0,0,0,0.1)
-  &.mn-etc
-    background radial-gradient(circle at center, rgba(255, 255, 255, 0.15) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px, url('/images/bg/bg3.jpg') bottom right no-repeat, #5d8d48
-    background-size 6px 6px, 236px 213px
-    h2
-      background rgba(20,51,18,0.3)
-    li
-      a
-        color white
-        &:hover
-         background rgba(0,0,0,0.1)
+  width 30%
+  margin 10px
+  position relative
+  border-radius 10px
+  box-shadow 0 0 10px #66666630
+  background white
+  transition all .3s
+  &:nth-child(3n+1)
+    order 1
+  &:nth-child(3n+2)
+    order 2
+  &:nth-child(3n+3)
+    order 3
+  &:hover
+    box-shadow -5px -2px 15px #3c57cf73, 0px 0px 15px #3584ad59, 5px 2px 15px #f18e2e80
   h2
-    padding 5px 20px
+    padding 10px 20px
     margin 0
-    background rgba(149, 96, 26, 0.60)
-    color white
+    color #33333e
   ul
     list-style none
     padding 0
     margin 0
   li
+    position relative
     a
       display block
-      color #5a411f
-      font-size 1.2em
+      position relative
+      color #3d4e99
+      font-size 1em
       padding 5px 20px
-      &:hover
-        background rgba(199, 167, 50, 0.3)
+      z-index 60
+      transition all .3s
+      &::after
+        content ' '
+        display block
+        position absolute
+        left 20%
+        top 0
+        width 0
+        height 2.2em
+        background-image $c
+        z-index -1
         transition all .3s
-
+      &:hover
+        color white
+        &::after
+          left 0
+          width 100%
+        
 @media screen and (max-width 960px)
   /*小屏幕*/
   .clickable

@@ -4,6 +4,8 @@
 
 ## 战斗基础
 
+<!--连招介绍-->
+
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./battle.assets/gcd.gif" />

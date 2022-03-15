@@ -1,5 +1,22 @@
 # FF14黑话、玩家常用语词典
 
+为方便玩家检索使用，我们制作了玩家常用语的鼠标划词插件。
+
+::: segment green
+
+[点我安装下载鼠标划词油猴插件](https://cdn.jsdelivr.net/gh/thewakingsands/xivdict@master/xivdict.user.js)
+
+* ==使用方法==：鼠标划过一段文字之后，如果里面有系统收录的缩写、黑话，在这段话右下角会弹出一个“黑话翻译”的小按钮(极偶尔的情况它可能出现在屏幕右上角)，点击这个按钮，就会弹出这段文字中发现的所有黑话及其解释。点击弹窗外的任意位置，弹窗会自动关闭。
+
+* ==目前已知的~~且基本无法解决的~~问题==：
+词汇检索比较蠢，比如你鼠标划过“E12”，会同时弹出E1和E12的解释，或者划过“黑话”，会弹出“黑(装备)”的解释。请在使用中自行判断可能的含义。
+会展示所有发现的释义。请尽量避免划过过长的文段，可能会导致释义弹窗变得非常非常长。
+
+* ==什么是油猴、如何安装油猴==：油猴是名为Tampermonkey的一个浏览器插件，可以挂载用户自行开发的插件工具。像是购物网站比价工具、视频网站下载工具，都是以用户脚本的方式挂载在浏览器上使用的。目前油猴支持包括Chrome、Edge、UC在内的多款主流浏览器。[Chrome安装](https://zhuanlan.zhihu.com/p/128453110)、[EDGE安装](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)、[360安装](https://ext.chrome.360.cn/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)，其他浏览器请自行百度，基本上都可以装的。
+  安装好插件之后，打开上面的网址，就会弹出一个全是字的界面，找到“安装”按钮，点一下就可以了。
+
+:::
+
 ## MMORPG通用词汇
 ::: segment orange
 **索引**：MMORPG、DOT、HOT、跳、AOE、CD、GCD、o-GCD、滑步、SS、T、坦克、肉、奶、N、H、DPS、输出、仇恨、MT、主坦、ST、副坦、OT、换T、换坦、副本、Raid、Buff、Debuff、ADD、110、BiS
