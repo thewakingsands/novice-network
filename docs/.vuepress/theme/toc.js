@@ -50,7 +50,7 @@ export const TOC = {
           title: '装备介绍'
         },
         {
-          href: 'basic/communication.htm',
+          href: '/basic/communication.htm',
           title: '玩家交流'
         },
         {
