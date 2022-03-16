@@ -88,6 +88,11 @@ export default {
               title: '71~80',
               filter: x => x.level > 70 && x.level <= 80,
               selected: false
+            },
+            {
+              title: '81~90',
+              filter: x => x.level > 80 && x.level <= 90,
+              selected: false
             }
           ]
         },

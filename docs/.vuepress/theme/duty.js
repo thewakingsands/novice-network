@@ -161,6 +161,8 @@ module.exports = [
 {"index":802,"partySize":8,"level":83,"maxLevel":84,"ilvMax":0,"ilvMin":0,"underSized":false,"name":"83级讨伐战","type":"讨伐歼灭战","typeId":4,"banner":112443,"sort":191},
 {"index":790,"partySize":8,"level":89,"maxLevel":90,"ilvMax":550,"ilvMin":0,"underSized":false,"name":"89级讨伐战","type":"讨伐歼灭战","typeId":4,"banner":112443,"sort":192},
 {"index":796,"partySize":8,"level":90,"maxLevel":90,"ilvMax":0,"ilvMin":540,"underSized":false,"name":"90级讨伐战","type":"讨伐歼灭战","typeId":4,"banner":112443,"sort":193},
+{"index":803,"partySize":8,"level":89,"maxLevel":90,"ilvMax":0,"ilvMin":560,"underSized":false,"name":"90饰品歼殛战","type":"讨伐歼灭战","typeId":4,"banner":112444,"sort":194},
+{"index":791,"partySize":8,"level":90,"maxLevel":90,"ilvMax":0,"ilvMin":560,"underSized":false,"name":"90武器歼殛战","type":"讨伐歼灭战","typeId":4,"banner":112446,"sort":195},
 {"index":92,"partySize":24,"level":50,"maxLevel":50,"ilvMax":0,"ilvMin":50,"underSized":true,"name":"水晶塔 古代人迷宫","type":"大型任务","typeId":5,"banner":112033,"sort":1},
 {"index":102,"partySize":24,"level":50,"maxLevel":50,"ilvMax":0,"ilvMin":70,"underSized":true,"name":"水晶塔 希尔科斯塔","type":"大型任务","typeId":5,"banner":112061,"sort":2},
 {"index":111,"partySize":24,"level":50,"maxLevel":50,"ilvMax":0,"ilvMin":90,"underSized":true,"name":"水晶塔 暗之世界","type":"大型任务","typeId":5,"banner":112079,"sort":3},
