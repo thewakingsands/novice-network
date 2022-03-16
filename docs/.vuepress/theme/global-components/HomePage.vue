@@ -186,7 +186,10 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
   position relative
   border-radius 10px
   box-shadow 0 0 10px #66666630
-  background white
+  background-image linear-gradient(0deg, #ffffffde,#ffffffde), url(/images/bg/bgmoon.jpg)
+  background-attachment fixed
+  background-position right 30px bottom -80px
+  background-size cover
   transition all .3s
   &:nth-child(3n+1)
     order 1
@@ -196,6 +199,7 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
     order 3
   &:hover
     box-shadow -5px -2px 15px #3c57cf73, 0px 0px 15px #3584ad59, 5px 2px 15px #f18e2e80
+    background-image linear-gradient(0deg, #ffffff8c,#ffffff8c), url(/images/bg/bgmoon.jpg)
   h2
     padding 10px 20px
     margin 0
@@ -267,23 +271,14 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
         opacity 1
         z-index 1
         transform translateY(0)
-
+  .tab-container
+    align-content center
+    flex-wrap nowrap
+    height auto
   .mntab
-    min-width 40%
-    &.mn-before
-      background-size 6px 6px, (107px*2/3) (118px*2/3)
-    &.mn-guide
-      background-size 6px 6px, (84px*2/3) (120px*2/3)
-    &.mn-qna
-      background-size 6px 6px, (102px*2/3) (121px*2/3)
-    &.mn-sys
-      background-size 6px 6px, (126px*2/3) (110px*2/3)
-    &.mn-battle
-      background-size 6px 6px, 95%
-      background-position 3px 3px, 300% 100%
-    &.mn-play
-      background-size 6px 6px, 70%
-      background-position 3px 3px, 140% 100%
+    width auto
+    &:nth-child(n)
+      order 1
     h2
       font-size 1em
     li
