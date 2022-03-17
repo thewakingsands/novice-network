@@ -45,6 +45,9 @@
           <router-link to="before/world.htm">游戏背景介绍</router-link>
         </li>
         <li><router-link to="basic/core.htm">新人必知必会游戏核心</router-link></li>
+        <li>
+          <router-link to="basic/quest.htm">重要支线</router-link>
+        </li>
         <li><router-link to="basic/map.htm">地图、移动与飞行</router-link></li>
         <li><router-link to="basic/equip.htm">认识装备</router-link></li>
         <li><router-link to="basic/communication.htm">玩家交流</router-link></li>
@@ -61,9 +64,6 @@
     <div class="mntab">
       <h2>进阶指南</h2>
       <ul>
-        <li>
-          <router-link to="basic/quest.htm">重要支线</router-link>
-        </li>
         <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
         <li>
           <router-link to="basic/battle-mech.htm">战斗机制详解</router-link>
@@ -81,6 +81,14 @@
       </ul>
     </div>
     <div class="mntab">
+      <h2>其他游戏系统</h2>
+      <ul>
+        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
+        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
+        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
+      </ul>
+    </div>
+    <div class="mntab">
       <h2>日常休闲</h2>
       <ul>
         <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
@@ -92,15 +100,6 @@
         <li><router-link to="topic/relax.htm">休闲活动</router-link></li>
       </ul>
     </div>
-    <div class="mntab">
-      <h2>其他游戏系统</h2>
-      <ul>
-        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
-        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
-        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
-      </ul>
-    </div>
-    
     <div class="mntab">
       <h2>战斗玩法</h2>
       <ul>
@@ -143,11 +142,13 @@
       </ul>
     </div>
     <div class="mntab">
-      <h2>常用网站</h2>
+      <h2>常用综合网站</h2>
       <ul>
         <li><a href="https://ff.web.sdo.com/web8/index.html#/home" target="_blank">最终幻想14国服官网</a></li>
         <li><a href="https://bbs.nga.cn/thread.php?fid=-362960" target="_blank">NGA玩家社区FF14版</a></li>
+        <li><a href="https://www.ffxiv.cn/v2/" target="_blank">NGA玩家社区FF14版</a></li>
         <li><a href="https://ff14.huijiwiki.com/" target="_blank">FF14中文维基</a></li>
+        <li><a href="https://garlandtools.cn/db/" target="_blank">加兰德数据库(中文版)</a></li>
       </ul>
     </div>
   </div>
@@ -155,12 +156,12 @@
 </template>
 
 <style lang="stylus" scoped>
-$c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
+$c = linear-gradient(106deg, #3d4d99 0%, #3689b3 50%, #cc7a29 100%)
 .tab-container
   display flex
-  align-content flex-start
+  align-content stretch
   flex-flow column wrap
-  height 834px
+  height 910px
   &:before, &:after
     content ""
     flex-basis 100%
@@ -180,10 +181,11 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
     color #666
 
 .mntab
-  flex 1 1 0
-  width 30%
+  flex 0 1 auto
+  width 32%
   margin 10px
   position relative
+  overflow hidden
   border-radius 10px
   box-shadow 0 0 10px #66666630
   background-image linear-gradient(0deg, #ffffffde,#ffffffde), url(/images/bg/bgmoon.jpg)
@@ -197,12 +199,13 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
     order 2
   &:nth-child(3n+3)
     order 3
-  &:hover
+  &:hover,&:active
     box-shadow -5px -2px 15px #3c57cf73, 0px 0px 15px #3584ad59, 5px 2px 15px #f18e2e80
     background-image linear-gradient(0deg, #ffffff8c,#ffffff8c), url(/images/bg/bgmoon.jpg)
   h2
     padding 10px 20px
     margin 0
+    background linear-gradient(0deg, #72727210, #72727200)
     color #33333e
   ul
     list-style none
@@ -225,7 +228,7 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
         left 20%
         top 0
         width 0
-        height 2.2em
+        height 2.15em
         background-image $c
         z-index -1
         transition all .3s
@@ -277,6 +280,7 @@ $c = linear-gradient(106deg, #3d4e99 0%, #3584ad 50%, #cc7a2a 100%)
     height auto
   .mntab
     width auto
+    margin 0 0 10px
     &:nth-child(n)
       order 1
     h2
