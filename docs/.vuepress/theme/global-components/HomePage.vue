@@ -146,7 +146,7 @@
       <ul>
         <li><a href="https://ff.web.sdo.com/web8/index.html#/home" target="_blank">最终幻想14国服官网</a></li>
         <li><a href="https://bbs.nga.cn/thread.php?fid=-362960" target="_blank">NGA玩家社区FF14版</a></li>
-        <li><a href="https://www.ffxiv.cn/v2/" target="_blank">NGA玩家社区FF14版</a></li>
+        <li><a href="https://www.ffxiv.cn/v2/" target="_blank">素素攻略站</a></li>
         <li><a href="https://ff14.huijiwiki.com/" target="_blank">FF14中文维基</a></li>
         <li><a href="https://garlandtools.cn/db/" target="_blank">加兰德数据库(中文版)</a></li>
       </ul>
