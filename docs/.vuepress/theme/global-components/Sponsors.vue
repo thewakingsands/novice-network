@@ -5,18 +5,12 @@
     <div class="sponsor-error" v-if="error" @click="updateSponsors()">
       赞助者加载失败：{{ error }}
     </div>
-    <ul
-      v-else
-      class="sponsors"
-      v-for="(index, sponsor) in sponsors"
-      :key="index"
-    >
-      <li class="sponsor">
+    <ul v-else class="sponsors">
+      <li class="sponsor" v-for="(sponsor, index) in sponsors" :key="index">
         <div class="sponsor-avatar">
           <img :src="sponsor.avatar" :alt="sponsor.sponsor" />
         </div>
         <div class="sponsor-name">{{ sponsor.sponsor }}</div>
-        <div class="sponsor-amount">￥{{ sponsor.amount }}</div>
       </li>
     </ul>
     <div class="sponsors-footer">
@@ -31,7 +25,28 @@
   </div>
 </template>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.sponsors-container
+  .sponsors
+    list-style none
+    white-space nowrap
+    overflow-x auto
+  .sponsor
+    display inline-block
+    width 128px
+    padding 8px
+    text-align center
+  .sponsor-name
+    width 100%
+    text-overflow ellipsis
+    overflow hidden
+    font-size 0.9em
+  .sponsor-avatar img
+    width 48px
+    height 48px
+    border-radius 100%
+    overflow hidden
+</style>
 
 <script>
 export default {
