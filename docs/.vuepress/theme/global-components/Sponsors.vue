@@ -63,7 +63,7 @@ export default {
   methods: {
     async updateSponsors() {
       this.loading = true
-      const apiUrl = 'http://127.0.0.1:8809/sponsors'
+      const apiUrl = 'https://novice-network-asl.wakingsands.com/sponsors'
       try {
         const resp = await fetch(apiUrl)
         const json = await resp.json()
