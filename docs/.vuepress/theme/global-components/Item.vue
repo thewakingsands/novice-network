@@ -57,6 +57,7 @@ export default {
     },
     hq: Boolean,
     noname: Boolean,
+    search: Boolean,
     cls: String
   },
   data: function() {
@@ -85,12 +86,16 @@ export default {
   },
   computed: {
     wikiLink() {
+      if (this.search) {return(
+        'https://ff14.huijiwiki.com/wiki/ItemSearch?name=' +
+        encodeURIComponent(this.name)
+      )} else {
       return (
         'https://ff14.huijiwiki.com/wiki/' +
         encodeURIComponent('物品') +
         ':' +
         encodeURIComponent(this.name)
-      )
+      )}
     }
   }
 }

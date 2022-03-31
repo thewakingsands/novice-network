@@ -203,7 +203,7 @@
     display none
     button
       margin 0
-      background linear-gradient(106deg, rgba(61,78,153,1) 0%, rgba(53,132,173,1) 50%, rgba(204,122,42,1) 100%)
+      background linear-gradient(106deg, #3d4d99 0%, #3689b3 50%, #cc7a29 100%)
       box-shadow 1px 3px 5px 0px rgba(34,36,38,0.3)
       color white
       font-size 20px

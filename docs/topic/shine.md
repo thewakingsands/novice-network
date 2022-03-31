@@ -51,9 +51,9 @@
 
 ::: collapse 蛮神发光武器检索索引
 * 2.0蛮神：[风神](https://garlandtools.cn/db/#list/fLtdy35Jah)、[火神](https://garlandtools.cn/db/#list/Dr4DHNl6KJ)、[土神](https://garlandtools.cn/db/#list/66MrWJ4JrD)、[水神](https://garlandtools.cn/db/#list/men5SWrwjD)、[冰神](https://garlandtools.cn/db/#list/Nzh8ozDsyd)、[雷神](https://garlandtools.cn/db/#list/8uPOAK919A)、[莫古](https://garlandtools.cn/db/#list/Xn2RlpZmmk)
-* 3.0蛮神：[武神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%81%83%E6%AD%A6&kind=1)、[云神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%97%A0%E5%B0%BD%E4%BA%91%E7%A5%9E)、[骑神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%9C%86%E6%A1%8C&kind=1)、[邪龙](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E9%82%AA%E9%BE%99%E6%80%A8%E5%BD%B1)、[魔神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%94%9F%E5%91%BD)、[女神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%A5%9E%E5%9C%A3%E5%A5%B3%E7%A5%9E)、[鬼神](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%97%A0%E9%99%90%E9%AC%BC%E7%A5%9E)。
-* 4.0蛮神：[神龙](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%A5%9E%E9%BE%99%E6%A2%A6%E5%B9%BB)、[月读](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%9C%88%E8%AF%BB%E5%91%BD%E5%B9%BD%E5%A4%9C)、[白虎](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E7%99%BD%E5%B8%9D&kind=1)、[朱雀](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E6%9C%B1%E7%84%B0)、[青龙](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E9%9D%92%E5%90%9B&kind=1)
-* 5.0蛮神：[哈迪斯](https://ff14.huijiwiki.com/wiki/ItemSearch?name=%E5%86%8D&kind=1)
+* 3.0蛮神：[武神](https://garlandtools.cn/db/#list/Q2UJX2nP8H)、[云神](https://garlandtools.cn/db/#list/0DJ3V0jQP9)、[骑神](https://garlandtools.cn/db/#list/V1EFOzOOdM)、[邪龙](https://garlandtools.cn/db/#list/999l2G6nZ9)、[魔神](https://garlandtools.cn/db/#list/TgNTQhi1HT)、[女神](https://garlandtools.cn/db/#list/BGqb9dW8cZ)、[鬼神](https://garlandtools.cn/db/#list/ui6cJnyoz6)。
+* 4.0蛮神：[神龙](https://garlandtools.cn/db/#list/IxEeV9qkgv)、[月读](https://garlandtools.cn/db/#list/Flzgf6psK1)、[白虎](https://garlandtools.cn/db/#list/6x42ctdNnf)、[朱雀](https://garlandtools.cn/db/#list/L8uplhC78i)、[青龙](https://garlandtools.cn/db/#list/78UxTHJ6eI)
+* 5.0蛮神：[哈迪斯](https://garlandtools.cn/db/#list/g6FjZIgiKU)
 :::
 
 

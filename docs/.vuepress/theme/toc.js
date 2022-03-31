@@ -18,7 +18,7 @@ export const TOC = {
         },
         {
           href: '/before/char.htm',
-          title: '下载选服与捏人'
+          title: '下载注册与创建角色'
         },
         {
           href: '/before/job.htm',

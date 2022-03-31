@@ -141,10 +141,32 @@ FF14同样在野外放置了大量木桩，方便玩家随时探访：
 ;;;
 
 ### 80级木桩
+;;;
+;;;
 
+;;;.guide .cols3
+;;;.guide .col .figcap
 <img src="./battle.assets/dummy5.png" width="350px" />
 
 鳍人潮池<Pos name="黑风海" :x="32.0" :y="19.2" />
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/dummy5_1.png" width="350px" />
+
+微风海岸<Pos name="萨维奈岛" :x="23.3" :y="34.3" />
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/dummy5_2.png" width="350px" />
+
+外环<Pos name="迷津" :x="31.4" :y="13.6" />
+;;;
+;;;
+
+### 90级木桩
+
+<img src="./battle.assets/dummy6.png" width="350px" />
+
+瓦铭癸己 <Pos name="天外天垓" :x="30.6" :y="26.8" />
 
 ## PVP木桩
 

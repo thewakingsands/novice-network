@@ -34,7 +34,7 @@
       <h2>入坑准备</h2>
       <ul>
         <li><router-link to="before/pay.htm">收费方式与福利介绍</router-link></li>
-        <li><router-link to="before/char.htm">下载选服与捏人</router-link></li>
+        <li><router-link to="before/char.htm">下载注册与创建角色</router-link></li>
         <li><router-link to="before/job.htm">职业选择</router-link></li>
       </ul>
     </div>
@@ -156,7 +156,7 @@
 </template>
 
 <style lang="stylus" scoped>
-$c = linear-gradient(106deg, #3d4d99 0%, #3689b3 50%, #cc7a29 100%)
+$c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
 .tab-container
   display flex
   align-content stretch

@@ -50,7 +50,7 @@ body
         font-size .8em
     ins
       text-decoration none
-      text-shadow 0px 0px 1px #FFEB3B, 0px 0px 5px #FFEB3B, 0px 0px 10px #FFEB3B
+      text-shadow 0px 0px 5px #FFEB3B
       color #000
     mark
       background-color #dcedc8
