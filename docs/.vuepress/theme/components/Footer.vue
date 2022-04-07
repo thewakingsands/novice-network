@@ -17,25 +17,14 @@
         <router-link to="/about"> 关于&amp;捐赠 </router-link>
       </div>
       <div class="status-line">
-        《新大陆见闻录》是<a href="https://ffcafe.org/" target="_blank">肥肥咖啡</a>的一个子项目，欢迎<a href="https://ffcafe.org/join-us/">加入我们</a>，也可以<a href="mailto:yunze@wakingsands.com?subject=《新大陆见闻录》投稿">使用Email向我们投稿</a>！
+        《新大陆见闻录》是<a href="https://ffcafe.org/" target="_blank"
+          >肥肥咖啡</a
+        >的一个子项目，欢迎<a href="https://ffcafe.org/join-us/">加入我们</a
+        >，也可以<a
+          href="mailto:yunze@wakingsands.com?subject=《新大陆见闻录》投稿"
+          >使用Email向我们投稿</a
+        >！
       </div>
-      <a
-        href="https://github.com/thewakingsands/novice-network/actions/workflows/pages.yml"
-        rel="noopener noreferer"
-        target="_blank"
-      >
-        <img
-          src="https://github.com/thewakingsands/novice-network/actions/workflows/pages.yml/badge.svg"
-          referrerpolicy="no-referrer"
-        />
-      </a>
-      <a
-        href="https://vuepress.vuejs.org/"
-        rel="noopener noreferer"
-        target="_blank"
-      >
-        <img src="https://img.shields.io/badge/generator-VuePress-46b683" referrerpolicy="no-referrer"/>
-      </a>
       <div class="copyright-line copyright-se">
         FINAL FANTASY XIV © 2010 - 2020 SQUARE ENIX CO., LTD. All Rights
         Reserved.
