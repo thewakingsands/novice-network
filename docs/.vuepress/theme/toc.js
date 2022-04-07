@@ -47,7 +47,20 @@ export const TOC = {
         },
         {
           href: '/basic/equip.htm',
-          title: '装备介绍'
+          title: '装备介绍',
+          folder: 'equip'
+        },
+        {
+          href: '/basic/equip.htm',
+          title: '装备分类与强度',
+          belongsTo: 'equip',
+          indent: 1
+        },
+        {
+          href: '/basic/equip-looking.htm',
+          title: '染色与投影',
+          belongsTo: 'equip',
+          indent: 1
         },
         {
           href: '/basic/communication.htm',
@@ -407,7 +420,7 @@ export const TOC = {
           title: '临危受命（FATE）'
         }
       ]
-    },
+    }, /* 这部分不要了，暂存备考
     {
       title: '界面指南',
       children: [
@@ -420,7 +433,7 @@ export const TOC = {
         { title: '神典石', href: '/ui/currency.htm' },
         { title: '战斗界面', href: '/ui/battle.htm' }
       ]
-    },
+    }, */
     {
       title: '其他',
       children: [
