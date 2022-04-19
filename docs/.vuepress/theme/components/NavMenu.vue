@@ -195,7 +195,7 @@
           top 0
           bottom 0
           left 0
-          right -500px
+          right -800px
           background rgba(0,0,0,0.4)
     .ui.menu::after
       height 80px

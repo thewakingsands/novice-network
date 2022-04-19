@@ -4,24 +4,29 @@
 
 狩猎奖励可以用来兑换坐骑、乐谱、装备、升级材料、魔晶石等等道具，一方面可以方便新玩家迅速提升装备，也不失为是一种赚钱的方式。
 
-## 开启狩猎
+## 开始狩猎
 
-以下任务地点请点击任务名称查看。
+当角色等级达到50级并满足一定[军衔](/advanced/grandCompany.md)后，可以接任务<quest name="维持治安的怪物狩猎" type="plus" search/>打开狩猎功能。
 
-- 50级并满足一定[军衔](/advanced/grandCompany.md)后，可以接任务<quest name="维持治安的怪物狩猎" type="plus" search/>打开狩猎功能。
-开启狩猎功能后，就可以在大国防联军的告示板上获得==通缉令==，击杀通缉令上指定的怪物即可获得奖励。
+::: collapse 其他等级狩猎开启条件
+
 - 53~60级依次完成<quest name="伊修加德的初级怪物狩猎" type="plus" />、<quest name="伊修加德的中级怪物狩猎" type="plus" />、<quest name="伊修加德的高级怪物狩猎" type="plus" />、<quest name="伊修加德的恶名精英" type="plus" />可以开启3.0版本的怪物狩猎，等级分布从53~60。
-  - 通缉令在<Pos name="伊修加德基础层" :x="12" :y="11" />接取。
 - 61~70级依次完成<quest name="初级雄兵怪物狩猎" type="plus" />、<quest name="中级雄兵怪物狩猎" type="plus" />、<quest name="高级雄兵怪物狩猎" type="plus" />、<quest name="雄兵恶名精英狩猎" type="plus" />可以开启4.0版本的怪物狩猎，等级分布从61~70。
-  - 通缉令在<Pos name="神拳痕" :x="13.2" :y="11.7" />或<Pos name="黄金港" :x="10.6" :y="10.4" />接取。
 - 71~80级依次完成<quest name="狂热兵团的初级怪物狩猎" type="plus" />、<quest name="狂热兵团的中级怪物狩猎" type="plus" />、<quest name="狂热兵团的高级怪物狩猎" type="plus" />、<quest name="狂热兵团的恶名精英狩猎" type="plus" />，可以开启5.0版本的怪物狩猎，等级分布从71~80。
-  - 通缉令在<pos name="水晶都" :x="9.5" :y="9.45" />或<pos name="游末邦" :x="11.14" :y="10.84" sub="树干层" />接取。
 - 81~90级依次完成<quest name="初级总会怪物狩猎" type="plus" />、<quest name="中级总会怪物狩猎" type="plus" />、<quest name="高级总会怪物狩猎" type="plus" />、<quest name="总会恶名精英狩猎" type="plus" />，可以开启6.0版本的怪物狩猎，等级分布从81~90。
-  - 通缉令在<pos name="旧萨雷安" :x="11.8" :y="13.2" />或<pos name="拉札罕" :x="10.4" :y="7.3"/>接取。
+
+:::
+
+开启狩猎功能后，就可以在各地的告示板上获得==通缉令==，击杀通缉令上指定的怪物即可获得奖励。
+- 50级告示板：自己所在大国防联军
+- 60级狩猎告示板：<Pos name="伊修加德基础层" :x="12" :y="11" />
+- 70级狩猎告示板：<Pos name="神拳痕" :x="13.2" :y="11.7" />或<Pos name="黄金港" :x="10.6" :y="10.4" />
+- 80级狩猎告示板：<pos name="水晶都" :x="9.5" :y="9.45" />或<pos name="游末邦" :x="11.14" :y="10.84" sub="树干层" />
+- 90级狩猎告示板：<pos name="旧萨雷安" :x="11.8" :y="13.2" />或<pos name="拉札罕" :x="10.4" :y="7.3"/>
  
 ## 狩猎怪
 
-狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](http://ff14huntpath.c4cdn.com/home/)进行规划：[3.0版](http://ff14huntpath.c4cdn.com/hw/)、[4.0版](https://ff14huntpath.c4cdn.com/sb/)，[5.0版](https://ff14huntpath.c4cdn.com/shb/)，[6.0版](http://ff14huntpath.c4cdn.com/shb/)（右上角可切换中文）。也可以直接使用[狩猎地图](https://ffxivhunt.com/hunt_daily_shb.php)（英文）调查。
+狩猎怪主要分为2种，一种是通缉令上的普通狩猎怪，通常是地图上的野怪，50级的通缉令上还会有Fate中的BOSS怪。这种通缉令每天23:00更新，如果只差一点点经验，或者需要攒狩猎点数的话，推荐完成，如果不差这点蚊子肉的话也可以忽略。可以通过[狩猎路径规划工具](https://www.xivdaily.com/cn/hunts/ew)进行规划（右上角可切换版本）。也可以直接使用[狩猎地图](https://ffxivhunt.com/hunt_daily_shb.php)（英文）调查。
 
 另外一种被称为恶名精英，分为A、B、S三种，会按一定规则刷新在地图中。
 
@@ -37,7 +42,7 @@ B怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红
 
 名字前带有<img src="/images/icons/061710.png" class="no-zoom sm-icon">标记的满级怪有可能是A怪，只要击杀这些怪就可以获得奖励。
 
-A怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[[狩猎地图](https://ffxivhuntcn.com/#/map/index)、[恶名精英点位图册](https://www.sythehunt.xyz/mapbook)。
+A怪刷新位置可以查看[susu狩猎热点图](https://hunt.ffxiv.xin/)（红色块越深表示出现概率越高）或[狩猎地图](https://ffxivhuntcn.com/#/map/index)、[恶名精英点位图册](https://www.sythehunt.xyz/mapbook)。
 
 A怪每4~6小时刷新，50级和60级的A怪通常在发现后自行喊话、组人、击杀，70、80级的A怪相对强度较高，奖励也更丰厚，因此国服各个服务器大都组织了“班车”，让更多人可以参与到狩猎中。
 
@@ -67,7 +72,7 @@ S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，
 - [S怪触发指南——重生之境到暗影之逆焰](https://bbs.nga.cn/read.php?tid=22499393)
 :::
 
-暗影（5.0）地图中的S怪被击杀后，会有一定概率出现==特殊恶名精英的手下开始了侦察活动……== 的提示文字，同时全地图中刷新4只得到宽恕的流言，全部击杀后会触发得到宽恕的叛乱，这被称为SS怪。
+暗影（5.0）、晓月（6.0）地图中的S怪被击杀后，会有一定概率出现==特殊恶名精英的手下开始了侦察活动……== 的提示文字，同时全地图中刷新4只小怪，全部击杀后会触发一只全新的精英怪，这只精英怪一般被称为SS怪。
 
 ## 狩猎奖励
 
@@ -101,4 +106,4 @@ S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，
 
 * [susu狩猎热点图](https://hunt.ffxiv.xin/)
 * [神意非酋的狩猎手册](https://www.sythehunt.xyz/)
-* [狩猎路径规划工具](http://ff14huntpath.c4cdn.com/home/)（用于普通通缉令）
+* [狩猎路径规划工具](https://www.xivdaily.com/cn/hunts/ew)，[2.0版狩猎路径规划](http://ff14huntpath.c4cdn.com/arr/)（用于普通通缉令）
