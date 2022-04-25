@@ -61,4 +61,4 @@
 
 ## 满级手法
 
-> 本站因水平不济，难以提供满级手法，可前往NGA论坛查找[武士的满级攻略](https://bbs.nga.cn/thread.php?key=%E6%AD%A6%E5%A3%AB&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[武士的满级攻略](https://bbs.nga.cn/thread.php?key=%E6%AD%A6%E5%A3%AB&fid=698)

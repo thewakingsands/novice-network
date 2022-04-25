@@ -59,4 +59,4 @@ OT或需要换T时，需要先使用<Action name="挑衅" />，让自己的仇�
 
 ## 满级手法
 
-> 本站因水平不济，难以提供满级手法，可前往NGA论坛查找[绝枪战士的满级攻略](https://bbs.nga.cn/thread.php?key=%E6%9E%AA%E5%88%83&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[绝枪战士的满级攻略](https://bbs.nga.cn/thread.php?key=%E6%9E%AA%E5%88%83&fid=698)
