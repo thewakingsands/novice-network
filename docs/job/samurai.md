@@ -19,13 +19,13 @@
 
 ## 练级手法
 
-武士的整体循环建立在“闪”、“剑气”的获取与消耗上，相当灵活多变。下文的介绍只是武士众多手法中的冰山一角，其核心要求是：不浪费<Action name="明镜止水" />、不浪费闪、不浪费剑气、保持<Status :id="1228" name="彼岸花" />	。
+武士的整体循环建立在“闪”、“剑气”的获取与消耗上，相当灵活多变。下文的介绍只是武士众多手法中的冰山一角，其核心要求是：不浪费<Action name="明镜止水" />、不浪费闪、不浪费剑气、保持<Status :id="1228" name="彼岸花" />。
 
 ### 对单体输出
 
-武士最基础的连击是由6个技能组成的3套连击：<Action name="刃风" />→<Action name="阵风" />→<Action name="月光" />(背)；<Action name="刃风" />→<Action name="士风" />→<Action name="花车" />(侧)；<Action name="刃风" />→<Action name="雪风" />。这3套连击分别可以获得武士的三种==闪==：雪、月、花和两个buff：<Status :id="1298" name="风月" />和<Status :id="1299" name="风花" />，当武士只拥有一种闪时，<Action name="居合术" />会变为<Action name="彼岸花" />；拥有2种闪时，<Action name="居合术" />会变为<Action name="天下五剑" />（AOE技能）；拥有3种闪时，<Action name="居合术" />会变为<Action name="纷乱雪月花" />
+武士最基础的连击是由6个技能组成的3套连击：<Action name="刃风" />→<Action name="阵风" />→<Action name="月光" />(背)；<Action name="刃风" />→<Action name="士风" />→<Action name="花车" />(侧)；<Action name="刃风" />→<Action name="雪风" />。这3套连击分别可以获得武士的三种==闪==：雪、月、花和两个buff：<Status :id="1298" name="风月" />和<Status :id="1299" name="风花" />，当武士只拥有一种闪时，<Action name="居合术" />会变为<Action name="彼岸花" />；拥有2种闪时，<Action name="居合术" />会变为<Action name="天下五剑" />（AOE技能）；拥有3种闪时，<Action name="居合术" />会变为<Action name="纷乱雪月花" />。
 
-所以一个最常见的起手，50级就可以打了：先使用<Action name="明镜止水" />，然后使用<Action name="花车" />→<Action name="彼岸花" />→<Action name="月光" />→<Action name="花车" />→<Action name="刃风" />→<Action name="雪风" />→<Action name="纷乱雪月花" />。接下来正常打3种闪→居合术，当<Status :id="1228" name="彼岸花" />	快结束的时候，留一个闪用来补彼岸花（在满级循环中，需要根据情况选择用什么闪来补，在练级时，可以暂时都用雪印来补）。
+所以一个最常见的起手，50级就可以打了：先使用<Action name="明镜止水" />，然后使用<Action name="花车" />→<Action name="月光" />→<Action name="雪风" />→<Action name="纷乱雪月花" />→<Action name="月光" />→<Action name="彼岸花" />。接下来正常打3种闪→居合术，当<Status :id="1228" name="彼岸花" />快结束的时候，留一个闪用来补彼岸花（在满级循环中，需要根据情况选择用什么闪来补，在练级时，可以暂时都用雪印来补）。
 
 武士的<Action name="明镜止水" />可以无视连击使用战技，同时可以获得<Status :id="1298" name="风月" />和<Status :id="1299" name="风花" />buff，直到时间结束或使用过3次居合术以外的战技，所以上面的开场循环也可以改成先用明镜止水打出三个闪→纷乱雪月花，然后打一个雪闪→彼岸花。
 <!--6_1有更新-->

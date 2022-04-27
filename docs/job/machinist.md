@@ -51,7 +51,7 @@
 
 ### 对群体输出
 
-机工的 AOE 战技有<Action name="散射" />(18)、<Action name="自动弩" />(52)、<Action name="火焰喷射器" />(70)和群体 DoT <Action name="毒菌冲击" />(72)；此外还有能力<Action name="弹射" />(50)。
+机工的 AOE 战技有<Action name="散射" />（82级升级为<Action name="霰弹枪" />）、<Action name="自动弩" />(52)、<Action name="火焰喷射器" />(70)和群体 DoT <Action name="毒菌冲击" />(72)；此外还有能力<Action name="弹射" />(50)。
 
 在小怪 >= 3 只时，如果在过热状态应该使用<Action name="自动弩" />；否则应按优先级从高到低依次使用<Action name="毒菌冲击" />、<Action name="火焰喷射器" />、<Action name="散射" />。<Action name="枪管加热" /> 依然可以好了就用。
 
