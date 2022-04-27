@@ -37,7 +37,7 @@
 
 最后45级习得<Action name="人之印" />之后，结印瞬间就复杂了起来（并不），按照习得印的顺序可以记为<Action name="天之印">天</Action>(1)<Action name="地之印">地</Action>(2)<Action name="人之印">人</Action>(3)，那么123是<Action name="水遁之术" />，321是<Action name="风遁之术" />，23是<Action name="冰遁之术" />(具体出现什么忍术其实是以最后一个印来判定的，详细内容可以仔细阅读技能说明)。
 
-从45级开始，忍者循环初见端倪：开怪前结<Action name="风遁之术">风遁</Action>，然后使用<Action name="隐遁" />刷新忍术，开怪后<Action name="双刃旋" />→（<Action name="夺取" />）→<Action name="绝风" />→<Action name="水遁之术">水遁</Action>→<Action name="攻其不备" />（俗称背刺）→<Action name="旋风刃" />→<Action name="雷遁之术" />，之后使用<Action name="旋风刃" />连输出，忍术除了补风遁就是打<Action name="雷遁之术" />，可以用<Action name="攻其不备">背刺</Action>的时候则结<Action name="水遁之术">水遁</Action>。
+从45级开始，忍者循环初见端倪：开怪前结<Action name="风遁之术">风遁</Action>，然后使用<Action name="隐遁" />刷新忍术，<Action name="水遁之术">水遁</Action>开怪，然后<Action name="双刃旋" />→（<Action name="夺取" />）→<Action name="绝风" />→<Action name="攻其不备" />（俗称背刺）→<Action name="旋风刃" />→<Action name="雷遁之术" />，之后使用<Action name="旋风刃" />连输出，忍术除了补风遁就是打<Action name="雷遁之术" />，可以用<Action name="攻其不备">背刺</Action>的时候则结<Action name="水遁之术">水遁</Action>。
 <!--6_1有更新-->
 40级习得的<Action name="断绝" />（56级后升级为<Action name="梦幻三段" />）是一个能力技，需要在背刺的增伤期间使用。
 
@@ -55,11 +55,11 @@
 
 忍者AOE技能是<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />，忍术方面有<Action name="火遁之术" />（<Action name="人之印">人</Action>→<Action name="天之印">天</Action>）和<Action name="土遁之术" />（<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>），<Action name="生杀予夺">生杀</Action>可以强化火遁，变为<Action name="劫火灭却之术" />。另外消耗忍气可以使用<Action name="通灵之术·大虾蟆" />。
 
-一套标准的AOE用<Action name="天地人" />顺序是<Action name="天地人" />→<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>（即土遁的顺序）。72级习得<Action name="命水" />之后则应该以水遁结束（即天→地→人），用命水换50忍气打大虾蟆。
+一套标准的AOE用<Action name="天地人" />顺序是<Action name="天地人" />→<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>（即土遁的顺序）。72级习得<Action name="命水" />之后，若能提前结土遁，也可以选择水遁结束（即天→地→人），用命水换50忍气打大虾蟆。
 
-二者综合起来就是忍者的AOE体系：用<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />打循环，早期没学会生杀和天地人的时候，优先放<Action name="土遁之术" />。习得<Action name="生杀予夺">生杀</Action>之后可以<Action name="土遁之术" />→<Action name="生杀予夺">生杀</Action>→<Action name="火遁之术" />火遁</Action>/<Action name="劫火灭却之术" />；习得<Action name="天地人" />之后，则是先放两个火遁（<Action name="火遁之术" />火遁</Action>→<Action name="生杀予夺">生杀</Action>→<Action name="劫火灭却之术" />），然后利用天地人AOE循环放土遁（76级之后则应该先放土遁→劫火灭却→天地人→命水）。
+二者综合起来就是忍者的AOE体系：用<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />打循环，早期没学会生杀和天地人的时候，优先放<Action name="土遁之术" />。习得<Action name="生杀予夺">生杀</Action>之后可以<Action name="土遁之术" />→<Action name="生杀予夺">生杀</Action>→<Action name="火遁之术" />火遁</Action>/<Action name="劫火灭却之术" />；习得<Action name="天地人" />之后，则是先放两个火遁（<Action name="火遁之术" />火遁</Action>→<Action name="生杀予夺">生杀</Action>→<Action name="劫火灭却之术" />），然后利用天地人AOE循环放土遁，76级之后也可以先放土遁→劫火灭却→天地人→命水。
 
-当只有2个小怪的时候，可以放<Action name="通灵之术·大虾蟆" />，但不需要打八卦无刃杀连或火遁，使用对单体的<Action name="旋风刃" />连和<Action name="雷遁之术" />雷遁</Action>即可。
+当只有2个小怪的时候，多余的忍气可以用来放<Action name="通灵之术·大虾蟆" />，但不需要打八卦无刃杀连或火遁，使用对单体的<Action name="旋风刃" />连和<Action name="雷遁之术" />雷遁</Action>即可。
 
 **在AOE场合也不要忘记开怪前续/补风遁！**<Action name="八卦无刃杀" />技能本身也可以帮助续风遁。
 

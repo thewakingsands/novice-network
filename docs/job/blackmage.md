@@ -17,7 +17,7 @@
 
 ## 练级手法
 
-首先请记住火1234分别对应<Action name="火炎" />、<Action name="烈炎" />、<Action name="爆炎" />、<Action name="炽炎" />，冰1234分别对应<Action name="冰结" />、<Action name="冰冻" />、<Action name="冰封" />、<Action name="冰澈" />。（几乎所有黑魔攻略都以1234代替技能名表述，因此自己已掌握的冰/火系技能对应的是什么，务必记清楚。我个人的记忆方法是冰1火1基础技，冰2火2AOE，冰3火3转状态，冰4火4大杀器），35级习得的<Action name="玄冰" />作为冰2的远程替代，也有人称其为冰2.5。最后雷系魔法为对单<Action name="闪雷" />/<Action name="暴雷" />（雷1/雷3）；对群<Action name="震雷" />/<Action name="霹雷" />（雷2/雷4），只要知道自己有2种雷DOT即可。
+首先请记住火1234分别对应<Action name="火炎" />、<Action name="烈炎" />、<Action name="爆炎" />、<Action name="炽炎" />，冰1234分别对应<Action name="冰结" />、<Action name="冰冻" />、<Action name="冰封" />、<Action name="冰澈" />。（几乎所有黑魔攻略都以1234代替技能名表述，因此自己已掌握的冰/火系技能对应的是什么，务必记清楚。我个人的记忆方法是冰1火1基础技，冰2火2AOE，冰3火3转状态，冰4火4大杀器），35级习得的<Action name="玄冰" />作为冰4的AOE替代（58级之前可以当做冰2的高威力替代）。最后雷系魔法为对单<Action name="闪雷" />/<Action name="暴雷" />（雷1/雷3）；对群<Action name="震雷" />/<Action name="霹雷" />（雷2/雷4），只要知道自己有2种雷DOT即可。
 
 下面会从机制简单介绍黑魔的技能循环，机制详细介绍，以及具体到每个等级的输出手法可以参见[黑魔升级/萌新向指南](https://bbs.nga.cn/read.php?tid=30617374)（1~89级）。
 
@@ -25,7 +25,7 @@
 
 星极火与灵极冰俗称火阶段与冰阶段，使用火123可以为自己叠加火状态，使用冰123可以为自己叠加冰状态。在火阶段，火系魔法蓝耗会增加，威力也会增大，叠到最高级火buff的时候，冰系技能咏唱时间会缩短，同时不消耗魔力，反之亦然。++黑魔的所有循环都建立在保持星极火或灵极冰状态的基础上++，因此保持冰火状态非常重要。
 
-在低级的时候，玩家需要通过<Action name="星灵移位" />来转换冰火状态，在34级和40级分别掌握<Action name="爆炎" >火3</Action>和<Action name="冰封" >冰3</Action>之后，玩家就可以通过这两个技能在冰火状态间自由转换。
+在低级的时候，玩家需要通过<Action name="星灵移位" />来转换冰火状态，在35级掌握<Action name="爆炎" >火3</Action>和<Action name="冰封" >冰3</Action>之后，玩家就可以通过这两个技能在冰火状态间自由转换。
 
 在56级习得<Status :id="868" name="天语" />特性之后，玩家在冰或火状态中，就会同时附加天语状态，天语本身可以提升黑魔的伤害，而且天语状态每维持30s，就可以获得一次使用<Action name="秽浊" />或<Action name="异言" />的机会。
 
@@ -51,7 +51,7 @@
 
 50级之后习得<Action name="核爆" />，可以在火循环的末尾使用<Action name="核爆" />收尾（核爆要求至少有800蓝才能放），如果此时有<Action name="魔泉" />的话，可以用它回蓝再放一个核爆，然后使用<Action name="冰冻" >冰2</Action>回到冰状态继续输出。
 
-58级获得灵极心之后，就可以把<Action name="玄冰" />加入循环，AOE阶段输出基本成型：<Action name="冰冻" >冰2</Action>→<Action name="玄冰" />→<Action name="霹雷" />→<Action name="烈炎" >火2</Action>→<Action name="核爆" />→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="冰冻" >冰2</Action>→（回到冰循环）
+58级获得灵极心之后，就可以把<Action name="玄冰" />加入循环，AOE阶段输出基本成型：<Action name="冰冻" >冰2</Action>→<Action name="玄冰" />→<Action name="霹雷" />→<Action name="烈炎" >火2</Action> x n{n>2} →<Action name="核爆" />（至少需要保留800蓝）→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="冰冻" >冰2</Action>→（回到冰循环）
 
 最后70级习得<Action name="秽浊" />之后也别忘了打。
 
