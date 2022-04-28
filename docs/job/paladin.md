@@ -49,11 +49,13 @@ slots: ['header', 'summary', 'default']
 
 ### 对多怪拉怪/输出
 
+骑士在群拉的时候需要右键选中一个目标，保证自己一直在平A，只有这样才能够获得==忠义==（用来开各种减伤）。
+
 在群拉的时候则使用<Action name="全蚀斩" />(6)→<Action name="日珥斩" />(40)的连击，以及<Action name="厄运流转" />、<Action name="圣环" />(72)和<Action name="悔罪" />、<Action name="偿赎剑" />(86)。骑士的最强AOE爆发就是<Action name="安魂祈祷" />→<Action name="圣环" /> x 4/5（80级后悔罪收尾）。
 
 骑士在只有2只怪的时候，可以参考前面的单拉手法，对A怪打<Action name="先锋剑" />→<Action name="暴乱剑" />，切换到B怪打<Action name="战女神之怒" />/<Action name="王权剑" />→<Action name="先锋剑" />→<Action name="暴乱剑" />，再切换回A怪这样交替进行。
 
-在面对超过2只怪的时候，保持<Action name="全蚀斩" />→<Action name="日珥斩" />的连击，<Action name="厄运流转" />和<Action name="偿赎剑" />好了就放即可。满级后可以把前面单拉手法中的圣灵换成悔罪，就是魔法AOE部分的循环了。
+在面对超过2只怪的时候，保持<Action name="全蚀斩" />→<Action name="日珥斩" />的连击，<Action name="厄运流转" />和<Action name="偿赎剑" />好了就放即可。72级拥有<Action name="圣环" />之后，推荐优先打AOE爆发（84级后这套爆发带有回血效果），然后再用AOE连击。
 
 ### 减伤及辅助
 
