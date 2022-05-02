@@ -21,7 +21,7 @@ for (const filename of htmlFiles) {
     url,
     title: $('title')
       .text()
-      .replace(' | 新大陆见闻录 - 《最终幻想14》萌新指导手册', ''),
+      .replace(' | 新大陆见闻录 - 最终幻想14新手入坑指南手册', ''),
     body: $('.content-container').text()
   }
   indices.push(indexObject)

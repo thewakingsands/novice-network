@@ -1,5 +1,5 @@
 module.exports = {
-  title: '新大陆见闻录 - 《最终幻想14》萌新指导手册',
+  title: '新大陆见闻录 - 最终幻想14新手入坑指南手册',
   dest: 'dist',
   shouldPrefetch: () => false,
   markdown: {
