@@ -103,7 +103,7 @@ FF14的副本会随着等级的提升有明显的变化，逐渐增加的机制�
 
 ;;;.guide .cols2
 ;;;.guide .col
-![](./battle.assets/finder-config.jpg)<!--【补】改图-->
+![](./battle.assets/finder-config.jpg)
 ;;;
 
 ;;;.guide .col .grow

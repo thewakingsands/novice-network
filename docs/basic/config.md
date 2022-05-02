@@ -1,7 +1,6 @@
 # 常用设置及热键
 
 ## 游戏内设置
-<!--【补】更新图-->
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./config.assets/dx9.jpg" width="450px" />
