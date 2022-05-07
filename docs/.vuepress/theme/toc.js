@@ -180,7 +180,26 @@ export const TOC = {
         },
         {
           href: '/topic/pvp.htm',
-          title: 'PVP'
+          title: 'PVP',
+          folder: 'pvp'
+        },
+        {
+          href: '/topic/crystallineconflict.htm',
+          title: '水晶争夺战',
+          belongsTo: 'pvp',
+          indent: 1
+        },
+        {
+          href: '/topic/frontline.htm',
+          title: '纷争前线',
+          belongsTo: 'pvp',
+          indent: 1
+        },
+        {
+          href: '/topic/rivalwings.htm',
+          title: '烈羽争锋',
+          belongsTo: 'pvp',
+          indent: 1
         },
         {
           href: '/topic/shine.htm',

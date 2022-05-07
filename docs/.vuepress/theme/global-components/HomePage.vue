@@ -54,8 +54,6 @@
         <li>
           <router-link to="basic/battle.htm">战斗基础</router-link>
         </li>
-        <li><router-link to="ui/how.htm">界面指南</router-link></li>
-        
         <li>
           <router-link to="basic/config.htm">常用设置及热键</router-link>
         </li>
