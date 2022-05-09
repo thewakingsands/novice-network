@@ -46,9 +46,10 @@
         </li>
         <li><router-link to="basic/core.htm">新人必知必会游戏核心</router-link></li>
         <li>
-          <router-link to="basic/quest.htm">重要支线</router-link>
+          <router-link to="basic/quest.htm">任务分类及重要支线</router-link>
         </li>
         <li><router-link to="basic/map.htm">地图、移动与飞行</router-link></li>
+        <li><router-link to="basic/item.htm">道具、背包与市场</router-link></li>
         <li><router-link to="basic/equip.htm">认识装备</router-link></li>
         <li><router-link to="basic/communication.htm">玩家交流</router-link></li>
         <li>
@@ -60,7 +61,7 @@
       </ul>
     </div>
     <div class="mntab">
-      <h2>进阶指南</h2>
+      <h2>深入游戏指南</h2>
       <ul>
         <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
         <li>
@@ -79,18 +80,23 @@
       </ul>
     </div>
     <div class="mntab">
-      <h2>其他游戏系统</h2>
+      <h2>常用工具</h2>
       <ul>
-        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
-        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
-        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
+        <li>
+          <router-link to="advanced/glossary.htm">黑话缩略语词典</router-link>
+        </li>
+        <li>
+          <router-link to="/duty/">副本攻略</router-link>
+        </li>
+        <li><router-link to="advanced/macro-intro.htm">宏指南</router-link></li>
+        
       </ul>
     </div>
     <div class="mntab">
       <h2>日常休闲</h2>
       <ul>
         <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
-        <li><router-link to="topic/battle.htm">休闲赚钱与挖宝</router-link></li>
+        <li><router-link to="topic/treasure.htm">休闲赚钱与挖宝</router-link></li>
         <li><router-link to="topic/story.htm">剧情任务</router-link></li>
         <li>
           <router-link to="topic/goldsaucer.htm">金碟游乐场</router-link>
@@ -110,16 +116,11 @@
       </ul>
     </div>
     <div class="mntab">
-      <h2>常用工具</h2>
+      <h2>其他游戏系统</h2>
       <ul>
-        <li>
-          <router-link to="advanced/glossary.htm">黑话缩略语词典</router-link>
-        </li>
-        <li>
-          <router-link to="/duty/">副本攻略</router-link>
-        </li>
-        <li><router-link to="advanced/macro-intro.htm">宏指南</router-link></li>
-        
+        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
+        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
+        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
       </ul>
     </div>
     <div class="mntab">

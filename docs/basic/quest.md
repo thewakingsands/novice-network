@@ -78,7 +78,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 ### 特殊功能相关
 * 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记](/topic/relax.md#探索笔记)。
-* 36级：<quest name="浪漫的寻宝猎人" type="plus" />，开放[挖宝](/topic/battle.md#挖宝)。
+* 36级：<quest name="浪漫的寻宝猎人" type="plus" />，开放[挖宝](/topic/treasure.md)。
 
 下面2个任务与外观有关，详细了解投影系统可以看[这里](/basic/equip.md#装备染色、投影)。
 

@@ -63,14 +63,16 @@ S怪和A怪一样，在名字前带有<img src="/images/icons/061710.png" class=
 
 S怪通常体型更大，而且从较远处就能看到，如果新人难以判断是否为S怪，建议咨询他人。当玩家接近S怪时，屏幕中会出现==感觉到了强大的恶名精英的气息……== 的提示文字。
 
-由于S怪出现条件难，因此有一批玩家组成“狩猎组”专门对S怪进行触发。新人玩家可以选择加入狩猎组参与S触发，也可以（加入通讯贝、QQ群等交流组）等他人报点。玩家中默认S怪有“归属权”，即触发者可以决定S怪的开怪时间，通常为了能让更多的人参与击杀S怪，玩家并不会在S怪刷新后立刻开始战斗，而是约定在某一个艾欧泽亚时间（ET<i class="xiv eorzea-time-chs"></i>）开怪。新玩家也应该尽可能遵守这一规则。
+由于S怪出现条件难，因此有一批玩家组成“狩猎组”专门对S怪进行触发。新人玩家可以选择加入狩猎组参与S触发，也可以（加入通讯贝、QQ群等交流组）等他人报点。玩家中默认S怪有“归属权”，即触发者可以决定S怪的开怪时间，通常为了能让更多的人参与击杀S怪，玩家并不会在S怪刷新后立刻开始战斗，而是约定在某一个艾欧泽亚时间（<i class="xiv eorzea-time"></i><i class="xiv eorzea-time-chs"></i>）开怪。新玩家也应该尽可能遵守这一规则。
 
-::: collapse S怪触发方式
-S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，并不一定准确。
-
-- [S级恶名精英图鉴及触发方式](https://www.sythehunt.xyz/post/S%E6%80%AA%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6%E4%B8%80%E8%A7%88)
-- [S怪触发指南——重生之境到暗影之逆焰](https://bbs.nga.cn/read.php?tid=22499393)
-:::
+> S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，并不一定准确。
+> - [S级恶名精英图鉴及触发方式](https://www.sythehunt.xyz/post/S%E6%80%AA%E8%A7%A6%E5%8F%91%E6%9D%A1%E4%BB%B6%E4%B8%80%E8%A7%88)
+> - [S怪触发指南——重生之境到暗影之逆焰](https://bbs.nga.cn/read.php?tid=22499393)
+> 
+> S怪CD、触发情况查询工具网站
+> - [S/A Rank Timer](https://tracker.ff14hunttool.com/timer) [镜像站](https://tracker.beartoolkit.com/timer)
+> - [獭獭狩猎 CD 网站](https://xn--v9x.net/hunt/sonar/)
+> - [Sonar中继](https://ff14.cafe/sonar)（使用QQ群机器人在QQ群内播报狩猎怪信息）
 
 暗影（5.0）、晓月（6.0）地图中的S怪被击杀后，会有一定概率出现==特殊恶名精英的手下开始了侦察活动……== 的提示文字，同时全地图中刷新4只小怪，全部击杀后会触发一只全新的精英怪，这只精英怪一般被称为SS怪。
 
@@ -104,6 +106,6 @@ S怪的触发条件是经过游戏内NPC的暗示+玩家测试得出的结果，
 
 ## 参考网站
 
-* [susu狩猎热点图](https://hunt.ffxiv.xin/)
-* [神意非酋的狩猎手册](https://www.sythehunt.xyz/)
-* [狩猎路径规划工具](https://www.xivdaily.com/cn/hunts/ew)，[2.0版狩猎路径规划](http://ff14huntpath.c4cdn.com/arr/)（用于普通通缉令）
+> * [susu狩猎热点图](https://hunt.ffxiv.xin/)
+> * [神意非酋的狩猎手册](https://www.sythehunt.xyz/)
+> * [狩猎路径规划工具](https://www.xivdaily.com/cn/hunts/ew)，[2.0版狩猎路径规划](http://ff14huntpath.c4cdn.com/arr/)（用于普通通缉令）

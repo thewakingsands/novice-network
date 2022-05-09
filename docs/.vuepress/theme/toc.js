@@ -38,12 +38,16 @@ export const TOC = {
           title: '新人必知'
         },
         {
+          href: '/basic/quest.htm',
+          title: '任务分类及重要支线'
+        },
+        {
           href: '/basic/map.htm',
           title: '地图移动与飞行'
         },
         {
           href: '/basic/item.htm',
-          title: '道具与背包'
+          title: '道具、背包与市场'
         },
         {
           href: '/basic/equip.htm',
@@ -102,10 +106,6 @@ export const TOC = {
         {
           href: '/basic/config.htm',
           title: '常用设置及热键'
-        },
-        {
-          href: '/basic/quest.htm',
-          title: '任务分类及重要支线'
         }
       ]
     },
@@ -115,6 +115,10 @@ export const TOC = {
         {
           href: '/advanced/glossary.htm',
           title: '黑话缩略语词典'
+        },
+        {
+          href: '/duty/',
+          title: '副本攻略'
         },
         {
           href: '/advanced/macro-intro.htm',
@@ -146,10 +150,6 @@ export const TOC = {
           indent: 1
         },
         {
-          href: '/duty/',
-          title: '副本攻略'
-        },
-        {
           href: '/advanced/currency.htm',
           title: '货币系统（神典石）'
         },
@@ -167,10 +167,6 @@ export const TOC = {
           title: '青魔法师'
         },
         {
-          href: '/topic/battle.htm',
-          title: '休闲赚钱挖宝'
-        },
-        {
           href: '/topic/hunt.htm',
           title: '怪物狩猎'
         },
@@ -185,13 +181,13 @@ export const TOC = {
         },
         {
           href: '/topic/crystallineconflict.htm',
-          title: '水晶争夺战',
+          title: '水晶争夺战（5v5）',
           belongsTo: 'pvp',
           indent: 1
         },
         {
           href: '/topic/frontline.htm',
-          title: '纷争前线',
+          title: '纷争前线（战场）',
           belongsTo: 'pvp',
           indent: 1
         },
@@ -298,6 +294,10 @@ export const TOC = {
         {
           href: '/topic/daily.htm',
           title: '每日/每周任务'
+        },
+        {
+          href: '/topic/treasure.htm',
+          title: '休闲赚钱挖宝'
         },
         {
           href: '/topic/story.htm',
