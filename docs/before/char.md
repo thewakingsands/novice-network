@@ -32,8 +32,21 @@ FF14国服目前有四个大区，豆豆柴区下设5个服务器，莫古力区
 
 ## 角色创建
 
-角色捏人选项很多，建议仔细阅读选项，慎重选择。种族虽然会“稍稍”影响一点点属性，但是现在已经完全不影响输出了，可以不用担心。
-<!-- 【补】这里应该补几张图来着…用UI的双图并排界面 -->
+;;;.guide .cols2
+;;;.guide .col
+<img src="./char.assets/newchar.png" style="width: 350px;" />
+
+角色创建捏人界面
+;;;
+
+;;;.guide .col .grow
+角色捏人外观选项很多，不过每种选项可以调整的空间并不是特别大，像脸部轮廓、眉毛、鼻型等等都只有4种选项。
+
+实在不知道怎么捏也可以选择左上角的随机生成感受一下。
+
+种族虽然会“稍稍”影响一点点属性，但是现在已经完全不影响输出了，可以不用担心，放心选择自己喜欢的种族。
+;;;
+;;;
 
 :::collapse 不知道选什么种族？
 
@@ -41,7 +54,7 @@ FF14国服目前有四个大区，豆豆柴区下设5个服务器，莫古力区
 
 :::
 
-进入游戏后如果对自己捏的人物不满，可以在商城购买[幻想药](https://qu.sdo.com/tools-shop?merchantId=1&currentPage=1&pageSize=40&order=0&keyword=&tagId=&baseCategoryId=1&baseCategoryName=%E5%B9%BB%E6%83%B3%E8%8D%AF&childCategoryId=)（**初次完成50级的主线任务会赠送一瓶**）修改，另外游戏里有美容师NPC，可以找他花费2000<i class="xiv gil"></i>（游戏币）更改发色、面妆。
+进入游戏后如果对自己捏的人物不满，可以在商城购买[幻想药](https://qu.sdo.com/tools-shop?merchantId=1&currentPage=1&pageSize=40&order=0&keyword=&tagId=&baseCategoryId=1&baseCategoryName=%E5%B9%BB%E6%83%B3%E8%8D%AF&childCategoryId=)（**初次完成50级的主线任务会赠送一瓶**）修改，另外游戏里有美容师NPC，可以找他花费2000<i class="xiv gil"></i>（游戏币）随时更改发色、面妆。
 
 捏人最后需要选择守护神和诞生日，这个和角色能力属性没有任何关联，请随意选择。
 

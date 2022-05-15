@@ -3,7 +3,7 @@
 
 <Status :id="1597" name="受伤加重" :stack="3" />
 
-<Status :id="1597" name="受伤加重" />
+<Status :id="1597" name="受伤加重" dispel/>
 
 <Item name="魔菇宝" /><Item name="小壳蟹" /><Item name="胖墩跳蜥" /><Item name="小小魔精" />
 
