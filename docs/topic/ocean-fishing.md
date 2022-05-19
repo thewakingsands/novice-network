@@ -91,7 +91,7 @@
 
 **碧空和晴朗不是一个东西，不要搞混**
 
-通常海域的渔场相关信息请查看[鱼糕海钓手册](https://ricecake.traveleorzea.com/#/oceanFishing)。
+通常海域的渔场相关信息请查看[鱼糕海钓手册](https://fish.ffmomola.com/#/oceanFishing)。
 <!--::: collapse 加拉迪翁湾外海
 
 | 鱼 | 星级 | 杆型 | 大致耗时 | 渔分 | 双提数量 | 推荐鱼饵 | 备注 |
@@ -197,7 +197,7 @@
 
 幻海流持续2分钟，冲鸭！
 
-幻海流的渔场相关信息请查看[鱼糕海钓手册](https://ricecake.traveleorzea.com/#/oceanFishing)。
+幻海流的渔场相关信息请查看[鱼糕海钓手册](https://fish.ffmomola.com/#/oceanFishing)。
 
 <!--::: collapse 加拉迪翁湾外海幻海流
 

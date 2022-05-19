@@ -39,7 +39,7 @@
 ;;;
 ;;;
 
-另外也有其他特殊的鱼类，比如30级职业任务的<item name="满月沙丁鱼" />以及40级职业任务<item name="求雨鱼" />，顾名思义前者只有在夜晚能钓到，后者则只能在下雨的时候能钓到。这些信息也都可以通过[饥饿的猫](https://cn.ff14angler.com/)或[鱼糕](https://ricecake.traveleorzea.com/)网站查到。
+另外也有其他特殊的鱼类，比如30级职业任务的<item name="满月沙丁鱼" />以及40级职业任务<item name="求雨鱼" />，顾名思义前者只有在夜晚能钓到，后者则只能在下雨的时候能钓到。这些信息也都可以通过[饥饿的猫](https://cn.ff14angler.com/)或[鱼糕](https://fish.ffmomola.com/)网站查到。
 
 所有的鱼类都有固定的脱钩率，如果真的是装备属性不足会提示获得力不足，其他时候遇到脱钩就只要洗洗脸就好啦。
 
@@ -64,7 +64,7 @@
 
 在使用<action name="耐心" />或<action name="耐心II" />之后，原本<Action name="提钩" />的成功率会大幅降低，需要配合杆型选择另外的技能。通常使用<action name="精准提钩" />提小杆（一个叹号）的鱼，用<action name="强力提钩" />提中杆、大杆的鱼。
 
-但是部分鱼王虽然表现为大杆（3个叹号），但却有可能需要使用<action name="精准提钩" />，推荐通过[饥饿的猫](https://cn.ff14angler.com/)或[鱼糕](https://ricecake.traveleorzea.com/)调查。
+但是部分鱼王虽然表现为大杆（3个叹号），但却有可能需要使用<action name="精准提钩" />，推荐通过[饥饿的猫](https://cn.ff14angler.com/)或[鱼糕](https://fish.ffmomola.com/)调查。
 
 ;;;
 ;;;
@@ -85,7 +85,7 @@ HQ鱼必定能满足各类收藏品的收藏要求，所以在挑战收藏品垂
 
 刺鱼的方法与另外两个采集职业类似，需要找到特定的采集点，右键采集点进入采集状态。当采集点出现气泡之后，按<action name="刺鱼" />技能，就可以了。
 
-刺鱼时不使用鱼饵，而是使用<action name="渔叉尖" />技能选择大中小渔叉，具体渔场与渔叉尖的关系可以查看[饥饿的猫](https://cn.ff14angler.com/)或[鱼糕](https://ricecake.traveleorzea.com/)。
+刺鱼时不使用鱼饵，而是使用<action name="渔叉尖" />技能选择大中小渔叉，具体渔场与渔叉尖的关系可以查看[饥饿的猫](https://cn.ff14angler.com/)或[鱼糕](https://fish.ffmomola.com/)。
 
 ## 捕鱼人练级
 
@@ -170,11 +170,11 @@ PS 捕鱼人是对GP要求最高的，平时常备大量<item name="轻型强心
 
 完成50级职业任务之后，在捕鱼人行会会出现任务<quest name="海川鱼神" />及其后续任务<quest name="爆钓艾欧泽亚" />，这就是带领大家走向鱼王、鱼皇的道路（不接任务也可以钓到任务要求的几条鱼，分别是<item name="锯鲛" />、<item name="海神剑" />、<item name="内角石" />、<item name="旋齿鲨" />、<item name="波太郎" />、<item name="杀手库诺" />、<item name="秀尼鱼龙" />和<item name="涅普特龙" />，如果你提前钓起了这些鱼，记得留着交任务……
 
-目前国服推荐使用[鱼糕](https://ricecake.traveleorzea.com/)进行鱼王、鱼皇的信息追踪，下文部分解说也以该网站提供的信息为主。
+目前国服推荐使用[鱼糕](https://fish.ffmomola.com/)进行鱼王、鱼皇的信息追踪，下文部分解说也以该网站提供的信息为主。
 
 #### 时间与天气
 
-大部分的鱼王、鱼皇都有时间或天气的要求（甚至有前置天气的要求），这些信息可以从[鱼糕](https://ricecake.traveleorzea.com/)查到，跟着时间表去钓即可。但有些渔场距离较远，或需要连续以小钓大起钩，或者喜欢套娃等等情况，那么就建议提前一些抵达渔场做准备。例如：
+大部分的鱼王、鱼皇都有时间或天气的要求（甚至有前置天气的要求），这些信息可以从[鱼糕](https://fish.ffmomola.com/)查到，跟着时间表去钓即可。但有些渔场距离较远，或需要连续以小钓大起钩，或者喜欢套娃等等情况，那么就建议提前一些抵达渔场做准备。例如：
 
 - <item name="皱鳃鲨" />需要在薄雾、阴天、微风这三种天气中，于<i class="xiv eorzea-time-chs"></i>17-3，使用任意低级鱼饵→<item name="梅尔托尔虾虎" />→<item name="梭子鰆" />→<item name="巨型乌贼" />→<item name="皱鳃鲨" />，一共需要3次以小钓大。可以提前一些时间抵达渔场，使用<action name="耐心" />钓起<item name="巨型乌贼" hq/>，等艾欧泽亚时间变为<i class="xiv eorzea-time-chs"></i>17:00之后，直接使用以小钓大，这样可以节省前置时间。
 - <item name="众神之爱" />需要在雨转晴的<i class="xiv eorzea-time-chs"></i>5:30-6:30，使用<item name="嗡嗡石蝇" />垂钓，窗口期非常短。一般会选择提前钓起一条<item name="月神恩惠" />，然后使用<action name="拍击水面" />，这样等艾欧泽亚时间变为<i class="xiv eorzea-time-chs"></i>5:30之后立刻抛竿，这样就能保证咬钩的都是<item name="众神之爱" />（同理还有<item name="莫古尔古球球" />等鱼王）。
@@ -182,7 +182,7 @@ PS 捕鱼人是对GP要求最高的，平时常备大量<item name="轻型强心
 
 #### 钓组与鱼眼
 
-打开<action name="钓组" />可以钓起非鱼类的东西（比如贝类、宝图等等），如果只是针对鱼王的话，可以参考[鱼糕](https://ricecake.traveleorzea.com/)的提示打开，平时可以不开。
+打开<action name="钓组" />可以钓起非鱼类的东西（比如贝类、宝图等等），如果只是针对鱼王的话，可以参考[鱼糕](https://fish.ffmomola.com/)的提示打开，平时可以不开。
 
 鱼眼技能仅能用于2.0~3.x钓场中，钓场之皇以外的鱼，效果为无视鱼的上钩时间。基本上只有在老版本的钓场中补图鉴时需要开。
 
@@ -222,7 +222,7 @@ PS 捕鱼人是对GP要求最高的，平时常备大量<item name="轻型强心
 
 ## 常用钓鱼工具
 
-- [鱼糕](https://ricecake.traveleorzea.com/)：中文钓鱼数据库（含海钓）。
+- [鱼糕](https://fish.ffmomola.com/)：中文钓鱼数据库（含海钓）。
 - [饥饿的猫](https://cn.ff14angler.com/)：完整的钓场、鱼饵、时间、杆型等信息；天气信息有误差，有少量鱼饵错误。
 - [Fish Tracker](http://fish.senriakane.com/)：鱼王、鱼皇时钟（包括有特殊条件的普通鱼）。有极少量鱼饵错误。
 - [Garland钓鱼时钟](http://www.garlandtools.org/ffxivfisher/)（英文）
