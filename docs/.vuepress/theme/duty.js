@@ -275,6 +275,5 @@ module.exports = [
 {"index":801,"partySize":8,"level":90,"maxLevel":90,"ilvMax":0,"ilvMin":580,"underSized":false,"name":"零式万魔殿 边境之狱4","type":"大型任务","typeId":5,"banner":112455,"sort":272},
 {"index":280,"partySize":8,"level":70,"maxLevel":70,"ilvMax":345,"ilvMin":0,"underSized":false,"name":"巴哈姆特绝境战","type":"绝境战","typeId":28,"banner":112261,"sort":273},
 {"index":539,"partySize":8,"level":70,"maxLevel":70,"ilvMax":375,"ilvMin":0,"underSized":false,"name":"究极神兵绝境战","type":"绝境战","typeId":28,"banner":112296,"sort":274},
-{"index":694,"partySize":8,"level":80,"maxLevel":80,"ilvMax":475,"ilvMin":0,"underSized":false,"name":"亚历山大绝境战","type":"绝境战","typeId":28,"banner":112374,"sort":275},
-{"index":694,"partySize":8,"level":80,"maxLevel":80,"ilvMax":475,"ilvMin":0,"underSized":false,"name":"亚历山大绝境战","type":"绝境战","typeId":28,"banner":112374,"sort":276}
+{"index":694,"partySize":8,"level":80,"maxLevel":80,"ilvMax":475,"ilvMin":0,"underSized":false,"name":"亚历山大绝境战","type":"绝境战","typeId":28,"banner":112374,"sort":275}
 ]

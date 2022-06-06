@@ -386,5 +386,6 @@ Tips:
 ;;;
 
 > * [发光武器介绍](/topic/shine.md)
+> * [幻化网站一览](/topic/relax.md#探索笔记)<!--定位不过去，所以上拉一个-->
 > * [外观检索、获取指南](https://bbs.nga.cn/read.php?tid=14869355)
 > * [时装套装介绍](https://ff14.huijiwiki.com/wiki/%E6%97%B6%E8%A3%85%E5%A5%97%E8%A3%85)

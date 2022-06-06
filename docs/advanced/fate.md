@@ -82,6 +82,109 @@ FATE的难度会随着地图上当前的玩家数量，上次刷新该FATE时的
 
 5.0地区的危命任务不再奖励军票，取而代之的是**双色宝石**，使用双色宝石向**广域交易商**兑换各种物品，具体兑换列表可以查看[这个页面](https://ff14.huijiwiki.com/wiki/%E5%8F%8C%E8%89%B2%E5%AE%9D%E7%9F%B3)。
 
+::: collapse 双色宝石独占奖励
+
+5.0地图：
+- 宠物：
+  - <item name="草小人" />
+  - <item name="蝴蝶效应" />
+  - <item name="迷你巨人掌" />
+  - <item name="阿马罗宝宝" />
+- 家具/庭具
+  - <item name="雷克兰德妖精树" />
+  - <item name="雷克兰德花丛" />
+  - <item name="蝴蝶标本" />
+  - <item name="光流蘑菇灯" />
+  - <item name="六属性关系图" />
+  - <item name="拉凯提卡盆栽" />
+  - <item name="亚马乌罗提壁灯" />
+  - <item name="学院引导手册" />
+  - <item name="冰海天使玩偶" />
+  - <item name="享乐水果大拼盘" />
+  - <item name="红酒架" />
+  - <item name="绳索护栏" />
+  - <item name="水晶都挂钟" />
+  - <item name="亚拉戈台式神典石" />
+  - <item name="硬纸箱" />
+  - <item name="牛奶盒" />
+- 幻卡
+  - <item name="九宫幻卡：异豺" />
+  - <item name="九宫幻卡：花束篮筐" />
+  - <item name="九宫幻卡：宝库守护者" />
+  - <item name="九宫幻卡：华迦斯" />
+  - <item name="九宫幻卡：得到宽恕的猥亵" />
+  - <item name="九宫幻卡：畏惧装甲" />
+  - <item name="九宫幻卡：至大灾兽" />
+- 乐谱
+  - <item name="管弦乐琴乐谱：不变与变化" />
+  - <item name="管弦乐琴乐谱：始源湖" />
+  - <item name="管弦乐琴乐谱：残忍与自由" />
+  - <item name="管弦乐琴乐谱：妖精之环" />
+  - <item name="管弦乐琴乐谱：活着的理由" />
+  - <item name="管弦乐琴乐谱：无望的竞争" />
+  - <item name="管弦乐琴乐谱：文明" />
+  - <item name="管弦乐琴乐谱：鲜血沙漠" />
+  - <item name="管弦乐琴乐谱：琥珀沙漠" />
+  - <item name="管弦乐琴乐谱：疾径" />
+  - <item name="管弦乐琴乐谱：分隔的世界" />
+  - <item name="管弦乐琴乐谱：幽冥水底" />
+  - <item name="管弦乐琴乐谱：不稳深渊" />
+  - <item name="管弦乐琴乐谱：水深五寻" />
+  - <item name="管弦乐琴乐谱：耽溺" />
+  - <item name="管弦乐琴乐谱：假面舞会" />
+  - <item name="管弦乐琴乐谱：一言难尽的悲哀" />
+  - <item name="管弦乐琴乐谱：照耀世界之暗" />
+  - <item name="管弦乐琴乐谱：智慧不眠" />
+- 其他
+  - <item name="影渊装甲" />
+  - <item name="舞者装甲" />
+  - <item name="雷克兰德详细地图" />
+  - <item name="伊尔美格详细地图" />
+  - <item name="拉凯提卡大森林详细地图" />
+  - <item name="安穆·艾兰详细地图" />
+  - <item name="珂露西亚岛详细地图" />
+  - <item name="黑风海详细地图" />
+
+6.0地图：
+- 装备
+  - <item name="萨雷安叶冠" />
+  - <item name="萨维奈缎带" />
+- 宠物
+  - <item name="小异亚" />
+- 家具/庭具
+  - <item name="萨维奈帆船" />
+  - <item name="迷津警示牌" />
+  - <item name="加雷马货箱" />
+  - <item name="亚伊太利斯星球仪" />
+  - <item name="古代室内桌灯" />
+  - <item name="无命镇圆桌" />
+  - <item name="北洋路灯" />
+  - <item name="拉札罕丝绸架" />
+- 幻卡
+  - <item name="九宫幻卡：希斯拉德" />
+  - <item name="九宫幻卡：异亚" />
+- 乐谱
+  - <item name="管弦乐琴乐谱：众神的教诲" />
+  - <item name="管弦乐琴乐谱：迷津" />
+  - <item name="管弦乐琴乐谱：白雪与黑铁" />
+  - <item name="管弦乐琴乐谱：一小步" />
+  - <item name="管弦乐琴乐谱：远古的天空" />
+  - <item name="管弦乐琴乐谱：近在天边" />
+  - <item name="管弦乐琴乐谱：知识的水瓶" />	
+  - <item name="管弦乐琴乐谱：落日之都" />
+- 其他
+  - <item name="萨维奈岛详细地图" />
+  - <item name="迷津详细地图" />
+  - <item name="加雷马详细地图" />
+  - <item name="叹息海详细地图" />
+  - <item name="厄尔庇斯详细地图" />
+  - <item name="天外天垓详细地图" />
+- <item name="双色宝石的收据" />100双色宝石兑换的票据，可用来兑换：
+  - <item name="犀蜴角笛" />
+  - <item name="堕天使之翼" />
+
+:::
+
 ## 成就&特殊FATE
 
 游戏几乎每个地图上都会有一个特殊FATE，它有超长的击杀时间（普通FATE限时通常是15min，而特殊FATE大都是限时30min），或者会赠送称号或掉落宠物、乐谱、鸟甲等等特殊道具（**以下列表若未经特殊说明，则仅在以最高评价完成时获得**）。
