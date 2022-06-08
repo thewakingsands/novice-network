@@ -44,8 +44,6 @@
 ;;;
 ;;;
 
-采集职业也可以采集高品质（HQ<i class="xiv hq"></i>）物品，使用<Action name="发掘" />或者<Action name="转变" />系列技能就可以在本采集点中提升<i class="xiv hq"></i>概率，使用<Action name="疏浚" />或者<Action name="修剪" />系列技能则可以提升下次采集的<i class="xiv hq"></i>概率。通常<Action name="发掘III" />或者<Action name="转变III" />是最常用的，其他技能可根据角色当前的属性（主要是否有足够采集力使用技能）来决定。
-
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./gather.assets/fisher.png" />
@@ -111,11 +109,11 @@
 ;;;
 ;;;
 
-钓鱼玩家需要使用<action name="收藏品采集" />技能打开<Status :id="805" name="收藏品采集" />，然后使用<action name="耐心" />钓HQ鱼。具体钓法请参见[钓鱼指南](/topic/fisher.md)。
+捕鱼人需要使用<action name="收藏品采集" />技能打开<Status :id="805" name="收藏品采集" />，然后使用<action name="耐心" />等技能钓大鱼。具体钓法请参见[钓鱼指南](/topic/fisher.md)。
 
 ### 精选
 
-玩家在摩杜纳接任务<quest name="生命、精选，另一个答案" type="plus" />之后，就可以获得<action name="精选" />技能。在收藏品上右键，或在技能菜单中直接使用精选，就可以精选指定物品。
+玩家在摩杜纳接任务<quest name="生命、精选，另一个答案" type="plus" />之后，就可以获得<action :id="10229" name="精选" />技能。在收藏品上右键，或在技能菜单中直接使用精选，就可以精选指定物品。
 
 精选收藏品主要用于获取灵砂（满级制作中的一种必备素材），收藏价值越高，可以获得灵砂的概率和个数就越高。
 
@@ -125,9 +123,9 @@
 
 ### 商会、收藏品及票据
 
-玩家50级之后，可以在<pos name="伊修加德基础层" :x="10.2" :y="10.5" />接任务<quest name="一流工匠的新工作" type="plus" />开启收藏品（<i class="xiv collectables"></i>）功能，然后完成后续任务<quest name="打开新世界的大门" type="plus" />就可以开启罗薇娜商会。之后在神拳、水晶都也都有对应的商会开启任务。
+玩家50级之后，可以在<pos name="伊修加德基础层" :x="10.2" :y="10.5" />接任务<quest name="一流工匠的新工作" type="plus" />开启收藏品（<i class="xiv collectables"></i>）功能，然后完成后续任务<quest name="打开新世界的大门" type="plus" />就可以开启罗薇娜商会。随着主线推进，在神拳、水晶都、拉札罕也都有对应的商会开启任务。
 
-玩家可以按上面的说明采集商会指定的收藏品，可以获得大量经验和专用的采集票据，票据可用于兑换秘籍、魔晶石等等道具。具体兑换列表可查看[大地黄票](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E5%9C%B0%E9%BB%84%E7%A5%A8)，[大地白票](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E5%9C%B0%E7%99%BD%E7%A5%A8)。（黄票推荐最优先兑换各个级别的传承录，传承录可以解锁各个地区的特殊采集）。
+玩家可以按上面的说明采集商会指定的收藏品，可以获得大量经验和专用的采集票据，票据可用于兑换秘籍、魔晶石等等道具。具体兑换列表可查看[大地白票](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E5%9C%B0%E7%99%BD%E7%A5%A8)，[大地紫票](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E5%9C%B0%E7%B4%AB%E7%A5%A8)。（白票推荐最优先兑换各个级别的传承录，传承录可以解锁各个地区的特殊采集）
 
 
 ### 重建伊修加德&空岛
@@ -166,6 +164,7 @@
 - <quest name="梅·娜格的老主顾" type="plus" />+<quest name="紫水宫的异变" type="plus" />及其后续支线→<quest name="红的老主顾" type="plus" />。
 - <quest name="迈向未来" type="main" />+<quest name="诚信为本——莫雯卓越商会" />→<quest name="凯·希尔的老主顾" type="plus" />。
 - <quest name="打开新世界的大门" type="plus" />+<quest name="缔造新篇龙诗之翼" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="艾尔·图的老主顾" type="plus" />。
+- <quest name="打开新世界的大门" type="plus" />+<quest name="吹进云雾街的变革之风" type="plus" />+<quest name="天穹之下露出笑容" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="老主顾狄兰达尔伯爵" type="plus" />
 :::
 
 向各位老主顾提交指定收藏品可以获得工票和经验，另外随着与老主顾好感度的提升，还可以为老主顾换装（仅限部分主顾）。非常适合练级，以及大量获取工票。
