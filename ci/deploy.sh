@@ -24,6 +24,8 @@ yarn deploy:filemap
 
 rsync -avu lastDeploy/ "$DEPLOY_DIR/"
 
+yarn deploy:cleanup
+
 EXEGIT="git -C $DEPLOY_DIR"
 $EXEGIT init
 $EXEGIT remote add origin git@github.com:thewakingsands/novice-network-pages.git

@@ -7,7 +7,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs && rimraf dist/_includes",
     "deploy:searchindex": "node tools/search-index/generate.js",
-    "deploy:filemap": "node tools/dist-files/dump.js"
+    "deploy:filemap": "node tools/dist-files/dump.js",
+    "deploy:cleanup": "node tools/dist-files/cleanup.js"
   },
   "devDependencies": {
     "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
