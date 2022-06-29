@@ -18,14 +18,10 @@ find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content
 git config --global init.defaultBranch master
 
 git clone "$GIT_REPO" lastDeploy
-cd lastDeploy
-# Taken from https://stackoverflow.com/a/55609950
-git ls-tree -r --name-only HEAD | while read filename; do
-  unixtime=$(git log -1 --format="%at" -- "${filename}")
-  touchtime=$(date -d @$unixtime +'%Y%m%d%H%M.%S')
-  touch -t ${touchtime} "${filename}"
-done
 rm -rf lastDeploy/.git
+
+yarn deploy:filemap
+
 rsync -avu lastDeploy/ "$DEPLOY_DIR/"
 
 EXEGIT="git -C $DEPLOY_DIR"

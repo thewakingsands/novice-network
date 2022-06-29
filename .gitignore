@@ -4,3 +4,4 @@ yarn-error.log
 /ci/deploy-key
 /job/job.md
 package-lock.json
+/lastDeploy
