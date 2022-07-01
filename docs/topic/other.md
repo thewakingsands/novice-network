@@ -59,3 +59,8 @@ FF14丰富的情感动作和强大的拍摄滤镜功能，帮助玩家们可以�
 ## 纪录片
 
 <IncludePage file="_includes/history/documentary.md" />
+
+## 其他
+
+* [FF14名曲鉴赏-起源篇（昔日的答案）](https://space.bilibili.com/689413/channel/collectiondetail?sid=462444)：FF14 1.0版本音乐鉴赏合辑（视频）
+* [FF14名曲鉴赏-新生篇（涅槃的乐章）](https://space.bilibili.com/689413/channel/collectiondetail?sid=516528)：FF14 2.0版本音乐鉴赏合辑（视频）

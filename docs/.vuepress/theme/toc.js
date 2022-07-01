@@ -38,6 +38,35 @@ export const TOC = {
           title: '新人必知'
         },
         {
+          href: '/ui/how.htm',
+          title: '界面指南',
+          folder: 'config'
+        },
+        {
+          href: '/ui/how.htm',
+          title: '概览',
+          belongsTo: 'config',
+          indent: 1
+        },
+        {
+          href: '/ui/hotbar.htm',
+          title: '设置技能/热键栏',
+          belongsTo: 'config',
+          indent: 1
+        },
+        {
+          href: '/ui/config.htm',
+          title: '开始游戏设置',
+          belongsTo: 'config',
+          indent: 1
+        },
+        {
+          href: '/ui/battle.htm',
+          title: '让战斗更方便的设置',
+          belongsTo: 'config',
+          indent: 1
+        },
+        {
           href: '/basic/quest.htm',
           title: '任务分类及重要支线'
         },
@@ -102,16 +131,16 @@ export const TOC = {
         {
           href: '/basic/levelup.htm',
           title: '练级指南'
-        },
-        {
-          href: '/basic/config.htm',
-          title: '常用设置及热键'
         }
       ]
     },
     {
       title: '进阶指南',
       children: [
+        {
+          href: '/basic/config.htm',
+          title: '游戏设置详解'
+        },
         {
           href: '/advanced/glossary.htm',
           title: '黑话缩略语词典'
@@ -178,6 +207,12 @@ export const TOC = {
           href: '/topic/pvp.htm',
           title: 'PVP',
           folder: 'pvp'
+        },
+        {
+          href: '/topic/pvp.htm',
+          title: '概览',
+          belongsTo: 'pvp',
+          indent: 1
         },
         {
           href: '/topic/crystallineconflict.htm',

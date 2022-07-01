@@ -23,7 +23,7 @@
 
 ## 蛮神武器
 
-;;;.guide .cols2
+;;;.guide .cols3
 ;;;.guide .col .figcap
 <img src="./shine.assets/Tsukuyomi.jpg" width="350px" />
 

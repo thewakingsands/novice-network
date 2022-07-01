@@ -46,6 +46,9 @@
         </li>
         <li><router-link to="basic/core.htm">新人必知必会游戏核心</router-link></li>
         <li>
+          <router-link to="ui/how.htm">认识界面和设置</router-link>
+        </li>
+        <li>
           <router-link to="basic/quest.htm">任务分类及重要支线</router-link>
         </li>
         <li><router-link to="basic/map.htm">地图、移动与飞行</router-link></li>
@@ -55,15 +58,15 @@
         <li>
           <router-link to="basic/battle.htm">战斗基础</router-link>
         </li>
-        <li>
-          <router-link to="basic/config.htm">常用设置及热键</router-link>
-        </li>
       </ul>
     </div>
     <div class="mntab">
       <h2>深入游戏指南</h2>
       <ul>
         <li><router-link to="basic/levelup.htm">练级指南</router-link></li>
+        <li>
+          <router-link to="basic/config.htm">游戏设置详解</router-link>
+        </li>
         <li>
           <router-link to="basic/battle-mech.htm">战斗机制详解</router-link>
         </li>
