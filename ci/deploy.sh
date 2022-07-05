@@ -22,7 +22,7 @@ rm -rf lastDeploy/.git
 
 yarn deploy:filemap
 
-rsync -avu lastDeploy/ "$DEPLOY_DIR/"
+rsync -avu --ignore-existing lastDeploy/ "$DEPLOY_DIR/"
 
 yarn deploy:cleanup
 
