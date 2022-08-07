@@ -35,7 +35,8 @@ $EXEGIT remote add origin git@github.com:thewakingsands/novice-network-pages.git
 $EXEGIT add -A
 $EXEGIT config user.name "bot"
 $EXEGIT config user.email "root@localhost"
-$EXEGIT commit -m "Deploy"
+$EXEGIT commit -m "Deploy" > /tmp/deploy.log
+cat /tmp/deploy.log
 
 $EXEGIT push -f origin master
 
