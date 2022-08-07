@@ -16,6 +16,9 @@ GIT_REPO=git@github.com:thewakingsands/novice-network-pages.git
 find "$DEPLOY_DIR" -name '*.htm' -exec sed -i '/<meta name="description" content="最终幻想14超实用萌新手册豆芽站，为最终幻想14中文玩家提供涵盖广泛、清晰易懂的新人基础攻略指引。">/d' {} \;
 
 git config --global init.defaultBranch master
+git config --global pack.windowMemory "100m"
+git config --global pack.packSizeLimit "100m"
+git config --global pack.threads "1"
 
 git clone "$GIT_REPO" lastDeploy
 rm -rf lastDeploy/.git
