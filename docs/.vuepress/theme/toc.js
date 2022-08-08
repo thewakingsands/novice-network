@@ -200,8 +200,12 @@ export const TOC = {
           title: '怪物狩猎'
         },
         {
-          href: '/topic/raid.htm',
+          href: '/topic/battle.htm',
           title: '挑战副本'
+        },
+        {
+          href: '/topic/raid.htm',
+          title: '高难度挑战副本一览'
         },
         {
           href: '/topic/pvp.htm',
@@ -216,7 +220,7 @@ export const TOC = {
         },
         {
           href: '/topic/crystallineconflict.htm',
-          title: '水晶争夺战（5v5）',
+          title: '水晶冲突（5v5）',
           belongsTo: 'pvp',
           indent: 1
         },
