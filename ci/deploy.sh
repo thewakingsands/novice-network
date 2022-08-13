@@ -1,6 +1,7 @@
-#!/bin/bash -eo pipefail
+#!/bin/bash
 ### Warning: environment variables will exposed to build logs after this line ###
 set -x
+set -eo pipefail
 
 export GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
 
