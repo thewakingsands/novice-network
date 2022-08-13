@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -eo pipefail
 ### Warning: environment variables will exposed to build logs after this line ###
 set -x
 
@@ -32,12 +32,9 @@ $EXEGIT remote add origin git@github.com:thewakingsands/novice-network-pages.git
 $EXEGIT add -A
 $EXEGIT config user.name "bot"
 $EXEGIT config user.email "root@localhost"
-$EXEGIT commit -m "Deploy"
+$EXEGIT commit --quiet -m "Deploy"
 
-$EXEGIT push -f origin master
-
-# $EXEGIT remote add coding git@e.coding.net:ffcafe/novice-network-pages.git
-# $EXEGIT push -f coding master
+$EXEGIT push -f --quiet origin master
 
 curl -o- -L https://yarnpkg.com/install.sh | bash
 yarn
