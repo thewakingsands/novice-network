@@ -5,7 +5,7 @@
 > - [如何进入游戏设置](/ui/config.md)
 > - [热键栏设置](/ui/hotbar.md)
 > - [让战斗更方便的设置](/ui/battle.md)
-> - [硬件配置及系统设置常见问题](https://shimo.im/docs/L9kBM05dDeFD9nqK)
+> - [硬件配置及系统设置常见问题](https://shimo.im/docs/L9kBM05dDeFD9nqK)（石墨文档）
 
 ## 设置云同步
 

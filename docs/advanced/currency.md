@@ -39,7 +39,7 @@
 :::
 
 ### 天文神典石
-<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td><img src="/images/icons/065086.png" class="no-zoom sm-icon"><br><strong>亚拉戈天文神典石</strong><br>俗称<strong>天文</strong><br><br>周获取上限450<br>总上限2000点</td><td><ul><li>兑换90级所用的武器、装备（品级590，可升级到600）</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E9%BB%98%E7%A4%BA%E7%A5%9E%E5%85%B8%E7%9F%B3">天文可兑换物品详细列表</a></td><td>琪罕蒂<br><Pos name="拉札罕" :x="10.8" :y="10.3" /></td><td>参加90级副本、挖宝、狩猎等战斗活动获得，参加90级的每日随机任务会奖励额外的天文点数。</td></tr></table></div>
+<div class="md-table"><table class="ui compact grey striped unstackable table" style="min-width: 38em;"><tr><th style="width: 10em">名称</th><th style="width: 20em">可用兑换</th><th style="width: 12em">兑换坐标</th><th style="width: 15em">点数获取方式</th></tr><tr><td><img src="/images/icons/065086.png" class="no-zoom sm-icon"><br><strong>亚拉戈天文神典石</strong><br>俗称<strong>天文</strong><br><br>周获取上限450<br>总上限2000点</td><td><ul><li>兑换90级所用的武器、装备（品级590，可升级到600）</li></ul><a href="https://ff14.huijiwiki.com/wiki/%E4%BA%9A%E6%8B%89%E6%88%88%E5%A4%A9%E6%96%87%E7%A5%9E%E5%85%B8%E7%9F%B3">天文可兑换物品详细列表</a></td><td>琪罕蒂<br><Pos name="拉札罕" :x="10.8" :y="10.3" /></td><td>参加90级副本、挖宝、狩猎等战斗活动获得，参加90级的每日随机任务会奖励额外的天文点数。</td></tr></table></div>
 
 通过副本搜索器参加任务时，搜索器右边的任务详情“报酬”一栏会注明完成该副本所赠与的亚拉戈神典石数量。随机任务的报酬则是在副本原本赠与的点数基础之上，再额外赠与的报酬。
 
