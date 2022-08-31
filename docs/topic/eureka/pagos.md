@@ -16,7 +16,7 @@
 |  --  |  --  |
 | <i class="xiv elv"></i>20 纯白的支配者——雪之女王 | <Item name="九宫幻卡：雪童子" /> |
 | <i class="xiv elv"></i>25 五行眼的主人——白泽 | <Item name="视觉尖角帽" />（需要使用<Item name="白泽的五行眼" />获得金牌后才能掉落） |
-| <i class="xiv elv"></i>29 圆桌的雾王——亚瑟罗王 | <Item name="速度腰带" /> |
+| <i class="xiv elv"></i>29 圆桌的雾王——亚瑟罗王 | <Item name="闪袭指环" />（已有的<Item name="速度腰带" />可在失物管理员处兑换为指环） |
 | <i class="xiv elv"></i>32 雷云的魔兽——哈达约什 | <Item name="贝希摩斯的毛皮" />、<Item name="贝希摩斯之角" /> |
 | <i class="xiv elv"></i>34 暗眼王——总领安哥拉·曼纽 | <Item name="发生变异的结冰上锁宝箱" /> |
 | <i class="xiv elv"></i>35 模仿犯——复制魔花凯西 | <Item name="凯西耳坠" /> |
