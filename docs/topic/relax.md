@@ -45,13 +45,15 @@
 
 另外为了更好地辅助拍摄，玩家们使用Reshader制作了[Gshade](https://weibo.com/1734754935/KjmswnZQL)，使用这个补丁会让游戏画面变得更好看。不过由于它属于外挂插件，因此对电脑性能有额外的负担，另外也有可能影响正常界面UI的显示，所以如果电脑性能比较差，或者更喜欢专注于打本、打人，就不推荐啦。具体效果和设置方法请看上面的链接。
 
+> [如何试穿、投影、染色](/basic/equip-looking.md)
+>
 > 装备获取途径：
 > - [染色与投影](/basic/equip-looking.md)
 > - [使用游戏市场获得装备](/basic/item.md)
 > - [其他货币兑换](/advanced/currency.md)
 > - [发光武器](/topic/shine.md)：武器试穿需要在试穿界面中选择“拔出武器”（界面下方的小圆按钮）查看光效。
 >
-> 幻化网站：
+> 幻化/投影参考网站：
 > - [MIRAPRI SNAP](https://mirapri.com/)：日文幻化网站
 > - [Glamour Collection](https://ffxiv.eorzeacollection.com/glamours)：英文幻化网站
 > - [光之收藏家](https://www.ffxivsc.cn/)：中文幻化网站
