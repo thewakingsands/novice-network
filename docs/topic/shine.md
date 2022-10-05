@@ -47,7 +47,7 @@
 
 另外部分蛮神发光武器也可以由深层迷宫宝藏开出，或雇员带回，也可以在交易板上交易，是新人较容易获得的发光武器。
 
-> [发光武器外观一览](https://bbs.nga.cn/read.php?tid=20459393&pid=398487531)
+> [发光武器外观一览](https://nga.178.com/read.php?tid=20459393&pid=398487531)
 
 ::: collapse 蛮神发光武器检索索引
 * 2.0蛮神：[风神](https://garlandtools.cn/db/#list/fLtdy35Jah)、[火神](https://garlandtools.cn/db/#list/Dr4DHNl6KJ)、[土神](https://garlandtools.cn/db/#list/66MrWJ4JrD)、[水神](https://garlandtools.cn/db/#list/men5SWrwjD)、[冰神](https://garlandtools.cn/db/#list/Nzh8ozDsyd)、[雷神](https://garlandtools.cn/db/#list/8uPOAK919A)、[莫古](https://garlandtools.cn/db/#list/Xn2RlpZmmk)
@@ -118,6 +118,6 @@
 
 :::segment grey
 
-[1].图片内容来自NGA 冰色之舞，原文链接：[人偶兵装](https://bbs.nga.cn/read.php?tid=20459393&pid=398487531)。
+[1].图片内容来自NGA 冰色之舞，原文链接：[人偶兵装](https://nga.178.com/read.php?tid=20459393&pid=398487531)。
 
 :::

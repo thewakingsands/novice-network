@@ -474,8 +474,8 @@
 * 勇气：博兹雅单挑的抽选系统，落选时勇气值+1，在下次抽选时会有更高几率中选。
 * 抬头：指对方询问的CE或天气正在进行，只要看地图上方或抬头看天气就可以知道。
 * 10攻：在南方博兹雅战线及扎杜诺尔高原中，要求有10个勇气彗星徽章。
-* 仙药队：24女王古殿中，集体使用仙药的速攻打法。<a href="https://bbs.nga.cn/read.php?tid=27115394">仙药速刷队简易手册</a>
-* 晶簇：在博兹雅中大量击杀机械类小怪获得博兹雅晶簇的打法。<a href="https://bbs.nga.cn/read.php?tid=25580884" >晶簇车指南</a>。<a href="https://www.bilibili.com/video/BV1254y1H7ps/">晶簇车视频攻略</a>
+* 仙药队：24女王古殿中，集体使用仙药的速攻打法。<a href="https://nga.178.com/read.php?tid=27115394">仙药速刷队简易手册</a>
+* 晶簇：在博兹雅中大量击杀机械类小怪获得博兹雅晶簇的打法。<a href="https://nga.178.com/read.php?tid=25580884" >晶簇车指南</a>。<a href="https://www.bilibili.com/video/BV1254y1H7ps/">晶簇车视频攻略</a>
 * jc：同【晶簇】
 
 ## 招募
@@ -657,16 +657,16 @@
 * 柯基：绝神兵副本攻略中，为玩家标点的工具。
 * 有狗：同【柯基】
 * yl：友利。指绝亚历山大副本使用<a href="https://www.bilibili.com/video/av83454257/">友利郁也的攻略</a>。
-* sepg：sep改指绝亚历山大副本使用separe的<a href="https://bbs.nga.cn/read.php?tid=21637042">改良式打法</a>。
+* sepg：sep改指绝亚历山大副本使用separe的<a href="https://nga.178.com/read.php?tid=21637042">改良式打法</a>。
 * sep改：同【sepg】
-* sep：指绝亚历山大<a href="https://bbs.nga.cn/read.php?tid=20145362">separe式</a>打法。
+* sep：指绝亚历山大<a href="https://nga.178.com/read.php?tid=20145362">separe式</a>打法。
 * zy：指使用<a href="https://space.bilibili.com/293917">子言攻略</a>打法。
 * 菓子：指使用<a href="https://space.bilibili.com/932340">菓子君攻略</a>打法
 * 果子：同【菓子】
 * 全果：同【菓子】
 * 云改：云玩家改，指绝亚历山大副本二运使用<a href="https://ngabbs.com/read.php?tid=19507584">云玩家改</a>打法。（链接页面中<strong>红字优化的分组</strong>提到的打法）。
 * yg：同【云改】
-* 双改：指绝亚历山大副本P2使用<a href="https://bbs.nga.cn/read.php?tid=21637042">separe改良式打法</a>，二运使用<a href="https://ngabbs.com/read.php?tid=19507584">云玩家改</a>打法（链接页面中<strong>红字优化的分组</strong>提到的打法）。
+* 双改：指绝亚历山大副本P2使用<a href="https://nga.178.com/read.php?tid=21637042">separe改良式打法</a>，二运使用<a href="https://ngabbs.com/read.php?tid=19507584">云玩家改</a>打法（链接页面中<strong>红字优化的分组</strong>提到的打法）。
 * 雨果：E8s副本中，击退镜采用<a href="https://www.bilibili.com/video/BV1Np4y1q7b5">亚瑟打法</a>，其余用<a href="https://www.bilibili.com/video/BV18t4y1X7qY">菓子打法</a>。
 * 亚瑟雨果：同【雨果】
 * 面基：E9s的八方分散以BOSS面向为基准。
@@ -837,7 +837,7 @@
 * B怪：同【狩猎】
 * S怪：同【狩猎】
 * 狩猎：大地图上的恶名精英怪，ABS为精英怪的等级。<a href="https://ff14.org/topic/hunt.htm">狩猎系统介绍</a>。
-* 触发：指通过一定手段使S怪刷新的行为。<a href="https://bbs.nga.cn/read.php?tid=22499393">S怪触发指南</a>。
+* 触发：指通过一定手段使S怪刷新的行为。<a href="https://nga.178.com/read.php?tid=22499393">S怪触发指南</a>。
 * 海呱：5.0特殊FATE灾厄的古塔尼亚之深海讨伐战，<a href="https://ff14.org/advanced/fate.htm">查看FATE详细介绍</a>。
 * 地呱：5.0特殊FATE激斗畏惧装甲之秘密武器，<a href="https://ff14.org/advanced/fate.htm">查看FATE详细介绍</a>。
 * 地瓜：同【地呱】

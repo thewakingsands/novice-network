@@ -87,4 +87,4 @@
 
 ## 满级手法
 
-> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[诗人的满级攻略](https://bbs.nga.cn/thread.php?key=%E8%AF%97%E4%BA%BA&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[诗人的满级攻略](https://nga.178.com/thread.php?key=%E8%AF%97%E4%BA%BA&fid=698)

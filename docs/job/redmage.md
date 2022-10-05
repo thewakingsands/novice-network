@@ -59,4 +59,4 @@
 
 ## 满级手法
 
-> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[赤魔的满级攻略](https://bbs.nga.cn/thread.php?key=%E8%B5%A4%E9%AD%94&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[赤魔的满级攻略](https://nga.178.com/thread.php?key=%E8%B5%A4%E9%AD%94&fid=698)

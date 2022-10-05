@@ -43,7 +43,7 @@
 
 > * [死者宫殿官方介绍](http://act.ff.sdo.com/project/170420deepdungeon/index.html)
 > * [死者宫殿维基介绍](https://ff14.huijiwiki.com/wiki/%E6%AD%BB%E8%80%85%E5%AE%AB%E6%AE%BF)：含宝箱、陷阱、宝藏等内容的详细说明
-> * [死宫详细攻略](https://bbs.nga.cn/read.php?tid=14509371)：每一层小怪、BOSS的威胁程度、回避方法的详细介绍
+> * [死宫详细攻略](https://nga.178.com/read.php?tid=14509371)：每一层小怪、BOSS的威胁程度、回避方法的详细介绍
 
 ## 天之御柱
 
@@ -76,4 +76,4 @@
 
 > * [天之御柱官方介绍](http://act.ff.sdo.com/project/170420deepdungeon2/index.html)
 > * [天之御柱维基介绍](https://ff14.huijiwiki.com/wiki/%E5%A4%A9%E4%B9%8B%E5%BE%A1%E6%9F%B1)：含宝箱、陷阱、宝藏等内容的详细说明
-> * [天宫详细攻略](https://bbs.nga.cn/read.php?tid=16406640)：每一层小怪、BOSS的威胁程度、回避方法的详细介绍
+> * [天宫详细攻略](https://nga.178.com/read.php?tid=16406640)：每一层小怪、BOSS的威胁程度、回避方法的详细介绍

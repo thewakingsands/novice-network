@@ -230,11 +230,11 @@
 
 > 冲分/冲击成就指南
 > - [鱼糕海钓工具](https://fish.ffmomola.com/#/oceanFishing)：有航线渔场的完整信息，但信息量过大，在船上现看会来不及。
-> - [乘风破浪，海上之王——6.0海钓冲分攻略](https://bbs.nga.cn/read.php?tid=32005314)
+> - [乘风破浪，海上之王——6.0海钓冲分攻略](https://nga.178.com/read.php?tid=32005314)
 > - [5.4海钓攻略总结大纲](https://ngabbs.com/read.php?tid=26626276)
 
 :::segment grey
 
-本文内容来自摩杜纳 月咏泠音，原文链接：[[苍海龙骑]海钓手册](https://bbs.nga.cn/read.php?tid=20553241)，部分内容有所调整。
+本文内容来自摩杜纳 月咏泠音，原文链接：[[苍海龙骑]海钓手册](https://nga.178.com/read.php?tid=20553241)，部分内容有所调整。
 
 :::
