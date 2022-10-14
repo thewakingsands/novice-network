@@ -33,7 +33,7 @@ jobs:
       - name: 运行部署脚本
         run: |
           chmod +x ./ci/deploy.sh
-          ./ci/deploy.sh | cat
+          ./ci/deploy.sh
         env:
           UPDATE_KEY: ${{ secrets.UPDATE_KEY }}
       - name: 触发网站更新
