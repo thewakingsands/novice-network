@@ -14,6 +14,6 @@ for (const file in files) {
   const age = Date.now() - lastUpdated
   if (age > CLEANUP_AGE) {
     console.log(`Deleting ${file}`)
-    fs.rmSync(`dist/${file}`)
+    fs.unlinkSync(`dist/${file}`)
   }
 }
