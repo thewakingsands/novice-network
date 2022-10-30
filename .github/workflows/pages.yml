@@ -5,9 +5,6 @@ on:
     branches:
       - master
 
-env:
-  NODE_OPTIONS: '--openssl-legacy-provider'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,6 +27,8 @@ jobs:
         run: yarn --frozen-lockfile
       - name: 构建网站
         run: yarn vuepress build docs --cache $HOME/vuepresscache && rm -rf dist/_includes
+        env:
+          NODE_OPTIONS: '--openssl-legacy-provider'
       - name: 导出部署密钥
         run: echo "$DEPLOY_KEY" > ci/deploy-key
         env:
