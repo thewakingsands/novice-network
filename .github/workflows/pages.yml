@@ -14,7 +14,7 @@ jobs:
       - name: 安装 Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          node-version: "18.x"
       - name: 缓存 Yarn
         uses: c-hive/gha-yarn-cache@v2
       - name: 缓存 VuePress

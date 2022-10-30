@@ -46,7 +46,11 @@
                 :href="$withBase(title2.img)"
                 as="image"
               />
-              <span>{{ title2.title }}</span> <i v-if="title2.folder" class="chevron circle right icon expand-icon"></i>
+              <span>{{ title2.title }}</span>
+              <i
+                v-if="title2.folder"
+                class="chevron circle right icon expand-icon"
+              ></i>
             </router-link>
             <a
               :href="title2.href"
@@ -56,7 +60,7 @@
               target="_blank"
               rel="noopenner noreferer"
             >
-              {{ title2.title }} 
+              {{ title2.title }}
             </a>
           </div>
         </div>
@@ -70,19 +74,22 @@
         <i class="icon plus"></i>
       </button>
     </div>
-    <router-link class="ui large circular icon button hide-large" to="/search.htm">
-        <i class="search icon"></i>
+    <router-link
+      class="ui large circular icon button hide-large"
+      to="/search.htm"
+    >
+      <i class="search icon"></i>
     </router-link>
     <a
-       class="ui large circular icon button totop hide-large"
-       href="javascript:;"
-       @click.prevent="scrollToTop"
-     >
-       <i class="double up angle icon"></i>
+      class="ui large circular icon button totop hide-large"
+      href="javascript:;"
+      @click.prevent="scrollToTop"
+    >
+      <i class="double up angle icon"></i>
     </a>
-    <a 
-      class="ui large circular icon button copy hide-large" 
-      @click="copyUrl" 
+    <a
+      class="ui large circular icon button copy hide-large"
+      @click="copyUrl"
       :data-clipboard-text="url"
     >
       <i class="share square icon"></i>
@@ -126,11 +133,11 @@
         float right
     .item
       &.has-children
-        i 
+        i
           margin-right 0.4em
         &.active
           padding-bottom 12px
-          i 
+          i
             transform rotate3d(0, 0, 1, 90deg)
         &.active::after
           content ' '
@@ -187,7 +194,7 @@
         content: ''
         display block
         position fixed
-        background rgba(0,0,0,0) 
+        background rgba(0,0,0,0)
         transition all 300ms
       &.show
         transform translate3d(0, 0, 0)
@@ -227,7 +234,7 @@
           &.totop
             transform translate(0, -180px)
           &.copy
-            transform translate(0, -60px)   
+            transform translate(0, -60px)
   &>a.icon.button
     display block
     position fixed
@@ -238,17 +245,17 @@
     background white
     transition all 300ms
 @keyframes gradient
-	0% 
+	0%
 		background-position: 0% 50%;
-	50% 
+	50%
 		background-position: 100% 50%;
-	100% 
+	100%
 		background-position: 0% 50%;
 </style>
 
 <script>
 import { TOC } from '../toc'
-import Clipboard from 'clipboard' 
+import Clipboard from 'clipboard'
 
 export default {
   inject: ['gotoId'],
@@ -332,20 +339,22 @@ export default {
         return true
       return false
     },
-    theUrl(){
-      this.url=location.href
+    theUrl() {
+      this.url = location.href
     },
-    copyUrl(){
-      let _this = this;
-      let clipboard = new Clipboard(".copy"); 
-      clipboard.on("success", e => { // 复制成功
+    copyUrl() {
+      const clipboard = new Clipboard('.copy')
+      clipboard.on('success', e => {
+        // 复制成功
         alert('网址已复制到剪贴板，快去分享给你的小伙伴吧！')
-        clipboard.destroy();
-      });
-      clipboard.on("error", e => {
-        alert('啊哦，我好像无法复制网址。\n麻烦你手工复制一下网址，再发送给小伙伴吧！')
-        clipboard.destroy();
-      });
+        clipboard.destroy()
+      })
+      clipboard.on('error', e => {
+        alert(
+          '啊哦，我好像无法复制网址。\n麻烦你手工复制一下网址，再发送给小伙伴吧！'
+        )
+        clipboard.destroy()
+      })
     }
   },
   watch: {
