@@ -13,17 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 签出仓库
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - name: 安装 Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: "18.x"
-      - name: 缓存 Yarn
-        uses: c-hive/gha-yarn-cache@v2
+          cache: 'yarn'
       - name: 缓存 VuePress
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/vuepresscache
           key: vuepress-${{ hashFiles('yarn.lock') }}
