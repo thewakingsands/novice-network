@@ -392,6 +392,8 @@ Tips:
 ;;;.guide .cols2
 ;;;.guide .col
 ![](./equip.assets/fitting.jpg)
+
+如果看不清试穿窗口，可以在标题栏上<i class="xiv mouse-right-button"></i>右键 > 缩放窗口。
 ;;;
 
 ;;;.guide .col .grow
