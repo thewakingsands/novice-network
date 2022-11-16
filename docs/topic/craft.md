@@ -94,20 +94,21 @@
 - <quest name="梅·娜格的老主顾" type="plus" />+<quest name="紫水宫的异变" type="plus" />及其后续支线→<quest name="红的老主顾" type="plus" />。
 - <quest name="迈向未来" type="main" />+<quest name="诚信为本——莫雯卓越商会" />→<quest name="凯·希尔的老主顾" type="plus" />。
 - <quest name="打开新世界的大门" type="plus" />+<quest name="缔造新篇龙诗之翼" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="艾尔·图的老主顾" type="plus" />
-- <quest name="打开新世界的大门" type="plus" />+<quest name="吹进云雾街的变革之风" type="plus" />+<quest name="天穹之下露出笑容" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="老主顾狄兰达尔伯爵" type="plus" />
+- <quest name="打开新世界的大门" type="plus" />+<quest name="吹进云雾街的变革之风" type="plus" />+<quest name="天穹之下露出笑容" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="狄兰达尔伯爵的老主顾" type="plus" />
+- <quest name="打开新世界的大门" type="plus" />+<quest name="晓月之终途" type="main" />→<quest name="阿梅莉安丝的老主顾" type="plus" />
 :::
 
 向各位老主顾提交指定收藏品可以获得工票和经验，另外随着与老主顾好感度的提升，还可以为老主顾换装（仅限部分主顾）。老主顾好感度满格之后，会出现==报酬增加==的项目。非常适合练级，以及大量获取工票。
 
-每周向老主顾上交的收藏品数量为单人6件，总和12件（与采集提交数合计）。当周的收藏品列表可以在任务情报菜单中查询，每周二<i class="xiv local-time-chs"></i>16:00更新。
+每周向老主顾上交的收藏品数量限制为单人6件，总和12件（与采集提交数合计）。当周的收藏品列表可以在任务情报菜单中查询，每周二<i class="xiv local-time-chs"></i>16:00更新。
 
-### 蛮族
+### 友好部族/蛮族
 
-在各个地区分布着专精于生产或采集的蛮族，完成他们的声望任务需要有对应的生产采集职业，提升声望之后可以获得蛮族专属坐骑，并开启专属商店。
+在各个地区分布着专精于生产或采集的友好部族，完成他们的声望任务需要有对应的生产采集职业，提升声望之后可以获得友好部族专属坐骑，并开启专属商店。
 
-* 鸟人蛮族需要完成41级主线<quest name="石卫塔霸主" type="main" />，然后就可以在森都接任务<quest name="雷雨将至" type="plus" />开启。<br>鸟人族任务需要同时拥有生产及采集职业才能完成。虽然做任务需求等级不高，但配方难度较高，需要使用专属装备才能开buff，不推荐用于练级。
-* 莫古力蛮族需要完成55级主线<quest name="狩猎邪龙" type="main" />及支线<quest name="目标入团" type="plus" />及其后续十几个任务之后开启，达到誓约声望后可购买坐骑<item name="孢云棉花糖种子" />。
-* 鲶鱼精蛮族需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
+* 鸟人族需要完成41级主线<quest name="石卫塔霸主" type="main" />，然后就可以在森都接任务<quest name="雷雨将至" type="plus" />开启。<br>鸟人族任务需要同时拥有生产及采集职业才能完成。虽然做任务需求等级不高，但配方难度较高，需要使用专属装备才能开buff，不推荐用于练级。
+* 莫古力族需要完成55级主线<quest name="狩猎邪龙" type="main" />及支线<quest name="目标入团" type="plus" />及其后续十几个任务之后开启，达到誓约声望后可购买坐骑<item name="孢云棉花糖种子" />。
+* 鲶鱼精族需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
 
 详细任务奖励信息、声望商店列表请参看：[鸟人长风空力团](https://ff14.huijiwiki.com/wiki/%E9%95%BF%E9%A3%8E%E7%A9%BA%E5%8A%9B%E5%9B%A2)，[莫古力修复团](https://ff14.huijiwiki.com/wiki/%E8%8E%AB%E5%8F%A4%E5%8A%9B%E4%BF%AE%E5%A4%8D%E5%9B%A2)，[鲶鱼精大鲶大祭执行委员会](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E9%B2%B6%E5%A4%A7%E7%A5%AD%E6%89%A7%E8%A1%8C%E5%A7%94%E5%91%98%E4%BC%9A)。
 

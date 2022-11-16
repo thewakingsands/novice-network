@@ -51,6 +51,8 @@
 </template>
 
 <style lang="stylus">
+.home-page .content-container-inner
+  max-width 100%
 .main-container
   display flex
   flex-direction row

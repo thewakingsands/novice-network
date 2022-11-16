@@ -1,6 +1,6 @@
 <template>
   <div class="content-container">
-    <div class="content-container-inner" @click.capture="handleClick" :class="{ hp: $page.frontmatter.noTopPager }">
+    <div class="content-container-inner" @click.capture="handleClick">
       <slot></slot>
       <Content v-for="key in slotKeys" :key="key" :slot-key="key" />
     </div>
@@ -16,8 +16,6 @@ body
     max-width 1200px
     padding 0 20px
     word-break break-all
-    &.hp
-      max-width 100%
     blockquote
       border-left 0.4em solid #d9dde0
       margin 1em 0
