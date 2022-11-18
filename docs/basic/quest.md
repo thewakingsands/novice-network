@@ -79,7 +79,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记](/topic/relax.md#探索笔记)。
 * 36级：<quest name="浪漫的寻宝猎人" type="plus" />，开放[挖宝](/topic/treasure.md)。
 
-下面2个任务与外观有关，详细了解投影系统可以看[这里](/basic/equip.md#装备染色、投影)。
+下面2个任务与外观有关，详细了解投影系统可以看[这里](/basic/equip-looking.md)。
 
 * 主线15级：<quest name="天才美容师的过激绝技" type="plus" />，解锁洗剪吹功能，可在旅馆花2000金币改变发型、染发及面妆。
 * 主线15级：<quest name="色彩斑斓的世界" type="plus" />、<quest name="华丽的投影世界" type="plus" />，解锁染色及投影功能。
