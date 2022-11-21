@@ -64,7 +64,7 @@ body, h1, h2, h3, h4, h5, #app .ui.menu
     margin-bottom 0
     z-index 1
     background repeating-linear-gradient(0deg, #f8f8f8, #f8f8f8 1px, #fff 1px, #fff 2px)
-  .ui.segment.collaspe-text
+  &.toc-table .ui.segment.collaspe-text /* 对于需要自适应宽度的table的额外处理（主要用于有TOC的位置） */
     display inline-block
     table
       width auto

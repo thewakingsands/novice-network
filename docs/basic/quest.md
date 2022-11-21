@@ -57,7 +57,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 **※ 注意：名称带有“登峰造极”字样的任务为高难度副本（极神）的开启任务，由于副本本身难度较高，无意挑战的玩家可以不参与。想要挑战的玩家推荐先看过攻略后，通过招募板等方式召集队友进行挑战。**[点我了解FF14挑战副本的类型和相关介绍](/topic/battle.md)。
 
-**※ 注意：<Quest name="传说中的武器工匠" type="plus" />/<quest name="复苏的上古武器" type="plus" />，<Quest name="其名元灵武器" type="plus" />/<Quest name="创造新武器" type="plus" />Z分别是50级和60级的[发光武器](/topic/shine.md)系列支线，属于需要消耗大量时间的游戏内容，请先参照相关介绍确认自己是否想要制作该武器，再决定是否进行这系列任务。**
+**※ 注意：<Quest name="传说中的武器工匠" type="plus" />/<quest name="复苏的上古武器" type="plus" />，<Quest name="其名元灵武器" type="plus" />/<Quest name="创造新武器" type="plus" />分别是50级和60级的[发光武器](/topic/shine.md)系列支线，属于需要消耗大量时间的游戏内容，请先参照相关介绍确认自己是否想要制作该武器，再决定是否进行这系列任务。**
 
 ::: segment orange
 

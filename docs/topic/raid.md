@@ -12,7 +12,7 @@
 
 经过6.0主线<quest name="晓月之终途" type="main" />并讨伐过对应蛮神之后，就可以接任务<quest name="知识之都的咏诗之人" type="plus" />，对话逐一开启极神。
 
-;;; .guide <!--自动缩表格和折叠的hack，collapse不会改…-->
+;;; .guide .toc-table
 ::: collapse 6.0 极蛮神列表（※注意※ 有剧透）
 | 简称 | 对应副本 | 
 | -- | -- | 
