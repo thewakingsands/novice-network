@@ -33,7 +33,7 @@
   .clear
     clear both
   .back
-    background #efefef
+    background #a9a9a947
     border-radius 10px
     padding 3px 8px
     margin-right 0.5em

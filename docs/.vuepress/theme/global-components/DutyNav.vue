@@ -47,6 +47,7 @@
   border 1px solid #ccc
   margin 2px 5px
   cursor pointer
+  border-radius 4px
   &:hover
     border-color #ffa726
   &.selected
@@ -55,6 +56,14 @@
     color #fff
 .duty-list .grayout
   color #888
+.dark
+  .tag
+    background #333
+    border-color #555
+    &:hover
+      border-color #ffa726
+    &.selected
+      color #fbffc4
 @media screen and (max-width: 720px)
   .tag-title
     display block

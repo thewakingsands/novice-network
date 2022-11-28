@@ -1,12 +1,12 @@
 <template>
-  <Root class="root-container" :class="$page.frontmatter.className">
+  <Root class="root-container" :class="[$page.frontmatter.className, {dark: isDark}]">
     <div class="main-container full-height">
       <div
         class="content-outer full-height"
         :class="{ fullscreen: !!$page.frontmatter.webframe }"
       >
         <div class="content-inner full-height">
-          <NavTop @barClicked="showMenu = !showMenu" />
+          <NavTop @barClicked="showMenu = !showMenu" @toggleDark="isDark = !isDark" :isDark="this.isDark" />
           <slot>
             <Duty v-if="$page.frontmatter.instance" />
             <WebFrame
@@ -51,6 +51,11 @@
 </template>
 
 <style lang="stylus">
+#root
+  background repeating-linear-gradient(0deg, #f8f8f8, #f8f8f8 1px, white 1px, white 2px)
+  transition all .5s
+  &.dark 
+    background #1b1c1d
 .home-page .content-container-inner
   max-width 100%
 .main-container
@@ -80,6 +85,13 @@
 @media screen and (max-width 960px)
   .hide-small
     display none !important
+.dark  
+  color #c9c7c5
+  a 
+    color #1fc4e9
+  .yaofan .yaofan-bg
+    background #000
+    border-color #333
 
 .yaofan-ad, .yaofan-bg, .yaofan-inner
   width 728px
@@ -124,7 +136,8 @@ export default {
   data() {
     return {
       showMenu: false,
-      showAd: false
+      showAd: false,
+      isDark: matchMedia('(prefers-color-scheme: dark)').matches
     }
   },
   components: {

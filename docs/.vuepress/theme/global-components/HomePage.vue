@@ -221,7 +221,7 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
       color #3d4e99
       font-size 1em
       padding 5px 20px
-      z-index 60
+      z-index 40
       transition all .3s
       &::after
         content ' '
@@ -247,6 +247,7 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
   .mnheader
     -webkit-tap-highlight-color transparent
     flex-wrap wrap
+    z-index 50
     .view-details
       width 20px
       height 20px
@@ -262,7 +263,6 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
       text-align center
     .desc
       position absolute
-      opacity 0
       padding 5px
       background #efefef
       border 2px solid #ccc
@@ -271,11 +271,11 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
       opacity 0
       z-index -1
       transform translateY(-80px)
-      top 0
+      top -250px
       &.show
         opacity 1
         z-index 1
-        transform translateY(0)
+        transform translateY(250px)
   .tab-container
     align-content center
     flex-wrap nowrap
@@ -291,6 +291,17 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
       a
         font-size 1em
         padding 5px 10px
+.dark /* 暗色模式 */
+  .mntab
+    background-image linear-gradient(0deg, #000000bf,#000000bf), url(/images/bg/bgmoon.jpg)
+    box-shadow 0 0 10px #00000059
+    h2
+      color #d9cec1
+      background linear-gradient(0deg, #72727233, #72727200)
+    li a
+      color #26cdf3
+      &:hover
+        color white
 </style>
 
 <script>

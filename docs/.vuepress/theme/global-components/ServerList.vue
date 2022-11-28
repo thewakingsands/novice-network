@@ -177,6 +177,15 @@
     background-image url('../images/serverlist/transfer-in.png')
   &.under-maintenance
     background-image url('../images/serverlist/under-maintenance.png')
+.dark /* 暗色模式 */
+  .dc-list 
+    .dc-name
+      background #333
+    .dc
+      background #222
+      border-color #666
+    .server
+      border-bottom-color #666
 </style>
 
 <script>

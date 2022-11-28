@@ -62,6 +62,9 @@
   .status-line
     color #333333
     margin-bottom 10px
+.dark
+  .footer-container .status-line
+    color #999
 </style>
 
 <script>

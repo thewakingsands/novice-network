@@ -34,6 +34,14 @@
           <i class="double up angle icon"></i>
         </a>
         <a
+          class="item icon-item"
+          href="javascript:;"
+          @click.prevent="$emit('toggleDark')"
+        >
+          <i class="icon"
+          :class="[isDark ? 'moon' : 'sun']"></i>
+        </a>
+        <a
           class="item icon-item hide-small"
           href="javascript:;"
           @mouseenter="showQr = true"
@@ -132,6 +140,7 @@ import QRCode from 'qrcode'
 
 export default {
   inject: ['gotoId'],
+  props: ['isDark'],
   data() {
     return {
       showQr: false,

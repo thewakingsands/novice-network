@@ -1,9 +1,11 @@
 @import "./colors.styl"
 @import "./font.styl"
 @import "./map.styl"
+@import "./dark.styl"
 
 #app, .full-height
   height 100%
+  overflow auto
 
 body, h1, h2, h3, h4, h5, #app .ui.menu
   font-family: 'FFXIV', Lato, Helvetica Neue, "Microsoft Yahei", "微软雅黑", Arial, Helvetica, sans-serif;
@@ -59,7 +61,7 @@ body, h1, h2, h3, h4, h5, #app .ui.menu
     flex-basis 250px
   .sticky
     position sticky
-    top 40px
+    top 0
     padding 2em 0 0
     margin-bottom 0
     z-index 1
@@ -68,7 +70,9 @@ body, h1, h2, h3, h4, h5, #app .ui.menu
     display inline-block
     table
       width auto
-
+.dark /* 暗色模式 */
+  .sticky
+    background #1b1c1d
 .center
   display flex
   justify-content center

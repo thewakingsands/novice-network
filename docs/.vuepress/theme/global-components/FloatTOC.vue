@@ -9,7 +9,7 @@
 <style lang="stylus" scoped>
 .wrapper
   float right
-  background #fff
+  background #ffffff38
   padding 0 1em
   margin-left 1em
   max-width 320px
@@ -17,11 +17,9 @@
   box-shadow 0px 1px 2px 0 rgba(34, 36, 38, 0.15)
   border-radius 0.28571429rem
   border 1px solid rgba(34, 36, 38, 0.15)
-  @media screen and (max-width: 375px)
-    float none
-    padding 0.25em 1em
-    margin 0
-    max-width unset
+  z-index 5
+  @media screen and (max-width: 767px)
+    display none
 </style>
 
 <script>

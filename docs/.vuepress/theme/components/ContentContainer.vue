@@ -8,8 +8,6 @@
 </template>
 
 <style lang="stylus">
-body
-  background repeating-linear-gradient(0deg, #f8f8f8, #f8f8f8 1px, white 1px, white 2px)
 .content-container
   width 100%
   .content-container-inner
@@ -52,6 +50,8 @@ body
       color #000
     mark
       background-color #dcedc8
+      padding 0 2px
+      border-radius 4px
     strong
       font-weight normal
       color #ff5e00
@@ -79,6 +79,23 @@ body
     .local-time-chs, .eorzea-time-chs
       color #39393c
       padding 0 2px
+.dark .content-container .content-container-inner /* 暗色模式 */
+  s
+    color #555
+  mark
+    background #366616
+    color #f1dbdb
+  blockquote
+    border-left-color #4c4c4c
+    background rgba(217, 221, 224, 0.1)
+  code
+    border-color #444
+    background #000
+  ins
+    text-shadow 0px 0px 3px #ffc800
+    color #fff
+  .guide.col img~p
+    color #6c6c6c
 </style>
 
 <script>
