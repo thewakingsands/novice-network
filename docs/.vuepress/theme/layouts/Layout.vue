@@ -137,7 +137,7 @@ export default {
     return {
       showMenu: false,
       showAd: false,
-      isDark: matchMedia('(prefers-color-scheme: dark)').matches
+      isDark: window.matchMedia('(prefers-color-scheme: dark)').matches
     }
   },
   components: {
