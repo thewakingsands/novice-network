@@ -16,6 +16,8 @@
   width 75%
   min-width 25em
   margin 30px auto
+  @media screen and (max-width: 375px)
+    min-width auto
   .img
     position absolute
     width 15%

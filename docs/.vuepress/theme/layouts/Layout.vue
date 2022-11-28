@@ -1,11 +1,11 @@
 <template>
   <Root class="root-container" :class="[$page.frontmatter.className, {dark: isDark}]">
-    <div class="main-container full-height">
+    <div class="main-container">
       <div
-        class="content-outer full-height"
+        class="content-outer"
         :class="{ fullscreen: !!$page.frontmatter.webframe }"
       >
-        <div class="content-inner full-height">
+        <div class="content-inner">
           <NavTop @barClicked="showMenu = !showMenu" @toggleDark="isDark = !isDark" :isDark="this.isDark" />
           <slot>
             <Duty v-if="$page.frontmatter.instance" />
@@ -69,12 +69,14 @@
   padding-top 40px
   padding-left 280px
   width 100%
+  min-height 100vh
   @media screen and (max-width: 1200px) and (min-width: 961px)
     padding-left 250px
   @media screen and (max-width: 960px)
     padding-left 0
   &.fullscreen
     padding-left 260px
+    overflow hidden
     @media screen and (max-width: 1200px) and (min-width: 961px)
       padding-left 240px
     @media screen and (max-width: 960px)

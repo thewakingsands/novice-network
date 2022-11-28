@@ -63,8 +63,10 @@
     color #333333
     margin-bottom 10px
 .dark
-  .footer-container .status-line
-    color #999
+  .footer-container 
+    border-top-color #333
+    .status-line
+      color #999
 </style>
 
 <script>

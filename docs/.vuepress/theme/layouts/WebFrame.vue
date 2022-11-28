@@ -6,7 +6,7 @@
 
 <style lang="stylus" scoped>
 .webframe-container
-  height 100%
+  height calc(100vh - 40px)
   width 100%
 iframe
   width 100%

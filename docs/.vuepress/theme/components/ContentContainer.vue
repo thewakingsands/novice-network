@@ -10,6 +10,11 @@
 <style lang="stylus">
 .content-container
   width 100%
+  min-height 68vh
+  @media screen and (max-width: 1440px)
+    min-height 60vh
+  @media screen and (max-width: 425px)
+    min-height 40vh
   .content-container-inner
     max-width 1200px
     padding 0 20px
@@ -96,6 +101,8 @@
     color #fff
   .guide.col img~p
     color #6c6c6c
+  .scroll-focus
+    background #5a442d
 </style>
 
 <script>
