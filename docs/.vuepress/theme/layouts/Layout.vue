@@ -137,7 +137,7 @@ export default {
     return {
       showMenu: false,
       showAd: false,
-      isDark: window.matchMedia('(prefers-color-scheme: dark)').matches
+      isDark: false
     }
   },
   components: {
@@ -168,6 +168,7 @@ export default {
       this.showAd = true
     })
     this.showAd = true
+    this.isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   },
   beforeDestroy() {
     if (this.$beforeHook) {
