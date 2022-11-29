@@ -87,10 +87,10 @@
 @media screen and (max-width 960px)
   .hide-small
     display none !important
-.dark  
+.dark  /* 暗色模式 */
   color #c9c7c5
   a 
-    color #1fc4e9
+    color #5bb0ed
   .yaofan .yaofan-bg
     background #000
     border-color #333

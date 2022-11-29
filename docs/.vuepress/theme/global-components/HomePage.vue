@@ -295,11 +295,14 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
   .mntab
     background-image linear-gradient(0deg, #000000bf,#000000bf), url(/images/bg/bgmoon.jpg)
     box-shadow 0 0 10px #00000059
+    &:hover,&:active
+      box-shadow -5px -2px 15px #3c57cf73, 0px 0px 15px #3584ad59, 5px 2px 15px #f18e2e80
+      background-image linear-gradient(0deg, #00000099,#00000099), url(/images/bg/bgmoon.jpg)
     h2
       color #d9cec1
       background linear-gradient(0deg, #72727233, #72727200)
     li a
-      color #26cdf3
+      color #26baf3
       &:hover
         color white
 </style>

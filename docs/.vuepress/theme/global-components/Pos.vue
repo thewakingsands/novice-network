@@ -22,6 +22,11 @@
 i.xiv.link
   vertical-align text-bottom
   color #ffa042
+.dark 
+  .eorzea-map-trigger
+    color #5bb0ed
+    &:hover
+      background #212d36
 </style>
 
 <script>

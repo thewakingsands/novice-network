@@ -86,7 +86,7 @@
       padding 0 2px
 .dark .content-container .content-container-inner /* 暗色模式 */
   s
-    color #555
+    color #565656
   mark
     background #366616
     color #f1dbdb
@@ -95,7 +95,7 @@
     background rgba(217, 221, 224, 0.1)
   code
     border-color #444
-    background #000
+    background #111
   ins
     text-shadow 0px 0px 3px #ffc800
     color #fff
@@ -103,6 +103,9 @@
     color #6c6c6c
   .scroll-focus
     background #5a442d
+  .local-time-chs, .eorzea-time-chs
+    color #c9c7c5
+
 </style>
 
 <script>
