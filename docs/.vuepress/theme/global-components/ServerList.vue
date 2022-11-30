@@ -127,17 +127,23 @@
 .dc-list-wrapper
   width 100%
   overflow-x auto
+  overflow-y hidden
+  @media screen and (max-width 768px)
+    &::after
+      content '※ 左右滑动以浏览完整列表'
+      font-size 0.8em
+      color #666
 .dc-list
   display flex
   align-items flex-start
-  justify-content space-around
-  min-width 720px
+  justify-content space-between
   .dc
     margin 1em 0.2em
     background-color #eee
     border-radius 8px
     border 1px solid #c2c2c2
     overflow hidden
+    min-width 220px
   .dc-name
     background-color #737373
     color #fff

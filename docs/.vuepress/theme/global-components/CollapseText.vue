@@ -16,6 +16,8 @@
 <style lang="stylus">
 .collaspe-text.ui.segment
   font-size 1em
+  display table
+  display flow-root
   .summary
     cursor pointer
     font-size 1em

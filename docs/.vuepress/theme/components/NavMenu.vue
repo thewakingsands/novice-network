@@ -223,7 +223,18 @@
       transition 300ms
       &.menu-show
         &::after
-          color rgba(255,255,255,1)
+          content ''
+          display block
+          position fixed
+          top 0
+          left 81px
+          width calc(100vw - 121px)
+          height 40px
+          pointer-events none
+          animation-name menulight
+          animation-duration 8s
+          animation-iteration-count infinite
+          animation-direction alternate
         button
           animation gradient 8s ease-in-out infinite
           background-size 800% 800%
@@ -251,6 +262,14 @@
 		background-position: 100% 50%;
 	100%
 		background-position: 0% 50%;
+@keyframes menulight 
+  0%
+    box-shadow inset 0 0 20px 3px #3d4d99cc
+  50%
+    box-shadow inset 0 0 20px 3px #3689b3cc
+  100%
+    box-shadow inset 0 0 20px 3px #cc7a29cc
+
 </style>
 
 <script>

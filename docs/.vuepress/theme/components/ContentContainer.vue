@@ -24,6 +24,8 @@
       margin 1em 0
       padding 1em 1em 1px
       background rgba(217, 221, 224, 0.25)
+      display table
+      display flow-root
     @media screen and (max-width: 375px)
       padding 0 10px
       font-size 16px
