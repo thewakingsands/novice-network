@@ -12,23 +12,6 @@
 ;;;
 ;;;
 
-### 从哪开始进行游戏设置？
-
-可以从快捷指令的系统菜单中打开游戏中的设置。
-
-;;;.guide .cols2
-;;;.guide .col .figcap
-![](./config.assets/ae2b67f5c2b7e20bed76fa367ae35eacad082d.jpg)
-
-键盘鼠标模式
-;;;
-;;;.guide .col .figcap
-![](./config.assets/3cca8032b9a960c39a0981d7c630eca71f154d.jpg)
-
-手柄操作模式模式
-;;;
-;;;
-
 ## 设置菜单
 
 ### 游戏中的各种设置
@@ -49,6 +32,26 @@
 
 ;;;
 
+;;;
+
+> * [快速设置（战斗）](/ui/battle.md)——简单设置一下就可以快速开始游戏了！
+> * [设置菜单详解](/basic/config.md)——仔细设置游戏，玩得更开心！
+
+### 从哪开始进行游戏设置？
+
+可以从快捷指令的系统菜单中打开游戏中的设置。
+
+;;;.guide .cols2
+;;;.guide .col .figcap
+![](./config.assets/ae2b67f5c2b7e20bed76fa367ae35eacad082d.jpg)
+
+键盘鼠标模式
+;;;
+;;;.guide .col .figcap
+![](./config.assets/3cca8032b9a960c39a0981d7c630eca71f154d.jpg)
+
+手柄操作模式模式
+;;;
 ;;;
 
 ### 设置菜单
@@ -75,6 +78,3 @@
 ;;;
 
 ;;;
-
-> * [让战斗更方便的设置](/ui/battle.md)——简单设置一下就可以快速开始游戏了！
-> * [设置菜单详解](/basic/config.md)——仔细设置游戏，玩得更开心！
