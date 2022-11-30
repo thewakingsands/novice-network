@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5
       &.no-zoom
         border-radius 0
     .col
-      margin 0 0.2em
+      margin 0 1em
     &.comp
       .col
         margin 0 0.5em
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5
   justify-content center
   align-items center
 
-@media screen and (min-width 425px) /* 电脑 */
+@media screen and (min-width 768px) /* 电脑 */
   .guide
     &.cols2, &.cols3, &.cols4
       .col:first-child
@@ -85,7 +85,11 @@ h1, h2, h3, h4, h5
       .col:last-child
         margin-right 0 !important 
 
-@media screen and (max-width 425px) /* 手机 */
+@media screen and (max-width 768px) /* 手机 */
+  .guide
+    &.cols2, &.cols3, &.cols4
+      .col
+        margin 0 0.2em
   .md-table::before
     content '※ 左右滑动以浏览完整表格'
     position sticky

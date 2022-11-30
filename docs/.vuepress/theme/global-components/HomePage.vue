@@ -177,6 +177,9 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
   h1
     flex auto
     font-size 0
+    img
+      background-image url('/images/bg.png')
+      background-size contain
   .desc
     padding-left 30px
     font-size .8em
@@ -292,6 +295,9 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
         font-size 1em
         padding 5px 10px
 .dark /* 暗色模式 */
+  h1
+    img
+      background-image url('/images/bgdk.png')
   .mntab
     background-image linear-gradient(0deg, #000000bf,#000000bf), url(/images/bg/bgmoon.jpg)
     box-shadow 0 0 10px #00000059
