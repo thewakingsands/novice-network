@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-top">
+  <nav class="nav-top">
     <div class="ui inverted menu">
       <a
         href="javascript:;"
@@ -67,7 +67,7 @@
         <TOC />
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <style lang="stylus">

@@ -13,13 +13,13 @@
               v-else-if="$page.frontmatter.webframe"
               :src="$page.frontmatter.webframe"
             />
-            <div v-else>
+            <main v-else>
               <WhatsNew />
               <Pager v-if="!$page.frontmatter.noTopPager" />
               <ContentContainer />
               <Pager />
-            </div>
-            <div class="yaofan" v-if="showAd && !$page.frontmatter.webframe">
+            </main>
+            <footer class="yaofan" v-if="showAd && !$page.frontmatter.webframe">
               <div class="yaofan-inner">
                 <div class="yaofan-bg">
                   <p>
@@ -37,14 +37,14 @@
                   data-ad-slot="3871755301"
                 ></ins>
               </div>
-            </div>
+            </footer>
             <Footer v-if="!$page.frontmatter.webframe" />
           </slot>
         </div>
       </div>
-      <div class="nav-menu">
+      <nav class="nav-menu">
         <NavMenu v-model="showMenu" />
-      </div>
+      </nav>
     </div>
     <PhotoSwipe ref="photoSwipe" />
   </Root>

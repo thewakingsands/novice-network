@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-container">
+  <footer class="footer-container">
     <div class="colored-footer">
       <div class="status-line">
         <a target="_blank" rel="noopener noreferer" :href="historyLink">
@@ -33,7 +33,7 @@
         </router-link>
       </div>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style lang="stylus">
