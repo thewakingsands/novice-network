@@ -14,7 +14,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 
 主线任务提示同时会提醒现在可以完成的重要任务，请务必记得完成。
 
-**注意：**<quest name="我的专属陆行鸟" search type="plus" />（20级）和<quest name="古代亚拉戈文明的遗产" />（50级）及其后续任务，现在作为主线的强制前置任务，需要留意完成。
+**注意：**<quest name="我的专属陆行鸟" search type="plus" />（20级）和<quest name="古代亚拉戈文明的遗产" type="plus" />（50级）及其后续任务，现在作为主线的强制前置任务，需要留意完成。
 
 ;;;
 ;;;
