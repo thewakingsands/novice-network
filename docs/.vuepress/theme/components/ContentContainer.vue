@@ -10,7 +10,7 @@
 <style lang="stylus">
 .content-container
   width 100%
-  min-height 68vh
+  min-height 67vh
   @media screen and (max-width: 1440px)
     min-height 60vh
   @media screen and (max-width: 425px)

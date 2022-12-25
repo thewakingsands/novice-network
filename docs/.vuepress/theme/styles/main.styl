@@ -27,9 +27,9 @@ h1, h2, h3, h4, h5
     display flex
     justify-content center
     align-items center
-    &.base
+    &.base /* 分栏下对齐 */
       align-items baseline
-    &.top-align
+    &.top-align /* 分栏上对齐 */
       align-items flex-start
     flex-wrap wrap
     img
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5
     flex-basis 370px
   &.cols3 .col.grow
     flex-basis 250px
-  .sticky
+  .sticky /* 自适应分栏置顶 */
     position sticky
     top 0
     padding 2em 0 0
@@ -72,6 +72,10 @@ h1, h2, h3, h4, h5
   display flex
   justify-content center
   align-items center
+iframe
+  width 400px
+  height 30vh
+  border-style none
 
 @media screen and (min-width 768px) /* 电脑 */
   .guide
@@ -101,3 +105,6 @@ h1, h2, h3, h4, h5
       width 100% /* 不锁了，手机需要超宽的直接HTML写宽度 */
       td
         max-width 75vw
+  iframe
+    width 85vw
+    height 85vw

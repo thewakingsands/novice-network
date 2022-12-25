@@ -73,7 +73,9 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 主线20级：<quest name="我的专属陆行鸟" search type="plus" />，完成20级主线任务<quest name="前行之路" search type="main"/>并加入大国防联军后接取，完成任务可获得坐骑专属陆行鸟（**在获得专属陆行鸟之前，即便是商城购买的坐骑也无法使用**）。
   * 任意职业30级：<quest name="可靠的搭档" type="plus" />，解锁专属陆行鸟辅助战斗及陆行鸟鞍囊（扩展背包），在黑衣森林南部林区恬静路营地接取。
 * 任意职业30级：解锁特职，务必及时完成30级职业任务，并获得灵魂水晶转为特职。
+  * **60、70、80级职业任务**：完成后会解锁相应技能，务必及时完成。
 * 30级：<quest name="狱中斗狼" search type="plus" />、<quest name="法外纷争" search type="plus" />，开放PVP竞技场和战场。
+* 风脉任务：任务奖励有<img src="/images/icons/060033.png" class="no-zoom sm-icon" />标识的即为风脉任务，务必及时完成。
 
 ### 特殊功能相关
 * 主线20级：<quest name="被遗忘的探索笔记" type="plus" />，开放[探索笔记](/topic/relax.md#探索笔记)。

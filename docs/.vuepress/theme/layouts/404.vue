@@ -19,6 +19,9 @@
 </template>
 
 <style scoped>
+#root {
+  height: 100vh;
+}
 .dialog {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.27);
@@ -60,7 +63,7 @@
   background-position: center;
 }
 
-.bg1 {
+#root.bg1 {
   background: radial-gradient(
         circle at center,
         rgba(255, 255, 255, 0.2) 2px,
@@ -70,7 +73,7 @@
     url('/images/404_1.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
-.bg2 {
+#root.bg2 {
   background: radial-gradient(
         circle at center,
         rgba(255, 255, 255, 0.2) 2px,
@@ -80,7 +83,7 @@
     url('/images/404_2.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
-.bg3 {
+#root.bg3 {
   background: radial-gradient(
         circle at center,
         rgba(255, 255, 255, 0.2) 2px,
@@ -90,7 +93,7 @@
     url('/images/404_3.jpg') 50% 100%;
   background-size: 6px 6px, cover;
 }
-.bg4 {
+#root.bg4 {
   background: radial-gradient(
         circle at center,
         rgba(255, 255, 255, 0.2) 2px,
