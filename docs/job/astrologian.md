@@ -96,4 +96,4 @@
 
 ## 满级手法
 
-> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[占星的满级攻略](https://nga.178.com/thread.php?key=%E5%8D%A0%E6%98%9F&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[占星的满级攻略](https://bbs.nga.cn/thread.php?key=%E5%8D%A0%E6%98%9F&fid=698)

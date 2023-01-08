@@ -31,8 +31,8 @@
 
 **切勿使用线上代充、代购，会有账号被封停的风险！**
 
-* [信用卡与外币注册支付指南](https://nga.178.com/read.php?tid=30267714)
-* [外币借记卡申请/使用指南 by jawwe](https://nga.178.com/read.php?tid=30313559)
-* [国际服入坑指北 by Cataria卡塔](https://nga.178.com/read.php?tid=15259943)
-* [国际服Steam版购买指南 by aqjcy520](https://nga.178.com/read.php?tid=30280757)
+* [信用卡与外币注册支付指南](https://bbs.nga.cn/read.php?tid=30267714)
+* [外币借记卡申请/使用指南 by jawwe](https://bbs.nga.cn/read.php?tid=30313559)
+* [国际服入坑指北 by Cataria卡塔](https://bbs.nga.cn/read.php?tid=15259943)
+* [国际服Steam版购买指南 by aqjcy520](https://bbs.nga.cn/read.php?tid=30280757)
 * [国际服获取注册激活游玩从入门到精通 by 西木野真姫](https://www.bilibili.com/read/cv11570492)
