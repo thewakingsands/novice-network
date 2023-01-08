@@ -32,6 +32,9 @@ jobName: 学者
 
 ## 练级手法
 
+> * [如何设置技能/快捷栏](/ui/hotbar.md)
+> * [让战斗更方便的设置](/ui/battle.md)
+
 ==如果是自己从秘术师练到学者，当你戴上灵魂水晶之后，你的技能会发生翻天覆地的变化。包括<Action name="毁坏" />、<Action name="能量吸收" />等同名技能都需要重新从技能栏里拖出来，切记！==
 
 <IncludePage file="_includes/basic/healer.md" />
@@ -82,4 +85,4 @@ jobName: 学者
 
 ## 满级手法
 
-> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[学者的满级攻略](https://nga.178.com/thread.php?key=%E5%AD%A6%E8%80%85&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[学者的满级攻略](https://bbs.nga.cn/thread.php?key=%E5%AD%A6%E8%80%85&fid=698)

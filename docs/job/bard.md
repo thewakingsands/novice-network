@@ -37,8 +37,10 @@
 ;;;
 ;;;
 
-
 ## 练级手法
+
+> * [如何设置技能/快捷栏](/ui/hotbar.md)
+> * [让战斗更方便的设置](/ui/battle.md)
 
 诗人的核心DOT是<Action name="毒咬箭" />（64升级为<Action name="烈毒咬箭" />）和<Action name="风蚀箭" />（64升级为<Action name="狂风蚀箭" />），然后通过<Action name="放浪神的小步舞曲">旅神</Action>→<Action name="贤者的叙事谣">贤者</Action>→<Action name="军神的赞美歌">军神</Action>三首歌的轮播，触发<Action name="完美音调" />、<Action name="失血箭" />CD重置和加速的效果。
 
@@ -87,4 +89,4 @@
 
 ## 满级手法
 
-> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[诗人的满级攻略](https://nga.178.com/thread.php?key=%E8%AF%97%E4%BA%BA&fid=698)
+> 因精力有限，本站无法提供满级手法参考，可前往NGA论坛查找[诗人的满级攻略](https://bbs.nga.cn/thread.php?key=%E8%AF%97%E4%BA%BA&fid=698)
