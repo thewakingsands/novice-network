@@ -40,7 +40,7 @@
 
 万魔殿目前有边境之狱、炼净之狱，零式边狱（P1s~P4s）掉落600装备、零式炼狱（P4s~P8s）掉落630装备。
 
-万魔殿英雄榜（以当时的服务器和名字为记录）：[边境之狱](https://actff1.web.sdo.com/20180525HeroList/index220401.html)
+万魔殿英雄榜（以当时的服务器和名字为记录）：[边境之狱](https://actff1.web.sdo.com/20180525HeroList/index220401.html)，[炼净之狱](https://actff1.web.sdo.com/20180525HeroList/index221229.html)
 
 [万魔殿攻略](/duty/)。
 
