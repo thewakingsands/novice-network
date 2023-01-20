@@ -100,6 +100,9 @@
       <ul>
         <li><router-link to="topic/daily.htm">每日/每周任务</router-link></li>
         <li><router-link to="topic/treasure.htm">休闲赚钱与挖宝</router-link></li>
+        <li>
+          <router-link to="topic/island.htm">开拓无人岛</router-link>
+        </li>
         <li><router-link to="topic/story.htm">剧情任务</router-link></li>
         <li>
           <router-link to="topic/goldsaucer.htm">金碟游乐场</router-link>
@@ -119,11 +122,11 @@
       </ul>
     </div>
     <div class="mntab">
-      <h2>其他游戏系统</h2>
+      <h2>特殊区域玩法</h2>
       <ul>
-        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
-        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
-        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
+        <li><router-link to="advanced/dd.htm">深层迷宫（死宫/天宫）</router-link></li>
+        <li><router-link to="advanced/eureka.htm">禁地优雷卡</router-link></li>
+        <li><router-link to="advanced/bozjan.htm">南方博兹雅战线</router-link></li>
       </ul>
     </div>
     <div class="mntab">
@@ -135,6 +138,14 @@
       </ul>
     </div>
     <div class="mntab">
+      <h2>其他游戏系统</h2>
+      <ul>
+        <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
+        <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
+        <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
+      </ul>
+    </div>
+    <div class="mntab">
       <h2>其他</h2>
       <ul>
         <li><router-link to="topic/other.htm">周边衍生作品</router-link></li>
@@ -143,11 +154,13 @@
         </li>
       </ul>
     </div>
+    <div class="mntab"></div>
+    <div class="mntab"></div>
     <div class="mntab">
       <h2>常用综合网站</h2>
       <ul>
         <li><a href="https://ff.web.sdo.com/web8/index.html#/home" target="_blank">最终幻想14国服官网</a></li>
-        <li><a href="https://nga.178.com/thread.php?fid=-362960" target="_blank">NGA最终幻想14版</a></li>
+        <li><a href="https://bbs.nga.cn/thread.php?fid=-362960" target="_blank">NGA最终幻想14版</a></li>
         <li><a href="https://www.ffxiv.cn/v2/" target="_blank">素素攻略站</a></li>
         <li><a href="https://ff14.huijiwiki.com/" target="_blank">最终幻想XIV中文维基</a></li>
         <li><a href="https://garlandtools.cn/db/" target="_blank">加兰德数据库(中文版)</a></li>
@@ -163,7 +176,7 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
   display flex
   align-content stretch
   flex-flow column wrap
-  height 910px
+  height 1015px
   &:before, &:after
     content ""
     flex-basis 100%

@@ -339,6 +339,10 @@ export const TOC = {
           title: '休闲赚钱挖宝'
         },
         {
+          href: '/topic/island.htm',
+          title: '开拓无人岛'
+        },
+        {
           href: '/topic/story.htm',
           title: '剧情任务'
         },
@@ -412,8 +416,16 @@ export const TOC = {
       children: [
         {
           href: '/topic/social.htm',
-          title: '社群与社交'
-        },{
+          title: '社群与社交',
+          folder: 'social'
+        },
+        {
+          href: '/topic/plate.htm',
+          title: '冒险者铭牌',
+          belongsTo: 'social',
+          indent: 1
+        },
+        {
           href: '/topic/craft.htm',
           title: '能工巧匠（制作）',
           folder: 'craft'
@@ -615,7 +627,7 @@ export const TOC = {
       title: '常用网站',
       externalChildren: [
         { title: '最终幻想14国服官网', href: 'http://ff.sdo.com' },
-        { title: 'NGA最终幻想14版', href: 'https://nga.178.com/thread.php?fid=-362960' },
+        { title: 'NGA最终幻想14版', href: 'https://bbs.nga.cn/thread.php?fid=-362960' },
         { title: '素素攻略站', href: 'https://www.ffxiv.cn/' },
         { title: '最终幻想XIV中文维基', href: 'https://ff14.huijiwiki.com' },
         { title: '加兰德数据库(中文版)', href: 'https://garlandtools.cn/db/' },

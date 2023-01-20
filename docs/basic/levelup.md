@@ -73,7 +73,7 @@
     <tbody>
       <tr>
         <td>
-          <a href="/basic/dungeon.htm#随机副本" ><img src="/images/icons/061807.png" class="no-zoom sm-icon"><br>每日随机</a>
+          <a href="/topic/daily.htm#每日随机" ><img src="/images/icons/061807.png" class="no-zoom sm-icon"><br>每日随机</a>
           <br>★★★★★</td>
         <td>Lv10~Lv89</td>
         <td>包括随机行会令、练级、高随甚至 PVP 随机，无论哪一种都会给玩家海量经验。如果游戏时间不充裕又想快速练级，那么每日随机副本就是必须完成的功课。
