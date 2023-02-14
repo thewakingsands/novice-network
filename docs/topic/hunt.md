@@ -154,6 +154,7 @@ S怪通常体型更大，而且从较远处就能看到，如果新人难以判�
 - <item name="小鸭嘴兽" />
 - <item name="纳夏猫" />
 - <item name="得到宽恕的沉默角笛" />
+- <item name="醋蝎龙角笛" />
 - <item name="水晶都木人" />
 - [魔典装备](https://garlandtools.cn/db/#list/x1S4DBwaVY)（80级440品，隆卡装备）
 - [幻想装备](https://garlandtools.cn/db/#list/e8u418y2dx)（80级470品，影渊装备）
