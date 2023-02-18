@@ -14,6 +14,8 @@
 
 :::
 
+> [制作进度、材料追踪表](https://www.kdocs.cn/l/cm9hndiVJ8eJ)
+
 ## 前置任务
 
 需要完成主线任务<quest name="暗影之逆焰" />，以及重返伊瓦利斯系列任务（起始任务为<quest name="被通缉的剧团" />）后，前往<Pos name="黄金港" :x="12.2" :y="12.3" />庆典接任务<quest name="失传的圣遗物" type="plus"/>开启任务线。

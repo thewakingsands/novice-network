@@ -12,6 +12,8 @@
 - 做完古武+6之后，可以在小徒弟那里买到之前所有阶段的复制品。但是如果在中间阶段遗失了古武，你…大概…可能……只能……重新做了…吧……
 :::
 
+> [制作进度、材料追踪表](https://www.kdocs.cn/l/cm9hndiVJ8eJ)
+
 ## 前置任务
 <Quest name="传说中的武器工匠" type="plus" /> <span style="color:silver;">奈德里克·艾恩哈特<Pos name="沙之家" :x="6.2" :y="5.1" /></span>
 
