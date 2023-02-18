@@ -124,7 +124,7 @@
     <div class="mntab">
       <h2>特殊区域玩法</h2>
       <ul>
-        <li><router-link to="advanced/dd.htm">深层迷宫（死宫/天宫）</router-link></li>
+        <li><router-link to="topic/dd.htm">深层迷宫（死宫/天宫）</router-link></li>
         <li><router-link to="topic/eureka.htm">禁地优雷卡</router-link></li>
         <li><router-link to="topic/bozjan.htm">南方博兹雅战线</router-link></li>
       </ul>
