@@ -117,7 +117,7 @@
         <li><router-link to="topic/hunt.htm">怪物狩猎</router-link></li>
         <li><router-link to="topic/battle.htm">PVE 挑战副本</router-link></li>
         <li><router-link to="topic/pvp.htm">PVP 玩家对战</router-link></li>
-        <li><router-link to="topic/dd.htm">Roguelike 深层迷宫</router-link></li>
+        <li><router-link to="topic/subterrane.htm">希拉狄哈水道</router-link></li>
         <li><router-link to="topic/shine.htm">制作成长型发光武器</router-link></li>
       </ul>
     </div>
@@ -141,6 +141,7 @@
       <h2>其他游戏系统</h2>
       <ul>
         <li><router-link to="advanced/retainer.htm">雇员系统</router-link></li>
+        <li><router-link to="basic/equip-looking.htm">外观（染色与投影）</router-link></li>
         <li><router-link to="advanced/grandCompany.htm">大国防联军</router-link></li>
         <li><router-link to="advanced/fate.htm">临危受命（FATE）</router-link></li>
       </ul>

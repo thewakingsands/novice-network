@@ -175,8 +175,9 @@
 
 在各个地区分布着专精于生产或采集的友好部族，完成他们的声望任务需要有对应的生产采集职业，提升声望之后可以获得友好部族专属坐骑，并开启专属商店。
 
-* 鲶鱼精需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
-* 奇塔利族需要完成75级主线<quest name="宁静" type="main" />及支线<quest name="昏暗森林的守护者" type="plus" />、<quest name="双胞胎与双元灵" type="plus" />各自后续之后开启，达到誓约声望后可购买坐骑<item name="隆卡魔笛" />。
+* 鲶鱼精需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后，接任务<quest name="滋润吧鲶鱼精" type="plus" />开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
+* 奇塔利族需要完成75级主线<quest name="宁静" type="main" />及支线<quest name="昏暗森林的守护者" type="plus" />、<quest name="双胞胎与双元灵" type="plus" />各自后续之后，接任务<quest name="史官到来" type="plus" />开启，达到誓约声望后可购买坐骑<item name="隆卡魔笛" />。
+* 奥密克戎族需要完成90级主线<quest name="晓月之终途" type="main" />及支线<quest name="电脑梦境斯提格玛四" type="plus" />之后，接任务<quest name="宇宙尽头的咖啡厅" type="plus" />开启，达到誓约声望后可购买坐骑<item name="缪·缪咻角笛" />。
 
 ## 常用工具
 

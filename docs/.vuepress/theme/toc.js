@@ -200,6 +200,10 @@ export const TOC = {
           title: '怪物狩猎'
         },
         {
+          href: '/topic/subterrane.htm',
+          title: '希拉狄哈水道'
+        },
+        {
           href: '/topic/battle.htm',
           title: '挑战副本'
         },
@@ -268,6 +272,12 @@ export const TOC = {
         {
           href: '/topic/resistance.htm',
           title: '义军武器(女王之刃)',
+          belongsTo: 'shine',
+          indent: 1
+        },
+        {
+          href: '/topic/manderville.htm',
+          title: '曼德维尔武器',
           belongsTo: 'shine',
           indent: 1
         }

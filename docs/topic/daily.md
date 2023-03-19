@@ -58,6 +58,7 @@ FF14里有一些任务是每天、每周刷新的，通常它们能够帮你练�
   * 矮人族（生产）：<quest name="拯救工匠村！" type="plus" />，完成珂露西亚岛地区支线任务<quest name="惨剧之村" type="plus"/>和<quest name="矮人族的不良青年" type="plus" />及其后续之后接取。
 * 6.0 友好部族
   * 悌阳象族：<quest name="岛上狂奔的河马" type="plus" />，完成<quest name="晓月之终途" type="main" />和萨维奈岛系列重要任务<quest name="吹向森林的草原之风" type="plus"/>之后开启。
+  * 奥密克戎族（采集）：<quest name="宇宙尽头的咖啡厅" type="plus" />，完成<quest name="晓月之终途" type="main" />及支线<quest name="电脑梦境斯提格玛四" type="plus" />之后开启。
 
 :::
 
