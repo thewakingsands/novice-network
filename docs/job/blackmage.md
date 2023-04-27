@@ -38,13 +38,13 @@
 
 习得<Action name="冰封" >冰3</Action>和<Action name="爆炎" >火3</Action>(35级)之后，黑魔就可以打出最基础的冰火循环： <Action name="冰封" >冰3</Action> → <Action name="闪雷" />/<Action name="暴雷" /> → <Action name="爆炎" >火3</Action> → <Action name="火炎" >火1</Action> x n到空蓝 → <Action name="冰封" >冰3</Action> → 雷/<Action name="冰结" >冰1</Action>到满蓝 → <Action name="爆炎" >火3</Action>……以此类推（若有触发免费的<Action name="爆炎" >火3</Action>就即时用掉）。
 
-58级习得<Action name="冰澈" >冰4</Action>之后，在冰阶段中要多打一个冰4（通常冰阶段只够你打1个冰和1个雷），而到了60级习得<Action name="炽炎" >火4</Action>之后，黑魔完整的输出体系就建立起来了：<Action name="冰封" >冰3</Action> → <Action name="冰澈" >冰4</Action> → <Action name="暴雷">雷3</Action> →  <Action name="爆炎" >火3</Action> → <Action name="炽炎" >火4</Action> x 3 → <Action name="火炎" >火1</Action> → <Action name="炽炎" >火4</Action> x3 → <Action name="绝望" />（未习得绝望时可以使用<Action name="核爆" />）→ <Action name="冰封" >冰3</Action> → <Action name="冰澈" >冰4</Action> → <Action name="暴雷">雷3</Action> → 火循环…
+58级习得<Action name="冰澈" >冰4</Action>之后，在冰阶段中要多打一个冰4（通常冰阶段只够你打1个冰和1个雷），而到了60级习得<Action name="炽炎" >火4</Action>之后，黑魔完整的输出体系就建立起来了：<Action name="冰封" >冰3</Action> → <Action name="冰澈" >冰4</Action> → <Action name="暴雷">雷3</Action> →  <Action name="爆炎" >火3</Action> → <Action name="炽炎" >火4</Action> x 3 → <Action name="火炎" >火1</Action> → <Action name="炽炎" >火4</Action> x3 → <Action name="绝望" />（未习得绝望时可以使用<Action name="核爆" />，也可以跳过该技能）→ <Action name="冰封" >冰3</Action> → <Action name="冰澈" >冰4</Action> → <Action name="暴雷">雷3</Action> → 火循环…
 
-因为火4并不能维系火状态的存在，因此需要在3个火4中间穿插1个<Action name="火炎" >火1</Action>来保证火状态的存续（这也是黑魔玩家俗称的444144）。而到了冰状态中，至少打一个冰4，然后随便打个什么（雷3、冰1都可以，这是为了让蓝恢复满），然后立刻再使用火3回到火状态。
+因为火4并不能维系火状态的存在，因此需要在3个火4中间穿插1个<Action name="火炎" >火1</Action>来保证火状态的存续（这也是黑魔玩家俗称的4441444）。而到了冰状态中，至少打一个冰4，然后随便打个什么（雷3、冰1都可以，这是为了让蓝恢复满），然后立刻再使用火3回到火状态。
 
 在黑魔的单体循环中，会发生<Action name="爆炎" >火3</Action>或雷自动亮起的情况，这是黑魔职业特性火苗和雷云，分别由<Action name="火炎" >火1</Action>和雷dot概率触发，另外也可以由<Action name="激情咏唱" />强制触发。在练级阶段，这两个触发都是好了就放即可，满级时对触发的处理请参考满级攻略。
 
-70级和80级的时候会分别获得<Action name="秽浊" />和<Action name="异言" />，当这两个技能亮起的时候，随便找个时间放掉（80级之前放秽浊，80级之后对单体放异言）。但是要注意自己冰火状态的持续时间，还有灵极心的剩余层数，通常会选择在火阶段的后半段使用（此时灵极心已经用完了，而且到时间直接转冰即可）。
+70级和80级的时候会分别获得<Action name="秽浊" />和<Action name="异言" />，当这两个技能亮起的时候，随便找个时间放掉（80级之前放秽浊，80级之后对单体放异言）。但是要注意自己冰火状态的持续时间，还有灵极心的剩余层数，需要在没有灵极心且不会导致火状态中断的时间里使用，此时通常也被称为是火阶段的后半（即4441444的后三个4的部分）。
 
 ### 群体AOE
 
@@ -54,9 +54,9 @@
 
 50级之后习得<Action name="核爆" />，可以在火循环的末尾使用<Action name="核爆" />收尾（核爆要求至少有800蓝才能放），如果此时有<Action name="魔泉" />的话，可以用它回蓝再放一个核爆，然后使用<Action name="冰冻" >冰2</Action>回到冰状态继续输出。
 
-58级获得灵极心之后，就可以把<Action name="玄冰" />加入循环，AOE阶段输出基本成型：<Action name="冰冻" >冰2</Action>→<Action name="玄冰" />→<Action name="霹雷" />→<Action name="烈炎" >火2</Action> x n{n>2} →<Action name="核爆" />（至少需要保留800蓝）→<Action name="核爆" />（如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="冰冻" >冰2</Action>→（回到冰循环）
+58级获得灵极心之后，就可以把<Action name="玄冰" />加入循环，AOE阶段输出基本成型：<Action name="冰冻" >冰2</Action>→<Action name="玄冰" />→<Action name="霹雷" />→<Action name="烈炎" >火2</Action>（→如果有<Action name="三连咏唱" />就放）（→如果没有魔泉就再读一个<Action name="烈炎" >火2</Action> ）→<Action name="核爆" /> →<Action name="核爆" />（→如果有<Action name="魔泉" />就再来一个<Action name="核爆" />）→<Action name="冰冻" >冰2</Action>→（回到冰循环）。使用三连咏唱可以有效避免读条读一半，目标没了的尴尬场面，66级习得<Action name="三连咏唱" />之后应该尽可能地把它放进来。
 
-最后70级习得<Action name="秽浊" />之后也别忘了打。
+最后70级习得的<Action name="秽浊" />和86级的<Action name="详述" />也记得打（如果小怪快死光了也可以把详述留给boss）。
 
 ### buff技能及功能性技能
 
