@@ -96,6 +96,7 @@
 - <quest name="打开新世界的大门" type="plus" />+<quest name="缔造新篇龙诗之翼" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="艾尔·图的老主顾" type="plus" />
 - <quest name="打开新世界的大门" type="plus" />+<quest name="吹进云雾街的变革之风" type="plus" />+<quest name="天穹之下露出笑容" type="plus" />（苍穹街相关任务，起点为<quest name="仰望天穹之街" type="plus" />）→<quest name="狄兰达尔伯爵的老主顾" type="plus" />
 - <quest name="打开新世界的大门" type="plus" />+<quest name="晓月之终途" type="main" />→<quest name="阿梅莉安丝的老主顾" type="plus" />
+- <quest name="打开新世界的大门" type="plus" />+<quest name="晓月之终途" type="main" />→<quest name="安登的老主顾" type="plus" />
 :::
 
 向各位老主顾提交指定收藏品可以获得工票和经验，另外随着与老主顾好感度的提升，还可以为老主顾换装（仅限部分主顾）。老主顾好感度满格之后，会出现==报酬增加==的项目。非常适合练级，以及大量获取工票。

@@ -311,7 +311,7 @@ PVP中含有着不同的异常状态，了解这些异常状态可以帮助你�
 
 ++小 心 落 单 武 士++
 
-<Status :id="1240" name="地天" />警告！被挂上<Status :id="3202" name="崩破" />buff后拉开距离或使用减伤技能进行回避。
+<Status :id="1240" name="地天" />警告！被挂上<Status :id="3202" name="崩破" />buff后拉开距离或使用血盾技能进行回避。
 
 <IconHeader img="/images/jobs/reaper.png">钐镰客</IconHeader>
 
