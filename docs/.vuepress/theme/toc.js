@@ -201,7 +201,7 @@ export const TOC = {
         },
         {
           href: '/topic/subterrane.htm',
-          title: '希拉狄哈水道'
+          title: '多变迷宫'
         },
         {
           href: '/topic/battle.htm',

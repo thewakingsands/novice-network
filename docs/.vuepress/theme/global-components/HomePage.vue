@@ -117,7 +117,7 @@
         <li><router-link to="topic/hunt.htm">怪物狩猎</router-link></li>
         <li><router-link to="topic/battle.htm">PVE 挑战副本</router-link></li>
         <li><router-link to="topic/pvp.htm">PVP 玩家对战</router-link></li>
-        <li><router-link to="topic/subterrane.htm">希拉狄哈水道</router-link></li>
+        <li><router-link to="topic/subterrane.htm">多变迷宫/异闻迷宫</router-link></li>
         <li><router-link to="topic/shine.htm">制作成长型发光武器</router-link></li>
       </ul>
     </div>

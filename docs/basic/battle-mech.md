@@ -170,9 +170,23 @@ FF14所有的技能都是**服务器判定**，你看到的伤害、读条，都
 
 ### 技能属性分类
 
-FF14的所有技能都可以分为物理和魔法两大类，虽然部分技能会标注“属性”，但是这些属性并无实际意义（只有[青魔法师](/job/bluemage.md)的技能在假面狂欢中有对应的强弱克制关系）。
+;;;.guide .cols2
+;;;.guide .col
+![](./battle.assets/phy.jpg)
+![](./battle.assets/magic.jpg)
+![](./battle.assets/spec.jpg)
+从上往下依次是：物理、魔法、特殊伤害
+;;;
 
-有部分技能只能对特定伤害起效<!--插图-->
+;;;.guide .col .grow
+
+FF14的所有技能都可以分为物理和魔法两大类，可以通过伤害数字前面的图标区分。
+
+有部分技能只能对特定伤害起效
 * 和物理伤害有关的技能：<action name="复仇" />、<action name="亲疏自行" />、<action name="伪装" />
 * 和魔法伤害有关的技能：<action name="弃明投暗" />、<action name="暗黑布道" />、<action name="光之心" />、<action name="异想的幻光" />、<action name="抗死" />
-* 依技能类型效果有所不同的技能：<action name="牵制" />、<action name="昏乱" />
+* 依伤害类型效果有所不同的技能：<action name="牵制" />、<action name="昏乱" />
+
+;;;
+;;;
+
