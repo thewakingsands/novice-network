@@ -59,6 +59,7 @@ FF14里有一些任务是每天、每周刷新的，通常它们能够帮你练�
 * 6.0 友好部族
   * 悌阳象族：<quest name="岛上狂奔的河马" type="plus" />，完成<quest name="晓月之终途" type="main" />和萨维奈岛系列重要任务<quest name="吹向森林的草原之风" type="plus"/>之后开启。
   * 奥密克戎族（采集）：<quest name="宇宙尽头的咖啡厅" type="plus" />，完成<quest name="晓月之终途" type="main" />及支线<quest name="电脑梦境斯提格玛四" type="plus" />之后开启。
+  * 兔兔族（生产）：<quest name="去寻找梦想吧！" type="plus"/>，完成主线任务<quest name="晓月之终途" type="main" />和支线任务<quest name="我的名字与我追寻的梦想" type="plus"/>之后开启。
 
 :::
 
