@@ -110,6 +110,8 @@
 * 鸟人族需要完成41级主线<quest name="石卫塔霸主" type="main" />，然后就可以在森都接任务<quest name="雷雨将至" type="plus" />开启。<br>鸟人族任务需要同时拥有生产及采集职业才能完成。虽然做任务需求等级不高，但配方难度较高，需要使用专属装备才能开buff，不推荐用于练级。
 * 莫古力族需要完成55级主线<quest name="狩猎邪龙" type="main" />及支线<quest name="目标入团" type="plus" />及其后续十几个任务之后开启，达到誓约声望后可购买坐骑<item name="孢云棉花糖种子" />。
 * 鲶鱼精族需要完成66级主线<quest name="红色的祈愿" type="main" />及支线<quest name="黑鼻" type="plus" />、<quest name="痴迷赏花" type="plus" />各自后续之后开启，达到血誓声望后可购买坐骑<item name="巨鲶鱼神轿笛" />。
+* 矮人族需要完成80级支线任务<quest name="惨剧之村" type="plus"/>和<quest name="矮人族的不良青年" type="plus" />及其后续之后接取开启，达到誓约声望后可购买坐骑<item name="矮人战车启动钥匙" />。
+* 兔兔族需要完成主线任务<quest name="晓月之终途" type="main" />和支线任务<quest name="我的名字与我追寻的梦想" type="plus"/>之后开启，达到誓约声望后可购买坐骑<item name="月面跃动机认证密钥" />。
 
 详细任务奖励信息、声望商店列表请参看：[鸟人长风空力团](https://ff14.huijiwiki.com/wiki/%E9%95%BF%E9%A3%8E%E7%A9%BA%E5%8A%9B%E5%9B%A2)，[莫古力修复团](https://ff14.huijiwiki.com/wiki/%E8%8E%AB%E5%8F%A4%E5%8A%9B%E4%BF%AE%E5%A4%8D%E5%9B%A2)，[鲶鱼精大鲶大祭执行委员会](https://ff14.huijiwiki.com/wiki/%E5%A4%A7%E9%B2%B6%E5%A4%A7%E7%A5%AD%E6%89%A7%E8%A1%8C%E5%A7%94%E5%91%98%E4%BC%9A)。
 
