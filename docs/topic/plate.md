@@ -46,9 +46,10 @@
 * 参加[PVP](/topic/pvp.md)系列赛（通行证），到达指定系列赛等级可以获得对应肖像教材。
 * 参加PVP[水晶冲突](/topic/crystallineconflict.md)段位赛，段位结算时可以获得对应的肖像背景和装饰。
 * 完成[绝境战](/topic/raid.md)挑战可以获得对应肖像背景和装饰。
-* 提高[友好部族](/topic/daily.md#友好部族 / 蛮族日常)声望后，在友好部族商店中购买。
-* [无人岛](/topic/island.md)代币购买。
-* 完成任务<quest name="犹如春夜一梦" type="plus" />（70级系列支线任务“四圣兽奇谭”）
-* [希拉狄哈水道](/topic/subterrane.md)
-* 学会乐器演奏（习得[诗人](/job/bard.md)职业后完成<quest name="演奏心中的旋律" type="plus" />任务）
+* 提高[友好部族](/topic/daily.md#友好部族 / 蛮族日常)声望后，在友好部族商店中购买，解锁对应背景和装饰。
+* [无人岛](/topic/island.md)代币购买，解锁对应背景和装饰。
+* 完成任务<quest name="犹如春夜一梦" type="plus" />（70级系列支线任务“四圣兽奇谭”），解锁对应背景和装饰。
+* [希拉狄哈水道](/topic/subterrane.md)掉落材料兑换解锁对应背景和装饰。
+* [纯正优雷卡](/topic/dd.htm)掉落（<item name="正统魔器碎片" />）及通关材料（<item name="正统神典石" />）兑换解锁对应背景和装饰。
+* 学会乐器演奏（习得[诗人](/job/bard.md)职业后完成<quest name="演奏心中的旋律" type="plus" />任务），解锁对应背景和装饰。
 <!--* 宠物对应肖像装饰-->
