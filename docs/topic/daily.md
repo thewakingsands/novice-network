@@ -128,7 +128,7 @@ FF14里有一些任务是每天、每周刷新的，通常它们能够帮你练�
 ;;;
 ;;;
 
-> [幻巧拼图计算器](https://sturalke.github.io/FauxHollowsProbabilisticSolver/)：可以在下方选择翻拼图的策略，如优先宗长等。该计算器可以有更高概率翻到宗长，具体文档可参见计算器内链接。
+> [幻巧拼图计算器](https://guides.xivcdn.com/FauxHollowsProbabilisticSolver/)：可以在下方选择翻拼图的策略，如优先宗长等；如果需要使用宗长目击记录，需要点开“高级”，并且勾选“宗长目击记录”。该计算器可以有更高概率翻到宗长，具体文档可参见计算器内链接。
 
 ## 积分商城日常、周常
 
