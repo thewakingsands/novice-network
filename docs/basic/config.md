@@ -30,17 +30,6 @@
 ;;;
 
 ## 游戏内设置
-;;;.guide .cols2
-;;;.guide .col
-<img src="./config.assets/dx9.jpg" width="450px" />
-;;;
-
-;;;.guide .col .grow
-点击登录器右上角齿轮设置，可开启DX11支持，**务必打开**。原则上现在FF14已经不支持DX9了，如果继续使用DX9的话很容导致报错及游戏崩溃。
-
-游戏更新时有可能会重置DX设置，每次版本更新后如果发现游戏卡顿，可先检查一下DX设置是否被重置。
-;;;
-;;;
 
 > - [硬件配置及系统设置常见问题](https://docs.qq.com/doc/p/82ef87fd40aa52c3c58fce8cc6deb0846736cb20)
 
