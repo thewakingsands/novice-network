@@ -10,7 +10,7 @@
 > * [苍穹秘话](https://actff1.web.sdo.com/Project/160808Firmament/)
 > * [红莲秘话](https://actff1.web.sdo.com/Project/180727Act/index.html)
 > * [暗影秘话](https://actff1.web.sdo.com/Project/20200817special/index.html)（有国服配音演员诵读）
-> * [晓月秘话](https://actff1.web.sdo.com/project/20230826xymihua/index4.html)（有国服配音演员诵读）
+> * [晓月秘话](https://actff1.web.sdo.com/project/20230826xymihua/index.html)（有国服配音演员诵读）
 > * [wiki链接](https://ff14.huijiwiki.com/wiki/%E6%A8%A1%E6%9D%BF:%E5%8E%86%E5%8F%B2)（有部分国服尚未刊登的内容，以及日本官方出版物《光之回忆录》附加的短篇）
 
 ## 周边漫画
