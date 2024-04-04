@@ -8,6 +8,8 @@
 
 登陆游戏需要先创建盛大账号（也可以使用已有盛大账号）或使用WeGame登陆，登陆后就需要创建角色。每个账号可以创建8个角色，这8个角色共享点卡/月卡/雇员，另外如果封号的话是封账号下所有角色。
 
+<IncludePage file="_includes/basic/install.md" />
+
 ::: segment orange
 ### 账号保护
 

@@ -1,0 +1,17 @@
+::: collapse 下载及安装常见问题
+
+* **下载进度条不动/特别慢**
+下载器占用8080端口，需要释放端口占用。<br>
+下载速度特别慢可以考虑使用工具： [工具一](https://ff14-clientdown.bluefissure.com/) [工具二](https://bbs.nga.cn/read.php?tid=33282598)<br>
+可以使用移动硬盘从他人电脑直接拷贝游戏本体（空间占用较大，注意硬盘剩余容量是否足够）<br>
+官方下载器无法使用的话，可使用WeGame下载器。
+
+* **安装找不到路径/出现乱码**
+安装包文件夹路径中不要有中文。<br>
+操作系统需要为简体中文，或使用转区工具locale emulator。<br>
+语言设置中，将“非 Unicode 程序的语言”调整为简体中文，同时需要**关闭**使用 Unicode UTF-8 提供全球语言支持选项。
+
+* **进入游戏时无限黑屏**
+找到游戏安装包中 `\my games\FINAL FANTASY XIV - A Realm Reborn\FFXIV.cfg`，用记事本打开，并找到`CutsceneMovieOpening 0`，将数字`0`改为`1`并保存。
+
+:::

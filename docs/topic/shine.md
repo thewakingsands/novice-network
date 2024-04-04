@@ -52,8 +52,8 @@
 ::: collapse 蛮神发光武器检索索引
 * 2.0蛮神：[风神](https://garlandtools.cn/db/#list/fLtdy35Jah)、[火神](https://garlandtools.cn/db/#list/Dr4DHNl6KJ)、[土神](https://garlandtools.cn/db/#list/66MrWJ4JrD)、[水神](https://garlandtools.cn/db/#list/men5SWrwjD)、[冰神](https://garlandtools.cn/db/#list/Nzh8ozDsyd)、[雷神](https://garlandtools.cn/db/#list/8uPOAK919A)、[莫古](https://garlandtools.cn/db/#list/Xn2RlpZmmk)
 * 3.0蛮神：[武神](https://garlandtools.cn/db/#list/Q2UJX2nP8H)、[云神](https://garlandtools.cn/db/#list/0DJ3V0jQP9)、[骑神](https://garlandtools.cn/db/#list/V1EFOzOOdM)、[邪龙](https://garlandtools.cn/db/#list/999l2G6nZ9)、[魔神](https://garlandtools.cn/db/#list/TgNTQhi1HT)、[女神](https://garlandtools.cn/db/#list/BGqb9dW8cZ)、[鬼神](https://garlandtools.cn/db/#list/ui6cJnyoz6)。
-* 4.0蛮神：[神龙](https://garlandtools.cn/db/#list/IxEeV9qkgv)、[月读](https://garlandtools.cn/db/#list/Flzgf6psK1)、[白虎](https://garlandtools.cn/db/#list/6x42ctdNnf)、[朱雀](https://garlandtools.cn/db/#list/L8uplhC78i)、[青龙](https://garlandtools.cn/db/#list/78UxTHJ6eI)
-* 5.0蛮神：[哈迪斯](https://garlandtools.cn/db/#list/g6FjZIgiKU)
+* 4.0蛮神：[豪神](https://garlandtools.cn/db/#list/ojjR4VgLhF)、[神龙](https://garlandtools.cn/db/#list/IxEeV9qkgv)、[月读](https://garlandtools.cn/db/#list/Flzgf6psK1)、[白虎](https://garlandtools.cn/db/#list/6x42ctdNnf)、[朱雀](https://garlandtools.cn/db/#list/L8uplhC78i)、[青龙](https://garlandtools.cn/db/#list/78UxTHJ6eI)
+* 5.0蛮神：[妖灵王](https://garlandtools.cn/db/#list/gfO4A0uSHF)、[哈迪斯](https://garlandtools.cn/db/#list/g6FjZIgiKU)、[绿宝石神兵](https://garlandtools.cn/db/#list/uYj4XQs1Aw)、[红宝石神兵](https://garlandtools.cn/db/#list/nVN5uXF4EC)
 :::
 
 
@@ -83,7 +83,7 @@
 > * [魂武](./anima.md)，正式名称为元灵武器（Anima Weapons、アニマウェポン）。对应3.X版本，是60级的毕业武器，装等从170~275。
 > * [优雷卡武器](./eureka-weapon.md)，禁地兵装（Eureka weapon、エウレカウェポン）对应4.X版本，是70级毕业武器，装等从290~405。需要在[优雷卡](./eureka.md)内完成。
 > * [义军武器](./resistance.md)（Resistance Weapons、レジスタンス・ウェポン），对应5.x版本，装等为485~535。需要参与[南方博兹雅战线](./bozjan.md)的攻略。
-> * [曼德维尔武器](./manderville.md)，对应6.x版本，目前装等为615~630。
+> * [曼德维尔武器](./manderville.md)，对应6.x版本，目前装等为615~645。
 
 不管你是否已经满级，都不推荐你立刻去做这些武器，因为制作它极其耗时，并且没有任何收益（除了帅）（虽然帅是一辈子的事），所以等你觉得无所事事的时候再去做吧。
 

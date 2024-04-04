@@ -183,7 +183,7 @@ export const TOC = {
           title: '货币系统（神典石）'
         },
         {
-          href: '/basic/bis.htm',
+          href: '/advanced/bis.htm',
           title: '毕业装备'
         }
       ]
@@ -200,7 +200,7 @@ export const TOC = {
           title: '怪物狩猎'
         },
         {
-          href: '/topic/subterrane.htm',
+          href: '/topic/variant.htm',
           title: '多变迷宫'
         },
         {
