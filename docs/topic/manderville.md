@@ -13,7 +13,7 @@
 
 ## 前置任务
 
-需要完成主线任务<quest name="晓月之终途" />，以及神秘调查员系列任务（起始任务为<quest name="神秘的调查员" type="plus" />，发光武器任务前置为<quest name="逃跑的复制体" type="plus" />）后，前往<Pos name="拉札罕" :x="11.8" :y="11.2" />曼德维尔家的佣人接任务<quest name="曼德维尔家的古老武器" type="plus"/>开启任务线。
+需要完成主线任务<quest name="晓月之终途" type="main" />，以及神秘调查员系列任务（起始任务为<quest name="神秘的调查员" type="plus" />，发光武器任务前置为<quest name="逃跑的复制体" type="plus" />）后，前往<Pos name="拉札罕" :x="11.8" :y="11.2" />曼德维尔家的佣人接任务<quest name="曼德维尔家的古老武器" type="plus"/>开启任务线。
 
 > [神秘调查员系列支线任务列表](https://ff14.huijiwiki.com/wiki/%E9%9D%9E%E8%91%97%E5%90%8D%E8%B0%83%E6%9F%A5%E5%91%98)
 
