@@ -446,12 +446,12 @@ export const TOC = {
           belongsTo: 'craft',
           indent: 1
         },
-        {
+/*         {
           href: '/topic/craft-action.htm',
           title: '技能介绍',
           belongsTo: 'craft',
           indent: 1
-        },
+        }, */
         {
           href: '/topic/craft-levelup.htm',
           title: '练级指南',

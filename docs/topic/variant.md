@@ -83,7 +83,7 @@
 
 ;;;.guide .cols2
 ;;;.guide .col
-<img src="./variant.assets/Shishioji.jpg" width="350px" />
+<img src="./variant.assets/Rokkon.jpg" width="350px" />
 
 ;;;
 
@@ -127,3 +127,49 @@
 > 通关多变迷宫可以获得<item name="六根山遗物" />，通关异闻迷宫可以获得<item name="紫州通宝" />，通关零式异闻可以获得<item name="紫州通宝" />和<item name="六根山书籍" />。
 
 :::
+
+## 阿罗阿罗岛
+
+;;;.guide .cols2
+;;;.guide .col
+<img src="./variant.assets/aroaro.jpg" width="350px" />
+
+;;;
+
+;;;.guide .col .grow
+
+阿罗阿罗岛是6.51版本新增的多变迷宫。
+
+完成主线<quest name="弗栗多的决断" type="main" />和旧萨雷安<quest name="非常规任务" type="plus" />之后，可以前往旧萨雷安接任务<quest name="神子使者与被遗忘之岛" type="plus" />，开启多变迷宫 阿罗阿罗岛。
+
+开启阿罗阿罗岛后，可以在==任务情报 > 特殊迷宫探索器==中参与阿罗阿罗岛探索。
+
+;;;
+;;;
+
+::: collapse 阿罗阿罗岛专属物品产出一览
+
+| 名称 | 类型 | 获取方式 |
+| -- | -- | -- |
+| <item name="乌洛萨帕" /> | 宠物  | 多变迷宫宝箱掉落  |
+| <item name="雷普鲁" /> | 宠物  | 多变迷宫宝箱掉落  |
+| <item name="大叶伞" /> | 时尚配饰  |  多变迷宫宝箱掉落 |
+| <item name="阿罗阿罗小仙女坐垫" /> | 家具 |  多变迷宫宝箱掉落 |
+| <item name="贡贝萨鱼吊架" /><br><item name="文鸟雕像" /><br><item name="阿罗阿罗海岛棕榈树" /><br><item name="阿罗阿罗洛济葵花丛" /> | 庭具 |  多变迷宫宝箱掉落 |
+| <item name="魔法棱晶（乌洛萨帕）" /> | 杂货 |  多变迷宫宝箱掉落 |
+| <item name="九宫幻卡：凯图嘟凯" /> | 幻卡 |  多变迷宫左路BOSS2宝箱掉落 |
+| <item name="九宫幻卡：拉拉鲁" /> | 幻卡 |  多变迷宫中路BOSS2宝箱掉落 |
+| <item name="九宫幻卡：斯塔缇丝" /> | 幻卡 |  多变迷宫右路BOSS2宝箱掉落 |
+| <item name="九宫幻卡：罗库罗库伊" /> | 幻卡 |  多变迷宫隐藏BOSS宝箱掉落 |
+| <item name="斯塔缇丝幻影笛" /> | 坐骑 |  完成多变迷宫全部12种笔记成就获得 |
+| <item name="斯塔缇丝之翼" /> | 时尚配饰 | <item name="阿罗阿罗岛遗物" />x 3  |
+| <item name="演技教材·得意洋洋" /> | 演技教材 | <item name="阿罗阿罗岛遗物" />x 9  |
+| <item name="自由之魂" search/>套装 | 装备  | <item name="阿罗阿罗岛遗物" />兑换 |
+| <item name="发型样式：侧玉米垄" /> | 发型 | <item name="阿罗阿罗岛遗物" />x 6  |
+| <item name="管弦乐琴乐谱：神子的假寐" /> | 乐谱 | <item name="阿罗阿罗岛遗物" />x 9  |
+| <item name="库阿库阿角笛" /> | 坐骑 | <item name="阿罗阿罗金币" />x 100 |
+| <item name="肖像教材：阿罗阿罗岛" /> | 肖像教材 | <item name="阿罗阿罗金币" />x 8 |
+| <item name="被遗忘的神子像" /> | 家具 | <item name="阿罗阿罗岛书籍" />x 1 |
+| <item name="全天强化药" /> | 杂货 | <item name="阿罗阿罗岛书籍" />x 1 |
+
+> 通关多变迷宫可以获得<item name="阿罗阿罗岛遗物" />，通关异闻迷宫可以获得<item name="阿罗阿罗金币" />，通关零式异闻可以获得<item name="阿罗阿罗金币" />和<item name="阿罗阿罗岛书籍" />。
