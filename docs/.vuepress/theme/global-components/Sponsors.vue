@@ -15,7 +15,7 @@
     </ul>
     <div class="sponsors-footer">
       <a
-        href="https://afdian.net/@hikarievo"
+        href="https://afdian.com/a/hikarievo"
         target="_blank"
         rel="noopener noreferrer"
       >

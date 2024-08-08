@@ -4,8 +4,8 @@
 
 ## 苦力们
 
-* **阿布evo** 编辑、设计 | [爱发电捐赠](https://afdian.net/@hikarievo) | [Ko-fi捐赠](https://ko-fi.com/hikarievo)
-* **云泽宛风** 站点主题 | [爱发电捐赠](https://afdian.net/@wakingsands)
+* **阿布evo** 编辑、设计 | [爱发电捐赠](https://afdian.com/a/hikarievo) | [Ko-fi捐赠](https://ko-fi.com/hikarievo)
+* **云泽宛风** 站点主题 | [爱发电捐赠](https://afdian.com/a/wakingsands)
 
 ## 反馈问题
 

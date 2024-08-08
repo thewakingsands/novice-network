@@ -94,11 +94,11 @@ OT或需要换T时，需要先使用<Action name="挑衅" />，让自己的仇�
 
 ## 满级手法
 
-<img src="./job.assets/pld_6_3.jpg" />
+<img src="./job.assets/pld_6_4.png" />
 
 :::segment grey
 
-《帕拉丁儿6.3操作指南》 图片制作：洛可可@晨曦王座
+《帕拉丁儿6.4操作指南》 图片制作：洛可可@晨曦王座
 
 :::
 
