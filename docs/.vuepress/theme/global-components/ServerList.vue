@@ -251,7 +251,7 @@ export default {
         .toString(36)
         .slice(2)
     el.src =
-      'https://act1.ff.sdo.com/FF14DataApi/Servers20200512/api/index.php?act=getServers&callback=' +
+      'https://ff14act.web.sdo.com/api/serverStatus/getServerStatus?callback=' +
       callbackName
 
     const timer = setTimeout(() => {
