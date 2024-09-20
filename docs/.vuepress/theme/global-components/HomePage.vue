@@ -171,8 +171,8 @@
   </div>
 </template>
 
-<style lang="stylus" scoped>
-$c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
+<style lang="stylus" scoped> 
+$c = linear-gradient(90deg, rgba(51, 43, 20, 0.8) 0%, rgba(229, 196, 92, 0.8) 50%, rgba(51, 43, 20, 0.8) 100%);
 .tab-container
   display flex
   align-content stretch
@@ -207,10 +207,7 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
   overflow hidden
   border-radius 10px
   box-shadow 0 0 10px #66666630
-  background-image linear-gradient(0deg, #ffffffde,#ffffffde), url(/images/bg/bgmoon.jpg)
-  background-attachment fixed
-  background-position right 30px bottom -80px
-  background-size cover
+  background-color white
   transition all .3s
   &:nth-child(3n+1)
     order 1
@@ -219,8 +216,8 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
   &:nth-child(3n+3)
     order 3
   &:hover,&:active
-    box-shadow -5px -2px 15px #3c57cf73, 0px 0px 15px #3584ad59, 5px 2px 15px #f18e2e80
-    background-image linear-gradient(0deg, #ffffff8c,#ffffff8c), url(/images/bg/bgmoon.jpg)
+    box-shadow 0px 0px 30px 10px rgba(102,87,41,0.65), 0px 0px 5px 2px rgba(191,163,76,0.85)
+    background-color #ffffffe6
   h2
     padding 10px 20px
     margin 0
@@ -228,14 +225,14 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
     color #33333e
   ul
     list-style none
-    padding 0
+    padding 0 !important
     margin 0
   li
     position relative
     a
       display block
       position relative
-      color #3d4e99
+      color #5b480f
       font-size 1em
       padding 5px 20px
       z-index 40
@@ -313,16 +310,16 @@ $c = linear-gradient(to right, #4c5fbf 0%, #44aadf 50%, #ff9933 100%)
     img
       background-image url('/images/bgdk.png')
   .mntab
-    background-image linear-gradient(0deg, #000000bf,#000000bf), url(/images/bg/bgmoon.jpg)
+    background-color #1c191680
     box-shadow 0 0 10px #00000059
     &:hover,&:active
-      box-shadow -5px -2px 15px #3c57cf73, 0px 0px 15px #3584ad59, 5px 2px 15px #f18e2e80
-      background-image linear-gradient(0deg, #00000099,#00000099), url(/images/bg/bgmoon.jpg)
+      box-shadow 0 0 10px #cdbb5b59
+      background-color #1c1916
     h2
       color #d9cec1
       background linear-gradient(0deg, #72727233, #72727200)
     li a
-      color #26baf3
+      color #e5c45ccc
       &:hover
         color white
 </style>

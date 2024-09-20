@@ -9,6 +9,7 @@
 <script>
 import HeaderList from '../components/HeaderList.vue'
 export default {
+  inject: ['gotoId'],
   props: {
     listType: {
       type: [String, Array],

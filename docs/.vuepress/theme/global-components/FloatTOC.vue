@@ -8,6 +8,7 @@
 
 <style lang="stylus" scoped>
 .wrapper
+  display none
   float right
   background #ffffff38
   padding 0 1em

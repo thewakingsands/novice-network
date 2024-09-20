@@ -21,10 +21,9 @@
 
 <style lang="stylus">
 .page-pager
-  max-width 1200px
+  max-width 1100px
   font-size 16px
-  margin 0 auto
-  margin-top 1em
+  margin 1em auto
   line-height 2
   .left
     float left

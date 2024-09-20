@@ -5,6 +5,7 @@
 
 body, h1, h2, h3, h4, h5, #app .ui.menu
   font-family: 'FFXIV', Lato, Helvetica Neue, "Microsoft Yahei", "微软雅黑", Arial, Helvetica, sans-serif;
+  color #333
 
 h1, h2, h3, h4, h5
   transition background 0.5s
@@ -108,3 +109,13 @@ iframe
   iframe
     width 85vw
     height 85vw
+/* 首页特供 */
+.content-container:has(.home-container) aside
+  display none !important
+.content-outer:has(.home-container)
+  background-image url(/images/bg/bgnew.jpg)
+  background-attachment fixed
+  background-size cover
+  margin-left 30px
+.dark .content-outer:has(.home-container)
+  background-image linear-gradient(0deg, #000000e0, #000000e0), url(/images/bg/bgnew.jpg)

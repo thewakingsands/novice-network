@@ -8,6 +8,7 @@
         <div class="content-inner">
           <NavTop @barClicked="showMenu = !showMenu" @toggleDark="isDark = !isDark" :isDark="this.isDark" />
           <slot>
+            <!--如果是instance渲染duty，如果是webframe渲染webframe，其他渲染普通页面-->
             <Duty v-if="$page.frontmatter.instance" />
             <WebFrame
               v-else-if="$page.frontmatter.webframe"
@@ -66,8 +67,8 @@
 .content-outer
   order 2
   flex 1
-  padding-top 40px
-  padding-left 280px
+  margin-top 40px
+  padding-left 240px
   width 100%
   min-height 100vh
   @media screen and (max-width: 1200px) and (min-width: 961px)
@@ -87,13 +88,7 @@
 @media screen and (max-width 960px)
   .hide-small
     display none !important
-.dark  /* 暗色模式 */
-  color #c9c7c5
-  a 
-    color #5bb0ed
-  .yaofan .yaofan-bg
-    background #000
-    border-color #333
+
 
 .yaofan-ad, .yaofan-bg, .yaofan-inner
   width 728px

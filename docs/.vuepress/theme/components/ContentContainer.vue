@@ -4,6 +4,16 @@
       <slot></slot>
       <Content v-for="key in slotKeys" :key="key" :slot-key="key" />
     </article>
+    <aside class="hide-small">
+      <TOC class="articleTOC"/>
+      <a
+          class=""
+          href="javascript:;"
+          @click.prevent="scrollToTop"
+        >
+        <i class="double up angle icon"></i> 回到页首
+      </a>
+    </aside>
   </div>
 </template>
 
@@ -11,12 +21,15 @@
 .content-container
   width 100%
   min-height 67vh
+  display flex
+  justify-content center
+  align-items flex-start
   @media screen and (max-width: 1440px)
     min-height 60vh
   @media screen and (max-width: 425px)
     min-height 40vh
   .content-container-inner
-    max-width 1200px
+    max-width 980px
     padding 0 20px
     word-break break-all
     blockquote
@@ -31,7 +44,7 @@
     @media screen and (max-width: 375px)
       padding 0 10px
       font-size 16px
-    margin 1.5em auto
+    // margin 1.5em auto
     font-size 18px
     table
       line-height 1.4em
@@ -88,28 +101,22 @@
     .local-time-chs, .eorzea-time-chs
       color #39393c
       padding 0 2px
-.dark .content-container .content-container-inner /* 暗色模式 */
-  s
-    color #565656
-  mark
-    background #366616
-    color #f1dbdb
-  blockquote
-    border-left-color #4c4c4c
-    background rgba(217, 221, 224, 0.1)
-  code
-    border-color #444
-    background #111
-  ins
-    text-shadow 0px 0px 3px #ffc800
-    color #fff
-  .guide.col img~p
-    color #6c6c6c
-  .scroll-focus
-    background #5a442d
-  .local-time-chs, .eorzea-time-chs
-    color #c9c7c5
-
+  aside
+    position sticky
+    top 180px
+    a
+      fon-size 1.15rem
+      line-height 2em
+    .articleTOC ul
+      margin 0
+      padding-left 20px
+      font-size 1.15rem
+      line-height 2em
+      list-style-type "\e06f"
+      li
+        padding-left 0.5em
+        &::marker
+          color #00000066
 </style>
 
 <script>
@@ -121,6 +128,9 @@ export default {
     }
   },
   methods: {
+    scrollToTop() {
+      this.gotoId('')
+    },
     handleClick(event) {
       var element = event.target
       while (element) {
