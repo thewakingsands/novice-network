@@ -120,6 +120,7 @@
 </style>
 
 <script>
+import TOC from '../global-components/TOC.vue'
 export default {
   inject: ['getPhotoSwipe', 'gotoId'],
   data() {
@@ -127,6 +128,7 @@ export default {
       slotKeys: ['default']
     }
   },
+  components: { TOC },
   methods: {
     scrollToTop() {
       this.gotoId('')
