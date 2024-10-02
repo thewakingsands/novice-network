@@ -1239,7 +1239,7 @@ PS：这也就导致+6的测光比较恶心。举个例子，你换了第一块�
 
 <table class="ui compact grey striped unstackable table">
   <tr>
-    <td>主线三蛮神（讨伐战）、死化奇美拉讨伐战、海德拉讨伐战、任意版本[临危受命](/advanced/fate.md)、<item name="陈旧的毒蜥蜴革地图" />、<item name="神秘地图" /></td>
+    <td>主线三蛮神（讨伐战）、死化奇美拉讨伐战、海德拉讨伐战、任意版本<a href="/advanced/fate.htm" >临危受命</a>、<item name="陈旧的毒蜥蜴革地图" />、<item name="神秘地图" /></td>
     <td>在微弱地共鸣……</td>
     <td>8</td>
   </tr>
