@@ -27,9 +27,9 @@
       </div>
       <div class="copyright-line copyright-se">
         FINAL FANTASY XIV © 2010 - 2023 SQUARE ENIX CO., LTD. All Rights
-        Reserved.
+        Reserved. |
         <router-link to="/takedown">
-          Reporting Copyright Infringement(版权投诉)
+          Report Copyright Infringement (版权投诉)
         </router-link>
       </div>
     </div>
@@ -49,6 +49,7 @@
     padding-top 20px
     padding-bottom 20px
     text-align center
+    background #ffffffcc
   .copyright-self
     margin-bottom 1em
     img
