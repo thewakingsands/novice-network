@@ -14,6 +14,7 @@
 - 61~70级依次完成<quest name="初级雄兵怪物狩猎" type="plus" />、<quest name="中级雄兵怪物狩猎" type="plus" />、<quest name="高级雄兵怪物狩猎" type="plus" />、<quest name="雄兵恶名精英狩猎" type="plus" />可以开启4.0版本的怪物狩猎，等级分布从61~70。
 - 71~80级依次完成<quest name="狂热兵团的初级怪物狩猎" type="plus" />、<quest name="狂热兵团的中级怪物狩猎" type="plus" />、<quest name="狂热兵团的高级怪物狩猎" type="plus" />、<quest name="狂热兵团的恶名精英狩猎" type="plus" />，可以开启5.0版本的怪物狩猎，等级分布从71~80。
 - 81~90级依次完成<quest name="初级总会怪物狩猎" type="plus" />、<quest name="中级总会怪物狩猎" type="plus" />、<quest name="高级总会怪物狩猎" type="plus" />、<quest name="总会恶名精英狩猎" type="plus" />，可以开启6.0版本的怪物狩猎，等级分布从81~90。
+- 91~100级依次完成<quest name="初级图拉尔大陆怪物狩猎" type="plus" />、<quest name="中级图拉尔大陆怪物狩猎" type="plus" />、<quest name="高级图拉尔大陆怪物狩猎" type="plus" />、<quest name="图拉尔大陆恶名精英狩猎" type="plus" />，可以开启7.0版本的怪物狩猎，等级分布从91~100。
 
 :::
 
@@ -23,6 +24,7 @@
 - 70级狩猎告示板：<Pos name="神拳痕" :x="13.2" :y="11.7" />或<Pos name="黄金港" :x="10.6" :y="10.4" />
 - 80级狩猎告示板：<pos name="水晶都" :x="9.5" :y="9.45" />或<pos name="游末邦" :x="11.14" :y="10.84" sub="树干层" />
 - 90级狩猎告示板：<pos name="旧萨雷安" :x="11.8" :y="13.2" />或<pos name="拉札罕" :x="10.4" :y="7.3"/>
+- 100级狩猎告示板：<pos name="图莱尤拉" :x="13.8" :y="13.6" />
  
 ## 狩猎怪
 
@@ -69,11 +71,10 @@ S怪通常体型更大，而且从较远处就能看到，如果新人难以判�
 > - [S怪触发指南——重生之境到暗影之逆焰](https://bbs.nga.cn/read.php?tid=22499393)
 > 
 > S怪CD、触发情况查询工具网站
-> - [S/A Rank Timer](https://tracker.ff14hunttool.com/timer) [镜像站](https://tracker.beartoolkit.com/timer)
+> - [S/A Rank Timer](https://tracker.beartoolkit.com/timer)
 > - [獭獭狩猎 CD 网站](https://xn--v9x.net/hunt/sonar/)
-> - [Sonar中继](https://ff14.cafe/sonar)（使用QQ群机器人在QQ群内播报狩猎怪信息）
 
-暗影（5.0）、晓月（6.0）地图中的S怪被击杀后，会有一定概率出现==特殊恶名精英的手下开始了侦察活动……== 的提示文字，同时全地图中刷新4只小怪，全部击杀后会触发一只全新的精英怪，这只精英怪一般被称为SS怪。
+暗影（5.0）、晓月（6.0）、金曦（7.0）地图中的S怪被击杀后，会有一定概率出现==特殊恶名精英的手下开始了侦察活动……== 的提示文字，同时全地图中刷新4只小怪，全部击杀后会触发一只全新的精英怪，这只精英怪一般被称为SS怪。
 
 ## 狩猎奖励
 
@@ -146,7 +147,7 @@ S怪通常体型更大，而且从较远处就能看到，如果新人难以判�
 
 ### 怪物狩猎的战利品
 
-完成80、90级的狩猎任务可以获得<img src="/images/icons/065068.png" class="no-zoom sm-icon">怪物狩猎的战利品，战利品可以用于兑换宠物、坐骑、乐谱、升级材料、柒/捌型魔晶石等。
+完成80、90、100级的狩猎任务可以获得<img src="/images/icons/065068.png" class="no-zoom sm-icon">怪物狩猎的战利品，战利品可以用于兑换宠物、坐骑、乐谱、升级材料、柒/捌型魔晶石等。
 
 ::: collapse 怪物狩猎的战利品独占奖励
 
@@ -161,6 +162,11 @@ S怪通常体型更大，而且从较远处就能看到，如果新人难以判�
 - <item name="迪亚波罗斯之翼" />
 - <item name="管弦乐琴乐谱：对峙" />
 - <item name="管弦乐琴乐谱：搏战" />
+- <item name="野地装甲" />
+- <item name="蓝猫" />
+- <item name="永护塔木人" />
+- <item name="管弦乐琴乐谱：心潮澎湃" />
+- <item name="半机器龟认证密钥" />
 
 [怪物狩猎的战利品兑换一览](https://ff14.huijiwiki.com/wiki/%E6%80%AA%E7%89%A9%E7%8B%A9%E7%8C%8E%E7%9A%84%E6%88%98%E5%88%A9%E5%93%81)
 

@@ -127,7 +127,7 @@ FF14中，每个大版本都会推出“探索类任务”，这类任务不会�
 ;;;.guide .col
 <img src="./story.assets/tataru.jpg" width="350px" />
 
-大繁盛商店系列直线报酬（6.3版本更新）
+大繁盛商店系列支线报酬（6.3版本更新）
 ;;;
 ;;;.guide .col .grow
 

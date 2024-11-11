@@ -640,8 +640,7 @@ export const TOC = {
         { title: 'NGA最终幻想14版', href: 'https://bbs.nga.cn/thread.php?fid=-362960' },
         { title: '素素攻略站', href: 'https://www.ffxiv.cn/' },
         { title: '最终幻想XIV中文维基', href: 'https://ff14.huijiwiki.com' },
-        { title: '加兰德数据库(中文版)', href: 'https://garlandtools.cn/db/' },
-        { title: '水晶驿站', href: 'https://riesa.gitee.io/crystal/' }
+        { title: '加兰德数据库(中文版)', href: 'https://garlandtools.cn/db/' }
       ]
     }
   ]

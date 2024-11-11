@@ -95,6 +95,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
   * 70级，<quest name="木人修行" type="plus" />，开放70级副本特化木桩战斗。战斗入口在满身伤痕的壮汉<Pos name="基拉巴尼亚边区" :x="30.1" :y="11.3" />。
   * 80级，<quest name="实力测试训练场" type="plus" />，开放80级副本特化木桩战斗。战斗入口在态度温和的退役士兵<Pos name="珂露西亚岛" :x="23.8" :y="37.8" />。
   * 90级，<quest name="修炼技艺的训练场" type="plus" />，开放90级副本特化木桩战斗。战斗入口在目光敏锐的星战士<Pos name="萨维奈岛" :x="29.8" :y="17.2" />。
+  * 100级，<quest name="兵器试验塔的使用权" type="plus" />，开放100级副本特化木桩战斗。战斗入口在古怪的研究者<Pos name="遗产之地" :x="16.5" :y="8.8" />。
 
 关于木桩的介绍可以[参看本文](/basic/dummy.md)。
 
@@ -131,6 +132,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 70级，<quest name="王在顶点沉睡" type="plus" /> 怪物猎人联动活动， 送<item name="艾露猫" />，[官网活动页面](http://act.ff.sdo.com/project/20181113MHW/index.html)。
 * <i class="xiv quest-sync"></i>70级，完成<quest name="昏暗森林的守护者" type="plus" />和<quest name="双胞胎与双元灵" type="plus" />两个风脉任务之后继续做到头，会出现新任务<quest name="隆卡的守护者们" />，送<item name="隆卡的水蛇？" />。
 * <i class="xiv quest-sync"></i>70级，完成<quest name="寻寻觅觅" type="plus" />及其后续任务<quest name="海狸的呼唤" /> → <quest name="全军覆没" />，可解锁兑换NPC，用<item name="缇坦妮雅的羽毛" />兑换<item name="大河狸" />。
+* <i class="xiv quest-sync"></i>90级，完成<quest name="饥饿之旅：立志篇" type="plus" />及其后续任务（以“饥饿之旅”开头），送<item name="玉米大人" />。
 
 ### 情感动作赠送支线
 
@@ -139,6 +141,7 @@ FF14的任务分<img src="/images/icons/061412.png" class="no-zoom sm-icon" />�
 * 14级，<quest name="舞女的梦想舞台" />，送宫廷之舞。
 * 36级，<quest name="冬日的活动" />，送投掷/投雪球。
 * <i class="xiv quest-sync"></i>70级，<quest name="矮人族的不良青年" type="plus" /> → <quest name="啦哩吼！！" />，送啦哩吼。
+* 70级，[四圣兽奇谭系列任务](/topic/raid.md#红莲之狂潮-4-0-挑战副本)，<quest name="朱色慕恋" type="plus" />，送哼歌。
 
 ### 特殊装备赠送支线
 

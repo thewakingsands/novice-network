@@ -24,6 +24,7 @@ FF14的高难度副本会有专门的特化木桩，木桩会针对不同副本�
   * 70级，<quest name="木人修行" type="plus" />，开放70级副本特化木桩战斗。战斗入口在满身伤痕的壮汉<Pos name="基拉巴尼亚边区" :x="30.1" :y="11.3" />。
   * 80级，<quest name="实力测试训练场" type="plus" />，开放80级副本特化木桩战斗。战斗入口在态度温和的退役士兵<Pos name="珂露西亚岛" :x="23.8" :y="37.8" />。
   * 90级，<quest name="修炼技艺的训练场" type="plus" />，开放90级副本特化木桩战斗。战斗入口在目光敏锐的星战士<Pos name="萨维奈岛" :x="29.8" :y="17.2" />。
+  * 100级，<quest name="兵器试验塔的使用权" type="plus" />，开放100级副本特化木桩战斗。战斗入口在古怪的研究者<Pos name="遗产之地" :x="16.5" :y="8.8" />。
 
 ## 野外木桩
 
@@ -163,10 +164,44 @@ FF14同样在野外放置了大量木桩，方便玩家随时探访：
 ;;;
 
 ### 90级木桩
+;;;
+;;;
 
+;;;.guide .cols3
+;;;.guide .col .figcap
 <img src="./battle.assets/dummy6.png" width="350px" />
 
 瓦铭癸己 <Pos name="天外天垓" :x="30.6" :y="26.8" />
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/dummy7_1.png" width="350px" />
+
+瓦丘恩佩洛<Pos name="奥括帕恰山" :x="29.9" :y="13" />
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/dummy7_2.png" width="350px" />
+
+哈努聚落<Pos name="克扎玛乌卡湿地" :x="21.2" :y="11" />
+;;;
+;;;
+
+### 100级木桩
+;;;
+;;;
+
+;;;.guide .cols3
+;;;.guide .col .figcap
+
+;;;
+;;;.guide .col .figcap
+<img src="./battle.assets/dummy7_3.png" width="350px" />
+
+地场节点·忆<Pos name="活着的记忆" :x="21.4" :y="38.4" />
+;;;
+;;;.guide .col .figcap
+
+;;;
+;;;
 
 ## PVP木桩
 

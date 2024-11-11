@@ -545,3 +545,33 @@ FATE的难度会随着地图上当前的玩家数量，上次刷新该FATE时的
     </tbody>
   </table>
 </div>
+
+### 7.0 特殊FATE
+
+
+<div class="md-table">
+  <table class="ui compact grey striped unstackable table" style="min-width: 38em;">
+    <thead>
+      <tr>
+        <th style="min-width: 8em;">FATE</th>
+        <th style="min-width: 7em;">坐标</th>
+        <th style="min-width: 23em;">掉落及备注</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lv.100 蛇王得酷热涅：荒野的死斗</td>
+        <td><Pos name="夏劳尼荒野" :x="22.6" :y="5.1" /></td>
+        <td>
+          <item name="得酷热涅的鳞片" />，成就<strong>蛇王驾崩</strong>。
+          <br>五连 FATE，前四连 苏醒的征兆 → 苏醒的前兆 → 狩猎前的准备 → 狩猎的杀手锏 会间隔数分钟出现，P5 荒野的死斗会在上次击杀后 1.5 ~ 3 天后刷新（否则只会前4循环）。掉落鳞片可以交换到坐骑<item name="美花帕拉角笛" />。</td>
+      </tr>
+      <tr>
+        <td>Lv.100 亩鼠米卡：盛装巡游皆大欢喜</td>
+        <td><Pos name="活着的记忆" :x=" 37.3" :y="33.4" /></td>
+        <td>
+          <item name="亩鼠米卡的齿轮" />，成就<strong>魔法在眼前绽放</strong>。
+          <br>三连 FATE，前两连 盛装巡游开始 和 盛装巡游一路向前 会以大约半小时为周期反复刷新，P3 破坏侵略兵器希会在上次击杀后 1.5~3 天后刷新（否则只会前两连循环）。掉落的齿轮可以兑换服装<item name="米卡头套" />、<item name="米卡服" />。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,28 +1,41 @@
 # 高难度挑战副本一览
 <FloatTOC />
-## 晓月之终途（6.0）挑战副本
 
-以下副本对应80级的挑战副本，极蛮神掉落猞猁坐骑。
+## 金曦之遗辉（7.0）挑战副本
 
-零式Raid是万魔殿系列。
+以下副本对应80级的挑战副本，极蛮神掉落翅膀坐骑。
+
+零式Raid是阿卡狄亚登天斗技场系列。
 
 ### 极蛮神
 
-在主线任务中讨伐了未曾设想过的敌人之后，他们也在异国的诗人口中化成了更强大的形态。
+完成7.0主线任务<quest name="金曦之遗辉" type="main" />之后，在图莱尤拉接任务<quest name="在图拉尔中心吟诗之人" type="plus" />，在此与异国的诗人对话逐一开启极神。
 
-经过6.0主线<quest name="晓月之终途" type="main" />并讨伐过对应蛮神之后，就可以接任务<quest name="知识之都的咏诗之人" type="plus" />，对话逐一开启极神。
-
-::: collapse 6.0 极蛮神列表（※注意※ 有剧透）
+::: collapse 副本列表及简称；有剧透请注意
 | 简称 | 对应副本 | 
 | -- | -- | 
-| 极黑、极爹 | 佐迪亚克暝暗歼灭战 | 
-| 极白、极妈 | 海德林晖光歼灭战 | 
-| 极小鸟 | 终极之战 | 
-| 风天王、风王 | 巴尔巴莉希娅歼殛战|
-| 火天王 | 卢比坎特歼殛战 |
-| - | 高贝扎歼殛战 |
-| - | 泽罗姆斯歼殛战 |
+| - | 艳翼蛇鸟歼殛战 | 
+| 极大哥 | 佐拉加歼殛战 | 
 :::
+
+### 零式Raid：阿卡狄亚登天斗技场
+
+在九号解决方案接任务<quest name="阿卡狄亚的挑战者" type="plus" />开启阿卡狄亚登天斗技场系列副本，成为斗技场的斗士吧！
+
+完成普通斗技场剧情任务之后，与加布罗<Pos name="九号解决方案" :x="22.3" :y="17.1" />对话开放零式阿卡狄亚登天斗技场。
+
+斗技场目前开放轻量级，零式轻量级（M1s~M4s）掉落730装备。
+
+## 晓月之终途（6.0）挑战副本
+
+以下副本对应 90 级的挑战副本，极蛮神掉落猞猁坐骑，集齐所有猞猁之后可以交换到FF4的幽愿巴哈姆特坐骑。
+
+零式 Raid 是万魔殿系列，其中每篇第四层副本掉落 3 种坐骑。
+
+24 人副本是原创剧情艾欧泽亚十二神的故事。
+
+### 极蛮神
+::: collapse 6.0 极蛮神
 
 ;;;.guide .cols2
 ;;;.guide .col
@@ -33,14 +46,31 @@
 
 ;;;.guide .col .grow
 
-经过5.0主线<quest name="暗影之逆焰" type="main" />并讨伐过对应蛮神之后，就可以接任务<quest name="在第一世界谱写诗歌之人" type="plus" />，对话逐一开启极神。主线极神都是主线中曾经遭遇的讨伐战的升级版。
 
 集齐所有极神掉落的猞猁坐骑之后，可以在旧萨雷安接任务<quest name="幽愿得偿" type="plus" />获得<item name="幽愿巴哈姆特魔笛" />，该巴哈姆特为FF4中的巴哈姆特的样子。
 
 ;;;
 ;;;
 
+在主线任务中讨伐了未曾设想过的敌人之后，他们也在异国的诗人口中化成了更强大的形态。
+
+经过6.0主线<quest name="晓月之终途" type="main" />并讨伐过对应蛮神之后，就可以接任务<quest name="知识之都的咏诗之人" type="plus" />，对话逐一开启极神。
+
+| 简称 | 对应副本 | 
+| -- | -- | 
+| 极黑、极爹 | 佐迪亚克暝暗歼灭战 | 
+| 极白、极妈 | 海德林晖光歼灭战 | 
+| 极小鸟 | 终极之战 | 
+| 风天王、风王 | 巴尔巴莉希娅歼殛战|
+| 火天王 | 卢比坎特歼殛战 |
+| - | 高贝扎歼殛战 |
+| - | 泽罗姆斯歼殛战 |
+
+
+:::
+
 ### 零式Raid：万魔殿
+::: collapse 6.0 零式Raid
 
 ;;;.guide .cols2
 ;;;.guide .col
@@ -63,9 +93,10 @@
 万魔殿英雄榜（以当时的服务器和名字为记录）：[边境之狱](https://actff1.web.sdo.com/20180525HeroList/index220401.html)，[炼净之狱](https://actff1.web.sdo.com/20180525HeroList/index221229.html)，[荒天之狱](https://actff1.web.sdo.com/20180525HeroList/index230926.html)。
 
 [万魔殿攻略](/duty/)。
+:::
 
 ### 24人副本：艾欧泽亚神话
-
+::: collapse 6.0 24人副本
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/MythsoftheRealm.jpg" style="width: 350px;"/>
@@ -83,9 +114,10 @@
 
 ;;;
 ;;;
+:::
 
-### 绝境战：绝龙诗
-
+### 绝境战：绝龙诗&绝欧米茄
+::: collapse 6.0 绝境战
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/Dragonsong.jpg" style="width: 350px;"/>
@@ -102,8 +134,6 @@
 
 ;;;
 ;;;
-
-### 绝境战：绝欧米茄
 
 ;;;.guide .cols2
 ;;;.guide .col
@@ -123,6 +153,7 @@
 
 ;;;
 ;;;
+:::
 
 ## 暗影之逆焰（5.0）挑战副本
 
@@ -132,9 +163,9 @@
 
 24人副本是与尼尔联动的副本，剧本由横尾太郎合作撰写，会掉落尼尔系列的各种宠物。
 
-::: collapse 5.0 极蛮神
-### 极蛮神与帝国神兵
 
+### 极蛮神与帝国神兵
+::: collapse 5.0 极蛮神
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/Landerwaffe.jpg" style="width: 350px;"/>
@@ -167,9 +198,9 @@
 | 极钻 | 钻石神兵狂想作战 | 通过<quest name="神兵来袭" type="plus" />系列支线开启 |
 :::
 
-::: collapse 5.0 零式Raid
-### 零式Raid：伊甸
 
+### 零式Raid：伊甸
+::: collapse 5.0 零式Raid
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/Eden.jpg" style="width: 350px;"/>
@@ -193,9 +224,9 @@
 ;;;
 :::
 
-::: collapse 5.0 24人副本
-### 24人副本：尼尔——寄叶异闻 暗黑天启
 
+### 24人副本：尼尔——寄叶异闻 暗黑天启
+::: collapse 5.0 24人副本
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/YoRHa.jpg" style="width: 350px;"/>
@@ -217,9 +248,9 @@
 ;;;
 :::
 
-::: collapse 5.0 绝境战
-### 绝境战：绝亚历山大
 
+### 绝境战：绝亚历山大
+::: collapse 5.0 绝境战
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/ulalexander.jpg" style="width: 350px;"/>
@@ -243,9 +274,9 @@
 
 24人副本是继承FF12及FFT狮子战争的故事做成，其中乐欲之所会掉落FF12主角团外观。
 
-::: collapse 4.0 极蛮神
-### 极蛮神与东方圣兽
 
+### 极蛮神与东方圣兽
+::: collapse 4.0 极蛮神
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/ninetail.jpg" width="350px" />
@@ -276,9 +307,9 @@
 | 极朱雀 | 朱雀诗魂战 | 通过<quest name="四圣兽传说" type="plus" />系列支线开启 |
 | 极青龙 | 青龙诗魂战 | 通过<quest name="四圣兽传说" type="plus" />系列支线开启 |
 :::
-::: collapse 4.0 零式Raid
-### 零式Raid：欧米茄
 
+### 零式Raid：欧米茄
+::: collapse 4.0 零式Raid
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/omega.jpg" width="350px" />
@@ -300,9 +331,9 @@
 ;;;
 
 :::
-::: collapse 4.0 24人副本
-### 24人副本：重返伊瓦利斯
 
+### 24人副本：重返伊瓦利斯
+::: collapse 4.0 24人副本
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/Ivalice.jpg" width="250px" />
@@ -333,9 +364,9 @@
 ;;;
 
 :::
-::: collapse 4.0 绝境战
-### 绝境战：绝巴哈 & 绝神兵
 
+### 绝境战：绝巴哈 & 绝神兵
+::: collapse 4.0 绝境战
 ;;;.guide .cols2
 ;;;.guide .col .figcap
 <img src="./raid.assets/ultbaha.jpg" width="350px" />
@@ -366,9 +397,9 @@
 
 对难度副本感兴趣的玩家推荐最低装等同步并点掉超越的A8S。
 
-::: collapse 3.0 极蛮神
-### 极蛮神与上古蛮神
 
+### 极蛮神与上古蛮神
+::: collapse 3.0 极蛮神
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/Firebird.png" style="width: 350px;"/>
@@ -402,9 +433,9 @@
 | 极鬼神 | 祖尔宛歼殛战 | 通过<quest name="上古之神" /> → <quest name="登峰造极的鬼神祖尔宛" type="plus" />开启 |
 
 :::
-::: collapse 3.0 零式Raid
-### 零式Raid：亚历山大机神城
 
+### 零式Raid：亚历山大机神城
+::: collapse 3.0 零式Raid
 ;;;.guide .cols2
 ;;;.guide .col
 <img src="./raid.assets/Alexandrian.png" style="width: 350px;"/>
@@ -428,9 +459,9 @@
 ;;;
 
 :::
-::: collapse 3.0 24人副本
-### 24人副本：玛哈之影
 
+### 24人副本：玛哈之影
+::: collapse 3.0 24人副本
 ;;;.guide .cols3
 ;;;.guide .col .figcap
 <img src="./raid.assets/voidark.jpg" width="350px" />
@@ -462,8 +493,9 @@
 24人本水晶塔目前是主线必须完成的副本内容。
 
 另外想要体验难度的玩家，推荐最低装等同步并且点掉超越之力的JTT、T9和零式巴哈系列。
-::: collapse 2.0 极蛮神
+
 ### 蛮神真正的力量
+::: collapse 2.0 极蛮神
 在沙之家于里昂热那里接到任务<quest name="蛮神的真正力量" type="plus" />，可以打开蛮神讨伐的任务串。
 
 首先接到的火风土神的讨伐战，这一系列被称为：真火、真风、真泰坦(ZTT)；以便以和之后的歼殛战区分。
@@ -486,8 +518,9 @@
 | 极冰 | 希瓦歼殛战 | 通过<quest name="登峰造极的冰神希瓦" type="plus" />开启<br>掉落<item name="钻石尘晶" />（固定掉落）可用于兑换发光冰神武器。 |
 
 :::
-::: collapse 2.0 Raid副本及零式
+
 ### Raid副本：巴哈姆特
+::: collapse 2.0 Raid副本及零式
 完成真泰坦的讨伐之后，沙之家会出现<quest name="蛮神苏醒" />的任务。这就是50级8人RAID副本——巴哈姆特的开启任务。
 
 如果你有看过2.0的开篇动画，可能对那头从红色卫月中出现的巨大肥龙印象深刻，2.0的RAID副本就是探索掉落卫月，并最终找到巴哈姆特的故事。同时它在故事情节设计上也是承上启下的副本，壮大的战斗场景和绝美的战斗BGM让很多玩家赞不绝口。
@@ -500,8 +533,9 @@
 
 巴哈姆特英雄榜(以当时的服务器和名字为记录，现在已无法打开) [邂逅](http://act.ff.sdo.com/project/20140926bhmt/index.asp) [入侵](http://act.ff.sdo.com/project/20141113bhmt/) [真源](http://act.ff.sdo.com/project/20150402bhmt/)
 :::
-::: collapse 2.0 24人副本
+
 ### 24人副本：水晶塔
+::: collapse 2.0 24人副本
 在摩杜纳接到任务<quest name="古代亚拉戈文明的遗产" type="plus"/>，并完成一系列任务串之后，就能开启24人副本——水晶塔。
 
 这条故事线介绍了亚拉戈帝国的历史和他们的科技力量，以及关于第七灵灾背后的一些故事。这段故事与5.0的在主线剧情有非常紧密的联系，目前是主线的强制前置任务，因此早做不吃亏哦~

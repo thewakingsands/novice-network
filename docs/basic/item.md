@@ -86,19 +86,19 @@
 
 ;;;.guide .base .cols3
 ;;;.guide .col
-<img src="./item.assets/hist1.jpg" width="350px" />
+<img src="./item.assets/hist1.jpg" width="250px" />
 
 打开市场布告板，找到想要的物品。
 ;;;
 
 ;;;.guide .col
-<img src="./item.assets/hist2.jpg" width="350px" />
+<img src="./item.assets/hist2.jpg" width="250px" />
 
 点击“查看市场情况”右上角的“显示履历”，<br>会弹出选中物品的交易履历。
 ;;;
 
 ;;;.guide .col
-<img src="./item.assets/hist3.jpg" width="350px" />
+<img src="./item.assets/hist3.jpg" width="250px" />
 
 在交易履历里，可以看到过去成交的单价、数量、<br>购买时间以及购买人的名字等交易信息。
 ;;;
