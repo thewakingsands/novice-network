@@ -208,12 +208,8 @@ export default {
   methods: {
     handleData(json) {
       this.isLoading = false
-      if (!json.IsSuccess || !json.Data) {
-        this.isError = true
-        return
-      }
       dcCache.setCache(json)
-      this.dcList = json.Data.map(dc => ({
+      this.dcList = json.map(dc => ({
         name: dc.AreaName,
         servers: dc.Group.map(srv => ({
           name: srv.name,
