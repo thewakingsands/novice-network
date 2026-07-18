@@ -20,3 +20,10 @@ const isWebframe = !!entry.data.webframe
   </div>
   <PhotoSwipeMount />
 </div>
+
+<script>
+  // 复刻原 Layout.vue：初始化技能/状态悬浮详情（读取 data-ck-action-id 等属性）
+  import('@thewakingsands/kit-tooltip')
+    .then((x) => x.initTooltip())
+    .catch(() => {})
+</script>
