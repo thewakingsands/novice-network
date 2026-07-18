@@ -14,7 +14,7 @@ const KEYWORDS =
 const PROD = process.env.NODE_ENV === 'production'
 const GA4_ID = process.env.PUBLIC_GA4_ID
 
-/** 构建 <head> 注入（AdSense、地图 CSS/JS、Cloudflare、百度、GA4、SW 注册、域名重定向） */
+/** 构建 <head> 注入（AdSense、Cloudflare、百度、GA4、SW 注册、域名重定向） */
 function buildHead() {
   /** @type {any[]} */
   const head = [
@@ -26,27 +26,6 @@ function buildHead() {
         'data-ad-client': 'ca-pub-8304225030161579',
         async: true,
         src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-      },
-    },
-    // Leaflet + 艾欧泽亚交互地图 CSS/JS（CDN，jQuery 不再注入）
-    {
-      tag: 'link',
-      attrs: {
-        rel: 'stylesheet',
-        href: 'https://code.bdstatic.com/npm/leaflet@1.5.1/dist/leaflet.css',
-      },
-    },
-    {
-      tag: 'link',
-      attrs: {
-        rel: 'stylesheet',
-        href: 'https://code.bdstatic.com/npm/@thewakingsands/eorzea-interactive-map@1.1.1/dist/map.css',
-      },
-    },
-    {
-      tag: 'script',
-      attrs: {
-        src: 'https://code.bdstatic.com/npm/@thewakingsands/eorzea-interactive-map@1.1.1/dist/map.js',
       },
     },
     // Cloudflare Web Analytics
@@ -127,6 +106,8 @@ export default defineConfig({
         'normalize.css',
         'semantic-ui-css/semantic.min.css',
         '@thewakingsands/axis-font-icons',
+        'leaflet/dist/leaflet.css',
+        '@thewakingsands/eorzea-interactive-map/dist/map.css',
         './src/styles/index.scss',
       ],
       locales: {
