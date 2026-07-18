@@ -13,3 +13,5 @@ yarn.lock
 
 # 构建期 cafemaker 磁盘缓存（CI 用 actions/cache 持久化）
 /.cache/
+
+/.references
