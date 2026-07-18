@@ -2,6 +2,7 @@ import remarkFlexibleMarkers from 'remark-flexible-markers'
 import remarkIns from 'remark-ins'
 import { describe, expect, it } from 'vitest'
 import { rehypeCleanInline } from './rehype-clean-inline'
+import { rehypeExternalLinks } from './rehype-external-links'
 import { rehypeLazyImages } from './rehype-lazy-images'
 import { rehypeLegacyTable } from './rehype-legacy-table'
 import { rehypePangu, spacingText } from './rehype-pangu'
@@ -104,6 +105,24 @@ describe('rehypeLazyImages', () => {
       rehype: [rehypeLazyImages],
     })
     expect(html).toContain('loading="lazy"')
+  })
+})
+
+describe('rehypeExternalLinks', () => {
+  it('站外 HTTP 链接在新窗口打开并隔离 opener', async () => {
+    const html = await mdToHtml('[外链](https://example.com/path)', {
+      rehype: [rehypeExternalLinks],
+    })
+    expect(html).toContain('target="_blank"')
+    expect(html).toContain('rel="noopener noreferrer"')
+  })
+
+  it('站内、锚点与非 HTTP 链接保持当前窗口', async () => {
+    const html = await mdToHtml(
+      '[站内](https://ff14.org/basic/) [相对](/before/) [锚点](#top) [邮件](mailto:test@example.com)',
+      { rehype: [rehypeExternalLinks] }
+    )
+    expect(html).not.toContain('target="_blank"')
   })
 })
 

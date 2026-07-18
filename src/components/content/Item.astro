@@ -1,6 +1,6 @@
 ---
-// 复刻 Item.vue：物品链接（跳转中文维基）+ 图标。构建期经 cafemaker 烘焙图标（失败降级为默认图标）。
-import { searchItem } from '@/utils/cafemaker'
+// 复刻 Item.vue：物品链接（跳转中文维基）+ 图标。构建期经 XIVAPI v2 烘焙图标（失败降级为默认图标）。
+import { searchItem } from '@/utils/xivapi'
 
 interface Props {
   name?: string

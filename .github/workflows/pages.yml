@@ -20,18 +20,20 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'pnpm'
-      - name: 缓存 cafemaker 图标查询
+      - name: 缓存 XIVAPI 图标查询
         uses: actions/cache@v4
         with:
-          path: .cache/cafemaker
-          key: cafemaker-${{ github.run_id }}
-          restore-keys: cafemaker-
+          path: .cache/xivapi-v2
+          key: xivapi-v2-${{ github.run_id }}
+          restore-keys: xivapi-v2-
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
       - name: 构建网站
         run: pnpm build
         env:
           PUBLIC_GA4_ID: ${{ secrets.PUBLIC_GA4_ID }}
+          AFDIAN_USER_ID: ${{ secrets.AFDIAN_USER_ID }}
+          AFDIAN_API_TOKEN: ${{ secrets.AFDIAN_API_TOKEN }}
       - name: 导出部署密钥
         run: echo "$DEPLOY_KEY" > ci/deploy-key
         env:

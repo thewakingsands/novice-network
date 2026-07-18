@@ -84,7 +84,7 @@ src/components/
 src/plugins/            remark/rehype 插件 + Vite 源级语法插件（;;;、:::、{.header} 等）
 src/scripts/            客户端脚本（灯箱、gotoId、搜索）
 src/styles/             全局 SCSS（由 Stylus 移植）
-src/utils/              slugify（VuePress 锚点算法）、cafemaker（构建期图标烘焙）
+src/utils/              slugify、XIVAPI v2 图标查询、爱发电构建期查询
 tools/postbuild/        .htm 平铺 + 搜索索引生成
 tools/migrate-content/  一次性内容迁移脚本（保留供追溯）
 ```
@@ -95,8 +95,10 @@ tools/migrate-content/  一次性内容迁移脚本（保留供追溯）
   `dist/**/*.htm/index.html` 平铺为 `dist/**/*.htm` 文件。
 - **搜索**：纯前端（MiniSearch + CJK bigram 分词），索引 `dist/search-index.json` 由
   postbuild 生成，支持任意中文子串匹配。
-- **图标**：`Action`/`Status`/`Item` 在构建期经 cafemaker 烘焙图标（`.cache/cafemaker/`
+- **图标**：`Action`/`Status`/`Item` 在构建期经 XIVAPI v2 烘焙图标（`.cache/xivapi-v2/`
   磁盘缓存，CI 用 actions/cache 持久化）；离线时降级为占位。
+- **赞助者**：`Sponsors` 在构建期直连爱发电开放 API，需配置 `AFDIAN_USER_ID` 与
+  `AFDIAN_API_TOKEN`；凭据仅注入构建进程，浏览器不再请求赞助者接口。
 - **统计/广告**：GA4 需通过 `PUBLIC_GA4_ID` 环境变量提供，未设置时不输出。
 - **Service Worker**：`public/sw.js` 原样保留（CDN 代理），production 或
   `localStorage.debugSw==='1'` 时注册。
