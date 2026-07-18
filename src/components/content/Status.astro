@@ -1,17 +1,26 @@
 ---
-// 复刻 Status.vue：状态效果图标 + 名称。
-// 阶段 3：无网络降级渲染；阶段 5 接入构建期 cafemaker 烘焙图标与描述。
+// 复刻 Status.vue：状态效果图标 + 名称。构建期经 cafemaker 烘焙图标与描述（失败降级为占位）。
+import { searchStatus } from '@/utils/cafemaker'
+
 interface Props {
   name?: string
   id?: number
   dispel?: boolean
   stack?: number
 }
-const { name = '', dispel } = Astro.props
+const { name = '', id, dispel, stack = 0 } = Astro.props
+
+const result = id !== undefined ? await searchStatus(id, stack) : null
+const iconUrl = result?.iconUrl
+const description = result?.description || ''
 ---
 
-<strong class:list={['status', dispel && 'dispel']}>
-  <img src="about:blank" class="no-zoom hide" alt="" />
+<strong class:list={['status', dispel && 'dispel']} title={description}>
+  <img
+    src={iconUrl || 'about:blank'}
+    class:list={['no-zoom', { hide: !iconUrl }]}
+    alt=""
+  />
   <slot>{name}</slot>
 </strong>
 
