@@ -1,0 +1,294 @@
+---
+// 复刻 NavMenu.vue：左侧两级手风琴导航（数据源 src/data/toc.ts）+ 移动端 FAB 按钮组。
+import { TOC } from '@/data/toc'
+
+interface Child {
+  href: string
+  title: string
+  folder?: string
+  belongsTo?: string
+  indent?: number
+  img?: string
+}
+interface Group {
+  title: string
+  children?: Child[]
+  externalChildren?: { href: string; title: string }[]
+}
+
+const groups = TOC.main as Group[]
+const pathname = Astro.url.pathname
+
+// 归一化：/duty 与 /duty/ 视为一致
+const norm = (p: string) => p.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/'
+const current = norm(pathname)
+
+// 定位当前页在 toc 中的组/项
+let curG = -1
+let curC = -1
+groups.forEach((g, gi) => {
+  const ci = g.children?.findIndex((c) => norm(c.href) === current) ?? -1
+  if (ci >= 0) {
+    curG = gi
+    curC = ci
+  }
+})
+const currentChild = curG >= 0 ? groups[curG].children?.[curC] : undefined
+
+function isActive(gi: number, c: Child): boolean {
+  if (gi !== curG || !currentChild) return false
+  if (norm(c.href) === current) return true
+  if (c.folder && c.folder === currentChild.belongsTo) return true
+  return false
+}
+function isVisible(gi: number, c: Child): boolean {
+  if (!c.belongsTo) return true
+  if (gi !== curG || !currentChild) return false
+  return (
+    c.belongsTo === currentChild.belongsTo ||
+    c.belongsTo === currentChild.folder
+  )
+}
+---
+
+<div class="nav-container" data-nav-menu>
+  <div class="menus">
+    <div class="ui vertical inverted menu menu-list">
+      {
+        groups.map((g, gi) => (
+          <div class:list={['item', 'header', { expand: gi === curG || !g.title }]} data-menu-group>
+            {g.title && (
+              <div class="title" data-menu-toggle>
+                {g.title} <i class="caret down icon expand-icon" />
+              </div>
+            )}
+            <div class="menu">
+              {g.children?.map((c) => (
+                <a
+                  href={c.href}
+                  class:list={[
+                    'item',
+                    {
+                      active: isActive(gi, c),
+                      'with-img': c.img,
+                      'indent-1': c.indent === 1,
+                      'has-children': c.folder,
+                      visible: isVisible(gi, c),
+                    },
+                  ]}
+                >
+                  {c.img && <img src={c.img} alt="" />}
+                  <span>{c.title}</span>
+                  {c.folder && <i class="chevron circle right icon expand-icon" />}
+                </a>
+              ))}
+              {g.externalChildren?.map((c) => (
+                <a href={c.href} class="item" target="_blank" rel="noopener noreferrer">
+                  {c.title}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="toggle-button">
+    <button class="ui large circular icon button" data-fab-menu aria-label="菜单">
+      <i class="icon plus"></i>
+    </button>
+  </div>
+  <a class="ui large circular icon button hide-large" href="/search.htm" aria-label="搜索">
+    <i class="search icon"></i>
+  </a>
+  <a class="ui large circular icon button totop hide-large" href="#" data-fab-top aria-label="回到顶部">
+    <i class="double up angle icon"></i>
+  </a>
+  <a class="ui large circular icon button copy hide-large" href="#" data-fab-copy aria-label="复制链接">
+    <i class="share square icon"></i>
+  </a>
+</div>
+
+<script>
+  import { gotoId } from '@/scripts/gotoId'
+
+  // 手风琴展开/收起
+  for (const toggle of document.querySelectorAll('[data-menu-toggle]')) {
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation()
+      toggle.closest('[data-menu-group]')?.classList.toggle('expand')
+    })
+  }
+
+  const container = document.querySelector('[data-nav-menu]')
+  document.querySelector('[data-fab-menu]')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    container?.querySelector('.menus')?.classList.toggle('show')
+    document.querySelector('.toggle-button')?.classList.toggle('menu-show')
+  })
+  document.querySelector('[data-fab-top]')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    gotoId('')
+  })
+  document.querySelector('[data-fab-copy]')?.addEventListener('click', async (e) => {
+    e.preventDefault()
+    try {
+      await navigator.clipboard.writeText(location.href)
+      alert('网址已复制到剪贴板，快去分享给你的小伙伴吧！')
+    } catch {
+      alert('啊哦，我好像无法复制网址。\n麻烦你手工复制一下网址，再发送给小伙伴吧！')
+    }
+  })
+</script>
+
+<style lang="scss" is:global>
+.nav-container {
+  height: 100%;
+  padding-top: 40px;
+  .menu {
+    border-radius: 0;
+  }
+  .ui.vertical.menu.menu-list {
+    margin-top: 0;
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    min-width: 15em;
+    padding-bottom: 5em;
+    font-size: 18px;
+    @media screen and (max-width: 1200px) and (min-width: 961px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 960px) {
+      font-size: 18px;
+    }
+    .header.item {
+      cursor: pointer;
+    }
+    .title {
+      color: #ddd;
+      &:hover {
+        color: #fff;
+        .expand-icon {
+          color: #fff;
+        }
+      }
+      i.icon {
+        float: right;
+      }
+    }
+    .item {
+      &.has-children {
+        i {
+          margin-right: 0.4em;
+        }
+        &.active {
+          padding-bottom: 12px;
+          i {
+            transform: rotate3d(0, 0, 1, 90deg);
+          }
+        }
+      }
+      &.active {
+        background-color: #666;
+      }
+      &.indent-1 {
+        background-color: #4a4b4c;
+        border-left: 1em solid transparent;
+        display: none;
+        &.visible {
+          display: block;
+        }
+        &.active {
+          background-color: #575859;
+          border-left-color: transparent;
+        }
+      }
+      .menu {
+        display: none;
+        overflow: hidden;
+      }
+      .expand-icon {
+        color: #999;
+        transition: transform 300ms;
+        transform: rotate3d(0, 0, 1, -90deg);
+      }
+      &.with-img {
+        img {
+          width: 32px;
+          height: 32px;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+    .header.item.expand {
+      .menu {
+        display: block;
+      }
+      .expand-icon {
+        transform: rotate3d(0, 0, 1, 0);
+      }
+    }
+  }
+  .menus {
+    position: fixed;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @media screen and (max-width: 960px) {
+      transform: translate3d(-100%, 0, 0);
+      transition: 300ms;
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  .toggle-button {
+    display: none;
+    button {
+      margin: 0;
+      background: linear-gradient(106deg, #3d4d99 0%, #3689b3 50%, #cc7a29 100%);
+      box-shadow: 1px 3px 5px 0px rgba(34, 36, 38, 0.3);
+      color: white;
+      font-size: 20px;
+    }
+    @media screen and (max-width: 960px) {
+      display: block;
+      position: fixed;
+      z-index: 500;
+      bottom: 20px;
+      right: 16px;
+      transition: 300ms;
+      &.menu-show button {
+        transform: rotateZ(45deg);
+        box-shadow: 0px 0px 5px 2px #dfb24ec2;
+      }
+      &.menu-show ~ a.icon.button {
+        transform: translate(0, -120px);
+        &.totop {
+          transform: translate(0, -180px);
+        }
+        &.copy {
+          transform: translate(0, -60px);
+        }
+      }
+    }
+  }
+  > a.icon.button {
+    display: block;
+    position: fixed;
+    right: 21px;
+    bottom: 30px;
+    margin: 0;
+    z-index: 100;
+    background: white;
+    transition: all 300ms;
+  }
+}
+</style>

@@ -1,0 +1,34 @@
+---
+// 复刻 ContentContainer 右侧 sticky 文章目录 + “回到页首”。
+const { headings } = Astro.locals.starlightRoute
+const items = (headings ?? []).filter((h) => h.depth >= 2 && h.depth <= 3)
+---
+
+{
+  items.length > 0 && (
+    <aside class="hide-small">
+      <div class="articleTOC" data-anchor-scroll>
+        <ul>
+          {items.map((h) => (
+            <li class={h.depth === 3 ? 'toc-3' : ''}>
+              <a href={`#${h.slug}`}>{h.text}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <a href="#" data-top>
+        <i class="double up angle icon" /> 回到页首
+      </a>
+    </aside>
+  )
+}
+
+<script>
+  import { bindAnchorScroll, gotoId } from '@/scripts/gotoId'
+  const aside = document.querySelector('[data-anchor-scroll]')
+  if (aside) bindAnchorScroll(aside)
+  document.querySelector('[data-top]')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    gotoId('')
+  })
+</script>

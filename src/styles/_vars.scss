@@ -1,2 +1,7 @@
-// 全局 SCSS 变量（由 astro.config.mjs 的 preprocessorOptions 注入到每个组件样式块）
-// 由原 theme/styles/colors.styl、palette.styl 移植而来（阶段 4 补全）。
+// 全局 SCSS 变量（由 astro.config.mjs 注入到每个组件样式块）。移植自 theme/styles/colors.styl。
+$color-primary: #66bb6a;
+$color-light: #98ee99;
+$color-dark: #338a3e;
+$color-ew-blue: #3d4e99;
+$color-ew-mid: #3584ad;
+$color-ew-brown: #cc7a2a;

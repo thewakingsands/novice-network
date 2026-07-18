@@ -1,0 +1,119 @@
+---
+// 复刻原 404.vue：全屏对话框 + 随机背景（独立页，不套 Starlight 布局）。
+---
+
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>404 | 新大陆见闻录</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <div id="root" class="background">
+      <div class="dialog">
+        <div class="message">
+          <h2 style="text-align:center;">404 噗！</h2>
+          <p>
+            这个页面找不到了噗！<br />可能是还没有填完坑，编辑们正在疯狂赶工噗！<br
+            />请先回卷首看看噗！
+          </p>
+          <p style="text-align:right;font-size:0.9em;">HTTP 404 - Page Not Found</p>
+        </div>
+        <div class="buttons">
+          <a href="#" onclick="history.go(-1);return false;">返回噗</a>
+          <a href="/">去卷首噗</a>
+        </div>
+      </div>
+    </div>
+    <script is:inline>
+      document.getElementById('root').className =
+        'background bg' + (Math.floor(Math.random() * 4) + 1)
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    font-family:
+      'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+  }
+  #root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .dialog {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.27);
+    width: 80%;
+    max-width: 320px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    border-radius: 8px;
+  }
+  .message {
+    padding: 10px;
+  }
+  .buttons {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    font-size: 1.1em;
+  }
+  .buttons a {
+    display: block;
+    padding: 12px;
+    font-weight: bold;
+    flex: 1;
+    color: #fff;
+    text-decoration: none;
+  }
+  .buttons a:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .buttons a:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  #root.bg1 {
+    background:
+      radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px,
+      url('/images/404_1.jpg') 50% 100%;
+    background-size:
+      6px 6px,
+      cover;
+  }
+  #root.bg2 {
+    background:
+      radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px,
+      url('/images/404_2.jpg') 50% 100%;
+    background-size:
+      6px 6px,
+      cover;
+  }
+  #root.bg3 {
+    background:
+      radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px,
+      url('/images/404_3.jpg') 50% 100%;
+    background-size:
+      6px 6px,
+      cover;
+  }
+  #root.bg4 {
+    background:
+      radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 2px, rgba(255, 255, 255, 0.1) 3px) 3px 3px,
+      url('/images/404_4.jpg') 50% 100%;
+    background-size:
+      6px 6px,
+      cover;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+// 覆盖 Starlight MarkdownContent：复刻原 <main> 结构（WhatsNew + 翻页 + 正文 + 文章 TOC）。
+import ArticleTOC from '@/components/theme/ArticleTOC.astro'
+import Pager from '@/components/theme/Pager.astro'
+import WebFrame from '@/components/theme/WebFrame.astro'
+import WhatsNew from '@/components/theme/WhatsNew.astro'
+
+const { entry } = Astro.locals.starlightRoute
+const webframe = entry.data.webframe
+const noTopPager = entry.data.noTopPager
+---
+
+{
+  webframe ? (
+    <WebFrame src={webframe} />
+  ) : (
+    <main>
+      <WhatsNew />
+      {!noTopPager && <Pager />}
+      <div class="content-container">
+        <article class="content-container-inner" data-content>
+          <slot />
+        </article>
+        <ArticleTOC />
+      </div>
+      <Pager />
+    </main>
+  )
+}
+
+<script>
+  import { bindAnchorScroll } from '@/scripts/gotoId'
+  const content = document.querySelector('[data-content]')
+  if (content) bindAnchorScroll(content)
+</script>

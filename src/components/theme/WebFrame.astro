@@ -1,0 +1,23 @@
+---
+// 复刻 WebFrame.vue：内嵌 iframe 页面（webframe frontmatter）。
+interface Props {
+  src: string
+}
+const { src } = Astro.props
+---
+
+<div class="webframe-container">
+  <iframe src={src} title="内嵌页面"></iframe>
+</div>
+
+<style lang="scss">
+.webframe-container {
+  height: calc(100vh - 40px);
+  width: 100%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>

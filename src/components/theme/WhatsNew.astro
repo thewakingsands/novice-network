@@ -1,0 +1,57 @@
+---
+// 复刻 WhatsNew.vue：公告横幅（localStorage 关闭记忆 + 统计事件）。恢复挂载时显示检查。
+const WHATS_NEW_ID = 'search-inside'
+---
+
+<div class="whatsnew-container" data-whatsnew={WHATS_NEW_ID} hidden>
+  <div class="ui tertiary orange inverted segment">
+    <div class="msg">
+      本站现已支持
+      <a href="/search.htm">站内搜索</a>
+      ！点击左上角的搜索按钮即可搜索《新大陆见闻录》全站内容。
+    </div>
+    <i class="icon close" data-whatsnew-close></i>
+  </div>
+</div>
+
+<script>
+  const el = document.querySelector<HTMLElement>('[data-whatsnew]')
+  if (el) {
+    const id = el.dataset.whatsnew || ''
+    let dismissed = false
+    try {
+      dismissed = localStorage.getItem('whatsNew') === id
+    } catch {}
+    if (!dismissed) el.removeAttribute('hidden')
+    el.querySelector('[data-whatsnew-close]')?.addEventListener('click', () => {
+      el.setAttribute('hidden', '')
+      try {
+        localStorage.setItem('whatsNew', id)
+      } catch {}
+      const g = window as unknown as {
+        gtag?: (...a: unknown[]) => void
+        _hmt?: unknown[]
+      }
+      g.gtag?.('event', 'dismiss', { event_category: 'WhatsNew', event_label: id })
+      g._hmt?.push(['_trackEvent', 'WhatsNew', 'dismiss', id])
+    })
+  }
+</script>
+
+<style lang="scss">
+.whatsnew-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+.segment {
+  display: flex;
+}
+.msg {
+  flex: 1;
+}
+.close {
+  cursor: pointer;
+}
+</style>
