@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="https://code.bdstatic.com/npm/@thewakingsands/eorzea-interactive-map@1.1.1/dist/map.css">
     {{{ userHeadTags }}}
     {{{ pageMeta }}}
-    {{{ renderResourceHints() }}}
+    <!--before-resource-hints-->{{{ renderResourceHints() }}}<!--after-resource-hints-->
     {{{ renderStyles() }}}
   </head>
   <body>
-    <!--vue-ssr-outlet-->
+    <!--before-vue-ssr-outlet--><!--vue-ssr-outlet--><!--after-vue-ssr-outlet-->
     <script src="https://code.bdstatic.com/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="https://code.bdstatic.com/npm/@thewakingsands/eorzea-interactive-map@1.1.1/dist/map.js"></script>
-    {{{ renderScripts() }}}
+    <!--before-scripts-->{{{ renderScripts() }}}<!--after-scripts-->
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "be74bc1eb92c4cf9adffca9366a9f20f"}'></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>
