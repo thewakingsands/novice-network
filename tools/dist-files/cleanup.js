@@ -1,22 +1,18 @@
-const fs = require('fs')
+// 清理超过 90 天未在部署产物中出现的文件（配合 dump.js 的 files.json 时间戳）。
+import { existsSync, readFileSync, unlinkSync } from 'node:fs'
 
-const AGE_90_DAYS = 1000 * 60 * 60 * 24 * 90
-const CLEANUP_AGE = AGE_90_DAYS
+const CLEANUP_AGE = 1000 * 60 * 60 * 24 * 90
 
 let files = {}
-
-if (fs.existsSync('dist/files.json')) {
-  files = JSON.parse(fs.readFileSync('dist/files.json'))
+if (existsSync('dist/files.json')) {
+  files = JSON.parse(readFileSync('dist/files.json', 'utf8'))
 }
 
 for (const file in files) {
-  const lastUpdated = files[file]
-  const age = Date.now() - lastUpdated
+  const age = Date.now() - files[file]
   if (age > CLEANUP_AGE) {
     console.log(`Deleting ${file}`)
     const filename = `dist/${file}`
-    if (fs.existsSync(filename)) {
-      fs.unlinkSync(filename)
-    }
+    if (existsSync(filename)) unlinkSync(filename)
   }
 }
