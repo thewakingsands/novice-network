@@ -1,5 +1,6 @@
 // 复刻原 Layout.vue 的 gotoId：平滑滚动、-45px 顶栏偏移、3 秒 .scroll-focus 高亮。
 export function gotoId(id: string): void {
+  const scroller = document.scrollingElement || document.documentElement
   let scrollTop = 0
   if (id) {
     let el = document.getElementById(id)
@@ -10,9 +11,8 @@ export function gotoId(id: string): void {
     }
     el.classList.add('scroll-focus')
     setTimeout(() => el?.classList.remove('scroll-focus'), 3000)
-    scrollTop = el.offsetTop - 45
+    scrollTop = el.getBoundingClientRect().top + scroller.scrollTop - 45
   }
-  const scroller = document.scrollingElement || document.documentElement
   try {
     scroller.scrollTo({ top: scrollTop, behavior: 'smooth' })
   } catch {

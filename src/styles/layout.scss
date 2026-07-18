@@ -28,6 +28,8 @@
   margin-top: 40px;
   padding-left: 290px;
   width: 100%;
+  min-width: 0;
+
   min-height: 100vh;
   @media screen and (max-width: 1200px) and (min-width: 961px) {
     padding-left: 250px;
