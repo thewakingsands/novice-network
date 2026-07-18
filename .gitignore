@@ -1,7 +1,15 @@
 node_modules
+.pnpm-store
 yarn-error.log
 /dist
 /ci/deploy-key
-/job/job.md
-package-lock.json
 /lastDeploy
+package-lock.json
+yarn.lock
+
+# Astro
+.astro/
+.DS_Store
+
+# 构建期 cafemaker 磁盘缓存（CI 用 actions/cache 持久化）
+/.cache/

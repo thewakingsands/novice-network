@@ -1,0 +1,140 @@
+.hover-frame{
+	display: block;
+	position: absolute;
+	z-index: 9999999 !important;
+	font-size: 12px;
+	width: 332px;
+
+	color: #fff;
+	text-shadow: 0 2px 4px #000;
+	box-sizing: border-box;
+	font-family: "黑体";
+	box-shadow: 0 2px 8px #111;
+}
+
+
+.hover-block{
+	position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: #444;
+    background-repeat: repeat-x;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+    height: 100%;
+    width: 100%;
+    box-sizing: inherit;
+}
+
+.hover-header{
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-bottom: solid 1px #000;
+    background-color: #111;
+    background-image: linear-gradient(to bottom,#444 0,#333 100%);
+    background-size: 100% 100%;
+    box-shadow: 0 1px 3px #222;
+}
+
+.hover-header>div{
+	padding-left: 10px;
+}
+
+.hover-icon{
+	position: relative;
+    float: left;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    background-color: #444;
+    box-shadow: 0 1px 3px #222;
+}
+
+.hover-icon>img{
+	position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    max-width: 105%;
+    max-height: 105%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.icon-blur{
+	width: 100px;
+    max-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.hover-header-name{
+	font-size: 15px;
+    margin-top: 4px;
+}
+
+.hover-status-type{
+	font-size: 10px;
+    margin-top: 0;
+    color: #A89B8A;
+}
+
+.hover-content-area{
+	display: flex;
+	width: 100%;
+}
+
+.hover-content-section{
+	width: 100%;
+    -webkit-flex: 0 1 100%;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 0;
+    padding: 0 20px 15px;
+    min-width: 300px;
+}
+
+.hover-content-block{
+	position: relative;
+	box-sizing: border-box;
+}
+
+.hover-content-discription>p{
+	padding: 0 2px 0 0;
+}
+
+#image-frame{
+    display: block;
+    position: absolute;
+    z-index: 9999999 !important;
+}
+
+.hover-img{
+    max-width: 250px;
+    height: auto;
+    border-radius: .5rem;
+    box-shadow: 0 0px 8px #111, 0 0px 8px #111;
+}
+
+.img-hover-area{
+    color: #BF1717!important;
+    cursor: pointer;
+    text-decoration-line: none;
+}
+
+.img-hover-area img{
+    width: 1.2rem;
+    position: absolute;
+    margin-left: 0rem;
+    margin-top: 0.3rem;
+}
+
+.img-hover-area:hover{
+    background: rgba(170, 15, 15, 0.1);
+}

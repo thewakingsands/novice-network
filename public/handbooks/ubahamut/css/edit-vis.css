@@ -1,0 +1,57 @@
+.vis-item{
+	border-color: #CCC2A8;
+	background: #EFEAE1;
+	color: #57432F;
+	border-radius: .2rem!important;
+	min-width:fit-content!important;
+    min-width:-webkit-fit-content;
+    min-width:-moz-fit-content;
+    text-align: center;
+}
+
+.vis-timeline{
+	border: none;
+}
+
+.vis-labelset .vis-label {
+    border-bottom: 0.05rem solid #57432F;
+}
+
+.vis-labelset .vis-label:last-child{
+	border-bottom: solid!important;
+}
+
+.vis-foreground .vis-group {
+    border-bottom: 0.05rem solid #57432F;
+}
+
+.vis-foreground .vis-group:last-child{
+	border-bottom: solid;
+	border-bottom: 0.1rem solid #57432F;
+}
+.vis-panel.vis-bottom, .vis-panel.vis-center, .vis-panel.vis-left, .vis-panel.vis-right, .vis-panel.vis-top{
+	border: none;
+}
+
+.vis-inner{
+	position: relative;
+	top: 50%;
+	height: 3rem;
+	margin-top: -1.5rem;
+
+}
+
+
+.vis-time-axis .vis-grid.vis-minor:before{
+        content: '';
+        width: .08rem;
+        height: .5rem;
+        background-color: #57432F;
+        position: absolute;
+        left: 0;
+        bottom: 1.16rem;
+}
+
+.vis-time-axis .vis-grid.vis-minor{
+	border: none;
+}

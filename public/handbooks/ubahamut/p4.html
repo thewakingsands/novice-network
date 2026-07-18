@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="UTF-8">
+	<title>巴哈姆特绝境战</title>
+	<meta name="keyword" content="最终幻想14,FF14,FFXIV,绝巴哈,暗搓搓,图文攻略,文字攻略">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+	<link rel="stylesheet" type="text/css" href="css/guide-global.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-global.css">
+	<link rel="stylesheet" type="text/css" href="css/vis-global.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<link rel="stylesheet" type="text/css" href="css/edit-vis.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+	<div style="display:none" id="image-frame">
+		<img class="hover-img" src="" alt="">
+	</div>
+	<div style="display:none" id="status-frame" class="hover-frame">
+		<div class="hover-block">
+			<div class="hover-header">
+				<div>
+					<div class="hover-icon">
+						<img src="img/status/Burns.png" alt="" class="icon-blur">
+						<img src="img/status/Burns.png" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="hover-header-name">火伤</div>
+					<div class="hover-categories">
+						<em class="hover-status-type">减益效果
+						</em>
+					</div>
+				</div>
+			</div>
+			<div class="hover-content-area">
+				<div class="hover-content-section">
+					<div class="hover-content-block">
+						<div class="hover-content-discription">
+							<p class="hover-content-discription-info">火属性持续伤害，体力逐渐流失(即死)</p>
+							<p class="hover-content-discription-duration"><a style="color:#0AA30E">持续时间：</a>30秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-wrapper">
+		<div class="site-title">
+			<div id="site-title-content" onclick="window.open('index.html','_self')">
+				<img src="img/title.png" alt="" id="site-title-img">
+			</div>
+		</div>
+		<div class="site-menu">
+			<div class="site-menu-area">
+				<div class="site-menu-item" onclick="window.open('p1.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">
+						双塔尼亚
+					</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p2.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">奈尔·神·达那</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p3.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">至尊巴哈姆特</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p4.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">万亿核爆</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="site-menu-item-name">黄金巴哈·施工中</div>
+				</div>
+			</div>
+		</div>
+		<div class="guide-thumbnail">
+								<img width="1920" height="1080" src="img/guide-thumbnail-p4.png" class="img-thumbnail">
+							</div>
+		<div class="site-content">
+			<div class="site-container">
+				<div class="page-content">
+					<main class="guide-main">
+						<article class="article">
+							<div class="guide-content">
+								<div class="info-section">
+									<br><br>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p4/p4-timeline.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<br>
+									<li>-开场·龙神的加护-</li>
+									<br>
+									<li>-第一次双塔·奈尔循环-</li>
+									<li>垂直下落+巴哈姆特之爪</li>
+									<br>
+									<li>液体地狱</li>
+									<li>魔力炼成x3</li>
+									<li>旋风</li>
+									<br>
+									<li>奈尔台词1</li>
+									<li>旋风</li>
+									<br>
+									<li>百万核爆</li>
+									<li>死刑+凶鸟尖喙</li>
+									<li>垂直下落+巴哈姆特之爪</li>
+									<br>
+									<li>-第二次双塔·奈尔循环-</li>
+									<li>液体地狱</li>
+									<li>魔力炼成x3</li>
+									<li>旋风</li>
+									<br>
+									<li>奈尔台词2</li>
+									<li>旋风</li>
+									<br>
+									<li>死刑+凶鸟尖喙</li>
+									<li>百万核爆</li>
+									<br>
+									<li>-循环结束-</li>
+									<li>双塔尼亚之怒/奈尔之怒</li>
+									<li>万亿核爆</li>
+									<br>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p4/p4-1.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<h4>基本技能</h4>
+									<li>无尽顿悟</li>
+									<li>百万核爆</li>
+									<p>P4开场，巴哈姆特将会出现在12点外侧，给予双塔尼亚和奈尔「龙神的加护」，使他们分别获得
+										<a class="status-area" name="DamageUp">
+											<img src="img/status/DamageUp.png" alt="">
+											&nbsp;&nbsp;&nbsp;伤害提高
+										</a>
+									效果。同时，巴哈姆特将会开始蓄力「万亿核爆」，游戏界面中将会出现蓄力条「巴哈姆特的以太」。玩家需要在蓄力条到达100前同时击杀双塔尼亚和奈尔，否则万亿核爆会直接团灭队伍。如果团队dps压力不大的话，推荐这个阶段两个坦克开启盾姿态。</p><br>
+									<p>双塔尼亚和奈尔将会出现在场地12点的一左一右，如下图所示。双塔尼亚血量为40%，奈尔为45%，并且均继承P3巴哈姆特的仇恨。为了避免仇恨混乱，这里固定由副坦挑衅双塔尼亚。两个坦克可以将BOSS坦在同一个位置，但是由于双塔尼亚的顺劈是正面AOE，因此两个坦克要左右分开站。</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p4/megaflare-1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※双塔尼亚和奈尔出现位置示意图。
+											</li>
+										</div>
+									</div>
+									<p>如果P1拘束装置是倒三角形方法，那么P4开场直接将两个BOSS坦在12点即可。而如果是正三角形打法，推荐将BOSS拉到2～3点（或9～10点/6点）位置——保证魔力炼成时，左右侧刚好各有一个拘束装置供近战引爆黑球，会方便许多。双坦拉法最终效果参照下图：</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p4/megaflare-2.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：拘束装置呈倒三角形时，坦在12点位置。
+											</li>
+											<li class="text-align-center">
+											※右图：拘束装置呈正三角形时，拉到2～3点（或9～10点/6点）位置。
+											</li>
+										</div>
+									</div>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p4/p4-2.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>从龙神的加护后双塔尼亚和奈尔变得可选中开始，P4的完整时间轴如下。可以看到，以死刑+凶鸟尖喙为界限，P4左右分为两个几乎一模一样的双塔尼亚+奈尔循环。接下来将会分步详细讲解循环内流程。为了提醒旋风机制，标题上会专门写出旋风。</p><br>
+									<div id="p4-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P4完整时间轴</li>
+										</div>
+									</div>
+									<h4>双塔尼亚+旋风</h4>
+									<p>P4开场两只BOSS会分别对双坦使用垂直下落和巴哈姆特之爪，注意减伤和治疗，垂直下落后两个坦克就可以站在一起拉朝向12点了。随后进入双塔尼亚部分——双塔尼亚首先会使用可诱导的五连液体地狱，同P1处理即可。</p>
+									<br>
+									<p>在第五下液体地狱出现后立刻将会有3名DPS被点名魔力炼成的紫色三角标记，需要分别进入3个拘束装置内引爆黑球。在黑球移动的过程中，双塔尼亚将会读条旋风，与P1处理相同。推荐被紫色三角标记的DPS先诱导旋风后再进入（近战如果觉得距离够近，也可以尝试先撞球再躲旋风，但远程必须先诱导旋风再引爆黑球）。旋风出现后，奈尔将会立刻说出一句台词，标志流程进入奈尔部分。</p>
+									<br>
+									<p>整个双塔尼亚部分的流程可以参考下图（以BOSS在12点为例）：</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p4/twintania-1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：双塔尼亚流程开场，负责诱导的玩家远离BOSS，其余玩家靠近BOSS，防止被液体地狱误点名。
+											</li>
+											<li class="text-align-center">
+											※中图：五次液体地狱后3名DPS被点名魔力炼成，分散到各自的拘束装置，其余玩家远离黑球的爆炸范围。
+											</li>
+											<li class="text-align-center">
+											※右图：所有人保持移动躲开旋风，被点名黑球玩家在诱导旋风后进入拘束装置引爆黑球，没被点名玩家远离拘束装置避免被爆炸范围覆盖。
+											</li>
+											<li class="text-align-center">
+											※最后效果图如右图所示。
+											</li>
+										</div>
+									</div>
+									<p>双塔尼亚部分除了注意旋风以外，只需要分配一下3个拘束装置的分配方式。除了灵性交流，这里给出两种可行的分配方式：</p>
+									<br>
+									<li>第一种：同P1的分配顺序——近战+远程左右各一组，优先踩左右侧的拘束装置。当组内两个人同时被点名时，同组的远程去6点的拘束装置。</li>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p4/twintania-3.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：五连液体地狱后，忍者，召唤和诗人被点名魔力炼成。
+											</li>
+											<li class="text-align-center">
+											※右图：忍者去固定位置，召唤看同组的龙骑没被点名，则去右侧拘束装置，诗人看同组都被点名，自己去6点的拘束装置。
+											</li>
+											<li class="text-align-center attention-part">
+											※图示仅为举例说明。另外所有玩家注意诱导旋风。
+											</li>
+										</div>
+									</div>
+									<li>第二种：固定三个DPS的拘束装置。剩下一个远程看哪个DPS没被点名就去相应的拘束装置。</li>
+									<p class="attention-part">※没被点名的玩家注意远离黑球的爆炸范围。特别提醒，由于左右侧拘束装置离BOSS较近，两个近战没被点名时，打身位尤其要注意不要被爆炸范围覆盖。</p>
+									<br>
+									<h4>奈尔+旋风</h4>
+									<p>双塔尼亚在使用旋风后，标志进入奈尔阶段，<a class="attention-part">双塔尼亚除了普攻外不再使用其他技能，因此整个场地都是安全的</a>。进入奈尔阶段后，奈尔会立刻说出一句台词。第一句台词固定从以下两组中四选一：</p>
+									<br>
+									<li>钢铁燃烧吧！成为我降临于此的刀剑吧！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;钢铁战车+热离子光束+凶鸟冲</li>
+									<li>钢铁成为我降临于此的燃烧之剑！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;钢铁战车+凶鸟冲+热离子光束</li>
+									<br>
+									<li>我自月而来降临于此，踏过炽热之地！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+凶鸟冲+热离子光束</li>
+									<li>我自月而来携钢铁降临于此！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+钢铁战车+凶鸟冲</li>
+									<br>
+									<p>首先，台词的第一个技能必定是钢铁战车或者是月流电圈。<a class="attention-part">对于远程DPS和治疗而言</a>，在进入奈尔阶段（也就是旋风结束后），可以直接远离两个BOSS，最远距离输出——从而无视钢铁战车和月流电圈。因此对于远程而言钢铁战车和月流电圈的分散示意图如下：</p>
+									<div class="figure aligncenter">
+										<img src="img/p4/chariot1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※钢铁战车/月流电圈远程分散示意图。
+											</li>
+											<li class="text-align-center">
+											※由于这之后可能是凶鸟冲，4名远程需要彼此分散。<a class="attention-part">学者可以提前回到场地中央给全员上盾</a>，因为凶鸟冲后可能是热离子光束。
+											</li>
+											<li class="text-align-center">
+											※玩家也可以选择到BOSS脚下躲避月流电圈，但会导致BOSS附近变得很拥挤。
+											</li>
+											<li class="attention-part">※图为分配方向示意图，实际上远程不需要分散到边缘，保证凶鸟冲不重叠即可，否则可能来不及集合分摊热离子光束。</li>
+										</div>
+									</div>
+									<p><a class="attention-part">而对于近战而言</a>，月流电圈同P2，玩家在奈尔脚下躲避。而对于钢铁战车，除了需要远离奈尔以外，由于钢铁战车/月流电圈后可能是凶鸟冲，4名玩家需要朝不同的方向分散。这里的分散示意图如下：</p>
+									<div class="figure aligncenter">
+										<img src="img/p4/chariot2.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※钢铁战车近战分散示意图。
+											</li>
+											<li class="text-align-center">
+											※由于这之后可能是凶鸟冲，4名近战需要彼此分散。
+											</li>
+											<li class="text-align-center">
+											※根据习惯玩家也可以互换分散位置，图中仅做参考。
+											</li>
+											<li class="text-align-center">
+											※分散位置只需要保证凶鸟冲不重叠即可。
+											</li>
+										</div>
+									</div>
+									<p class="attention-part">而对于热离子光束，为了方便所有玩家都能及时集合，这里我们固定每次热离子光束都在场地正中央（标记1处）进行分摊。</p>
+									<br>
+									<p>特别地，<a class="attention-part">对于热离子光束+凶鸟冲</a>，我们为每个玩家分配一个分散方向来应对凶鸟冲，分散方向如下图所示：</p>
+									<br>
+									<div class="figure aligncenter">
+										<img src="img/p4/ravendive.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※凶鸟冲分散示意图。
+											</li>
+											<li class="text-align-center">
+											※由于需要刷血，在热离子分摊后也可以让一名治疗(例如白魔)先待在场中央原地不动进行刷血，防止残血DPS被接下来的凶鸟冲补刀。（但由于台词结束仍要诱导旋风，为了防止踩到其他玩家的旋风，这名治疗最好往图中分配好的方向躲开旋风。）
+											</li>
+										</div>
+									</div><br>
+									<p class="attention-part">
+										※在奈尔执行完台词的第三个技能后1～2秒，双塔尼亚会读条使用旋风。所有人要保持移动。P4全程玩家可以焦点双塔尼亚，根据旋风的读条躲避。
+									</p>
+									<br>
+									<p class="attention-part">
+										※治疗注意奈尔在执行台词时，双塔尼亚仍在普攻一名坦克（普攻暴击大概在2w～2w5之间）。
+									</p>
+									<br>
+									躲开旋风后<a class="attention-part">所有人立刻回到BOSS处集合刷血做好减伤，奈尔将读条百万核爆</a>，标志着奈尔部分结束。随后双塔尼亚和奈尔将同时使用死刑和凶鸟尖喙，两个坦克开好减伤并在读条时互换BOSS仇恨,<a class="attention-part">紧接着死刑的就是垂直下落+五连巴哈姆特之爪</a>，DPS分配好物理减伤，尽可能覆盖死刑/凶鸟尖喙+垂直下落/巴哈姆特之爪。以下是第一个循环的完整时间轴：
+									<br>
+									<div id="p4.1-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P4第一次双塔·奈尔循环完整时间轴</li>
+										</div>
+									</div>
+									<p>接下来攻略会给出4种台词处理方式的具体图示供玩家参考。由于之前已经详细说明过每个技能的处理方式，这里仅供玩家练习用，不需要进行死记。</p>
+									<br>
+									<p class="attention-part">※钢铁战车+热离子光束+凶鸟冲</p>
+									<div class="figure aligncenter">
+										<img src="img/p4/script1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左：钢铁战车按分配位置分散
+											</li>
+											<li class="text-align-center">
+											※中：所有人回到场地中央分摊热离子光束
+											</li>
+											<li class="text-align-center">
+											※右：凶鸟冲按分配位置分散——可以留一名治疗待在原地刷血，但<a class="attention-part">凶鸟冲后所有人往分配方向移动躲避旋风</a>。
+											</li>
+										</div>
+									</div>
+									<br>
+									<p class="attention-part">※钢铁战车+凶鸟冲+热离子光束</p>
+									<div class="figure aligncenter">
+										<img src="img/p4/script1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左：钢铁战车按分配位置分散，同时等待凶鸟冲点名。边缘的玩家不要离场中太远，防止无法及时回到场中。
+											</li>
+											<li class="text-align-center">
+											※中：凶鸟冲后所有人回到场地中央分摊热离子光束。
+											</li>
+											<li class="text-align-center">
+											※右：分摊完以后，所有人立刻按分配好的位置分散躲开旋风。</a>
+											</li>
+										</div>
+									</div>
+									<br>
+									<p>由上面两个台词图示你可以发现，钢铁战车开头的两句台词虽然技能不同，但移动分散的处理方式基本一模一样。</p><br>
+									<p class="attention-part">※月流电圈+凶鸟冲+热离子光束</p>
+									<div class="figure aligncenter">
+										<img src="img/p4/script4.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左1：月流电圈——近战在BOSS脚下集合，远程直接最远距离输出。
+											</li>
+											<li class="text-align-center">
+											※左2：凶鸟冲——近战按位置分散，远程位置保持不变（不要离场地中央太远），其中学者可以提前回场中央刷盾。
+											</li>
+											<li class="text-align-center">
+											※左3：热离子光束——凶鸟冲后所有人到场地中央分摊。</a>
+											</li>
+											<li class="text-align-center">
+											※左4：旋风——分摊后所有人按分配方向分散躲开旋风。</a>
+											</li>
+										</div>
+									</div>
+									<br>
+									<p class="attention-part">※月流电圈+钢铁战车+凶鸟冲</p>
+									<div class="figure aligncenter">
+										<img src="img/p4/script3.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左：月流电圈——近战在BOSS脚下集合，远程直接最远距离输出。
+											</li>
+											<li class="text-align-center">
+											※右：钢铁战车——远程保持不变，近战按分配位置分散。
+											</li>
+											<li class="text-align-center">
+											※右：凶鸟冲——所有玩家已经站在分配位置保持不动即可，其中学者可以提前回场中央刷盾。</a>
+											</li>
+											<li class="text-align-center">
+											※右：旋风——所有玩家在自己所在位置附近诱导旋风。</a>
+											</li>
+										</div>
+									</div>
+									<br>
+									<h4>第二次双塔·奈尔循环</h4>
+									<p>第二次双塔·奈尔循环与第一次循环只有两个不同。一个是台词——第一次和第二次循环中奈尔的台词必定分别在两组台词中。也就是说，如果第一次的台词以钢铁战车开场，那么第二次的台词必定为月流电圈开场。</p>
+									<br>
+									<p>除此之外，第二次循环的结尾为先双死刑换坦，然后奈尔才读条百万核爆。</p>
+									<br>
+									<p>第二次循环完整时间轴如下：</p>
+									<br>
+									<div id="p4.2-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P4第二次双塔·奈尔循环完整时间轴</li>
+										</div>
+									</div>
+									<br>
+									<h4>万亿核爆</h4>
+									<p>当双塔尼亚和奈尔其中一只死亡时，另外一只会立刻使用狂暴技能「双塔尼亚之怒/奈尔之怒」，并且咏唱时间非常短（约有3秒），因此这两只BOSS必须在同一时间击杀。这里推荐使用远程LB进行收尾工作，如果此时玩家有3段LB，可以在BOSS血量4%～5%时使用，如果只有2段LB，推荐在3%时再使用——在保证巴哈姆特的蓄力条不会达到100的情况下，使用LB时血量越低越安全。</p>
+									<br>
+									<p>击杀完双塔尼亚和奈尔后，巴哈姆特将会使用万亿核爆剧情杀，标志着进入最后阶段——黄金巴哈。</p>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+								</div>
+							</div>
+						</article>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/p1-timeline.js"></script>
+	<script src="js/p4-timeline.js"></script>
+	<script src="js/hover-global.js"></script>
+	<script src="js/status-database.js"></script>
+</body>
+
+</html>

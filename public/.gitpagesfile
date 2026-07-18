@@ -1,0 +1,47 @@
+AllowCORS = true
+NotFoundErrorPage = "/404.html"
+CORSOrigins = [
+  "https://ff14.org",
+  "http://ff14.org",
+  "http://localhost:8080"
+]
+
+[[Rules]]
+Match = "^/assets/.*"
+Break = true
+AllowCORS = true
+CORSOrigins = [
+  "https://ff14.org",
+  "http://ff14.org",
+  "http://localhost:8080"
+]
+CrossSiteProtection = true
+CrossSiteProtectionOnlyEmptyReferrer = true
+ReferrerProtection = true
+ReferrerAllowed = [
+  "^https?://ff14\\.org/.*",
+  "^https?://ff14-org-cdn\\.i-cassell-you\\.com/.*",
+  "^http://localhost:8080/.*"
+]
+[Rules.AddHeaders]
+Cache-Control = "public,max-age=2592000"
+
+[[Rules]]
+Match = ".*\\.(jpg|png|svg|ico|jpeg|js)"
+NotFoundErrorPage = "/404.html"
+AllowCORS = true
+CORSOrigins = [
+  "https://ff14.org",
+  "http://ff14.org",
+  "http://localhost:8080"
+]
+CrossSiteProtection = true
+CrossSiteProtectionOnlyEmptyReferrer = true
+ReferrerProtection = true
+ReferrerAllowed = [
+  "^https?://ff14\\.org/.*",
+  "^https?://ff14-org-cdn\\.i-cassell-you\\.com/.*",
+  "^http://localhost:8080/.*"
+]
+[Rules.AddHeaders]
+Cache-Control = "public,max-age=3600"
