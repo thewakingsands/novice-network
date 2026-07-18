@@ -1,0 +1,71 @@
+---
+// 复刻 Footer.vue：GitHub 修订/编辑/反馈链接、版权、takedown。
+const { entry } = Astro.locals.starlightRoute
+// 源文件路径（内容已迁至 src/content/docs）
+const rel = `src/content/docs/${entry.id.endsWith('index') || entry.id === '' ? `${entry.id || 'index'}.mdx` : `${entry.id}.mdx`}`
+const repo = 'https://github.com/thewakingsands/novice-network'
+const historyLink = `${repo}/blame/master/${rel}`
+const editLink = `${repo}/edit/master/${rel}`
+const feedbackLink = `https://i.duotai.net/forms/zxjg2/wh956yns?url=${entry.id}`
+---
+
+<footer class="footer-container">
+  <div class="colored-footer">
+    <div class="status-line">
+      <a target="_blank" rel="noopener" href={historyLink}>修订历史</a> |
+      <a target="_blank" rel="noopener" href={editLink}>编辑本页</a> |
+      <a target="_blank" rel="noopener" href={feedbackLink}>反馈问题</a> |
+      <a href="/about.htm">关于&amp;捐赠</a>
+    </div>
+    <div class="status-line">
+      《新大陆见闻录》是<a href="https://www.ffcafe.cn/" target="_blank">肥肥咖啡</a
+      >的一个子项目，欢迎<a href="https://www.ffcafe.cn/join-us/">加入我们</a
+      >，也可以<a href="mailto:yunze@wakingsands.com?subject=《新大陆见闻录》投稿"
+        >使用Email向我们投稿</a
+      >！
+    </div>
+    <div class="copyright-line copyright-se">
+      FINAL FANTASY XIV © 2010 - 2023 SQUARE ENIX CO., LTD. All Rights Reserved. |
+      <a href="/takedown.htm">Report Copyright Infringement (版权投诉)</a>
+    </div>
+  </div>
+</footer>
+
+<style lang="scss" is:global>
+.footer-container {
+  margin: 0 60px;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  @media screen and (max-width: 480px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }
+  .colored-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #ffffffcc;
+  }
+  .copyright-line {
+    color: #666;
+  }
+  .copyright-se {
+    text-align: left;
+    color: #999;
+  }
+  .status-line {
+    color: #333;
+    margin-bottom: 10px;
+  }
+}
+[data-theme='dark'] .footer-container {
+  border-top-color: #333;
+  .colored-footer {
+    background: #1b1c1dcc;
+  }
+  .status-line {
+    color: #999;
+  }
+}
+</style>

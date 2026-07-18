@@ -1,2 +1,7 @@
-// 全局样式入口（由 Starlight customCss 引入）。
-// 阶段 4 在此按序引入 normalize、semantic-ui、字体与各 .styl 移植的 .scss。
+// 全局样式入口（由 Starlight customCss 引入）。normalize / semantic-ui / axis 图标由 astro.config 直接引入。
+@use 'font';
+@use 'main';
+@use 'layout';
+@use 'content';
+@use 'map';
+@use 'dark';

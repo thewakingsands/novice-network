@@ -1,0 +1,76 @@
+---
+// 复刻 Pager.vue：基于 toc.ts 顺序（排除 belongsTo 子项）的上一页/下一页。
+import { TOC } from '@/data/toc'
+
+interface Child {
+  href: string
+  title: string
+  belongsTo?: string
+}
+const norm = (p: string) =>
+  p.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/'
+const current = norm(Astro.url.pathname)
+
+const flat: Child[] = []
+for (const g of TOC.main as { children?: Child[] }[]) {
+  if (g.children) flat.push(...g.children.filter((c) => !c.belongsTo))
+}
+const idx = flat.findIndex((c) => norm(c.href) === current)
+const prev = idx >= 0 ? flat[idx - 1] : undefined
+const next = idx >= 0 ? flat[idx + 1] : undefined
+---
+
+<div class="page-pager">
+  {
+    prev?.href && (
+      <div class="left">
+        <a href={prev.href}>
+          <i class="caret left icon" /> {prev.title}
+        </a>
+      </div>
+    )
+  }
+  {
+    next?.href ? (
+      <div class="right">
+        <a href={next.href}>
+          <i class="caret right icon" /> {next.title}
+        </a>
+      </div>
+    ) : (
+      <div class="back right">
+        <a href="#" onclick="history.back();return false;">
+          <span>◀ 返回</span>
+        </a>
+      </div>
+    )
+  }
+  <div class="clear"></div>
+</div>
+
+<style lang="scss" is:global>
+.page-pager {
+  max-width: 1100px;
+  font-size: 16px;
+  margin: 1em auto;
+  line-height: 2;
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+  .clear {
+    clear: both;
+  }
+  .back {
+    background: #a9a9a947;
+    border-radius: 10px;
+    padding: 3px 8px;
+    margin-right: 0.5em;
+    a {
+      color: #888;
+    }
+  }
+}
+</style>

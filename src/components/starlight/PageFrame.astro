@@ -1,0 +1,22 @@
+---
+// 覆盖 Starlight PageFrame：复刻原 Layout.vue 页面骨架。
+import PhotoSwipeMount from '@/components/theme/PhotoSwipeMount.astro'
+const { entry } = Astro.locals.starlightRoute
+const className = entry.data.className
+const isWebframe = !!entry.data.webframe
+---
+
+<div id="root" class:list={['root-container', className]}>
+  <div class="main-container">
+    <nav class="nav-menu">
+      <slot name="sidebar" />
+    </nav>
+    <div class:list={['content-outer', { fullscreen: isWebframe }]}>
+      <div class="content-inner">
+        <slot name="header" />
+        <slot />
+      </div>
+    </div>
+  </div>
+  <PhotoSwipeMount />
+</div>

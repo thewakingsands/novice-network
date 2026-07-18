@@ -1,0 +1,220 @@
+---
+// 复刻 NavTop.vue：固定顶栏（汉堡菜单、首页/搜索、页面标题+章节目录下拉、回顶部、暗色切换、二维码）。
+const { entry, headings } = Astro.locals.starlightRoute
+const title = entry.data.title
+const tocHeadings = (headings ?? []).filter((h) => h.depth >= 2 && h.depth <= 3)
+const hasToc = tocHeadings.length > 0
+---
+
+<nav class="nav-top">
+  <div class="ui inverted menu">
+    <a href="#" class="item icon-item hide-large" data-nav-hamburger aria-label="菜单">
+      <i class="bars icon"></i>
+    </a>
+    <a class="item icon-item" href="/" aria-label="首页">
+      <i class="home angle icon"></i>
+    </a>
+    <a class="item icon-item hide-small" href="/search.htm" aria-label="搜索">
+      <i class="search icon"></i>
+    </a>
+    <a href="#" class="item page-title" data-nav-title>
+      {hasToc && <i class="icon caret square down outline" data-toc-caret />}
+      <span class="hide-large">{title}</span>
+      <div class="hide-small">{hasToc ? '章节目录' : title}</div>
+    </a>
+    <div class="right menu">
+      <a class="item icon-item hide-small" href="#" data-nav-top aria-label="回到顶部">
+        <i class="double up angle icon"></i>
+      </a>
+      <a class="item icon-item" href="#" data-nav-dark aria-label="切换暗色">
+        <i class="icon sun" data-dark-icon></i>
+      </a>
+      <a class="item icon-item hide-small" href="#" data-nav-qr aria-label="二维码">
+        <i class="qrcode icon"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="qr-container" data-qr-container hidden>
+    <div><img alt="二维码" data-qr-img /></div>
+    <p>使用手机扫描二维码，即可在手机上阅读本文。如遇微信无法打开，请使用自带浏览器或谷歌浏览器。</p>
+  </div>
+
+  {
+    hasToc && (
+      <div class="toc-container" data-toc-container hidden>
+        <div class="toc">
+          <a href="#">{title}</a>
+          <ul>
+            {tocHeadings.map((h) => (
+              <li class={h.depth === 3 ? 'indent' : ''}>
+                <a href={`#${h.slug}`}>{h.text}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+</nav>
+
+<script>
+  import QRCode from 'qrcode'
+  import { gotoId } from '@/scripts/gotoId'
+
+  const root = document.documentElement
+
+  // 暗色切换（复用 Starlight 的 data-theme + localStorage key）
+  const darkIcon = document.querySelector<HTMLElement>('[data-dark-icon]')
+  const syncDarkIcon = () => {
+    const dark = root.dataset.theme === 'dark'
+    if (darkIcon) darkIcon.className = `icon ${dark ? 'moon' : 'sun'}`
+  }
+  syncDarkIcon()
+  document.querySelector('[data-nav-dark]')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    const dark = root.dataset.theme === 'dark'
+    const next = dark ? 'light' : 'dark'
+    root.dataset.theme = next
+    try {
+      localStorage.setItem('starlight-theme', next)
+    } catch {}
+    syncDarkIcon()
+  })
+
+  // 回到顶部
+  document.querySelector('[data-nav-top]')?.addEventListener('click', (e) => {
+    e.preventDefault()
+    gotoId('')
+  })
+
+  // 汉堡菜单（移动端）：切换左侧菜单
+  document
+    .querySelector('[data-nav-hamburger]')
+    ?.addEventListener('click', (e) => {
+      e.preventDefault()
+      document.querySelector('[data-nav-menu]')?.classList.toggle('show')
+    })
+
+  // 章节目录下拉
+  const tocContainer = document.querySelector<HTMLElement>('[data-toc-container]')
+  const caret = document.querySelector<HTMLElement>('[data-toc-caret]')
+  const titleBtn = document.querySelector('[data-nav-title]')
+  titleBtn?.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (!tocContainer) {
+      gotoId('')
+      return
+    }
+    const open = tocContainer.hasAttribute('hidden')
+    tocContainer.toggleAttribute('hidden', !open)
+    caret?.classList.toggle('outline', !open)
+  })
+  // 点击目录内锚点：平滑滚动并收起
+  tocContainer?.addEventListener('click', (e) => {
+    let el = e.target as HTMLElement | null
+    while (el && el.tagName !== 'A') el = el.parentElement
+    if (!el) return
+    const a = el as HTMLAnchorElement
+    const id = a.hash ? decodeURIComponent(a.hash.slice(1)) : ''
+    gotoId(id)
+    tocContainer.setAttribute('hidden', '')
+    caret?.classList.add('outline')
+    e.preventDefault()
+  })
+
+  // 二维码（悬浮生成）
+  const qrContainer = document.querySelector<HTMLElement>('[data-qr-container]')
+  const qrImg = document.querySelector<HTMLImageElement>('[data-qr-img]')
+  const qrBtn = document.querySelector('[data-nav-qr]')
+  let qrLoaded = false
+  qrBtn?.addEventListener('mouseenter', async () => {
+    qrContainer?.removeAttribute('hidden')
+    if (qrLoaded || !qrImg) return
+    qrLoaded = true
+    try {
+      qrImg.src = await QRCode.toDataURL(
+        `${location.origin}${location.pathname}?utm_source=self&utm_medium=qrcode`,
+        { width: 320, margin: 2 }
+      )
+    } catch {}
+  })
+  qrBtn?.addEventListener('mouseleave', () =>
+    qrContainer?.setAttribute('hidden', '')
+  )
+</script>
+
+<style lang="scss" is:global>
+.nav-top {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .ui.menu {
+    border-radius: 0;
+    .page-title {
+      flex: 1;
+      word-break: break-all;
+      overflow: hidden;
+      height: 40px;
+      justify-content: center;
+    }
+    .icon-item {
+      padding: 0 12px;
+      > .icon {
+        margin-right: 0;
+      }
+    }
+  }
+  .qr-container {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 320px;
+    background: #fff;
+    box-shadow: 2px 2px 6px 0px grey;
+    p {
+      padding: 10px;
+      padding-top: 0;
+    }
+  }
+  .toc-container {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .toc {
+      background: #3f3f3f;
+      font-size: 18px;
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: 0.5em;
+      max-height: 65vh;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 1em;
+        font-size: 95%;
+      }
+      li {
+        list-style: none;
+        &.indent {
+          padding-left: 1em;
+        }
+      }
+      a {
+        display: block;
+        padding: 0.5em 1.5em;
+        color: rgba(255, 255, 255, 0.5);
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+</style>

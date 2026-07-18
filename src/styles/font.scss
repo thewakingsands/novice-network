@@ -1,0 +1,8 @@
+// 移植自 theme/styles/font.styl（字体已移至 public/fonts/）
+@font-face {
+  font-family: 'FFXIV';
+  src:
+    url('/fonts/FFXIV_Lodestone_SSF.ttf') format('truetype'),
+    url('/fonts/FFXIV_Lodestone_SSF.woff') format('woff');
+  unicode-range: U+E020-E0DB;
+}
