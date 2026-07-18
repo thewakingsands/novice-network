@@ -1,0 +1,60 @@
+---
+// 复刻 Item.vue：物品链接（跳转中文维基）+ 图标。
+// 阶段 3：占位图标；阶段 5 接入构建期 cafemaker 烘焙真实图标。
+interface Props {
+  name?: string
+  type?: string
+  hq?: boolean
+  noname?: boolean
+  search?: boolean
+  cls?: string
+}
+const { name = '', hq, noname, search, cls } = Astro.props
+
+const wikiLink = search
+  ? `https://ff14.huijiwiki.com/wiki/ItemSearch?name=${encodeURIComponent(name)}`
+  : `https://ff14.huijiwiki.com/wiki/${encodeURIComponent('物品')}:${encodeURIComponent(name)}`
+const icon = '/images/icons/060051.png'
+---
+
+<span title="点击在最终幻想XIV中文维基上查看详情"
+  ><a href={wikiLink} target="_blank" rel="noopener"
+    ><span class:list={['item-container', cls]}
+      ><img src={icon} alt="物品" class="no-zoom" /></span
+    >{!noname && <span>{name}</span>}{hq && <i class="xiv hq" />}</a
+  ></span
+>
+
+<style lang="scss">
+img {
+  vertical-align: text-bottom;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 20% !important;
+  cursor: pointer !important;
+}
+.item-container {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.1em;
+  line-height: 1em;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15%;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at 50% -430%,
+      rgba(255, 255, 255, 0.6) 70%,
+      rgba(255, 255, 255, 0) 65%
+    );
+    box-shadow:
+      inset 0px 4px 4px 2px rgba(255, 255, 255, 0.3),
+      inset 0px -2px 4px 2px rgba(255, 255, 255, 0.1);
+  }
+}
+</style>

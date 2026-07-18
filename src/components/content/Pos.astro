@@ -1,0 +1,45 @@
+---
+// 复刻 Pos.vue：艾欧泽亚地图坐标触发点（点击打开交互地图，见阶段 5 mapLoader）。
+interface Props {
+  name?: string
+  sub?: string
+  x?: number
+  y?: number
+  id?: number
+}
+const { name = '', sub, x, y, id } = Astro.props
+const mapName = sub ? `${name},${sub}` : name
+---
+
+<span
+  class="eorzea-map-trigger"
+  data-map-name={mapName}
+  data-map-id={id}
+  data-map-x={x}
+  data-map-y={y}
+>
+  <i class="xiv link"></i>
+  <span>{name}</span>{sub && <span>[{sub}]</span>}{
+    x && y && <span> (X: {x}, Y: {y})</span>
+  }
+</span>
+
+<style lang="scss">
+.eorzea-map-trigger {
+  cursor: pointer;
+  color: #4183c4;
+  &:hover {
+    background: #e3f2fd;
+  }
+}
+i.xiv.link {
+  vertical-align: text-bottom;
+  color: #ffa042;
+}
+:global([data-theme='dark']) .eorzea-map-trigger {
+  color: #5bb0ed;
+  &:hover {
+    background: #212d36;
+  }
+}
+</style>
