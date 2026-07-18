@@ -1,5 +1,194 @@
 ---
-// 复刻 SiteSearch.vue：站内搜索页 UI。阶段 6 实现（MiniSearch + CJK bigram）。
+// 复刻 SiteSearch.vue：纯前端中文搜索（MiniSearch + CJK bigram，见 src/scripts/search.ts）。
 ---
 
-<div class="site-search" data-site-search><!-- 阶段 6：纯前端中文搜索 --></div>
+<div class="search-result">
+  <div class="ui fluid icon input">
+    <input type="text" placeholder="搜索……" autofocus data-search-input />
+    <i class="search icon"></i>
+  </div>
+  <div class="message" data-search-message hidden></div>
+  <div data-search-summary hidden></div>
+  <div data-search-list></div>
+  <div class="message pager" data-search-pager hidden>
+    <a href="#" class="ui button" data-search-prev>上一页</a>
+    <span data-search-pageinfo></span>
+    <a href="#" class="ui button" data-search-next>下一页</a>
+  </div>
+  <div class="ui segment segment-text orange" data-search-feedback hidden>
+    没有找到想要的结果？<a href="https://i.duotai.net/forms/zxjg2/wh956yns?url=search"
+      >点击这里</a
+    >告诉我们。
+  </div>
+</div>
+
+<script>
+  import { runSearch, type SearchResult } from '@/scripts/search'
+
+  const PAGE_SIZE = 10
+  const input = document.querySelector<HTMLInputElement>('[data-search-input]')
+  const message = document.querySelector<HTMLElement>('[data-search-message]')
+  const summary = document.querySelector<HTMLElement>('[data-search-summary]')
+  const list = document.querySelector<HTMLElement>('[data-search-list]')
+  const pager = document.querySelector<HTMLElement>('[data-search-pager]')
+  const pageInfo = document.querySelector<HTMLElement>('[data-search-pageinfo]')
+  const feedback = document.querySelector<HTMLElement>('[data-search-feedback]')
+  const prevBtn = document.querySelector('[data-search-prev]')
+  const nextBtn = document.querySelector('[data-search-next]')
+
+  let results: SearchResult[] = []
+  let query = ''
+  let page = 1
+  let timer: ReturnType<typeof setTimeout> | undefined
+
+  const trackEvent = (...a: (string | number)[]) => {
+    const w = window as unknown as {
+      gtag?: (...x: unknown[]) => void
+      _hmt?: unknown[]
+    }
+    w.gtag?.('event', 'search', { q: a })
+    w._hmt?.push(['_trackEvent', 'SiteSearch', ...a.map(String)])
+  }
+
+  function show(el: HTMLElement | null, on: boolean) {
+    el?.toggleAttribute('hidden', !on)
+  }
+
+  function render() {
+    if (!list || !summary || !pager || !pageInfo) return
+    const total = results.length
+    const pages = Math.ceil(total / PAGE_SIZE)
+    if (total === 0) {
+      list.innerHTML = ''
+      show(summary, false)
+      show(pager, false)
+      return
+    }
+    const startIdx = (page - 1) * PAGE_SIZE
+    const slice = results.slice(startIdx, startIdx + PAGE_SIZE)
+    summary.className = 'message'
+    summary.textContent = `共找到 ${total} 条结果，显示第 ${startIdx + 1} ~ ${Math.min(startIdx + PAGE_SIZE, total)} 条`
+    show(summary, true)
+    list.innerHTML = slice
+      .map(
+        (r, i) => `<section class="result">
+          <a href="${r.url}" class="title" data-idx="${startIdx + i}" data-where="title">${r.titleHtml}</a>
+          <a href="${r.url}" class="desc" data-idx="${startIdx + i}" data-where="body">${r.bodyHtml}</a>
+        </section>`
+      )
+      .join('')
+    pageInfo.textContent = `第 ${page} 页，共 ${pages} 页`
+    prevBtn?.classList.toggle('disabled', page <= 1)
+    nextBtn?.classList.toggle('disabled', page >= pages)
+    show(pager, true)
+  }
+
+  async function doSearch() {
+    if (!message) return
+    const q = query
+    message.textContent = '正在加载...'
+    show(message, true)
+    show(feedback, false)
+    try {
+      const r = await runSearch(q)
+      if (q !== query) return
+      results = r
+      page = 1
+      show(message, r.length ? false : true)
+      if (!r.length) {
+        message.textContent =
+          '没有找到结果。\n\n可换用简短的词语尝试，或点击页面下方反馈问题链接联系我们。'
+        show(feedback, true)
+      }
+      render()
+      trackEvent('search', String(page), q.length)
+    } catch (e) {
+      message.textContent = `在搜索时发生了错误：\n\n${e}`
+      show(message, true)
+    }
+  }
+
+  input?.addEventListener('input', () => {
+    query = input.value.trim()
+    clearTimeout(timer)
+    if (!query) {
+      results = []
+      render()
+      show(message, false)
+      show(feedback, false)
+      return
+    }
+    timer = setTimeout(doSearch, 300)
+  })
+  prevBtn?.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (page > 1) {
+      page--
+      render()
+    }
+  })
+  nextBtn?.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (page < Math.ceil(results.length / PAGE_SIZE)) {
+      page++
+      render()
+    }
+  })
+  list?.addEventListener('click', (e) => {
+    const a = (e.target as HTMLElement).closest('[data-where]') as HTMLElement | null
+    if (a) trackEvent('satisfy', a.dataset.where || '', Number(a.dataset.idx) + 1)
+  })
+
+  input?.focus()
+  // 支持 ?q= 预填
+  const qParam = new URLSearchParams(location.search).get('q')
+  if (qParam && input) {
+    input.value = qParam
+    query = qParam.trim()
+    doSearch()
+  }
+</script>
+
+<style lang="scss" is:global>
+.search-result {
+  .message {
+    padding-top: 1em;
+    white-space: pre-line;
+  }
+  .pager {
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .result {
+    padding-top: 1em;
+    &:hover .title {
+      color: #1e70bf;
+    }
+    &:hover .desc {
+      color: #444;
+    }
+  }
+  .title,
+  .desc {
+    display: block;
+    line-height: 1.5;
+  }
+  em {
+    color: #aa0000;
+    font-style: normal;
+  }
+  .title {
+    font-size: 1.15em;
+  }
+  .desc {
+    color: unset;
+    font-size: 0.95em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+</style>
