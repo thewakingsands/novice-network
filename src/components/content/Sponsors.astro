@@ -1,5 +1,119 @@
----
-// 复刻 Sponsors.vue：赞助者列表（运行时 fetch）。阶段 5 实现。
----
+<div class="sponsors-container" data-sponsors>
+  <div class="sponsors-header">感谢以下赞助者：</div>
+  <div class="sponsor-loading" data-sponsor-loading aria-live="polite">
+    正在加载赞助者……
+  </div>
+  <button class="sponsor-error" type="button" data-sponsor-error hidden></button>
+  <ul class="sponsors" data-sponsor-list hidden></ul>
+  <div class="sponsors-footer">
+    <a
+      href="https://afdian.com/a/hikarievo"
+      target="_blank"
+      rel="noopener noreferrer"
+    >点我发电</a>
+  </div>
+</div>
 
-<div class="sponsors" data-sponsors><!-- 阶段 5：fetch 赞助者列表 --></div>
+<script>
+  interface Sponsor {
+    avatar: string
+    sponsor: string
+  }
+
+  interface SponsorResponse {
+    data?: Sponsor[]
+    message?: string
+  }
+
+  const root = document.querySelector<HTMLElement>('[data-sponsors]')
+  if (root) {
+    const loading = root.querySelector<HTMLElement>('[data-sponsor-loading]')
+    const error = root.querySelector<HTMLButtonElement>('[data-sponsor-error]')
+    const list = root.querySelector<HTMLUListElement>('[data-sponsor-list]')
+
+    const loadSponsors = async () => {
+      loading?.removeAttribute('hidden')
+      error?.setAttribute('hidden', '')
+      try {
+        const response = await fetch(
+          'https://novice-network-asl.wakingsands.com/sponsors'
+        )
+        const json = (await response.json()) as SponsorResponse
+        if (!response.ok) {
+          throw new Error(json.message || `HTTP ${response.status}`)
+        }
+        const sponsors = Array.isArray(json.data) ? json.data : []
+        const items = sponsors.map((sponsor) => {
+          const item = document.createElement('li')
+          item.className = 'sponsor'
+
+          const avatar = document.createElement('div')
+          avatar.className = 'sponsor-avatar'
+          const image = document.createElement('img')
+          image.className = 'no-zoom'
+          image.src = sponsor.avatar
+          image.alt = sponsor.sponsor
+          image.loading = 'lazy'
+          avatar.append(image)
+
+          const name = document.createElement('div')
+          name.className = 'sponsor-name'
+          name.textContent = sponsor.sponsor
+          item.append(avatar, name)
+          return item
+        })
+        list?.replaceChildren(...items)
+        list?.removeAttribute('hidden')
+      } catch (cause) {
+        const message = cause instanceof Error ? cause.message : String(cause)
+        if (error) {
+          error.textContent = `赞助者加载失败：${message}（点击重试）`
+          error.removeAttribute('hidden')
+        }
+      } finally {
+        loading?.setAttribute('hidden', '')
+      }
+    }
+
+    error?.addEventListener('click', loadSponsors)
+    void loadSponsors()
+  }
+</script>
+
+<style lang="scss" is:global>
+.sponsors-container {
+  .sponsors {
+    list-style: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding-left: 0;
+  }
+  .sponsor {
+    display: inline-block;
+    width: 128px;
+    padding: 8px;
+    text-align: center;
+  }
+  .sponsor-name {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.9em;
+  }
+  .sponsor-avatar img {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .sponsor-error {
+    border: 0;
+    padding: 0;
+    background: none;
+    color: #db2828;
+    cursor: pointer;
+    font: inherit;
+  }
+}
+</style>

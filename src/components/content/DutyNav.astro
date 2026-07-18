@@ -1,9 +1,277 @@
 ---
-// 复刻 DutyNav.vue：副本导航（构建期渲染 365 条 + 客户端筛选）。阶段 5 实现。
+import { getCollection } from 'astro:content'
 import { DUTY } from '@/data/duty'
-const count = DUTY.length
+
+const docs = await getCollection('docs')
+const guideIds = new Set(
+  docs
+    .filter(
+      (entry) =>
+        entry.id.startsWith('duty/') && !entry.data.underConstruction
+    )
+    .map((entry) => entry.id)
+)
+
+const filterGroups = [
+  {
+    title: '等级',
+    tags: [
+      ['1~49', 'level-1-49'],
+      ['50', 'level-50'],
+      ['51~60', 'level-51-60'],
+      ['61~70', 'level-61-70'],
+      ['71~80', 'level-71-80'],
+      ['81~90', 'level-81-90'],
+      ['91~100', 'level-91-100'],
+    ],
+  },
+  {
+    title: '参加人数',
+    tags: [
+      ['4人', 'party-4'],
+      ['8人', 'party-8'],
+      ['24人', 'party-24'],
+    ],
+  },
+  {
+    title: '类型',
+    tags: [
+      ['迷宫挑战', 'type-dungeon'],
+      ['讨伐歼灭', 'type-trial'],
+      ['极神', 'type-extreme'],
+      ['普通 Raid', 'type-normal-raid'],
+      ['零式 Raid', 'type-savage-raid'],
+      ['绝境战', 'type-ultimate'],
+      ['团队任务', 'type-alliance'],
+    ],
+  },
+] as const
 ---
 
 <div class="duty-nav" data-duty-nav>
-  <!-- 阶段 5：完整列表渲染 + 筛选交互（共 {count} 条） -->
+  {
+    filterGroups.map((group) => (
+      <div class="tag-list" data-filter-group>
+        <div class="tag-title">{group.title}</div>
+        {group.tags.map(([title, filter]) => (
+          <button
+            class="tag"
+            type="button"
+            data-duty-filter={filter}
+            aria-pressed="false"
+          >
+            {title}
+          </button>
+        ))}
+      </div>
+    ))
+  }
+  <ul class="duty-list" data-duty-list>
+    {
+      DUTY.map((item) => {
+        const hasGuide = guideIds.has(`duty/${item.index}.htm`)
+        return (
+          <li
+            data-duty-item
+            data-level={item.level}
+            data-party-size={item.partySize}
+            data-duty-type={item.type}
+            data-duty-name={item.name}
+          >
+            {hasGuide ? (
+              <a href={`/duty/${item.index}.htm`}>
+                [{item.level}] {item.name}
+              </a>
+            ) : (
+              <span class="grayout" data-id={item.index}>
+                [{item.level}] {item.name} (暂无攻略)
+              </span>
+            )}
+          </li>
+        )
+      })
+    }
+  </ul>
+  <div data-duty-empty hidden>
+    <ul class="duty-list">
+      <li>
+        没有符合条件的副本，请
+        <button class="clear-filters" type="button" data-duty-clear>
+          清空筛选条件
+        </button>
+        后再试一次。
+      </li>
+    </ul>
+  </div>
 </div>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-duty-nav]')
+
+  if (root) {
+    const groups = root.querySelectorAll<HTMLElement>('[data-filter-group]')
+    const items = [...root.querySelectorAll<HTMLElement>('[data-duty-item]')]
+    const list = root.querySelector<HTMLElement>('[data-duty-list]')
+    const empty = root.querySelector<HTMLElement>('[data-duty-empty]')
+    const extremePattern =
+      /梦幻|歼殛|诗魂|上位|幽夜|幻想|传奇|究极神兵假想|孤念|狂想|绝境|追忆|幻耀|晖光|暝暗|终极/
+
+    const matches = (item: HTMLElement, filter: string) => {
+      const level = Number(item.dataset.level)
+      const partySize = Number(item.dataset.partySize)
+      const type = item.dataset.dutyType || ''
+      const name = item.dataset.dutyName || ''
+
+      switch (filter) {
+        case 'level-1-49':
+          return level < 50
+        case 'level-50':
+          return level === 50
+        case 'level-51-60':
+          return level > 50 && level <= 60
+        case 'level-61-70':
+          return level > 60 && level <= 70
+        case 'level-71-80':
+          return level > 70 && level <= 80
+        case 'level-81-90':
+          return level > 80 && level <= 90
+        case 'level-91-100':
+          return level > 90 && level <= 100
+        case 'party-4':
+          return partySize === 4
+        case 'party-8':
+          return partySize === 8
+        case 'party-24':
+          return partySize === 24
+        case 'type-dungeon':
+          return type === '迷宫挑战'
+        case 'type-trial':
+          return type === '讨伐歼灭战' && !extremePattern.test(name)
+        case 'type-extreme':
+          return type === '讨伐歼灭战' && extremePattern.test(name)
+        case 'type-normal-raid':
+          return (
+            type === '大型任务' &&
+            partySize === 8 &&
+            /[12345]$/.test(name) &&
+            !/零式/.test(name)
+          )
+        case 'type-savage-raid':
+          return type === '大型任务' && /零式/.test(name)
+        case 'type-ultimate':
+          return type === '绝境战'
+        case 'type-alliance':
+          return type === '大型任务' && partySize === 24
+        default:
+          return true
+      }
+    }
+
+    const update = () => {
+      const filters = [...root.querySelectorAll<HTMLButtonElement>('.tag.selected')]
+        .map((tag) => tag.dataset.dutyFilter)
+        .filter((filter): filter is string => Boolean(filter))
+      let visible = 0
+      for (const item of items) {
+        const show = filters.every((filter) => matches(item, filter))
+        item.toggleAttribute('hidden', !show)
+        if (show) visible += 1
+      }
+      list?.toggleAttribute('hidden', visible === 0)
+      empty?.toggleAttribute('hidden', visible !== 0)
+    }
+
+    for (const group of groups) {
+      group.addEventListener('click', (event) => {
+        const tag = (event.target as HTMLElement).closest<HTMLButtonElement>(
+          '[data-duty-filter]'
+        )
+        if (!tag || !group.contains(tag)) return
+        const select = !tag.classList.contains('selected')
+        for (const sibling of group.querySelectorAll<HTMLButtonElement>(
+          '[data-duty-filter]'
+        )) {
+          sibling.classList.remove('selected')
+          sibling.setAttribute('aria-pressed', 'false')
+        }
+        if (select) {
+          tag.classList.add('selected')
+          tag.setAttribute('aria-pressed', 'true')
+        }
+        update()
+      })
+    }
+
+    root.querySelector('[data-duty-clear]')?.addEventListener('click', () => {
+      for (const tag of root.querySelectorAll<HTMLButtonElement>(
+        '[data-duty-filter]'
+      )) {
+        tag.classList.remove('selected')
+        tag.setAttribute('aria-pressed', 'false')
+      }
+      update()
+    })
+  }
+</script>
+
+<style lang="scss">
+.duty-nav {
+  .tag-title,
+  .tag {
+    display: inline-block;
+    padding: 4px 10px;
+    user-select: none;
+  }
+  .tag-title {
+    width: 6em;
+    color: #999;
+  }
+  .tag {
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 2px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font: inherit;
+    color: inherit;
+    &:hover {
+      border-color: #ffa726;
+    }
+    &.selected {
+      border-color: #ef6c00;
+      background: #ffa726;
+      color: #fff;
+    }
+  }
+  .duty-list .grayout {
+    color: #888;
+  }
+  .clear-filters {
+    border: 0;
+    padding: 0;
+    background: none;
+    color: #2185d0;
+    cursor: pointer;
+    font: inherit;
+  }
+}
+:global([data-theme='dark']) .duty-nav .tag {
+  background: #333;
+  border-color: #555;
+  &:hover {
+    border-color: #ffa726;
+  }
+  &.selected {
+    background: #ffa726;
+    border-color: #ef6c00;
+    color: #fbffc4;
+  }
+}
+@media screen and (max-width: 720px) {
+  .duty-nav .tag-title {
+    display: block;
+    width: auto;
+    font-size: 0.95em;
+  }
+}
+</style>
