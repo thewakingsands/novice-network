@@ -1,5 +1,5 @@
 // 移植自 theme/styles/dark.styl（`.dark` → Starlight 的 `[data-theme='dark']`）
-[data-theme='dark'] {
+[data-theme='dark'] #root {
   color: #c9c7c5;
   h1,
   h2,

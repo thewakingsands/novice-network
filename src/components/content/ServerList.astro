@@ -1,5 +1,283 @@
----
-// 复刻 ServerList.vue：盛趣服务器状态（JSONP，运行时）。阶段 5 实现。
----
+<div class="server-status gap" data-server-list>
+  <div class="tip" aria-live="polite">
+    <div data-server-loading>
+      正在加载服务器信息，如果此消息一直存在，你可以直接去
+      <a
+        href="http://ff.sdo.com/web8/index.html#/servers"
+        target="_blank"
+        rel="noreferrer noopener"
+      >全服务器状况一览</a> 页面查看。
+    </div>
+    <div data-server-error hidden>
+      你可以在
+      <a
+        href="http://ff.sdo.com/web8/index.html#/servers"
+        target="_blank"
+        rel="noreferrer noopener"
+      >《最终幻想14》国服官网全服务器状况一览</a> 页面查看到当前的服务器状态信息。
+    </div>
+  </div>
+  <div class="inner gap" data-server-content hidden>
+    <div class="icon-description" aria-hidden="true">
+      <div class="item"><span class="status-icon operational"></span> 运行正常</div>
+      <div class="item"><span class="status-icon under-maintenance"></span> 正在维护</div>
+      <div class="item"><span class="status-icon new-character-enabled"></span> 可创建新角色</div>
+      <div class="item"><span class="status-icon new-character-disabled"></span> 不可创建新角色</div>
+      <div class="item"><span class="status-icon transfer-out"></span> 可转出</div>
+      <div class="item"><span class="status-icon transfer-in"></span> 可转入</div>
+    </div>
+    <div class="dc-list-wrapper">
+      <div class="dc-list" data-dc-list></div>
+    </div>
+    <div>
+      以上数据来源于
+      <a
+        href="http://ff.sdo.com/web8/index.html#/servers"
+        target="_blank"
+        rel="noreferrer noopener"
+      >《最终幻想14》国服官网全服务器状况一览</a> 页面。
+    </div>
+  </div>
+</div>
 
-<div class="server-list" data-server-list><!-- 阶段 5：JSONP 拉取服务器状态 --></div>
+<script>
+  interface ServerStatus {
+    name: string
+    iscreate: boolean
+    isint: boolean
+    isout: boolean
+    isnew: boolean
+    runing: boolean
+  }
+
+  interface DataCenterStatus {
+    AreaName: string
+    Group: ServerStatus[]
+  }
+
+  const root = document.querySelector<HTMLElement>('[data-server-list]')
+
+  if (root) {
+    const loading = root.querySelector<HTMLElement>('[data-server-loading]')
+    const error = root.querySelector<HTMLElement>('[data-server-error]')
+    const content = root.querySelector<HTMLElement>('[data-server-content]')
+    const dcList = root.querySelector<HTMLElement>('[data-dc-list]')
+    const globalCache = window as unknown as Record<string, unknown>
+    const cacheKey = '__ffcafeServerStatus'
+
+    const statusIcon = (className: string, label?: string) => {
+      const icon = document.createElement('span')
+      icon.className = `status-icon ${className}`
+      if (label) {
+        icon.title = label
+        icon.setAttribute('aria-label', label)
+      }
+      return icon
+    }
+
+    const render = (data: DataCenterStatus[]) => {
+      const centers = data.map((center) => {
+        const dc = document.createElement('div')
+        dc.className = 'dc'
+
+        const name = document.createElement('div')
+        name.className = 'dc-name'
+        name.textContent = center.AreaName
+        dc.append(name)
+
+        const servers = document.createElement('div')
+        servers.className = 'servers'
+        for (const server of center.Group) {
+          const row = document.createElement('div')
+          row.className = 'server'
+
+          const serverName = document.createElement('div')
+          serverName.className = `server-name${server.isnew ? ' new' : ''}`
+          serverName.title = `${server.name}：${server.isnew ? '享受新服优待' : '不享受新服优待'}`
+          serverName.append(
+            statusIcon(
+              server.runing ? 'operational' : 'under-maintenance',
+              server.runing ? '运行正常' : '正在维护'
+            )
+          )
+          const label = document.createElement('span')
+          label.textContent = server.name
+          serverName.append(label)
+
+          const labels = [
+            ...(server.isnew ? ['享受新服优待'] : []),
+            server.iscreate ? '可创建新角色' : '不可创建新角色',
+            server.isint ? '可转入' : '不可转入',
+            server.isout ? '可转出' : '不可转出',
+          ]
+          const icons = document.createElement('div')
+          icons.className = 'server-icons'
+          icons.title = labels.join('，')
+          icons.setAttribute('aria-label', labels.join('，'))
+          icons.append(
+            statusIcon(
+              server.iscreate
+                ? 'new-character-enabled'
+                : 'new-character-disabled'
+            ),
+            statusIcon(server.isint ? 'transfer-in' : ''),
+            statusIcon(server.isout ? 'transfer-out' : '')
+          )
+
+          row.append(serverName, icons)
+          servers.append(row)
+        }
+        dc.append(servers)
+        return dc
+      })
+
+      dcList?.replaceChildren(...centers)
+      loading?.setAttribute('hidden', '')
+      error?.setAttribute('hidden', '')
+      content?.removeAttribute('hidden')
+    }
+
+    const cached = globalCache[cacheKey]
+    if (Array.isArray(cached)) {
+      render(cached as DataCenterStatus[])
+    } else {
+      const callbackName = `__ffcafe_${Math.random().toString(36).slice(2)}`
+      const script = document.createElement('script')
+      script.src = `https://ff14act.web.sdo.com/api/serverStatus/getServerStatus?callback=${callbackName}`
+
+      const cleanup = () => {
+        script.remove()
+        delete globalCache[callbackName]
+      }
+      const fail = () => {
+        loading?.setAttribute('hidden', '')
+        error?.removeAttribute('hidden')
+        cleanup()
+      }
+      const timer = window.setTimeout(fail, 6000)
+
+      globalCache[callbackName] = (data: DataCenterStatus[]) => {
+        window.clearTimeout(timer)
+        if (!Array.isArray(data)) {
+          fail()
+          return
+        }
+        globalCache[cacheKey] = data
+        render(data)
+        cleanup()
+      }
+      script.addEventListener('error', () => {
+        window.clearTimeout(timer)
+        fail()
+      })
+      document.body.append(script)
+    }
+  }
+</script>
+
+<style lang="scss" is:global>
+.server-status {
+  &.gap,
+  &.gap > div {
+    margin-bottom: 1em;
+  }
+  .icon-description {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.8em;
+    margin-bottom: 0;
+  }
+  .server-name.new {
+    color: #ff5e00;
+  }
+  .dc-list-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .dc-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .dc {
+    margin: 1em 0.2em;
+    background-color: #eee;
+    border-radius: 8px;
+    border: 1px solid #c2c2c2;
+    overflow: hidden;
+    min-width: 220px;
+  }
+  .dc-name {
+    background-color: #737373;
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.8em;
+    text-align: center;
+  }
+  .server {
+    display: flex;
+    border-bottom: 1px solid #c2c2c2;
+    line-height: 2em;
+    padding: 0 0.6em;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .server-name {
+    flex: 1;
+    width: 8em;
+  }
+  .server-icons .status-icon {
+    margin: 0 0.2em;
+  }
+  .server span {
+    vertical-align: middle;
+  }
+  .status-icon {
+    width: 1em;
+    height: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    &.new-character-disabled {
+      background-image: url('/images/theme/serverlist/new-character-disabled.png');
+    }
+    &.new-character-enabled {
+      background-image: url('/images/theme/serverlist/new-character-enabled.png');
+    }
+    &.operational {
+      background-image: url('/images/theme/serverlist/operational.png');
+    }
+    &.transfer-out {
+      background-image: url('/images/theme/serverlist/transfer-out.png');
+    }
+    &.transfer-in {
+      background-image: url('/images/theme/serverlist/transfer-in.png');
+    }
+    &.under-maintenance {
+      background-image: url('/images/theme/serverlist/under-maintenance.png');
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .server-status .dc-list-wrapper::after {
+    content: '※ 左右滑动以浏览完整列表';
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+:global([data-theme='dark']) .server-status {
+  .dc-name {
+    background: #333;
+  }
+  .dc {
+    background: #222;
+    border-color: #666;
+  }
+  .server {
+    border-bottom-color: #666;
+  }
+}
+</style>

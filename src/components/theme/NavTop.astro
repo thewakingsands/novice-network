@@ -180,6 +180,9 @@ const hasToc = tocHeadings.length > 0
     }
   }
   .toc-container {
+    &[hidden] {
+      display: none;
+    }
     position: fixed;
     top: 40px;
     width: 100%;

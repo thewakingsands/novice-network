@@ -1,5 +1,137 @@
----
-// 复刻 BuffSearch.vue：编辑工具页的交互搜索（运行时 fetch cafemaker）。阶段 5 实现。
----
+<div class="buff-search" data-buff-search>
+  <label>
+    状态名称
+    <input type="search" autocomplete="off" data-buff-query />
+  </label>
+  <div class="buff-search-status" data-buff-status hidden aria-live="polite"></div>
+  <div class="buff-table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>代码</th>
+          <th>图标</th>
+          <th>名字</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody data-buff-results></tbody>
+    </table>
+  </div>
+</div>
 
-<div class="buff-search" data-buff-search><!-- 阶段 5：交互式 cafemaker 搜索 --></div>
+<script>
+  interface StatusResult {
+    ID: number
+    Icon: string
+    Name: string
+    Description: string
+  }
+
+  interface StatusResponse {
+    Results?: StatusResult[]
+  }
+
+  const root = document.querySelector<HTMLElement>('[data-buff-search]')
+  if (root) {
+    const input = root.querySelector<HTMLInputElement>('[data-buff-query]')
+    const status = root.querySelector<HTMLElement>('[data-buff-status]')
+    const results = root.querySelector<HTMLTableSectionElement>(
+      '[data-buff-results]'
+    )
+    let timer: number | undefined
+    let controller: AbortController | undefined
+
+    const showStatus = (message: string) => {
+      if (!status) return
+      status.textContent = message
+      status.toggleAttribute('hidden', !message)
+    }
+
+    const render = (items: StatusResult[]) => {
+      const rows = items.map((item) => {
+        const row = document.createElement('tr')
+
+        const codeCell = document.createElement('td')
+        const code = document.createElement('code')
+        code.textContent = `<Status id={${item.ID}} name=${JSON.stringify(item.Name)} />`
+        codeCell.append(code)
+
+        const iconCell = document.createElement('td')
+        const icon = document.createElement('img')
+        icon.className = 'no-zoom'
+        icon.src = new URL(item.Icon, 'https://cafemaker.wakingsands.com').href
+        icon.alt = item.Name
+        icon.loading = 'lazy'
+        iconCell.append(icon)
+
+        const name = document.createElement('td')
+        name.textContent = item.Name
+        const description = document.createElement('td')
+        description.textContent = item.Description
+
+        row.append(codeCell, iconCell, name, description)
+        return row
+      })
+      results?.replaceChildren(...rows)
+      showStatus(items.length ? '' : '没有找到匹配状态。')
+    }
+
+    const search = async (query: string) => {
+      controller?.abort()
+      if (!query) {
+        results?.replaceChildren()
+        showStatus('')
+        return
+      }
+      controller = new AbortController()
+      showStatus('正在搜索……')
+      try {
+        const response = await fetch(
+          `https://cafemaker.wakingsands.com/search?string=${encodeURIComponent(query)}&indexes=status&columns=ID,Icon,Name,Description`,
+          { signal: controller.signal }
+        )
+        if (!response.ok) throw new Error(`HTTP ${response.status}`)
+        const json = (await response.json()) as StatusResponse
+        if (input?.value.trim() !== query) return
+        render(Array.isArray(json.Results) ? json.Results : [])
+      } catch (cause) {
+        if (cause instanceof DOMException && cause.name === 'AbortError') return
+        const message = cause instanceof Error ? cause.message : String(cause)
+        showStatus(`搜索失败：${message}`)
+      }
+    }
+
+    input?.addEventListener('input', () => {
+      window.clearTimeout(timer)
+      const query = input.value.trim()
+      timer = window.setTimeout(() => void search(query), 300)
+    })
+  }
+</script>
+
+<style lang="scss" is:global>
+.buff-search {
+  input {
+    margin-left: 0.5em;
+    padding: 0.4em 0.6em;
+  }
+  .buff-search-status {
+    margin: 0.75em 0;
+  }
+  .buff-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+  table {
+    min-width: 720px;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  code {
+    white-space: nowrap;
+  }
+}
+</style>
