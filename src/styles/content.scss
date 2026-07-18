@@ -84,14 +84,19 @@
       color: #888;
     }
     p:last-child {
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
     }
     h1:last-child,
     h2:last-child,
     h3:last-child,
     h4:last-child,
     h5:last-child {
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
+    }
+    .sl-heading-wrapper {
+      h1, h2, h3, h4, h5 {
+        margin-top: 1em;
+      }
     }
     code {
       display: inline-block;
@@ -115,13 +120,17 @@
     }
     .sl-heading-wrapper {
       position: relative;
+      width: fit-content;
+      max-width: calc(100% - 1.5em);
       .sl-anchor-link {
         position: absolute;
         top: 0.25em;
-        right: 0;
+        left: 100%;
+        margin-left: 0.3em;
         opacity: 0;
         transition: opacity 150ms;
       }
+
       &:hover .sl-anchor-link,
       .sl-anchor-link:focus-visible {
         opacity: 1;
