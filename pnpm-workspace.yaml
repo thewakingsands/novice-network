@@ -1,0 +1,6 @@
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  preact: true
+minimumReleaseAgeExclude:
+  - astro@7.1.1

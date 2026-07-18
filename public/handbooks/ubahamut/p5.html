@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="UTF-8">
+	<title>巴哈姆特绝境战</title>
+	<meta name="keyword" content="最终幻想14,FF14,FFXIV,绝巴哈,暗搓搓,图文攻略,文字攻略">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+	<link rel="stylesheet" type="text/css" href="css/guide-global.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-global.css">
+	<link rel="stylesheet" type="text/css" href="css/vis-global.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<link rel="stylesheet" type="text/css" href="css/edit-vis.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+	<div style="display:none" id="image-frame">
+		<img class="hover-img" src="" alt="">
+	</div>
+	<div style="display:none" id="status-frame" class="hover-frame">
+		<div class="hover-block">
+			<div class="hover-header">
+				<div>
+					<div class="hover-icon">
+						<img src="img/status/Burns.png" alt="" class="icon-blur">
+						<img src="img/status/Burns.png" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="hover-header-name">火伤</div>
+					<div class="hover-categories">
+						<em class="hover-status-type">减益效果
+						</em>
+					</div>
+				</div>
+			</div>
+			<div class="hover-content-area">
+				<div class="hover-content-section">
+					<div class="hover-content-block">
+						<div class="hover-content-discription">
+							<p class="hover-content-discription-info">火属性持续伤害，体力逐渐流失(即死)</p>
+							<p class="hover-content-discription-duration"><a style="color:#0AA30E">持续时间：</a>30秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-wrapper">
+		<div class="site-title">
+			<div id="site-title-content" onclick="window.open('index.html','_self')">
+				<img src="img/title.png" alt="" id="site-title-img">
+			</div>
+		</div>
+		<div class="site-menu">
+			<div class="site-menu-area">
+				<div class="site-menu-item" onclick="window.open('p1.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">
+						双塔尼亚
+					</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p2.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">奈尔·神·达那</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p3.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">至尊巴哈姆特</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p4.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">万亿核爆</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="site-menu-item-name">黄金巴哈·施工中</div>
+				</div>
+			</div>
+		</div>
+		<div class="guide-thumbnail">
+								<img width="1920" height="1080" src="img/guide-thumbnail-p4.png" class="img-thumbnail">
+							</div>
+		<div class="site-content">
+			<div class="site-container">
+				<div class="page-content">
+					<main class="guide-main">
+						<article class="article">
+							<div class="guide-content">
+								<div class="info-section">
+									<br><br>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p4/p4-timeline.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<br>
+									<li>-至尊巴哈姆特由内而外散发出狂暴的气息！-</li>
+									<br>
+									<li>无尽顿悟</li>
+									<li>死亡轮回x3</li>
+									<li>百京核爆</li>
+									<br>
+									<li>死亡轮回x4</li>
+									<li>无尽顿悟</li>
+									<li>百京核爆</li>
+									<br>
+									<li>无尽顿悟</li>
+									<li>死亡轮回x5</li>
+									<li>百京核爆</li>
+									<br>
+									<li>无尽顿悟</li>
+									<li>死亡轮回x6</li>
+									<li>百京核爆</li>
+									<br>
+									<li>无尽顿悟</li>
+									<li>死亡轮回（狂暴）</li>
+									<br>
+									<h4>基本技能</h4>
+									<li>无尽顿悟：全团分摊机制，魔法伤害。p5一共有5次无尽顿悟，需要合理分配好全团的所有魔法减伤技能。
+										<table class="p5table">
+											<tr>
+												<td></td>
+												<td>学者</td>
+												<td>骑士</td>
+												<td>战士</td>
+												<td>机工</td>
+												<td>召唤</td>
+											</tr>
+											<tr>
+												<td>无尽顿悟1</td>
+												<td>野战治疗阵 单盾传染（CG一结束立刻传染）</td>
+												<td>血仇 幕帘</td>
+												<td>摆脱</td>
+												<td>/</td>
+												<td>昏乱</td>
+											</tr>
+											<tr>
+												<td>无尽顿悟2</td>
+												<td>野战治疗阵 小仙女·魔防 群盾</td>
+												<td>武装戍卫</td>
+												<td>血仇</td>
+												<td>武装解除</td>
+												<td>/</td>
+											</tr>
+											<tr>
+												<td>无尽顿悟3</td>
+												<td>野战治疗阵 小仙女·治疗量 群盾</td>
+												<td>血仇</td>
+												<td>摆脱</td>
+												<td>/</td>
+												<td>昏乱</td>
+											</tr>
+											<tr>
+												<td>无尽顿悟4</td>
+												<td>野战治疗阵 单盾传染</td>
+												<td>幕帘</td>
+												<td>血仇</td>
+												<td>武装解除</td>
+												<td>/</td>
+											</tr>
+											<tr>
+												<td>无尽顿悟5</td>
+												<td>野战治疗阵 小仙女·魔防 群盾</td>
+												<td>血仇 武装戍卫</td>
+												<td>摆脱</td>
+												<td>/</td>
+												<td>昏乱</td>
+											</tr>
+										</table>
+										<p class="attention-part">
+											<br>学者只需要保证技能轮流释放即可，不需要与其他职业配合。从哪个技能开始释放可以根据实际情况调整。
+											<br>战士机工和召唤在放好第一次的技能后，后面卡CD好就放即可。
+										</p>
+									</li>
+									<li>死亡轮回：双坦分摊机制，魔法伤害。BOSS对当前MT使用的圆形AOE，伤害可以与另一名玩家（副坦）分摊。这个技能是多段伤害，每一次使用后，下一次都会增加一段伤害。P5一共有4次死亡轮回，分别造成3,4,5,6段伤害。
+										<p class="attention-part">
+											<br>死亡轮回的处理方式有很多，这里给出一种策略
+											<br>第一次死亡轮回-战士：死斗
+											<br>第二次死亡轮回-骑士：铁壁 渐愈 壁垒 干预 万有复兴（法系） 
+											<br>第三次死亡轮回-骑士：无敌
+											<br>第四次死亡轮回-骑士：铁壁 预警 渐愈 干预 万有复兴（法系）
+										</p>
+									</li>
+									<h4>机制介绍</h4>
+
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+								</div>
+							</div>
+						</article>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/p1-timeline.js"></script>
+	<script src="js/p4-timeline.js"></script>
+	<script src="js/hover-global.js"></script>
+	<script src="js/status-database.js"></script>
+</body>
+
+</html>

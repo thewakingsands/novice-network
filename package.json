@@ -1,83 +1,46 @@
 {
   "name": "novice-network",
   "version": "0.1.0",
-  "main": "index.js",
+  "type": "module",
   "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs && rimraf dist/_includes",
-    "deploy:searchindex": "node tools/search-index/generate.js",
+    "dev": "astro dev",
+    "build": "astro build && node tools/postbuild/index.js",
+    "preview": "astro preview",
+    "check": "astro check && biome check",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "test": "vitest run",
     "deploy:filemap": "node tools/dist-files/dump.js",
     "deploy:cleanup": "node tools/dist-files/cleanup.js"
   },
   "devDependencies": {
-    "@vuepress/plugin-last-updated": "^1.0.0-alpha.46",
-    "@vuepress/plugin-nprogress": "^1.0.0-alpha.46",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "markdown-it-attrs": "^2.3.2",
-    "markdown-it-cjk-breaks": "^1.1.3",
-    "markdown-it-div": "^1.1.0",
-    "markdown-it-footnote": "^3.0.1",
-    "markdown-it-imsize": "^2.0.1",
-    "markdown-it-ins": "^2.0.0",
-    "markdown-it-mark": "^2.0.0",
-    "markdown-it-pangu": "^1.0.2",
-    "prettier": "^1.16.4",
-    "rimraf": "^2.6.3",
-    "vuepress": "^1.3.1",
-    "vuepress-plugin-clean-urls": "^1.0.3",
-    "vuepress-plugin-dehydrate": "^1.1.5",
-    "vuepress-plugin-minimal-analytics": "^0.1.4"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^7.0.3",
+    "@astrojs/starlight": "^0.41.3",
+    "@biomejs/biome": "^2.5.4",
+    "@types/node": "^26.1.1",
+    "astro": "^7.1.1",
+    "cheerio": "^1.2.0",
+    "github-slugger": "^2.0.0",
+    "hastscript": "^9.0.1",
+    "mdast-util-to-string": "^4.0.0",
+    "p-limit": "^7.3.0",
+    "remark-flexible-markers": "^1.3.5",
+    "remark-ins": "^1.2.5",
+    "sass": "^1.101.0",
+    "typescript": "^5.7.0",
+    "unist-util-visit": "^5.1.0",
+    "vitest": "^4.1.10"
   },
   "dependencies": {
     "@thewakingsands/axis-font-icons": "^0.3.0",
     "@thewakingsands/kit-tooltip": "0.3.5",
-    "cheerio": "^1.0.0-rc.3",
-    "clipboard": "^2.0.11",
-    "diff": "^4.0.1",
-    "glob": "^7.1.6",
-    "got": "^9.6.0",
-    "intersection-observer": "^0.5.1",
-    "isomorphic-fetch": "^2.2.1",
-    "mkdirp": "^0.5.1",
+    "minisearch": "^7.2.0",
     "normalize.css": "^8.0.1",
     "photoswipe": "^4.1.3",
-    "qrcode": "^1.3.3",
-    "semantic-ui-css": "^2.4.1",
-    "striptags": "^3.1.1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "standard",
-      "prettier",
-      "plugin:vue/essential"
-    ],
-    "plugins": [
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": "error"
-    },
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "eslintIgnore": [
-    "!docs/.vuepress",
-    "docs/.vuepress/public"
-  ],
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
-  "private": true
+    "qrcode": "^1.5.4",
+    "semantic-ui-css": "^2.5.0"
+  }
 }

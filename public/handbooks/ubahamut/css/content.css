@@ -1,0 +1,240 @@
+.info-section{
+	position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    background-repeat: repeat-x;
+    height: 100%;
+    width: 100%;
+    box-sizing: inherit;
+}
+
+.info-header{
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 2px;
+  	background-size: 100% 100%;
+    /* box-shadow: 0 1px 3px #222;
+    border-bottom: solid 1px #000; */
+}
+
+.info-header>div{
+	padding-left: 3px;
+}
+
+.info-icon{
+	position: relative;
+    float: left;
+    overflow: hidden;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.info-header-name{
+	font-size: 18px;
+    margin-top: 2px;
+    color: #eee;
+    text-shadow: 0em 0em 0.2rem #000, 0em 0em 0.2rem #000, 0em 0em 0.2rem #000, 0em 0em 0.3rem #000, 0em 0em 0.3rem #000;
+}
+
+.info-content-discription>li{
+	list-style:none; 
+	text-shadow: 0 0px 1px #333;
+}
+
+.info-content-area{
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px;
+    padding: 2px 2px 2px 33px ;
+}
+
+.info-map{
+	max-width: 300px;
+	box-sizing: inherit;
+}
+
+.info-map-img{
+	box-shadow: 0 0px 8px #222, 0 0px 8px #222;
+}
+
+.info-map>h1{
+	width: 170px;
+}
+
+.ui-btn-text{
+    font-family: "黑体";
+    font-size: 90%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    color: #444;
+	text-shadow: 
+	0em 0em 2px #000; 
+}
+
+/* .ui-btn-inner, .ui-collapsible-heading-toggle, .ui-fullsize, .ui-btn-icon-left{
+	max-width: 300px;
+	min-width: 150px;
+	border-radius: 4px;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: solid .5px #111;
+    background-color: #111;
+    background-image: linear-gradient(to bottom,#82827F 0,#939591 100%);
+    background-size: 100% 100%;
+    box-shadow: 0 0px 5px #222, 0 0px 5px #222;
+
+
+} */
+
+.chest-area{
+	max-width: 300px;
+	min-width: 150px;
+	border-radius: 4px;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 12px;
+    padding: 10px;
+    border: solid .5px #111;
+    background-color: #111;
+    background-image: linear-gradient(to bottom,#82827F 0,#939591 100%);
+    background-size: 100% 100%;
+    box-shadow: 0 0px 5px #222, 0 0px 5px #222;
+}
+
+.chest-icon{
+	position: relative;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    background-color: #444;
+    box-shadow: 0 1px 3px #222;
+}
+
+.chest-icon>img{
+	position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    max-width: 105%;
+    max-height: 105%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.chest-shade{
+	position: absolute;
+	float: left;
+	margin-top: 33px;
+	margin-left: 13px;
+	width: 90px;
+	height: auto;
+}
+
+.chest-num{
+	position: relative;
+    float: left;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    margin-left: 13px;
+    padding-top: 10px;
+}
+
+.chest-num>p{
+	font-size: 25px;
+	color: #E4DFD6;
+	text-shadow: 
+	0em 0em 0.1rem #000, 
+	0em 0em 0.1rem #000, 
+	0em 0em 0.1rem #000, 
+	0em 0em 0.3rem #000, 
+	0em 0em 0.3rem #000;
+	font-family: "方正姚体";
+}
+
+
+.info-section li{
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+.info-section h2{
+	font-size: 20px;
+    font-size: 2em;
+
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+
+    text-shadow: 0 0 0.2rem #222;
+}
+
+.info-section h3{
+	font-size: 1.5em;
+}
+
+
+/* .info-section p{
+	font-size: 100%;
+} */
+
+.figure{
+	max-height: 30rem;
+}
+
+.figure img{
+	max-height: 20rem;
+	box-sizing: inherit;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.aligncenter{
+    text-align: center;
+	margin: 2rem auto;
+	clear: both;
+	display: block;
+}
+
+.figure li{
+	list-style-type: none;
+	font-size: 0.8em;
+}
+
+.timeline-area{
+	margin: .5rem auto;
+}
+
+.attention-part{
+	color: #BF1717!important;
+}
+
+.remove-effect:link, .remove-effect:active, .remove-effect:hover, .remove-effect:visited{
+	text-decoration: none;
+	cursor:default;
+	color: red!important;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.p5table, .p5table tr, td{
+    padding: 0.5rem;
+    border:  #ff6600 1px dashed;
+    border-collapse: collapse;
+    border-color: #000;
+    text-align: center;
+}

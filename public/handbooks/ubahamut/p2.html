@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+	<meta charset="UTF-8">
+	<title>巴哈姆特绝境战</title>
+	<meta name="keyword" content="最终幻想14,FF14,FFXIV,绝巴哈,暗搓搓,图文攻略,文字攻略">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+	<link rel="stylesheet" type="text/css" href="css/guide-global.css">
+	<link rel="stylesheet" type="text/css" href="css/hover-global.css">
+	<link rel="stylesheet" type="text/css" href="css/vis-global.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<link rel="stylesheet" type="text/css" href="css/edit-vis.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+</head>
+<body>
+	<div style="display:none" id="image-frame">
+		<img class="hover-img" src="" alt="">
+	</div>
+	<div style="display:none" id="status-frame" class="hover-frame">
+		<div class="hover-block">
+			<div class="hover-header">
+				<div>
+					<div class="hover-icon">
+						<img src="img/status/Burns.png" alt="" class="icon-blur">
+						<img src="img/status/Burns.png" alt="">
+					</div>
+				</div>
+				<div>
+					<div class="hover-header-name">火伤</div>
+					<div class="hover-categories">
+						<em class="hover-status-type">减益效果
+						</em>
+					</div>
+				</div>
+			</div>
+			<div class="hover-content-area">
+				<div class="hover-content-section">
+					<div class="hover-content-block">
+						<div class="hover-content-discription">
+							<p class="hover-content-discription-info">火属性持续伤害，体力逐渐流失(即死)</p>
+							<p class="hover-content-discription-duration"><a style="color:#0AA30E">持续时间：</a>30秒</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-wrapper">
+		<div class="site-title">
+			<div id="site-title-content" onclick="window.open('index.html','_self')">
+				<img src="img/title.png" alt="" id="site-title-img">
+			</div>
+		</div>
+		<div class="site-menu">
+			<div class="site-menu-area">
+				<div class="site-menu-item" onclick="window.open('p1.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">
+						双塔尼亚
+					</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p2.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">奈尔·神·达那</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p3.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">至尊巴哈姆特</div>
+				</div>
+				<div class="site-menu-item" onclick="window.open('p4.html','_self')">
+					<div class="gap"></div>
+					<div class="site-menu-item-name">万亿核爆</div>
+				</div>
+				<div class="site-menu-item">
+					<div class="site-menu-item-name">黄金巴哈·施工中</div>
+				</div>
+			</div>
+		</div>
+		<div class="guide-thumbnail">
+								<img width="1920" height="1080" src="img/guide-thumbnail-p2.png" class="img-thumbnail">
+							</div>
+		<div class="site-content">
+			<div class="site-container">
+				<div class="page-content">
+					<main class="guide-main">
+						<article class="article">
+							<div class="guide-content">
+								<div class="info-section">
+									<br><br><br>
+									<p class="attention-part">※白银凶鸟篇攻略已经完整，不再进行特别更新。</p>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-timeline.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<br>
+									<li>陨石流*2</li>
+									<li>月华冲</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>-P2·龙神的加护-</li>
+									<li>双雷</li>
+									<li>奈尔台词：月流电圈+热离子光束/钢铁战车</li>
+									<li>火连线</li>
+									<li>死亡宣告踩圈*2</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>火连线+双雷</li>
+									<br>
+									<li>奈尔台词：热离子光束+钢铁战车/月流电圈</li>
+									<li>死亡宣告踩圈*3</li>
+									<li>双雷+火连线</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>奈尔台词：凶鸟冲+钢铁战车/月流电圈</li>
+									<li>双雷+火连线</li>
+									<li>死亡宣告踩圈*3</li>
+									<li>凶鸟尖喙→换T</li>
+									<br>
+									<li>-P3·小龙俯冲-</li>
+									<li>奈尔台词：(陨石流+月华冲)/(月华冲+热离子光束)</li>
+									<br>
+									<li>-P4·俯冲结束-</li>
+									<li>奈尔台词：任意</li>
+									<li>奈尔台词：任意</li>
+									<li>凶鸟尖喙→换T</li>
+									<li>巴哈姆特之爪</li>
+									<br>
+									<li>百万核爆（狂暴）</li>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-1.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<h4>基本技能</h4>
+									<li>天崩地裂:开场技能，场地正中央落下一把
+										<a  class="img-hover-area" name="skyfall">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;巨剑
+										</a>，击退所有玩家并造成基于距离衰减的伤害。巨剑落下的方形范围为即死区域。随后场地出现
+										<a  class="img-hover-area" name="plasmaburst">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;热离子爆发
+										</a>
+										的发光区域将场地十六等分，短暂延迟后发光区域爆炸，对踩在上面的额外玩家造成即死程度的伤害并附加麻痹效果。第一次爆炸结束后，发光区域和未发光区域将会互换，然后判定第二次热离子爆发。
+									<li>陨石流：分散机制。BOSS首先点名四名玩家，以玩家为中心造成圆形小范围伤害（判定范围约暗影核爆大小）。随后点名另外四名玩家，造成同样的效果，如果队伍有人死亡，则一名玩家将会被点名复数次陨石流。无减伤的情况下，陨石流的伤害在3w1～3w6左右，因此玩家必须彼此分散。</li>
+									<li>月华冲：小范围的死刑技能。BOSS从主坦位置落下，以MT为中心，造成小范围的特大伤害（判定范围约暗影核爆大小）。无任何减伤的情况下，月华冲的伤害在5w左右。其余玩家需要与MT保持足够的距离，避免被秒杀。</li>
+									<li>巴哈姆特之爪：无读条的死刑。对当前MT连续进行五次攻击，每次伤害在1w左右，这个技能的持续时间约为4秒。
+										<p class="attention-part">※由于普攻的攻击间隔为3秒，伤害也在1w左右，而巴哈姆特之爪非咏唱技能，因此实际上这个技能可以看做巴哈姆特之爪+两次普攻，伤害会比预想的要高。
+										</p>
+									</li>
+									<h4>阶段详解</h4>
+									<p>开场的天崩地裂有很多站法，核心在于全员受到击退伤害后，治疗能够第一时间将全员群抬到接近满血，并且所有人能够迅速的分散。这里介绍两种比较普遍的站法，第一种是集合站位——进入P2后全员选定一个拘束装置集合，骑士可以开启武装戍卫。击退后，再按事先分好的位置疾跑散开。</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/skyfall-1.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：固定一个标记点/拘束装置处集合，等待被天崩地裂击退。
+											</li>
+											<li class="text-align-center">
+											※右图：击退后，按各自分好的位置散开处理陨石流，距离远的最好提前开启疾跑。爆炸后左侧玩家朝左侧躲，右侧玩家朝右侧躲。
+											</li>
+											<li class="text-align-center">
+											※最好将BOSS引导都场地中间，因此让当前的MT（如图中战士）回到中间。图中站位仅作参考，开荒时请自行调整。
+											</li>
+											<li class="text-align-center">
+											※由于P1最后一个拘束装置落在D，因此将左图改成从D点击退的图示，右图改为D点击退后标记点的分布。（非必要）互换了忍者和战士的位置，这样奈尔月华冲时会回到12点方向。
+											</li>
+										</div>
+									</div>
+									<p class="attention-part">※集合站位好处在于骑士可以开启武装戍卫减少击退伤害。但是有的玩家分散的距离较长，需要提前开启疾跑跑到相应位置。
+									</p><br>
+									<p>第二种是三分站位——双坦一组，2DPS+1H分成两组，分别在三个拘束装置站好。击退后就近左右/前后分散即可。</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/skyfall-2.png" alt="">
+										<div>
+											<li class="text-align-center">
+											※左图：全员分成三组，两个坦克1组，1H+2DPS组成2组，分别站在三个拘束装置内。
+											</li>
+											<li class="text-align-center">
+											※右图：击退后，按各自分好的位置散开处理陨石流。
+											</li>
+											<li class="text-align-center">
+											※最好将BOSS引导都场地中间，因此让当前的MT（如图中战士）回到中间。图中站位仅作参考。如果击退后治疗需要原地奶人，可以让其他玩家远离。
+											</li>
+										</div>
+									</div>
+									<p class="attention-part">※三分站位好处在于分散的距离很短，不会出现某个玩家没有及时跑远而与其他人重叠站位的情况。但距离限制无法愈疗。
+									</p><br>
+									<p>一般治疗需要学会在天崩地裂时预读群刷/全大赦。如果预读失败，治疗被击退了无法奶到远处的玩家，直接就近抬血即可。由于DPS与治疗在同一组，因此不会出现加不到DPS的情况。如果时间允许，也可以立刻靠近中间群刷。</p><br>
+									<p class="attention-part">※是统一集合还是三分站位的选择权在于治疗。
+									</p><br>
+									<p class="attention-part">※正常情况下，天崩地裂大概会造成1w～1w5左右的伤害，如果伤害过高，请调整集合点尽可能贴近场中间，或是检查全员的血量以及盾类BUFF是否足够。</p><br>
+									<p>陨石流结束后，是对当前MT的月华冲+巴哈姆特之爪。如果此时是骑士MT，可以开启无敌，否则请开启足够减伤。如果担心后续减伤不足，巴哈姆特之爪结束后可以进行换T处理。随后BOSS将读条龙神的加护，进入奈尔的第二阶段。</p>
+
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-2.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>BOSS在读条龙神的加护后，场外会召唤5只不可选中的小龙（冰爪/火角/雷翼/光牙/暗尾），每条小龙会对玩家使用不同的技能。</p>
+									<h4>小龙技能</h4>
+									<li>烈火球：火龙与随机一名玩家连线，数秒后以连线玩家为中心造成圆形小范围伤害，伤害量约为9k～1w，并对范围内的所有玩家附加状态
+										<a  class="status-area" name="Firescorched">
+											<img src="img/status/Firescorched.png" alt="">
+											&nbsp;&nbsp;&nbsp;火角
+										</a>
+										。带有BUFF的玩家再次吃到火圈时将被秒杀。
+									<li>寒冰球：冰龙随机点名一名玩家，造成轻微伤害并附加效果
+										<a  class="status-area" name="Icebitten">
+											<img src="img/status/Icebitten.png" alt="">
+											&nbsp;&nbsp;&nbsp;冰爪
+										</a>
+										——带有BUFF的玩家再次吃到寒冰球时将被秒杀。
+									</li>
+									<li>雷光链：雷龙随机点名两名玩家(包括MT)，对这两名玩家造成轻等伤害，并附加
+										<a  class="status-area" name="Thunderstruck">
+											<img src="img/status/Thunderstruck.png" alt="">
+											&nbsp;&nbsp;&nbsp;雷翼
+										</a>
+										效果,持续5秒——效果结束时将对周围小范围玩家造成致死等级的伤害并附加麻痹效果。因此被点名的玩家需要远离人群。
+									</li>
+									<li>死亡风暴：暗龙随机点名复数名玩家，对这些玩家附加
+										<a  class="status-area" name="Doom">
+											<img src="img/status/Doom.png" alt="">
+											&nbsp;&nbsp;&nbsp;死亡宣告
+										</a>
+										状态，持续时间依次为6/10/16秒——效果结束时将对周围小范围玩家造成致死等级的伤害并附加麻痹效果。
+									</li>
+									<li>救世之翼：光龙随机点名一名玩家脚下出现光圈，短暂延迟后光圈爆炸，秒杀踩在上面的玩家，并在原地留下一个白圈。玩家踩在白圈上可以解除自身的
+										<a  class="status-area" name="Doom">
+											<img src="img/status/Doom.png" alt="">
+											&nbsp;&nbsp;&nbsp;死亡宣告
+										</a>
+										。
+									</li>
+									<h4>BOSS新增技能</h4>
+									<li>月流电圈：跑位机制。BOSS以自身为中心使用的大范围环形AOE，需要玩家站在BOSS判定圈内或者尽可能远离BOSS。</li>
+									<li>钢铁战车：跑位机制。BOSS以自身为中心使用的中等范围圆形AOE（约野战治疗阵大小），对范围内的玩家造成大量伤害并击退到场地边缘，需要玩家在技能判定前提前远离BOSS。</li>
+									<li>热离子光束：分摊机制，魔法伤害。BOSS随机对一名玩家使用的小范围AOE，造成大量伤害，尽可能全员站在一起分摊。</li>							
+									<li>凶鸟冲：分散机制，物理伤害。BOSS随机跳到一名玩家所在位置，造成轻微伤害并击退小范围内的其余玩家，因此所有玩家需要提前分散，防止被击退到边缘死亡。</li>
+									<li>凶鸟尖喙：4秒读条的坦克死刑，换坦机制，物理伤害。对当前坦克造成特大伤害，并附加一层
+										<a  class="status-area" name="PiercingResistanceDownII">
+											<img src="img/status/PiercingResistanceDownII.png" alt="">
+											&nbsp;&nbsp;&nbsp;突刺耐性大幅降低
+										</a>
+										效果。
+									</li><br>
+									<hr><br>
+									<p>P2阶段，奈尔将会在龙神的加护下，使用上述技能的各种组合。下面会详细解释每种核心机制的处理方法。</p>
+									<h4>核心机制一·冰火点名</h4>
+									<h5>※机制分析</h5>
+									<p>如下图的冰火时间轴所示，整个P2一共有4次火连线，而每次火连线之前，都将会有4名玩家被点名冰球。玩家会被固定分成两组，按分组顺序点名冰球，也就是说，如果玩家在第一次火分摊前被点名了冰球，除非出现减员，否则必定在第三次火分摊前再次被点名冰球。</p><br>
+									<p>另外，在第四次火线结束后，所有玩家将会再次被一轮冰球。</p><br>
+									<p>根据这个顺序可以知道，每个玩家至少吃两轮火球，至多吃三轮火球。</p>
+									<div id="p2.2-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P2冰火点名时间轴</li>
+										</div>
+									</div>
+									<h5>※处理方法</h5>
+									<p>理解机制后玩家可以根据队伍情况决定吃火球的顺序。</p>
+									<p>这里推荐采用：进-出-进-进的策略，也就是除了第二次火连线的人单独出去以外，其余火连线均分摊。这样即使过程中队伍出现1～2名减员，也能保证不会出现冰点名猝死的情况。第四次的分摊时为了防止前面火连线有人错过的情况下补BUFF，如果前面均处理正确，第四次是否分摊不重要。这里注意，第二次火连线的玩家可以不参与后续的分摊，分摊则最多只能再分摊一次（否则就变成进-进-进-进而连续吃到两个火BUFF）。</p><br>
+									<p class="attention-part">※冰与火的处理完全取决于个人，如果你理解了机制(有冰补火)，你可以完全根据实际情况考虑如何分摊火。这里给出的策略只是作为一种队伍统一行动的参考。
+									</p><br>
+									<p class="attention-part">※如果队内玩家吃火习惯不同（例如野队），推荐被火连线的玩家固定在场地中央1点站好。其余玩家根据自己习惯，或者根据有冰补火的原则吃火集合，不吃火远离即可。
+									</p><br>
+									<hr>
+									<h4>核心机制二·光暗点名</h4>
+									<h5>※机制分析</h5>
+									<p>死亡宣告一共会出现三轮，第一轮是两名玩家，后两轮是三名玩家。由于每名玩家死亡宣告的持续时间不同（6秒/10秒/16秒），白圈出现的时间也有先后顺序，因此BUFF时间短的玩家需要踩先出现的白圈。</p>
+									<h5>※处理方法</h5>
+									<p>及时看清自身BUFF的持续时间踩对应的白圈。（你也可以使用ACT的触发器功能监控）</p><br>
+									<p class="attention-part">※由于光暗点名总是在冰火雷点名过程中出现，因此处理的重点在于“头脑清醒”——看清死亡宣告的持续时间，根据时间想好「分摊火/放雷/踩白圈」的先后顺序。具体的处理方法将会在阶段详解中详细说明。
+									</p><br>
+									<hr>
+									<h4>核心机制三·奈尔的台词</h4>
+									<h5>※机制分析</h5>
+									<p>在BOSS的新增技能中，除了凶鸟尖喙外，其余的技能都没有任何读条/范围提示，需要根据奈尔的台词来判断她接下来使用的技能组合。</p><br>
+									<p>"月光啊！用你的炽热烧尽敌人！" &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+热离子光束</p>
+									<p>"月光啊！照亮铁血霸道！"&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+钢铁战车</p>
+									<br>
+									<p>"被炽热灼烧过的轨迹 乃成铁血霸道！" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+钢铁战车</p>
+									<p>"炽热燃烧！给予我月亮的祝福！" &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+月流电圈</p>
+									<br>
+									<p>"我降临于此，征战铁血霸道！" &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;凶鸟冲+钢铁战车</p>
+									<p>"我降临于此，对月长啸！"&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;凶鸟冲+月流电圈</p>
+									<br>
+									<p>"超新星啊，更加闪耀吧！照亮红月下炽热之地！" &emsp;&emsp; &emsp;——&emsp;月华冲+热离子光束</p>
+									<p>"超新星啊，更加闪耀吧！在星降之夜，称赞红月！" &emsp; &emsp;——&emsp;陨石流+月华冲</p>
+									<h5>※处理方法</h5>
+									<p>台词将会以气泡的样式显示在BOSS头上和聊天框中，这里推荐使用ACT监控或者由一名玩家来报机制。（上述列出的为P2会出现的台词，后续阶段会再补充）</p><br>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-2-1.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>龙神的加护过程中，一共有4次冰火雷点名+3次奈尔台词。在这里，我们分为四部分进行说明。</p>
+									<h4>第一次冰火雷+奈尔台词</h4>
+									<p>第一句台词为下面两种二选一：</p>
+									<p>"月光啊！用你的炽热烧尽敌人！" &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+热离子光束</p>
+									<p>"月光啊！照亮铁血霸道！"&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;月流电圈+钢铁战车</p><br>
+									<p>也就是月环后接分摊或者远离。同时这个过程中会出现冰火雷光暗的点名。我们来分解一下这个部分的处理。</p>
+									<div id="p2.3-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P2第一次冰火雷点名完整时间轴</li>
+										</div>
+										<div>
+											<li class="attention-part">※这里的救世之翼指的是小白圈出来的时间。由于光圈爆炸到白圈出来有咏唱时间，玩家实际上看到的动画效果应该是，第一个大光圈刷新→死亡宣告点名→光圈爆炸，白圈刷新。——感谢“迷路的小羊”提醒</li>
+										</div>
+									</div>
+									<p>首先是双雷点名+月环。两个被雷点名的玩家站在BOSS左上方和右上方，其余人站在BOSS正面，如下图所示三角站位。</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/lunarthunder.png" alt="">
+										<div>
+											<li>※「双雷+月流电圈」三分站位图示。</li>
+											<li>※从左往右放置雷的优先顺序可以参考 白魔-学者-忍者-龙骑-诗人-召唤-战士-骑士。例如白魔被点雷永远去左边，而骑士则永远去右边。</li>
+										</div>
+									</div>
+									<br>
+									<p>接着是热离子光束/钢铁战车+光暗点名+火线判定。为了确保能分摊到火，根据台词是热离子光束或者钢铁战车，我们分成以下两种移动方式。</p><br>
+									<p>※月流电圈+钢铁战车时，光暗点名+火分摊示意图:</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/icefire-1-1.png" alt="">
+										<div>
+											<li>※左图：月流电圈+双雷判定后，玩家远离BOSS躲开钢铁战车。</li>
+											<li>※中图：钢铁战车结束后，所有人回到BOSS正面准备分摊火圈，同时两名玩家被点名死亡宣告。</li>
+											<li>※右图：集合分摊火圈时，原来分散的位置将会出现第一个救世之翼的白圈。<br>在分摊火圈后，6秒死亡宣告的玩家去踩第一个白圈。</li>
+											<li>※后续第二个白圈由于没有冰火雷要注意，躲开即可，不作说明。</li>
+										</div>
+									</div>
+									<p class="attention-part">※被雷点名的玩家在远离钢铁战车时，要朝人群的一侧偏，确保能够及时和人群集合分摊火圈。
+									</p><br>
+									<p>※月流电圈+热离子光束时，光暗点名+火分摊示意图:</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/icefire-1-2.png" alt="">
+										<div>
+											<li>※左图：月流电圈+双雷判定后，雷点名玩家回人群分摊热离子光束。</li>
+											<li>※中图：热离子光束分摊后，所有人径直穿过BOSS躲开第一个白圈，同时分摊火连线。</li>
+											<li>※右图：集合分摊火圈后，6秒死亡宣告的玩家去踩第一个白圈。<br>
+											<li>※后续第二个白圈由于没有冰火雷要注意，躲开即可，不作说明。</li>
+										</div>
+									</div>
+									<p>第一句台词只会伴随6秒和10秒两个死亡宣告点名，并且是在冰火雷机制结束后才出现，因此比较简单，算是给玩家练习：分摊完火圈后第一个白圈爆炸，6秒死亡宣告的玩家去踩白圈消除，紧接着第二个白圈爆炸，10秒死亡宣告的玩家去踩白圈消除。最后BOSS会对MT使用五连巴哈姆特之爪，标志着进入第二次冰火雷。</p>
+									<br><hr>
+									<h4>第二次冰火雷+无台词</h4>
+									<p>BOSS在对MT使用巴哈姆特之爪的同时，会出现第二次火连线和双雷点名。根据进-出-进-进的原则，这三名玩家直接远离人群并且互相远离即可。这一次没有台词和光暗点名，非常简单。</p>
+									<br><hr>
+									<h4>第三次冰火雷+奈尔台词</h4>
+									<p>第三次冰火雷时，奈尔会先说出第二句台词，固定为下面两种：</p>
+									<p>"被炽热灼烧过的轨迹 乃成铁血霸道！" &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+钢铁战车</p>
+									<p>"炽热燃烧！给予我月亮的祝福！" &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;热离子光束+月流电圈</p>
+									<br>
+									<p>也就是分摊+远离/靠近BOSS。在第二次冰火雷结束后，被点名的三名玩家立刻回人群分摊。接着根据台词决定是远离躲开钢铁战车或者靠近躲开月流电圈。台词机制处理结束后是第三次冰火雷+光暗点名，完整时间轴如下：</p>
+									<div id="p2.4-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P2第三次冰火雷点名完整时间轴</li>
+										</div>
+									</div>
+									<br>
+									<p>随后会出现三次救世之翼的白圈，这一次死亡宣告的时间依次为6/10/16秒，玩家根据时间的多少依次踩白圈处理。雷点名的玩家在分散诱导雷圈出现后，所有人回BOSS正面分摊火线即可。</p>
+									<br>
+									<p class="attention-part">※然而这个阶段冰火雷点名会在第二个救世之翼的白圈爆炸的同时出现，也是最难的部分——运气不好一名玩家可能需要处理若干个机制。处理的关键在于所有人要非常清楚：如果自己同时被点名了火/雷/死亡宣告，处理的顺序是什么。首先没被点名的幸运玩家站在BOSS正面分摊火圈即可。</p><br>
+									<p class="attention-part">※着重说明一下复数点名的处理顺序供大家参考：<br>
+										<li>6秒死亡宣告：踩第一个白圈→放雷→分摊火。</li>
+										<li>10秒死亡宣告： 踩第二个白圈→放雷→分摊火。</li>
+										<li>16秒死亡宣告：放雷→踩第三个白圈→分摊火。</li>
+									</p>
+									<p class="attention-part">※请优先处理死亡宣告和雷圈，即使第三次没分摊到火圈，也可以在第四次冰火雷点名时进行补救。</li>
+									</p><br>
+									<p>火分摊后BOSS再次对MT使用巴哈姆特之爪，标志进入最后一次冰火雷点名机制。<br>
+
+									<br><hr>
+									<h4>第四次冰火雷+奈尔台词</h4>
+									<p>第三句奈尔的台词固定为：</p>
+									<p>"我降临于此，征战铁血霸道！" &emsp; &emsp;&emsp;——&emsp;凶鸟冲+钢铁战车</p>
+									<p>"我降临于此，对月长啸！"&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;——&emsp;凶鸟冲+月流电圈</p>
+									<br>
+									<p>也就是全员分散+远离/靠近BOSS。所有人先按分好的位置分散好，防止彼此靠的太近而被击退，分散站位可以参考下图。</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/ravendive.png" alt="">
+										<div>
+											<li>※凶鸟冲分散站位，仅作参考，请根据队伍实际情况调整。</li>
+										</div>
+									</div>
+									<p>凶鸟冲后，所有人根据台词决定是远离BOSS躲避钢铁战车或者靠近BOSS处理月流电圈。随后就是冰火雷机制，这一次冰火雷时间轴如下：</p>
+									<div id="p2.5-timeline-area" class="timeline-area"></div>
+									<div class="figure aligncenter">
+										<div>
+											<li>※P2第四次冰火雷点名完整时间轴</li>
+										</div>
+									</div>
+									<p class="attention-part">※第四次冰火雷相比第三次就简单一些。虽然机制依旧紧凑，但台词，冰火雷，光暗点名是先后出现彼此不重叠的。</p><br>
+									<p>台词处理完后首先是火连线+双雷点名。火分摊依旧回到BOSS正面分摊，这里火连线分摊是为了防止前面有人错过火圈而做的保险，如果前面该分摊的时候都分摊到了，那么这次不分摊也没有关系。而这一次双雷的判定时间会比火圈分摊晚，因此雷点名的玩家在火圈分摊后立刻远离人群即可（如果之前火分摊都处理正确→自己身上没有冰buff，也可以不分摊火→直接远离人群诱导雷圈）。</p><br>
+									<p class="attention-part">※由于第四次冰火雷之后还有一轮冰，因此所有人必须确保第四次火线结束后身上不能有冰buff。</p>
+									<br>
+									<p>三次救世之翼会在最后出现，不会与冰火雷重叠，因此比较简单，跟之前一样按持续时间不同依次解除BUFF。处理完纳尔会对MT读条「凶鸟尖喙」，MT开启减伤，ST嘲讽换坦，「龙神的加护」阶段结束正式进入小龙俯冲阶段。</p>
+									<br>
+									<h4>「龙神的加护」流程总结</h4>
+									<li>第一次冰火雷：固定两种模式</li>
+									<li>第二次冰火雷（简单无台词）：火出去+雷远离</li>
+									<li>第三次冰火雷（最难）：先处理台词→根据buff时间：踩白圈，雷分散→火分摊</li>
+									<li>第四次冰火雷（简单）：先处理台词→火分摊→雷分散→依次踩白圈</li>
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-3.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<h4>新增技能</h4>
+									<li>超新星：BOSS会点名玩家脚下出现黑圈
+										<a  class="img-hover-area" name="hypernova">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;超新星
+										</a>
+									，黑圈刚出现时第一段攻击只会对范围内的玩家造成轻微伤害。短暂延迟后，第二段攻击"万有引力"会将范围内的玩家拉到黑圈中心，造成伤害极高的出血效果。玩家被点名后需要及时远离黑圈范围。</li>
+									<h4>核心机制·小龙俯冲</h4>
+									<h5>※机制分析</h5>
+									<p>P2开场，BOSS在读条龙神的加护后，场外会出现5条小龙。在P3俯冲阶段，将会有3名玩家被点名<a  class="img-hover-area" name="greenpoint">
+											<img src="img/hover-sign.png" alt="">
+											&nbsp;&nbsp;&nbsp;俯冲标记
+										</a>
+									。接着，这五条小龙将会按顺时针2-1-2的顺序，从12点开始依次对标记消失的位置进行俯冲。也就是说，从12点开始顺时针第一二条龙（包括12点）将会俯冲第一个标记消失处，第三条龙俯冲第二个标记消失处，最后两条龙俯冲第三个标记消失处。</p>
+									<h5>※处理方法</h5>
+									<p>如下图所示，首先标记第一组两条小龙：根据场地标点A迅速确定12点，然后顺时针找到2条小龙。如果两只小龙距离较近，就将标记放在两只小龙的一侧，反之则将标记放在两只小龙的之间。</p>
+									<p>接着标记第二组一条小龙：找到第三只小龙，将标记放在小龙的一侧。</p>
+									<p>最后标记第三组两条小龙：找到最后两条小龙，同第一组的标记方式相同处理。</p>
+									<div class="figure aligncenter">
+										<img src="img/p2/dragonrush.png" alt="">
+										<div>
+											<li class="text-align-center">※左图为P2龙神加护读条后，出现的小龙位置。转阶段时玩家可以提前消除P1的BCD标记。</li>
+											<li class="text-align-center">※标记第一个俯冲位B：根据标记A迅速确定12点，顺时针找到第一二条龙。由于图中两条龙位置较远，B点标记在两条龙之间。</li>
+											<li class="text-align-center">※标记第二个俯冲位C：找到第三条龙，在第三条龙顺时针的一侧标记C点。</li>
+											<li class="text-align-center">※标记第三个俯冲位D：找到最后两条龙。由于图中两条龙位置较近，因此在两条龙顺时针的一侧标记D点。</li>
+											<li class="text-align-center">※最后俯冲效果如右图所示。</li>
+										</div>
+									</div>
+									<p class="attention-part">※负责标点的玩家注意，连续两个标点不要相撞（比如顺时针标记了B+逆时针标记C），容易导致后面玩家在放标记的时候被前面的小龙俯冲误伤。</p><br>
+									<p class="attention-part">※在俯冲点名消失前，BOSS会对点名的玩家使用二连超新星，玩家需要在标记点附近移动，躲开超新星的黑圈范围，在俯冲标记消失后再回人群。提前回来会导致俯冲范围变大。特别地，这里第二个俯冲标记点名的玩家可以先移动到标记附近，等黑洞出来后在移动到标记处，避免标记被黑洞覆盖而放不准。</p>
+									<h4>俯冲阶段的台词</h4>
+									<p>在俯冲阶段开始时，奈尔同样会说出一句台词，这次固定两种模式，陨石流+月华冲或者月华冲+热离子光束。</p>
+									<p>这一次奈尔的台词固定为：</p>
+									<p>"超新星啊，更加闪耀吧！在星降之夜，称赞红月！" &emsp; &emsp; &emsp;&emsp;——&emsp;陨石流+月华冲</p>
+									<p>"超新星啊，更加闪耀吧！照亮红月下炽热之地！"&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;——&emsp;月华冲+热离子光束</p>
+									<p>我们还是分成这两种情况具体说明一下：</p><br>
+									<p>※月华冲+热离子光束</p><br>
+									<p>比较简单的模式。俯冲标记出现后，被点名的玩家去放俯冲标记。其余人在场地正中间1点集合，MT单独远离人群。俯冲过程中，BOSS会先对MT使用月华冲，MT在月华冲后回到1点和人群一起分摊热离子光束。</p><br>
+									<p class="attention-part">※放俯冲点名的玩家开着疾跑回来和人群一起分摊（第三个俯冲点名的玩家有可能来不及，但其余7人一定要分摊到）。</p><br>
+									<p>※陨石流+月华冲</p><br>
+									<p>容易出现减员的情况。俯冲标记出现后，被点名的玩家去放俯冲标记。其余人在场地中央分散诱导陨石流。结束后MT单独远离人群诱导月华冲。</p><br>
+									<p class="attention-part">※陨石流会在第三次小龙俯冲前判定，意味着前两个放俯冲标记的玩家需要回到场地中央，因此在中央没被点名的玩家最好在B和C方向腾出空位，供放标记的人站。否则容易出现空间不够而被俯冲冲到或者重复吃到2个陨石流的情况。</p><br>
+									
+									<div class="paragraph-title">
+										<div class="paragraph-title-content">
+										<img src="img/p2/p2-4.png" class="paragraph-title-img">	
+										</div>
+										<div class="title-hr"></div>
+									</div>
+									<p>俯冲结束后奈尔会对MT使用巴哈姆特之爪，标志着奈尔阶段进入结尾。随后BOSS会使用两次台词，两次台词均是所有情况随机，由于俯冲后不会再有冰火雷，因此处理起来很容易。</p><br>
+									<p>台词后是凶鸟尖喙（换T）+巴哈姆特之爪。如果奈尔血量没有降至1%，那么他会读条「奈尔之怒」强制灭团。否则他将飞走，标志进入P3巴哈姆特阶段。</p>
+									<br><br>
+								</div>
+							</div>
+						</article>
+					</main>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/p1-timeline.js"></script>
+	<script src="js/p2-timeline.js"></script>
+	<script src="js/hover-global.js"></script>
+	<script src="js/status-database.js"></script>
+</body>
+
+</html>
