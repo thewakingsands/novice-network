@@ -1,7 +1,21 @@
 ---
 // 复刻 ContentContainer 右侧 sticky 文章目录 + “回到页首”。
 const { headings } = Astro.locals.starlightRoute
-const items = (headings ?? []).filter((h) => h.depth >= 2 && h.depth <= 3)
+const items = (headings ?? [])
+  .filter((heading) => heading.depth >= 2 && heading.depth <= 3)
+  .reduce<
+    Array<{
+      heading: (typeof headings)[number]
+      children: Array<(typeof headings)[number]>
+    }>
+  >((groups, heading) => {
+    if (heading.depth === 2 || groups.length === 0) {
+      groups.push({ heading, children: [] })
+    } else {
+      groups[groups.length - 1].children.push(heading)
+    }
+    return groups
+  }, [])
 ---
 
 {
@@ -9,9 +23,18 @@ const items = (headings ?? []).filter((h) => h.depth >= 2 && h.depth <= 3)
     <aside class="hide-small">
       <div class="articleTOC" data-anchor-scroll>
         <ul>
-          {items.map((h) => (
-            <li class={h.depth === 3 ? 'toc-3' : ''}>
-              <a href={`#${h.slug}`}>{h.text}</a>
+          {items.map(({ heading, children }) => (
+            <li>
+              <a href={`#${heading.slug}`}>{heading.text}</a>
+              {children.length > 0 && (
+                <ul>
+                  {children.map((child) => (
+                    <li>
+                      <a href={`#${child.slug}`}>{child.text}</a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>

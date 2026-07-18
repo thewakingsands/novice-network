@@ -29,7 +29,16 @@ const noTopPager = entry.data.noTopPager
 }
 
 <script>
-  import { bindAnchorScroll } from '@/scripts/gotoId'
+  import { bindAnchorScroll, gotoId } from '@/scripts/gotoId'
   const content = document.querySelector('[data-content]')
   if (content) bindAnchorScroll(content)
+
+  if (location.hash.length > 1) {
+    const rawId = location.hash.slice(1)
+    let id = rawId
+    try {
+      id = decodeURIComponent(rawId)
+    } catch {}
+    requestAnimationFrame(() => gotoId(id))
+  }
 </script>
