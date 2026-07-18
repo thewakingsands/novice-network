@@ -1,6 +1,7 @@
 ---
-// 复刻 Action.vue：技能图标 + 名称。
-// 阶段 3：无网络降级渲染（占位图标 + 名称）；阶段 5 接入构建期 cafemaker 烘焙图标与 action id。
+// 复刻 Action.vue：技能图标 + 名称。构建期经 cafemaker 烘焙图标与 action id（失败降级为占位）。
+import { searchAction } from '@/utils/cafemaker'
+
 interface Props {
   name?: string
   id?: number
@@ -8,12 +9,35 @@ interface Props {
   noname?: boolean
   cls?: string
 }
-const { name = '', id, noname, cls } = Astro.props
+const { name = '', id, job, noname, cls } = Astro.props
+
+// 职业名 → jobId（移植 Action.vue 的 jobList）
+const JOB_LIST: Record<string, number> = {
+  冒险者: 0, 剑术师: 1, 格斗家: 2, 斧术师: 3, 枪术师: 4, 弓箭手: 5, 幻术师: 6,
+  咒术师: 7, 刻木匠: 8, 锻铁匠: 9, 铸甲匠: 10, 雕金匠: 11, 制革匠: 12, 裁衣匠: 13,
+  炼金术士: 14, 烹调师: 15, 采矿工: 16, 园艺工: 17, 捕鱼人: 18, 骑士: 19, 武僧: 20,
+  战士: 21, 龙骑士: 22, 吟游诗人: 23, 白魔法师: 24, 黑魔法师: 25, 秘术师: 26,
+  召唤师: 27, 学者: 28, 双剑师: 29, 忍者: 30, 机工士: 31, 暗黑骑士: 32,
+  占星术士: 33, 武士: 34, 赤魔法师: 35, 青魔法师: 36, 绝枪战士: 37, 舞者: 38,
+  钐镰客: 39, 贤者: 40, 蝰蛇剑士: 196, 绘灵法师: 197,
+}
+const pageJob = Astro.locals.starlightRoute?.entry?.data?.jobName as
+  | string
+  | undefined
+const jobId = job ? JOB_LIST[job] : pageJob ? JOB_LIST[pageJob] : null
+
+const result = await searchAction(name, id, jobId)
+const iconUrl = result?.iconUrl
+const actionId = result?.id ?? id
 ---
 
-<strong data-ck-action-id={id} class:list={['action', cls]}>
+<strong data-ck-action-id={actionId} class:list={['action', cls]}>
   <div class="action-container">
-    <img src="about:blank" class="no-zoom hide" alt="" />
+    <img
+      src={iconUrl || 'about:blank'}
+      class:list={['no-zoom', { hide: !iconUrl }]}
+      alt=""
+    />
   </div>{!noname && <slot>{name}</slot>}
 </strong>
 

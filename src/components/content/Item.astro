@@ -1,6 +1,7 @@
 ---
-// 复刻 Item.vue：物品链接（跳转中文维基）+ 图标。
-// 阶段 3：占位图标；阶段 5 接入构建期 cafemaker 烘焙真实图标。
+// 复刻 Item.vue：物品链接（跳转中文维基）+ 图标。构建期经 cafemaker 烘焙图标（失败降级为默认图标）。
+import { searchItem } from '@/utils/cafemaker'
+
 interface Props {
   name?: string
   type?: string
@@ -14,7 +15,8 @@ const { name = '', hq, noname, search, cls } = Astro.props
 const wikiLink = search
   ? `https://ff14.huijiwiki.com/wiki/ItemSearch?name=${encodeURIComponent(name)}`
   : `https://ff14.huijiwiki.com/wiki/${encodeURIComponent('物品')}:${encodeURIComponent(name)}`
-const icon = '/images/icons/060051.png'
+const result = await searchItem(name)
+const icon = result?.iconUrl || '/images/icons/060051.png'
 ---
 
 <span title="点击在最终幻想XIV中文维基上查看详情"
