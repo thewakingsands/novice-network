@@ -20,15 +20,24 @@
 </div>
 
 <script>
-  interface StatusResult {
-    ID: number
-    Icon: string
+  interface Icon {
+    path: string
+    path_hr1?: string
+  }
+
+  interface StatusFields {
+    Icon: Icon
     Name: string
     Description: string
   }
 
+  interface StatusResult {
+    row_id: number
+    fields: StatusFields
+  }
+
   interface StatusResponse {
-    Results?: StatusResult[]
+    results?: StatusResult[]
   }
 
   const root = document.querySelector<HTMLElement>('[data-buff-search]')
@@ -50,24 +59,26 @@
     const render = (items: StatusResult[]) => {
       const rows = items.map((item) => {
         const row = document.createElement('tr')
+        const fields = item.fields
 
         const codeCell = document.createElement('td')
         const code = document.createElement('code')
-        code.textContent = `<Status id={${item.ID}} name=${JSON.stringify(item.Name)} />`
+        code.textContent = `<Status id={${item.row_id}} name=${JSON.stringify(fields.Name)} />`
         codeCell.append(code)
 
         const iconCell = document.createElement('td')
         const icon = document.createElement('img')
         icon.className = 'no-zoom'
-        icon.src = new URL(item.Icon, 'https://cafemaker.wakingsands.com').href
-        icon.alt = item.Name
+        const iconPath = fields.Icon.path_hr1 || fields.Icon.path
+        icon.src = `https://v2.xivapi.com/api/asset?${new URLSearchParams({ path: iconPath, format: 'png' })}`
+        icon.alt = fields.Name
         icon.loading = 'lazy'
         iconCell.append(icon)
 
         const name = document.createElement('td')
-        name.textContent = item.Name
+        name.textContent = fields.Name
         const description = document.createElement('td')
-        description.textContent = item.Description
+        description.textContent = fields.Description
 
         row.append(codeCell, iconCell, name, description)
         return row
@@ -85,15 +96,22 @@
       }
       controller = new AbortController()
       showStatus('正在搜索……')
+      const params = new URLSearchParams({
+        sheets: 'Status',
+        fields: 'Name,Icon,Description',
+        query: `Name~${JSON.stringify(query)}`,
+        language: 'chs',
+        limit: '100',
+      })
       try {
         const response = await fetch(
-          `https://cafemaker.wakingsands.com/search?string=${encodeURIComponent(query)}&indexes=status&columns=ID,Icon,Name,Description`,
+          `https://xivapi-v2.xivcdn.com/api/search?${params}`,
           { signal: controller.signal }
         )
         if (!response.ok) throw new Error(`HTTP ${response.status}`)
         const json = (await response.json()) as StatusResponse
         if (input?.value.trim() !== query) return
-        render(Array.isArray(json.Results) ? json.Results : [])
+        render(Array.isArray(json.results) ? json.results : [])
       } catch (cause) {
         if (cause instanceof DOMException && cause.name === 'AbortError') return
         const message = cause instanceof Error ? cause.message : String(cause)

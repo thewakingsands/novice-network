@@ -31,3 +31,18 @@
 2. 深色模式下文章主体文本颜色错误，应与原站暗色配色一致。
 3. 首页背景图未显示，应恢复原站首页背景。
 4. `ServerList`、`Sponsors`、`BuffSearch`、`DutyNav` 尚未实现，应按原站行为与本设计完成 Astro/vanilla TS 迁移。
+
+## 维护修复补充（2026-07-18）
+
+重构完成后的缺陷修复与数据源调整：
+
+1. 深色模式不再覆盖导航链接颜色，仅文章正文链接使用亮蓝色。
+2. 下载/安装常见问题移除重复换行造成的过大行距。
+3. 标题锚点按钮恢复右侧绝对定位，仅悬停或键盘聚焦时显示。
+4. 正文 flex 子项允许在窄屏收缩，避免被右侧文章目录遮挡。
+5. 硬件配置问答框恢复完整下内边距。
+6. `topic/daily` 的“友好部族 / 蛮族日常”标题在 include 内容后恢复上间距。
+7. 站外 HTTP(S) 链接在构建期统一添加 `target="_blank"` 与 `rel="noopener noreferrer"`。
+8. `@thewakingsands/kit-tooltip` 升级为 `0.4.0-beta.0`。
+9. `Action`、`Status`、`Item` 与 `BuffSearch` 从 cafemaker 迁移至 XIVAPI v2；构建期缓存改为 `.cache/xivapi-v2/`。
+10. `Sponsors` 改为构建期使用爱发电开放 API 获取并静态渲染；构建环境通过 `AFDIAN_USER_ID`、`AFDIAN_API_TOKEN` 提供凭据。

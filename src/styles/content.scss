@@ -13,13 +13,16 @@
   }
   .content-container-inner {
     max-width: 980px;
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 0;
     padding: 0 20px;
     word-break: break-all;
     font-size: 18px;
     blockquote {
       border-left: 0.4em solid #d9dde0;
       margin: 1em 0;
-      padding: 1em 1em 1px;
+      padding: 1em;
       background: rgba(217, 221, 224, 0.25);
       display: flow-root;
       > ul:first-child {
@@ -109,6 +112,23 @@
     .eorzea-time-chs {
       color: #39393c;
       padding: 0 2px;
+    }
+    .sl-heading-wrapper {
+      position: relative;
+      .sl-anchor-link {
+        position: absolute;
+        top: 0.25em;
+        right: 0;
+        opacity: 0;
+        transition: opacity 150ms;
+      }
+      &:hover .sl-anchor-link,
+      .sl-anchor-link:focus-visible {
+        opacity: 1;
+      }
+    }
+    > .included-page + .sl-heading-wrapper {
+      margin-top: 1em;
     }
   }
   aside {

@@ -1,10 +1,46 @@
-<div class="sponsors-container" data-sponsors>
+---
+import { fetchSponsors, type Sponsor } from '@/utils/afdian'
+
+let sponsors: Sponsor[] = []
+let loadFailed = false
+const userId = process.env.AFDIAN_USER_ID
+const apiToken = process.env.AFDIAN_API_TOKEN
+
+if (userId && apiToken) {
+  try {
+    sponsors = await fetchSponsors(userId, apiToken)
+  } catch (cause) {
+    loadFailed = true
+    console.warn('[afdian] 构建期获取赞助者失败', cause)
+  }
+} else {
+  loadFailed = true
+}
+---
+
+<div class="sponsors-container">
   <div class="sponsors-header">感谢以下赞助者：</div>
-  <div class="sponsor-loading" data-sponsor-loading aria-live="polite">
-    正在加载赞助者……
-  </div>
-  <button class="sponsor-error" type="button" data-sponsor-error hidden></button>
-  <ul class="sponsors" data-sponsor-list hidden></ul>
+  {
+    sponsors.length > 0 ? (
+      <ul class="sponsors">
+        {sponsors.map((sponsor) => (
+          <li class="sponsor">
+            <div class="sponsor-avatar">
+              <img
+                class="no-zoom"
+                src={sponsor.avatar}
+                alt={sponsor.sponsor}
+                loading="lazy"
+              />
+            </div>
+            <div class="sponsor-name">{sponsor.sponsor}</div>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      loadFailed && <div class="sponsor-error">赞助者名单暂时无法获取。</div>
+    )
+  }
   <div class="sponsors-footer">
     <a
       href="https://afdian.com/a/hikarievo"
@@ -13,72 +49,6 @@
     >点我发电</a>
   </div>
 </div>
-
-<script>
-  interface Sponsor {
-    avatar: string
-    sponsor: string
-  }
-
-  interface SponsorResponse {
-    data?: Sponsor[]
-    message?: string
-  }
-
-  const root = document.querySelector<HTMLElement>('[data-sponsors]')
-  if (root) {
-    const loading = root.querySelector<HTMLElement>('[data-sponsor-loading]')
-    const error = root.querySelector<HTMLButtonElement>('[data-sponsor-error]')
-    const list = root.querySelector<HTMLUListElement>('[data-sponsor-list]')
-
-    const loadSponsors = async () => {
-      loading?.removeAttribute('hidden')
-      error?.setAttribute('hidden', '')
-      try {
-        const response = await fetch(
-          'https://novice-network-asl.wakingsands.com/sponsors'
-        )
-        const json = (await response.json()) as SponsorResponse
-        if (!response.ok) {
-          throw new Error(json.message || `HTTP ${response.status}`)
-        }
-        const sponsors = Array.isArray(json.data) ? json.data : []
-        const items = sponsors.map((sponsor) => {
-          const item = document.createElement('li')
-          item.className = 'sponsor'
-
-          const avatar = document.createElement('div')
-          avatar.className = 'sponsor-avatar'
-          const image = document.createElement('img')
-          image.className = 'no-zoom'
-          image.src = sponsor.avatar
-          image.alt = sponsor.sponsor
-          image.loading = 'lazy'
-          avatar.append(image)
-
-          const name = document.createElement('div')
-          name.className = 'sponsor-name'
-          name.textContent = sponsor.sponsor
-          item.append(avatar, name)
-          return item
-        })
-        list?.replaceChildren(...items)
-        list?.removeAttribute('hidden')
-      } catch (cause) {
-        const message = cause instanceof Error ? cause.message : String(cause)
-        if (error) {
-          error.textContent = `赞助者加载失败：${message}（点击重试）`
-          error.removeAttribute('hidden')
-        }
-      } finally {
-        loading?.setAttribute('hidden', '')
-      }
-    }
-
-    error?.addEventListener('click', loadSponsors)
-    void loadSponsors()
-  }
-</script>
 
 <style lang="scss" is:global>
 .sponsors-container {
@@ -108,12 +78,7 @@
     object-fit: cover;
   }
   .sponsor-error {
-    border: 0;
-    padding: 0;
-    background: none;
     color: #db2828;
-    cursor: pointer;
-    font: inherit;
   }
 }
 </style>

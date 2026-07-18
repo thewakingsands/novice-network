@@ -1,6 +1,6 @@
 ---
-// 复刻 Action.vue：技能图标 + 名称。构建期经 cafemaker 烘焙图标与 action id（失败降级为占位）。
-import { searchAction } from '@/utils/cafemaker'
+// 复刻 Action.vue：技能图标 + 名称。构建期经 XIVAPI v2 烘焙图标与 action id（失败降级为占位）。
+import { searchAction } from '@/utils/xivapi'
 
 interface Props {
   name?: string

@@ -2,6 +2,7 @@ import remarkFlexibleMarkers from 'remark-flexible-markers'
 import remarkGfm from 'remark-gfm'
 import remarkIns from 'remark-ins'
 import { rehypeCleanInline } from './rehype-clean-inline'
+import { rehypeExternalLinks } from './rehype-external-links'
 import { rehypeLazyImages } from './rehype-lazy-images'
 import { rehypeLegacyTable } from './rehype-legacy-table'
 import { rehypePangu } from './rehype-pangu'
@@ -35,13 +36,15 @@ export const remarkPlugins: RemarkPlugin[] = [
  * 1. VuePress slugify 覆写 heading id（在 Astro 默认 id 之后运行以覆盖）
  * 2. 表格包裹 .md-table + Semantic UI 类
  * 3. markdown 图片 loading=lazy
- * 4. 清理 mark/ins 的自动 class（对齐原站纯标签）
- * 5. pangu 中西文间距（最后，作用于最终文本）
+ * 4. 站外链接新窗口打开
+ * 5. 清理 mark/ins 的自动 class（对齐原站纯标签）
+ * 6. pangu 中西文间距（最后，作用于最终文本）
  */
 export const rehypePlugins: RehypePlugin[] = [
   rehypeVuepressSlug,
   rehypeLegacyTable,
   rehypeLazyImages,
+  rehypeExternalLinks,
   rehypeCleanInline,
   rehypePangu,
 ]
