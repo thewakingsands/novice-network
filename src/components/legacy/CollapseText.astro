@@ -1,0 +1,60 @@
+---
+// 复刻原 CollapseText.vue：`::: collapse 标题` 折叠容器（客户端开合）。
+interface Props {
+  summary?: string
+}
+const { summary = '' } = Astro.props
+---
+
+<collapse-text class="ui segment collaspe-text">
+  <div class="summary">
+    <i class="caret icon expand-icon right"></i>
+    <span>{summary}</span>
+  </div>
+  <div class="details" hidden>
+    <slot />
+  </div>
+</collapse-text>
+
+<script>
+  class CollapseText extends HTMLElement {
+    connectedCallback() {
+      const summary = this.querySelector<HTMLElement>('.summary')
+      const details = this.querySelector<HTMLElement>('.details')
+      const icon = this.querySelector<HTMLElement>('.expand-icon')
+      if (!summary || !details || !icon) return
+      summary.addEventListener('click', () => {
+        const expanded = details.hasAttribute('hidden')
+        if (expanded) {
+          details.removeAttribute('hidden')
+          icon.classList.remove('right')
+          icon.classList.add('down')
+        } else {
+          details.setAttribute('hidden', '')
+          icon.classList.remove('down')
+          icon.classList.add('right')
+        }
+      })
+    }
+  }
+  if (!customElements.get('collapse-text')) {
+    customElements.define('collapse-text', CollapseText)
+  }
+</script>
+
+<style lang="scss">
+.collaspe-text.ui.segment {
+  font-size: 1em;
+  display: table;
+  display: flow-root;
+  .summary {
+    cursor: pointer;
+    font-size: 1em;
+  }
+  .details {
+    margin-top: 1em;
+    font-size: 0.95em;
+    line-height: 1.75;
+  }
+}
+</style>
