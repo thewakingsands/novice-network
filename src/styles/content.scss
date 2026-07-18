@@ -107,7 +107,6 @@
       display: inline-block;
       vertical-align: text-top;
       padding: 0 5px;
-      font-size: 0.8em;
       border: 1px solid #ddd;
       border-radius: 3px;
       background: #fcfcfc;
@@ -117,6 +116,10 @@
       max-width: 100%;
       max-height: 16em;
       overflow: auto;
+      code {
+        background: transparent;
+        border: none;
+      }
     }
     .local-time-chs,
     .eorzea-time-chs {
