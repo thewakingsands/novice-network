@@ -19,7 +19,8 @@
 
 const OPEN_DIV = /^;;;(\S.*)$/
 const CLOSE_DIV = /^;;;\s*$/
-const OPEN_CONTAINER = /^:::\s+(collapse|segment|job)\s+(.*)$/
+// `:::` 后允许有或没有空格：`::: collapse 标题`、`:::segment grey`、`:::job monk dps`
+const OPEN_CONTAINER = /^:::\s*(collapse|segment|job)\s+(.*)$/
 const CLOSE_CONTAINER = /^:::\s*$/
 
 /** 各容器组件对应的导入路径（供注入 import 使用） */
@@ -125,6 +126,12 @@ export function transformLegacyContainers(source: string): ContainerResult {
     }
 
     out.push(line)
+  }
+
+  // 复刻 markdown-it-container 在文档结束时自动闭合未收尾的容器
+  while (stack.length) {
+    const block = stack.pop()
+    if (block) out.push('', block.close, '')
   }
 
   return { code: out.join('\n'), used }

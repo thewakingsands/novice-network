@@ -1,4 +1,5 @@
 import remarkFlexibleMarkers from 'remark-flexible-markers'
+import remarkGfm from 'remark-gfm'
 import remarkIns from 'remark-ins'
 import { rehypeCleanInline } from './rehype-clean-inline'
 import { rehypeLazyImages } from './rehype-lazy-images'
@@ -20,6 +21,8 @@ import type { RehypePlugin, RemarkPlugin } from './types'
  * 5. CJK 软换行 → <br>（两侧 CJK 除外）
  */
 export const remarkPlugins: RemarkPlugin[] = [
+  // 自带 gfm（表格/删除线/自动链接），关闭单波浪线删除线以对齐 markdown-it（仅 ~~ 生效）
+  [remarkGfm, { singleTilde: false }],
   [remarkFlexibleMarkers, { markerClassName: () => [] }],
   remarkIns,
   remarkHeadingAttrs,

@@ -1,0 +1,38 @@
+---
+// 复刻 XIVFontList.vue：axis 字体图标表（编辑工具页用）。
+import icons from '@thewakingsands/axis-font-icons/characters.json'
+
+const rows = Object.entries(icons as Record<string, string[]>).map(
+  ([char, font]) => {
+    const symbol = String.fromCodePoint(Number.parseInt(char, 16))
+    const nameSecondary =
+      font[0] === char || !font[1] || `${font[1]}`.includes('疑')
+    const descSecondary = `${font[1]}`.includes('疑')
+    return { char, symbol, font, nameSecondary, descSecondary }
+  }
+)
+---
+
+<table class="ui selectable compact grey striped unstackable table">
+  <thead>
+    <tr><th>符号</th><th>码点</th><th>名称</th><th>说明</th></tr>
+  </thead>
+  <tbody>
+    {
+      rows.map((r) => (
+        <tr>
+          <td>{r.symbol}</td>
+          <td>{r.char}</td>
+          <td class:list={[{ secondary: r.nameSecondary }]}>{r.font[0]}</td>
+          <td class:list={[{ secondary: r.descSecondary }]}>{r.font[1]}</td>
+        </tr>
+      ))
+    }
+  </tbody>
+</table>
+
+<style lang="scss">
+.secondary {
+  color: #999;
+}
+</style>

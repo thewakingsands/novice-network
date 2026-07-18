@@ -1,0 +1,60 @@
+---
+// 复刻 Action.vue：技能图标 + 名称。
+// 阶段 3：无网络降级渲染（占位图标 + 名称）；阶段 5 接入构建期 cafemaker 烘焙图标与 action id。
+interface Props {
+  name?: string
+  id?: number
+  job?: string
+  noname?: boolean
+  cls?: string
+}
+const { name = '', id, noname, cls } = Astro.props
+---
+
+<strong data-ck-action-id={id} class:list={['action', cls]}>
+  <div class="action-container">
+    <img src="about:blank" class="no-zoom hide" alt="" />
+  </div>{!noname && <slot>{name}</slot>}
+</strong>
+
+<style lang="scss">
+:global(.cap) .action-container {
+  margin-left: -1em;
+  margin-bottom: -0.1em;
+  vertical-align: bottom;
+}
+img {
+  vertical-align: bottom;
+  width: 1em;
+  height: 1em;
+  cursor: pointer !important;
+  &.hide {
+    visibility: hidden;
+  }
+}
+.action-container {
+  margin-left: 0.2em;
+  margin-bottom: 0.2em;
+  display: inline-block;
+  position: relative;
+  line-height: 1em;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15%;
+    pointer-events: none;
+    background: radial-gradient(
+      circle at 50% -430%,
+      rgba(255, 255, 255, 0.6) 70%,
+      rgba(255, 255, 255, 0) 65%
+    );
+    box-shadow:
+      inset 0px 4px 4px 2px rgba(255, 255, 255, 0.3),
+      inset 0px -2px 4px 2px rgba(255, 255, 255, 0.1);
+  }
+}
+</style>

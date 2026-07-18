@@ -1,0 +1,20 @@
+---
+// 复刻 ZhaoDai.vue：邀请码，客户端每次访问随机选择。
+const codeList = [
+  '018g-0ey9-373r-43s8',
+  '056h-k2dq-xbgl-55vj',
+  '0171-n15r-r9rl-48v4',
+  '018t-uj1a-hr7j-5318',
+]
+---
+
+<mark data-zhaodai={JSON.stringify(codeList)}>{codeList[0]}</mark>
+
+<script>
+  for (const el of document.querySelectorAll<HTMLElement>('mark[data-zhaodai]')) {
+    try {
+      const list = JSON.parse(el.dataset.zhaodai || '[]') as string[]
+      if (list.length) el.textContent = list[Math.floor(Math.random() * list.length)]
+    } catch {}
+  }
+</script>

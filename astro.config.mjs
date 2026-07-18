@@ -17,7 +17,9 @@ export default defineConfig({
   outDir: 'dist',
   trailingSlash: 'never',
   // 自定义 remark/rehype 插件（.md 与 .mdx 均生效；mdx 集成默认继承此配置）
+  // 关闭内置 gfm，改用 remarkPlugins 里的 remark-gfm（singleTilde:false），以对齐 markdown-it
   markdown: {
+    gfm: false,
     remarkPlugins,
     rehypePlugins,
   },

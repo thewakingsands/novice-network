@@ -18,8 +18,8 @@ export const collections = {
         webframe: z.string().optional(),
         /** 职业页名称（原 jobName） */
         jobName: z.string().optional(),
-        /** 详情攻略链接（原 detailguide） */
-        detailguide: z.string().optional(),
+        /** 详情攻略标记/链接（原 detailguide，可为布尔或字符串） */
+        detailguide: z.union([z.string(), z.boolean()]).optional(),
       }),
     }),
   }),

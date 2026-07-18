@@ -1,0 +1,37 @@
+---
+// 复刻 Status.vue：状态效果图标 + 名称。
+// 阶段 3：无网络降级渲染；阶段 5 接入构建期 cafemaker 烘焙图标与描述。
+interface Props {
+  name?: string
+  id?: number
+  dispel?: boolean
+  stack?: number
+}
+const { name = '', dispel } = Astro.props
+---
+
+<strong class:list={['status', dispel && 'dispel']}>
+  <img src="about:blank" class="no-zoom hide" alt="" />
+  <slot>{name}</slot>
+</strong>
+
+<style lang="scss">
+.status.dispel::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: #dfedff;
+  position: absolute;
+  margin-left: calc(0.25em + 1px);
+  border-radius: 2px;
+  box-shadow: 0 0 1px 1px #65c6ff;
+}
+img {
+  vertical-align: middle;
+  margin-left: 0.2em;
+  cursor: pointer !important;
+  &.hide {
+    visibility: hidden;
+  }
+}
+</style>

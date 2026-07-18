@@ -1,0 +1,29 @@
+---
+// 复刻 IconHeader.vue：带图标的段落标题。
+interface Props {
+  img?: string
+}
+const { img = '' } = Astro.props
+---
+
+<p class="icon-header">
+  <img class="no-zoom" src={img} alt="" />
+  <span><slot /></span>
+</p>
+
+<style lang="scss" is:global>
+.icon-header {
+  > img {
+    width: 2.5em;
+    height: 2.5em;
+  }
+  > img,
+  > span {
+    vertical-align: middle;
+  }
+  > span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+</style>

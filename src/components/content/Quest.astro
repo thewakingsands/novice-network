@@ -1,0 +1,33 @@
+---
+// 复刻 Quest.vue：任务链接（跳转中文维基），带任务类型图标。
+interface Props {
+  name?: string
+  type?: 'main' | 'side' | 'plus'
+  search?: boolean
+}
+const { name = '', type = 'side', search = false } = Astro.props
+
+const ICONS: Record<string, string> = {
+  main: '/images/icons/061412.png',
+  side: '/images/icons/061411.png',
+  plus: '/images/icons/061419.png',
+}
+const icon = ICONS[type] ?? ICONS.side
+
+const wikiLink = search
+  ? `https://ff14.huijiwiki.com/index.php?title=QuestSearch&name=${encodeURIComponent(name)}`
+  : `https://ff14.huijiwiki.com/wiki/${encodeURIComponent('任务')}:${encodeURIComponent(name)}`
+---
+
+<span title="点击在最终幻想XIV中文维基上查看详情"
+  ><a href={wikiLink} target="_blank" rel="noopener"
+    ><img src={icon} alt="任务" class="no-zoom" />{name}</a
+  ></span
+>
+
+<style lang="scss">
+img {
+  vertical-align: middle;
+  cursor: pointer !important;
+}
+</style>

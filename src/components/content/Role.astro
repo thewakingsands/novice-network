@@ -1,0 +1,15 @@
+---
+// 复刻 Role.vue：职业图标（20px）。
+interface Props {
+  name?: string
+}
+const { name = '' } = Astro.props
+---
+
+<img src={`/images/jobs/${name}.png`} class="no-zoom sm-icon" height="20" alt={name} />
+
+<style lang="scss">
+img {
+  margin-right: 0.1em;
+}
+</style>
