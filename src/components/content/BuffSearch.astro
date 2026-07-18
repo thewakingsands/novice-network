@@ -70,7 +70,7 @@
         const icon = document.createElement('img')
         icon.className = 'no-zoom'
         const iconPath = fields.Icon.path_hr1 || fields.Icon.path
-        icon.src = `https://v2.xivapi.com/api/asset?${new URLSearchParams({ path: iconPath, format: 'png' })}`
+        icon.src = `https://xivapi-v2.xivcdn.com/api/asset?${new URLSearchParams({ path: iconPath, format: 'png' })}`
         icon.alt = fields.Name
         icon.loading = 'lazy'
         iconCell.append(icon)

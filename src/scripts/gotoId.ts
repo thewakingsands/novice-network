@@ -1,4 +1,20 @@
 // 复刻原 Layout.vue 的 gotoId：平滑滚动、-45px 顶栏偏移、3 秒 .scroll-focus 高亮。
+function expandCollapsedAncestors(element: HTMLElement): void {
+  let ancestor = element.parentElement
+  while (ancestor) {
+    if (
+      ancestor.classList.contains('details') &&
+      ancestor.parentElement?.tagName === 'COLLAPSE-TEXT' &&
+      ancestor.hasAttribute('hidden')
+    ) {
+      ancestor.removeAttribute('hidden')
+      const icon = ancestor.parentElement.querySelector('.expand-icon')
+      icon?.classList.remove('right')
+      icon?.classList.add('down')
+    }
+    ancestor = ancestor.parentElement
+  }
+}
 export function gotoId(id: string): void {
   const scroller = document.scrollingElement || document.documentElement
   let scrollTop = 0
@@ -9,14 +25,15 @@ export function gotoId(id: string): void {
       if (!named.length) return
       el = named[0] as HTMLElement
     }
+    expandCollapsedAncestors(el)
     el.classList.add('scroll-focus')
     setTimeout(() => el?.classList.remove('scroll-focus'), 3000)
     scrollTop = el.getBoundingClientRect().top + scroller.scrollTop - 45
   }
   try {
-    scroller.scrollTo({ top: scrollTop, behavior: 'smooth' })
+    window.scrollTo({ top: scrollTop, behavior: 'smooth' })
   } catch {
-    scroller.scrollTop = scrollTop
+    window.scrollTo(0, scrollTop)
   }
 }
 

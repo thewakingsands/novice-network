@@ -6,7 +6,7 @@ import XIVAPI from '@thewakingsands/xivapi-v2'
 import pLimit from 'p-limit'
 
 const CACHE_DIR = path.resolve(process.cwd(), '.cache/xivapi-v2')
-const ASSET_API = 'https://v2.xivapi.com/api/asset'
+const ASSET_API = 'https://xivapi-v2.xivcdn.com/api/asset'
 const limit = pLimit(8)
 const memory = new Map<string, unknown>()
 const xivapi = new XIVAPI({ language: 'chs' })
