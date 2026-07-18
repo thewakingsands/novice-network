@@ -10,25 +10,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 签出仓库
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v4
       - name: 安装 Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
-          cache: 'yarn'
-      - name: 缓存 VuePress
-        uses: actions/cache@v3
+          node-version: 'lts/*'
+          cache: 'pnpm'
+      - name: 缓存 cafemaker 图标查询
+        uses: actions/cache@v4
         with:
-          path: ~/vuepresscache
-          key: vuepress-${{ hashFiles('yarn.lock') }}
+          path: .cache/cafemaker
+          key: cafemaker-${{ github.run_id }}
+          restore-keys: cafemaker-
       - name: 安装依赖
-        run: yarn --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: 构建网站
-        run: yarn vuepress build docs --cache $HOME/vuepresscache && rm -rf dist/_includes
+        run: pnpm build
         env:
-          NODE_OPTIONS: '--openssl-legacy-provider'
+          PUBLIC_GA4_ID: ${{ secrets.PUBLIC_GA4_ID }}
       - name: 导出部署密钥
         run: echo "$DEPLOY_KEY" > ci/deploy-key
         env:
@@ -37,8 +40,6 @@ jobs:
         run: |
           chmod +x ./ci/deploy.sh
           ./ci/deploy.sh
-        env:
-          UPDATE_KEY: ${{ secrets.UPDATE_KEY }}
       - name: 触发网站更新
         run: curl -XPOST $GITPAGES_UPDATE_URL
         env:

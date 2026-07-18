@@ -31,7 +31,7 @@ for (const rel of walk(DOCS, (r) => r.endsWith('.md'))) {
   }
 }
 
-// 实际 URL 集（dist 中的 index.html）
+// 实际 URL 集（dist）：index.html → 目录 URL；平铺后的 *.htm 文件 → 该路径
 const actual = new Set()
 for (const rel of walk(DIST, (r) => path.basename(r) === 'index.html')) {
   const posix = rel
@@ -39,6 +39,9 @@ for (const rel of walk(DIST, (r) => path.basename(r) === 'index.html')) {
     .join('/')
     .replace(/(^|\/)index\.html$/, '')
   actual.add(posix === '' ? '/' : `/${posix}`)
+}
+for (const rel of walk(DIST, (r) => r.endsWith('.htm'))) {
+  actual.add(`/${rel.split(path.sep).join('/')}`)
 }
 
 const missing = [...expected].filter((u) => !actual.has(u)).sort()

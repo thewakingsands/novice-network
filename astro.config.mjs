@@ -116,6 +116,8 @@ export default defineConfig({
       title: '新大陆见闻录 - 最终幻想14新手入坑指南手册',
       description:
         '「新大陆见闻录」网站为最终幻想14超实用萌新手册入坑指南，为FF14中文玩家提供涵盖广泛全面、清晰易懂的新人入坑攻略指引。推荐玩法大全，练级指南，从入门到精通。',
+      // 沿用原站 favicon.ico
+      favicon: '/favicon.ico',
       // 使用纯前端自建搜索（见 §5），关闭 Starlight 内置 Pagefind
       pagefind: false,
       // 使用自定义 src/pages/404.astro（全屏随机背景），关闭 Starlight 默认 404
