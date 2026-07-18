@@ -3,6 +3,8 @@ import { fileURLToPath } from 'node:url'
 import mdx from '@astrojs/mdx'
 import starlight from '@astrojs/starlight'
 import { defineConfig } from 'astro/config'
+import { rehypePlugins, remarkPlugins } from './src/plugins/index.ts'
+import { legacySyntaxPlugin } from './src/plugins/vite-legacy-syntax.ts'
 
 const SITE = 'https://ff14.org'
 
@@ -14,6 +16,11 @@ export default defineConfig({
   site: SITE,
   outDir: 'dist',
   trailingSlash: 'never',
+  // 自定义 remark/rehype 插件（.md 与 .mdx 均生效；mdx 集成默认继承此配置）
+  markdown: {
+    remarkPlugins,
+    rehypePlugins,
+  },
   integrations: [
     starlight({
       title: '新大陆见闻录 - 最终幻想14新手入坑指南手册',
@@ -38,6 +45,7 @@ export default defineConfig({
     mdx(),
   ],
   vite: {
+    plugins: [legacySyntaxPlugin()],
     css: {
       preprocessorOptions: {
         scss: {

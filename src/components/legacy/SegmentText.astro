@@ -1,0 +1,28 @@
+---
+// 复刻原 SegmentText.vue：`::: segment 类名` 容器。
+interface Props {
+  className?: string
+}
+const { className = '' } = Astro.props
+---
+
+<div class:list={['ui', 'segment', 'segment-text', className]}>
+  <slot />
+</div>
+
+<style lang="scss">
+.segment-text.ui.segment {
+  font-size: 1em;
+  display: table; /* IE hack */
+  display: flow-root;
+  h4 {
+    font-size: 1.05em;
+  }
+  h5 {
+    font-size: 1.02em;
+  }
+  & + *:last-child {
+    margin-bottom: 0;
+  }
+}
+</style>
