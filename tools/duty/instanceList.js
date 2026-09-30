@@ -16,6 +16,9 @@ const types = [
 ]
 
 types[28] = '绝境战'
+types[30] = '多变迷宫'
+types[37] = '诛灭战'
+types[39] = '深层迷宫讨伐'
 
 const ids = lines[0].split(',')
 const title = lines[1].split(',')

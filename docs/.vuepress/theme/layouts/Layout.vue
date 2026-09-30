@@ -68,7 +68,7 @@
   order 2
   flex 1
   margin-top 40px
-  padding-left 240px
+  padding-left 250px
   width 100%
   min-height 100vh
   @media screen and (max-width: 1200px) and (min-width: 961px)
@@ -115,7 +115,14 @@
     @media screen and (max-width 960px)
       font-size 0.9em
       border 2px dashed #ccc
-</style>
+.job-page
+  .content-container 
+    .content-container-inner
+      width 1300px
+      max-width 100%
+    aside
+      display none
+    </style>
 
 <script>
 import Root from './Root.vue'

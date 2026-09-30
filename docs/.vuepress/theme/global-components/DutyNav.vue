@@ -102,6 +102,11 @@ export default {
               title: '81~90',
               filter: x => x.level > 80 && x.level <= 90,
               selected: false
+            },
+            {
+              title: '91~100',
+              filter: x => x.level > 90 && x.level <= 100,
+              selected: false
             }
           ]
         },
@@ -162,6 +167,11 @@ export default {
             {
               title: '团队任务',
               filter: x => x.type === '大型任务' && x.partySize === 24,
+              selected: false
+            },
+            {
+              title: '其他',
+              filter: x => x.type === '多变迷宫' || x.type === '诛灭战' || x.type === '深层迷宫讨伐',
               selected: false
             }
           ]
