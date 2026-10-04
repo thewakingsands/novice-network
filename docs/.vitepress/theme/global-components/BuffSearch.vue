@@ -13,15 +13,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="b in list" :key="b.Id">
+        <tr v-for="b in list" :key="b.ID">
           <td>
             <code>&lt;Status :id="{{ b.ID }}" name="{{ b.Name }}" /&gt;</code>
           </td>
           <td>
-            <img
-              class="no-zoom"
-              :src="'https://cafemaker.wakingsands.com' + b.Icon"
-            />
+            <img class="no-zoom" :src="formatIconUrl(b.Icon)" />
           </td>
           <td>{{ b.Name }}</td>
           <td>{{ b.Description }}</td>
@@ -32,6 +29,8 @@
 </template>
 
 <script>
+import { formatIconUrl } from '@thewakingsands/xivapi-v2'
+import { searchBuffs } from '../utils/xivapi'
 
 export default {
   data() {
@@ -42,14 +41,11 @@ export default {
     }
   },
   methods: {
+    formatIconUrl,
     async updateList(q) {
-      const json = await (await fetch(
-        `https://cafemaker.wakingsands.com/search?string=${encodeURIComponent(
-          q
-        )}&indexes=status&columns=ID,Icon,Name,Description`
-      )).json()
+      const results = await searchBuffs(q)
       if (this.query === q) {
-        this.list = json.Results
+        this.list = results
       }
     }
   },

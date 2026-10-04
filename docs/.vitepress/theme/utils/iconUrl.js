@@ -1,3 +1,5 @@
+import { formatIconUrl } from '@thewakingsands/xivapi-v2'
+
 export function getIconUrl(id) {
   id = parseInt(id)
   let idStr = '' + id
@@ -14,5 +16,5 @@ export function getIconUrl(id) {
   }
   let idGroup = idStr.substring(0, 3) + '000'
 
-  return `https://cafemaker.wakingsands.com/i/${idGroup}/${idStr}.png`
+  return formatIconUrl(`/i/${idGroup}/${idStr}.png`)
 }

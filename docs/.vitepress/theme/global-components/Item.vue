@@ -43,7 +43,8 @@ img
     box-shadow inset 0px 4px 4px 2px rgba(255,255,255,0.3), inset 0px -2px 4px 2px rgba(255,255,255,0.1)
 </style>
 <script>
-import { searchItem } from '../utils/cafeMaker'
+import { formatIconUrl } from '@thewakingsands/xivapi-v2'
+import { searchItem } from '../utils/xivapi'
 
 const cache = {}
 
@@ -73,7 +74,7 @@ export default {
       if (!item || !item.Icon) {
         return '/images/icons/060051.png'
       }
-      return 'https://cafemaker.wakingsands.com' + item.Icon
+      return formatIconUrl(item.Icon)
     },
     async setItemIcon() {
       if (cache[this.name]) {

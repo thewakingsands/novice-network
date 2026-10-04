@@ -1,7 +1,9 @@
 /* globals $ */
+import { getIconUrl } from './iconUrl'
+
 var map, eorzea, loadingArguments, loadingError, $loading, $mapContainer
 var regionMap = {}
-var MARKER_URL = 'https://cafemaker.wakingsands.com/i/060000/060561.png'
+var MARKER_URL = getIconUrl(60561)
 
 function setupMap() {
   if (window.YZWF.mapSettedUp) {
@@ -84,6 +86,7 @@ function closeLoding() {
 
 function initMap(eorzeaMap) {
   eorzea = eorzeaMap
+  eorzea.loader.setUrlFunction('getIconUrl', (icon, id) => getIconUrl(id))
 
   eorzea.getRegion().then(function(regions) {
     for (var i = 0; i < regions.length; i++) {

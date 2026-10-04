@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "@thewakingsands/axis-font-icons": "^0.4.0",
-    "@thewakingsands/kit-tooltip": "0.3.5",
+    "@thewakingsands/kit-tooltip": "0.4.0-beta.0",
+    "@thewakingsands/xivapi-v2": "^1.0.0",
     "normalize.css": "^8.0.1",
     "photoswipe": "^5.4.4",
     "qrcode": "^1.5.4",
