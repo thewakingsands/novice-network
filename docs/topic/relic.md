@@ -40,6 +40,7 @@
 ::: collapse 各职业对应武器及石头
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td>职业</td>
     <td>武器</td>
@@ -95,6 +96,7 @@
     <td><Item name="吸血匕首" /></td>
     <td><Item name="神眼魔晶石叁型" /></td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -180,6 +182,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -265,6 +268,7 @@
     <td>防卫指令： 阿格里俄斯号的研究任务</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -273,6 +277,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -358,6 +363,7 @@
     <td>防卫指令：古代亚拉戈的遗物</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -366,6 +372,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -451,6 +458,7 @@
     <td>防卫指令：魔导机器的残骸</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -459,6 +467,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -544,6 +553,7 @@
     <td>迎击指令：第五步兵大队所属部队</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -552,6 +562,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -637,6 +648,7 @@
     <td>迎击任务：验证哈帕利特奴隶末裔说的真伪</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -645,6 +657,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -730,6 +743,7 @@
     <td>巡逻任务：抢夺宝石饰品的基迦巨人族</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -738,6 +752,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -823,6 +838,7 @@
     <td>焚书任务：回收禁书《尖牙利齿的怪物》</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -831,6 +847,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -916,6 +933,7 @@
     <td>迎击指令：威胁调查地安全的基迦巨人族</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -924,6 +942,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td><span style="text-align:center;">种类</span></td>
     <td><span style="text-align:center;">目标</span></td>
@@ -994,7 +1013,7 @@
   </tr>
   <tr>
     <td>青磷大路</td>
-    <td><Pos name="北萨纳兰" :x="21.7" :y="29.3" /><br>***对话触发型护卫FATE，需要与&#39;慎重的商人&#39;对话触发，并保护他到目的地。**</td>
+    <td><Pos name="北萨纳兰" :x="21.7" :y="29.3" /><br><strong>对话触发型护卫FATE，需要与&#39;慎重的商人&#39;对话触发，并保护他到目的地。</strong></td>
   </tr>
   <tr>
     <td rowspan=3><span style="text-align:center;">理<br>符<br>任<br>务</span></td>
@@ -1009,6 +1028,7 @@
     <td>歼敌指令：红发的俄刻阿诺斯</td>
     <td>摩杜纳 圣寇伊纳克调查地</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -1076,6 +1096,7 @@
 ~~最早只有现在的1/8 hhhh……~~
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td>事件</td>
     <td colspan=2>光量文字提示与对应点数</td>
@@ -1110,6 +1131,7 @@
     <td>散发出了耀眼的光辉！</td>
     <td>128</td>
   </tr>
+</tbody>
 </table>
 :::
 
@@ -1117,6 +1139,7 @@
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td>~199</td>
     <td>没有观察到任何光辉……<br>看起来灵魂还没有安定下来。</td>
@@ -1161,6 +1184,7 @@
     <td>2,000</td>
     <td>观察到了<mark>宛如新星</mark>的光辉！<br>看起来灵魂已经完全安定下来了。</td>
   </tr>
+</tbody>
 </table>
 :::
 
@@ -1238,6 +1262,7 @@ PS：这也就导致+6的测光比较恶心。举个例子，你换了第一块�
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td>主线三蛮神（讨伐战）、死化奇美拉讨伐战、海德拉讨伐战、任意版本<a href="/advanced/fate.htm" >临危受命</a>、<item name="陈旧的毒蜥蜴革地图" /></td>
     <td>在微弱地共鸣……</td>
@@ -1268,6 +1293,7 @@ PS：这也就导致+6的测光比较恶心。举个例子，你换了第一块�
     <td>在剧烈地共鸣！</td>
     <td>128</td>
   </tr>
+</tbody>
 </table>
 
 :::
@@ -1276,6 +1302,7 @@ PS：这也就导致+6的测光比较恶心。举个例子，你换了第一块�
 
 
 <table class="ui compact grey striped unstackable table">
+<tbody>
   <tr>
     <td>~7</td>
     <td>完全感觉不到“XX感”……<br>看起来灵魂还没有产生共鸣。</td>
@@ -1320,6 +1347,7 @@ PS：这也就导致+6的测光比较恶心。举个例子，你换了第一块�
     <td>80</td>
     <td>“XX感”已经成形！<br>灵魂的“XX感”完全觉醒了！</td>
   </tr>
+</tbody>
 </table>
 :::
 
@@ -1333,7 +1361,7 @@ PS：这也就导致+6的测光比较恶心。举个例子，你换了第一块�
 > * 好用工具：[制作进度、材料追踪表](https://www.kdocs.cn/l/cm9hndiVJ8eJ)
 
 
-## <font color="firebrick">古</font><font color="crimson">武</font><font color="orangered">+</font><font color="orange">？</font><font color="limegreen"> —</font><font color="seagreen">—</font> <font color="royalblue">锅</font><font color="darkblue">嫌</font><font color="purple">壶</font><font color="deeppink">黑</font>
+## <span style="color: firebrick">古</span><span style="color: crimson">武</span><span style="color: orangered">+</span><span style="color: orange">？</span><span style="color: limegreen"> —</span><span style="color: seagreen">—</span> <span style="color: royalblue">锅</span><span style="color: darkblue">嫌</span><span style="color: purple">壶</span><span style="color: deeppink">黑</span>
 
 
 <p><Quest name="锅嫌壶黑" type="plus" /> <span style="color:silver;">加尔赞<Pos name="黑衣森林北部林区" :x="29.6" :y="19.7" /></span></p>

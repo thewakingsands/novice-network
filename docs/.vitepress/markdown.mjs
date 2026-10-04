@@ -1,5 +1,6 @@
 import { createRequire } from 'node:module'
 import { rewriteLink } from './routes.mjs'
+import { configureSpacing } from './spacing.mjs'
 const require = createRequire(import.meta.url)
 
 export function configureMarkdown(md) {
@@ -90,5 +91,5 @@ export function configureMarkdown(md) {
       })
       md.use(require('markdown-it-attrs'))
 
-      md.use(require('markdown-it-pangu'))
+      md.use(configureSpacing)
 }
