@@ -95,7 +95,7 @@ function isVisible(gi: number, c: Child): boolean {
   </div>
 
   <div class="toggle-button">
-    <button class="ui large circular icon button" data-fab-menu aria-label="菜单">
+    <button class="ui large circular icon button" data-nav-menu-toggle aria-label="菜单">
       <i class="icon plus"></i>
     </button>
   </div>
@@ -121,12 +121,15 @@ function isVisible(gi: number, c: Child): boolean {
     })
   }
 
+  // 移动端菜单开关：右下角 FAB 与顶栏汉堡按钮（NavTop）共用
   const container = document.querySelector('[data-nav-menu]')
-  document.querySelector('[data-fab-menu]')?.addEventListener('click', (e) => {
-    e.preventDefault()
-    container?.querySelector('.menus')?.classList.toggle('show')
-    document.querySelector('.toggle-button')?.classList.toggle('menu-show')
-  })
+  for (const toggle of document.querySelectorAll('[data-nav-menu-toggle]')) {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault()
+      container?.querySelector('.menus')?.classList.toggle('show')
+      container?.querySelector('.toggle-button')?.classList.toggle('menu-show')
+    })
+  }
   document.querySelector('[data-fab-top]')?.addEventListener('click', (e) => {
     e.preventDefault()
     gotoId('')

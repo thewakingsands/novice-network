@@ -8,7 +8,7 @@ const hasToc = tocHeadings.length > 0
 
 <nav class="nav-top">
   <div class="ui inverted menu">
-    <a href="#" class="item icon-item hide-large" data-nav-hamburger aria-label="菜单">
+    <a href="#" class="item icon-item hide-large" data-nav-menu-toggle aria-label="菜单">
       <i class="bars icon"></i>
     </a>
     <a class="item icon-item" href="/" aria-label="首页">
@@ -87,14 +87,6 @@ const hasToc = tocHeadings.length > 0
     e.preventDefault()
     gotoId('')
   })
-
-  // 汉堡菜单（移动端）：切换左侧菜单
-  document
-    .querySelector('[data-nav-hamburger]')
-    ?.addEventListener('click', (e) => {
-      e.preventDefault()
-      document.querySelector('[data-nav-menu]')?.classList.toggle('show')
-    })
 
   // 章节目录下拉
   const tocContainer = document.querySelector<HTMLElement>('[data-toc-container]')
