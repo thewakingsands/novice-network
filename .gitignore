@@ -1,11 +1,7 @@
 node_modules
+yarn-error.log
 /dist
 /ci/deploy-key
 /job/job.md
 package-lock.json
 /lastDeploy
-
-.cache/
-.pnpm-store/
-docs/.vitepress/cache/
-docs/.vitepress/.temp/

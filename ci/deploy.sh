@@ -21,11 +21,11 @@ git config --global init.defaultBranch master
 git clone "$GIT_REPO" lastDeploy
 rm -rf lastDeploy/.git
 
-pnpm deploy:filemap
+yarn deploy:filemap
 
 rsync -avu --ignore-existing lastDeploy/ "$DEPLOY_DIR/"
 
-pnpm deploy:cleanup
+yarn deploy:cleanup
 
 EXEGIT="git -C $DEPLOY_DIR"
 $EXEGIT init
@@ -37,4 +37,6 @@ $EXEGIT commit --quiet -m "Deploy"
 
 $EXEGIT push -f --quiet origin master
 
-INDEX_SERVER=https://novice-network-search.wakingsands.com pnpm deploy:searchindex
+curl -o- -L https://yarnpkg.com/install.sh | bash
+yarn
+INDEX_SERVER=https://novice-network-search.wakingsands.com yarn deploy:searchindex

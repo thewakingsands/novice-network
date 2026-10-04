@@ -1,6 +1,0 @@
-packages:
-  - tools/mobmap
-
-allowBuilds:
-  esbuild: true
-  preact: false

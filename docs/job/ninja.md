@@ -43,13 +43,13 @@
 <!--6_1有更新-->
 40级习得的<Action name="断绝" />（56级后升级为<Action name="梦幻三段" />）是一个能力技，需要在背刺的增伤期间使用。
 
-50级习得的<Action name="生杀予夺" />可以白送一次忍术，并在接下来15s内提升一次30%忍术伤害，76级之后更是能将火遁与冰遁分别升级为<Action name="劫火灭却之术" />和<Action name="冰晶乱流之术" />（冰晶是目前忍者单发威力最高的技能），在76级之前可以用生杀打<Action name="雷遁之术">雷遁</Action>，76之后则固定生杀打<Action name="冰晶乱流之术">冰晶</Action> ~~万万不可学某产品经理生杀风遁，虽然大部分忍者都干过这种事…~~。
+50级习得的<Action name="生杀予夺" />可以白送一次忍术，并在接下来15s内提升一次30%忍术伤害，76级之后更是能将火遁与冰遁分别升级为<Action name="劫火灭却之术" />和<Action name="冰晶乱流之术" />（冰晶是目前忍者单发威力最高的技能），在76级之前可以用生杀打<Action name="雷遁之术" />雷遁</Action>，76之后则固定生杀打<Action name="冰晶乱流之术" />冰晶</Action> ~~万万不可学某产品经理生杀风遁，虽然大部分忍者都干过这种事…~~。
 
-忍者的循环在50级、70级、80级和90级各经过一次“升级”，准备好风遁之后，在开怪前结<Action name="水遁之术">水遁</Action>起手，打出水遁后开<Action name="生杀予夺" />，然后在基础技能中使用<Action name="雷遁之术">雷遁</Action>（在76级之后则使用<Action name="冰晶乱流之术">冰晶</Action>）。
+忍者的循环在50级、70级、80级和90级各经过一次“升级”，准备好风遁之后，在开怪前结<Action name="水遁之术">水遁</Action>起手，打出水遁后开<Action name="生杀予夺" />，然后在基础技能中使用<Action name="雷遁之术" />雷遁</Action>（在76级之后则使用<Action name="冰晶乱流之术" />冰晶</Action>）。
 
 70级习得<Action name="天地人" />之后，起手背刺打出雷遁/冰晶之后就可以使用天地人，然后按照<Action name="天地人" />→<Action name="天之印">天(1)</Action>→<Action name="地之印">地(2)</Action>→<Action name="人之印">人(3)</Action>使用技能（使用这些技能的时候不能移动，否则<Status :id="1186" name="天地人" />会立刻解除），然后使用<Action name="命水" />→<Action name="六道轮回" />（在70~72级之间没有习得命水的时候，可以选择战术性放弃水遁，或者使用天地人结水遁后接背刺）。天地人的CD时间正好是背刺的2倍，因此每用2次背刺的时候都可以打出一次天地人。
 
-80级习得<Action name="分身之术" />，则可以打出接近完整的开场爆发了：开场水遁生杀，然后<Action name="双刃旋" />→<Action name="绝风" />→<Action name="夺取" />打出忍气，然后立刻使用<Action name="分身之术" />→<Action name="残影镰鼬" />(82)→<Action name="攻其不备">背刺</Action>→<Action name="旋风刃" />→<Action name="梦幻三段" />→<Action name="冰晶乱流之术">冰晶</Action>→<Action name="雷遁之术">雷遁</Action>→<Action name="天地人" />一套→<Action name="命水" />→<Action name="六道轮回" />。由于分身的CD是90s，也就是说开场的背刺之后，下次分身之术转好的时候并没有背刺可用，此时应该把分身之术使用出来，但不使用<Action name="残影镰鼬" />(82)，把它留到下个背刺中使用。而在第3次背刺时，第2次分身也可以使用了（但这次背刺中没有天地人可以使用）。
+80级习得<Action name="分身之术" />，则可以打出接近完整的开场爆发了：开场水遁生杀，然后<Action name="双刃旋" />→<Action name="绝风" />→<Action name="夺取" />打出忍气，然后立刻使用<Action name="分身之术" />→<Action name="残影镰鼬" />(82)→<Action name="攻其不备">背刺</Action>→<Action name="旋风刃" />→<Action name="梦幻三段" />→<Action name="冰晶乱流之术" />冰晶</Action>→<Action name="雷遁之术" />雷遁</Action>→<Action name="天地人" />一套→<Action name="命水" />→<Action name="六道轮回" />。由于分身的CD是90s，也就是说开场的背刺之后，下次分身之术转好的时候并没有背刺可用，此时应该把分身之术使用出来，但不使用<Action name="残影镰鼬" />(82)，把它留到下个背刺中使用。而在第3次背刺时，第2次分身也可以使用了（但这次背刺中没有天地人可以使用）。
 
 作为一个早期习得的远程投掷类技能，<Action name="飞刀" />在后期的副本战斗中基本可以被<Action name="风魔手里剑" />（25m）或<Action name="雷遁之术" />（20m）所取代，除非你没有忍术，或需要蹭一些忍气。<Action name="风来刃" />(60)是一个几乎完全没有用的技能，除非你不想用忍术续风遁（比如战斗中途BOSS上天，马上就要下来了，下来要打一套满爆发，如果此时结风遁就会导致爆发期里少一个忍术）。
 
@@ -59,9 +59,9 @@
 
 一套标准的AOE用<Action name="天地人" />顺序是<Action name="天地人" />→<Action name="人之印">人</Action>→<Action name="天之印">天</Action>→<Action name="地之印">地</Action>（即土遁的顺序）。72级习得<Action name="命水" />之后，若能提前结土遁，也可以选择水遁结束（即地→天→人），用命水换50忍气打大虾蟆。
 
-二者综合起来就是忍者的AOE体系：用<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />打循环，早期没学会生杀和天地人的时候，优先放<Action name="土遁之术" />。习得<Action name="生杀予夺">生杀</Action>之后可以<Action name="土遁之术" />→<Action name="生杀予夺">生杀</Action>→<Action name="火遁之术">火遁</Action>/<Action name="劫火灭却之术" />；习得<Action name="天地人" />之后，则是先放两个火遁（<Action name="火遁之术">火遁</Action>→<Action name="生杀予夺">生杀</Action>→<Action name="劫火灭却之术" />），然后利用天地人AOE循环放土遁，76级之后也可以先放土遁→劫火灭却→天地人→命水。
+二者综合起来就是忍者的AOE体系：用<Action :id="2254" name="血雨飞花" />→<Action name="八卦无刃杀" />打循环，早期没学会生杀和天地人的时候，优先放<Action name="土遁之术" />。习得<Action name="生杀予夺">生杀</Action>之后可以<Action name="土遁之术" />→<Action name="生杀予夺">生杀</Action>→<Action name="火遁之术" />火遁</Action>/<Action name="劫火灭却之术" />；习得<Action name="天地人" />之后，则是先放两个火遁（<Action name="火遁之术" />火遁</Action>→<Action name="生杀予夺">生杀</Action>→<Action name="劫火灭却之术" />），然后利用天地人AOE循环放土遁，76级之后也可以先放土遁→劫火灭却→天地人→命水。
 
-当只有2个小怪的时候，使用对单体的<Action name="旋风刃" />连和<Action name="雷遁之术">雷遁</Action>即可，忍气打<Action name="六道轮回" />。
+当只有2个小怪的时候，使用对单体的<Action name="旋风刃" />连和<Action name="雷遁之术" />雷遁</Action>即可，忍气打<Action name="六道轮回" />。
 
 **在AOE场合也不要忘记开怪前续/补风遁！**<Action name="八卦无刃杀" />技能本身也可以帮助续风遁。
 

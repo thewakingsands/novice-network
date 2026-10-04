@@ -1,4 +1,4 @@
-const glob = require('node:fs').globSync
+const glob = require('glob').sync
 const fs = require('fs')
 const now = Date.now()
 
@@ -8,7 +8,7 @@ if (fs.existsSync('lastDeploy/files.json')) {
   files = JSON.parse(fs.readFileSync('lastDeploy/files.json'))
 }
 
-const currentFiles = glob('dist/**/*').map(x => x.replace(/\\/g, '/').substring('dist/'.length))
+const currentFiles = glob('dist/**/*').map(x => x.substring('dist/'.length))
 for (const file of currentFiles) {
   files[file] = now
 }

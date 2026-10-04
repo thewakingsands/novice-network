@@ -72,7 +72,6 @@
 表格中所有材料需求量均为单价(比如第一个表，3个白钢刀币可以兑换一个神秘骨片，10个神秘骨片+4个精金投斧可以兑换一个附魔橡胶。)
 
 <table class="ui compact grey striped unstackable table">
-<tbody>
   <tr>
     <td>最终材料</td>
     <td>所需材料</td>
@@ -128,12 +127,10 @@
     <td>皮革秘籍第三卷、锻冶秘籍第三卷</td>
     <td>部分材料需要使用大地白票兑换</td>
   </tr>
-</tbody>
 </table>
   
 
 <table class="ui compact grey striped unstackable table">
-<tbody>
   <tr>
     <td>最终材料</td>
     <td>所需材料</td>
@@ -189,12 +186,10 @@
     <td>甲胄秘籍第三卷、炼金秘籍第三卷</td>
     <td>部分材料需要使用大地白票兑换</td>
   </tr>
-</tbody>
 </table>
   
 
 <table class="ui compact grey striped unstackable table">
-<tbody>
   <tr>
     <td>最终材料</td>
     <td>所需材料</td>
@@ -250,12 +245,10 @@
     <td>雕金秘籍第三卷、烹调秘籍第三卷</td>
     <td>部分材料需要使用大地白票兑换</td>
   </tr>
-</tbody>
 </table>
   
 
 <table class="ui compact grey striped unstackable table">
-<tbody>
   <tr>
     <td>最终材料</td>
     <td>所需材料</td>
@@ -311,7 +304,6 @@
     <td>裁缝秘籍第三卷、木工秘籍第三卷</td>
     <td>部分材料需要使用大地白票兑换</td>
   </tr>
-</tbody>
 </table>
 :::
 
@@ -352,7 +344,6 @@
  ++注意：++ 表里一份材料对应2个水晶砂。
 
 <table class="ui compact grey striped unstackable table">
-<tbody>
   <tr>
     <td>分类</td>
     <td>材料</td>
@@ -488,7 +479,6 @@
   <tr>
     <td>神秘种子 x1</td>
   </tr>
-</tbody>
 </table>
 :::
 
@@ -549,7 +539,6 @@
 
 
 <table class="ui compact grey striped unstackable table">
-<tbody>
   <tr>
     <td>事件</td>
     <td colspan=2>对应凝聚</td>
@@ -589,7 +578,6 @@
     <td>人造元灵灵魂有了前所未有的凝聚！</td>
     <td>128</td>
   </tr>
-</tbody>
 </table>
 :::
 
