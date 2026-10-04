@@ -29,6 +29,7 @@ img
   display inline-block
   position relative
   margin-left 0.1em
+  margin-right 4px
   line-height 1em
   &::before
     content ''
