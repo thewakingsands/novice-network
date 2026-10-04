@@ -19,6 +19,13 @@ function buildHead() {
   /** @type {any[]} */
   const head = [
     { tag: 'meta', attrs: { name: 'keywords', content: KEYWORDS } },
+    // 跨页 View Transition 的 opt-in 必须内联：若写在外链 CSS 里，新页面在其加载完成前
+    // 发生的样式更新会被 Chromium 视为未 opt-in 而中止过渡。命名与动画见 transition.scss。
+    {
+      tag: 'style',
+      content:
+        '@media (prefers-reduced-motion: no-preference) { @view-transition { navigation: auto; } }',
+    },
     // Cloudflare Web Analytics
     {
       tag: 'script',
@@ -31,7 +38,7 @@ function buildHead() {
     // SW 注册（production 或 localStorage.debugSw==='1'）
     {
       tag: 'script',
-      content: `(function(){if((${PROD}||localStorage.debugSw==='1')&&'serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){})}})();`,
+      content: `(function(){if(((${PROD} && location.host === 'ff14.org')||localStorage.debugSw==='1')&&'serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(function(){})}})();`,
     },
     // 域名重定向（非 ff14.org/localhost 强制跳转，仅 production）
     {

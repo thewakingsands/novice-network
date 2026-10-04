@@ -1,0 +1,47 @@
+// 跨页导航动画（cross-document View Transition API，不支持的浏览器照常整页跳转）。
+// opt-in 规则 `@view-transition` 内联在 astro.config.mjs 的 head 中，此处只放命名与动画。
+// 正文随 root 快照整体淡入淡出；固定的顶栏、菜单与悬浮按钮单独命名，过渡期间保持原位。
+@media (prefers-reduced-motion: no-preference) {
+  .nav-top {
+    view-transition-name: nav-top;
+  }
+  .nav-container {
+    .menus {
+      view-transition-name: nav-menu;
+    }
+    .toggle-button {
+      view-transition-name: fab-menu;
+    }
+    > a.icon.button {
+      &.fab-search {
+        view-transition-name: fab-search;
+      }
+      &.totop {
+        view-transition-name: fab-top;
+      }
+      &.copy {
+        view-transition-name: fab-copy;
+      }
+    }
+  }
+
+  // 新页下移量不超过顶栏高度（40px），露出的空隙由顶栏遮住
+  ::view-transition-old(root) {
+    animation: 160ms ease-in both vt-fade-out;
+  }
+  ::view-transition-new(root) {
+    animation: 240ms cubic-bezier(0.2, 0, 0, 1) both vt-fade-in-up;
+  }
+
+  @keyframes vt-fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes vt-fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+}
