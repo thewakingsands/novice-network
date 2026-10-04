@@ -31,7 +31,6 @@ const CONTENT_COMPONENTS: Record<string, string> = {
   Item: '@/components/content/Item.astro',
   Quest: '@/components/content/Quest.astro',
   Pos: '@/components/content/Pos.astro',
-  IconHeader: '@/components/content/IconHeader.astro',
   UnderConstruction: '@/components/content/UnderConstruction.astro',
   FloatTOC: '@/components/content/FloatTOC.astro',
   XIVFontList: '@/components/content/XIVFontList.astro',

@@ -24,6 +24,8 @@
 `Role` `Action` `Status` `Item` `Quest` `Pos` `IconHeader` `UnderConstruction`
 `FloatTOC` 等。
 
+`<IconHeader img="/images/jobs/dps.png">进攻职业</IconHeader>` 会渲染为带图标的标题并进入文章目录，默认为 `h2`，可用 `level={3}` 指定层级。
+
 #### 文件引用
 
 被引用的片段文件放在 `src/content/includes/` 目录下（不产出路由）。

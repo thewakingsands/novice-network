@@ -150,5 +150,24 @@
     > .included-page + .sl-heading-wrapper {
       margin-top: 1em;
     }
+    // <IconHeader> 由 remark-icon-header 转成的标题：沿用原站段落样式，不套用标题字号与边距
+    .sl-heading-wrapper .icon-header {
+      margin: 0 0 1em;
+      font-size: 1em;
+      font-weight: normal;
+      line-height: 1.6;
+      > img {
+        width: 2.5em;
+        height: 2.5em;
+      }
+      > img,
+      > span {
+        vertical-align: middle;
+      }
+      > span {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
   }
 }

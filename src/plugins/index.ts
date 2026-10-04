@@ -9,6 +9,7 @@ import { rehypePangu } from './rehype-pangu'
 import { rehypeVuepressSlug } from './rehype-vuepress-slug'
 import { remarkCjkBreaks } from './remark-cjk-breaks'
 import { remarkHeadingAttrs } from './remark-heading-attrs'
+import { remarkIconHeader } from './remark-icon-header'
 import { remarkMdLinks } from './remark-md-links'
 import type { RehypePlugin, RemarkPlugin } from './types'
 
@@ -18,8 +19,9 @@ import type { RehypePlugin, RemarkPlugin } from './types'
  * 1. ==mark==（remark-flexible-markers，输出纯 <mark> 以匹配原站）
  * 2. ++ins++（remark-ins）
  * 3. 标题尾 `{.class}`（源码里花括号已被转义为字面量，此处提取并设置 class）
- * 4. 站内 .md → .htm 链接
- * 5. CJK 软换行 → <br>（两侧 CJK 除外）
+ * 4. <IconHeader> → 带图标的标题元素（使其进入 TOC）
+ * 5. 站内 .md → .htm 链接
+ * 6. CJK 软换行 → <br>（两侧 CJK 除外）
  */
 export const remarkPlugins: RemarkPlugin[] = [
   // 自带 gfm（表格/删除线/自动链接），关闭单波浪线删除线以对齐 markdown-it（仅 ~~ 生效）
@@ -27,6 +29,7 @@ export const remarkPlugins: RemarkPlugin[] = [
   [remarkFlexibleMarkers, { markerClassName: () => [] }],
   remarkIns,
   remarkHeadingAttrs,
+  remarkIconHeader,
   remarkMdLinks,
   remarkCjkBreaks,
 ]

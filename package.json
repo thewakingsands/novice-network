@@ -36,6 +36,7 @@
     "remark-flexible-markers": "^1.3.5",
     "remark-gfm": "^4.0.1",
     "remark-ins": "^1.2.5",
+    "remark-mdx": "^3.1.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
     "sass": "^1.101.0",
