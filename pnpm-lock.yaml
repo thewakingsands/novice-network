@@ -195,8 +195,11 @@ importers:
         specifier: ^0.4.0
         version: 0.4.0
       '@thewakingsands/kit-tooltip':
-        specifier: 0.3.5
-        version: 0.3.5
+        specifier: 0.4.0-beta.0
+        version: 0.4.0-beta.0
+      '@thewakingsands/xivapi-v2':
+        specifier: ^1.0.0
+        version: 1.0.0
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
@@ -713,11 +716,14 @@ packages:
   '@thewakingsands/axis-font-icons@0.4.0':
     resolution: {integrity: sha512-iQzXr+TtfnF0r260pymsfjySx8OdiaeIkVwvt+OtFehlLjN8MA0ZVX9E2ayCyR7axnUGmn6QVVjUfUPu1Wgtvw==}
 
-  '@thewakingsands/kit-common@0.3.0':
-    resolution: {integrity: sha512-C4en3K7HnnbV2nSob2OjKygoAxmLr0wg4srOShUmvSvYOPDwdHHcEHi0MAE4GHMS+BEdtlQnhbVsn8+0EMF5Mw==}
+  '@thewakingsands/kit-common@0.4.0-beta.0':
+    resolution: {integrity: sha512-4Jl7ysXIMIK2uA7luAEI5sCob93z/seiLK4Oiffvh+M7KZVL0TBeo+hzEWFr2IxAfNdszoDuYckyg081cvIPDg==}
 
-  '@thewakingsands/kit-tooltip@0.3.5':
-    resolution: {integrity: sha512-i/lTk6lbG41jKixrN+ngm7wHKbroGM1+47/DbgqhKFMTEUcx9NuFHvgd0t2DI3brkWLwqXAvy6fkcZblO4iqXg==}
+  '@thewakingsands/kit-tooltip@0.4.0-beta.0':
+    resolution: {integrity: sha512-1E/0OF1anuOnDNlXW2RkwAZZHSEUW0qE58e6I6oMmUaIUnY9ijJijortrMrsemXlBNNJwyPzvsn2+xqTfVAG+A==}
+
+  '@thewakingsands/xivapi-v2@1.0.0':
+    resolution: {integrity: sha512-fRGrt573xEX1c+CFl1X19EvG60c1Flf1hK6qXBD781GH+1CRh89Uw8wPU65TpJewuEUcPBCPfvQV69qzZvqnxA==}
 
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
@@ -1276,9 +1282,6 @@ packages:
     peerDependenciesMeta:
       preact-render-to-string:
         optional: true
-
-  preact@8.5.3:
-    resolution: {integrity: sha512-O3kKP+1YdgqHOFsZF2a9JVdtqD+RPzCQc3rP+Ualf7V6rmRDchZ9MJbiGTT7LuyqFKZqlHSOyO/oMFmI2lVTsw==}
 
   property-information@7.2.0:
     resolution: {integrity: sha512-IAtzIB6sUiWaJYrX9smp3V46pBGbBeLFRGdh25kg1334VcBlD8HzhPeNIWQH9zhGmo2itIe25EHt9dQP7G5hmg==}
@@ -1898,14 +1901,21 @@ snapshots:
 
   '@thewakingsands/axis-font-icons@0.4.0': {}
 
-  '@thewakingsands/kit-common@0.3.0':
+  '@thewakingsands/kit-common@0.4.0-beta.0':
     dependencies:
-      preact: 8.5.3
+      preact: 10.29.8
+    transitivePeerDependencies:
+      - preact-render-to-string
 
-  '@thewakingsands/kit-tooltip@0.3.5':
+  '@thewakingsands/kit-tooltip@0.4.0-beta.0':
     dependencies:
-      '@thewakingsands/kit-common': 0.3.0
-      preact: 8.5.3
+      '@thewakingsands/kit-common': 0.4.0-beta.0
+      '@thewakingsands/xivapi-v2': 1.0.0
+      preact: 10.29.8
+    transitivePeerDependencies:
+      - preact-render-to-string
+
+  '@thewakingsands/xivapi-v2@1.0.0': {}
 
   '@types/estree@1.0.9': {}
 
@@ -2501,8 +2511,6 @@ snapshots:
       source-map-js: 1.2.2
 
   preact@10.29.8: {}
-
-  preact@8.5.3: {}
 
   property-information@7.2.0: {}
 

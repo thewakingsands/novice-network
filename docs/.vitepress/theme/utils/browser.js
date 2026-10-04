@@ -22,9 +22,9 @@ function loadStyle(href) {
 
 async function initMaps() {
   loadStyle('https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css')
-  loadStyle('https://cdn.jsdelivr.net/npm/@thewakingsands/eorzea-interactive-map@1.1.1/dist/map.css')
+  loadStyle('https://cdn.jsdelivr.net/npm/@thewakingsands/eorzea-interactive-map@1.1.3/dist/map.css')
   await loadScript('https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js')
-  await loadScript('https://cdn.jsdelivr.net/npm/@thewakingsands/eorzea-interactive-map@1.1.1/dist/map.js')
+  await loadScript('https://cdn.jsdelivr.net/npm/@thewakingsands/eorzea-interactive-map@1.1.3/dist/map.js')
   await import('./mapLoader')
 }
 

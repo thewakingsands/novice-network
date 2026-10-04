@@ -43,8 +43,9 @@ img
 </style>
 
 <script>
-import { usePage } from '../utils/page'
-import { searchAction } from '../utils/cafeMaker'
+import { usePage } from "../utils/page"
+import { formatIconUrl } from '@thewakingsands/xivapi-v2'
+import { searchAction } from '../utils/xivapi'
 
 const jobList = {
   冒险者: 0,
@@ -88,8 +89,8 @@ const jobList = {
   舞者: 38,
   钐镰客: 39,
   贤者: 40,
-  蝰蛇剑士: 196,
-  绘灵法师: 197
+  蝰蛇剑士: 41,
+  绘灵法师: 42
 }
 
 export default {
@@ -120,12 +121,9 @@ export default {
   methods: {
     async updateId() {
       const result = await searchAction(this.name, this.id, this.jobId)
-      if (this.name == '冲刺'){ // 没图标
-        result.Icon = '/i/000000/000104.png'
-      }
       if (result) {
         this.actionId = result.ID
-        this.iconUrl = 'https://cafemaker.wakingsands.com' + result.Icon
+        this.iconUrl = formatIconUrl(result.Icon)
       } else {
         console.warn('failed to get result for', this.name, this.id, this.jobId)
       }

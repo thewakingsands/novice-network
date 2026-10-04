@@ -31,7 +31,7 @@ img
 
 <script>
 import { getIconUrl } from '../utils/iconUrl'
-import { searchStatus } from '../utils/cafeMaker'
+import { searchStatus } from '../utils/xivapi'
 
 let count = 0
 
@@ -58,8 +58,10 @@ export default {
   methods: {
     async updateId() {
       const json = await searchStatus(this.id)
-      this.iconUrl = getIconUrl(json.IconID + this.stack)
-      this.description = json.Description
+      if (json) {
+        this.iconUrl = getIconUrl(json.Icon.id + this.stack)
+        this.description = json.Description
+      }
     }
   },
   beforeUnmount() {
