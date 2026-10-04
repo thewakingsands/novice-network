@@ -1,7 +1,5 @@
 const path = require('path')
-const got = require('got')
 const fs = require('fs')
-const mkdirp = require('mkdirp')
 
 const urls = fs
   .readFileSync(path.join(__dirname, 'urls.txt'), 'utf-8')
@@ -19,8 +17,9 @@ async function fetchAll(urls) {
 async function fetchSingle(url) {
   console.log(`fetching ${url} ...`)
   const u = new URL(url)
-  const resp = await got(url)
-  const body = resp.body
+  const resp = await fetch(url)
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}: ${url}`)
+  const body = await resp.text()
 
   const relativeFilename = u.pathname.replace(/^\/+|\/+$/g, '') + '.html'
   const destFilename = path.join(__dirname, 'html', relativeFilename)
@@ -28,6 +27,6 @@ async function fetchSingle(url) {
 
   console.log(`saving to ${relativeFilename} ...`)
 
-  mkdirp.sync(destPath)
+  fs.mkdirSync(destPath, { recursive: true })
   fs.writeFileSync(destFilename, body)
 }

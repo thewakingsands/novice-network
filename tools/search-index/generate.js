@@ -1,7 +1,6 @@
-const glob = require('glob').sync
+const glob = require('node:fs').globSync
 const fs = require('fs')
 const cheerio = require('cheerio')
-const fetch = require('isomorphic-fetch')
 
 const htmlFiles = glob('dist/**/*.{html,htm}')
 
