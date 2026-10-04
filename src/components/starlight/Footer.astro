@@ -1,45 +1,8 @@
 ---
-// 覆盖 Starlight Footer：页脚广告位（yaofan）+ 站点页脚。webframe 页不显示。
+// 覆盖 Starlight Footer：站点页脚。webframe 页不显示。
 import SiteFooter from '@/components/theme/SiteFooter.astro'
 const { entry } = Astro.locals.starlightRoute
 const isWebframe = !!entry.data.webframe
-const adClient = 'ca-pub-8304225030161579'
 ---
 
-{
-  !isWebframe && (
-    <>
-      <footer class="yaofan">
-        <div class="yaofan-inner">
-          <div class="yaofan-bg">
-            <p>
-              为平衡建站成本，本站《新大陆见闻录》在此处设有广告。
-              <br />
-              如果你愿意取消对本站的广告屏蔽，这将是对我们莫大的支持。
-              <br />
-              当然，你也可以通过 <a href="/about.htm">捐赠</a> 来支持我们。
-            </p>
-          </div>
-          <ins
-            class="adsbygoogle yaofan-ad"
-            style="display:block"
-            data-ad-client={adClient}
-            data-ad-slot="3871755301"
-          />
-        </div>
-      </footer>
-      <SiteFooter />
-    </>
-  )
-}
-
-<script>
-  // 复刻原 Layout 的广告推送
-  setTimeout(() => {
-    try {
-      const w = window as unknown as { adsbygoogle?: unknown[] }
-      w.adsbygoogle = w.adsbygoogle || []
-      w.adsbygoogle.push({})
-    } catch {}
-  }, 200)
-</script>
+{!isWebframe && <SiteFooter />}

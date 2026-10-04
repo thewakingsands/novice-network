@@ -99,6 +99,6 @@ tools/migrate-content/  一次性内容迁移脚本（保留供追溯）
   磁盘缓存，CI 用 actions/cache 持久化）；离线时降级为占位。
 - **赞助者**：`Sponsors` 在构建期直连爱发电开放 API，需配置 `AFDIAN_USER_ID` 与
   `AFDIAN_API_TOKEN`；凭据仅注入构建进程，浏览器不再请求赞助者接口。
-- **统计/广告**：GA4 需通过 `PUBLIC_GA4_ID` 环境变量提供，未设置时不输出。
+- **统计**：GA4 需通过 `PUBLIC_GA4_ID` 环境变量提供，未设置时不输出。
 - **Service Worker**：`public/sw.js` 原样保留（CDN 代理），production 或
   `localStorage.debugSw==='1'` 时注册。

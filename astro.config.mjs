@@ -14,20 +14,11 @@ const KEYWORDS =
 const PROD = process.env.NODE_ENV === 'production'
 const GA4_ID = process.env.PUBLIC_GA4_ID
 
-/** 构建 <head> 注入（AdSense、Cloudflare、百度、GA4、SW 注册、域名重定向） */
+/** 构建 <head> 注入（Cloudflare、百度、GA4、SW 注册、域名重定向） */
 function buildHead() {
   /** @type {any[]} */
   const head = [
     { tag: 'meta', attrs: { name: 'keywords', content: KEYWORDS } },
-    // Google AdSense loader
-    {
-      tag: 'script',
-      attrs: {
-        'data-ad-client': 'ca-pub-8304225030161579',
-        async: true,
-        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-      },
-    },
     // Cloudflare Web Analytics
     {
       tag: 'script',

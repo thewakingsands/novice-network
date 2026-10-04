@@ -58,37 +58,3 @@
     display: none !important;
   }
 }
-
-.yaofan-ad,
-.yaofan-bg,
-.yaofan-inner {
-  width: 728px;
-  height: 90px;
-  @media screen and (max-width: 960px) {
-    width: 300px;
-    height: 100px;
-  }
-}
-.yaofan {
-  width: 100%;
-  margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  .yaofan-inner {
-    position: relative;
-  }
-  .yaofan-bg {
-    position: absolute;
-    background: #efefef;
-    color: #888;
-    border: 4px dashed #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 4px;
-    @media screen and (max-width: 960px) {
-      font-size: 0.9em;
-      border: 2px dashed #ccc;
-    }
-  }
-}

@@ -61,7 +61,7 @@ There is no separate `typecheck`, `format`, test-watch, or coverage script. `pnp
 - Content files normally contain frontmatter, optional explicit include imports, then an authored `#` heading. Supported custom frontmatter fields are `underConstruction`, `noTopPager`, `className`, `webframe`, `jobName`, and `detailguide`.
 - Preserve legacy author syntax documented in `README.md`, including `==mark==`, `++insert++`, `::: collapse|segment|job`, and `;;;` class containers. Extend the compatibility pipeline and its tests rather than mass-rewriting content.
 - Browser code is vanilla TypeScript with delegated listeners and `data-*` selectors. Several components assume one instance per page because they query `document`; preserve that invariant or deliberately root-scope the complete behavior.
-- Async work must remain failure-tolerant. Build-time remote enrichment returns fallbacks instead of failing the site; client fetches debounce/abort where relevant, reject stale responses, clean up JSONP/timers, and render actionable error states. Avoid empty catch blocks for required behavior, but optional analytics, ads, tooltips, QR, lightbox, and storage enhancements may fail soft.
+- Async work must remain failure-tolerant. Build-time remote enrichment returns fallbacks instead of failing the site; client fetches debounce/abort where relevant, reject stale responses, clean up JSONP/timers, and render actionable error states. Avoid empty catch blocks for required behavior, but optional analytics, tooltips, QR, lightbox, and storage enhancements may fail soft.
 
 ## Important Files
 
