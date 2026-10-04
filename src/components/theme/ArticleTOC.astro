@@ -1,57 +1,495 @@
 ---
-// 复刻 ContentContainer 右侧 sticky 文章目录 + “回到页首”。
+// 正文右侧 sticky 文章目录：平时只显示横线刻度和当前章节标题，悬浮/聚焦时展开完整目录卡片。
+// 窄屏下横线隐藏，目录卡片改为在左侧导航抽屉打开时铺满其右侧空间。
 const { headings } = Astro.locals.starlightRoute
-const items = (headings ?? [])
-  .filter((heading) => heading.depth >= 2 && heading.depth <= 3)
-  .reduce<
-    Array<{
-      heading: (typeof headings)[number]
-      children: Array<(typeof headings)[number]>
-    }>
-  >((groups, heading) => {
-    if (heading.depth === 2 || groups.length === 0) {
-      groups.push({ heading, children: [] })
-    } else {
-      groups[groups.length - 1].children.push(heading)
-    }
-    return groups
-  }, [])
+const items = (headings ?? []).filter(
+  (heading) => heading.depth >= 2 && heading.depth <= 3
+)
 ---
 
 {
   items.length > 0 && (
-    <aside class="hide-small">
-      <div class="articleTOC" data-anchor-scroll>
-        <ul>
-          {items.map(({ heading, children }) => (
-            <li>
-              <a href={`#${heading.slug}`}>{heading.text}</a>
-              {children.length > 0 && (
-                <ul>
-                  {children.map((child) => (
-                    <li>
-                      <a href={`#${child.slug}`}>{child.text}</a>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <a href="#" data-top>
-        <i class="double up angle icon" /> 回到页首
-      </a>
+    <aside class="article-toc" data-article-toc>
+      <nav class="toc" aria-label="文章目录">
+        <button
+          class="toc-rail"
+          type="button"
+          aria-expanded="false"
+          aria-controls="article-toc-card"
+          aria-label="展开文章目录"
+          data-toc-toggle
+        >
+          <span class="toc-lines" aria-hidden="true">
+            {items.map((heading) => (
+              <span class={`toc-line depth-${heading.depth}`} />
+            ))}
+          </span>
+          <span class="toc-current" aria-hidden="true" data-toc-current />
+        </button>
+        <div class="toc-card" id="article-toc-card" data-anchor-scroll>
+          <div class="toc-card-head">
+            <p class="toc-card-title">本页目录</p>
+            <a href="#" class="toc-card-top">
+              <i class="double up angle icon" /> 回到顶部
+            </a>
+          </div>
+          <ul>
+            {items.map((heading) => (
+              <li class={`depth-${heading.depth}`}>
+                <a href={`#${heading.slug}`} data-toc-link>
+                  {heading.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
     </aside>
   )
 }
 
 <script>
   import { bindAnchorScroll, gotoId } from '@/scripts/gotoId'
-  const aside = document.querySelector('[data-anchor-scroll]')
-  if (aside) bindAnchorScroll(aside)
-  document.querySelector('[data-top]')?.addEventListener('click', (e) => {
-    e.preventDefault()
-    gotoId('')
-  })
+
+  const root = document.querySelector<HTMLElement>('[data-article-toc]')
+  if (root) {
+    const card = root.querySelector<HTMLElement>('[data-anchor-scroll]')
+    const toggle = root.querySelector<HTMLButtonElement>('[data-toc-toggle]')
+    const current = root.querySelector<HTMLElement>('[data-toc-current]')
+    const lines = [...root.querySelectorAll<HTMLElement>('.toc-line')]
+    const links = [...root.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')]
+    const targets = links.map((link) =>
+      document.getElementById(decodeURIComponent(link.hash.slice(1)))
+    )
+
+    if (card) bindAnchorScroll(card)
+    root.querySelector('[data-top]')?.addEventListener('click', (e) => {
+      e.preventDefault()
+      gotoId('')
+    })
+
+    // 只滚动卡片自身，让当前章节居中；scrollIntoView 会连带滚动页面
+    const revealActive = () => {
+      const link = root.querySelector<HTMLElement>('[data-toc-link][aria-current]')
+      if (!link || !card) return
+      card.scrollTop = link.offsetTop - (card.clientHeight - link.offsetHeight) / 2
+    }
+
+    const setOpen = (open: boolean) => {
+      root.toggleAttribute('data-open', open)
+      toggle?.setAttribute('aria-expanded', String(open))
+      if (open) revealActive()
+    }
+    toggle?.addEventListener('click', () =>
+      setOpen(!root.hasAttribute('data-open'))
+    )
+    card?.addEventListener('click', (e) => {
+      const onLink = !!(e.target as HTMLElement).closest('a')
+      if (onLink) setOpen(false)
+      // 窄屏面板充当抽屉遮罩：点链接或空白处都收起导航抽屉（开关逻辑在 NavMenu）
+      if (root.hasAttribute('data-drawer-open')) {
+        document.querySelector<HTMLElement>('[data-nav-menu-toggle]')?.click()
+      }
+    })
+
+    // 窄屏：跟随 NavMenu 抽屉开关，并让面板左边缘贴住抽屉右边缘
+    const menus = document.querySelector<HTMLElement>('[data-nav-menu] .menus')
+    if (menus) {
+      new MutationObserver(() => {
+        const open = menus.classList.contains('show')
+        if (open === root.hasAttribute('data-drawer-open')) return
+        root.toggleAttribute('data-drawer-open', open)
+        if (!open) return
+        root.style.setProperty('--nav-drawer-width', `${menus.offsetWidth}px`)
+        revealActive()
+      }).observe(menus, { attributes: true, attributeFilter: ['class'] })
+    }
+    document.addEventListener('click', (e) => {
+      if (!root.contains(e.target as Node)) setOpen(false)
+    })
+    root.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape' || !root.hasAttribute('data-open')) return
+      setOpen(false)
+      toggle?.focus()
+    })
+    root.addEventListener('mouseenter', revealActive)
+
+    // 当前章节 = 最后一个顶边越过视口上方 1/4 处的标题；折叠容器内隐藏的标题不参与计算。
+    let active = -2
+    const update = () => {
+      const threshold = Math.min(window.innerHeight / 4, 200)
+      let next = -1
+      targets.forEach((target, index) => {
+        if (!target || target.getClientRects().length === 0) return
+        if (target.getBoundingClientRect().top <= threshold) next = index
+      })
+      if (next === active) return
+      lines[active]?.removeAttribute('data-active')
+      links[active]?.removeAttribute('aria-current')
+      active = next
+      root.toggleAttribute('data-has-active', active >= 0)
+      if (active < 0) return
+      lines[active]?.setAttribute('data-active', '')
+      links[active]?.setAttribute('aria-current', 'location')
+      root.style.setProperty('--toc-active', String(active))
+      if (current) current.textContent = links[active]?.textContent ?? ''
+    }
+
+    let frame = 0
+    const schedule = () => {
+      if (frame) return
+      frame = requestAnimationFrame(() => {
+        frame = 0
+        update()
+      })
+    }
+    window.addEventListener('scroll', schedule, { passive: true })
+    window.addEventListener('resize', schedule)
+    // 折叠块展开/收起会改变标题位置
+    document.addEventListener('click', schedule)
+    update()
+  }
 </script>
+
+<style lang="scss">
+  .article-toc {
+    --toc-step: 12px;
+    --toc-active: 0;
+    position: sticky;
+    top: 160px;
+    flex: 0 0 160px;
+    width: 160px;
+    margin-left: 12px;
+  }
+
+  .toc {
+    position: relative;
+  }
+
+  .toc-rail {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    &:focus-visible {
+      outline: 2px solid $color-primary;
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+  }
+
+  .toc-lines {
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    margin-left: auto;
+  }
+
+  .toc-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: var(--toc-step);
+    &::before {
+      content: '';
+      display: block;
+      height: 2px;
+      border-radius: 1px;
+      background: #0000002e;
+      transition:
+        width 0.2s ease,
+        background-color 0.2s ease;
+    }
+    &.depth-2::before {
+      width: 18px;
+    }
+    &.depth-3::before {
+      width: 10px;
+    }
+    &[data-active]::before {
+      width: 26px;
+      height: 3px;
+      background: $color-primary;
+    }
+  }
+
+  .toc-rail:hover .toc-line:not([data-active])::before {
+    background: #00000052;
+  }
+
+  .toc-current {
+    position: absolute;
+    left: 0;
+    right: 36px;
+    top: calc((var(--toc-active) + 0.5) * var(--toc-step));
+    transform: translateY(-50%);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.4;
+    color: $color-dark;
+    opacity: 0;
+    transition:
+      top 0.25s ease,
+      opacity 0.2s ease;
+    pointer-events: none;
+  }
+
+  .article-toc[data-has-active] .toc-current {
+    opacity: 1;
+  }
+
+  .toc-card {
+    position: absolute;
+    z-index: 20;
+    top: -14px;
+    right: -8px;
+    width: 280px;
+    max-height: calc(100vh - 220px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 8px 6px;
+    background: #fff;
+    border: 1px solid #00000014;
+    border-radius: 6px;
+    box-shadow:
+      0 6px 24px #0000001f,
+      0 1px 3px #00000014;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(6px);
+    transition:
+      opacity 0.15s ease 0.12s,
+      transform 0.15s ease 0.12s,
+      visibility 0s linear 0.27s;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    a {
+      display: block;
+      padding: 4px 10px;
+      border-left: 3px solid transparent;
+      border-radius: 0 4px 4px 0;
+      font-size: 15px;
+      line-height: 1.5;
+      color: #333;
+      word-break: break-all;
+    }
+    li.depth-2 a {
+      font-weight: 500;
+    }
+    li.depth-3 a {
+      padding-left: 24px;
+      font-size: 14px;
+      color: #666;
+    }
+    li a:hover,
+    li a:focus-visible {
+      background: #66bb6a1a;
+      color: $color-dark;
+      outline: none;
+    }
+    li a[aria-current] {
+      border-left-color: $color-primary;
+      color: $color-dark;
+      font-weight: bold;
+    }
+  }
+
+  // 卡片会滚动到当前章节，头部吸顶以保证“回到顶部”始终可见
+  .toc-card-head {
+    position: sticky;
+    z-index: 1;
+    top: -8px;
+    margin: -8px -6px 4px;
+    padding: 8px 6px 4px;
+    background: inherit;
+    border-bottom: 1px solid #0000000f;
+  }
+
+  .toc-card-title {
+    display: none;
+  }
+
+  .toc-card .toc-card-top {
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: #00000080;
+    &:hover,
+    &:focus-visible {
+      background: #66bb6a1a;
+      color: $color-dark;
+      outline: none;
+    }
+  }
+
+  @media screen and (min-width: 961px) {
+    .article-toc:hover .toc-card,
+    .toc:focus-within .toc-card,
+    .article-toc[data-open] .toc-card {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition:
+        opacity 0.15s ease,
+        transform 0.15s ease,
+        visibility 0s;
+    }
+  }
+
+  // 窄屏：不占正文宽度，卡片变为导航抽屉右侧的全高面板（FAB 按钮组在右下角，底部留白避让）
+  @media screen and (max-width: 960px) {
+    .article-toc {
+      position: static;
+      flex: 0 0 0;
+      width: 0;
+      margin: 0;
+    }
+    .toc-rail,
+    .toc-top {
+      display: none;
+    }
+    .toc {
+      position: static;
+    }
+    .toc-card {
+      position: fixed;
+      z-index: 89;
+      top: 40px;
+      bottom: 0;
+      left: var(--nav-drawer-width, 15em);
+      right: 0;
+      width: auto;
+      max-height: none;
+      padding: 12px 8px 260px;
+      border: 0;
+      border-radius: 0;
+      background: #fff;
+      box-shadow: inset 6px 0 12px -6px #00000040;
+      transform: translateX(16px);
+      transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0s linear 0.2s;
+      a {
+        padding: 6px 6px;
+        font-size: 14px;
+      }
+      li.depth-3 a {
+        padding-left: 16px;
+        font-size: 13px;
+      }
+    }
+    .toc-card-head {
+      top: -12px;
+      margin: -12px -8px 4px;
+      padding: 12px 8px 4px;
+      box-shadow: inherit;
+    }
+    .toc-card-title {
+      display: block;
+      margin: 0 0 6px;
+      padding: 0 11px;
+      font-size: 12px;
+      color: #00000073;
+    }
+    .article-toc[data-drawer-open] .toc-card {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      transition:
+        opacity 0.25s ease 0.05s,
+        transform 0.25s ease 0.05s,
+        visibility 0s;
+    }
+  }
+
+  .toc-top {
+    display: block;
+    margin-top: 28px;
+    text-align: right;
+    font-size: 13px;
+    color: #00000080;
+    &:hover {
+      color: $color-dark;
+    }
+  }
+
+  :global([data-theme='dark']) {
+    .toc-line::before {
+      background: #ffffff2e;
+    }
+    .toc-rail:hover .toc-line:not([data-active])::before {
+      background: #ffffff59;
+    }
+    .toc-line[data-active]::before {
+      background: $color-primary;
+    }
+    .toc-current {
+      color: $color-light;
+    }
+    .toc-card {
+      background: #2a2b2c;
+      border-color: #ffffff14;
+      box-shadow: 0 6px 24px #00000080;
+      a {
+        color: #c9c7c5;
+      }
+      li.depth-3 a {
+        color: #9a9896;
+      }
+      li a {
+        &:hover,
+        &:focus-visible,
+        &[aria-current] {
+          color: $color-light;
+        }
+      }
+      .toc-card-head {
+        border-bottom-color: #ffffff14;
+      }
+      .toc-card-top {
+        color: #ffffff80;
+        &:hover,
+        &:focus-visible {
+          color: $color-light;
+        }
+      }
+    }
+    @media screen and (max-width: 960px) {
+      .toc-card {
+        background: #1b1c1d;
+        box-shadow: inset 6px 0 12px -6px #000000b3;
+      }
+      .toc-card-title {
+        color: #ffffff73;
+      }
+    }
+    .toc-top {
+      color: #ffffff80;
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .toc-line::before,
+    .toc-current,
+    .toc-card {
+      transition: none !important;
+    }
+  }
+</style>

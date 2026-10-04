@@ -151,26 +151,4 @@
       margin-top: 1em;
     }
   }
-  aside {
-    min-width: 120px;
-    position: sticky;
-    top: 180px;
-    a {
-      font-size: 1.15rem;
-      line-height: 2em;
-    }
-    .articleTOC ul {
-      margin: 0;
-      padding-left: 20px;
-      font-size: 1.15rem;
-      line-height: 2em;
-      list-style-type: '\e06f';
-      li {
-        padding-left: 0.5em;
-        &::marker {
-          color: #00000066;
-        }
-      }
-    }
-  }
 }
