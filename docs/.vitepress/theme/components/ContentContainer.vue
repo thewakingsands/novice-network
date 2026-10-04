@@ -105,7 +105,7 @@
     position sticky
     top 180px
     a
-      fon-size 1.15rem
+      font-size 1.15rem
       line-height 2em
     .articleTOC ul
       margin 0
