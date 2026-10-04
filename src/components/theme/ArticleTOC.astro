@@ -349,70 +349,9 @@ const items = (headings ?? []).filter(
     }
   }
 
-  // 窄屏：不占正文宽度，卡片变为导航抽屉右侧的全高面板（FAB 按钮组在右下角，底部留白避让）
   @media screen and (max-width: 960px) {
     .article-toc {
-      position: static;
-      flex: 0 0 0;
-      width: 0;
-      margin: 0;
-    }
-    .toc-rail,
-    .toc-top {
       display: none;
-    }
-    .toc {
-      position: static;
-    }
-    .toc-card {
-      position: fixed;
-      z-index: 89;
-      top: 40px;
-      bottom: 0;
-      left: var(--nav-drawer-width, 15em);
-      right: 0;
-      width: auto;
-      max-height: none;
-      padding: 12px 8px 260px;
-      border: 0;
-      border-radius: 0;
-      background: #fff;
-      box-shadow: inset 6px 0 12px -6px #00000040;
-      transform: translateX(16px);
-      transition:
-        opacity 0.2s ease,
-        transform 0.2s ease,
-        visibility 0s linear 0.2s;
-      a {
-        padding: 6px 6px;
-        font-size: 14px;
-      }
-      li.depth-3 a {
-        padding-left: 16px;
-        font-size: 13px;
-      }
-    }
-    .toc-card-head {
-      top: -12px;
-      margin: -12px -8px 4px;
-      padding: 12px 8px 4px;
-      box-shadow: inherit;
-    }
-    .toc-card-title {
-      display: block;
-      margin: 0 0 6px;
-      padding: 0 11px;
-      font-size: 12px;
-      color: #00000073;
-    }
-    .article-toc[data-drawer-open] .toc-card {
-      opacity: 1;
-      visibility: visible;
-      transform: none;
-      transition:
-        opacity 0.25s ease 0.05s,
-        transform 0.25s ease 0.05s,
-        visibility 0s;
     }
   }
 
