@@ -13,7 +13,7 @@ Treat the current tree as authoritative. `specs/2026-07-18-starlight-rewrite/` r
 3. `src/plugins/index.ts` supplies the ordered remark/rehype compatibility pipeline: GFM and custom markers, heading attributes, `.md` link rewriting, VuePress-compatible slugs, table/image transforms, and CJK spacing.
 4. Starlight routes render through overrides in `src/components/starlight/`. `PageFrame.astro` owns the legacy shell; `src/components/theme/` provides navigation, pager, article TOC, search, and browser interactions.
 5. Frontmatter plus `Astro.locals.starlightRoute`, `src/data/toc.ts`, and `src/data/duty.ts` feed server-rendered Astro components. Small vanilla DOM scripts then add interaction through `data-*` hooks; there are no hydrated UI-framework islands.
-6. `Action`, `Item`, and `Status` enrich icons at build time through `src/utils/cafemaker.ts` with memory/disk caching, bounded concurrency, timeouts, and failure fallback. Client-side widgets use explicit loading/error/stale-response handling.
+6. `Action`, `Item`, and `Status` enrich icons at build time through `src/utils/xivapi.ts` (XIVAPI v2) with memory/disk caching, bounded concurrency, timeouts, and failure fallback. Client-side widgets use explicit loading/error/stale-response handling.
 7. `pnpm build` runs Astro and then `tools/postbuild/index.js`, which creates `dist/search-index.json` and flattens `dist/**/*.htm/index.html` to `dist/**/*.htm`. The postbuild step is required for production-compatible output.
 
 State is local DOM/closure state. Narrow caches use module state, `window`, or `localStorage`; there is no Pinia/Nanostores/Redux-style store and no dependency-injection layer. Modules import dependencies directly via `@/` or relative paths.
@@ -73,7 +73,7 @@ There is no separate `typecheck`, `format`, test-watch, or coverage script. `pnp
 - `src/components/starlight/MarkdownContent.astro` — normal article versus `webframe` rendering.
 - `src/data/toc.ts` — authoritative hand-maintained navigation and pager hierarchy.
 - `src/data/duty.ts` — typed duty metadata consumed by `DutyNav.astro`; excluded from Biome as generated data.
-- `src/utils/cafemaker.ts` — build-time remote metadata/icon cache and circuit breaker.
+- `src/utils/xivapi.ts` — build-time remote metadata/icon cache and circuit breaker.
 - `src/scripts/search.ts` and `src/components/content/SiteSearch.astro` — MiniSearch index loading, CJK tokenization, and UI state.
 - `tools/postbuild/index.js` — search-index generation and `.htm` flattening.
 - `public/sw.js` — production/CDN proxy service worker.
@@ -81,7 +81,7 @@ There is no separate `typecheck`, `format`, test-watch, or coverage script. `pnp
 
 ## Runtime/Tooling Preferences
 
-Use Node and pnpm; do not use Bun, npm, or Yarn for repository workflows. `mise.toml` requests `node = "latest"` and `pnpm = "latest"`, while CI uses Node `lts/*`; no exact runtime versions are pinned. The active lockfile is `pnpm-lock.yaml`.
+Use Node and pnpm; do not use Bun, npm, or Yarn for repository workflows. `mise.toml` requests `node = "latest"` and `pnpm = "latest"`, while CI uses Node `lts/*`. The pnpm version is pinned by the `packageManager` field in `package.json` (pnpm switches to it automatically, and `pnpm/action-setup` in CI requires it). The active lockfile is `pnpm-lock.yaml`.
 
 Astro produces static output in `dist/`. Starlight Pagefind is disabled in favor of the custom MiniSearch index, and the default Starlight 404 is replaced by `src/pages/404.astro`. `PUBLIC_GA4_ID` is optional; production-only analytics, canonical-host redirect, and service-worker behavior are configured in `astro.config.mjs`.
 
@@ -91,4 +91,4 @@ Vitest is the only configured test framework. Tests are colocated `src/**/*.test
 
 Run the full suite with `pnpm test`; for a focused run, use `pnpm exec vitest run <path-to-test>`. Add tests for changes to URL/slug rules, legacy syntax, transform ordering, search tokenization, or other observable contracts. Prefer inline Markdown cases and rendered HTML assertions over source-text or implementation-detail checks.
 
-No browser/E2E framework, snapshot suite, coverage provider, or coverage threshold is configured. CI currently runs `pnpm build` on pushes to `master` but does not run `pnpm check` or `pnpm test`; run the relevant checks locally before submitting changes. For UI changes, also exercise the changed page in the Astro dev/preview site because unit tests do not cover browser behavior.
+No browser/E2E framework, snapshot suite, coverage provider, or coverage threshold is configured. CI runs `pnpm test` and `pnpm build` on pushes to `master` but does not run `pnpm check`; run the relevant checks locally before submitting changes. For UI changes, also exercise the changed page in the Astro dev/preview site because unit tests do not cover browser behavior.

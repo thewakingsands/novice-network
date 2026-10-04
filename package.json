@@ -4,6 +4,7 @@
   "type": "module",
   "license": "UNLICENSED",
   "private": true,
+  "packageManager": "pnpm@12.9.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node tools/postbuild/index.js",
@@ -45,7 +46,7 @@
     "vitest": "^4.1.10"
   },
   "dependencies": {
-    "@thewakingsands/axis-font-icons": "^0.3.0",
+    "@thewakingsands/axis-font-icons": "^0.4.0",
     "@thewakingsands/eorzea-interactive-map": "1.1.3",
     "@thewakingsands/kit-tooltip": "0.4.0-beta.0",
     "@thewakingsands/xivapi-v2": "1.0.0",

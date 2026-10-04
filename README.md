@@ -56,7 +56,7 @@
 
 ## 开发者
 
-需要 Node 与 pnpm（本仓库用 [mise](https://mise.jdx.dev/) 管理，见 `mise.toml`）。
+需要 Node 与 pnpm（本仓库用 [mise](https://mise.jdx.dev/) 管理，见 `mise.toml`；pnpm 版本由 `package.json` 的 `packageManager` 字段固定）。
 
 ### 常用命令
 

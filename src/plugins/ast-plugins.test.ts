@@ -159,4 +159,26 @@ describe('rehypePangu / spacingText', () => {
     expect(html).toContain('这是 FF14')
     expect(html).toContain('<code>code不加空格</code>')
   })
+
+  it('间距跨越加粗、链接等行内标记', async () => {
+    const html = await mdToHtml('中文**FF14**中文 [FF14](/a)中文', {
+      rehype: [rehypePangu],
+    })
+    expect(html).toContain('中文<strong> FF14</strong> 中文')
+    expect(html).toContain('<a href="/a">FF14</a> 中文')
+  })
+
+  it('行内代码两侧补空格，段首段尾除外', async () => {
+    const html = await mdToHtml('`Ctrl+C`复制，按`Esc`退出 `End`', {
+      rehype: [rehypePangu],
+    })
+    expect(html).toBe(
+      '<p><code>Ctrl+C</code> 复制，按 <code>Esc</code> 退出 <code>End</code></p>'
+    )
+  })
+
+  it('行内 HTML 处重新开始，不跨越', async () => {
+    const html = await mdToHtml('中文<b>x</b>FF14', { rehype: [rehypePangu] })
+    expect(html).toContain('<b>x</b>FF14')
+  })
 })

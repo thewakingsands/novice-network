@@ -1,6 +1,7 @@
 // 移植自 theme/components/ContentContainer.vue 的正文排版样式（全局层，作用于 .content-container）
 .content-container {
   width: 100%;
+  padding: 20px;
   min-height: 67vh;
   display: flex;
   justify-content: center;
@@ -151,6 +152,7 @@
     }
   }
   aside {
+    min-width: 120px;
     position: sticky;
     top: 180px;
     a {

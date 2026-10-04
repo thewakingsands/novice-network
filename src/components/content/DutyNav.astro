@@ -43,6 +43,7 @@ const filterGroups = [
       ['零式 Raid', 'type-savage-raid'],
       ['绝境战', 'type-ultimate'],
       ['团队任务', 'type-alliance'],
+      ['其他', 'type-other'],
     ],
   },
 ] as const
@@ -162,6 +163,8 @@ const filterGroups = [
           return type === '绝境战'
         case 'type-alliance':
           return type === '大型任务' && partySize === 24
+        case 'type-other':
+          return ['多变迷宫', '诛灭战', '深层迷宫讨伐'].includes(type)
         default:
           return true
       }

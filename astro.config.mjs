@@ -9,7 +9,7 @@ import { legacySyntaxPlugin } from './src/plugins/vite-legacy-syntax.ts'
 const SITE = 'https://ff14.org'
 
 const KEYWORDS =
-  '最终幻想14,FF14,FFXIV,新人指南,豆芽站,萌新手册,入门攻略,新手教程,职业选择,攻略,副本,任务,练级,装备,PVP,生产,采集,钓鱼,海钓,优雷卡,ULK,博兹雅,BZY,古武,魂武,优武,义武'
+  '最终幻想14,FF14,FFXIV,新人指南,豆芽站,萌新手册,入门攻略,新手教程,职业选择,副本,任务,练级,装备,PVP,生产,采集,钓鱼,海钓,优雷卡,ULK,博兹雅,BZY,古武,魂武,优武,义武'
 
 const PROD = process.env.NODE_ENV === 'production'
 const GA4_ID = process.env.PUBLIC_GA4_ID
@@ -92,7 +92,7 @@ export default defineConfig({
     starlight({
       title: '新大陆见闻录 - 最终幻想14新手入坑指南手册',
       description:
-        '「新大陆见闻录」网站为最终幻想14超实用萌新手册入坑指南，为FF14中文玩家提供涵盖广泛全面、清晰易懂的新人入坑攻略指引。推荐玩法大全，练级指南，从入门到精通。',
+        '《新大陆见闻录》网站为最终幻想14超实用萌新手册入坑指南，为FF14中文玩家提供涵盖广泛全面、清晰易懂的新手基础攻略指引。',
       // 沿用原站 favicon.ico
       favicon: '/favicon.ico',
       // 使用纯前端自建搜索（见 §5），关闭 Starlight 内置 Pagefind
