@@ -44,8 +44,3 @@ jobs:
         run: |
           chmod +x ./ci/deploy.sh
           ./ci/deploy.sh
-      - name: 触发网站更新
-        if: github.ref == 'refs/heads/master'
-        run: curl -XPOST $GITPAGES_UPDATE_URL
-        env:
-          GITPAGES_UPDATE_URL: ${{ secrets.GITPAGES_UPDATE_URL }}
