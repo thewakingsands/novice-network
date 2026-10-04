@@ -52,15 +52,29 @@
 
 ## 开发者
 
+需要 Node.js 24+ 和 pnpm 12.9.1（与 `packageManager` 字段一致）。
+
 ### 编译
 
 ```bash
-yarn
-yarn build
+pnpm install
+pnpm build
 ```
 
 ### 开发
 
 ```bash
-yarn dev
+pnpm dev
 ```
+
+### 验证与预览
+
+```bash
+pnpm test
+pnpm build
+pnpm preview
+```
+
+站点使用 VitePress 自定义主题，配置位于 `docs/.vitepress`，静态资源位于 `docs/public`，构建结果仍写入 `dist`。
+文章保留 `.htm` 地址，目录首页保留 `/` 地址；构建会同步转换 Markdown 链接与输出文件名。
+`_includes` 中的 Markdown 通过 `IncludePage` 加载，不单独发布为页面。

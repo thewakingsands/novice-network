@@ -1,9 +1,8 @@
 const path = require('path')
-const glob = require('glob')
+const glob = { sync: require('node:fs').globSync }
 const fs = require('fs')
 const cheerio = require('cheerio')
 const diff = require('diff')
-const mkdirp = require('mkdirp')
 
 function getFiles() {
   return glob.sync(path.join(__dirname, 'html', 'uiguide', '*.html'))
@@ -52,7 +51,7 @@ function main() {
     console.log(`loading ${file}`)
 
     const outDir = path.dirname(file).replace('html', 'diff')
-    mkdirp(outDir)
+    fs.mkdirSync(outDir, { recursive: true })
 
     const document = loadDocument(file)
     const [textPairs, imgPairs] = findPairs(document)
@@ -85,7 +84,7 @@ function main() {
   }
 
   fs.writeFileSync(
-    'docs/.vuepress/theme/pairs.json',
+    'docs/.vitepress/theme/pairs.json',
     JSON.stringify(imgs, null, 2)
   )
 }
