@@ -3,7 +3,7 @@ name: Updates
 on:
   push:
     branches:
-      - master
+      - '**'
 
 jobs:
   build:
@@ -35,14 +35,17 @@ jobs:
           AFDIAN_USER_ID: ${{ secrets.AFDIAN_USER_ID }}
           AFDIAN_API_TOKEN: ${{ secrets.AFDIAN_API_TOKEN }}
       - name: 导出部署密钥
+        if: github.ref == 'refs/heads/master'
         run: echo "$DEPLOY_KEY" > ci/deploy-key
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
       - name: 运行部署脚本
+        if: github.ref == 'refs/heads/master'
         run: |
           chmod +x ./ci/deploy.sh
           ./ci/deploy.sh
       - name: 触发网站更新
+        if: github.ref == 'refs/heads/master'
         run: curl -XPOST $GITPAGES_UPDATE_URL
         env:
           GITPAGES_UPDATE_URL: ${{ secrets.GITPAGES_UPDATE_URL }}
