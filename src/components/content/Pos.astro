@@ -1,5 +1,5 @@
 ---
-// 复刻 Pos.vue：艾欧泽亚地图坐标触发点（点击打开交互地图，见阶段 5 mapLoader）。
+// 复刻 Pos.vue：艾欧泽亚地图坐标触发点（点击打开交互地图，见 src/scripts/mapLoader.ts）。
 interface Props {
   name?: string
   sub?: string
@@ -23,6 +23,10 @@ const mapName = sub ? `${name},${sub}` : name
     x && y && <span> (X: {x}, Y: {y})</span>
   }
 </span>
+
+<script>
+  import '@/scripts/mapLoader'
+</script>
 
 <style lang="scss">
 .eorzea-map-trigger {

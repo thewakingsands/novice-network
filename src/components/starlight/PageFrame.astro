@@ -1,7 +1,6 @@
 ---
 // 覆盖 Starlight PageFrame：复刻原 Layout.vue 页面骨架。
 import PhotoSwipeMount from '@/components/theme/PhotoSwipeMount.astro'
-import eorzeaMapScriptUrl from '@thewakingsands/eorzea-interactive-map/dist/map.js?url'
 const { entry } = Astro.locals.starlightRoute
 const className = entry.data.className
 const isWebframe = !!entry.data.webframe
@@ -21,8 +20,6 @@ const isWebframe = !!entry.data.webframe
   </div>
   <PhotoSwipeMount />
 </div>
-
-<script is:inline src={eorzeaMapScriptUrl}></script>
 
 <script>
   // 复刻原 Layout.vue：初始化技能/状态悬浮详情（读取 data-ck-action-id 等属性）

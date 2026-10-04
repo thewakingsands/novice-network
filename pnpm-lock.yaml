@@ -12,8 +12,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0
       '@thewakingsands/eorzea-interactive-map':
-        specifier: 1.1.1
-        version: 1.1.1
+        specifier: 1.1.3
+        version: 1.1.3(supports-color@2.0.0)
       '@thewakingsands/kit-tooltip':
         specifier: 0.4.0-beta.0
         version: 0.4.0-beta.0
@@ -21,8 +21,8 @@ importers:
         specifier: 1.0.0
         version: 1.0.0
       leaflet:
-        specifier: 1.5.1
-        version: 1.5.1
+        specifier: 1.9.4
+        version: 1.9.4
       minisearch:
         specifier: ^7.2.0
         version: 7.2.0
@@ -44,10 +44,10 @@ importers:
         version: 0.9.9(prettier@3.9.5)(typescript@5.9.3)
       '@astrojs/mdx':
         specifier: ^7.0.3
-        version: 7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))
+        version: 7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(supports-color@2.0.0)
       '@astrojs/starlight':
         specifier: ^0.41.3
-        version: 0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(typescript@5.9.3)
+        version: 0.41.3(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(supports-color@2.0.0)(typescript@5.9.3)
       '@biomejs/biome':
         specifier: ^2.5.4
         version: 2.5.4
@@ -68,7 +68,7 @@ importers:
         version: 3.0.3
       astro:
         specifier: ^7.1.1
-        version: 7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
+        version: 7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
       cheerio:
         specifier: ^1.2.0
         version: 1.2.0
@@ -92,13 +92,13 @@ importers:
         version: 1.3.5(unified@11.0.5)
       remark-gfm:
         specifier: ^4.0.1
-        version: 4.0.1
+        version: 4.0.1(supports-color@2.0.0)
       remark-ins:
         specifier: ^1.2.5
         version: 1.2.5(unified@11.0.5)
       remark-parse:
         specifier: ^11.0.0
-        version: 11.0.0
+        version: 11.0.0(supports-color@2.0.0)
       remark-rehype:
         specifier: ^11.1.2
         version: 11.1.2
@@ -1041,8 +1041,8 @@ packages:
   '@thewakingsands/axis-font-icons@0.3.0':
     resolution: {integrity: sha512-+KaW886tezl/S16vvaXMYiMkdx+OIXtQ7SoC/6rOc4h+moXjENmhlddAhKHgID1wigOiRi1jQ7Y6mVrr0hgo7Q==}
 
-  '@thewakingsands/eorzea-interactive-map@1.1.1':
-    resolution: {integrity: sha512-LBueGJvavNUFcweQpcwBoE0dbVGvqSMnPYX7XWpaNt82ryUzVmlpywaD8AeE/RdENmyAUZxkwx+F0QT/25qs/Q==}
+  '@thewakingsands/eorzea-interactive-map@1.1.3':
+    resolution: {integrity: sha512-FRzsAgtEUCoI/TQ6zOcrJd0at1ewW1VwwiqPpoKDLyRACdcjd2uBS1IlucXdfHET0R/ajbh+uzK9XoQD5/hBog==}
 
   '@thewakingsands/kit-common@0.4.0-beta.0':
     resolution: {integrity: sha512-4Jl7ysXIMIK2uA7luAEI5sCob93z/seiLK4Oiffvh+M7KZVL0TBeo+hzEWFr2IxAfNdszoDuYckyg081cvIPDg==}
@@ -2079,6 +2079,9 @@ packages:
 
   leaflet@1.5.1:
     resolution: {integrity: sha512-ekM9KAeG99tYisNBg0IzEywAlp0hYI5XRipsqRXyRTeuU8jcuntilpp+eFf5gaE0xubc9RuSNIVtByEKwqFV0w==}
+
+  leaflet@1.9.4:
+    resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
 
   lightningcss-android-arm64@1.32.0:
     resolution: {integrity: sha512-YK7/ClTt4kAK0vo6w3X+Pnm0D2cf2vPHbhOXdoNti1Ga0al1P4TBZhwjATvjNwLEBCnKvjJc2jQgHXH0NEwlAg==}
@@ -3441,7 +3444,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@astrojs/markdown-remark@7.2.1':
+  '@astrojs/markdown-remark@7.2.1(supports-color@2.0.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.10.1
       '@astrojs/prism': 4.0.2
@@ -3451,8 +3454,8 @@ snapshots:
       mdast-util-definitions: 6.0.0
       rehype-raw: 7.0.0
       rehype-stringify: 10.0.1
-      remark-gfm: 4.0.1
-      remark-parse: 11.0.0
+      remark-gfm: 4.0.1(supports-color@2.0.0)
+      remark-parse: 11.0.0(supports-color@2.0.0)
       remark-rehype: 11.1.2
       remark-smartypants: 3.0.2
       unified: 11.0.5
@@ -3471,19 +3474,19 @@ snapshots:
       hast-util-from-html: 2.0.3
       satteri: 0.9.5
 
-  '@astrojs/mdx@7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))':
+  '@astrojs/mdx@7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(supports-color@2.0.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.10.1
-      '@astrojs/markdown-remark': 7.2.1
-      '@mdx-js/mdx': 3.1.1
+      '@astrojs/markdown-remark': 7.2.1(supports-color@2.0.0)
+      '@mdx-js/mdx': 3.1.1(supports-color@2.0.0)
       acorn: 8.17.0
-      astro: 7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
+      astro: 7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
       es-module-lexer: 2.3.1
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
       piccolore: 0.1.3
       rehype-raw: 7.0.0
-      remark-gfm: 4.0.1
+      remark-gfm: 4.0.1(supports-color@2.0.0)
       remark-smartypants: 3.0.2
       source-map: 0.7.6
       unist-util-visit: 5.1.0
@@ -3503,17 +3506,17 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.4.3
 
-  '@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1)(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(typescript@5.9.3)':
+  '@astrojs/starlight@0.41.3(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(supports-color@2.0.0)(typescript@5.9.3)':
     dependencies:
       '@astrojs/markdown-satteri': 0.3.4
-      '@astrojs/mdx': 7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))
+      '@astrojs/mdx': 7.0.3(@astrojs/markdown-satteri@0.3.4)(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))(supports-color@2.0.0)
       '@astrojs/sitemap': 3.7.3
       '@pagefind/default-ui': 1.5.2
       '@types/hast': 3.0.5
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
-      astro-expressive-code: 0.44.0(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))
+      astro: 7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
+      astro-expressive-code: 0.44.0(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0))
       bcp-47: 2.1.1
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -3523,20 +3526,20 @@ snapshots:
       js-yaml: 4.3.0
       klona: 2.0.6
       magic-string: 0.30.21
-      mdast-util-directive: 3.1.0
+      mdast-util-directive: 3.1.0(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
       mdast-util-to-string: 4.0.0
       pagefind: 1.5.2
       rehype: 13.0.2
       rehype-format: 5.0.1
-      remark-directive: 4.0.0
+      remark-directive: 4.0.0(supports-color@2.0.0)
       satteri: 0.9.5
       ultrahtml: 1.7.0
       unified: 11.0.5
       unist-util-visit: 5.1.0
       vfile: 6.0.3
     optionalDependencies:
-      '@astrojs/markdown-remark': 7.2.1
+      '@astrojs/markdown-remark': 7.2.1(supports-color@2.0.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3905,7 +3908,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
-  '@mdx-js/mdx@3.1.1':
+  '@mdx-js/mdx@3.1.1(supports-color@2.0.0)':
     dependencies:
       '@types/estree': 1.0.9
       '@types/estree-jsx': 1.0.5
@@ -3917,14 +3920,14 @@ snapshots:
       estree-util-is-identifier-name: 3.0.0
       estree-util-scope: 1.0.0
       estree-walker: 3.0.3
-      hast-util-to-jsx-runtime: 2.3.6
+      hast-util-to-jsx-runtime: 2.3.6(supports-color@2.0.0)
       markdown-extensions: 2.0.0
       recma-build-jsx: 1.0.0
       recma-jsx: 1.0.1(acorn@8.17.0)
       recma-stringify: 1.0.0
-      rehype-recma: 1.0.0
-      remark-mdx: 3.1.1
-      remark-parse: 11.0.0
+      rehype-recma: 1.0.0(supports-color@2.0.0)
+      remark-mdx: 3.1.1(supports-color@2.0.0)
+      remark-parse: 11.0.0(supports-color@2.0.0)
       remark-rehype: 11.1.2
       source-map: 0.7.6
       unified: 11.0.5
@@ -4138,16 +4141,16 @@ snapshots:
 
   '@thewakingsands/axis-font-icons@0.3.0': {}
 
-  '@thewakingsands/eorzea-interactive-map@1.1.1':
+  '@thewakingsands/eorzea-interactive-map@1.1.3(supports-color@2.0.0)':
     dependencies:
       assets: 3.0.1
       babel-polyfill: 6.26.0
-      babel-preset-env: 1.7.0
+      babel-preset-env: 1.7.0(supports-color@2.0.0)
       crel: 4.2.1
       dom4: 2.1.6
       leaflet: 1.5.1
       lodash-es: 4.18.1
-      mediawiki2: 0.0.3
+      mediawiki2: 0.0.3(supports-color@2.0.0)
       normalize.css: 8.0.1
       tslib: 1.14.1
       whatwg-fetch: 3.6.20
@@ -4390,13 +4393,13 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.44.0(astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)):
+  astro-expressive-code@0.44.0(astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)):
     dependencies:
-      astro: 7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
+      astro: 7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0)
       rehype-expressive-code: 0.44.0
       url-extras: 0.1.0
 
-  astro@7.1.1(@astrojs/markdown-remark@7.2.1)(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0):
+  astro@7.1.1(@astrojs/markdown-remark@7.2.1(supports-color@2.0.0))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)(@types/node@26.1.1)(sass@1.101.0)(yaml@2.9.0):
     dependencies:
       '@astrojs/compiler-rs': 0.3.1(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.2)
       '@astrojs/internal-helpers': 0.10.1
@@ -4452,7 +4455,7 @@ snapshots:
       yargs-parser: 22.0.0
       zod: 4.4.3
     optionalDependencies:
-      '@astrojs/markdown-remark': 7.2.1
+      '@astrojs/markdown-remark': 7.2.1(supports-color@2.0.0)
       sharp: 0.35.3(@types/node@26.1.1)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -4503,46 +4506,46 @@ snapshots:
       esutils: 2.0.3
       js-tokens: 3.0.2
 
-  babel-helper-builder-binary-assignment-operator-visitor@6.24.1:
+  babel-helper-builder-binary-assignment-operator-visitor@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-explode-assignable-expression: 6.24.1
+      babel-helper-explode-assignable-expression: 6.24.1(supports-color@2.0.0)
       babel-runtime: 6.26.0
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-call-delegate@6.24.1:
+  babel-helper-call-delegate@6.24.1(supports-color@2.0.0):
     dependencies:
       babel-helper-hoist-variables: 6.24.1
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-define-map@6.26.0:
+  babel-helper-define-map@6.26.0(supports-color@2.0.0):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@2.0.0)
       babel-runtime: 6.26.0
       babel-types: 6.26.0
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-explode-assignable-expression@6.24.1:
+  babel-helper-explode-assignable-expression@6.24.1(supports-color@2.0.0):
     dependencies:
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-function-name@6.24.1:
+  babel-helper-function-name@6.24.1(supports-color@2.0.0):
     dependencies:
       babel-helper-get-function-arity: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
@@ -4568,23 +4571,23 @@ snapshots:
       babel-types: 6.26.0
       lodash: 4.18.1
 
-  babel-helper-remap-async-to-generator@6.24.1:
+  babel-helper-remap-async-to-generator@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@2.0.0)
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-helper-replace-supers@6.24.1:
+  babel-helper-replace-supers@6.24.1(supports-color@2.0.0):
     dependencies:
       babel-helper-optimise-call-expression: 6.24.1
       babel-messages: 6.23.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
@@ -4603,9 +4606,9 @@ snapshots:
 
   babel-plugin-syntax-trailing-function-commas@6.22.0: {}
 
-  babel-plugin-transform-async-to-generator@6.24.1:
+  babel-plugin-transform-async-to-generator@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-remap-async-to-generator: 6.24.1
+      babel-helper-remap-async-to-generator: 6.24.1(supports-color@2.0.0)
       babel-plugin-syntax-async-functions: 6.13.0
       babel-runtime: 6.26.0
     transitivePeerDependencies:
@@ -4619,34 +4622,34 @@ snapshots:
     dependencies:
       babel-runtime: 6.26.0
 
-  babel-plugin-transform-es2015-block-scoping@6.26.0:
+  babel-plugin-transform-es2015-block-scoping@6.26.0(supports-color@2.0.0):
     dependencies:
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-classes@6.24.1:
+  babel-plugin-transform-es2015-classes@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-define-map: 6.26.0
-      babel-helper-function-name: 6.24.1
+      babel-helper-define-map: 6.26.0(supports-color@2.0.0)
+      babel-helper-function-name: 6.24.1(supports-color@2.0.0)
       babel-helper-optimise-call-expression: 6.24.1
-      babel-helper-replace-supers: 6.24.1
+      babel-helper-replace-supers: 6.24.1(supports-color@2.0.0)
       babel-messages: 6.23.0
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-computed-properties@6.24.1:
+  babel-plugin-transform-es2015-computed-properties@6.24.1(supports-color@2.0.0):
     dependencies:
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -4663,9 +4666,9 @@ snapshots:
     dependencies:
       babel-runtime: 6.26.0
 
-  babel-plugin-transform-es2015-function-name@6.24.1:
+  babel-plugin-transform-es2015-function-name@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-function-name: 6.24.1
+      babel-helper-function-name: 6.24.1(supports-color@2.0.0)
       babel-runtime: 6.26.0
       babel-types: 6.26.0
     transitivePeerDependencies:
@@ -4675,53 +4678,53 @@ snapshots:
     dependencies:
       babel-runtime: 6.26.0
 
-  babel-plugin-transform-es2015-modules-amd@6.24.1:
+  babel-plugin-transform-es2015-modules-amd@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-plugin-transform-es2015-modules-commonjs: 6.26.2
+      babel-plugin-transform-es2015-modules-commonjs: 6.26.2(supports-color@2.0.0)
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-modules-commonjs@6.26.2:
+  babel-plugin-transform-es2015-modules-commonjs@6.26.2(supports-color@2.0.0):
     dependencies:
       babel-plugin-transform-strict-mode: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-modules-systemjs@6.24.1:
+  babel-plugin-transform-es2015-modules-systemjs@6.24.1(supports-color@2.0.0):
     dependencies:
       babel-helper-hoist-variables: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-modules-umd@6.24.1:
+  babel-plugin-transform-es2015-modules-umd@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-plugin-transform-es2015-modules-amd: 6.24.1
+      babel-plugin-transform-es2015-modules-amd: 6.24.1(supports-color@2.0.0)
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-object-super@6.24.1:
+  babel-plugin-transform-es2015-object-super@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-replace-supers: 6.24.1
+      babel-helper-replace-supers: 6.24.1(supports-color@2.0.0)
       babel-runtime: 6.26.0
     transitivePeerDependencies:
       - supports-color
 
-  babel-plugin-transform-es2015-parameters@6.24.1:
+  babel-plugin-transform-es2015-parameters@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-call-delegate: 6.24.1
+      babel-helper-call-delegate: 6.24.1(supports-color@2.0.0)
       babel-helper-get-function-arity: 6.24.1
       babel-runtime: 6.26.0
-      babel-template: 6.26.0
-      babel-traverse: 6.26.0
+      babel-template: 6.26.0(supports-color@2.0.0)
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
     transitivePeerDependencies:
       - supports-color
@@ -4755,9 +4758,9 @@ snapshots:
       babel-runtime: 6.26.0
       regexpu-core: 2.0.0
 
-  babel-plugin-transform-exponentiation-operator@6.24.1:
+  babel-plugin-transform-exponentiation-operator@6.24.1(supports-color@2.0.0):
     dependencies:
-      babel-helper-builder-binary-assignment-operator-visitor: 6.24.1
+      babel-helper-builder-binary-assignment-operator-visitor: 6.24.1(supports-color@2.0.0)
       babel-plugin-syntax-exponentiation-operator: 6.13.0
       babel-runtime: 6.26.0
     transitivePeerDependencies:
@@ -4778,34 +4781,34 @@ snapshots:
       core-js: 2.6.12
       regenerator-runtime: 0.10.5
 
-  babel-preset-env@1.7.0:
+  babel-preset-env@1.7.0(supports-color@2.0.0):
     dependencies:
       babel-plugin-check-es2015-constants: 6.22.0
       babel-plugin-syntax-trailing-function-commas: 6.22.0
-      babel-plugin-transform-async-to-generator: 6.24.1
+      babel-plugin-transform-async-to-generator: 6.24.1(supports-color@2.0.0)
       babel-plugin-transform-es2015-arrow-functions: 6.22.0
       babel-plugin-transform-es2015-block-scoped-functions: 6.22.0
-      babel-plugin-transform-es2015-block-scoping: 6.26.0
-      babel-plugin-transform-es2015-classes: 6.24.1
-      babel-plugin-transform-es2015-computed-properties: 6.24.1
+      babel-plugin-transform-es2015-block-scoping: 6.26.0(supports-color@2.0.0)
+      babel-plugin-transform-es2015-classes: 6.24.1(supports-color@2.0.0)
+      babel-plugin-transform-es2015-computed-properties: 6.24.1(supports-color@2.0.0)
       babel-plugin-transform-es2015-destructuring: 6.23.0
       babel-plugin-transform-es2015-duplicate-keys: 6.24.1
       babel-plugin-transform-es2015-for-of: 6.23.0
-      babel-plugin-transform-es2015-function-name: 6.24.1
+      babel-plugin-transform-es2015-function-name: 6.24.1(supports-color@2.0.0)
       babel-plugin-transform-es2015-literals: 6.22.0
-      babel-plugin-transform-es2015-modules-amd: 6.24.1
-      babel-plugin-transform-es2015-modules-commonjs: 6.26.2
-      babel-plugin-transform-es2015-modules-systemjs: 6.24.1
-      babel-plugin-transform-es2015-modules-umd: 6.24.1
-      babel-plugin-transform-es2015-object-super: 6.24.1
-      babel-plugin-transform-es2015-parameters: 6.24.1
+      babel-plugin-transform-es2015-modules-amd: 6.24.1(supports-color@2.0.0)
+      babel-plugin-transform-es2015-modules-commonjs: 6.26.2(supports-color@2.0.0)
+      babel-plugin-transform-es2015-modules-systemjs: 6.24.1(supports-color@2.0.0)
+      babel-plugin-transform-es2015-modules-umd: 6.24.1(supports-color@2.0.0)
+      babel-plugin-transform-es2015-object-super: 6.24.1(supports-color@2.0.0)
+      babel-plugin-transform-es2015-parameters: 6.24.1(supports-color@2.0.0)
       babel-plugin-transform-es2015-shorthand-properties: 6.24.1
       babel-plugin-transform-es2015-spread: 6.22.0
       babel-plugin-transform-es2015-sticky-regex: 6.24.1
       babel-plugin-transform-es2015-template-literals: 6.22.0
       babel-plugin-transform-es2015-typeof-symbol: 6.23.0
       babel-plugin-transform-es2015-unicode-regex: 6.24.1
-      babel-plugin-transform-exponentiation-operator: 6.24.1
+      babel-plugin-transform-exponentiation-operator: 6.24.1(supports-color@2.0.0)
       babel-plugin-transform-regenerator: 6.26.0
       browserslist: 3.2.8
       invariant: 2.2.4
@@ -4818,24 +4821,24 @@ snapshots:
       core-js: 2.6.12
       regenerator-runtime: 0.11.1
 
-  babel-template@6.26.0:
+  babel-template@6.26.0(supports-color@2.0.0):
     dependencies:
       babel-runtime: 6.26.0
-      babel-traverse: 6.26.0
+      babel-traverse: 6.26.0(supports-color@2.0.0)
       babel-types: 6.26.0
       babylon: 6.18.0
       lodash: 4.18.1
     transitivePeerDependencies:
       - supports-color
 
-  babel-traverse@6.26.0:
+  babel-traverse@6.26.0(supports-color@2.0.0):
     dependencies:
       babel-code-frame: 6.26.0
       babel-messages: 6.23.0
       babel-runtime: 6.26.0
       babel-types: 6.26.0
       babylon: 6.18.0
-      debug: 2.6.9
+      debug: 2.6.9(supports-color@2.0.0)
       globals: 9.18.0
       invariant: 2.2.4
       lodash: 4.18.1
@@ -5042,13 +5045,17 @@ snapshots:
     dependencies:
       css-tree: 2.2.1
 
-  debug@2.6.9:
+  debug@2.6.9(supports-color@2.0.0):
     dependencies:
       ms: 2.0.0
+    optionalDependencies:
+      supports-color: 2.0.0
 
-  debug@4.4.3:
+  debug@4.4.3(supports-color@2.0.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 2.0.0
 
   decamelize@1.2.0: {}
 
@@ -5464,7 +5471,7 @@ snapshots:
       unist-util-visit: 5.1.0
       zwitch: 2.0.4
 
-  hast-util-to-estree@3.1.3:
+  hast-util-to-estree@3.1.3(supports-color@2.0.0):
     dependencies:
       '@types/estree': 1.0.9
       '@types/estree-jsx': 1.0.5
@@ -5474,9 +5481,9 @@ snapshots:
       estree-util-attach-comments: 3.0.0
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
-      mdast-util-mdx-expression: 2.0.1
-      mdast-util-mdx-jsx: 3.2.0
-      mdast-util-mdxjs-esm: 2.0.1
+      mdast-util-mdx-expression: 2.0.1(supports-color@2.0.0)
+      mdast-util-mdx-jsx: 3.2.0(supports-color@2.0.0)
+      mdast-util-mdxjs-esm: 2.0.1(supports-color@2.0.0)
       property-information: 7.2.0
       space-separated-tokens: 2.0.2
       style-to-js: 1.1.21
@@ -5499,7 +5506,7 @@ snapshots:
       stringify-entities: 4.0.4
       zwitch: 2.0.4
 
-  hast-util-to-jsx-runtime@2.3.6:
+  hast-util-to-jsx-runtime@2.3.6(supports-color@2.0.0):
     dependencies:
       '@types/estree': 1.0.9
       '@types/hast': 3.0.5
@@ -5508,9 +5515,9 @@ snapshots:
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
-      mdast-util-mdx-expression: 2.0.1
-      mdast-util-mdx-jsx: 3.2.0
-      mdast-util-mdxjs-esm: 2.0.1
+      mdast-util-mdx-expression: 2.0.1(supports-color@2.0.0)
+      mdast-util-mdx-jsx: 3.2.0(supports-color@2.0.0)
+      mdast-util-mdxjs-esm: 2.0.1(supports-color@2.0.0)
       property-information: 7.2.0
       space-separated-tokens: 2.0.2
       style-to-js: 1.1.21
@@ -5641,6 +5648,8 @@ snapshots:
 
   leaflet@1.5.1: {}
 
+  leaflet@1.9.4: {}
+
   lightningcss-android-arm64@1.32.0:
     optional: true
 
@@ -5728,13 +5737,13 @@ snapshots:
       '@types/unist': 3.0.3
       unist-util-visit: 5.1.0
 
-  mdast-util-directive@3.1.0:
+  mdast-util-directive@3.1.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
       ccount: 2.0.1
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
@@ -5749,14 +5758,14 @@ snapshots:
       unist-util-is: 6.0.1
       unist-util-visit-parents: 6.0.2
 
-  mdast-util-from-markdown@2.0.3:
+  mdast-util-from-markdown@2.0.3(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
       '@types/unist': 3.0.3
       decode-named-character-reference: 1.3.0
       devlop: 1.1.0
       mdast-util-to-string: 4.0.0
-      micromark: 4.0.2
+      micromark: 4.0.2(supports-color@2.0.0)
       micromark-util-decode-numeric-character-reference: 2.0.2
       micromark-util-decode-string: 2.0.1
       micromark-util-normalize-identifier: 2.0.1
@@ -5774,67 +5783,67 @@ snapshots:
       mdast-util-find-and-replace: 3.0.2
       micromark-util-character: 2.1.1
 
-  mdast-util-gfm-footnote@2.1.0:
+  mdast-util-gfm-footnote@2.1.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
       micromark-util-normalize-identifier: 2.0.1
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-gfm-strikethrough@2.0.0:
+  mdast-util-gfm-strikethrough@2.0.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-gfm-table@2.0.0:
+  mdast-util-gfm-table@2.0.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
       markdown-table: 3.0.4
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-gfm-task-list-item@2.0.0:
+  mdast-util-gfm-task-list-item@2.0.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-gfm@3.1.0:
+  mdast-util-gfm@3.1.0(supports-color@2.0.0):
     dependencies:
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-gfm-autolink-literal: 2.0.1
-      mdast-util-gfm-footnote: 2.1.0
-      mdast-util-gfm-strikethrough: 2.0.0
-      mdast-util-gfm-table: 2.0.0
-      mdast-util-gfm-task-list-item: 2.0.0
+      mdast-util-gfm-footnote: 2.1.0(supports-color@2.0.0)
+      mdast-util-gfm-strikethrough: 2.0.0(supports-color@2.0.0)
+      mdast-util-gfm-table: 2.0.0(supports-color@2.0.0)
+      mdast-util-gfm-task-list-item: 2.0.0(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx-expression@2.0.1:
+  mdast-util-mdx-expression@2.0.1(supports-color@2.0.0):
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx-jsx@3.2.0:
+  mdast-util-mdx-jsx@3.2.0(supports-color@2.0.0):
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.5
@@ -5842,7 +5851,7 @@ snapshots:
       '@types/unist': 3.0.3
       ccount: 2.0.1
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
       parse-entities: 4.0.2
       stringify-entities: 4.0.4
@@ -5851,23 +5860,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdx@3.0.0:
+  mdast-util-mdx@3.0.0(supports-color@2.0.0):
     dependencies:
-      mdast-util-from-markdown: 2.0.3
-      mdast-util-mdx-expression: 2.0.1
-      mdast-util-mdx-jsx: 3.2.0
-      mdast-util-mdxjs-esm: 2.0.1
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
+      mdast-util-mdx-expression: 2.0.1(supports-color@2.0.0)
+      mdast-util-mdx-jsx: 3.2.0(supports-color@2.0.0)
+      mdast-util-mdxjs-esm: 2.0.1(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
 
-  mdast-util-mdxjs-esm@2.0.1:
+  mdast-util-mdxjs-esm@2.0.1(supports-color@2.0.0):
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.5
       '@types/mdast': 4.0.4
       devlop: 1.1.0
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       mdast-util-to-markdown: 2.1.2
     transitivePeerDependencies:
       - supports-color
@@ -5909,9 +5918,9 @@ snapshots:
 
   mdn-data@2.27.1: {}
 
-  mediawiki2@0.0.3:
+  mediawiki2@0.0.3(supports-color@2.0.0):
     dependencies:
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@2.0.0)
       fetch-cookie: 0.7.3
       form-data: 2.5.6
       node-fetch: 2.7.0
@@ -6172,10 +6181,10 @@ snapshots:
 
   micromark-util-types@2.0.2: {}
 
-  micromark@4.0.2:
+  micromark@4.0.2(supports-color@2.0.0):
     dependencies:
       '@types/debug': 4.1.13
-      debug: 4.4.3
+      debug: 4.4.3(supports-color@2.0.0)
       decode-named-character-reference: 1.3.0
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
@@ -6480,11 +6489,11 @@ snapshots:
       hast-util-raw: 9.1.0
       vfile: 6.0.3
 
-  rehype-recma@1.0.0:
+  rehype-recma@1.0.0(supports-color@2.0.0):
     dependencies:
       '@types/estree': 1.0.9
       '@types/hast': 3.0.5
-      hast-util-to-estree: 3.1.3
+      hast-util-to-estree: 3.1.3(supports-color@2.0.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6501,10 +6510,10 @@ snapshots:
       rehype-stringify: 10.0.1
       unified: 11.0.5
 
-  remark-directive@4.0.0:
+  remark-directive@4.0.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-directive: 3.1.0
+      mdast-util-directive: 3.1.0(supports-color@2.0.0)
       micromark-extension-directive: 4.0.0
       unified: 11.0.5
     transitivePeerDependencies:
@@ -6521,12 +6530,12 @@ snapshots:
       unist-util-find-between: 1.2.2
       unist-util-visit: 5.1.0
 
-  remark-gfm@4.0.1:
+  remark-gfm@4.0.1(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-gfm: 3.1.0
+      mdast-util-gfm: 3.1.0(supports-color@2.0.0)
       micromark-extension-gfm: 3.0.0
-      remark-parse: 11.0.0
+      remark-parse: 11.0.0(supports-color@2.0.0)
       remark-stringify: 11.0.0
       unified: 11.0.5
     transitivePeerDependencies:
@@ -6543,17 +6552,17 @@ snapshots:
       unist-util-find-between: 1.2.2
       unist-util-visit: 5.1.0
 
-  remark-mdx@3.1.1:
+  remark-mdx@3.1.1(supports-color@2.0.0):
     dependencies:
-      mdast-util-mdx: 3.0.0
+      mdast-util-mdx: 3.0.0(supports-color@2.0.0)
       micromark-extension-mdxjs: 3.0.0
     transitivePeerDependencies:
       - supports-color
 
-  remark-parse@11.0.0:
+  remark-parse@11.0.0(supports-color@2.0.0):
     dependencies:
       '@types/mdast': 4.0.4
-      mdast-util-from-markdown: 2.0.3
+      mdast-util-from-markdown: 2.0.3(supports-color@2.0.0)
       micromark-util-types: 2.0.2
       unified: 11.0.5
     transitivePeerDependencies:
