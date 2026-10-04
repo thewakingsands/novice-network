@@ -20,6 +20,7 @@
 <style lang="stylus">
 .content-container
   width 100%
+  padding 20px
   min-height 67vh
   display flex
   justify-content center
@@ -102,6 +103,7 @@
       color #39393c
       padding 0 2px
   aside
+    min-width 120px
     position sticky
     top 180px
     a
