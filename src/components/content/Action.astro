@@ -19,7 +19,7 @@ const JOB_LIST: Record<string, number> = {
   战士: 21, 龙骑士: 22, 吟游诗人: 23, 白魔法师: 24, 黑魔法师: 25, 秘术师: 26,
   召唤师: 27, 学者: 28, 双剑师: 29, 忍者: 30, 机工士: 31, 暗黑骑士: 32,
   占星术士: 33, 武士: 34, 赤魔法师: 35, 青魔法师: 36, 绝枪战士: 37, 舞者: 38,
-  钐镰客: 39, 贤者: 40, 蝰蛇剑士: 196, 绘灵法师: 197,
+  钐镰客: 39, 贤者: 40, 蝰蛇剑士: 41, 绘灵法师: 42,
 }
 const pageJob = Astro.locals.starlightRoute?.entry?.data?.jobName as
   | string
@@ -32,13 +32,13 @@ const actionId = result?.id ?? id
 ---
 
 <strong data-ck-action-id={actionId} class:list={['action', cls]}>
-  <div class="action-container">
+  <span class="action-container">
     <img
       src={iconUrl || 'about:blank'}
       class:list={['no-zoom', { hide: !iconUrl }]}
       alt=""
     />
-  </div>{!noname && <slot>{name}</slot>}
+  </span>{!noname && <slot>{name}</slot>}
 </strong>
 
 <style lang="scss">

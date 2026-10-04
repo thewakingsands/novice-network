@@ -35,6 +35,8 @@ interface ActionFields {
   Name: string
   Icon: Icon
   ClassJob?: RowReference
+  ClassJobLevel?: number
+  IsPlayerAction?: boolean
 }
 
 interface StatusFields {
@@ -139,7 +141,7 @@ export function searchAction(
   id?: number,
   jobId?: number | null
 ): Promise<ActionResult | null> {
-  const key = `action-v2-png:${name}:${id ?? ''}:${jobId ?? ''}`
+  const key = `action-v3-png:${name}:${id ?? ''}:${jobId ?? ''}`
   return cached(key, async () => {
     if (name === '冲刺') {
       return {
@@ -159,16 +161,21 @@ export function searchAction(
     }
     const response = await xivapi.search<ActionFields>({
       sheets: 'Action',
-      fields: ['Name', 'Icon', 'ClassJob'],
-      query: `Name=${JSON.stringify(name)} IsPvP=false`,
+      fields: ['Name', 'Icon', 'ClassJob', 'ClassJobLevel', 'IsPlayerAction'],
+      query: `+Name=${JSON.stringify(name)} +IsPvP=false`,
       limit: 100,
     })
-    const found = response.results.find(
-      (row) =>
-        row.fields.Name === name &&
-        (jobId ? row.fields.ClassJob?.value === jobId : true) &&
-        row.fields.Icon?.id > 0
-    )
+    // 同名技能常有 NPC 版本或旧版行：优先本职业、再优先玩家技能，
+    // 都不满足时仍取任意带图标的行（如优雷卡文理技能等特殊技能）
+    const rank = ({ fields }: { fields: ActionFields }) =>
+      (jobId && fields.ClassJob?.value === jobId ? 2 : 0) +
+      ((fields.ClassJobLevel ?? 0) > 0 || fields.IsPlayerAction ? 1 : 0)
+    const found = response.results
+      .filter((row) => row.fields.Name === name && row.fields.Icon?.id > 0)
+      .reduce<(typeof response.results)[number] | undefined>(
+        (best, row) => (!best || rank(row) > rank(best) ? row : best),
+        undefined
+      )
     return found
       ? { id: found.row_id, iconUrl: formatIcon(found.fields.Icon) }
       : null
