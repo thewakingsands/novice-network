@@ -41,6 +41,7 @@ const CONTENT_COMPONENTS: Record<string, string> = {
   BuffSearch: '@/components/content/BuffSearch.astro',
   HomePage: '@/components/content/HomePage.astro',
   SiteSearch: '@/components/content/SiteSearch.astro',
+  FeedbackForm: '@/components/content/FeedbackForm.astro',
 }
 
 /** 容器组件（CollapseText/SegmentText/JobCard）与内容组件合并的导入表 */

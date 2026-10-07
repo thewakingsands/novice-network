@@ -16,9 +16,7 @@
     <a href="#" class="ui button" data-search-next>下一页</a>
   </div>
   <div class="ui segment segment-text orange" data-search-feedback hidden>
-    没有找到想要的结果？<a href="https://i.duotai.net/forms/zxjg2/wh956yns?url=search" target="_blank" rel="noopener noreferrer"
-      >点击这里</a
-    >告诉我们。
+    没有找到想要的结果？<a href="/feedback.htm?from=%2Fsearch.htm" data-search-feedback-link>点击这里</a>告诉我们。
   </div>
 </div>
 
@@ -33,6 +31,9 @@
   const pager = document.querySelector<HTMLElement>('[data-search-pager]')
   const pageInfo = document.querySelector<HTMLElement>('[data-search-pageinfo]')
   const feedback = document.querySelector<HTMLElement>('[data-search-feedback]')
+  const feedbackLink = document.querySelector<HTMLAnchorElement>(
+    '[data-search-feedback-link]'
+  )
   const prevBtn = document.querySelector('[data-search-prev]')
   const nextBtn = document.querySelector('[data-search-next]')
 
@@ -98,6 +99,8 @@
       if (!r.length) {
         message.textContent =
           '没有找到结果。\n\n可换用简短的词语尝试，或点击页面下方反馈问题链接联系我们。'
+        if (feedbackLink)
+          feedbackLink.href = `/feedback.htm?from=${encodeURIComponent(`/search.htm?q=${encodeURIComponent(q)}`)}`
         show(feedback, true)
       }
       render()

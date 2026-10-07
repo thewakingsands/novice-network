@@ -6,7 +6,7 @@ const rel = `src/content/docs/${entry.id.endsWith('index') || entry.id === '' ? 
 const repo = 'https://github.com/thewakingsands/novice-network'
 const historyLink = `${repo}/blame/master/${rel}`
 const editLink = `${repo}/edit/master/${rel}`
-const feedbackLink = `https://i.duotai.net/forms/zxjg2/wh956yns?url=${entry.id}`
+const feedbackLink = `/feedback.htm?from=${encodeURIComponent(entry.id === 'index' ? '/' : `/${entry.id}`)}`
 ---
 
 <footer class="footer-container">
@@ -14,7 +14,7 @@ const feedbackLink = `https://i.duotai.net/forms/zxjg2/wh956yns?url=${entry.id}`
     <div class="status-line">
       <a target="_blank" rel="noopener" href={historyLink}>修订历史</a> |
       <a target="_blank" rel="noopener" href={editLink}>编辑本页</a> |
-      <a target="_blank" rel="noopener" href={feedbackLink}>反馈问题</a> |
+      <a href={feedbackLink}>反馈问题</a> |
       <a href="/about.htm">关于&amp;捐赠</a>
     </div>
     <div class="status-line">

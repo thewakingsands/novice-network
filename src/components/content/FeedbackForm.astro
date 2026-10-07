@@ -1,0 +1,127 @@
+---
+// 反馈表单：提交到 PocketBase（survey.ffcafe.cn）的 novice_network_issues 集合。
+// location 取自 ?from= 参数（由页脚链接带入），缺省时回退到 document.referrer。
+---
+
+<form class="ui form feedback-form" data-feedback-form novalidate>
+  <div class="required field">
+    <label for="feedback-text">反馈内容</label>
+    <textarea
+      id="feedback-text"
+      name="text"
+      rows="8"
+      required
+      placeholder="请描述你遇到的问题或建议，例如哪里写错了、哪里看不懂……"></textarea>
+  </div>
+  <div class="field">
+    <label for="feedback-contact">联系方式（选填）</label>
+    <input
+      id="feedback-contact"
+      name="contact"
+      type="text"
+      autocomplete="email"
+      placeholder="邮箱、QQ 等，方便我们回复你"
+    />
+  </div>
+  <div class="ui message" data-feedback-status hidden aria-live="polite"></div>
+  <button class="ui primary button" type="submit" data-feedback-submit>提交反馈</button>
+</form>
+
+<script>
+  const ENDPOINT =
+    'https://survey.ffcafe.cn/api/collections/novice_network_issues/records'
+
+  const form = document.querySelector<HTMLFormElement>('[data-feedback-form]')
+  if (form) {
+    const status = form.querySelector<HTMLElement>('[data-feedback-status]')
+    const submit = form.querySelector<HTMLButtonElement>(
+      '[data-feedback-submit]'
+    )
+    const textInput = form.querySelector<HTMLTextAreaElement>('[name="text"]')
+    const contactInput =
+      form.querySelector<HTMLInputElement>('[name="contact"]')
+
+    const location = (() => {
+      const from = new URLSearchParams(window.location.search).get('from')
+      if (from) return from
+      try {
+        const ref = new URL(document.referrer)
+        if (ref.origin === window.location.origin)
+          return ref.pathname + ref.search + ref.hash
+        return ref.href
+      } catch {
+        return ''
+      }
+    })()
+
+    const showStatus = (message: string, kind: 'error' | 'success' | '') => {
+      if (!status) return
+      // Semantic UI 只在表单带有同名状态类时才显示 .success/.error 消息
+      form.classList.toggle('success', kind === 'success')
+      form.classList.toggle('error', kind === 'error')
+      status.className = `ui message ${kind}`
+      status.textContent = message
+      status.toggleAttribute('hidden', !message)
+      if (message) status.scrollIntoView({ block: 'nearest' })
+    }
+
+    let submitting = false
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+      if (submitting || !textInput || !contactInput) return
+      const text = textInput.value.trim()
+      if (!text) {
+        showStatus('请填写反馈内容。', 'error')
+        textInput.focus()
+        return
+      }
+
+      submitting = true
+      submit?.classList.add('loading', 'disabled')
+      showStatus('', '')
+      try {
+        const res = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            location,
+            text,
+            contact: contactInput.value.trim(),
+          }),
+        })
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        form.reset()
+        showStatus('提交成功，感谢你的反馈！', 'success')
+      } catch (err) {
+        showStatus(
+          `提交失败（${err instanceof Error ? err.message : err}），请稍后重试，或发送邮件到 yunze@wakingsands.com。`,
+          'error'
+        )
+      } finally {
+        submitting = false
+        submit?.classList.remove('loading', 'disabled')
+      }
+    })
+  }
+</script>
+
+<style lang="scss">
+.feedback-form {
+  margin-top: 1em;
+  textarea {
+    resize: vertical;
+  }
+}
+:global([data-theme='dark']) .feedback-form {
+  .field > label {
+    color: #e5e5e5;
+  }
+  input,
+  textarea {
+    background: #333;
+    color: #c9c7c5;
+    border-color: #464444;
+  }
+}
+</style>
